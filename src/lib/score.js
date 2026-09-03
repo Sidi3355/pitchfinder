@@ -1,29 +1,45 @@
-// The Squad Score™ — ranks every pitch in the directory for a specific
-// friend group + preferences, and explains why.
+// Group-fit ranking. Scores every pitch in the dataset for a specific squad
+// and set of preferences, and explains each pick in plain language.
 
-import { PITCHES } from '../data/pitches.js'
 import { estimateEta } from './geo.js'
+import { costOf, isBounded } from './data.js'
 
 export const DEFAULT_FILTERS = {
-  types: [],            // [] = all pitch types
-  enclosure: 'any',     // 'any' | 'bounded' | 'unbounded'
-  maxPricePerHead: null, // £ per person per hour; null = any price
-  format: null,         // 5 | 7 | 11 | null = any
-  maxEta: null,         // minutes; null = any
+  types: [],             // [] = all pitch types
+  enclosure: 'any',      // 'any' | 'bounded' | 'open'
+  maxPricePerHead: null,  // £ per person per hour; null = any
+  format: null,           // 5 | 7 | 11 | null (only known for curated venues)
+  maxEta: null,           // minutes; null = any
   needsFloodlights: false,
   freeOnly: false,
+  bookableOnly: false,
 }
 
 /**
- * Ranks pitches for a squad.
+ * @param pitches dataset array
  * @param squad   [{ id, name, lat, lng, mode }]
  * @param filters DEFAULT_FILTERS shape
- * @returns [{ pitch, etas, avgEta, maxEta, spreadEta, pricePerHead, score, reasons }]
+ * @returns sorted [{ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, score, reasons }]
  */
-export function rankPitches(squad, filters = DEFAULT_FILTERS) {
+export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
   const headCount = Math.max(squad.length, 1)
+  const out = []
 
-  const rows = PITCHES.map((pitch) => {
+  for (const pitch of pitches) {
+    const cost = costOf(pitch)
+    const pricePerHead = cost.known ? cost.perHour / headCount : null
+
+    // ── Filters ──
+    if (filters.types.length && !filters.types.includes(pitch.type)) continue
+    if (filters.enclosure === 'bounded' && !isBounded(pitch)) continue
+    if (filters.enclosure === 'open' && isBounded(pitch)) continue
+    if (filters.freeOnly && !(cost.known && cost.perHour === 0)) continue
+    if (filters.bookableOnly && !pitch.bookingUrl) continue
+    if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead) continue
+    if (filters.format != null && Array.isArray(pitch.formats) && !pitch.formats.includes(filters.format)) continue
+    if (filters.needsFloodlights && pitch.lit !== true) continue
+
+    // ── ETAs ──
     const etas = squad.map((f) => ({
       friend: f,
       minutes: estimateEta({ lat: f.lat, lng: f.lng }, pitch, f.mode),
@@ -32,67 +48,47 @@ export function rankPitches(squad, filters = DEFAULT_FILTERS) {
     const avgEta = mins.length ? Math.round(mins.reduce((s, m) => s + m, 0) / mins.length) : 0
     const maxEta = mins.length ? Math.max(...mins) : 0
     const spreadEta = mins.length ? maxEta - Math.min(...mins) : 0
-    const pricePerHead = pitch.pricePerHour / headCount
-    return { pitch, etas, avgEta, maxEta, spreadEta, pricePerHead }
-  })
+    if (filters.maxEta != null && squad.length && maxEta > filters.maxEta) continue
 
-  const filtered = rows.filter(({ pitch, maxEta, pricePerHead }) => {
-    if (filters.types.length && !filters.types.includes(pitch.type)) return false
-    if (filters.enclosure !== 'any' && pitch.enclosure !== filters.enclosure) return false
-    if (filters.freeOnly && pitch.pricePerHour > 0) return false
-    if (filters.maxPricePerHead != null && pricePerHead > filters.maxPricePerHead) return false
-    if (filters.format != null && !pitch.formats.includes(filters.format)) return false
-    if (filters.maxEta != null && squad.length && maxEta > filters.maxEta) return false
-    if (filters.needsFloodlights && !pitch.floodlit) return false
-    return true
-  })
-
-  const scored = filtered.map((row) => {
-    const { pitch, avgEta, maxEta, spreadEta, pricePerHead } = row
-
-    // Each component in [0, 1]; higher is better.
-    const sAvg = clamp01(1 - avgEta / 60)          // everyone close on average
-    const sWorst = clamp01(1 - maxEta / 75)        // nobody stranded
-    const sFair = clamp01(1 - spreadEta / 45)      // similar journeys = fair
-    const sPrice = filters.freeOnly || pitch.pricePerHour === 0
-      ? 1
-      : clamp01(1 - pricePerHead / 15)             // £/head vs a £15 ceiling
+    // ── Score components, each in [0, 1] ──
+    const sAvg = clamp01(1 - avgEta / 60)
+    const sWorst = clamp01(1 - maxEta / 75)
+    const sFair = clamp01(1 - spreadEta / 45)
+    const sPrice = !cost.known ? 0.55 : cost.perHour === 0 ? 1 : clamp01(1 - pricePerHead / 15)
     const sQuality =
-      (pitch.floodlit ? 0.35 : 0) +
-      (pitch.changingRooms ? 0.25 : 0) +
-      (pitch.bookable ? 0.25 : 0) +
-      (pitch.surface.toLowerCase().includes('3g') ? 0.15 : 0)
+      (pitch.lit === true ? 0.3 : 0) +
+      (pitch.bookingUrl ? 0.25 : 0) +
+      (pitch.surface === '3g' ? 0.2 : pitch.surface === 'astro' ? 0.12 : 0) +
+      (pitch.changingRooms ? 0.15 : 0) +
+      (pitch.curated ? 0.1 : 0)
 
-    const squadWeight = row.etas.length ? 1 : 0 // solo browsing: skip ETA terms
-    const score =
-      squadWeight * (0.30 * sAvg + 0.25 * sWorst + 0.15 * sFair) +
-      0.18 * sPrice +
-      0.12 * sQuality +
-      (squadWeight === 0 ? 0.7 * (0.5 * sPrice + 0.5 * sQuality) : 0)
+    const score = squad.length
+      ? 0.3 * sAvg + 0.25 * sWorst + 0.15 * sFair + 0.18 * sPrice + 0.12 * sQuality
+      : 0.55 * sPrice + 0.45 * sQuality
 
+    // ── Reasons ──
     const reasons = []
-    if (row.etas.length) {
-      if (maxEta <= 25) reasons.push(`everyone inside ${maxEta} min`)
-      else if (avgEta <= 30) reasons.push(`~${avgEta} min average journey`)
-      if (spreadEta <= 10 && row.etas.length > 1) reasons.push('fair for the whole squad')
+    if (squad.length) {
+      if (maxEta <= 25) reasons.push(`everyone within ${maxEta} min`)
+      else if (avgEta <= 30) reasons.push(`${avgEta} min average journey`)
+      if (etas.length > 1 && spreadEta <= 10) reasons.push('similar journey for everyone')
     }
-    if (pitch.pricePerHour === 0) reasons.push('free to play')
-    else if (pricePerHead <= 8) reasons.push(`~£${pricePerHead.toFixed(2)}/head`)
-    if (pitch.floodlit) reasons.push('floodlit')
-    if (pitch.enclosure === 'bounded') reasons.push('ball stays in play')
-    if (pitch.surface.toLowerCase().includes('3g')) reasons.push('3G surface')
+    if (cost.known && cost.perHour === 0) reasons.push('free to play')
+    else if (pricePerHead != null && pricePerHead <= 8) reasons.push(`about £${pricePerHead.toFixed(2)} per person`)
+    if (pitch.lit === true) reasons.push('floodlit')
+    if (pitch.bookingUrl) reasons.push('bookable online')
+    if (pitch.surface === '3g') reasons.push('3G surface')
 
-    return { ...row, score, reasons: reasons.slice(0, 4) }
-  })
+    out.push({ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, score, reasons: reasons.slice(0, 4) })
+  }
 
-  return scored.sort((a, b) => b.score - a.score)
+  return out.sort((a, b) => b.score - a.score)
 }
 
 function clamp01(x) {
   return Math.max(0, Math.min(1, x))
 }
 
-/** 0–100 badge for the UI. */
 export function scoreToRating(score) {
   return Math.round(clamp01(score) * 100)
 }

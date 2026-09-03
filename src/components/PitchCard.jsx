@@ -1,65 +1,66 @@
 import React from 'react'
 import { useStore } from '../lib/store.jsx'
-import { PITCH_TYPES } from '../data/pitches.js'
+import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { scoreToRating } from '../lib/score.js'
 
 export function PitchCard({ row, rank }) {
   const { state, actions } = useStore()
-  const { pitch } = row
+  const { pitch, cost } = row
   const t = PITCH_TYPES[pitch.type]
   const saved = state.user?.savedPitchIds?.includes(pitch.id)
-  const rating = scoreToRating(row.score)
+
+  const price = !cost.known ? 'Price on booking' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hr`
 
   return (
-    <article className={`pitch-card ${rank ? 'pitch-card-top' : ''}`} style={{ '--accent': t.color }}>
-      {rank && <span className="pitch-rank">#{rank}</span>}
-      <header className="pitch-card-head">
-        <button className="pitch-name" onClick={() => actions.selectPitch(pitch.id)}>
-          {pitch.name}
-        </button>
-        <button
-          className={`save-btn ${saved ? 'saved' : ''}`}
-          onClick={() => actions.toggleSave(pitch.id)}
-          aria-label={saved ? 'Remove from saved pitches' : 'Save pitch'}
-          title={state.user ? '' : 'Log in to save pitches'}
-        >
-          {saved ? '♥' : '♡'}
-        </button>
-      </header>
+    <article className="card">
+      <div className="card-main">
+        <div className="card-title-row">
+          {rank && rank <= 3 && <span className="rank">{rank}</span>}
+          <button className="card-title" onClick={() => actions.selectPitch(pitch.id)}>
+            {pitchName(pitch)}
+          </button>
+          <button
+            className={`save-btn ${saved ? 'saved' : ''}`}
+            onClick={() => actions.toggleSave(pitch.id)}
+            aria-label={saved ? 'Remove from saved' : 'Save pitch'}
+            title={state.user ? undefined : 'Sign in to save pitches'}
+          >
+            {saved ? '♥' : '♡'}
+          </button>
+        </div>
 
-      <p className="pitch-meta">
-        <span className="dot" style={{ background: t.color }} aria-hidden="true" />
-        <span className="pitch-type" style={{ color: t.color }}>
-          {t.label}
-        </span>
-        <span>· {pitch.area}</span>
-        <span>· {pitch.surface}</span>
-      </p>
+        <p className="card-meta">
+          <span className="type-dot" style={{ background: t.color }} />
+          {t.short}
+          {pitch.area && <> · {pitch.area}</>}
+          {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
+          {pitch.pitchCount > 1 && <> · {pitch.pitchCount} pitches</>}
+        </p>
 
-      <div className="pitch-stats">
-        <span className="stat">
-          <strong>{pitch.pricePerHour === 0 ? 'FREE' : `£${pitch.pricePerHour}`}</strong>
-          {pitch.pricePerHour > 0 && <small>/hour</small>}
-        </span>
-        {state.squad.length > 0 && (
-          <span className="stat">
-            <strong>{row.maxEta}′</strong>
-            <small>worst ETA</small>
-          </span>
-        )}
-        <span className="stat">
-          <strong>{pitch.formats.map((f) => `${f}s`).join(' ')}</strong>
-          <small>formats</small>
-        </span>
-        <span className="stat squad-score" title="Squad Score — fit for your group">
-          <strong>{rating}</strong>
-          <small>score</small>
-        </span>
+        <p className="card-facts">
+          <strong>{price}</strong>
+          {state.squad.length > 0 && (
+            <>
+              <span className="sep" />
+              up to <strong>{row.maxEta} min</strong> away
+            </>
+          )}
+          {pitch.lit === true && (
+            <>
+              <span className="sep" />
+              floodlit
+            </>
+          )}
+          <span className="sep" />
+          fit <strong>{scoreToRating(row.score)}</strong>
+        </p>
+
+        {row.reasons.length > 0 && <p className="card-reasons">{row.reasons.join(' · ')}</p>}
       </div>
-
-      {row.reasons.length > 0 && (
-        <p className="pitch-reasons">{row.reasons.join(' · ')}</p>
-      )}
     </article>
   )
+}
+
+export function surfaceLabel(surface) {
+  return { '3g': '3G', astro: 'Astroturf', grass: 'Grass', hard: 'Hard court', other: 'Other surface' }[surface] || surface
 }

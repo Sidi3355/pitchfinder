@@ -20,10 +20,10 @@ export function haversineKm(a, b) {
 const CIRCUITY = 1.35
 
 export const TRAVEL_MODES = {
-  walk: { label: 'Walk', emoji: '🚶', speedKmh: 4.8, overheadMin: 0 },
-  cycle: { label: 'Cycle', emoji: '🚴', speedKmh: 14, overheadMin: 4 },
-  transit: { label: 'Tube / Bus', emoji: '🚇', speedKmh: 19, overheadMin: 9 },
-  drive: { label: 'Drive', emoji: '🚗', speedKmh: 21, overheadMin: 6 },
+  walk: { label: 'Walk', speedKmh: 4.8, overheadMin: 0 },
+  cycle: { label: 'Cycle', speedKmh: 14, overheadMin: 4 },
+  transit: { label: 'Public transport', speedKmh: 19, overheadMin: 9 },
+  drive: { label: 'Drive', speedKmh: 21, overheadMin: 6 },
 }
 
 /** Estimated door-to-pitch minutes for one person. */

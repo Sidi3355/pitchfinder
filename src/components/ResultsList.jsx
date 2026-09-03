@@ -1,46 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PitchCard } from './PitchCard.jsx'
 
+const PAGE = 10
+
 export function ResultsList() {
   const { state, results } = useStore()
-  const top = results.slice(0, 5)
-  const rest = results.slice(5)
+  const [limit, setLimit] = useState(PAGE)
+
+  // Reset paging when the result set changes materially.
+  useEffect(() => setLimit(PAGE), [state.filters, state.squad.length])
+
+  if (!state.data) return null
 
   return (
-    <section className="results">
-      <div className="results-head">
-        <h2 className="panel-title">
-          {state.squad.length
-            ? `Best pitches for your ${state.squad.length}-player squad`
-            : 'Top-rated pitches'}
+    <section className="stack">
+      <div className="row between">
+        <h2 className="side-title">
+          {state.squad.length ? `Best for your group of ${state.squad.length}` : 'Top-rated pitches'}
         </h2>
-        <span className="results-count">
-          {results.length} pitch{results.length === 1 ? '' : 'es'} match
-        </span>
+        <span className="hint dim">{results.length.toLocaleString('en-GB')} match</span>
       </div>
 
       {results.length === 0 ? (
-        <div className="results-empty">
-          <p>Nothing gets past those filters — that's a worldie of a save.</p>
-          <p>Loosen the budget or travel time and try again.</p>
-        </div>
+        <div className="notice">No pitches match the current filters. Try widening them.</div>
       ) : (
         <>
-          <div className="results-grid">
-            {top.map((row, i) => (
+          <div className="stack">
+            {results.slice(0, limit).map((row, i) => (
               <PitchCard key={row.pitch.id} row={row} rank={i + 1} />
             ))}
           </div>
-          {rest.length > 0 && (
-            <details className="results-more">
-              <summary>Show {rest.length} more matching pitch{rest.length === 1 ? '' : 'es'}</summary>
-              <div className="results-grid">
-                {rest.map((row) => (
-                  <PitchCard key={row.pitch.id} row={row} />
-                ))}
-              </div>
-            </details>
+          {results.length > limit && (
+            <button className="btn ghost" onClick={() => setLimit((l) => l + PAGE)}>
+              Show more ({(results.length - limit).toLocaleString('en-GB')} remaining)
+            </button>
           )}
         </>
       )}

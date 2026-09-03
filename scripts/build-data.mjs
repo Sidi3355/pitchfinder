@@ -21,36 +21,45 @@ const BBOX = '51.26,-0.53,51.71,0.36'
 const OVERPASS_ENDPOINTS = [
   'https://overpass-api.de/api/interpreter',
   'https://overpass.kumi.systems/api/interpreter',
+  'https://overpass.private.coffee/api/interpreter',
 ]
 
 const QUERY = `
 [out:json][timeout:300];
 (
   nwr["leisure"="pitch"]["sport"~"soccer",i](${BBOX});
-  nwr["leisure"="pitch"]["sport"~"^multi$|multi;|;multi",i](${BBOX});
+  nwr["leisure"="pitch"]["sport"~"multi",i](${BBOX});
 );
-out center tags;
+out center;
 `
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 async function fetchOverpass() {
   let lastErr
-  for (const endpoint of OVERPASS_ENDPOINTS) {
-    try {
-      console.log(`Querying ${endpoint} …`)
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: `data=${encodeURIComponent(QUERY)}`,
-      })
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const json = await res.json()
-      if (!Array.isArray(json.elements)) throw new Error('no elements array')
-      console.log(`  ${json.elements.length} raw elements`)
-      return json.elements
-    } catch (err) {
-      lastErr = err
-      console.warn(`  failed: ${err.message}`)
+  for (let attempt = 0; attempt < 3; attempt++) {
+    for (const endpoint of OVERPASS_ENDPOINTS) {
+      try {
+        console.log(`Querying ${endpoint} (attempt ${attempt + 1}) …`)
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'User-Agent': 'PitchFinderBot/1.0 (+https://github.com/Sidi3355/pitchfinder)',
+          },
+          body: `data=${encodeURIComponent(QUERY)}`,
+        })
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        const json = await res.json()
+        if (!Array.isArray(json.elements)) throw new Error('no elements array')
+        console.log(`  ${json.elements.length} raw elements`)
+        return json.elements
+      } catch (err) {
+        lastErr = err
+        console.warn(`  failed: ${err.message}`)
+      }
     }
+    await sleep(30000 * (attempt + 1))
   }
   throw new Error(`All Overpass endpoints failed: ${lastErr?.message}`)
 }

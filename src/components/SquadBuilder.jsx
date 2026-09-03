@@ -24,7 +24,7 @@ export function SquadBuilder() {
   function addFriend(area) {
     const friendArea = area || exact
     if (!friendArea) {
-      setError('Pick an area from the list — that\'s how we work out ETAs.')
+      setError('Pick an area from the suggestions — that sets the starting point for travel times.')
       return
     }
     actions.addFriend({
@@ -40,14 +40,16 @@ export function SquadBuilder() {
   }
 
   return (
-    <section className="panel">
-      <h2 className="panel-title">Your squad</h2>
-      <p className="panel-sub">Add everyone playing and where they set off from.</p>
+    <section className="stack">
+      <p className="hint">
+        Add each player and where they travel from. Results are ranked so the whole group gets a
+        fair journey.
+      </p>
 
-      <div className="squad-form">
+      <div className="stack">
         <input
           className="input"
-          placeholder="Name (e.g. Sidi)"
+          placeholder="Player name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           maxLength={24}
@@ -55,7 +57,7 @@ export function SquadBuilder() {
         <div className="area-picker">
           <input
             className="input"
-            placeholder="Home area (e.g. Peckham)"
+            placeholder="Home area, e.g. Peckham"
             value={areaQuery}
             onChange={(e) => {
               setAreaQuery(e.target.value)
@@ -67,29 +69,35 @@ export function SquadBuilder() {
             <ul className="area-suggestions">
               {matches.map((a) => (
                 <li key={a.name}>
-                  <button onClick={() => { setAreaQuery(a.name); addFriend(a) }}>{a.name}</button>
+                  <button
+                    onClick={() => {
+                      setAreaQuery(a.name)
+                      addFriend(a)
+                    }}
+                  >
+                    {a.name}
+                  </button>
                 </li>
               ))}
             </ul>
           )}
         </div>
-        <div className="mode-row" role="radiogroup" aria-label="Travel mode">
+        <div className="seg" role="radiogroup" aria-label="Travel mode">
           {Object.entries(TRAVEL_MODES).map(([key, m]) => (
             <button
               key={key}
               role="radio"
               aria-checked={mode === key}
-              className={`chip ${mode === key ? 'chip-on' : ''}`}
+              className={mode === key ? 'active' : ''}
               onClick={() => setMode(key)}
-              title={m.label}
             >
-              {m.emoji} {m.label}
+              {m.label}
             </button>
           ))}
         </div>
         {error && <p className="form-error">{error}</p>}
         <button className="btn primary" onClick={() => addFriend()}>
-          + Add to squad
+          Add player
         </button>
       </div>
 
@@ -97,25 +105,23 @@ export function SquadBuilder() {
         <ul className="squad-list">
           {state.squad.map((f) => (
             <li key={f.id} className="squad-member">
-              <span className="squad-name">{f.name}</span>
-              <span className="squad-area">{f.areaName}</span>
+              <div className="squad-member-info">
+                <span className="squad-name">{f.name}</span>
+                <span className="squad-area">{f.areaName}</span>
+              </div>
               <select
-                className="squad-mode"
+                className="select"
                 value={f.mode}
                 onChange={(e) => actions.setFriendMode(f.id, e.target.value)}
                 aria-label={`${f.name}'s travel mode`}
               >
                 {Object.entries(TRAVEL_MODES).map(([key, m]) => (
                   <option key={key} value={key}>
-                    {m.emoji} {m.label}
+                    {m.label}
                   </option>
                 ))}
               </select>
-              <button
-                className="icon-btn"
-                onClick={() => actions.removeFriend(f.id)}
-                aria-label={`Remove ${f.name}`}
-              >
+              <button className="icon-btn" onClick={() => actions.removeFriend(f.id)} aria-label={`Remove ${f.name}`}>
                 ✕
               </button>
             </li>
@@ -124,23 +130,19 @@ export function SquadBuilder() {
       )}
 
       {state.user && (
-        <div className="squad-save-row">
-          <button className="btn ghost small" onClick={actions.saveSquad} disabled={!state.squad.length}>
-            Save squad
+        <div className="row">
+          <button className="btn ghost sm" onClick={actions.saveSquad} disabled={!state.squad.length}>
+            Save group
           </button>
-          <button
-            className="btn ghost small"
-            onClick={actions.loadSquad}
-            disabled={!state.user.squads?.[0]?.length}
-          >
-            Load saved squad
+          <button className="btn ghost sm" onClick={actions.loadSquad} disabled={!state.user.squads?.[0]?.length}>
+            Load saved group
           </button>
         </div>
       )}
 
       {state.squad.length === 0 && (
-        <p className="squad-empty">
-          No squad yet — pitches are ranked on price and quality alone until you add players.
+        <p className="hint dim">
+          No players yet — until you add some, pitches are ranked on price and facilities alone.
         </p>
       )}
     </section>

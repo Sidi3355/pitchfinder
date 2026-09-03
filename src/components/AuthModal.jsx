@@ -28,19 +28,27 @@ export function AuthModal() {
   }
 
   return (
-    <div className="modal-scrim" onClick={actions.closeAuth}>
-      <div className="modal auth-modal" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={isRegister ? 'Create account' : 'Log in'}>
-        <header className="auth-head">
-          <h2>{isRegister ? 'Join the squad' : 'Welcome back'}</h2>
-          <button className="icon-btn big" onClick={actions.closeAuth} aria-label="Close">✕</button>
+    <div className="scrim" onClick={actions.closeAuth}>
+      <div
+        className="modal"
+        onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-label={isRegister ? 'Create profile' : 'Sign in'}
+      >
+        <header className="row between">
+          <h2 className="modal-title">{isRegister ? 'Create your profile' : 'Sign in'}</h2>
+          <button className="icon-btn" onClick={actions.closeAuth} aria-label="Close">
+            ✕
+          </button>
         </header>
-        <p className="auth-sub">
+        <p className="hint">
           {isRegister
-            ? 'Save pitches, keep your squad, and plan kickabouts.'
-            : 'Log in to your TopBins account.'}
+            ? 'Save pitches, keep your group and organise games.'
+            : 'Welcome back.'}
         </p>
 
-        <form className="auth-form" onSubmit={submit}>
+        <form className="stack" onSubmit={submit}>
           <input
             className="input"
             placeholder="Username"
@@ -52,7 +60,7 @@ export function AuthModal() {
           {isRegister && (
             <input
               className="input"
-              placeholder="Display name (what your mates call you)"
+              placeholder="Display name"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
               maxLength={30}
@@ -68,20 +76,17 @@ export function AuthModal() {
           />
           {error && <p className="form-error">{error}</p>}
           <button className="btn primary" type="submit" disabled={busy}>
-            {busy ? '…' : isRegister ? 'Create account' : 'Log in'}
+            {busy ? '…' : isRegister ? 'Create profile' : 'Sign in'}
           </button>
         </form>
 
-        <button
-          className="auth-switch"
-          onClick={() => actions.openAuth(isRegister ? 'login' : 'register')}
-        >
-          {isRegister ? 'Already got an account? Log in' : 'New here? Create an account'}
+        <button className="link-btn" onClick={() => actions.openAuth(isRegister ? 'login' : 'register')}>
+          {isRegister ? 'Already have a profile? Sign in' : 'New here? Create a profile'}
         </button>
 
-        <p className="auth-note">
-          Demo build: accounts live only in this browser. A real backend slots in when the app
-          moves to its own repo.
+        <p className="hint dim">
+          Profiles are currently stored in this browser only. Cloud accounts with sync are on the
+          roadmap.
         </p>
       </div>
     </div>

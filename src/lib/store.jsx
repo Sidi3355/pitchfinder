@@ -1,14 +1,17 @@
-// App-wide state: session, squad (friends + locations), filters, results,
-// saved pitches and kickabouts. One React context, no extra dependencies.
+// App-wide state: pitch dataset, session, squad, filters, results, saved
+// pitches and planned games. One React context, no extra dependencies.
 
 import React, { createContext, useContext, useEffect, useMemo, useReducer } from 'react'
 import * as auth from './auth.js'
+import { loadPitchData } from './data.js'
 import { DEFAULT_FILTERS, rankPitches } from './score.js'
 
 const StoreContext = createContext(null)
 
 const initialState = {
-  view: 'home', // 'home' | 'find' | 'game'
+  view: 'find', // 'find' | 'about' | 'profile'
+  data: null,   // { generatedAt, count, byType, pitches } once loaded
+  dataError: null,
   user: null,
   squad: [],    // [{ id, name, areaName, lat, lng, mode }]
   filters: { ...DEFAULT_FILTERS },
@@ -19,7 +22,11 @@ const initialState = {
 function reducer(state, action) {
   switch (action.type) {
     case 'view':
-      return { ...state, view: action.view, selectedPitchId: null }
+      return { ...state, view: action.view }
+    case 'data':
+      return { ...state, data: action.data, dataError: null }
+    case 'dataError':
+      return { ...state, dataError: action.message }
     case 'user':
       return { ...state, user: action.user, authModal: null }
     case 'authModal':
@@ -54,10 +61,32 @@ export function StoreProvider({ children }) {
     user: auth.currentUser(),
   }))
 
+  useEffect(() => {
+    let cancelled = false
+    loadPitchData()
+      .then((data) => !cancelled && dispatch({ type: 'data', data }))
+      .catch((err) => !cancelled && dispatch({ type: 'dataError', message: err.message }))
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
   const results = useMemo(
-    () => rankPitches(state.squad, state.filters),
-    [state.squad, state.filters],
+    () => (state.data ? rankPitches(state.data.pitches, state.squad, state.filters) : []),
+    [state.data, state.squad, state.filters],
   )
+
+  const resultById = useMemo(() => {
+    const m = new Map()
+    for (const r of results) m.set(r.pitch.id, r)
+    return m
+  }, [results])
+
+  const pitchById = useMemo(() => {
+    const m = new Map()
+    if (state.data) for (const p of state.data.pitches) m.set(p.id, p)
+    return m
+  }, [state.data])
 
   const actions = useMemo(
     () => ({
@@ -92,42 +121,36 @@ export function StoreProvider({ children }) {
         const saved = user.savedPitchIds.includes(pitchId)
           ? user.savedPitchIds.filter((id) => id !== pitchId)
           : [...user.savedPitchIds, pitchId]
-        const updated = auth.updateUser(user.username, { savedPitchIds: saved })
-        dispatch({ type: 'user', user: updated })
+        dispatch({ type: 'user', user: auth.updateUser(user.username, { savedPitchIds: saved }) })
       },
 
-      createKickabout(kickabout) {
+      createGame(game) {
         const { user } = state
         if (!user) {
           dispatch({ type: 'authModal', mode: 'login' })
           return
         }
-        const entry = {
-          id: `k${Date.now()}`,
-          createdAt: Date.now(),
-          rsvps: {}, // name -> 'in' | 'out' | 'maybe'
-          ...kickabout,
-        }
-        const updated = auth.updateUser(user.username, {
-          kickabouts: [...user.kickabouts, entry],
+        const entry = { id: `k${Date.now()}`, createdAt: Date.now(), rsvps: {}, ...game }
+        dispatch({
+          type: 'user',
+          user: auth.updateUser(user.username, { kickabouts: [...user.kickabouts, entry] }),
         })
-        dispatch({ type: 'user', user: updated })
         return entry
       },
 
-      setRsvp(kickaboutId, name, status) {
+      setRsvp(gameId, name, status) {
         const { user } = state
         if (!user) return
         const kickabouts = user.kickabouts.map((k) =>
-          k.id === kickaboutId ? { ...k, rsvps: { ...k.rsvps, [name]: status } } : k,
+          k.id === gameId ? { ...k, rsvps: { ...k.rsvps, [name]: status } } : k,
         )
         dispatch({ type: 'user', user: auth.updateUser(user.username, { kickabouts }) })
       },
 
-      deleteKickabout(kickaboutId) {
+      deleteGame(gameId) {
         const { user } = state
         if (!user) return
-        const kickabouts = user.kickabouts.filter((k) => k.id !== kickaboutId)
+        const kickabouts = user.kickabouts.filter((k) => k.id !== gameId)
         dispatch({ type: 'user', user: auth.updateUser(user.username, { kickabouts }) })
       },
 
@@ -152,7 +175,10 @@ export function StoreProvider({ children }) {
     return () => window.removeEventListener('storage', onStorage)
   }, [])
 
-  const value = useMemo(() => ({ state, results, actions }), [state, results, actions])
+  const value = useMemo(
+    () => ({ state, results, resultById, pitchById, actions }),
+    [state, results, resultById, pitchById, actions],
+  )
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>
 }
 
