@@ -1,32 +1,24 @@
-# ⚽ TopBins — London pitch finder
+# PitchFinder
 
-Find the perfect football pitch for your whole friend group, across London.
-Every Powerleague, Goals, park pitch, cage and leisure-centre astro in the
-directory gets a **Squad Score** — ranked by travel time for *everyone*,
-price per head, and how you like to play.
+**Every football pitch in London, on one map.** Live at
+https://pitchfinder-pied.vercel.app/
 
-## Features
+PitchFinder maps 3,000+ places to play across Greater London — commercial
+five-a-side centres, bookable astro, park grass and free cages — and ranks
+them for a whole group of friends by travel time, price and facilities.
 
-- **Full pitch directory, split by type** — Powerleague, Goals, park pitches,
-  free cages/MUGAs, leisure centres and community hubs, each with surface,
-  formats (5s/7s/11s), price, floodlights and bounded (caged) vs unbounded (open).
-- **Squad builder** — add each friend's home area (100+ London neighbourhoods)
-  and how they travel (walk / cycle / tube / drive). ETAs are estimated per
-  person, per pitch.
-- **The vibe filters** — pitch types, caged vs open, game format, budget per
-  head, max travel time, floodlights, free-only.
-- **Best-pitch ranking** — the Squad Score balances average ETA, worst ETA
-  (nobody stranded), fairness of journeys, price and pitch quality, and
-  explains each pick ("everyone inside 20 min · free to play · floodlit").
-- **A WebGL London** — three.js stadium-night hero (striped pitch shader,
-  floodlights, floating ball, haze particles), an ambient shader backdrop,
-  and a stylised tile-free SVG map of London (real coordinates, the Thames,
-  drag to pan / zoom).
-- **Accounts** — register/log in, save pitches, save your squad, and plan
-  **kickabouts**: pick a pitch, date and kick-off time, then track RSVPs
-  (in / maybe / out) per player.
+## How it works
 
-**Live site:** https://sidi3355.github.io/pitchfinder/
+| Layer | What it does |
+| --- | --- |
+| **Data pipeline** (`scripts/build-data.mjs`) | Queries the Overpass API for every `leisure=pitch` (football/multi-use) in Greater London, classifies each one (commercial / astro / park / cage), excludes private and school grounds, collapses per-operator pitch clusters into venues, merges the curated bookable-venue list and any scraped prices, and writes `public/data/pitches.json`. |
+| **Price refresh** (`scripts/scrape-prices.mjs`) | Best-effort re-check of curated venues' published prices from their public pages, honouring robots.txt. Never a hard dependency — when a venue prices dynamically the app says "price on booking" instead of guessing. |
+| **CI** (`.github/workflows/data-refresh.yml`) | Runs both scripts weekly (and on demand) and commits the dataset; Vercel redeploys automatically on push. |
+| **Frontend** (Vite + React) | MapLibre GL (WebGL) over OpenFreeMap vector tiles with clustered, type-colored markers; group builder with per-player travel-time estimates; fit ranking with plain-language reasons; filters; browser-local profiles with saved pitches and planned games (RSVPs). |
+
+Pitch data © [OpenStreetMap](https://www.openstreetmap.org/copyright)
+contributors (ODbL) — attribution is rendered in the app. Fixing a pitch on
+OpenStreetMap fixes it here after the next refresh.
 
 ## Run it
 
@@ -36,27 +28,25 @@ npm run dev      # http://localhost:5173
 npm run build    # production build in dist/
 ```
 
+Rebuild the dataset locally (needs open internet):
+
+```bash
+node scripts/scrape-prices.mjs   # optional, best-effort
+node scripts/build-data.mjs      # writes public/data/pitches.json
+```
+
 ## Deployment
 
-Every push to `main` builds the site and publishes it to GitHub Pages via
-`.github/workflows/deploy.yml`. No secrets or configuration needed — the
-app is fully static.
+Vercel builds and deploys `main` on every push — no configuration or secrets
+required; the site is fully static. The weekly data-refresh workflow's commit
+triggers a redeploy, so pitch data stays current without touching the app.
 
-## Swap points for going production
+## Honest limitations / roadmap
 
-Everything demo-grade is isolated behind one module each:
-
-| Concern | Module | Swap for |
-| --- | --- | --- |
-| Pitch data | `src/data/pitches.js` | Live venue DB / APIs. Names + coordinates are real venues; prices & amenities are indicative samples. |
-| Geocoding | `src/data/areas.js` | A real geocoder, e.g. postcodes.io (free, keyless). |
-| ETAs | `src/lib/geo.js` (`estimateEta`) | TfL Journey Planner API (free key) — same signature, real door-to-door times. |
-| Accounts | `src/lib/auth.js` | Real auth backend (Supabase / Firebase / your API). Currently localStorage + salted SHA-256, browser-only, demo-grade. |
-
-The rest of the app only consumes those modules' exports, so each swap is
-contained.
-
-## Stack
-
-Vite · React 18 · three.js · no CSS framework (hand-rolled stadium-night
-design system in `src/styles/global.css`).
+- **Travel times** are straight-line estimates with mode-typical speeds.
+  Swap `estimateEta` in `src/lib/geo.js` for the TfL Journey Planner API
+  (free key) for door-to-door times.
+- **Live slot availability** isn't public API territory for Powerleague/Goals;
+  the app deep-links to each venue's booking page instead.
+- **Profiles** are browser-local (`src/lib/auth.js` is the single swap point
+  for a real auth backend such as Supabase).
