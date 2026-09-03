@@ -5,7 +5,13 @@
 
 import React, { useEffect, useRef } from 'react'
 import * as maplibregl from 'maplibre-gl'
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
 import 'maplibre-gl/dist/maplibre-gl.css'
+
+// MapLibre v6 resolves its worker relative to the module URL, which breaks
+// once Vite bundles everything into one chunk — point it at the worker Vite
+// emits instead.
+maplibregl.setWorkerUrl(maplibreWorkerUrl)
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { centroid } from '../lib/geo.js'
@@ -73,20 +79,26 @@ export function MapView() {
       attributionControl: { compact: true },
     })
     mapRef.current = map
+    if (typeof window !== 'undefined') window.__pfMap = map // debugging handle
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
     map.addControl(
       new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true } }),
       'top-right',
     )
 
+    // If the vector style can't be fetched (offline, blocked network), swap in
+    // a plain background so the pitch layers still render and work.
     let fellBack = false
-    map.on('error', (e) => {
-      // Style fetch failed (offline / blocked): fall back so markers still work.
-      if (!fellBack && !readyRef.current && /style|Failed to fetch|NetworkError/i.test(String(e?.error?.message || ''))) {
+    const fallBack = () => {
+      if (!fellBack && !readyRef.current) {
         fellBack = true
         map.setStyle(FALLBACK_STYLE)
       }
+    }
+    map.on('error', () => {
+      if (!readyRef.current) fallBack()
     })
+    const fallbackTimer = setTimeout(fallBack, 8000)
 
     const addLayers = () => {
       if (map.getSource('pitches')) return
@@ -96,7 +108,6 @@ export function MapView() {
         cluster: true,
         clusterRadius: 46,
         clusterMaxZoom: 13,
-        promoteId: 'id',
       })
       map.addLayer({
         id: 'clusters',
@@ -171,6 +182,7 @@ export function MapView() {
     map.on('style.load', addLayers)
 
     return () => {
+      clearTimeout(fallbackTimer)
       readyRef.current = false
       popupRef.current?.remove()
       map.remove()
