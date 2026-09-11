@@ -9,7 +9,7 @@ import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&ur
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // MapLibre v6 resolves its worker relative to the module URL, which breaks
-// once Vite bundles everything into one chunk — point it at the worker Vite
+// once Vite bundles everything into one chunk, point it at the worker Vite
 // emits instead.
 maplibregl.setWorkerUrl(maplibreWorkerUrl)
 import { useStore } from '../lib/store.jsx'
@@ -20,6 +20,9 @@ import { costOf } from '../lib/data.js'
 const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron'
 const LONDON_CENTER = [-0.1, 51.5072]
 
+const isDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches
+// The fallback (no tiles) is inverted by the dark-mode canvas filter, so it
+// stays light here and reads dark on screen.
 const FALLBACK_STYLE = {
   version: 8,
   sources: {},
@@ -57,7 +60,7 @@ function formatPrice(pitch) {
   return cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hr`
 }
 
-export function MapView() {
+export function MapView({ bottomPadding = 0 }) {
   const { state, results, actions } = useStore()
   const containerRef = useRef(null)
   const mapRef = useRef(null)
@@ -65,8 +68,6 @@ export function MapView() {
   const dataRef = useRef(toGeoJSON([]))
   const squadMarkersRef = useRef([])
   const popupRef = useRef(null)
-
-  dataRef.current = toGeoJSON(results)
 
   // ── Init ──
   useEffect(() => {
@@ -76,11 +77,15 @@ export function MapView() {
       center: LONDON_CENTER,
       zoom: 9.7,
       minZoom: 8,
-      attributionControl: { compact: true },
+      attributionControl: {
+        compact: true,
+        customAttribution: 'Pitch data © OpenStreetMap contributors',
+      },
     })
     mapRef.current = map
-    if (typeof window !== 'undefined') window.__pfMap = map // debugging handle
-    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
+    if (!window.matchMedia('(pointer: coarse)').matches) {
+      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
+    }
     map.addControl(
       new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true } }),
       'top-right',
@@ -92,7 +97,7 @@ export function MapView() {
     const fallBack = () => {
       if (!fellBack && !readyRef.current) {
         fellBack = true
-        map.setStyle(FALLBACK_STYLE)
+        map.setStyle(FALLBACK_STYLE, { diff: false })
       }
     }
     map.on('error', () => {
@@ -151,7 +156,9 @@ export function MapView() {
 
       map.on('click', 'clusters', async (e) => {
         const feature = e.features[0]
-        const zoom = await map.getSource('pitches').getClusterExpansionZoom(feature.properties.cluster_id)
+        const zoom = await map
+          .getSource('pitches')
+          .getClusterExpansionZoom(feature.properties.cluster_id)
         map.easeTo({ center: feature.geometry.coordinates, zoom: zoom + 0.3 })
       })
       map.on('click', 'pitch-points', (e) => {
@@ -164,7 +171,11 @@ export function MapView() {
       map.on('mouseenter', 'pitch-points', (e) => {
         const p = e.features[0].properties
         popupRef.current?.remove()
-        popupRef.current = new maplibregl.Popup({ closeButton: false, offset: 10, className: 'map-popup' })
+        popupRef.current = new maplibregl.Popup({
+          closeButton: false,
+          offset: 10,
+          className: 'map-popup',
+        })
           .setLngLat(e.features[0].geometry.coordinates)
           .setHTML(
             `<strong>${escapeHtml(p.name)}</strong><span>${escapeHtml(
@@ -194,6 +205,7 @@ export function MapView() {
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
+    dataRef.current = toGeoJSON(results)
     const apply = () => map.getSource('pitches')?.setData(dataRef.current)
     if (readyRef.current) apply()
     else map.once('style.load', apply)
@@ -217,6 +229,20 @@ export function MapView() {
       )
     }
 
+    // Frame the group so the map shows where everyone is.
+    if (state.squad.length) {
+      const lats = state.squad.map((f) => f.lat)
+      const lngs = state.squad.map((f) => f.lng)
+      const pad = 0.012
+      map.fitBounds(
+        [
+          [Math.min(...lngs) - pad, Math.min(...lats) - pad],
+          [Math.max(...lngs) + pad, Math.max(...lats) + pad],
+        ],
+        { maxZoom: 13, duration: 500 },
+      )
+    }
+
     if (state.squad.length > 1) {
       const c = centroid(state.squad)
       const el = document.createElement('div')
@@ -228,18 +254,38 @@ export function MapView() {
     }
   }, [state.squad])
 
+  // ── Keep the visible part of the map above the sheet ──
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    const bottom = Math.round((bottomPadding / 100) * map.getContainer().clientHeight)
+    map.setPadding({ top: 72, bottom, left: 0, right: 0 })
+  }, [bottomPadding])
+
   // ── Fly to selection ──
   useEffect(() => {
     const map = mapRef.current
     if (!map || !state.selectedPitchId) return
     const row = results.find((r) => r.pitch.id === state.selectedPitchId)
     if (row) {
-      map.easeTo({ center: [row.pitch.lng, row.pitch.lat], zoom: Math.max(map.getZoom(), 13.5), duration: 600 })
+      map.easeTo({
+        center: [row.pitch.lng, row.pitch.lat],
+        zoom: Math.max(map.getZoom(), 13.5),
+        duration: 600,
+      })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.selectedPitchId])
 
-  return <div ref={containerRef} className="map-container" role="application" aria-label="Map of London football pitches" />
+  return (
+    <div
+      ref={containerRef}
+      className="map-container map-dark"
+      role="application"
+      aria-label="Map of London football pitches"
+      data-scheme={isDark() ? 'dark' : 'light'}
+    />
+  )
 }
 
 function escapeHtml(s) {

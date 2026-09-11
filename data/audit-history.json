@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-09-11",
+    "datasetGeneratedAt": "2026-09-11T22:15:49.066Z",
+    "pitches": 1586,
+    "unnamed": 0,
+    "noSurface": 744,
+    "noLit": 1051,
+    "noPostcode": 125,
+    "duplicates": 0,
+    "curated": 26,
+    "unverifiedCuratedFacts": 152,
+    "stalePrices": 26,
+    "deadBookingUrls": 22,
+    "coordinateMismatches": 0,
+    "offline": false
+  }
+]

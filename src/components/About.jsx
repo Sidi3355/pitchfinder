@@ -1,66 +1,59 @@
 import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES } from '../data/types.js'
+import { formatDate } from '../lib/format.js'
 
 export function About() {
-  const { state, actions } = useStore()
+  const { state } = useStore()
   const data = state.data
 
   return (
     <div className="about">
-      <section className="about-hero">
-        <h1>Every football pitch in London, on one map.</h1>
-        <p>
-          PitchFinder maps {data ? data.count.toLocaleString('en-GB') : 'thousands of'} places to
-          play across Greater London — commercial five-a-side centres, bookable astro, park grass
-          and free cages — and ranks them for your whole group by travel time, price and
-          facilities.
-        </p>
-        <button className="btn primary" onClick={() => actions.go('find')}>
-          Open the map
-        </button>
-      </section>
+      <h1>About PitchFinder</h1>
+      <p>
+        PitchFinder helps a group of friends pick where to play football in London. Add where
+        everyone is coming from and it ranks {data ? data.count.toLocaleString('en-GB') : 'the'}{' '}
+        places to play by journey time, price and facilities, then gives you one link for the group
+        chat. Anyone with the link sees the same list, and a game link lets everyone say in or out.
+      </p>
 
-      <section className="about-grid">
+      <h2>What counts as a pitch</h2>
+      <ul className="about-list">
         {Object.entries(PITCH_TYPES).map(([key, t]) => (
-          <button
-            key={key}
-            className="about-type"
-            onClick={() => {
-              actions.setFilters({ types: [key] })
-              actions.go('find')
-            }}
-          >
-            <span className="about-type-head">
-              <span className="type-dot lg" style={{ background: t.color }} />
-              <strong>{t.label}</strong>
-              {data?.byType?.[key] != null && (
-                <span className="about-count">{data.byType[key].toLocaleString('en-GB')}</span>
-              )}
-            </span>
-            <span className="about-blurb">{t.blurb}</span>
-          </button>
+          <li key={key}>
+            <span className="type-dot" style={{ background: t.color }} />
+            <strong>{t.label}</strong>
+            {data?.byType?.[key] != null && (
+              <span className="dim"> ({data.byType[key].toLocaleString('en-GB')})</span>
+            )}
+            : {t.blurb}
+          </li>
         ))}
-      </section>
+      </ul>
 
-      <section className="about-notes">
-        <h2>Where the data comes from</h2>
-        <p>
-          Pitch locations and attributes come from{' '}
-          <a href="https://www.openstreetmap.org/about" target="_blank" rel="noopener noreferrer">
-            OpenStreetMap
-          </a>{' '}
-          (© OpenStreetMap contributors, ODbL) and are refreshed automatically every week.
-          Bookable venues carry prices from their operators' published rates, re-checked by an
-          automated job; where a venue sets prices dynamically we say "price on booking" rather
-          than guessing. Travel times are estimates from distance and typical speeds — always
-          confirm details with the venue before travelling.
-        </p>
-        <p>
-          Spotted a missing or misplaced pitch? Fix it on OpenStreetMap and it will appear here
-          after the next refresh — that improves the map for everyone, not just this app.
-        </p>
-      </section>
+      <h2>Where the data comes from</h2>
+      <p>
+        Pitch locations and attributes come from{' '}
+        <a href="https://www.openstreetmap.org/about" target="_blank" rel="noopener noreferrer">
+          OpenStreetMap
+        </a>{' '}
+        (© OpenStreetMap contributors, ODbL), refreshed every week
+        {data?.generatedAt ? `, last on ${formatDate(data.generatedAt)}` : ''}. Pitches with no name
+        on the map are named after the park, playing field or road they sit on; each pitch page says
+        when that is the case. Nearest postcodes come from postcodes.io and road names from
+        Nominatim. Bookable venues carry the operator&rsquo;s published price with a link to where
+        it was seen; when a venue sets prices at booking we say so rather than guess.
+      </p>
+      <p>
+        Journey times are estimates from distance and typical speeds, and are labelled as such.
+        Check a journey planner before you set off.
+      </p>
+
+      <h2>Something wrong?</h2>
+      <p>
+        Every pitch page has a &ldquo;Report a problem&rdquo; button. Fixing a pitch on
+        OpenStreetMap also fixes it here after the next refresh, and improves the map for everyone.
+      </p>
     </div>
   )
 }

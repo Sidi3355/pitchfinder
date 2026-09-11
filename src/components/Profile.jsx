@@ -1,113 +1,229 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useStore } from '../lib/store.jsx'
-import { pitchName } from '../data/types.js'
-import { PitchCard } from './PitchCard.jsx'
+import * as sb from '../lib/supabase.js'
+import { formatWhen } from '../lib/format.js'
 import { costOf } from '../lib/data.js'
-
-const RSVP_OPTIONS = [
-  ['in', 'In'],
-  ['maybe', 'Maybe'],
-  ['out', 'Out'],
-]
+import { PitchCard } from './PitchCard.jsx'
+import { Link } from './Link.jsx'
 
 export function Profile() {
-  const { state, results, resultById, pitchById, actions } = useStore()
-  const { user } = state
+  const { state, actions, resultById, pitchById } = useStore()
+  const { user, authStatus, authAvailable } = state
 
-  if (!user) {
+  if (!authAvailable) {
     return (
-      <div className="signedout">
-        <h2>Your games, in one place</h2>
-        <p>Create a profile to save pitches, keep your group, and organise games with RSVPs.</p>
-        <div className="row center">
-          <button className="btn primary" onClick={() => actions.openAuth('register')}>
-            Sign up
-          </button>
-          <button className="btn ghost" onClick={() => actions.openAuth('login')}>
-            Sign in
-          </button>
-        </div>
-      </div>
+      <section className="empty-page" role="status">
+        <p className="empty-kicker">Sign in unavailable</p>
+        <h1 className="empty-title">Accounts are not available on this build.</h1>
+        <p className="empty-body">
+          The map, ranking, filters and pitch pages all work without one.
+        </p>
+        <Link className="btn primary" href={actions.hrefFor('/')}>
+          Open the map
+        </Link>
+      </section>
     )
   }
 
-  const savedRows = user.savedPitchIds
+  if (authStatus === 'checking') {
+    return (
+      <section className="page-narrow" aria-busy="true" aria-label="Checking your session">
+        <div className="skeleton-line w-40" />
+        <div className="skeleton-card" />
+      </section>
+    )
+  }
+
+  if (!user) {
+    return (
+      <section className="empty-page">
+        <p className="empty-kicker">Your games</p>
+        <h1 className="empty-title">
+          Sign in to save pitches, keep your group and organise games.
+        </h1>
+        <p className="empty-body">A sign-in link by email or your Google account. No password.</p>
+        <button className="btn primary" onClick={() => actions.openAuth('generic')}>
+          Sign in
+        </button>
+      </section>
+    )
+  }
+
+  return <SignedInProfile user={user} resultById={resultById} pitchById={pitchById} />
+}
+
+function SignedInProfile({ user, resultById, pitchById }) {
+  const { state, actions } = useStore()
+  const [games, setGames] = useState(null)
+  const [groups, setGroups] = useState(null)
+  const [error, setError] = useState('')
+  const [editingName, setEditingName] = useState(false)
+  const [name, setName] = useState(user.displayName)
+
+  useEffect(() => {
+    let cancelled = false
+    Promise.all([sb.myGames(), sb.listGroups()])
+      .then(([g, gr]) => {
+        if (cancelled) return
+        // Games within the last three hours still count as upcoming (in play).
+        const cutoff = Date.now() - 3 * 3600e3
+        setGames({
+          upcoming: g.filter((x) => new Date(x.starts_at).getTime() >= cutoff),
+          past: g.filter((x) => new Date(x.starts_at).getTime() < cutoff),
+        })
+        setGroups(gr)
+      })
+      .catch((err) => !cancelled && setError(err.message))
+    return () => {
+      cancelled = true
+    }
+  }, [user.id])
+
+  const savedRows = [...state.savedIds]
     .map((id) => resultById.get(id) || fallbackRow(pitchById.get(id)))
     .filter(Boolean)
 
-  const games = [...user.kickabouts].sort((a, b) =>
-    `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`),
-  )
+  async function saveName(e) {
+    e.preventDefault()
+    const value = name.trim().slice(0, 40)
+    if (!value) return
+    try {
+      await actions.updateDisplayName(value)
+      setEditingName(false)
+    } catch (err) {
+      setError(err.message)
+    }
+  }
+
+  async function removeGroup(id) {
+    try {
+      await sb.deleteGroup(id)
+      setGroups((list) => list.filter((g) => g.id !== id))
+    } catch (err) {
+      setError(err.message)
+    }
+  }
+
+  const upcoming = games?.upcoming || []
+  const past = games?.past || []
 
   return (
     <div className="profile">
-      <header className="profile-head">
-        <h1>{user.displayName}</h1>
-        <p className="dim">
-          @{user.username} · {user.savedPitchIds.length} saved · {games.length} game
-          {games.length === 1 ? '' : 's'}
-        </p>
+      <header className="profile-head row between">
+        <div>
+          {editingName ? (
+            <form className="row" onSubmit={saveName}>
+              <input
+                className="input"
+                value={name}
+                maxLength={40}
+                onChange={(e) => setName(e.target.value)}
+                aria-label="Display name"
+              />
+              <button className="btn primary sm" type="submit">
+                Save
+              </button>
+              <button className="btn ghost sm" type="button" onClick={() => setEditingName(false)}>
+                Cancel
+              </button>
+            </form>
+          ) : (
+            <>
+              <h1>{user.displayName}</h1>
+              <p className="dim">
+                {user.email}{' '}
+                <button className="link-btn" onClick={() => setEditingName(true)}>
+                  Change name
+                </button>
+              </p>
+            </>
+          )}
+        </div>
+        <button className="btn ghost sm" onClick={actions.signOut}>
+          Sign out
+        </button>
       </header>
 
-      <section className="panel">
-        <h2 className="panel-title">Upcoming games</h2>
-        {games.length === 0 ? (
+      {error && (
+        <div className="notice error" role="alert">
+          {error}
+        </div>
+      )}
+
+      <section className="panel" aria-labelledby="games-title">
+        <h2 id="games-title" className="panel-title">
+          Your games
+        </h2>
+        {games === null ? (
+          <p className="hint" aria-busy="true">
+            Loading…
+          </p>
+        ) : upcoming.length === 0 ? (
           <p className="hint">
-            Nothing planned. Open a pitch on the map and choose "Plan a game" to organise one.
+            Nothing planned. Open a pitch and choose Plan a game to get a link for the group.
           </p>
         ) : (
           <ul className="game-list">
-            {games.map((k) => {
-              const pitch = pitchById.get(k.pitchId)
-              const names = k.squad?.length ? k.squad : [user.displayName]
-              const inCount = names.filter((n) => k.rsvps[n] === 'in').length
-              return (
-                <li key={k.id} className="game">
-                  <div className="game-when">
-                    <strong>{formatDate(k.date)}</strong>
-                    <span>{k.time}</span>
-                  </div>
-                  <div className="game-info">
-                    <button className="card-title" onClick={() => actions.selectPitch(k.pitchId)}>
-                      {pitch ? pitchName(pitch) : k.pitchName}
-                    </button>
-                    {k.notes && <p className="game-notes">{k.notes}</p>}
-                    <div className="rsvp-grid">
-                      {names.map((n) => (
-                        <div key={n} className="rsvp-row">
-                          <span className="rsvp-name">{n}</span>
-                          <div className="seg sm">
-                            {RSVP_OPTIONS.map(([value, label]) => (
-                              <button
-                                key={value}
-                                className={k.rsvps[n] === value ? 'active' : ''}
-                                onClick={() => actions.setRsvp(k.id, n, value)}
-                              >
-                                {label}
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="game-count">
-                      {inCount}/{names.length} confirmed
-                    </p>
-                  </div>
-                  <button className="icon-btn" onClick={() => actions.deleteGame(k.id)} aria-label="Delete game">
-                    ✕
-                  </button>
-                </li>
-              )
-            })}
+            {upcoming.map((g) => (
+              <GameRow key={g.id} game={g} />
+            ))}
+          </ul>
+        )}
+        {past.length > 0 && (
+          <details className="past-games">
+            <summary>{past.length} past</summary>
+            <ul className="game-list">
+              {past.map((g) => (
+                <GameRow key={g.id} game={g} />
+              ))}
+            </ul>
+          </details>
+        )}
+      </section>
+
+      <section className="panel" aria-labelledby="groups-title">
+        <h2 id="groups-title" className="panel-title">
+          Saved groups
+        </h2>
+        {groups === null ? (
+          <p className="hint">Loading…</p>
+        ) : groups.length === 0 ? (
+          <p className="hint">
+            Build a group on the map and choose Save group to keep it for next time.
+          </p>
+        ) : (
+          <ul className="group-list">
+            {groups.map((g) => (
+              <li key={g.id} className="group-row">
+                <div className="group-info">
+                  <strong>{g.name}</strong>
+                  <span className="dim">
+                    {g.members.length} {g.members.length === 1 ? 'player' : 'players'}:{' '}
+                    {g.members.map((m) => m.name).join(', ')}
+                  </span>
+                </div>
+                <Link className="btn ghost sm" href={`/?g=${encodeGroupForHref(g.members)}`}>
+                  Use
+                </Link>
+                <button
+                  className="icon-btn"
+                  onClick={() => removeGroup(g.id)}
+                  aria-label={`Delete group ${g.name}`}
+                >
+                  ✕
+                </button>
+              </li>
+            ))}
           </ul>
         )}
       </section>
 
-      <section className="panel">
-        <h2 className="panel-title">Saved pitches</h2>
+      <section className="panel" aria-labelledby="saved-title">
+        <h2 id="saved-title" className="panel-title">
+          Saved pitches
+        </h2>
         {savedRows.length === 0 ? (
-          <p className="hint">Tap the heart on any pitch to keep it here.</p>
+          <p className="hint">Choose Save on any pitch to keep it here.</p>
         ) : (
           <div className="stack">
             {savedRows.map((row) => (
@@ -116,15 +232,32 @@ export function Profile() {
           </div>
         )}
       </section>
-
-      <p className="hint dim">
-        Profiles are stored in this browser only for now — clearing site data removes them.
-      </p>
     </div>
   )
 }
 
-// Saved pitches can be filtered out of current results — build a bare row.
+function GameRow({ game }) {
+  const cancelled = game.status === 'cancelled'
+  return (
+    <li className="game">
+      <div className="game-when">
+        <strong>{formatWhen(game.starts_at)}</strong>
+        {cancelled && <span className="dim">Cancelled</span>}
+      </div>
+      <div className="game-info">
+        <Link className="card-title" href={`/g/${game.share_slug}`}>
+          {game.pitch_name}
+        </Link>
+        {game.notes && <p className="game-notes">{game.notes}</p>}
+        <p className="game-count">
+          {game.in_count} in · {game.maybe_count} maybe · {game.out_count} out
+        </p>
+      </div>
+    </li>
+  )
+}
+
+// Saved pitches can be filtered out of current results: build a bare row.
 function fallbackRow(pitch) {
   if (!pitch) return null
   return {
@@ -135,19 +268,12 @@ function fallbackRow(pitch) {
     spreadEta: 0,
     cost: costOf(pitch),
     pricePerHead: null,
-    score: 0.5,
+    score: 0,
     reasons: [],
   }
 }
 
-function formatDate(iso) {
-  try {
-    return new Date(`${iso}T12:00:00`).toLocaleDateString('en-GB', {
-      weekday: 'short',
-      day: 'numeric',
-      month: 'short',
-    })
-  } catch {
-    return iso
-  }
+import { encodeGroup } from '../lib/url-state.js'
+function encodeGroupForHref(members) {
+  return encodeGroup(members)
 }

@@ -1,4 +1,4 @@
-// Pitch taxonomy. Colors are used for map markers and type indicators —
+// Pitch taxonomy. Colors are used for map markers and type indicators ,
 // muted, saturated tones chosen to stay legible on a light basemap.
 
 export const PITCH_TYPES = {
@@ -6,7 +6,7 @@ export const PITCH_TYPES = {
     label: 'Commercial centre',
     short: 'Commercial',
     color: '#1d4ed8',
-    blurb: 'Powerleague, Goals and similar — caged, floodlit, bookable by the hour.',
+    blurb: 'Powerleague, Goals and similar. Caged, floodlit, bookable by the hour.',
   },
   astro: {
     label: 'Bookable astro',
@@ -32,5 +32,5 @@ export const PITCH_TYPES = {
 export function pitchName(pitch) {
   if (pitch.name) return pitch.name
   const t = PITCH_TYPES[pitch.type]?.short || 'Pitch'
-  return pitch.area ? `${t} pitch — ${pitch.area}` : `${t} pitch`
+  return pitch.area ? `${t} pitch in ${pitch.area}` : `${t} pitch`
 }

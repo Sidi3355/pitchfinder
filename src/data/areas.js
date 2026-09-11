@@ -1,6 +1,6 @@
-// London neighbourhood gazetteer — used for "where does each friend live?".
+// London neighbourhood gazetteer, used for "where does each friend live?".
 // Approximate centre coordinates per area. When this app gets a real backend,
-// replace with a proper geocoder (e.g. postcodes.io — free, no key needed).
+// replace with a proper geocoder (e.g. postcodes.io, free, no key needed).
 
 export const AREAS = [
   { name: 'Angel', lat: 51.5322, lng: -0.1058 },

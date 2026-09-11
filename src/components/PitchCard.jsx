@@ -1,66 +1,99 @@
 import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
-import { scoreToRating } from '../lib/score.js'
+import { surfaceLabel } from '../lib/labels.js'
+import { displayMinutes } from '../lib/geo.js'
+import { navigate } from '../lib/location.js'
+import { Link } from './Link.jsx'
 
 export function PitchCard({ row, rank }) {
   const { state, actions } = useStore()
   const { pitch, cost } = row
   const t = PITCH_TYPES[pitch.type]
-  const saved = state.user?.savedPitchIds?.includes(pitch.id)
+  const saved = state.savedIds.has(pitch.id)
+  const onFinder = state.route.name === 'find'
+  const withGroup = row.etas.length > 0
 
-  const price = !cost.known ? 'Price on booking' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hr`
+  const price = !cost.known
+    ? 'price not known'
+    : cost.perHour === 0
+      ? 'free'
+      : `£${cost.perHour}/hr`
+  // The meta line already says the price and the surface; reasons add what it does not.
+  const reasons = row.reasons.filter((r) => !['free', 'astro', '3G'].includes(r.text))
+  const hasEstimate = reasons.some((r) => r.estimate)
+
+  function open() {
+    if (onFinder) actions.selectPitch(pitch.id)
+    else navigate(actions.pitchHref(pitch.id))
+  }
 
   return (
-    <article className="card">
+    <article
+      className="card clickable"
+      onClick={(e) => {
+        // The whole card opens the pitch; buttons and links inside keep their own jobs.
+        if (e.target.closest('a, button')) return
+        open()
+      }}
+    >
       <div className="card-main">
         <div className="card-title-row">
-          {rank && rank <= 3 && <span className="rank">{rank}</span>}
-          <button className="card-title" onClick={() => actions.selectPitch(pitch.id)}>
+          {rank && <span className="rank">{rank}</span>}
+          <Link
+            className="card-title"
+            href={actions.pitchHref(pitch.id)}
+            onClick={(e) => {
+              if (!onFinder) return
+              e.preventDefault()
+              actions.selectPitch(pitch.id)
+            }}
+          >
             {pitchName(pitch)}
-          </button>
+          </Link>
           <button
             className={`save-btn ${saved ? 'saved' : ''}`}
             onClick={() => actions.toggleSave(pitch.id)}
-            aria-label={saved ? 'Remove from saved' : 'Save pitch'}
+            aria-label={
+              saved ? `Saved. Remove ${pitchName(pitch)} from saved` : `Save ${pitchName(pitch)}`
+            }
+            aria-pressed={saved}
             title={state.user ? undefined : 'Sign in to save pitches'}
           >
-            {saved ? '♥' : '♡'}
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path
+                d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9a4.6 4.6 0 0 1 6.5 6.5Z"
+                fill={saved ? 'currentColor' : 'none'}
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
 
         <p className="card-meta">
           <span className="type-dot" style={{ background: t.color }} />
           {t.short}
-          {pitch.area && <> · {pitch.area}</>}
+          {pitch.postcode ? (
+            <> · {pitch.postcode}</>
+          ) : pitch.area && !(pitch.name || '').includes(pitch.area) ? (
+            <> · {pitch.area}</>
+          ) : null}
           {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
-          {pitch.pitchCount > 1 && <> · {pitch.pitchCount} pitches</>}
+          <> · {price}</>
+          {withGroup && <> · up to about {displayMinutes(row.maxEta)} min</>}
         </p>
 
-        <p className="card-facts">
-          <strong>{price}</strong>
-          {state.squad.length > 0 && (
-            <>
-              <span className="sep" />
-              up to <strong>{row.maxEta} min</strong> away
-            </>
-          )}
-          {pitch.lit === true && (
-            <>
-              <span className="sep" />
-              floodlit
-            </>
-          )}
-          <span className="sep" />
-          fit <strong>{scoreToRating(row.score)}</strong>
-        </p>
-
-        {row.reasons.length > 0 && <p className="card-reasons">{row.reasons.join(' · ')}</p>}
+        {reasons.length > 0 && (
+          <p className="card-reasons">
+            {reasons.map((r) => r.text).join(' · ')}
+            {hasEstimate && <span className="dim"> (est.)</span>}
+          </p>
+        )}
       </div>
     </article>
   )
 }
 
-export function surfaceLabel(surface) {
-  return { '3g': '3G', astro: 'Astroturf', grass: 'Grass', hard: 'Hard court', other: 'Other surface' }[surface] || surface
-}
+export { surfaceLabel }
