@@ -5,9 +5,10 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { useStore } from '../lib/store.jsx'
 import * as sb from '../lib/supabase.js'
-import { formatWhen, fromInputParts, toInputParts } from '../lib/format.js'
+import { formatWhen, fromInputParts, relativeDay, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
 import { pitchName } from '../data/types.js'
+import { bookingLabel } from '../lib/labels.js'
 import { Link } from './Link.jsx'
 import { setGuest, useGuest } from '../lib/guest.js'
 
@@ -30,6 +31,7 @@ export function GamePage({ slug }) {
   const [editing, setEditing] = useState(false)
   const [confirmCancel, setConfirmCancel] = useState(false)
   const [shareStatus, setShareStatus] = useState(null)
+  const [now, setNow] = useState(0)
 
   const available = state.authAvailable
   const load = useCallback(async () => {
@@ -42,6 +44,7 @@ export function GamePage({ slug }) {
       }
       setGame(res.game)
       setRsvps(res.rsvps)
+      setNow(Date.now())
       setPhase('ready')
     } catch (err) {
       setError(err.message)
@@ -61,6 +64,15 @@ export function GamePage({ slug }) {
   useEffect(() => {
     if (game) document.title = `${game.pitch_name}, ${formatWhen(game.starts_at)}: PitchFinder`
   }, [game])
+
+  // Answers arrive while the organiser keeps this page open: refresh every 20 s when visible.
+  useEffect(() => {
+    if (phase !== 'ready') return
+    const id = setInterval(() => {
+      if (document.visibilityState === 'visible') load()
+    }, 20000)
+    return () => clearInterval(id)
+  }, [phase, load])
 
   useEffect(() => {
     if (!shareStatus) return
@@ -165,6 +177,7 @@ export function GamePage({ slug }) {
 
   const pitch = pitchById.get(game.pitch_id)
   const cancelled = game.status === 'cancelled'
+  const happened = new Date(game.starts_at).getTime() < now - 3 * 3600e3
   const mine = rsvps.find((r) => r.is_you)
   const groups = STATUSES.map(([status, label]) => [
     label,
@@ -175,7 +188,9 @@ export function GamePage({ slug }) {
   return (
     <article className="game-page">
       <header className="game-head">
-        <p className="empty-kicker">{cancelled ? 'Cancelled' : 'Football'}</p>
+        <p className="empty-kicker">
+          {cancelled ? 'Cancelled' : relativeDay(game.starts_at, new Date(now))}
+        </p>
         <h1>{formatWhen(game.starts_at)}</h1>
         <p className="game-where">
           <Link href={actions.pitchHref(game.pitch_id)}>
@@ -189,12 +204,19 @@ export function GamePage({ slug }) {
 
       {cancelled ? (
         <div className="notice" role="status">
-          This game has been cancelled by the organiser.
+          This game has been cancelled by the organiser.{' '}
+          <Link href={actions.pitchHref(game.pitch_id)}>Plan another at this pitch</Link>
+        </div>
+      ) : happened ? (
+        <div className="notice" role="status">
+          This game has happened. {inCount} said they were in.
         </div>
       ) : (
         <section className="game-rsvp" aria-labelledby="rsvp-title">
           <h2 id="rsvp-title" className="section-title">
-            {mine ? `You are ${mine.status}` : 'Are you in?'}
+            {mine
+              ? `Your answer: ${mine.status === 'in' ? 'In' : mine.status === 'maybe' ? 'Maybe' : 'Out'}`
+              : 'Are you in?'}
           </h2>
           {!state.user && (
             <label className="field">
@@ -240,7 +262,11 @@ export function GamePage({ slug }) {
           {inCount} in{rsvps.length ? `, ${rsvps.length} answered` : ''}
         </h2>
         {rsvps.length === 0 ? (
-          <p className="hint">Nobody has answered yet. Share the link.</p>
+          <p className="hint">
+            {game.is_creator
+              ? 'Nobody has answered yet. Share the link.'
+              : 'Nobody has answered yet. Be the first.'}
+          </p>
         ) : (
           <div className="rsvp-columns">
             {groups.map(([label, list]) => (
@@ -262,27 +288,36 @@ export function GamePage({ slug }) {
         )}
       </section>
 
-      <div className="drawer-actions">
-        <button className="btn primary" onClick={share}>
-          {shareStatus === 'copied'
-            ? 'Link copied'
-            : shareStatus === 'failed'
-              ? 'Copy failed'
-              : 'Share link'}
-        </button>
-        {pitch?.bookingUrl && (
-          <a
-            className="btn ghost"
-            href={pitch.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book at venue
-          </a>
-        )}
-      </div>
+      {!cancelled && (
+        <div className="drawer-actions">
+          <button className="btn primary" onClick={share}>
+            {shareStatus === 'copied'
+              ? 'Link copied'
+              : shareStatus === 'failed'
+                ? 'Copy failed'
+                : 'Share link'}
+          </button>
+          <span className="sr-only" role="status" aria-live="polite">
+            {shareStatus === 'copied'
+              ? 'Link copied to clipboard'
+              : shareStatus === 'failed'
+                ? 'Could not copy the link'
+                : ''}
+          </span>
+          {pitch?.bookingUrl && !happened && (
+            <a
+              className="btn ghost"
+              href={pitch.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {bookingLabel(pitch.bookingUrl)}
+            </a>
+          )}
+        </div>
+      )}
 
-      {game.is_creator && !cancelled && (
+      {game.is_creator && !cancelled && !happened && (
         <section className="game-admin" aria-labelledby="admin-title">
           <h2 id="admin-title" className="section-title">
             Organiser
@@ -292,7 +327,7 @@ export function GamePage({ slug }) {
           ) : confirmCancel ? (
             <div className="row">
               <span className="hint">Cancel this game for everyone?</span>
-              <button className="btn primary" disabled={busy} onClick={cancelGame}>
+              <button className="btn danger" disabled={busy} onClick={cancelGame}>
                 Yes, cancel it
               </button>
               <button className="btn ghost" onClick={() => setConfirmCancel(false)}>
@@ -304,7 +339,7 @@ export function GamePage({ slug }) {
               <button className="btn ghost" onClick={() => setEditing(true)}>
                 Change time or notes
               </button>
-              <button className="btn ghost" onClick={() => setConfirmCancel(true)}>
+              <button className="btn danger" onClick={() => setConfirmCancel(true)}>
                 Cancel game
               </button>
             </div>

@@ -137,6 +137,24 @@ if (!OFFLINE) {
   saveCache(coordCacheFile, coordCache)
 }
 
+// For dead booking links, try the venue's listed candidates so the report
+// says which URL to switch to.
+if (!OFFLINE) {
+  for (const r of venueRows) {
+    if (r.urlStatus == null || r.urlStatus === 200) continue
+    const v = curated.find((c) => c.id === r.id)
+    const candidates = [...(v.urlCandidates || []), v.website].filter(Boolean)
+    for (const url of candidates) {
+      const c = await checkUrl(url)
+      if (c.status === 200) {
+        r.candidateOk = c.finalUrl || url
+        break
+      }
+    }
+  }
+  saveCache(urlCacheFile, urlCache)
+}
+
 const deadUrls = venueRows.filter((r) => r.urlStatus != null && r.urlStatus !== 200)
 const mismatches = venueRows.filter((r) => r.coord?.mismatch)
 const stalePrices = curated.filter(
@@ -214,9 +232,8 @@ for (const r of venueRows) {
     : !r.coord.known
       ? 'postcode unknown'
       : `${r.coord.distanceM} m${r.coord.mismatch ? ' MISMATCH' : ''}`
-  lines.push(
-    `| ${r.name} | ${r.missing.join(', ') || 'none'} | ${r.urlStatus ?? (OFFLINE ? 'not checked' : 'none')} | ${coordText} |`,
-  )
+  const urlText = `${r.urlStatus ?? (OFFLINE ? 'not checked' : 'none')}${r.candidateOk ? ` (working: ${r.candidateOk})` : ''}`
+  lines.push(`| ${r.name} | ${r.missing.join(', ') || 'none'} | ${urlText} | ${coordText} |`)
 }
 lines.push('')
 lines.push('## History')

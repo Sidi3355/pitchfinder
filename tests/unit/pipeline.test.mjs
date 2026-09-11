@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs'
 import {
   classify,
   collapse,
+  collapseByName,
   deriveNames,
   excluded,
   mergeCurated,
@@ -209,5 +210,59 @@ describe('summarise', () => {
     expect(s.byNameSource.park).toBe(2)
     expect(s.byNameSource.road).toBe(2)
     expect(s.byNameSource.none).toBeUndefined()
+  })
+})
+
+describe('collapseByName', () => {
+  it('merges clusters that were given the same park name within 600 m and sums their counts', () => {
+    const venues = [
+      {
+        id: 'osm-w1',
+        name: 'Big Park pitches',
+        nameSource: 'park',
+        type: 'park',
+        lat: 51.5,
+        lng: -0.1,
+        pitchCount: 2,
+        memberIds: ['osm-w1', 'osm-w2'],
+      },
+      {
+        id: 'osm-w3',
+        name: 'Big Park pitches',
+        nameSource: 'park',
+        type: 'park',
+        lat: 51.503,
+        lng: -0.1,
+        pitchCount: 1,
+        memberIds: ['osm-w3'],
+      },
+      {
+        id: 'osm-w9',
+        name: 'Big Park pitches',
+        nameSource: 'park',
+        type: 'park',
+        lat: 51.6,
+        lng: -0.1,
+        pitchCount: 1,
+        memberIds: ['osm-w9'],
+      },
+      {
+        id: 'osm-w4',
+        name: 'Other',
+        nameSource: 'osm',
+        type: 'park',
+        lat: 51.5,
+        lng: -0.1,
+        pitchCount: 1,
+        memberIds: ['osm-w4'],
+      },
+    ]
+    const out = collapseByName(venues)
+    expect(out).toHaveLength(3)
+    const big = out.find((v) => v.id === 'osm-w1')
+    expect(big.pitchCount).toBe(3)
+    expect(big.memberIds).toEqual(['osm-w1', 'osm-w2', 'osm-w3'])
+    expect(big.name).toBe('Big Park pitches')
+    expect(out.find((v) => v.id === 'osm-w9').pitchCount).toBe(1)
   })
 })

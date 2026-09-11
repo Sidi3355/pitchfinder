@@ -1,7 +1,6 @@
 import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
-import { scoreToRating } from '../lib/score.js'
 import { surfaceLabel } from '../lib/labels.js'
 import { displayMinutes } from '../lib/geo.js'
 import { navigate } from '../lib/location.js'
@@ -11,14 +10,16 @@ export function PitchCard({ row, rank }) {
   const { state, actions } = useStore()
   const { pitch, cost } = row
   const t = PITCH_TYPES[pitch.type]
-  const saved = state.user?.savedPitchIds?.includes(pitch.id)
+  const saved = state.savedIds.has(pitch.id)
   const onFinder = state.route.name === 'find'
+  const withGroup = row.etas.length > 0
 
   const price = !cost.known
-    ? 'Price on booking'
+    ? 'price not known'
     : cost.perHour === 0
-      ? 'Free'
+      ? 'free'
       : `£${cost.perHour}/hr`
+  const hasEstimate = row.reasons.some((r) => r.estimate)
 
   function open() {
     if (onFinder) actions.selectPitch(pitch.id)
@@ -41,7 +42,6 @@ export function PitchCard({ row, rank }) {
             className="card-title"
             href={actions.pitchHref(pitch.id)}
             onClick={(e) => {
-              // On the finder the pitch opens in the side drawer; elsewhere it is a page.
               if (!onFinder) return
               e.preventDefault()
               actions.selectPitch(pitch.id)
@@ -52,42 +52,43 @@ export function PitchCard({ row, rank }) {
           <button
             className={`save-btn ${saved ? 'saved' : ''}`}
             onClick={() => actions.toggleSave(pitch.id)}
-            aria-label={saved ? 'Remove from saved' : 'Save pitch'}
-            aria-pressed={!!saved}
+            aria-label={
+              saved ? `Saved. Remove ${pitchName(pitch)} from saved` : `Save ${pitchName(pitch)}`
+            }
+            aria-pressed={saved}
             title={state.user ? undefined : 'Sign in to save pitches'}
           >
-            {saved ? '♥' : '♡'}
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path
+                d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9a4.6 4.6 0 0 1 6.5 6.5Z"
+                fill={saved ? 'currentColor' : 'none'}
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
 
         <p className="card-meta">
           <span className="type-dot" style={{ background: t.color }} />
           {t.short}
-          {pitch.area && !(pitch.name || '').includes(pitch.area) && <> · {pitch.area}</>}
-          {pitch.postcode && <> · {pitch.postcode}</>}
+          {pitch.postcode ? (
+            <> · {pitch.postcode}</>
+          ) : pitch.area && !(pitch.name || '').includes(pitch.area) ? (
+            <> · {pitch.area}</>
+          ) : null}
           {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
-          {pitch.pitchCount > 1 && <> · {pitch.pitchCount} pitches</>}
+          <> · {price}</>
+          {withGroup && <> · up to about {displayMinutes(row.maxEta)} min</>}
         </p>
 
-        <p className="card-facts">
-          <strong>{price}</strong>
-          {state.squad.length > 0 && (
-            <>
-              <span className="sep" />
-              up to about <strong>{displayMinutes(row.maxEta)} min</strong> away (est.)
-            </>
-          )}
-          {pitch.lit === true && (
-            <>
-              <span className="sep" />
-              floodlit
-            </>
-          )}
-          <span className="sep" />
-          fit <strong>{scoreToRating(row.score)}</strong>
-        </p>
-
-        {row.reasons.length > 0 && <p className="card-reasons">{row.reasons.join(' · ')}</p>}
+        {row.reasons.length > 0 && (
+          <p className="card-reasons">
+            {row.reasons.map((r) => r.text).join(' · ')}
+            {hasEstimate && <span className="dim"> (est.)</span>}
+          </p>
+        )}
       </div>
     </article>
   )

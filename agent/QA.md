@@ -41,3 +41,19 @@ CPU throttle; item 7). Screenshots in `agent/screenshots/iter1/`.
 | `npm run lighthouse`   | FAIL on performance: home 61, pitch route 80 (both A11y 100, BP 96, SEO 100)                                                                                                                                                                                                       |
 
 Sign-off: approved. The performance gate remains the known failure for item 7.
+
+## Iteration 3: mobile layout, geocoding, code-split (11 Sep 2026)
+
+| Check                                   | Result                                                                                                                                                                                    |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run lint`                          | pass                                                                                                                                                                                      |
+| `npm test`                              | pass, 60 unit + 20 RLS tests (pipeline, geocoding, prices, URL state, geo)                                                                                                                |
+| `npm run build:test`                    | pass                                                                                                                                                                                      |
+| `npm run check:bundle`                  | 69 KB gz initial JS; MapLibre (259 KB) and Supabase (58 KB) lazy; split now enforced                                                                                                      |
+| `npm run test:e2e`                      | pass, 32 tests; core flow from two postcodes in 6 taps                                                                                                                                    |
+| `npm run lighthouse`                    | home Perf 62 / A11y 100 / BP 96 / SEO 100, FCP 2.1 s, TBT 1.2 s (software WebGL: MapLibre GL setup dominates, profile attached in NOTES); pitch route Perf 99 / A11y 98 / BP 96 / SEO 100 |
+| `node scripts/audit-data.mjs --offline` | baseline on the old dataset: 2,949 unnamed, 104 unverified curated facts                                                                                                                  |
+| Data refresh (Actions run 4)            | pipeline succeeded: 3,139 pitches to 1,746 venues, 0 unnamed, 0 without postcode, 515 collapsed; commit lost to a push race, workflow fixed to rebase, re-run queued                      |
+
+Sign-off: approved. Open gates: home performance under software WebGL; A1 curated facts (152
+unverified with online checks: 10 dead booking URLs, no postcodes or addresses recorded).

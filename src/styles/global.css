@@ -561,6 +561,9 @@ a {
 .save-btn.saved {
   color: var(--accent);
 }
+.save-btn svg {
+  display: block;
+}
 .card-meta {
   margin: 4px 0 0;
   color: var(--ink-3);
@@ -835,73 +838,6 @@ a {
 }
 .link-btn:hover {
   text-decoration: underline;
-}
-
-/* ── About ──────────────────────────────────────────────────────────────── */
-.about {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 48px 24px 64px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.about-hero h1 {
-  font-size: 32px;
-  letter-spacing: -0.02em;
-  margin: 0 0 12px;
-  line-height: 1.15;
-}
-.about-hero p {
-  font-size: 16px;
-  color: var(--ink-2);
-  max-width: 640px;
-  margin: 0 0 20px;
-}
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 12px;
-}
-.about-type {
-  text-align: left;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  transition:
-    border-color 0.12s,
-    box-shadow 0.12s;
-}
-.about-type:hover {
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow-sm);
-}
-.about-type-head {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
-.about-count {
-  margin-left: auto;
-  color: var(--ink-3);
-  font-size: 13px;
-}
-.about-blurb {
-  color: var(--ink-2);
-  font-size: 13px;
-}
-.about-notes h2 {
-  font-size: 18px;
-  margin: 0 0 10px;
-}
-.about-notes p {
-  color: var(--ink-2);
-  max-width: 680px;
 }
 
 /* ── Profile ────────────────────────────────────────────────────────────── */
@@ -1689,4 +1625,54 @@ textarea.input {
   position: absolute;
   inset: 0;
   background: #e9edea;
+}
+
+.btn.danger {
+  background: var(--surface);
+  border-color: #fca5a5;
+  color: var(--danger);
+}
+.btn.danger:hover {
+  background: #fef2f2;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.hidden {
+  display: none;
+}
+.field.grow {
+  flex: 1;
+}
+.about {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+.about h1 {
+  font-size: 22px;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+.about h2 {
+  font-size: 15px;
+  margin: 24px 0 8px;
+}
+.about p {
+  margin: 0 0 12px;
+  color: var(--ink-2);
+}
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--ink-2);
 }

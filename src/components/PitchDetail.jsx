@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useFocusTrap } from '../lib/focus-trap.js'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { PitchContent } from './PitchContent.jsx'
@@ -7,6 +8,8 @@ import { Link } from './Link.jsx'
 export function PitchDetail() {
   const { state, pitchById, actions } = useStore()
   const pitch = pitchById.get(state.selectedPitchId)
+  const ref = useRef(null)
+  useFocusTrap(ref)
 
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && actions.selectPitch(null)
@@ -17,7 +20,13 @@ export function PitchDetail() {
   if (!pitch) {
     if (!state.data) return null
     return (
-      <aside className="drawer" role="dialog" aria-label="Pitch not found">
+      <aside
+        ref={ref}
+        className="drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Pitch not found"
+      >
         <header className="drawer-head">
           <h2>Pitch not found</h2>
           <button className="icon-btn" onClick={() => actions.selectPitch(null)} aria-label="Close">
@@ -32,7 +41,7 @@ export function PitchDetail() {
   const name = pitchName(pitch)
 
   return (
-    <aside className="drawer" role="dialog" aria-label={name}>
+    <aside ref={ref} className="drawer" role="dialog" aria-modal="true" aria-label={name}>
       <header className="drawer-head">
         <div>
           <p className="drawer-type" style={{ color: t.color }}>

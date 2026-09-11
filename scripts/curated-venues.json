@@ -17,7 +17,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/shoreditch",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -39,7 +39,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/vauxhall",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -61,7 +61,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/wembley",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -83,7 +83,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/mill-hill",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -105,7 +105,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/barnet",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -127,7 +127,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/croydon",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -149,7 +149,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.powerleague.co.uk/",
       "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/canary-wharf",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -171,11 +171,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/beckenham",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/beckenham",
+        "https://www.goalsfootball.co.uk/beckenham",
+        "https://www.goalsfootball.co.uk/centres/beckenham",
+        "https://www.goalsfootball.co.uk/goals-beckenham",
+        "https://www.goalsfootball.co.uk/venues/beckenham"
+      ]
     },
     {
       "id": "go-bexleyheath",
@@ -193,11 +200,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/bexleyheath",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/bexleyheath",
+        "https://www.goalsfootball.co.uk/bexleyheath",
+        "https://www.goalsfootball.co.uk/centres/bexleyheath",
+        "https://www.goalsfootball.co.uk/goals-bexleyheath",
+        "https://www.goalsfootball.co.uk/venues/bexleyheath"
+      ]
     },
     {
       "id": "go-dagenham",
@@ -215,11 +229,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/dagenham",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/dagenham",
+        "https://www.goalsfootball.co.uk/dagenham",
+        "https://www.goalsfootball.co.uk/centres/dagenham",
+        "https://www.goalsfootball.co.uk/goals-dagenham",
+        "https://www.goalsfootball.co.uk/venues/dagenham"
+      ]
     },
     {
       "id": "go-ruislip",
@@ -237,11 +258,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/ruislip",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/ruislip",
+        "https://www.goalsfootball.co.uk/ruislip",
+        "https://www.goalsfootball.co.uk/centres/ruislip",
+        "https://www.goalsfootball.co.uk/goals-ruislip",
+        "https://www.goalsfootball.co.uk/venues/ruislip"
+      ]
     },
     {
       "id": "go-hayes",
@@ -259,11 +287,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/hayes",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/hayes",
+        "https://www.goalsfootball.co.uk/hayes",
+        "https://www.goalsfootball.co.uk/centres/hayes",
+        "https://www.goalsfootball.co.uk/goals-hayes",
+        "https://www.goalsfootball.co.uk/venues/hayes"
+      ]
     },
     {
       "id": "go-gillettecorner",
@@ -281,11 +316,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/gillette-corner",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/gillette-corner",
+        "https://www.goalsfootball.co.uk/gillette-corner",
+        "https://www.goalsfootball.co.uk/centres/gillette-corner",
+        "https://www.goalsfootball.co.uk/goals-gillette-corner",
+        "https://www.goalsfootball.co.uk/venues/gillette-corner"
+      ]
     },
     {
       "id": "go-chingford",
@@ -303,11 +345,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/chingford",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/chingford",
+        "https://www.goalsfootball.co.uk/chingford",
+        "https://www.goalsfootball.co.uk/centres/chingford",
+        "https://www.goalsfootball.co.uk/goals-chingford",
+        "https://www.goalsfootball.co.uk/venues/chingford"
+      ]
     },
     {
       "id": "go-sutton",
@@ -325,11 +374,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.goalsfootball.co.uk/",
       "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/sutton",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.goalsfootball.co.uk/football-centres/sutton",
+        "https://www.goalsfootball.co.uk/sutton",
+        "https://www.goalsfootball.co.uk/centres/sutton",
+        "https://www.goalsfootball.co.uk/goals-sutton",
+        "https://www.goalsfootball.co.uk/venues/sutton"
+      ]
     },
     {
       "id": "lc-westway",
@@ -347,7 +403,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.everyoneactive.com/",
       "priceSourceUrl": "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -391,11 +447,17 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://enablelc.org/",
       "priceSourceUrl": "https://enablelc.org/millennium-arena",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://enablelc.org/millennium-arena/",
+        "https://www.enablelc.org/millennium-arena",
+        "https://enablelc.org/sport/millennium-arena",
+        "https://enablelc.org/battersea-park-millennium-arena"
+      ]
     },
     {
       "id": "lc-paddingtonrec",
@@ -413,7 +475,7 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.everyoneactive.com/",
       "priceSourceUrl": "https://www.everyoneactive.com/centre/paddington-recreation-ground/",
       "priceCheckedAt": null,
       "priceContext": null,
@@ -545,11 +607,17 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.royalparks.org.uk/",
       "priceSourceUrl": "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/the-hub",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/the-hub",
+        "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/sports-and-leisure/the-hub",
+        "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/sports-and-leisure",
+        "https://www.royalparks.org.uk/the-hub"
+      ]
     },
     {
       "id": "cg-marketroad",

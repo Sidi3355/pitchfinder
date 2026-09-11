@@ -267,7 +267,7 @@ function fallbackRow(pitch) {
     spreadEta: 0,
     cost: costOf(pitch),
     pricePerHead: null,
-    score: 0.5,
+    score: 0,
     reasons: [],
   }
 }

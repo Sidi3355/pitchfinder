@@ -25,8 +25,8 @@ test.describe('accounts and shared games', () => {
     await page.goto('/p/pl-shoreditch')
     await page.getByRole('button', { name: 'Plan a game' }).click()
     await page.getByLabel('Date').fill('2026-10-01')
-    await page.getByLabel('Kick-off time').fill('19:30')
-    await page.getByLabel('Notes').fill('Bring bibs')
+    await page.getByLabel('Kick-off').fill('19:30')
+    await page.getByLabel(/Notes for the group/).fill('Bring bibs')
     await page.getByRole('button', { name: 'Create game link' }).click()
 
     await expect(page).toHaveURL(/\/g\/[0-9a-f]{20}$/)
@@ -46,15 +46,15 @@ test.describe('accounts and shared games', () => {
     await expect(guest.getByRole('alert')).toContainText('Add your name')
     await guest.getByLabel('Your name').fill('Priya')
     await guest.getByRole('button', { name: 'In', exact: true }).click()
-    await expect(guest.getByRole('heading', { name: 'You are in' })).toBeVisible()
+    await expect(guest.getByRole('heading', { name: 'Your answer: In' })).toBeVisible()
     await expect(guest.getByText('Priya (you)')).toBeVisible()
     // Changing the answer keeps one row per guest.
     await guest.getByRole('button', { name: 'Maybe' }).click()
-    await expect(guest.getByRole('heading', { name: 'You are maybe' })).toBeVisible()
+    await expect(guest.getByRole('heading', { name: 'Your answer: Maybe' })).toBeVisible()
     await expect(guest.getByRole('heading', { name: '0 in, 1 answered' })).toBeVisible()
     // Reload: the phone remembers who they are.
     await guest.reload()
-    await expect(guest.getByRole('heading', { name: 'You are maybe' })).toBeVisible()
+    await expect(guest.getByRole('heading', { name: 'Your answer: Maybe' })).toBeVisible()
     await ctx.close()
 
     // The organiser sees the answer, then cancels.

@@ -41,3 +41,31 @@ texts: `agent/critique/iter1-product.md` and `agent/critique/iter1-design.md`. S
   drops the group, no journey times.
 - Design: On desktop the structure is calm and sound; on mobile the header overflow breaks
   every screen, so for the phone user this iteration is different rather than better.
+
+## Iteration 2 (11 Sep 2026)
+
+Reviewed on the iteration 2 build (accounts, games, profile, report a problem, plus the fixes
+from round 1). Full texts: `agent/critique/iter2-product.md`, `agent/critique/iter2-design.md`.
+
+**Fixed since round 1 (both critics agree):** £0 budget default, mobile header overflow and
+clipped drawer, Share keeps the group, whole card tappable, "Top-rated" heading, group rows
+show areas, empty state with Reset, error state with retry, no password modal, council links
+labelled, counts agree, em dashes gone, heart contrast, rank alignment, dialog fit and focus.
+
+**P0:** none.
+
+**P1 (product):** the `/g/{slug}` HTML unfurls as the home page (generic title and image);
+the game page has no address, directions or journey times; every "sign in to do X" forgets X
+after the magic link; Plan a game accepts past dates and has no default date; display names
+are the email's local part; the list-card heart never shows a save (second tap deletes);
+time changes are silent for guests; the new player row lands below the fold; Filters tab
+blind (iteration 3 fixes this); duplicate unnamed cages at the top (iteration 4 data run);
+journey times below the fold on the shared pitch page.
+
+**P1 (design):** the mobile pitch drawer was not modal (iteration 3 replaced it with a sheet);
+organiser and signed-in screenshots were not captured (script fixed); saving from a card
+changes only a colour; duplicates; facts twice per card; no anchor for the default list; all
+touch targets under 44 px; browser-default focus.
+
+**Verdicts:** product: No (the game link previews as the home page and lands on a page with
+no address, directions or journey times). Design: better than iteration 1.

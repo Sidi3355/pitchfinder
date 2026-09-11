@@ -1,6 +1,6 @@
 # Data quality
 
-Generated 2026-09-11T21:20:11.256Z by `scripts/audit-data.mjs` (offline: URL and coordinate checks skipped).
+Generated 2026-09-11T21:46:18.733Z by `scripts/audit-data.mjs` (offline: URL and coordinate checks skipped).
 Dataset generated 2026-09-07T09:21:33.147Z.
 
 ## Pitches

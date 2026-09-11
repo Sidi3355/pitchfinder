@@ -13,7 +13,14 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { AREAS } from '../src/data/areas.js'
-import { collapse, deriveNames, mergeCurated, summarise, transform } from './lib/pipeline.mjs'
+import {
+  collapse,
+  collapseByName,
+  deriveNames,
+  mergeCurated,
+  summarise,
+  transform,
+} from './lib/pipeline.mjs'
 import { keyFor, loadCache, reversePostcodes, reverseRoads, saveCache, UA } from './lib/geocode.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -145,6 +152,11 @@ async function main() {
   const roadAt = (v) =>
     fixtureRoads?.[keyFor(v.lat, v.lng)] ?? roadCache[keyFor(v.lat, v.lng)]?.road ?? null
   venues = deriveNames(venues, { parks, roadAt })
+  const beforeNamePass = venues.length
+  venues = collapseByName(venues)
+  console.log(
+    `${venues.length} venues after merging same-name clusters (${beforeNamePass - venues.length} merged)`,
+  )
 
   for (const v of venues) {
     const pc = postcodeCache[keyFor(v.lat, v.lng)]

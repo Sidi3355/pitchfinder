@@ -65,6 +65,18 @@ module that loads supabase-js on demand, then the game page and profile, then an
 test that drives a fake Supabase (real Postgres and RLS behind a small PostgREST-compatible
 server) so the share and RSVP loop is proven without network.
 
+Reflection (after critique):
+
+- What got better: the organiser loop works end to end and is proven by e2e against real RLS;
+  no P0 findings this round; 10 round-1 findings confirmed fixed by both critics; the design
+  critic's verdict is "better".
+- What got worse or was discovered: the game link unfurls as the home page and the game page
+  has no address, directions or journey times, so the product critic's verdict stays No;
+  sign-in forgets the action that prompted it; the list-card heart read a field that no longer
+  exists; past dates accepted; display names default to the email local part; the screenshot
+  script captured signed-in screens signed out.
+- Next: iteration 3 (layout, already built while the critics ran) and iteration 4 below.
+
 ## Iteration 3: pipeline collapse and names, then the mobile layout (planned 11 Sep 2026)
 
 Intended user-visible outcome (data half, items 4, 8 and 12 plus the accuracy track): the
@@ -85,3 +97,23 @@ postcodes.io (bulk reverse) and Nominatim (reverse, 1 request per second, cached
 `data/cache/`), network steps run by the data-refresh workflow on GitHub Actions against this
 branch. The layout is rebuilt with CSS only where possible; the bottom sheet is a small
 component with pointer events, no library.
+
+Reflection on the layout half (built 11 Sep, before critique): one surface on phones, six-tap
+core flow from postcodes, no tabs. Awaiting critique in round 3.
+
+## Iteration 4: the game page is the destination (planned 11 Sep 2026)
+
+Intended user-visible outcome: the link the group receives unfurls with the pitch, day and
+kick-off; the game page shows the address and nearest postcode, one-tap directions, and each
+player's estimated journey (from the group that picked the pitch), so nobody opens Google
+Maps. Sign in remembers what you were doing and finishes it. Plan a game starts on next
+Thursday at 19:00 and refuses the past. You are asked your name once. The list-card heart
+shows a save. Cards give reasons once, in plain words, with no fit number. The dataset has
+no duplicate venue names within a park and the audit probes candidate URLs for the dead
+booking links so they can be fixed from the report.
+
+Backlog items: 6, the accuracy track, and the product critique's P1s. Approach: a `group`
+snapshot on games (migration 0003) and a Vercel function that serves per-game Open Graph
+HTML from `game_by_slug` (the static server emulates it for tests); a pending-action store
+in sessionStorage for sign-in; a name field on sign-in; reasons rebuilt in score.js with
+unit tests asserting every reason's precondition.

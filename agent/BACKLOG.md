@@ -55,3 +55,20 @@ Status: todo | doing | done | blocked. Found items are folded under the item the
 | C12 | Reasons repeat facts; unknown facts outrank known                                                 | todo   | Item 6                                    |
 | C13 | Duplicate unnamed cages in top ten                                                                | todo   | Item 4                                    |
 | C14 | Filters count; live counts                                                                        | todo   | Item 11                                   |
+
+## From the iteration 2 critique (11 Sep)
+
+| #   | Item                                                                               | Status | Notes                                   |
+| --- | ---------------------------------------------------------------------------------- | ------ | --------------------------------------- |
+| D1  | Game link unfurls with pitch, day, time (server-rendered OG for /g/{slug})         | todo   | P1, Vercel function + fake in serve.mjs |
+| D2  | Game page shows postcode, address, directions and per-player journey estimates     | todo   | P1, group snapshot on games             |
+| D3  | Sign in remembers the action (save, group, game draft) and finishes it             | todo   | P1                                      |
+| D4  | Plan a game defaults to next Thursday 19:00, refuses the past                      | todo   | P1                                      |
+| D5  | Ask for a name at sign-in                                                          | todo   | P1                                      |
+| D6  | List-card heart reflects saves                                                     | todo   | P1, bug                                 |
+| D7  | Time change notice for existing answers                                            | todo   | P1                                      |
+| D8  | Organiser page refreshes itself; cancelled and past games lose their RSVP controls | todo   | P2                                      |
+| D9  | Desktop drawer is modal                                                            | todo   | P1 (mobile now uses the sheet)          |
+| D10 | Report form: no preselected category, curated copy                                 | todo   | P2                                      |
+| D11 | Plan form visible labels, inline validation                                        | todo   | P2                                      |
+| D12 | About page de-heroed, comma splices fixed                                          | todo   | P2                                      |

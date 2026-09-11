@@ -261,6 +261,31 @@ export function deriveNames(venues, { parks = [], roadAt = () => null, parkRadiu
   })
 }
 
+/**
+ * After naming, separate clusters that ended up with the same derived name
+ * inside one park are one venue to a user: merge them when within `radius`.
+ */
+export function collapseByName(venues, radius = 600) {
+  const groups = cluster(
+    venues,
+    (a, b) => !!a.name && a.name.toLowerCase() === b.name.toLowerCase() && distM(a, b) < radius,
+  )
+  return groups.map((members) => {
+    if (members.length === 1) return members[0]
+    const sorted = [...members].sort((a, b) => a.id.localeCompare(b.id))
+    const merged = mergeGroup(sorted)
+    const memberIds = sorted.flatMap((m) => m.memberIds || [m.id])
+    return {
+      ...merged,
+      name: sorted[0].name,
+      nameSource: sorted[0].nameSource,
+      namedAfter: sorted[0].namedAfter,
+      pitchCount: sorted.reduce((n, m) => n + (m.pitchCount || 1), 0),
+      memberIds,
+    }
+  })
+}
+
 // ── Curated venues ───────────────────────────────────────────────────────────
 
 const COMPATIBLE = {

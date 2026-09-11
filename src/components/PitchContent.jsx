@@ -9,7 +9,7 @@ import { pitchName } from '../data/types.js'
 import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { costOf, isBounded } from '../lib/data.js'
 import { bookingLabel, surfaceLabel } from '../lib/labels.js'
-import { formatDate, fromInputParts } from '../lib/format.js'
+import { formatDate, fromInputParts, nextKickoff, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
 
 export function PitchContent({ pitch }) {
@@ -223,20 +223,24 @@ export function PitchContent({ pitch }) {
             Lighting and surface reflect what is mapped; conditions on the ground can differ.
           </>
         )}{' '}
-        {panel !== 'report' && (
-          <button className="link-btn" onClick={() => setPanel('report')}>
+      </p>
+      {panel !== 'report' && (
+        <p className="row">
+          <button className="btn ghost sm" onClick={() => setPanel('report')}>
             Report a problem with this pitch
           </button>
-        )}
-      </p>
+        </p>
+      )}
+      <p className="hidden"></p>
     </>
   )
 }
 
 function PlanGame({ pitch, name, onClose }) {
   const { state, actions } = useStore()
-  const [date, setDate] = useState('')
-  const [time, setTime] = useState('19:00')
+  const [parts] = useState(() => toInputParts(nextKickoff()))
+  const [date, setDate] = useState(parts.date)
+  const [time, setTime] = useState(parts.time)
   const [notes, setNotes] = useState('')
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
@@ -246,6 +250,10 @@ function PlanGame({ pitch, name, onClose }) {
     const startsAt = fromInputParts(date, time)
     if (!startsAt) {
       setError('Pick a date and time.')
+      return
+    }
+    if (new Date(startsAt).getTime() < Date.now() - 5 * 60e3) {
+      setError('That time has already passed. Pick a date and time in the future.')
       return
     }
     setBusy(true)
@@ -266,7 +274,7 @@ function PlanGame({ pitch, name, onClose }) {
   }
 
   return (
-    <form className="drawer-section" onSubmit={submit}>
+    <form className="drawer-section" onSubmit={submit} noValidate>
       <h3>Plan a game here</h3>
       {!state.authAvailable && (
         <div className="notice" role="status">
@@ -275,30 +283,35 @@ function PlanGame({ pitch, name, onClose }) {
         </div>
       )}
       <div className="row">
-        <input
-          className="input"
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-          aria-label="Date"
-          required
-        />
-        <input
-          className="input"
-          type="time"
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-          aria-label="Kick-off time"
-        />
+        <label className="field grow">
+          <span className="field-label">Date</span>
+          <input
+            className="input"
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </label>
+        <label className="field">
+          <span className="field-label">Kick-off</span>
+          <input
+            className="input"
+            type="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+          />
+        </label>
       </div>
-      <input
-        className="input"
-        placeholder="Notes for the group (optional)"
-        value={notes}
-        onChange={(e) => setNotes(e.target.value)}
-        maxLength={500}
-        aria-label="Notes"
-      />
+      <label className="field">
+        <span className="field-label">Notes for the group (optional)</span>
+        <input
+          className="input"
+          placeholder="Bibs sorted, £5 each, meet at the gate"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          maxLength={500}
+        />
+      </label>
       {error && (
         <p className="form-error" role="alert">
           {error}
@@ -332,7 +345,7 @@ const FIELDS = [
 
 function ReportProblem({ pitch, onClose }) {
   const { state } = useStore()
-  const [field, setField] = useState('price')
+  const [field, setField] = useState('')
   const [suggested, setSuggested] = useState('')
   const [message, setMessage] = useState('')
   const [email, setEmail] = useState('')
@@ -341,6 +354,10 @@ function ReportProblem({ pitch, onClose }) {
 
   async function submit(e) {
     e.preventDefault()
+    if (!field) {
+      setError('Choose what the problem is about.')
+      return
+    }
     if (!suggested.trim() && !message.trim()) {
       setError('Tell us what is wrong, or what it should say.')
       return
@@ -387,6 +404,7 @@ function ReportProblem({ pitch, onClose }) {
       <label className="field">
         <span className="field-label">What is wrong?</span>
         <select className="select wide" value={field} onChange={(e) => setField(e.target.value)}>
+          <option value="">Choose one</option>
           {FIELDS.map(([value, label]) => (
             <option key={value} value={value}>
               {label}
