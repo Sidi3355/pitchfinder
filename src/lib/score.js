@@ -3,6 +3,7 @@
 
 import { estimateEta } from './geo.js'
 import { costOf, isBounded } from './data.js'
+import { isBookable } from './labels.js'
 
 export const DEFAULT_FILTERS = {
   types: [], // [] = all pitch types
@@ -83,7 +84,7 @@ export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
     else if (pricePerHead != null && pricePerHead <= 8)
       reasons.push(`about £${pricePerHead.toFixed(2)} per person`)
     if (pitch.lit === true) reasons.push('floodlit')
-    if (pitch.bookingUrl) reasons.push('bookable online')
+    if (isBookable(pitch.bookingUrl)) reasons.push('bookable online')
     if (pitch.surface === '3g') reasons.push('3G surface')
 
     out.push({

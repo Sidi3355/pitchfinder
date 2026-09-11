@@ -3,6 +3,8 @@ import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { scoreToRating } from '../lib/score.js'
 import { surfaceLabel } from '../lib/labels.js'
+import { displayMinutes } from '../lib/geo.js'
+import { navigate } from '../lib/location.js'
 import { Link } from './Link.jsx'
 
 export function PitchCard({ row, rank }) {
@@ -18,11 +20,23 @@ export function PitchCard({ row, rank }) {
       ? 'Free'
       : `£${cost.perHour}/hr`
 
+  function open() {
+    if (onFinder) actions.selectPitch(pitch.id)
+    else navigate(actions.pitchHref(pitch.id))
+  }
+
   return (
-    <article className="card">
+    <article
+      className="card clickable"
+      onClick={(e) => {
+        // The whole card opens the pitch; buttons and links inside keep their own jobs.
+        if (e.target.closest('a, button')) return
+        open()
+      }}
+    >
       <div className="card-main">
         <div className="card-title-row">
-          {rank && rank <= 3 && <span className="rank">{rank}</span>}
+          {rank && <span className="rank">{rank}</span>}
           <Link
             className="card-title"
             href={actions.pitchHref(pitch.id)}
@@ -59,7 +73,7 @@ export function PitchCard({ row, rank }) {
           {state.squad.length > 0 && (
             <>
               <span className="sep" />
-              up to <strong>{row.maxEta} min</strong> away (est.)
+              up to about <strong>{displayMinutes(row.maxEta)} min</strong> away (est.)
             </>
           )}
           {pitch.lit === true && (

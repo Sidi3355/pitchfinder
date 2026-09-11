@@ -9,7 +9,7 @@ import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&ur
 import 'maplibre-gl/dist/maplibre-gl.css'
 
 // MapLibre v6 resolves its worker relative to the module URL, which breaks
-// once Vite bundles everything into one chunk — point it at the worker Vite
+// once Vite bundles everything into one chunk, point it at the worker Vite
 // emits instead.
 maplibregl.setWorkerUrl(maplibreWorkerUrl)
 import { useStore } from '../lib/store.jsx'

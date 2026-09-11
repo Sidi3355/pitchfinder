@@ -6,9 +6,9 @@ import { useStore } from '../lib/store.jsx'
 import { navigate } from '../lib/location.js'
 import * as sb from '../lib/supabase.js'
 import { pitchName } from '../data/types.js'
-import { TRAVEL_MODES, estimateEta } from '../lib/geo.js'
+import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { costOf, isBounded } from '../lib/data.js'
-import { surfaceLabel } from '../lib/labels.js'
+import { bookingLabel, surfaceLabel } from '../lib/labels.js'
 import { formatDate, fromInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
 
@@ -28,7 +28,10 @@ export function PitchContent({ pitch }) {
   const name = pitchName(pitch)
 
   async function share() {
-    const result = await shareUrl({ title: name, url: `${window.location.origin}/p/${pitch.id}` })
+    const result = await shareUrl({
+      title: name,
+      url: `${window.location.origin}${actions.pitchHref(pitch.id)}`,
+    })
     if (result !== 'shared' && result !== 'cancelled') setShareStatus(result)
   }
 
@@ -84,6 +87,33 @@ export function PitchContent({ pitch }) {
         )}
       </dl>
 
+      <section className="drawer-section">
+        <h3>Directions</h3>
+        <p className="directions">
+          <a
+            href={`https://www.google.com/maps/dir/?api=1&destination=${pitch.lat},${pitch.lng}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Maps
+          </a>
+          <a
+            href={`https://maps.apple.com/?daddr=${pitch.lat},${pitch.lng}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apple Maps
+          </a>
+          <a
+            href={`https://citymapper.com/directions?endcoord=${pitch.lat}%2C${pitch.lng}&endname=${encodeURIComponent(name)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Citymapper
+          </a>
+        </p>
+      </section>
+
       {state.squad.length > 0 && (
         <section className="drawer-section">
           <h3>Journey times (estimates)</h3>
@@ -94,7 +124,7 @@ export function PitchContent({ pitch }) {
                   {f.name} <span className="dim">({TRAVEL_MODES[f.mode].label.toLowerCase()})</span>
                 </span>
                 <span className="eta-dots" />
-                <strong>about {estimateEta(f, pitch, f.mode)} min</strong>
+                <strong>about {displayMinutes(estimateEta(f, pitch, f.mode))} min</strong>
               </li>
             ))}
           </ul>
@@ -113,12 +143,12 @@ export function PitchContent({ pitch }) {
         <div className="drawer-actions">
           {pitch.bookingUrl && (
             <a
-              className="btn primary"
+              className={`btn ${bookingLabel(pitch.bookingUrl) === 'Book at venue' ? 'primary' : 'ghost'}`}
               href={pitch.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book at venue
+              {bookingLabel(pitch.bookingUrl)}
             </a>
           )}
           <button className="btn ghost" onClick={() => setPanel('plan')}>

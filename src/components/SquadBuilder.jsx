@@ -25,12 +25,12 @@ export function SquadBuilder() {
   function addFriend(area) {
     const friendArea = area || exact
     if (!friendArea) {
-      setError('Pick an area from the suggestions — that sets the starting point for travel times.')
+      setError('Pick an area from the suggestions. Postcodes are not supported yet.')
       return
     }
     actions.addFriend({
       name: name.trim() || `Player ${state.squad.length + 1}`,
-      areaName: friendArea.name,
+      label: friendArea.name,
       lat: friendArea.lat,
       lng: friendArea.lng,
       mode,
@@ -108,7 +108,9 @@ export function SquadBuilder() {
             <li key={f.id} className="squad-member">
               <div className="squad-member-info">
                 <span className="squad-name">{f.name}</span>
-                <span className="squad-area">{f.areaName}</span>
+                <span className="squad-area">
+                  {f.label || `${f.lat.toFixed(3)}, ${f.lng.toFixed(3)}`}
+                </span>
               </div>
               <select
                 className="select"
@@ -138,7 +140,7 @@ export function SquadBuilder() {
 
       {state.squad.length === 0 && (
         <p className="hint dim">
-          No players yet — until you add some, pitches are ranked on price and facilities alone.
+          No players yet. Until you add some, pitches are listed by price and facilities alone.
         </p>
       )}
     </section>

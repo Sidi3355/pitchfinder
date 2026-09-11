@@ -7,19 +7,12 @@ import { Filters } from './Filters.jsx'
 import { ResultsList } from './ResultsList.jsx'
 
 export function Finder() {
-  const { state } = useStore()
+  const { state, actions } = useStore()
   const [tab, setTab] = useState('results') // 'results' | 'group' | 'filters'
 
   return (
     <div className="finder">
       <aside className="side">
-        {state.dataError && (
-          <div className="notice error">
-            Couldn&rsquo;t load pitch data ({state.dataError}). Refresh to try again.
-          </div>
-        )}
-        {!state.data && !state.dataError && <div className="notice">Loading pitch data…</div>}
-
         <div className="side-tabs" role="tablist">
           {[
             ['results', 'Results'],
@@ -42,7 +35,25 @@ export function Finder() {
         </div>
 
         <div className="side-body">
-          {tab === 'results' && <ResultsList />}
+          {tab === 'results' && state.dataError && (
+            <div className="state-block error" role="alert">
+              <p>
+                <strong>Could not load pitch data.</strong>
+              </p>
+              <p>Check your connection and try again.</p>
+              <button className="btn primary sm" onClick={actions.retryData}>
+                Try again
+              </button>
+            </div>
+          )}
+          {tab === 'results' && state.dataLoading && (
+            <div className="skeleton" aria-busy="true" aria-label="Loading pitches">
+              <div className="skeleton-card" />
+              <div className="skeleton-card" />
+              <div className="skeleton-card" />
+            </div>
+          )}
+          {tab === 'results' && state.data && <ResultsList />}
           {tab === 'group' && <SquadBuilder />}
           {tab === 'filters' && <Filters />}
         </div>

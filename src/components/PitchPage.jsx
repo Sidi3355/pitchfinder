@@ -50,7 +50,9 @@ export function PitchPage({ id }) {
           {t.label}
         </p>
         <h1>{name}</h1>
-        <p className="drawer-sub">{[pitch.area, pitch.operator].filter(Boolean).join(' · ')}</p>
+        <p className="drawer-sub">
+          {[pitch.name ? pitch.area : null, pitch.operator].filter(Boolean).join(' · ')}
+        </p>
       </header>
       <MapBoundary compact>
         <MiniMap pitch={pitch} />

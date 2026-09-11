@@ -8,7 +8,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { PITCH_TYPES, pitchName } from '../src/data/types.js'
 import { costOf } from '../src/lib/data.js'
-import { surfaceLabel } from '../src/lib/labels.js'
+import { bookingLabel, isBookable, surfaceLabel } from '../src/lib/labels.js'
 
 const ROOT = new URL('..', import.meta.url).pathname
 const DIST = join(ROOT, 'dist')
@@ -37,7 +37,7 @@ function describe(pitch) {
   if (pitch.changingRooms) facts.push('changing rooms')
   if (pitch.pitchCount > 1) facts.push(`${pitch.pitchCount} pitches`)
   if (facts.length) parts.push(`${facts.join(', ')}.`)
-  if (pitch.bookingUrl) parts.push('Bookable online.')
+  if (isBookable(pitch.bookingUrl)) parts.push('Bookable online.')
   return parts.join(' ')
 }
 

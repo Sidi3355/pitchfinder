@@ -40,7 +40,9 @@ export function PitchDetail() {
             {t.label}
           </p>
           <h2>{name}</h2>
-          <p className="drawer-sub">{[pitch.area, pitch.operator].filter(Boolean).join(' · ')}</p>
+          <p className="drawer-sub">
+            {[pitch.name ? pitch.area : null, pitch.operator].filter(Boolean).join(' · ')}
+          </p>
         </div>
         <button className="icon-btn" onClick={() => actions.selectPitch(null)} aria-label="Close">
           ✕

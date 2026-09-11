@@ -1,6 +1,6 @@
 // Geo helpers: distance, ETA estimation, and the map projection.
 //
-// ETAs are straight-line estimates with a circuity factor — good enough to
+// ETAs are straight-line estimates with a circuity factor, good enough to
 // rank pitches fairly for a group. To go production-grade, swap `estimateEta`
 // for the TfL Journey Planner API (free key) and keep the same signature.
 
@@ -16,7 +16,7 @@ export function haversineKm(a, b) {
   return 2 * EARTH_RADIUS_KM * Math.asin(Math.sqrt(h))
 }
 
-// Real journeys aren't straight lines — multiply by a circuity factor.
+// Real journeys aren't straight lines, multiply by a circuity factor.
 const CIRCUITY = 1.35
 
 export const TRAVEL_MODES = {
@@ -31,6 +31,11 @@ export function estimateEta(from, to, mode = 'transit') {
   const m = TRAVEL_MODES[mode] || TRAVEL_MODES.transit
   const km = haversineKm(from, to) * CIRCUITY
   return Math.round((km / m.speedKmh) * 60 + m.overheadMin)
+}
+
+/** Minutes shown to people: estimates are rounded to 5 so they read as estimates. */
+export function displayMinutes(minutes) {
+  return Math.max(5, Math.round(minutes / 5) * 5)
 }
 
 /** Geographic centre of a set of points. */

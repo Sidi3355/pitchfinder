@@ -4,7 +4,7 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 
-const roots = process.argv.slice(2).length ? process.argv.slice(2) : ['README.md', 'agent']
+const roots = process.argv.slice(2).length ? process.argv.slice(2) : ['README.md', 'agent', 'src', 'index.html']
 const EM_DASH = '—'
 const failures = []
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useStore } from '../lib/store.jsx'
+import { useFocusTrap } from '../lib/focus-trap.js'
 
 const REASONS = {
   save: 'Sign in to save pitches. Browsing and ranking never need an account.',
@@ -14,6 +15,8 @@ export function AuthModal() {
   const [phase, setPhase] = useState('idle') // idle | sending | sent | error
   const [error, setError] = useState('')
   const firstField = useRef(null)
+  const dialogRef = useRef(null)
+  useFocusTrap(dialogRef)
 
   useEffect(() => {
     firstField.current?.focus()
@@ -54,6 +57,7 @@ export function AuthModal() {
   return (
     <div className="scrim" onClick={actions.closeAuth}>
       <div
+        ref={dialogRef}
         className="modal"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
