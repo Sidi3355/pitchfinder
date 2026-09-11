@@ -119,7 +119,7 @@ Surfaces: grass 1,116, astro 339, hard 200, 3g 17, other 6, unknown 1,470.
 - `data/prices.json` has never been populated (CI logs to be checked).
 - Map style errors and the 8 s fallback timer log to the console; `window.__pfMap` is exposed.
 - Google Fonts is a render-blocking third-party request.
-- Em dashes throughout UI copy; `pitchName` builds "Park pitch — Peckham".
+- Em dashes throughout UI copy; `pitchName` joins type and area with an em dash.
 - No 404, no loading skeleton, no designed empty state, no dark mode, no focus styles beyond
   the browser default on buttons, 30 px icon buttons.
 - `geo.js` carries dead code (projection, Thames polyline) from the pre-MapLibre map.

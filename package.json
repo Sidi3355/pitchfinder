@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . && prettier --check .",
+    "lint": "eslint . && prettier --check . && npm run check:copy",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
@@ -16,7 +16,8 @@
     "lighthouse": "node scripts/lighthouse.mjs",
     "check:bundle": "node scripts/check-bundle.mjs",
     "audit:data": "node scripts/audit-data.mjs",
-    "check": "npm run lint && npm run test && npm run build && npm run check:bundle && npm run test:e2e && npm run lighthouse"
+    "check": "npm run lint && npm run test && npm run build && npm run check:bundle && npm run test:e2e && npm run lighthouse",
+    "check:copy": "node scripts/check-copy.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",
