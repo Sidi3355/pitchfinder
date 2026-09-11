@@ -40,5 +40,10 @@ jobs:
             echo "No data changes."
           else
             git commit -m "Refresh pitch dataset, geocoding caches and data quality report"
-            git push
+            # The branch may have moved while this ran: replay the data commit on top.
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && break
+              echo "push attempt $attempt failed, retrying"
+              sleep 10
+            done
           fi
