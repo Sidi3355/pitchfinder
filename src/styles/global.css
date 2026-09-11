@@ -1676,3 +1676,39 @@ textarea.input {
   gap: 6px;
   color: var(--ink-2);
 }
+
+.toast-region {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 60;
+}
+.toast {
+  pointer-events: auto;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+  max-width: min(480px, calc(100% - 32px));
+}
+.toast .link-btn {
+  color: #fff;
+}
+.game-where-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.game-address {
+  margin: 0;
+  font-size: 14px;
+}

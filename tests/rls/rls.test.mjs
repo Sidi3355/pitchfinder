@@ -147,6 +147,19 @@ d('games and RSVPs', () => {
     const del = await db.asUser(bob, (q) => q('delete from games where id = $1', [gameId]))
     expect(del.rowCount).toBe(0)
   })
+  it('stores the group that picked the pitch and returns it with the game', async () => {
+    const group = [{ name: 'Sam', label: 'E8 3DL', lat: 51.5475, lng: -0.0553, mode: 'transit' }]
+    await db.asUser(alice, (q) =>
+      q(`update games set "group" = $1 where id = $2`, [JSON.stringify(group), gameId]),
+    )
+    const { rows } = await db.asAnon((q) => q('select game_by_slug($1) as g', [slug]))
+    expect(rows[0].g.game.group).toEqual(group)
+    await expect(
+      db.asUser(alice, (q) =>
+        q(`update games set "group" = $1 where id = $2`, ['{"not":"an array"}', gameId]),
+      ),
+    ).rejects.toThrow(/check constraint/)
+  })
   it('anyone with the link reads the game through game_by_slug', async () => {
     const { rows } = await db.asAnon((q) => q('select game_by_slug($1) as g', [slug]))
     const g = rows[0].g

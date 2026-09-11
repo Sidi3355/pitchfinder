@@ -115,7 +115,7 @@ function parseFilter(key, raw) {
         .replace(/^\(|\)$/g, '')
         .split(',')
         .map((s) => s.replace(/^"|"$/g, ''))
-      return { sql: (p) => `${key} = any($${p.push(items)})`, key }
+      return { sql: (p) => `"${key}" = any($${p.push(items)})`, key }
     }
     default:
       throw httpError(400, `unsupported operator ${op}`)
@@ -126,7 +126,7 @@ function selectList(select) {
   if (!select || select === '*') return '*'
   const cols = select.split(',').map((c) => c.trim())
   for (const c of cols) if (!IDENT.test(c)) throw httpError(400, `unsupported select ${c}`)
-  return cols.join(', ')
+  return cols.map((c) => `"${c}"`).join(', ')
 }
 
 function orderClause(order) {
@@ -140,7 +140,7 @@ function orderClause(order) {
       : mods.includes('nullslast')
         ? ' nulls last'
         : ''
-    return `${col} ${dir}${nulls}`
+    return `"${col}" ${dir}${nulls}`
   })
   return ` order by ${parts.join(', ')}`
 }
@@ -191,12 +191,12 @@ async function restQuery(db, req, url, table, body) {
     let conflict = ''
     if (/resolution=merge-duplicates/.test(prefer)) {
       const target = onConflict || TABLES[table]
-      const updates = cols.filter((c) => !target.includes(c)).map((c) => `${c} = excluded.${c}`)
-      conflict = ` on conflict (${target.join(', ')}) do ${updates.length ? `update set ${updates.join(', ')}` : 'nothing'}`
+      const updates = cols.filter((c) => !target.includes(c)).map((c) => `"${c}" = excluded."${c}"`)
+      conflict = ` on conflict (${target.map((c) => `"${c}"`).join(', ')}) do ${updates.length ? `update set ${updates.join(', ')}` : 'nothing'}`
     } else if (/resolution=ignore-duplicates/.test(prefer)) {
       conflict = ` on conflict do nothing`
     }
-    text = `insert into ${table} (${cols.join(', ')}) values ${values}${conflict}${wantRows ? ` returning ${select}` : ''}`
+    text = `insert into ${table} (${cols.map((c) => `"${c}"`).join(', ')}) values ${values}${conflict}${wantRows ? ` returning ${select}` : ''}`
   } else if (req.method === 'PATCH') {
     const cols = Object.keys(body || {})
     for (const c of cols) if (!IDENT.test(c)) throw httpError(400, `bad column ${c}`)

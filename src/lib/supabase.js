@@ -100,21 +100,69 @@ export async function signOut() {
   if (error) fail(error)
 }
 
-async function ensureProfile(sessionUser) {
+const PENDING_NAME_KEY = 'pf:pending-name'
+
+/** Name typed on the sign-in form, applied once the profile exists. */
+export function rememberPendingName(name) {
+  try {
+    if (name) localStorage.setItem(PENDING_NAME_KEY, name.slice(0, 40))
+  } catch {}
+}
+
+function takePendingName() {
+  try {
+    const v = localStorage.getItem(PENDING_NAME_KEY)
+    if (v) localStorage.removeItem(PENDING_NAME_KEY)
+    return v || null
+  } catch {
+    return null
+  }
+}
+
+// One profile check per user at a time: the session restore and the auth
+// change event both ask for it, and two inserts would race for the name.
+const profileWork = new Map()
+
+function ensureProfile(sessionUser) {
+  if (!profileWork.has(sessionUser.id)) {
+    profileWork.set(
+      sessionUser.id,
+      ensureProfileOnce(sessionUser).finally(() =>
+        setTimeout(() => profileWork.delete(sessionUser.id), 5000),
+      ),
+    )
+  }
+  return profileWork.get(sessionUser.id)
+}
+
+async function ensureProfileOnce(sessionUser) {
   const sb = await client()
+  const pending = takePendingName()
   const { data: existing } = await sb
     .from('profiles')
     .select('display_name')
     .eq('id', sessionUser.id)
     .maybeSingle()
-  if (existing) return existing
+  if (existing) {
+    if (pending && pending !== existing.display_name) {
+      const { data } = await sb
+        .from('profiles')
+        .update({ display_name: pending })
+        .eq('id', sessionUser.id)
+        .select('display_name')
+        .maybeSingle()
+      return data || { display_name: pending }
+    }
+    return existing
+  }
   const draft = toUser(sessionUser, null)
+  const displayName = (pending || draft.displayName).slice(0, 40)
   const { data, error } = await sb
     .from('profiles')
-    .insert({ id: sessionUser.id, display_name: draft.displayName.slice(0, 40) })
+    .insert({ id: sessionUser.id, display_name: displayName })
     .select('display_name')
     .single()
-  if (error) return { display_name: draft.displayName }
+  if (error) return { display_name: displayName }
   return data
 }
 
@@ -184,7 +232,7 @@ export async function listGames() {
   return data
 }
 
-export async function createGame(userId, { pitchId, pitchName, startsAt, notes }) {
+export async function createGame(userId, { pitchId, pitchName, startsAt, notes, group = [] }) {
   const sb = await client()
   const { data, error } = await sb
     .from('games')
@@ -194,6 +242,7 @@ export async function createGame(userId, { pitchId, pitchName, startsAt, notes }
       pitch_name: pitchName,
       starts_at: startsAt,
       notes: notes || null,
+      group: group.map(({ name, label, lat, lng, mode }) => ({ name, label, lat, lng, mode })),
     })
     .select(GAME_COLUMNS)
     .single()

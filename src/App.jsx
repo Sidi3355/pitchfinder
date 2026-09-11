@@ -19,10 +19,16 @@ const TITLES = {
 }
 
 export function App() {
-  const { state } = useStore()
+  const { state, actions } = useStore()
   const { route } = state
   const mainRef = useRef(null)
   const mobile = useMediaQuery(MOBILE_QUERY)
+
+  useEffect(() => {
+    if (!state.notice) return
+    const t = setTimeout(actions.clearNotice, 5000)
+    return () => clearTimeout(t)
+  }, [state.notice, actions])
 
   useEffect(() => {
     if (TITLES[route.name]) document.title = TITLES[route.name]
@@ -58,6 +64,16 @@ export function App() {
         {page}
       </main>
       {state.authModal && <AuthModal />}
+      <div className="toast-region" role="status" aria-live="polite">
+        {state.notice && (
+          <div className="toast">
+            {state.notice.text}
+            <button className="link-btn" onClick={actions.clearNotice} aria-label="Dismiss">
+              ✕
+            </button>
+          </div>
+        )}
+      </div>
       {route.name === 'find' && !mobile && state.selectedPitchId && <PitchDetail />}
     </div>
   )

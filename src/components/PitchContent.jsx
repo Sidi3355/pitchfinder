@@ -11,6 +11,7 @@ import { costOf, isBounded } from '../lib/data.js'
 import { bookingLabel, surfaceLabel } from '../lib/labels.js'
 import { formatDate, fromInputParts, nextKickoff, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
+import { Directions } from './Directions.jsx'
 
 export function PitchContent({ pitch }) {
   const { state, actions } = useStore()
@@ -109,29 +110,7 @@ export function PitchContent({ pitch }) {
 
       <section className="drawer-section">
         <h3>Directions</h3>
-        <p className="directions">
-          <a
-            href={`https://www.google.com/maps/dir/?api=1&destination=${pitch.lat},${pitch.lng}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Maps
-          </a>
-          <a
-            href={`https://maps.apple.com/?daddr=${pitch.lat},${pitch.lng}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Apple Maps
-          </a>
-          <a
-            href={`https://citymapper.com/directions?endcoord=${pitch.lat}%2C${pitch.lng}&endname=${encodeURIComponent(name)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Citymapper
-          </a>
-        </p>
+        <Directions lat={pitch.lat} lng={pitch.lng} name={name} />
       </section>
 
       {state.squad.length > 0 && (

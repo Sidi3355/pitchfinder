@@ -12,6 +12,7 @@ const REASONS = {
 export function AuthModal() {
   const { state, actions } = useStore()
   const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
   const [phase, setPhase] = useState('idle') // idle | sending | sent | error
   const [error, setError] = useState('')
   const firstField = useRef(null)
@@ -35,7 +36,7 @@ export function AuthModal() {
     setPhase('sending')
     setError('')
     try {
-      await actions.signInWithEmail(value)
+      await actions.signInWithEmail(value, name.trim())
       setPhase('sent')
     } catch (err) {
       setError(err.message || 'Something went wrong.')
@@ -46,7 +47,7 @@ export function AuthModal() {
   async function google() {
     setError('')
     try {
-      await actions.signInWithGoogle()
+      await actions.signInWithGoogle(name.trim())
     } catch (err) {
       setError(err.message || 'Something went wrong.')
     }
@@ -85,6 +86,17 @@ export function AuthModal() {
           <>
             <p className="hint">{reason}</p>
             <form className="stack" onSubmit={submit} noValidate>
+              <label className="field">
+                <span className="field-label">Your name, as the group will see it</span>
+                <input
+                  className="input"
+                  autoComplete="given-name"
+                  placeholder="Sam"
+                  maxLength={40}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </label>
               <label className="field">
                 <span className="field-label">Email</span>
                 <input

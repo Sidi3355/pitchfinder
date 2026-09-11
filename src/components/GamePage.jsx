@@ -10,6 +10,8 @@ import { shareUrl } from '../lib/share.js'
 import { pitchName } from '../data/types.js'
 import { bookingLabel } from '../lib/labels.js'
 import { Link } from './Link.jsx'
+import { Directions } from './Directions.jsx'
+import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { setGuest, useGuest } from '../lib/guest.js'
 
 const STATUSES = [
@@ -201,6 +203,44 @@ export function GamePage({ slug }) {
         {game.notes && <p className="game-notes">{game.notes}</p>}
         <p className="hint dim">Organised by {game.creator_name}</p>
       </header>
+
+      {pitch && (
+        <section className="game-where-block" aria-labelledby="where-title">
+          <h2 id="where-title" className="section-title">
+            Getting there
+          </h2>
+          <p className="game-address">
+            {pitch.address ? `${pitch.address}. ` : ''}
+            {pitch.postcode
+              ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
+              : 'Postcode not known'}
+            {pitch.borough ? `, ${pitch.borough}` : ''}
+          </p>
+          <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
+          {Array.isArray(game.group) && game.group.length > 0 && (
+            <>
+              <ul className="eta-list">
+                {game.group.map((m, i) => (
+                  <li key={`${m.name}-${i}`}>
+                    <span>
+                      {m.name}
+                      {m.label ? <span className="dim"> from {m.label}</span> : null}{' '}
+                      <span className="dim">
+                        ({(TRAVEL_MODES[m.mode]?.label || 'public transport').toLowerCase()})
+                      </span>
+                    </span>
+                    <span className="eta-dots" />
+                    <strong>about {displayMinutes(estimateEta(m, pitch, m.mode))} min</strong>
+                  </li>
+                ))}
+              </ul>
+              <p className="hint dim">
+                Journey times are estimates from straight-line distance and typical speeds.
+              </p>
+            </>
+          )}
+        </section>
+      )}
 
       {cancelled ? (
         <div className="notice" role="status">

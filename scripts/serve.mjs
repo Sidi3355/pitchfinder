@@ -4,9 +4,10 @@
 // Used by Playwright and Lighthouse so tests see what users see.
 
 import { createServer } from 'node:http'
-import { createReadStream, existsSync, statSync } from 'node:fs'
+import { createReadStream, existsSync, readFileSync, statSync } from 'node:fs'
 import { extname, join, normalize } from 'node:path'
 import { createGzip } from 'node:zlib'
+import { fetchGame, renderGameHtml } from '../src/lib/game-html.js'
 
 const args = process.argv.slice(2)
 const port = Number(args[args.indexOf('--port') + 1] || process.env.PORT || 4173)
@@ -52,8 +53,31 @@ function resolve(pathname) {
   return null
 }
 
-const server = createServer((req, res) => {
+// In tests the stand-in Supabase renders game links the way the Vercel
+// function does (see api/game.js), so the Open Graph HTML is testable.
+const FAKE_SUPABASE = process.env.FAKE_SUPABASE_URL || 'http://localhost:4177'
+const ANON = process.env.FAKE_SUPABASE_KEY || 'test-anon-key'
+
+const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://localhost:${port}`)
+  const game = url.pathname.match(/^\/g\/([a-z0-9-]{1,64})$/i)
+  if (game) {
+    try {
+      const template = readFileSync(join(root, 'index.html'), 'utf8')
+      const payload = await fetchGame(FAKE_SUPABASE, ANON, game[1]).catch(() => null)
+      const html = renderGameHtml(template, payload, {
+        siteUrl: `http://localhost:${port}`,
+        slug: game[1],
+      })
+      res.writeHead(200, {
+        'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'no-store',
+      })
+      return res.end(html)
+    } catch {
+      // Fall through to the SPA shell.
+    }
+  }
   let file = resolve(url.pathname)
   let status = 200
   if (!file) {

@@ -16,6 +16,7 @@ import { loadPitchData } from './data.js'
 import { DEFAULT_FILTERS, rankPitches } from './score.js'
 import { matchRoute, navigate, useLocation } from './location.js'
 import { buildHref, parseSearch } from './url-state.js'
+import { setPending, takePending } from './pending.js'
 
 const StoreContext = createContext(null)
 
@@ -30,6 +31,7 @@ const initialState = {
   authAvailable: sb.configured,
   authModal: null, // null | { reason: 'save' | 'game' | 'group' | 'generic' }
   savedIds: new Set(),
+  notice: null, // { text, at } shown briefly after a completed action
 }
 
 function reducer(state, action) {
@@ -56,6 +58,8 @@ function reducer(state, action) {
       return { ...state, savedIds: new Set(action.ids) }
     case 'displayName':
       return { ...state, user: state.user ? { ...state.user, displayName: action.name } : null }
+    case 'notice':
+      return { ...state, notice: action.text ? { text: action.text, at: Date.now() } : null }
     default:
       return state
   }
@@ -87,6 +91,28 @@ export function StoreProvider({ children }) {
     }
   }, [state.dataAttempt])
 
+  // Finish what the person was doing before sign-in interrupted them.
+  async function finishPending(user) {
+    const action = takePending()
+    if (!action) return
+    try {
+      if (action.type === 'save' && action.pitchId) {
+        await sb.savePitch(user.id, action.pitchId)
+        dispatch({ type: 'saved', ids: [...(await sb.listSaved())] })
+        dispatch({ type: 'notice', text: 'Pitch saved.' })
+      } else if (action.type === 'group' && action.members?.length) {
+        await sb.saveGroup(user.id, { name: action.name || 'My group', members: action.members })
+        dispatch({ type: 'notice', text: 'Group saved. Find it under My games.' })
+      } else if (action.type === 'game' && action.pitchId) {
+        const game = await sb.createGame(user.id, action)
+        dispatch({ type: 'notice', text: 'Game created. Share the link with the group.' })
+        navigate(`/g/${game.share_slug}`)
+      }
+    } catch (err) {
+      dispatch({ type: 'notice', text: `Signed in, but could not finish: ${err.message}` })
+    }
+  }
+
   // ── Session ──
   useEffect(() => {
     clearLegacyStorage()
@@ -117,6 +143,7 @@ export function StoreProvider({ children }) {
           if (to && to.startsWith('/')) navigate(to, { replace: true })
           else if (window.location.hash)
             window.history.replaceState(null, '', window.location.pathname + window.location.search)
+          if (user) finishPending(user)
         }
       })
       .catch(() => !cancelled && dispatch({ type: 'auth', user: null }))
@@ -165,8 +192,9 @@ export function StoreProvider({ children }) {
   const actions = useMemo(() => {
     const setUrl = (patch, { replace = true } = {}) =>
       navigate(buildHref(location.path, { ...urlState, ...patch }), { replace })
-    const requireUser = (reason) => {
+    const requireUser = (reason, pending) => {
       if (state.user) return true
+      if (pending) setPending(pending)
       dispatch({ type: 'authModal', modal: { reason } })
       return false
     }
@@ -180,12 +208,14 @@ export function StoreProvider({ children }) {
 
       openAuth: (reason = 'generic') => dispatch({ type: 'authModal', modal: { reason } }),
       closeAuth: () => dispatch({ type: 'authModal', modal: null }),
-      async signInWithEmail(email) {
+      async signInWithEmail(email, name) {
         sessionStorage.setItem(RETURN_KEY, location.href)
+        sb.rememberPendingName(name)
         await sb.signInWithEmail(email, returnUrl())
       },
-      async signInWithGoogle() {
+      async signInWithGoogle(name) {
         sessionStorage.setItem(RETURN_KEY, location.href)
+        sb.rememberPendingName(name)
         await sb.signInWithGoogle(returnUrl())
       },
       async signOut() {
@@ -213,7 +243,7 @@ export function StoreProvider({ children }) {
 
       /** Save or unsave. Returns false when the user has to sign in first. */
       async toggleSave(pitchId) {
-        if (!requireUser('save')) return false
+        if (!requireUser('save', { type: 'save', pitchId })) return false
         const next = new Set(state.savedIds)
         if (next.has(pitchId)) {
           next.delete(pitchId)
@@ -229,12 +259,19 @@ export function StoreProvider({ children }) {
 
       /** Creates a game and returns it (with share_slug), or null if sign-in is needed. */
       async createGame({ pitchId, pitchName, startsAt, notes }) {
-        if (!requireUser('game')) return null
-        return sb.createGame(state.user.id, { pitchId, pitchName, startsAt, notes })
+        const group = squad.map(({ name, label, lat, lng, mode }) => ({
+          name,
+          label,
+          lat,
+          lng,
+          mode,
+        }))
+        if (!requireUser('game', { type: 'game', pitchId, pitchName, startsAt, notes, group }))
+          return null
+        return sb.createGame(state.user.id, { pitchId, pitchName, startsAt, notes, group })
       },
 
       async saveGroup(name) {
-        if (!requireUser('group')) return null
         const members = squad.map(({ name: n, label, lat, lng, mode }) => ({
           name: n,
           label,
@@ -242,8 +279,10 @@ export function StoreProvider({ children }) {
           lng,
           mode,
         }))
+        if (!requireUser('group', { type: 'group', name, members })) return null
         return sb.saveGroup(state.user.id, { name, members })
       },
+      clearNotice: () => dispatch({ type: 'notice', text: null }),
     }
   }, [state.user, state.savedIds, squad, filters, urlState, location.path, location.href, hrefFor])
 

@@ -31,6 +31,16 @@ test.describe('accounts and shared games', () => {
 
     await expect(page).toHaveURL(/\/g\/[0-9a-f]{20}$/)
     const gameUrl = page.url()
+
+    // The HTML a chat app fetches for the link carries the game's own title and image.
+    const html = await (await request.get(gameUrl)).text()
+    expect(html).toMatch(
+      /<meta property="og:title" content="Powerleague Shoreditch, Thu,? 1 Oct,? 19:30"/,
+    )
+    expect(html).toMatch(/<meta property="og:image" content="[^"]+\/og\/game\.png"/)
+    expect(html).toMatch(
+      /<meta property="og:description" content="Football at Powerleague Shoreditch[^"]*Bring bibs/,
+    )
     await expect(page.getByRole('heading', { level: 1 })).toContainText('19:30')
     await expect(page.getByText('Bring bibs')).toBeVisible()
     await expect(page.getByRole('link', { name: 'Powerleague Shoreditch' })).toBeVisible()
@@ -77,22 +87,29 @@ test.describe('accounts and shared games', () => {
     await expect(page.getByRole('link', { name: 'Open the map' })).toBeVisible()
   })
 
-  test('saving a pitch asks for sign-in, then persists across reloads', async ({
+  test('saving a pitch asks for sign-in, finishes the save on return, and persists', async ({
     page,
     request,
     baseURL,
   }) => {
+    const email = `bob-${Date.now()}@example.com`
     await page.goto('/p/pl-shoreditch')
     await page.getByRole('button', { name: 'Save', exact: true }).click()
-    await expect(page.getByRole('dialog', { name: 'Sign in' })).toContainText(
-      'Sign in to save pitches',
-    )
-    await page.getByRole('button', { name: 'Close' }).click()
+    const dialog = page.getByRole('dialog', { name: 'Sign in' })
+    await expect(dialog).toContainText('Sign in to save pitches')
+    await dialog.getByLabel(/Your name/).fill('Bob')
+    await dialog.getByLabel('Email').fill(email)
+    await dialog.getByRole('button', { name: 'Email me a sign-in link' }).click()
+    await expect(dialog).toContainText('Check your inbox')
 
-    await signIn(page, request, baseURL, `bob-${Date.now()}@example.com`)
-    await page.goto('/p/pl-shoreditch')
-    await page.getByRole('button', { name: 'Save', exact: true }).click()
+    // "Open" the emailed link: the app returns to the pitch, signed in, and finishes the save.
+    const res = await request.get(
+      `${FAKE}/__test/magic-link?email=${encodeURIComponent(email)}&redirect=${encodeURIComponent(`${baseURL}/`)}`,
+    )
+    const { url } = await res.json()
+    await page.goto(url)
     await expect(page.getByRole('button', { name: 'Saved' })).toBeVisible()
+    await expect(page.locator('.header-user')).toHaveText('Bob')
     await page.reload()
     await expect(page.getByRole('button', { name: 'Saved' })).toBeVisible()
     await page.goto('/me')
