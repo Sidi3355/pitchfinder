@@ -87,6 +87,7 @@ try {
         `${FAKE}/__test/magic-link?email=organiser@example.com&redirect=${encodeURIComponent(`${BASE}/`)}`,
       )
     ).json()
+    await page.goto('about:blank') // an emailed link opens fresh, not as a hash change
     await page.goto(link.url)
     await page.waitForSelector('.header-user')
     await page.goto(`${BASE}/p/pl-shoreditch?${GROUP}`)
@@ -133,9 +134,25 @@ try {
           `${FAKE}/__test/magic-link?email=organiser@example.com&redirect=${encodeURIComponent(`${BASE}${gameUrl}`)}`,
         )
       ).json()
+      page.on(
+        'console',
+        (m) =>
+          m.type() === 'error' && console.warn(`[${profile}] console: ${m.text().slice(0, 200)}`),
+      )
       await page.goto(link.url)
       // The session is restored from the URL hash once supabase-js has loaded.
-      await page.waitForSelector('.header-user', { timeout: 15000 })
+      try {
+        await page.waitForSelector('.header-user', { timeout: 15000 })
+      } catch {
+        console.warn(`[${profile}] session not restored on first load, retrying`)
+        const again = await (
+          await fetch(
+            `${FAKE}/__test/magic-link?email=organiser@example.com&redirect=${encodeURIComponent(`${BASE}${gameUrl}`)}`,
+          )
+        ).json()
+        await page.goto(again.url)
+        await page.waitForSelector('.header-user', { timeout: 15000 })
+      }
       await page.waitForSelector('text=Organiser', { timeout: 15000 })
       await shot(page, join(OUT, `${profile}-game-organiser.jpg`))
       await page.goto(`${BASE}/me`)
@@ -148,11 +165,15 @@ try {
       await page.waitForTimeout(300)
       await shot(page, join(OUT, `${profile}-report-form.jpg`))
     }
-    await page.goto(`${BASE}/p/pl-shoreditch`)
-    await page.waitForTimeout(800)
-    await page.getByRole('button', { name: 'Save', exact: true }).click()
-    await page.waitForTimeout(400)
-    await shot(page, join(OUT, `${profile}-sign-in.jpg`))
+    // The sign-in dialog, from a fresh signed-out context.
+    const fresh = await browser.newContext(opts)
+    const anon = await fresh.newPage()
+    await anon.goto(`${BASE}/p/pl-shoreditch`)
+    await anon.waitForTimeout(800)
+    await anon.getByRole('button', { name: 'Save', exact: true }).click()
+    await anon.waitForTimeout(400)
+    await shot(anon, join(OUT, `${profile}-sign-in.jpg`))
+    await fresh.close()
     await ctx.close()
   }
   await browser.close()

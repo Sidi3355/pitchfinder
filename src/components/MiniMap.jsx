@@ -27,7 +27,7 @@ export function MiniMap({ pitch }) {
     })
     let loaded = false
     map.on('load', () => (loaded = true))
-    const fallBack = () => !loaded && map.setStyle(FALLBACK_STYLE)
+    const fallBack = () => !loaded && map.setStyle(FALLBACK_STYLE, { diff: false })
     map.on('error', fallBack)
     const timer = setTimeout(fallBack, 8000)
     const el = document.createElement('div')

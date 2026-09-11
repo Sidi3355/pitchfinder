@@ -113,6 +113,16 @@ export function StoreProvider({ children }) {
     }
   }
 
+  // A sign-in link opened into an already-loaded page only changes the hash;
+  // reload so the session restore below runs from the top.
+  useEffect(() => {
+    const onHash = () => {
+      if (/access_token=/.test(window.location.hash)) window.location.reload()
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
   // ── Session ──
   useEffect(() => {
     clearLegacyStorage()

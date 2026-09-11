@@ -540,8 +540,10 @@ textarea.input {
   min-width: 0;
   background: var(--map-bg);
 }
+/* MapLibre's own stylesheet loads after this one (the map is a lazy chunk)
+   and sets position: relative on the map element, so this must win. */
 .map-container {
-  position: absolute;
+  position: absolute !important;
   inset: 0;
 }
 .map-loading {
@@ -1297,9 +1299,11 @@ textarea.input {
   color: var(--ink-3);
   font-weight: 400;
 }
-.drawer-section h3 {
+.drawer-section h3,
+.section-h {
   margin: 0 0 var(--space-2);
   font-size: var(--text-md);
+  font-weight: 600;
 }
 .drawer-section {
   display: flex;

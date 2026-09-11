@@ -111,13 +111,13 @@ export function PitchContent({ pitch: indexPitch }) {
       </dl>
 
       <section className="drawer-section">
-        <h3>Directions</h3>
+        <h2 className="section-h">Directions</h2>
         <Directions lat={pitch.lat} lng={pitch.lng} name={name} />
       </section>
 
       {state.squad.length > 0 && (
         <section className="drawer-section">
-          <h3>Journey times (estimates)</h3>
+          <h2 className="section-h">Journey times (estimates)</h2>
           <ul className="eta-list">
             {state.squad.map((f) => (
               <li key={f.id}>
@@ -256,7 +256,7 @@ function PlanGame({ pitch, name, onClose }) {
 
   return (
     <form className="drawer-section" onSubmit={submit} noValidate>
-      <h3>Plan a game here</h3>
+      <h2 className="section-h">Plan a game here</h2>
       {!state.authAvailable && (
         <div className="notice" role="status">
           Sign in is unavailable right now, so games cannot be created. Share the pitch link
@@ -376,7 +376,7 @@ function ReportProblem({ pitch, onClose }) {
 
   return (
     <form className="drawer-section report-form" onSubmit={submit}>
-      <h3>Report a problem</h3>
+      <h2 className="section-h">Report a problem</h2>
       {!state.authAvailable && (
         <div className="notice" role="status">
           Reporting is unavailable right now. Please try again later.

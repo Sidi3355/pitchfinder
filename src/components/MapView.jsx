@@ -97,7 +97,7 @@ export function MapView({ bottomPadding = 0 }) {
     const fallBack = () => {
       if (!fellBack && !readyRef.current) {
         fellBack = true
-        map.setStyle(FALLBACK_STYLE)
+        map.setStyle(FALLBACK_STYLE, { diff: false })
       }
     }
     map.on('error', () => {

@@ -19,7 +19,9 @@ export function PitchCard({ row, rank }) {
     : cost.perHour === 0
       ? 'free'
       : `£${cost.perHour}/hr`
-  const hasEstimate = row.reasons.some((r) => r.estimate)
+  // The meta line already says the price and the surface; reasons add what it does not.
+  const reasons = row.reasons.filter((r) => !['free', 'astro', '3G'].includes(r.text))
+  const hasEstimate = reasons.some((r) => r.estimate)
 
   function open() {
     if (onFinder) actions.selectPitch(pitch.id)
@@ -83,9 +85,9 @@ export function PitchCard({ row, rank }) {
           {withGroup && <> · up to about {displayMinutes(row.maxEta)} min</>}
         </p>
 
-        {row.reasons.length > 0 && (
+        {reasons.length > 0 && (
           <p className="card-reasons">
-            {row.reasons.map((r) => r.text).join(' · ')}
+            {reasons.map((r) => r.text).join(' · ')}
             {hasEstimate && <span className="dim"> (est.)</span>}
           </p>
         )}
