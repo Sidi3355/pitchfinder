@@ -1,55 +1,44 @@
-// App-wide state: pitch dataset, session, squad, filters, results, saved
-// pitches and planned games. One React context, no extra dependencies.
+// App-wide state. The address bar is the source of truth for the group, the
+// filters and the selected pitch (see url-state.js), so those are derived from
+// the location rather than held in memory. The store holds the dataset, the
+// session and transient UI state, and exposes actions that rewrite the URL.
 
-import React, { createContext, useContext, useEffect, useMemo, useReducer } from 'react'
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useReducer,
+} from 'react'
 import * as auth from './auth.js'
 import { loadPitchData } from './data.js'
 import { DEFAULT_FILTERS, rankPitches } from './score.js'
+import { matchRoute, navigate, useLocation } from './location.js'
+import { buildHref, parseSearch } from './url-state.js'
 
 const StoreContext = createContext(null)
 
 const initialState = {
-  view: 'find', // 'find' | 'about' | 'profile'
   data: null, // { generatedAt, count, byType, pitches } once loaded
   dataError: null,
+  dataAttempt: 0,
   user: null,
-  squad: [], // [{ id, name, areaName, lat, lng, mode }]
-  filters: { ...DEFAULT_FILTERS },
-  selectedPitchId: null,
   authModal: null, // null | 'login' | 'register'
 }
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'view':
-      return { ...state, view: action.view }
     case 'data':
       return { ...state, data: action.data, dataError: null }
     case 'dataError':
       return { ...state, dataError: action.message }
+    case 'data:retry':
+      return { ...state, dataError: null, dataAttempt: state.dataAttempt + 1 }
     case 'user':
       return { ...state, user: action.user, authModal: null }
     case 'authModal':
       return { ...state, authModal: action.mode }
-    case 'squad:add': {
-      const id = `f${Date.now()}${Math.floor(Math.random() * 1e4)}`
-      return { ...state, squad: [...state.squad, { id, ...action.friend }] }
-    }
-    case 'squad:remove':
-      return { ...state, squad: state.squad.filter((f) => f.id !== action.id) }
-    case 'squad:mode':
-      return {
-        ...state,
-        squad: state.squad.map((f) => (f.id === action.id ? { ...f, mode: action.mode } : f)),
-      }
-    case 'squad:set':
-      return { ...state, squad: action.squad }
-    case 'filters':
-      return { ...state, filters: { ...state.filters, ...action.patch } }
-    case 'filters:reset':
-      return { ...state, filters: { ...DEFAULT_FILTERS } }
-    case 'select':
-      return { ...state, selectedPitchId: action.id }
     default:
       return state
   }
@@ -60,6 +49,10 @@ export function StoreProvider({ children }) {
     ...s,
     user: auth.currentUser(),
   }))
+  const location = useLocation()
+  const route = useMemo(() => matchRoute(location.path), [location.path])
+  const urlState = useMemo(() => parseSearch(location.search), [location.search])
+  const { group: squad, filters, pitch: selectedPitchId } = urlState
 
   useEffect(() => {
     let cancelled = false
@@ -69,11 +62,11 @@ export function StoreProvider({ children }) {
     return () => {
       cancelled = true
     }
-  }, [])
+  }, [state.dataAttempt])
 
   const results = useMemo(
-    () => (state.data ? rankPitches(state.data.pitches, state.squad, state.filters) : []),
-    [state.data, state.squad, state.filters],
+    () => (state.data ? rankPitches(state.data.pitches, squad, filters) : []),
+    [state.data, squad, filters],
   )
 
   const resultById = useMemo(() => {
@@ -88,9 +81,20 @@ export function StoreProvider({ children }) {
     return m
   }, [state.data])
 
-  const actions = useMemo(
-    () => ({
-      go: (view) => dispatch({ type: 'view', view }),
+  /** Href for another route that keeps the group and filters, drops the selected pitch. */
+  const hrefFor = useCallback(
+    (path, patch = {}) => buildHref(path, { group: squad, filters, pitch: null, ...patch }),
+    [squad, filters],
+  )
+
+  const actions = useMemo(() => {
+    const setUrl = (patch, { replace = true } = {}) =>
+      navigate(buildHref(location.path, { ...urlState, ...patch }), { replace })
+
+    return {
+      go: (path, opts) => navigate(hrefFor(path), opts),
+      hrefFor,
+      pitchHref: (id) => buildHref(`/p/${id}`, { group: squad }),
       openAuth: (mode) => dispatch({ type: 'authModal', mode }),
       closeAuth: () => dispatch({ type: 'authModal', mode: null }),
       async register(fields) {
@@ -105,12 +109,17 @@ export function StoreProvider({ children }) {
         auth.logout()
         dispatch({ type: 'user', user: null })
       },
-      addFriend: (friend) => dispatch({ type: 'squad:add', friend }),
-      removeFriend: (id) => dispatch({ type: 'squad:remove', id }),
-      setFriendMode: (id, mode) => dispatch({ type: 'squad:mode', id, mode }),
-      setFilters: (patch) => dispatch({ type: 'filters', patch }),
-      resetFilters: () => dispatch({ type: 'filters:reset' }),
-      selectPitch: (id) => dispatch({ type: 'select', id }),
+      retryData: () => dispatch({ type: 'data:retry' }),
+
+      addFriend: (friend) => setUrl({ group: [...squad, friend] }),
+      removeFriend: (id) => setUrl({ group: squad.filter((f) => f.id !== id) }),
+      setFriendMode: (id, mode) =>
+        setUrl({ group: squad.map((f) => (f.id === id ? { ...f, mode } : f)) }),
+      setSquad: (group) => setUrl({ group }),
+      setFilters: (patch) => setUrl({ filters: { ...filters, ...patch } }),
+      resetFilters: () => setUrl({ filters: DEFAULT_FILTERS }),
+      // Opening a pitch pushes history so the back button closes it.
+      selectPitch: (id) => setUrl({ pitch: id || null }, { replace: !id }),
 
       toggleSave(pitchId) {
         const { user } = state
@@ -155,20 +164,19 @@ export function StoreProvider({ children }) {
       },
 
       saveSquad() {
-        const { user, squad } = state
+        const { user } = state
         if (!user || !squad.length) return
         dispatch({ type: 'user', user: auth.updateUser(user.username, { squads: [squad] }) })
       },
 
       loadSquad() {
         const { user } = state
-        if (user?.squads?.[0]) dispatch({ type: 'squad:set', squad: user.squads[0] })
+        if (user?.squads?.[0]) setUrl({ group: user.squads[0] })
       },
-    }),
-    [state],
-  )
+    }
+  }, [state, squad, filters, urlState, location.path, hrefFor])
 
-  // Keep the session in sync if another tab logs in/out.
+  // Keep the session in sync if another tab logs in or out.
   useEffect(() => {
     const onStorage = () => dispatch({ type: 'user', user: auth.currentUser() })
     window.addEventListener('storage', onStorage)
@@ -176,8 +184,22 @@ export function StoreProvider({ children }) {
   }, [])
 
   const value = useMemo(
-    () => ({ state, results, resultById, pitchById, actions }),
-    [state, results, resultById, pitchById, actions],
+    () => ({
+      state: {
+        ...state,
+        squad,
+        filters,
+        selectedPitchId,
+        route,
+        view: route.name,
+        dataLoading: !state.data && !state.dataError,
+      },
+      results,
+      resultById,
+      pitchById,
+      actions,
+    }),
+    [state, squad, filters, selectedPitchId, route, results, resultById, pitchById, actions],
   )
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>
 }

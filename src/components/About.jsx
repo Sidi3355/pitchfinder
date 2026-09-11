@@ -15,7 +15,7 @@ export function About() {
           play across Greater London — commercial five-a-side centres, bookable astro, park grass
           and free cages — and ranks them for your whole group by travel time, price and facilities.
         </p>
-        <button className="btn primary" onClick={() => actions.go('find')}>
+        <button className="btn primary" onClick={() => actions.go('/')}>
           Open the map
         </button>
       </section>
@@ -27,7 +27,7 @@ export function About() {
             className="about-type"
             onClick={() => {
               actions.setFilters({ types: [key] })
-              actions.go('find')
+              actions.go('/')
             }}
           >
             <span className="about-type-head">

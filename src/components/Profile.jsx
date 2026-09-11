@@ -2,6 +2,7 @@ import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { pitchName } from '../data/types.js'
 import { PitchCard } from './PitchCard.jsx'
+import { Link } from './Link.jsx'
 import { costOf } from '../lib/data.js'
 
 const RSVP_OPTIONS = [
@@ -69,9 +70,9 @@ export function Profile() {
                     <span>{k.time}</span>
                   </div>
                   <div className="game-info">
-                    <button className="card-title" onClick={() => actions.selectPitch(k.pitchId)}>
+                    <Link className="card-title" href={actions.pitchHref(k.pitchId)}>
                       {pitch ? pitchName(pitch) : k.pitchName}
-                    </button>
+                    </Link>
                     {k.notes && <p className="game-notes">{k.notes}</p>}
                     <div className="rsvp-grid">
                       {names.map((n) => (

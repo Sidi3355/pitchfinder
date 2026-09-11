@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint . && prettier --check . && npm run check:copy",
     "format": "prettier --write .",
@@ -17,7 +17,8 @@
     "check:bundle": "node scripts/check-bundle.mjs",
     "audit:data": "node scripts/audit-data.mjs",
     "check": "npm run lint && npm run test && npm run build && npm run check:bundle && npm run test:e2e && npm run lighthouse",
-    "check:copy": "node scripts/check-copy.mjs"
+    "check:copy": "node scripts/check-copy.mjs",
+    "serve": "node scripts/serve.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",

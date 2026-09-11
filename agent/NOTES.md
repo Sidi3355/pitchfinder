@@ -27,9 +27,13 @@ Each role keeps its own section. Newest entries at the bottom of each section.
 
 ## Data engineer
 
-- 11 Sep: `data/prices.json` has never been populated. Hypotheses to check in CI logs: venue
-  pages block the bot (403), pages are JS-rendered so no £ figures in HTML, or robots.txt
-  disallows. Also the scraper takes any £15 to £200 figure, so even a "success" would be wrong.
+- 11 Sep: `data/prices.json` has never been populated. CI log of the 7 Sep run
+  (actions run 34105337293) shows why: Powerleague (7 venues), Everyone Active (2) return
+  HTTP 403 to the bot; all 8 Goals URLs, Battersea Millennium Arena and Regent's Park Hub
+  return 404 (dead links in the curated file); Better and Black Prince pages load but carry
+  no price; Crystal Palace and Coram's Fields fail to fetch. So the curated list has 10 dead
+  booking URLs today, and the scraper would have taken any £15 to £200 figure had a page
+  loaded. Both go to item 8 and the accuracy track (A1).
 
 ## QA
 

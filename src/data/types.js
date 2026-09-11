@@ -32,5 +32,5 @@ export const PITCH_TYPES = {
 export function pitchName(pitch) {
   if (pitch.name) return pitch.name
   const t = PITCH_TYPES[pitch.type]?.short || 'Pitch'
-  return pitch.area ? `${t} pitch — ${pitch.area}` : `${t} pitch`
+  return pitch.area ? `${t} pitch in ${pitch.area}` : `${t} pitch`
 }

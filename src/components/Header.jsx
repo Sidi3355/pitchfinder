@@ -1,20 +1,27 @@
 import React from 'react'
 import { useStore } from '../lib/store.jsx'
+import { Link } from './Link.jsx'
 
 export function Header() {
   const { state, actions } = useStore()
   const { view, user, data } = state
 
+  const nav = [
+    ['/', 'find', 'Map'],
+    ['/about', 'about', 'About'],
+    ['/me', 'profile', user ? 'My games' : 'Profile'],
+  ]
+
   return (
     <header className="header">
-      <button className="brand" onClick={() => actions.go('find')}>
+      <Link className="brand" href={actions.hrefFor('/')} aria-label="PitchFinder home">
         <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" rx="7" fill="#15803d" />
           <circle cx="16" cy="16" r="7" fill="none" stroke="#fff" strokeWidth="2.4" />
           <circle cx="16" cy="16" r="2.2" fill="#fff" />
         </svg>
         <span className="brand-name">PitchFinder</span>
-      </button>
+      </Link>
 
       {data && (
         <span className="header-stat">
@@ -23,18 +30,16 @@ export function Header() {
       )}
 
       <nav className="header-nav" aria-label="Main">
-        <button className={view === 'find' ? 'active' : ''} onClick={() => actions.go('find')}>
-          Map
-        </button>
-        <button className={view === 'about' ? 'active' : ''} onClick={() => actions.go('about')}>
-          About
-        </button>
-        <button
-          className={view === 'profile' ? 'active' : ''}
-          onClick={() => actions.go('profile')}
-        >
-          {user ? 'My games' : 'Profile'}
-        </button>
+        {nav.map(([path, name, label]) => (
+          <Link
+            key={path}
+            href={actions.hrefFor(path)}
+            className={view === name ? 'active' : ''}
+            aria-current={view === name ? 'page' : undefined}
+          >
+            {label}
+          </Link>
+        ))}
       </nav>
 
       <div className="header-auth">

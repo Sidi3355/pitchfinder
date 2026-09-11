@@ -9,6 +9,7 @@ export default defineConfig({
   base: '/',
   server: { port: 5173, host: true },
   build: {
+    sourcemap: true,
     rollupOptions: {
       output: {
         manualChunks(id) {

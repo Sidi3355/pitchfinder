@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { MapView } from './MapView.jsx'
+import { MapBoundary } from './MapBoundary.jsx'
 import { SquadBuilder } from './SquadBuilder.jsx'
 import { Filters } from './Filters.jsx'
 import { ResultsList } from './ResultsList.jsx'
@@ -48,7 +49,9 @@ export function Finder() {
       </aside>
 
       <div className="map-pane">
-        <MapView />
+        <MapBoundary>
+          <MapView />
+        </MapBoundary>
         {state.data && (
           <div className="map-data-note">
             Pitch data © OpenStreetMap contributors · updated{' '}

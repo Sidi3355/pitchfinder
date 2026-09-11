@@ -42,7 +42,7 @@ async function main() {
   if (!existsSync(join(ROOT, 'dist/index.html'))) {
     throw new Error('dist/ is missing: run `npm run build` first')
   }
-  const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], {
+  const server = spawn('node', ['scripts/serve.mjs', '--port', String(PORT)], {
     cwd: ROOT,
     stdio: 'ignore',
   })
@@ -55,7 +55,14 @@ async function main() {
       (existsSync('/opt/pw-browsers/chromium') ? '/opt/pw-browsers/chromium' : undefined)
     const chrome = await chromeLauncher.launch({
       chromePath,
-      chromeFlags: ['--headless=new', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage'],
+      chromeFlags: [
+        '--headless=new',
+        '--no-sandbox',
+        '--disable-dev-shm-usage',
+        // Software WebGL so the real map code path is measured.
+        '--use-angle=swiftshader',
+        '--enable-unsafe-swiftshader',
+      ],
     })
     mkdirSync(OUT, { recursive: true })
     const pitchId = pickPitchId()

@@ -2,12 +2,15 @@ import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { scoreToRating } from '../lib/score.js'
+import { surfaceLabel } from '../lib/labels.js'
+import { Link } from './Link.jsx'
 
 export function PitchCard({ row, rank }) {
   const { state, actions } = useStore()
   const { pitch, cost } = row
   const t = PITCH_TYPES[pitch.type]
   const saved = state.user?.savedPitchIds?.includes(pitch.id)
+  const onFinder = state.route.name === 'find'
 
   const price = !cost.known
     ? 'Price on booking'
@@ -20,13 +23,23 @@ export function PitchCard({ row, rank }) {
       <div className="card-main">
         <div className="card-title-row">
           {rank && rank <= 3 && <span className="rank">{rank}</span>}
-          <button className="card-title" onClick={() => actions.selectPitch(pitch.id)}>
+          <Link
+            className="card-title"
+            href={actions.pitchHref(pitch.id)}
+            onClick={(e) => {
+              // On the finder the pitch opens in the side drawer; elsewhere it is a page.
+              if (!onFinder) return
+              e.preventDefault()
+              actions.selectPitch(pitch.id)
+            }}
+          >
             {pitchName(pitch)}
-          </button>
+          </Link>
           <button
             className={`save-btn ${saved ? 'saved' : ''}`}
             onClick={() => actions.toggleSave(pitch.id)}
             aria-label={saved ? 'Remove from saved' : 'Save pitch'}
+            aria-pressed={!!saved}
             title={state.user ? undefined : 'Sign in to save pitches'}
           >
             {saved ? '♥' : '♡'}
@@ -46,7 +59,7 @@ export function PitchCard({ row, rank }) {
           {state.squad.length > 0 && (
             <>
               <span className="sep" />
-              up to <strong>{row.maxEta} min</strong> away
+              up to <strong>{row.maxEta} min</strong> away (est.)
             </>
           )}
           {pitch.lit === true && (
@@ -65,10 +78,4 @@ export function PitchCard({ row, rank }) {
   )
 }
 
-export function surfaceLabel(surface) {
-  return (
-    { '3g': '3G', astro: 'Astroturf', grass: 'Grass', hard: 'Hard court', other: 'Other surface' }[
-      surface
-    ] || surface
-  )
-}
+export { surfaceLabel }
