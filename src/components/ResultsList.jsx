@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PitchCard } from './PitchCard.jsx'
 
@@ -6,10 +6,11 @@ const PAGE = 10
 
 export function ResultsList() {
   const { state, results } = useStore()
-  const [limit, setLimit] = useState(PAGE)
-
-  // Reset paging when the result set changes materially.
-  useEffect(() => setLimit(PAGE), [state.filters, state.squad.length])
+  // Paging resets whenever the result set changes materially.
+  const resetKey = `${JSON.stringify(state.filters)}|${state.squad.length}`
+  const [paging, setPaging] = useState({ key: resetKey, limit: PAGE })
+  const limit = paging.key === resetKey ? paging.limit : PAGE
+  const setLimit = (fn) => setPaging({ key: resetKey, limit: fn(limit) })
 
   if (!state.data) return null
 
@@ -17,7 +18,9 @@ export function ResultsList() {
     <section className="stack">
       <div className="row between">
         <h2 className="side-title">
-          {state.squad.length ? `Best for your group of ${state.squad.length}` : 'Top-rated pitches'}
+          {state.squad.length
+            ? `Best for your group of ${state.squad.length}`
+            : 'Top-rated pitches'}
         </h2>
         <span className="hint dim">{results.length.toLocaleString('en-GB')} match</span>
       </div>

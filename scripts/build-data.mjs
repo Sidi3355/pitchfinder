@@ -66,8 +66,10 @@ async function fetchOverpass() {
 
 // ── Classification ───────────────────────────────────────────────────────────
 
-const COMMERCIAL_RE = /powerleague|power league|goals\b|playfootball|play football|soccerdome|footballworx|futsal club/i
-const SCHOOL_RE = /\bschool\b|\bacademy\b|\bcollege\b|sixth form|\bprep\b|\bprimary\b|\bsecondary\b|university/i
+const COMMERCIAL_RE =
+  /powerleague|power league|goals\b|playfootball|play football|soccerdome|footballworx|futsal club/i
+const SCHOOL_RE =
+  /\bschool\b|\bacademy\b|\bcollege\b|sixth form|\bprep\b|\bprimary\b|\bsecondary\b|university/i
 const CAGE_RE = /\bmuga\b|\bcage\b|ball ?court|games area|multi[- ]use/i
 const HARD_SURFACE_RE = /tarmac|asphalt|concrete|paved|macadam/i
 const ARTIFICIAL_RE = /artificial|astro|3g|4g|tartan|synthetic|acrylic/i
@@ -86,7 +88,8 @@ function classify(tags) {
   const sport = (tags.sport || '').toLowerCase()
   const surface = normSurface(tags.surface)
   if (COMMERCIAL_RE.test(label)) return 'commercial'
-  if (sport.includes('multi') || CAGE_RE.test(label) || tags.hoops === 'yes' || surface === 'hard') return 'cage'
+  if (sport.includes('multi') || CAGE_RE.test(label) || tags.hoops === 'yes' || surface === 'hard')
+    return 'cage'
   if (surface === '3g' || surface === 'astro') return 'astro'
   return 'park'
 }
@@ -94,7 +97,8 @@ function classify(tags) {
 function excluded(tags) {
   const access = (tags.access || '').toLowerCase()
   if (access === 'private' || access === 'no' || access === 'military') return true
-  if (SCHOOL_RE.test(`${tags.name || ''} ${tags.operator || ''} ${tags['operator:type'] || ''}`)) return true
+  if (SCHOOL_RE.test(`${tags.name || ''} ${tags.operator || ''} ${tags['operator:type'] || ''}`))
+    return true
   return false
 }
 
@@ -201,7 +205,13 @@ function mergeCurated(pitches, curated, prices) {
     if (best) {
       Object.assign(best, enrich, { id: venue.id, matchedOsmId: best.id })
     } else {
-      out.push({ id: venue.id, lat: venue.lat, lng: venue.lng, area: nearestArea(venue.lat, venue.lng), ...enrich })
+      out.push({
+        id: venue.id,
+        lat: venue.lat,
+        lng: venue.lng,
+        area: nearestArea(venue.lat, venue.lng),
+        ...enrich,
+      })
     }
   }
   return out

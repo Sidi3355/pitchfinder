@@ -43,9 +43,7 @@ export function AuthModal() {
           </button>
         </header>
         <p className="hint">
-          {isRegister
-            ? 'Save pitches, keep your group and organise games.'
-            : 'Welcome back.'}
+          {isRegister ? 'Save pitches, keep your group and organise games.' : 'Welcome back.'}
         </p>
 
         <form className="stack" onSubmit={submit}>
@@ -80,7 +78,10 @@ export function AuthModal() {
           </button>
         </form>
 
-        <button className="link-btn" onClick={() => actions.openAuth(isRegister ? 'login' : 'register')}>
+        <button
+          className="link-btn"
+          onClick={() => actions.openAuth(isRegister ? 'login' : 'register')}
+        >
           {isRegister ? 'Already have a profile? Sign in' : 'New here? Create a profile'}
         </button>
 

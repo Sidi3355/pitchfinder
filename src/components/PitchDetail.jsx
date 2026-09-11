@@ -53,9 +53,7 @@ export function PitchDetail() {
             {t.label}
           </p>
           <h2>{name}</h2>
-          <p className="drawer-sub">
-            {[pitch.area, pitch.operator].filter(Boolean).join(' · ')}
-          </p>
+          <p className="drawer-sub">{[pitch.area, pitch.operator].filter(Boolean).join(' · ')}</p>
         </div>
         <button className="icon-btn" onClick={() => actions.selectPitch(null)} aria-label="Close">
           ✕
@@ -67,7 +65,9 @@ export function PitchDetail() {
           <dt>Price</dt>
           <dd>
             {!cost.known ? 'Set at booking' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hour`}
-            {pitch.priceMax != null && pitch.priceMax !== pitch.pricePerHour && ` – £${pitch.priceMax}`}
+            {pitch.priceMax != null &&
+              pitch.priceMax !== pitch.pricePerHour &&
+              ` – £${pitch.priceMax}`}
             {pitch.priceCheckedAt && (
               <span className="fact-note">
                 checked {new Date(pitch.priceCheckedAt).toLocaleDateString('en-GB')}
@@ -123,7 +123,9 @@ export function PitchDetail() {
               </li>
             ))}
           </ul>
-          <p className="hint dim">Estimates from straight-line distance — check a journey planner before you set off.</p>
+          <p className="hint dim">
+            Estimates from straight-line distance — check a journey planner before you set off.
+          </p>
         </section>
       )}
 
@@ -131,8 +133,20 @@ export function PitchDetail() {
         <section className="drawer-section">
           <h3>Plan a game here</h3>
           <div className="row">
-            <input className="input" type="date" value={date} onChange={(e) => setDate(e.target.value)} aria-label="Date" />
-            <input className="input" type="time" value={time} onChange={(e) => setTime(e.target.value)} aria-label="Kick-off time" />
+            <input
+              className="input"
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              aria-label="Date"
+            />
+            <input
+              className="input"
+              type="time"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+              aria-label="Kick-off time"
+            />
           </div>
           <input
             className="input"
@@ -153,7 +167,12 @@ export function PitchDetail() {
       ) : (
         <div className="drawer-actions">
           {pitch.bookingUrl && (
-            <a className="btn primary" href={pitch.bookingUrl} target="_blank" rel="noopener noreferrer">
+            <a
+              className="btn primary"
+              href={pitch.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Book at venue ↗
             </a>
           )}
@@ -168,8 +187,8 @@ export function PitchDetail() {
 
       {!pitch.curated && (
         <p className="hint dim drawer-footnote">
-          Sourced from OpenStreetMap. Details like lighting and surface reflect what's mapped —
-          conditions on the ground can differ.
+          Sourced from OpenStreetMap. Details like lighting and surface reflect what&rsquo;s mapped
+          — conditions on the ground can differ.
         </p>
       )}
     </aside>

@@ -5,11 +5,11 @@ import { estimateEta } from './geo.js'
 import { costOf, isBounded } from './data.js'
 
 export const DEFAULT_FILTERS = {
-  types: [],             // [] = all pitch types
-  enclosure: 'any',      // 'any' | 'bounded' | 'open'
-  maxPricePerHead: null,  // £ per person per hour; null = any
-  format: null,           // 5 | 7 | 11 | null (only known for curated venues)
-  maxEta: null,           // minutes; null = any
+  types: [], // [] = all pitch types
+  enclosure: 'any', // 'any' | 'bounded' | 'open'
+  maxPricePerHead: null, // £ per person per hour; null = any
+  format: null, // 5 | 7 | 11 | null (only known for curated venues)
+  maxEta: null, // minutes; null = any
   needsFloodlights: false,
   freeOnly: false,
   bookableOnly: false,
@@ -35,8 +35,14 @@ export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
     if (filters.enclosure === 'open' && isBounded(pitch)) continue
     if (filters.freeOnly && !(cost.known && cost.perHour === 0)) continue
     if (filters.bookableOnly && !pitch.bookingUrl) continue
-    if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead) continue
-    if (filters.format != null && Array.isArray(pitch.formats) && !pitch.formats.includes(filters.format)) continue
+    if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead)
+      continue
+    if (
+      filters.format != null &&
+      Array.isArray(pitch.formats) &&
+      !pitch.formats.includes(filters.format)
+    )
+      continue
     if (filters.needsFloodlights && pitch.lit !== true) continue
 
     // ── ETAs ──
@@ -74,12 +80,23 @@ export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
       if (etas.length > 1 && spreadEta <= 10) reasons.push('similar journey for everyone')
     }
     if (cost.known && cost.perHour === 0) reasons.push('free to play')
-    else if (pricePerHead != null && pricePerHead <= 8) reasons.push(`about £${pricePerHead.toFixed(2)} per person`)
+    else if (pricePerHead != null && pricePerHead <= 8)
+      reasons.push(`about £${pricePerHead.toFixed(2)} per person`)
     if (pitch.lit === true) reasons.push('floodlit')
     if (pitch.bookingUrl) reasons.push('bookable online')
     if (pitch.surface === '3g') reasons.push('3G surface')
 
-    out.push({ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, score, reasons: reasons.slice(0, 4) })
+    out.push({
+      pitch,
+      etas,
+      avgEta,
+      maxEta,
+      spreadEta,
+      cost,
+      pricePerHead,
+      score,
+      reasons: reasons.slice(0, 4),
+    })
   }
 
   return out.sort((a, b) => b.score - a.score)

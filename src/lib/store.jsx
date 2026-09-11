@@ -10,10 +10,10 @@ const StoreContext = createContext(null)
 
 const initialState = {
   view: 'find', // 'find' | 'about' | 'profile'
-  data: null,   // { generatedAt, count, byType, pitches } once loaded
+  data: null, // { generatedAt, count, byType, pitches } once loaded
   dataError: null,
   user: null,
-  squad: [],    // [{ id, name, areaName, lat, lng, mode }]
+  squad: [], // [{ id, name, areaName, lat, lng, mode }]
   filters: { ...DEFAULT_FILTERS },
   selectedPitchId: null,
   authModal: null, // null | 'login' | 'register'

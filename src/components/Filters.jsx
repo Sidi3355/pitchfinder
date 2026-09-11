@@ -69,13 +69,17 @@ export function Filters() {
             </button>
           ))}
         </div>
-        <p className="hint dim">Format is known for bookable venues; other pitches aren't excluded.</p>
+        <p className="hint dim">
+          Format is known for bookable venues; other pitches aren&rsquo;t excluded.
+        </p>
       </fieldset>
 
       <fieldset className="filter-group">
         <legend>
           Budget per person{' '}
-          <span className="legend-value">{f.maxPricePerHead != null ? `£${f.maxPricePerHead}` : 'any'}</span>
+          <span className="legend-value">
+            {f.maxPricePerHead != null ? `£${f.maxPricePerHead}` : 'any'}
+          </span>
         </legend>
         <input
           className="slider"
@@ -111,7 +115,9 @@ export function Filters() {
           disabled={!state.squad.length}
           aria-label="Maximum travel time for any player"
         />
-        {!state.squad.length && <p className="hint dim">Add your group first to filter by travel time.</p>}
+        {!state.squad.length && (
+          <p className="hint dim">Add your group first to filter by travel time.</p>
+        )}
       </fieldset>
 
       <fieldset className="filter-group">

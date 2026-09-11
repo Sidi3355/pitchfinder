@@ -9,7 +9,11 @@ export function PitchCard({ row, rank }) {
   const t = PITCH_TYPES[pitch.type]
   const saved = state.user?.savedPitchIds?.includes(pitch.id)
 
-  const price = !cost.known ? 'Price on booking' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hr`
+  const price = !cost.known
+    ? 'Price on booking'
+    : cost.perHour === 0
+      ? 'Free'
+      : `£${cost.perHour}/hr`
 
   return (
     <article className="card">
@@ -62,5 +66,9 @@ export function PitchCard({ row, rank }) {
 }
 
 export function surfaceLabel(surface) {
-  return { '3g': '3G', astro: 'Astroturf', grass: 'Grass', hard: 'Hard court', other: 'Other surface' }[surface] || surface
+  return (
+    { '3g': '3G', astro: 'Astroturf', grass: 'Grass', hard: 'Hard court', other: 'Other surface' }[
+      surface
+    ] || surface
+  )
 }

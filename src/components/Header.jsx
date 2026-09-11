@@ -29,7 +29,10 @@ export function Header() {
         <button className={view === 'about' ? 'active' : ''} onClick={() => actions.go('about')}>
           About
         </button>
-        <button className={view === 'profile' ? 'active' : ''} onClick={() => actions.go('profile')}>
+        <button
+          className={view === 'profile' ? 'active' : ''}
+          onClick={() => actions.go('profile')}
+        >
           {user ? 'My games' : 'Profile'}
         </button>
       </nav>

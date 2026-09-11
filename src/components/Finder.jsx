@@ -14,7 +14,7 @@ export function Finder() {
       <aside className="side">
         {state.dataError && (
           <div className="notice error">
-            Couldn't load pitch data ({state.dataError}). Refresh to try again.
+            Couldn&rsquo;t load pitch data ({state.dataError}). Refresh to try again.
           </div>
         )}
         {!state.data && !state.dataError && <div className="notice">Loading pitch data…</div>}

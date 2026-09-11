@@ -66,8 +66,6 @@ export function MapView() {
   const squadMarkersRef = useRef([])
   const popupRef = useRef(null)
 
-  dataRef.current = toGeoJSON(results)
-
   // ── Init ──
   useEffect(() => {
     const map = new maplibregl.Map({
@@ -151,7 +149,9 @@ export function MapView() {
 
       map.on('click', 'clusters', async (e) => {
         const feature = e.features[0]
-        const zoom = await map.getSource('pitches').getClusterExpansionZoom(feature.properties.cluster_id)
+        const zoom = await map
+          .getSource('pitches')
+          .getClusterExpansionZoom(feature.properties.cluster_id)
         map.easeTo({ center: feature.geometry.coordinates, zoom: zoom + 0.3 })
       })
       map.on('click', 'pitch-points', (e) => {
@@ -164,7 +164,11 @@ export function MapView() {
       map.on('mouseenter', 'pitch-points', (e) => {
         const p = e.features[0].properties
         popupRef.current?.remove()
-        popupRef.current = new maplibregl.Popup({ closeButton: false, offset: 10, className: 'map-popup' })
+        popupRef.current = new maplibregl.Popup({
+          closeButton: false,
+          offset: 10,
+          className: 'map-popup',
+        })
           .setLngLat(e.features[0].geometry.coordinates)
           .setHTML(
             `<strong>${escapeHtml(p.name)}</strong><span>${escapeHtml(
@@ -194,6 +198,7 @@ export function MapView() {
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
+    dataRef.current = toGeoJSON(results)
     const apply = () => map.getSource('pitches')?.setData(dataRef.current)
     if (readyRef.current) apply()
     else map.once('style.load', apply)
@@ -234,12 +239,23 @@ export function MapView() {
     if (!map || !state.selectedPitchId) return
     const row = results.find((r) => r.pitch.id === state.selectedPitchId)
     if (row) {
-      map.easeTo({ center: [row.pitch.lng, row.pitch.lat], zoom: Math.max(map.getZoom(), 13.5), duration: 600 })
+      map.easeTo({
+        center: [row.pitch.lng, row.pitch.lat],
+        zoom: Math.max(map.getZoom(), 13.5),
+        duration: 600,
+      })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.selectedPitchId])
 
-  return <div ref={containerRef} className="map-container" role="application" aria-label="Map of London football pitches" />
+  return (
+    <div
+      ref={containerRef}
+      className="map-container"
+      role="application"
+      aria-label="Map of London football pitches"
+    />
+  )
 }
 
 function escapeHtml(s) {

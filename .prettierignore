@@ -1,0 +1,9 @@
+dist
+node_modules
+public/data
+data
+package-lock.json
+agent/lighthouse
+playwright-report
+test-results
+supabase/.temp

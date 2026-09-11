@@ -32,7 +32,9 @@ async function hashPassword(password, salt) {
 
 function randomSalt() {
   const bytes = crypto.getRandomValues(new Uint8Array(16))
-  return Array.from(bytes).map((b) => b.toString(16).padStart(2, '0')).join('')
+  return Array.from(bytes)
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
 }
 
 function publicProfile(user) {
@@ -41,7 +43,9 @@ function publicProfile(user) {
 }
 
 export async function register({ username, displayName, password }) {
-  const uname = String(username || '').trim().toLowerCase()
+  const uname = String(username || '')
+    .trim()
+    .toLowerCase()
   if (!/^[a-z0-9_]{3,20}$/.test(uname)) {
     throw new Error('Username: 3–20 letters, numbers or underscores.')
   }
@@ -69,7 +73,9 @@ export async function register({ username, displayName, password }) {
 }
 
 export async function login({ username, password }) {
-  const uname = String(username || '').trim().toLowerCase()
+  const uname = String(username || '')
+    .trim()
+    .toLowerCase()
   const users = loadUsers()
   const user = users[uname]
   if (!user) throw new Error('No account with that username.')

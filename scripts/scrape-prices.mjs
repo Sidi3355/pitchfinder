@@ -41,7 +41,6 @@ async function allowedByRobots(url) {
     const value = restParts.join(':').trim()
     if (key === 'user-agent') applies = value === '*' || /pitchfinder/i.test(value)
     else if (applies && key === 'disallow' && value) disallows.push(value)
-    else if (key === 'user-agent' && !value) applies = false
   }
   return !disallows.some((rule) => pathname.startsWith(rule.replace(/\*$/, '')))
 }
@@ -76,7 +75,12 @@ async function main() {
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const found = extractPrices(await res.text())
       if (found) {
-        prices[venue.id] = { ...found, currency: 'GBP', checkedAt: new Date().toISOString(), sourceUrl: venue.bookingUrl }
+        prices[venue.id] = {
+          ...found,
+          currency: 'GBP',
+          checkedAt: new Date().toISOString(),
+          sourceUrl: venue.bookingUrl,
+        }
         updated++
         console.log(`${venue.id}: £${found.min}–£${found.max}`)
       } else {

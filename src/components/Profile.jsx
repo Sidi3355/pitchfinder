@@ -53,7 +53,8 @@ export function Profile() {
         <h2 className="panel-title">Upcoming games</h2>
         {games.length === 0 ? (
           <p className="hint">
-            Nothing planned. Open a pitch on the map and choose "Plan a game" to organise one.
+            Nothing planned. Open a pitch on the map and choose &ldquo;Plan a game&rdquo; to
+            organise one.
           </p>
         ) : (
           <ul className="game-list">
@@ -94,7 +95,11 @@ export function Profile() {
                       {inCount}/{names.length} confirmed
                     </p>
                   </div>
-                  <button className="icon-btn" onClick={() => actions.deleteGame(k.id)} aria-label="Delete game">
+                  <button
+                    className="icon-btn"
+                    onClick={() => actions.deleteGame(k.id)}
+                    aria-label="Delete game"
+                  >
                     ✕
                   </button>
                 </li>

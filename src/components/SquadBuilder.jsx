@@ -121,7 +121,11 @@ export function SquadBuilder() {
                   </option>
                 ))}
               </select>
-              <button className="icon-btn" onClick={() => actions.removeFriend(f.id)} aria-label={`Remove ${f.name}`}>
+              <button
+                className="icon-btn"
+                onClick={() => actions.removeFriend(f.id)}
+                aria-label={`Remove ${f.name}`}
+              >
                 ✕
               </button>
             </li>
@@ -131,10 +135,18 @@ export function SquadBuilder() {
 
       {state.user && (
         <div className="row">
-          <button className="btn ghost sm" onClick={actions.saveSquad} disabled={!state.squad.length}>
+          <button
+            className="btn ghost sm"
+            onClick={actions.saveSquad}
+            disabled={!state.squad.length}
+          >
             Save group
           </button>
-          <button className="btn ghost sm" onClick={actions.loadSquad} disabled={!state.user.squads?.[0]?.length}>
+          <button
+            className="btn ghost sm"
+            onClick={actions.loadSquad}
+            disabled={!state.user.squads?.[0]?.length}
+          >
             Load saved group
           </button>
         </div>

@@ -13,8 +13,7 @@ export function About() {
         <p>
           PitchFinder maps {data ? data.count.toLocaleString('en-GB') : 'thousands of'} places to
           play across Greater London — commercial five-a-side centres, bookable astro, park grass
-          and free cages — and ranks them for your whole group by travel time, price and
-          facilities.
+          and free cages — and ranks them for your whole group by travel time, price and facilities.
         </p>
         <button className="btn primary" onClick={() => actions.go('find')}>
           Open the map
@@ -50,10 +49,10 @@ export function About() {
           <a href="https://www.openstreetmap.org/about" target="_blank" rel="noopener noreferrer">
             OpenStreetMap
           </a>{' '}
-          (© OpenStreetMap contributors, ODbL) and are refreshed automatically every week.
-          Bookable venues carry prices from their operators' published rates, re-checked by an
-          automated job; where a venue sets prices dynamically we say "price on booking" rather
-          than guessing. Travel times are estimates from distance and typical speeds — always
+          (© OpenStreetMap contributors, ODbL) and are refreshed automatically every week. Bookable
+          venues carry prices from their operators&rsquo; published rates, re-checked by an
+          automated job; where a venue sets prices dynamically we say &ldquo;price on booking&rdquo;
+          rather than guessing. Travel times are estimates from distance and typical speeds — always
           confirm details with the venue before travelling.
         </p>
         <p>
