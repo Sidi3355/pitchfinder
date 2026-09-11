@@ -3,10 +3,12 @@
 // coordinates against postcodes.io when online, and writes
 // agent/DATA_QUALITY.md plus data/audit-history.json so the trend is visible.
 //
-// Usage: node scripts/audit-data.mjs [--offline] [--strict]
+// Usage: node scripts/audit-data.mjs [--offline] [--strict] [--write]
 //   --offline  skip URL and coordinate checks (used in the check workflow)
 //   --strict   exit 1 when a curated venue has a dead booking URL or a
 //              coordinate more than 150 m from its postcode
+//   --write    update agent/DATA_QUALITY.md and data/audit-history.json
+//              (the data-refresh workflow does; local runs only print)
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -18,6 +20,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = new Set(process.argv.slice(2))
 const OFFLINE = args.has('--offline') || !!process.env.OFFLINE
 const STRICT = args.has('--strict')
+const WRITE = args.has('--write')
 const STALE_DAYS = 60
 const COORD_TOLERANCE_M = 150
 const URL_RECHECK_DAYS = 7
@@ -186,8 +189,10 @@ const history = existsSync(historyFile) ? JSON.parse(readFileSync(historyFile, '
 const idx = history.findIndex((h) => h.date === today)
 if (idx >= 0) history[idx] = summary
 else history.push(summary)
-mkdirSync(dirname(historyFile), { recursive: true })
-writeFileSync(historyFile, JSON.stringify(history, null, 2) + '\n')
+if (WRITE) {
+  mkdirSync(dirname(historyFile), { recursive: true })
+  writeFileSync(historyFile, JSON.stringify(history, null, 2) + '\n')
+}
 
 const pct = (n) => `${((100 * n) / pitchReport.total).toFixed(1)}%`
 const lines = []
@@ -248,9 +253,12 @@ for (const h of history.slice(-30)) {
   )
 }
 lines.push('')
-mkdirSync(join(ROOT, 'agent'), { recursive: true })
-writeFileSync(join(ROOT, 'agent/DATA_QUALITY.md'), lines.join('\n'))
+if (WRITE) {
+  mkdirSync(join(ROOT, 'agent'), { recursive: true })
+  writeFileSync(join(ROOT, 'agent/DATA_QUALITY.md'), lines.join('\n'))
+}
 console.log(lines.slice(0, 40).join('\n'))
+if (!WRITE) console.log('\n(report not written: pass --write)')
 
 if (STRICT && !OFFLINE && (deadUrls.length || mismatches.length)) {
   console.error(

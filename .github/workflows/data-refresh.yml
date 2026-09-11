@@ -29,21 +29,32 @@ jobs:
         env:
           NOMINATIM_MAX: '1500'
       - name: Audit data quality (checks booking URLs and coordinates)
-        run: node scripts/audit-data.mjs
+        run: node scripts/audit-data.mjs --write
         continue-on-error: true
       - name: Commit and push if changed
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
+          set -e
           git config user.name "pitchfinder-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add public/data data/prices.json data/cache data/audit-history.json agent/DATA_QUALITY.md
+          OUTPUTS="public/data data/prices.json data/cache data/audit-history.json agent/DATA_QUALITY.md"
+          # The refresh takes a quarter of an hour and the branch may have moved.
+          # Generated files are copied aside, the branch is reset to the remote
+          # head, and the files are put back on top: no merge, no conflicts.
+          STAGE="$(mktemp -d)"
+          for p in $OUTPUTS; do
+            if [ -e "$p" ]; then mkdir -p "$STAGE/$(dirname "$p")" && cp -r "$p" "$STAGE/$p"; fi
+          done
+          git fetch origin "$BRANCH"
+          git reset -q --hard FETCH_HEAD
+          for p in $OUTPUTS; do
+            if [ -e "$STAGE/$p" ]; then mkdir -p "$(dirname "$p")" && rm -rf "$p" && cp -r "$STAGE/$p" "$p"; fi
+          done
+          git add $OUTPUTS
           if git diff --cached --quiet; then
             echo "No data changes."
           else
             git commit -m "Refresh pitch dataset, geocoding caches and data quality report"
-            # The branch may have moved while this ran: replay the data commit on top.
-            for attempt in 1 2 3; do
-              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && break
-              echo "push attempt $attempt failed, retrying"
-              sleep 10
-            done
+            git push origin "HEAD:$BRANCH"
           fi
