@@ -25,6 +25,7 @@ export default defineConfig({
       'src/**/*.test.{js,jsx,ts,tsx}',
       'scripts/**/*.test.mjs',
       'tests/unit/**/*.test.{js,mjs,ts}',
+      'tests/rls/**/*.test.mjs',
     ],
     exclude: ['node_modules', 'dist', 'tests/e2e'],
   },

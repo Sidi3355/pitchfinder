@@ -78,6 +78,8 @@ a {
   background: none;
   border: none;
   padding: 0;
+  color: var(--ink);
+  text-decoration: none;
 }
 .brand-mark {
   width: 26px;
@@ -100,19 +102,20 @@ a {
   gap: 2px;
   margin-left: auto;
 }
-.header-nav button {
+.header-nav a {
   background: none;
   border: none;
   padding: 7px 12px;
   border-radius: 6px;
   font-weight: 500;
   color: var(--ink-2);
+  text-decoration: none;
 }
-.header-nav button:hover {
+.header-nav a:hover {
   background: #f3f4f6;
   color: var(--ink);
 }
-.header-nav button.active {
+.header-nav a.active {
   background: var(--accent-soft);
   color: var(--accent-hover);
   font-weight: 600;
@@ -122,6 +125,7 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
 }
 .header-user {
   font-weight: 600;
@@ -525,6 +529,7 @@ a {
   line-height: 1.35;
   color: var(--ink);
   flex: 1;
+  text-decoration: none;
 }
 .card-title:hover {
   color: var(--accent-hover);
