@@ -57,3 +57,31 @@ Sign-off: approved. The performance gate remains the known failure for item 7.
 
 Sign-off: approved. Open gates: home performance under software WebGL; A1 curated facts (152
 unverified with online checks: 10 dead booking URLs, no postcodes or addresses recorded).
+
+## Iteration 4: game page as the destination (11 Sep 2026)
+
+| Check                  | Result                                                                                                                                                                 |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run lint`         | pass                                                                                                                                                                   |
+| `npm test`             | pass, 88 tests (adds reasons truth over the whole dataset, game HTML, calendar, summary, cost split, compact index)                                                    |
+| `npm run build:test`   | pass                                                                                                                                                                   |
+| `npm run check:bundle` | 69 KB gz initial; MapLibre and Supabase lazy                                                                                                                           |
+| `npm run test:e2e`     | pass, 32 tests; adds: game link HTML carries the game's title, description and image; sign in then the save completes; guest RSVP with name and key; organiser cancels |
+| `npm run lighthouse`   | home Perf 61 (software WebGL), pitch 97 to 99                                                                                                                          |
+
+Sign-off: approved.
+
+## Iteration 5: design system pass on the refreshed dataset (11 Sep 2026)
+
+| Check                              | Result                                                                                                                                                                                                                                    |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run lint`                     | pass                                                                                                                                                                                                                                      |
+| `npm test`                         | pass, 88 tests over the new dataset (1,586 venues)                                                                                                                                                                                        |
+| `npm run build:test`               | pass: 1,586 prerendered pages, index.json 52 KB gzipped (old dataset)                                                                                                                                                                     |
+| `npm run check:bundle`             | 69 KB gz initial                                                                                                                                                                                                                          |
+| `npm run test:e2e`                 | pass, 37 tests; adds design gates: dark mode on body, map pane and canvas; a focus ring on every Tab stop; every visible control on the phone home, group panel, pitch sheet, pitch page and game page at 44 px or more                   |
+| `npm run lighthouse`               | home Perf 56 to 61 / A11y 100 / BP 96 / SEO 100, FCP 2.1 to 2.3 s, TBT 1.3 to 2.0 s; pitch route Perf 89 to 98 / A11y 100 / BP 96 / SEO 100, CLS 0.20 on one run (mini-map placeholder had no height; fixed in source, to be re-measured) |
+| Profile (scripts/profile-home.mjs) | our bundle: under 40 ms self time across all functions; MapLibre _setupPainter 332 ms and frame render 280 ms under SwiftShader; the home performance gap is GL setup in software                                                         |
+
+Sign-off: approved. The home performance gate remains the known failure under software
+WebGL and will be raised as an escalation at the end of the run with the profile as evidence.

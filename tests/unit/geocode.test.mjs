@@ -46,6 +46,21 @@ describe('reversePostcodes', () => {
     await reversePostcodes(points, { cache, fetchImpl, sleep: noSleep })
     expect(fetchImpl).toHaveBeenCalledTimes(2)
   })
+  it('retries a cached miss when asked for a wider radius, but not a narrower one', async () => {
+    const points = [{ lat: 51.6, lng: -0.3 }]
+    const miss = vi.fn(async () => jsonResponse({ result: [{ result: [] }] }))
+    const cache = await reversePostcodes(points, { fetchImpl: miss, sleep: noSleep })
+    expect(cache[keyFor(51.6, -0.3)]).toMatchObject({ postcode: null, radius: 800 })
+    await reversePostcodes(points, { cache, fetchImpl: miss, sleep: noSleep, radius: 500 })
+    expect(miss).toHaveBeenCalledTimes(1)
+    const hit = vi.fn(async () =>
+      jsonResponse({ result: [{ result: [{ postcode: 'HA1 1AA', distance: 1200 }] }] }),
+    )
+    await reversePostcodes(points, { cache, fetchImpl: hit, sleep: noSleep, radius: 1500 })
+    expect(hit).toHaveBeenCalledTimes(1)
+    expect(JSON.parse(hit.mock.calls[0][1].body).geolocations[0].radius).toBe(1500)
+    expect(cache[keyFor(51.6, -0.3)]).toMatchObject({ postcode: 'HA1 1AA', distanceM: 1200 })
+  })
   it('throws on a server error so the build does not write half a cache', async () => {
     const fetchImpl = vi.fn(async () => jsonResponse({}, 500))
     await expect(

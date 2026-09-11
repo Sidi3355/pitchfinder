@@ -58,7 +58,7 @@ export function PitchPage({ id }) {
         </p>
       </header>
       <MapBoundary compact>
-        <Suspense fallback={<div className="mini-map map-loading" aria-hidden="true" />}>
+        <Suspense fallback={<div className="mini-map mini-map-placeholder" aria-hidden="true" />}>
           <MiniMap pitch={pitch} />
         </Suspense>
       </MapBoundary>

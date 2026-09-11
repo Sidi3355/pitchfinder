@@ -2,7 +2,7 @@
 // under 350 KB gzipped, and MapLibre must not be part of it (it is loaded on
 // demand when the map comes on screen). Run after `vite build`.
 
-import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { gzipSync } from 'node:zlib'
 import { join } from 'node:path'
 

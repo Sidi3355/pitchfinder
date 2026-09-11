@@ -54,7 +54,10 @@ export async function reversePostcodes(
   const seen = new Set()
   for (const p of points) {
     const k = keyFor(p.lat, p.lng)
-    if (cache[k] || seen.has(k)) continue
+    if (seen.has(k)) continue
+    const hit = cache[k]
+    // A miss is only final for the radius it was tried at; a wider search retries it.
+    if (hit && (hit.postcode || (hit.radius ?? 800) >= radius)) continue
     seen.add(k)
     todo.push({ key: k, lat: p.lat, lng: p.lng })
   }
@@ -81,7 +84,7 @@ export async function reversePostcodes(
             distanceM: hit.distance != null ? Math.round(hit.distance) : null,
             at: new Date().toISOString().slice(0, 10),
           }
-        : { postcode: null, at: new Date().toISOString().slice(0, 10) }
+        : { postcode: null, radius, at: new Date().toISOString().slice(0, 10) }
     })
     if (i + batch < todo.length) await sleep(250)
   }

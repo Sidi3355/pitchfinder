@@ -9,7 +9,7 @@ import { compactPitch } from '../src/lib/compact.js'
 import { join } from 'node:path'
 import { PITCH_TYPES, pitchName } from '../src/data/types.js'
 import { costOf } from '../src/lib/data.js'
-import { bookingLabel, isBookable, surfaceLabel } from '../src/lib/labels.js'
+import { isBookable, surfaceLabel } from '../src/lib/labels.js'
 
 const ROOT = new URL('..', import.meta.url).pathname
 const DIST = join(ROOT, 'dist')

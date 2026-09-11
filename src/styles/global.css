@@ -1440,6 +1440,10 @@ textarea.input {
   overflow: hidden;
   background: var(--map-bg);
 }
+.mini-map-placeholder {
+  /* Same box as the map so nothing below it moves when MapLibre arrives. */
+  height: 220px;
+}
 .mini-map-link {
   position: absolute;
   top: var(--space-2);

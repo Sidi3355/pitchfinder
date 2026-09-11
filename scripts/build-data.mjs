@@ -140,7 +140,7 @@ async function main() {
   const roadCache = loadCache(join(CACHE_DIR, 'nominatim.json'))
   const points = [...venues, ...curated].map((v) => ({ lat: v.lat, lng: v.lng }))
   if (!OFFLINE) {
-    await reversePostcodes(points, { cache: postcodeCache, log: console.log })
+    await reversePostcodes(points, { cache: postcodeCache, log: console.log, radius: 1500 })
     saveCache(join(CACHE_DIR, 'postcodes.json'), postcodeCache)
   }
   const namedByPark = deriveNames(venues, { parks, roadAt: () => null })
