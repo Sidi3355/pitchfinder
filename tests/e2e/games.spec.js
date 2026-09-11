@@ -22,7 +22,8 @@ test.describe('accounts and shared games', () => {
   }) => {
     await signIn(page, request, baseURL, `alice-${Date.now()}@example.com`)
 
-    await page.goto('/p/pl-shoreditch')
+    // The group in the URL travels with the game so the game page can show journeys.
+    await page.goto('/p/pl-shoreditch?g=Sam~Peckham~51.4741~-0.0691~w')
     await page.getByRole('button', { name: 'Plan a game' }).click()
     await page.getByLabel('Date').fill('2026-10-01')
     await page.getByLabel('Kick-off').fill('19:30')
@@ -46,6 +47,10 @@ test.describe('accounts and shared games', () => {
     await expect(page.getByRole('link', { name: 'Powerleague Shoreditch' })).toBeVisible()
     await expect(page.getByRole('heading', { name: 'Organiser' })).toBeVisible()
     await expect(page.getByText('Nobody has answered yet')).toBeVisible()
+    // Journey times for the saved group, routed where the router answered.
+    await expect(page.locator('.eta-list li')).toHaveCount(1)
+    await expect(page.locator('.eta-list li').first()).toContainText('Sam from Peckham')
+    await expect(page.locator('.eta-list li .src-tag').first()).toHaveText('route')
 
     // A friend with the link and no account.
     const ctx = await browser.newContext()
@@ -65,12 +70,32 @@ test.describe('accounts and shared games', () => {
     // Reload: the phone remembers who they are.
     await guest.reload()
     await expect(guest.getByRole('heading', { name: 'Your answer: Maybe' })).toBeVisible()
-    await ctx.close()
 
-    // The organiser sees the answer, then cancels.
+    // The organiser sees the answer and moves the kick-off.
     await page.reload()
     await expect(page.getByText('Priya')).toBeVisible()
     await expect(page.getByRole('heading', { name: '0 in, 1 answered' })).toBeVisible()
+    await page.getByRole('button', { name: 'Change time or notes' }).click()
+    await page.getByLabel('Kick-off time').fill('20:00')
+    await page.getByRole('button', { name: 'Save changes' }).click()
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('20:00')
+    await expect(page.getByText(/Moved from .*19:30/)).toBeVisible()
+    await expect(page.getByText('1 answer was given before the time changed')).toBeVisible()
+    await expect(page.getByText('Priya (before the time changed)')).toBeVisible()
+
+    // The guest who answered for 19:30 is told, and confirming clears the flag.
+    await guest.reload()
+    await expect(guest.getByText(/Moved from .*19:30/)).toBeVisible()
+    await expect(guest.getByText('The kick-off moved after you answered')).toBeVisible()
+    await guest.getByRole('button', { name: 'In', exact: true }).click()
+    await expect(guest.getByRole('heading', { name: 'Your answer: In' })).toBeVisible()
+    await expect(guest.getByText('The kick-off moved after you answered')).toHaveCount(0)
+    await ctx.close()
+
+    // The organiser cancels.
+    await page.reload()
+    await expect(page.getByRole('heading', { name: '1 in, 1 answered' })).toBeVisible()
+    await expect(page.getByText('before the time changed')).toHaveCount(0)
     await page.getByRole('button', { name: 'Cancel game' }).click()
     await page.getByRole('button', { name: 'Yes, cancel it' }).click()
     await expect(page.getByText('cancelled by the organiser')).toBeVisible()

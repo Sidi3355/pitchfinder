@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { useStore } from '../lib/store.jsx'
+import { useJourneys } from '../lib/use-journeys.js'
 import { PitchCard } from './PitchCard.jsx'
 
 const PAGE = 10
@@ -11,6 +12,10 @@ export function ResultsList() {
   const [paging, setPaging] = useState({ key: resetKey, limit: PAGE })
   const limit = paging.key === resetKey ? paging.limit : PAGE
   const setLimit = (fn) => setPaging({ key: resetKey, limit: fn(limit) })
+  // Real routes for the cards on screen only; the ranking itself uses estimates.
+  const visible = useMemo(() => results.slice(0, limit), [results, limit])
+  const visiblePitches = useMemo(() => visible.map((r) => r.pitch), [visible])
+  const journeys = useJourneys(state.squad, visiblePitches)
 
   if (!state.data) return null
 
@@ -29,8 +34,8 @@ export function ResultsList() {
       ) : (
         <>
           <div className="stack">
-            {results.slice(0, limit).map((row, i) => (
-              <PitchCard key={row.pitch.id} row={row} rank={i + 1} />
+            {visible.map((row, i) => (
+              <PitchCard key={row.pitch.id} row={row} rank={i + 1} journeys={journeys} />
             ))}
           </div>
           {results.length > limit && (

@@ -11,10 +11,10 @@ import { pitchName } from '../data/types.js'
 import { bookingLabel } from '../lib/labels.js'
 import { Link } from './Link.jsx'
 import { Directions } from './Directions.jsx'
+import { JourneyList } from './Journeys.jsx'
 import { usePitchDetail } from '../lib/use-detail.js'
 import { buildIcs, buildSummary, formatMoney, icsDataUrl, splitCost } from '../lib/game-extras.js'
 import { costOf } from '../lib/data.js'
-import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { setGuest, useGuest } from '../lib/guest.js'
 
 const STATUSES = [
@@ -215,6 +215,7 @@ export function GamePage({ slug }) {
     rsvps.filter((r) => r.status === status),
   ])
   const inCount = rsvps.filter((r) => r.status === 'in').length
+  const staleCount = rsvps.filter((r) => r.before_change).length
 
   return (
     <article className="game-page">
@@ -223,6 +224,11 @@ export function GamePage({ slug }) {
           {cancelled ? 'Cancelled' : relativeDay(game.starts_at, new Date(now))}
         </p>
         <h1>{formatWhen(game.starts_at)}</h1>
+        {game.previous_starts_at && !cancelled && !happened && (
+          <p className="game-moved" role="status">
+            Moved from {formatWhen(game.previous_starts_at)}.
+          </p>
+        )}
         <p className="game-where">
           <Link href={actions.pitchHref(game.pitch_id)}>
             {pitch ? pitchName(pitch) : game.pitch_name}
@@ -265,24 +271,7 @@ export function GamePage({ slug }) {
           })()}
           {Array.isArray(game.group) && game.group.length > 0 && (
             <>
-              <ul className="eta-list">
-                {game.group.map((m, i) => (
-                  <li key={`${m.name}-${i}`}>
-                    <span>
-                      {m.name}
-                      {m.label ? <span className="dim"> from {m.label}</span> : null}{' '}
-                      <span className="dim">
-                        ({(TRAVEL_MODES[m.mode]?.label || 'public transport').toLowerCase()})
-                      </span>
-                    </span>
-                    <span className="eta-dots" />
-                    <strong>about {displayMinutes(estimateEta(m, pitch, m.mode))} min</strong>
-                  </li>
-                ))}
-              </ul>
-              <p className="hint dim">
-                Journey times are estimates from straight-line distance and typical speeds.
-              </p>
+              <JourneyList people={game.group} pitch={pitch} showFrom />
             </>
           )}
         </section>
@@ -330,6 +319,12 @@ export function GamePage({ slug }) {
               </button>
             ))}
           </div>
+          {mine?.before_change && (
+            <p className="notice" role="status">
+              The kick-off moved after you answered. Tap your answer again to confirm it for the new
+              time.
+            </p>
+          )}
           {rsvpError && (
             <p className="form-error" role="alert">
               {rsvpError}
@@ -347,6 +342,12 @@ export function GamePage({ slug }) {
         <h2 id="who-title" className="section-title">
           {inCount} in{rsvps.length ? `, ${rsvps.length} answered` : ''}
         </h2>
+        {staleCount > 0 && !cancelled && !happened && (
+          <p className="hint dim">
+            {staleCount === 1 ? '1 answer was' : `${staleCount} answers were`} given before the time
+            changed and may not stand.
+          </p>
+        )}
         {rsvps.length === 0 ? (
           <p className="hint">
             {game.is_creator
@@ -365,6 +366,9 @@ export function GamePage({ slug }) {
                     <li key={r.id}>
                       {r.name}
                       {r.is_you && <span className="dim"> (you)</span>}
+                      {r.before_change && !cancelled && !happened && (
+                        <span className="dim"> (before the time changed)</span>
+                      )}
                     </li>
                   ))}
                 </ul>

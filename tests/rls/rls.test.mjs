@@ -160,6 +160,35 @@ d('games and RSVPs', () => {
       ),
     ).rejects.toThrow(/check constraint/)
   })
+  it('records a change of time so answers given before it can be flagged', async () => {
+    const key = 'guestkey-timechange-0123456789'
+    await db.asAnon((q) => q('select rsvp_guest($1, $2, $3, $4)', [slug, 'Early', key, 'in']))
+    // Notes only: no time change is recorded.
+    await db.asUser(alice, (q) => q(`update games set notes = 'bibs' where id = $1`, [gameId]))
+    let { rows } = await db.asAnon((q) => q('select game_by_slug($1, $2) as g', [slug, key]))
+    expect(rows[0].g.game.previous_starts_at).toBeNull()
+    expect(rows[0].g.rsvps[0].before_change).toBe(false)
+    // The time moves: the old time is kept and the earlier answer is flagged.
+    const was = rows[0].g.game.starts_at
+    await db.asUser(alice, (q) =>
+      q(`update games set starts_at = starts_at + interval '30 minutes' where id = $1`, [gameId]),
+    )
+    ;({ rows } = await db.asAnon((q) => q('select game_by_slug($1, $2) as g', [slug, key])))
+    expect(new Date(rows[0].g.game.previous_starts_at).toISOString()).toBe(
+      new Date(was).toISOString(),
+    )
+    expect(rows[0].g.game.time_changed_at).toBeTruthy()
+    expect(rows[0].g.rsvps.find((r) => r.name === 'Early').before_change).toBe(true)
+    // Answering again clears the flag; the client cannot forge the record.
+    await db.asAnon((q) => q('select rsvp_guest($1, $2, $3, $4)', [slug, 'Early', key, 'in']))
+    await expect(
+      db.asUser(alice, (q) => q(`update games set time_changed_at = null where id = $1`, [gameId])),
+    ).resolves.toBeTruthy()
+    ;({ rows } = await db.asAnon((q) => q('select game_by_slug($1, $2) as g', [slug, key])))
+    expect(rows[0].g.game.time_changed_at).toBeTruthy()
+    expect(rows[0].g.rsvps.find((r) => r.name === 'Early').before_change).toBe(false)
+    await db.admin(`delete from rsvps where guest_key = $1`, [key])
+  })
   it('anyone with the link reads the game through game_by_slug', async () => {
     const { rows } = await db.asAnon((q) => q('select game_by_slug($1) as g', [slug]))
     const g = rows[0].g

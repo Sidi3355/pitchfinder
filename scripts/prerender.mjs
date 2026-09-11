@@ -12,7 +12,7 @@ import { costOf } from '../src/lib/data.js'
 import { isBookable, surfaceLabel } from '../src/lib/labels.js'
 
 const ROOT = new URL('..', import.meta.url).pathname
-const DIST = join(ROOT, 'dist')
+const DIST = process.env.PF_DIST || join(ROOT, 'dist')
 const SITE = (process.env.SITE_URL || 'https://pitchfinder-pied.vercel.app').replace(/\/$/, '')
 
 const esc = (s) =>

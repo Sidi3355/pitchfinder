@@ -6,13 +6,13 @@ import { useStore } from '../lib/store.jsx'
 import { navigate } from '../lib/location.js'
 import * as sb from '../lib/supabase.js'
 import { pitchName } from '../data/types.js'
-import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { costOf, isBounded } from '../lib/data.js'
 import { bookingLabel, surfaceLabel } from '../lib/labels.js'
 import { formatDate, fromInputParts, nextKickoff, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
 import { usePitchDetail } from '../lib/use-detail.js'
 import { Directions } from './Directions.jsx'
+import { JourneyList } from './Journeys.jsx'
 
 export function PitchContent({ pitch: indexPitch }) {
   const { state, actions } = useStore()
@@ -117,22 +117,8 @@ export function PitchContent({ pitch: indexPitch }) {
 
       {state.squad.length > 0 && (
         <section className="drawer-section">
-          <h2 className="section-h">Journey times (estimates)</h2>
-          <ul className="eta-list">
-            {state.squad.map((f) => (
-              <li key={f.id}>
-                <span>
-                  {f.name} <span className="dim">({TRAVEL_MODES[f.mode].label.toLowerCase()})</span>
-                </span>
-                <span className="eta-dots" />
-                <strong>about {displayMinutes(estimateEta(f, pitch, f.mode))} min</strong>
-              </li>
-            ))}
-          </ul>
-          <p className="hint dim">
-            Estimated from straight-line distance and typical speeds. Check a journey planner before
-            you set off.
-          </p>
+          <h2 className="section-h">Journey times</h2>
+          <JourneyList people={state.squad} pitch={pitch} />
         </section>
       )}
 

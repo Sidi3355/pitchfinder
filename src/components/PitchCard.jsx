@@ -2,17 +2,40 @@ import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { surfaceLabel } from '../lib/labels.js'
-import { displayMinutes } from '../lib/geo.js'
+import { estimateEta } from '../lib/geo.js'
+import { journeyReason, journeyStats } from '../lib/score.js'
+import { journeysFor } from '../lib/use-journeys.js'
 import { navigate } from '../lib/location.js'
 import { Link } from './Link.jsx'
+import { SourceTag, minutesText } from './Journeys.jsx'
 
-export function PitchCard({ row, rank }) {
+const NO_JOURNEYS = new Map()
+
+export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
   const { state, actions } = useStore()
   const { pitch, cost } = row
   const t = PITCH_TYPES[pitch.type]
   const saved = state.savedIds.has(pitch.id)
   const onFinder = state.route.name === 'find'
   const withGroup = row.etas.length > 0
+  // The card shows routed minutes where every member has a route, and the
+  // ranking's estimates otherwise. The journey reason follows the same numbers.
+  const journey = withGroup
+    ? journeysFor(
+        row.etas.map((e) => e.friend),
+        pitch,
+        journeys,
+        estimateEta,
+      )
+    : null
+  const stats = journey ? journeyStats(journey.rows.map((r) => r.minutes)) : null
+  const journeySource = !journey
+    ? null
+    : !journey.routed
+      ? 'estimate'
+      : journey.rows.every((r) => r.source === 'tfl')
+        ? 'tfl'
+        : 'osrm'
 
   const price = !cost.known
     ? 'price not known'
@@ -20,7 +43,16 @@ export function PitchCard({ row, rank }) {
       ? 'free'
       : `£${cost.perHour}/hr`
   // The meta line already says the price and the surface; reasons add what it does not.
-  const reasons = row.reasons.filter((r) => !['free', 'astro', '3G'].includes(r.text))
+  const reasons = (
+    journey
+      ? [
+          journeyReason({ ...stats, routed: journey.routed }),
+          ...row.reasons.filter((r) => !r.estimate),
+        ].filter(Boolean)
+      : row.reasons
+  )
+    .filter((r) => !['free', 'astro', '3G'].includes(r.text))
+    .slice(0, 4)
   const hasEstimate = reasons.some((r) => r.estimate)
 
   function open() {
@@ -82,7 +114,13 @@ export function PitchCard({ row, rank }) {
           ) : null}
           {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
           <> · {price}</>
-          {withGroup && <> · up to about {displayMinutes(row.maxEta)} min</>}
+          {journey && (
+            <>
+              {' '}
+              · up to {minutesText(stats.maxEta, journeySource)}{' '}
+              <SourceTag source={journeySource} />
+            </>
+          )}
         </p>
 
         {reasons.length > 0 && (

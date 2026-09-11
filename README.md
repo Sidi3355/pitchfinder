@@ -1,52 +1,107 @@
 # PitchFinder
 
-**Every football pitch in London, on one map.** Live at
+Pick a pitch for the group, on your phone, from where everyone is coming from. Live at
 https://pitchfinder-pied.vercel.app/
 
-PitchFinder maps 3,000+ places to play across Greater London: commercial
-five-a-side centres, bookable astro, park grass and free cages : and ranks
-them for a whole group of friends by travel time, price and facilities.
+PitchFinder maps every football pitch in Greater London that OpenStreetMap knows about, about
+1,600 places once pitches on the same ground are grouped, and ranks them for a group of people by
+journey time, price and facilities. One link carries the group, the filters and the chosen pitch.
+A game link lets everyone say in or out without an account.
 
 ## How it works
 
-| Layer                                           | What it does                                                                                                                                                                                                                                                                                                                                     |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Data pipeline** (`scripts/build-data.mjs`)    | Queries the Overpass API for every `leisure=pitch` (football/multi-use) in Greater London, classifies each one (commercial / astro / park / cage), excludes private and school grounds, collapses per-operator pitch clusters into venues, merges the curated bookable-venue list and any scraped prices, and writes `public/data/pitches.json`. |
-| **Price refresh** (`scripts/scrape-prices.mjs`) | Best-effort re-check of curated venues' published prices from their public pages, honouring robots.txt. Never a hard dependency : when a venue prices dynamically the app says "price on booking" instead of guessing.                                                                                                                           |
-| **CI** (`.github/workflows/data-refresh.yml`)   | Runs both scripts weekly (and on demand) and commits the dataset; Vercel redeploys automatically on push.                                                                                                                                                                                                                                        |
-| **Frontend** (Vite + React)                     | MapLibre GL (WebGL) over OpenFreeMap vector tiles with clustered, type-colored markers; group builder with per-player travel-time estimates; fit ranking with plain-language reasons; filters; browser-local profiles with saved pitches and planned games (RSVPs).                                                                              |
+**Data pipeline** (`scripts/build-data.mjs`, weekly in
+`.github/workflows/data-refresh.yml`). Overpass gives every `leisure=pitch` for football or
+multi-use in Greater London. Each pitch is classified (commercial centre, bookable astro, park
+pitch, cage), private and school grounds are excluded, pitches on the same site are collapsed
+into one venue, unnamed pitches are named after the park, playing field or road they sit on,
+postcodes.io gives the nearest postcode and Nominatim the road, and the curated list of bookable
+venues (`scripts/curated-venues.json`) is merged with any scraped prices. Every record carries
+its provenance (`source`, `sourceUrl`, `verifiedAt`). The build writes a compact
+`public/data/index.json`, one JSON file per pitch, and a prerendered HTML page per pitch at
+`/p/{id}` with Open Graph meta so a shared link unfurls.
 
-Pitch data © [OpenStreetMap](https://www.openstreetmap.org/copyright)
-contributors (ODbL) : attribution is rendered in the app. Fixing a pitch on
-OpenStreetMap fixes it here after the next refresh.
+**Prices** (`scripts/scrape-prices.mjs`). A polite re-check of curated venues' public pages:
+identifies itself, honours robots.txt, one request every two seconds, page text cached in
+`data/cache/pages/`. A price is written only when the page states it per hour or per session.
+Otherwise the app says "price on booking" rather than guessing.
+
+**Audit** (`scripts/audit-data.mjs`). Runs offline in CI and online in the weekly refresh:
+missing facts, duplicate names, coordinates more than 150 m from their postcode, booking URLs
+that do not answer 200, curated facts nobody has verified. The refresh publishes the result to
+`agent/DATA_QUALITY.md`.
+
+**Frontend** (Vite + React). The URL is the only state: group (`g=`), filters, selected pitch.
+Ranking runs on straight-line estimates so the list is instant and gives plain-language reasons
+that are true by construction; there is no score on screen. Journey times on cards, pitch pages
+and game pages are then routed by OSRM (walking, cycling, driving) and tagged "route"; public
+transport uses the TfL Journey Planner when `VITE_TFL_APP_KEY` is set and is otherwise an
+estimate tagged "est.". MapLibre and the dataset load on demand so the first screen stays under
+the bundle budget. Light and dark themes follow the system.
+
+**Accounts and games** (Supabase). Sign-in is optional and by magic link or Google. Signed-in
+people save pitches and groups and create games. A game has an unguessable link at `/g/{slug}`;
+anyone with the link reads it through a security-definer function and answers as a guest with a
+name their phone remembers. Row Level Security keeps everything else private; the policies are
+SQL migrations in `supabase/migrations/` and are tested against a real Postgres. Browsing works
+in full when Supabase is unreachable. `api/game.js` is a Vercel function that serves the game
+page's Open Graph meta.
+
+Pitch data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL); the
+attribution is shown in the app. Fixing a pitch on OpenStreetMap fixes it here after the next
+refresh. Nothing in the app is a guess presented as a fact: unknown facts say so.
 
 ## Run it
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
-npm run build    # production build in dist/
+npm run dev        # http://localhost:5173
+npm run build      # dist/ plus prerendered pitch pages
+npm run check      # lint, unit and RLS tests, test build, bundle budget, Playwright, Lighthouse
 ```
 
-Rebuild the dataset locally (needs open internet):
+Environment, in `.env.local` for development and in Vercel's project settings for production:
+
+```
+VITE_SUPABASE_URL=https://<project>.supabase.co
+VITE_SUPABASE_ANON_KEY=<anon key>          # the only key that ever reaches the browser
+VITE_TFL_APP_KEY=<optional>                # public transport times from TfL; estimates without it
+```
+
+Supabase setup: apply the migrations in order (`supabase db push`, or paste each file into the
+SQL editor) and enable the Email and Google providers. Details and the policy tests are in
+`agent/SUPABASE.md`.
+
+Tests: `npm test` runs the unit tests and, when `DATABASE_URL` points at a local Postgres, the
+RLS tests. `npm run test:e2e` runs Playwright on an iPhone 13 profile and a desktop profile
+against a test build that talks to a stand-in Supabase (`tests/e2e/fake-supabase.mjs`: the real
+migrations on a real Postgres behind the subset of the Supabase HTTP API the app uses, plus an
+OSRM stub). `npm run lighthouse` audits the home and a pitch route on a simulated slow 4G phone.
+
+Rebuild the dataset (needs open internet; the sandbox this was built in did not have it, so the
+data steps run as the `data-refresh` workflow on demand):
 
 ```bash
-node scripts/scrape-prices.mjs   # optional, best-effort
-node scripts/build-data.mjs      # writes public/data/pitches.json
+node scripts/scrape-prices.mjs        # optional, best-effort
+node scripts/build-data.mjs           # writes public/data/, data/cache/
+node scripts/audit-data.mjs --write   # writes agent/DATA_QUALITY.md
 ```
 
 ## Deployment
 
-Vercel builds and deploys `main` on every push : no configuration or secrets
-required; the site is fully static. The weekly data-refresh workflow's commit
-triggers a redeploy, so pitch data stays current without touching the app.
+Vercel builds `main` on every push (`vercel.json`: clean URLs, `/g/:slug` to the game function,
+everything else to the app). The two Supabase variables above must be set in the Vercel project.
+The weekly refresh commits the dataset and Vercel redeploys.
 
-## Honest limitations / roadmap
+## What it does not do
 
-- **Travel times** are straight-line estimates with mode-typical speeds.
-  Swap `estimateEta` in `src/lib/geo.js` for the TfL Journey Planner API
-  (free key) for door-to-door times.
-- **Live slot availability** isn't public API territory for Powerleague/Goals;
-  the app deep-links to each venue's booking page instead.
-- **Profiles** are browser-local (`src/lib/auth.js` is the single swap point
-  for a real auth backend such as Supabase).
+- Public transport times are estimates unless a TfL key is configured.
+- Most bookable venues price at booking time; the app links to the booking page and says so.
+- Live slot availability is not public API territory for the big operators.
+
+## Project history
+
+`agent/` holds the run that took this from prototype to product: `STATE.md` (plans and
+reflections per iteration), `QA.md` (measurements), `CRITIQUE.md` and `critique/` (product and
+design critic rounds), `BACKLOG.md`, `DEFINITION_OF_DONE.md`, `DATA_QUALITY.md`, `SUPABASE.md`
+and `FINAL_REPORT.md`.

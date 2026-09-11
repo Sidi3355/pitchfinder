@@ -28,6 +28,10 @@ allow-list.
 
 ## Functions (security definer, `search_path = public`)
 
+- `games.previous_starts_at` and `games.time_changed_at` (migration 0004) are set by a trigger
+  whenever `starts_at` changes; the client cannot set or clear them. `game_by_slug` returns both,
+  and marks each RSVP `before_change` when it was last updated before the time moved, so the page
+  can ask those people to confirm.
 - `game_by_slug(slug, guest_key default null)` returns `{ game, rsvps }`. The game object never
   includes `creator_id`; it includes `creator_name`, `is_creator` (for the caller) and each RSVP
   carries `is_you` (matched by `auth.uid()` for users or by `guest_key` for guests). Returns

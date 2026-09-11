@@ -45,8 +45,11 @@ export function About() {
         it was seen; when a venue sets prices at booking we say so rather than guess.
       </p>
       <p>
-        Journey times are estimates from distance and typical speeds, and are labelled as such.
-        Check a journey planner before you set off.
+        Walking, cycling and driving times on the cards and pitch pages are routed by OSRM over
+        OpenStreetMap roads, door to door, and are tagged &ldquo;route&rdquo;. Public transport
+        times, and anything the router could not answer, are estimates from straight-line distance
+        and typical speeds, tagged &ldquo;est.&rdquo;. The ranking uses the estimates so the list is
+        instant. Check a journey planner before you set off.
       </p>
 
       <h2>Something wrong?</h2>

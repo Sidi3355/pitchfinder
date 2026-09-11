@@ -31,16 +31,11 @@ export function buildReasons({
   maxEta,
   spreadEta,
   etaCount,
+  routed = false,
 }) {
   const reasons = []
-  if (etaCount > 0) {
-    if (maxEta <= 25)
-      reasons.push({ text: `everyone within about ${displayMinutes(maxEta)} min`, estimate: true })
-    else if (etaCount > 1 && spreadEta <= 10)
-      reasons.push({ text: 'a similar journey for everyone', estimate: true })
-    else if (avgEta <= 30)
-      reasons.push({ text: `about ${displayMinutes(avgEta)} min on average`, estimate: true })
-  }
+  const journey = journeyReason({ avgEta, maxEta, spreadEta, etaCount, routed })
+  if (journey) reasons.push(journey)
   if (cost.known && cost.perHour === 0) reasons.push({ text: 'free' })
   else if (cost.known && headCount > 1 && pricePerHead <= 8) {
     reasons.push({ text: `about £${Math.round(pricePerHead)} each for ${headCount}` })
@@ -54,46 +49,108 @@ export function buildReasons({
   return reasons.slice(0, 4)
 }
 
+/** Average, worst and spread of a set of journey minutes. */
+export function journeyStats(mins) {
+  const avgEta = mins.length ? Math.round(mins.reduce((s, m) => s + m, 0) / mins.length) : 0
+  const maxEta = mins.length ? Math.max(...mins) : 0
+  const spreadEta = mins.length ? maxEta - Math.min(...mins) : 0
+  return { avgEta, maxEta, spreadEta, etaCount: mins.length }
+}
+
+/**
+ * The one journey reason, if any. Estimates are rounded to 5 and say "about";
+ * routed minutes (OSRM or TfL) are shown as they came back.
+ */
+export function journeyReason({ avgEta, maxEta, spreadEta, etaCount, routed = false }) {
+  if (!etaCount) return null
+  const min = (m) => (routed ? `${m} min` : `about ${displayMinutes(m)} min`)
+  const estimate = !routed
+  if (maxEta <= 25) return { text: `everyone within ${min(maxEta)}`, estimate }
+  if (etaCount > 1 && spreadEta <= 10) return { text: 'a similar journey for everyone', estimate }
+  if (avgEta <= 30) return { text: `${min(avgEta)} on average`, estimate }
+  return null
+}
+
 /**
  * @param pitches dataset array
  * @param squad   [{ id, name, lat, lng, mode }]
  * @param filters DEFAULT_FILTERS shape
  * @returns sorted [{ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, reasons }]
  */
+/** The filter half of the ranking: does this pitch pass for this group? */
+export function passesFilters(pitch, squad, filters, headCount = Math.max(squad.length, 1)) {
+  const cost = costOf(pitch)
+  const pricePerHead = cost.known ? cost.perHour / headCount : null
+  if (filters.types.length && !filters.types.includes(pitch.type)) return false
+  if (filters.enclosure === 'bounded' && !isBounded(pitch)) return false
+  if (filters.enclosure === 'open' && isBounded(pitch)) return false
+  if (filters.freeOnly && !(cost.known && cost.perHour === 0)) return false
+  if (filters.bookableOnly && !isBookable(pitch.bookingUrl)) return false
+  if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead)
+    return false
+  if (
+    filters.format != null &&
+    Array.isArray(pitch.formats) &&
+    !pitch.formats.includes(filters.format)
+  )
+    return false
+  if (filters.needsFloodlights && pitch.lit !== true) return false
+  if (filters.maxEta != null && squad.length) {
+    for (const f of squad) {
+      if (estimateEta({ lat: f.lat, lng: f.lng }, pitch, f.mode) > filters.maxEta) return false
+    }
+  }
+  return true
+}
+
+/**
+ * How many pitches each filter option would leave, with every other filter
+ * as it is. Multi-select types count each type on its own.
+ */
+export function filterCounts(pitches, squad, filters = DEFAULT_FILTERS) {
+  const count = (patch) => {
+    const f = { ...filters, ...patch }
+    let n = 0
+    for (const p of pitches) if (passesFilters(p, squad, f)) n++
+    return n
+  }
+  const types = {}
+  for (const p of pitches) types[p.type] = 0
+  for (const t of Object.keys(types)) types[t] = count({ types: [t] })
+  return {
+    types,
+    enclosure: {
+      any: count({ enclosure: 'any' }),
+      bounded: count({ enclosure: 'bounded' }),
+      open: count({ enclosure: 'open' }),
+    },
+    format: {
+      any: count({ format: null }),
+      5: count({ format: 5 }),
+      7: count({ format: 7 }),
+      11: count({ format: 11 }),
+    },
+    needsFloodlights: count({ needsFloodlights: true }),
+    freeOnly: count({ freeOnly: true }),
+    bookableOnly: count({ bookableOnly: true }),
+  }
+}
+
 export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
   const headCount = Math.max(squad.length, 1)
   const out = []
 
   for (const pitch of pitches) {
+    if (!passesFilters(pitch, squad, filters, headCount)) continue
     const cost = costOf(pitch)
     const pricePerHead = cost.known ? cost.perHour / headCount : null
-
-    // ── Filters ──
-    if (filters.types.length && !filters.types.includes(pitch.type)) continue
-    if (filters.enclosure === 'bounded' && !isBounded(pitch)) continue
-    if (filters.enclosure === 'open' && isBounded(pitch)) continue
-    if (filters.freeOnly && !(cost.known && cost.perHour === 0)) continue
-    if (filters.bookableOnly && !isBookable(pitch.bookingUrl)) continue
-    if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead)
-      continue
-    if (
-      filters.format != null &&
-      Array.isArray(pitch.formats) &&
-      !pitch.formats.includes(filters.format)
-    )
-      continue
-    if (filters.needsFloodlights && pitch.lit !== true) continue
 
     // ── ETAs ──
     const etas = squad.map((f) => ({
       friend: f,
       minutes: estimateEta({ lat: f.lat, lng: f.lng }, pitch, f.mode),
     }))
-    const mins = etas.map((e) => e.minutes)
-    const avgEta = mins.length ? Math.round(mins.reduce((s, m) => s + m, 0) / mins.length) : 0
-    const maxEta = mins.length ? Math.max(...mins) : 0
-    const spreadEta = mins.length ? maxEta - Math.min(...mins) : 0
-    if (filters.maxEta != null && squad.length && maxEta > filters.maxEta) continue
+    const { avgEta, maxEta, spreadEta } = journeyStats(etas.map((e) => e.minutes))
 
     // ── Score components, each in [0, 1]; ordering only, never shown ──
     const sAvg = clamp01(1 - avgEta / 60)
