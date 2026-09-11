@@ -5,6 +5,7 @@
 // Also writes dist/404.html. Runs after `vite build`.
 
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { compactPitch } from '../src/lib/compact.js'
 import { join } from 'node:path'
 import { PITCH_TYPES, pitchName } from '../src/data/types.js'
 import { costOf } from '../src/lib/data.js'
@@ -109,4 +110,18 @@ const notFound = template
   .replace('</head>', '<meta name="robots" content="noindex" /></head>')
 writeFileSync(join(DIST, '404.html'), notFound)
 
-console.log(`Prerendered ${n} pitch pages and 404.html`)
+// Compact index for the app (what the list, map and ranking need) and one
+// detail file per pitch (provenance, opening hours, members) loaded on demand.
+mkdirSync(join(DIST, 'data', 'p'), { recursive: true })
+const { pitches, ...meta } = data
+writeFileSync(
+  join(DIST, 'data', 'index.json'),
+  JSON.stringify({ ...meta, pitches: pitches.map(compactPitch) }),
+)
+for (const pitch of pitches) {
+  if (!/^[a-z0-9-]{1,40}$/i.test(pitch.id)) continue
+  writeFileSync(join(DIST, 'data', 'p', `${pitch.id}.json`), JSON.stringify(pitch))
+}
+console.log(
+  `Prerendered ${n} pitch pages and 404.html; wrote data/index.json and ${n} detail files`,
+)

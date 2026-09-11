@@ -11,6 +11,9 @@ import { pitchName } from '../data/types.js'
 import { bookingLabel } from '../lib/labels.js'
 import { Link } from './Link.jsx'
 import { Directions } from './Directions.jsx'
+import { usePitchDetail } from '../lib/use-detail.js'
+import { buildIcs, buildSummary, formatMoney, icsDataUrl, splitCost } from '../lib/game-extras.js'
+import { costOf } from '../lib/data.js'
 import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { setGuest, useGuest } from '../lib/guest.js'
 
@@ -33,7 +36,10 @@ export function GamePage({ slug }) {
   const [editing, setEditing] = useState(false)
   const [confirmCancel, setConfirmCancel] = useState(false)
   const [shareStatus, setShareStatus] = useState(null)
+  const [copyStatus, setCopyStatus] = useState(null)
   const [now, setNow] = useState(0)
+  // Called before any early return: hooks must run in the same order every render.
+  const pitchDetail = usePitchDetail(game ? pitchById.get(game.pitch_id) : null)
 
   const available = state.authAvailable
   const load = useCallback(async () => {
@@ -113,6 +119,26 @@ export function GamePage({ slug }) {
     if (result !== 'shared' && result !== 'cancelled') setShareStatus(result)
   }
 
+  async function copyMessage() {
+    const cost = pitch ? costOf(pitch) : { known: false }
+    const text = buildSummary({
+      pitchName: pitch ? pitchName(pitch) : game.pitch_name,
+      when: formatWhen(game.starts_at),
+      postcode: pitch?.postcode,
+      pricePerHour: cost.known ? cost.perHour : null,
+      inCount,
+      url: `${window.location.origin}/g/${slug}`,
+      notes: game.notes,
+    })
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopyStatus('copied')
+    } catch {
+      setCopyStatus('failed')
+    }
+    setTimeout(() => setCopyStatus(null), 2000)
+  }
+
   async function cancelGame() {
     setBusy(true)
     try {
@@ -177,7 +203,7 @@ export function GamePage({ slug }) {
     )
   }
 
-  const pitch = pitchById.get(game.pitch_id)
+  const pitch = pitchDetail
   const cancelled = game.status === 'cancelled'
   const happened = new Date(game.starts_at).getTime() < now - 3 * 3600e3
   const mine = rsvps.find((r) => r.is_you)
@@ -217,6 +243,23 @@ export function GamePage({ slug }) {
             {pitch.borough ? `, ${pitch.borough}` : ''}
           </p>
           <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
+          {(() => {
+            const cost = costOf(pitch)
+            if (!cost.known) return null
+            if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
+            const each = splitCost(cost.perHour, inCount)
+            return (
+              <p className="game-cost">
+                {formatMoney(cost.perHour)} for the pitch
+                {each
+                  ? `, ${formatMoney(each)} each with ${inCount} in`
+                  : ', split between whoever is in'}
+                <span className="fact-note">
+                  operator&rsquo;s published rate for an hour, whole pitch
+                </span>
+              </p>
+            )
+          })()}
           {Array.isArray(game.group) && game.group.length > 0 && (
             <>
               <ul className="eta-list">
@@ -336,6 +379,27 @@ export function GamePage({ slug }) {
               : shareStatus === 'failed'
                 ? 'Copy failed'
                 : 'Share link'}
+          </button>
+          <a
+            className="btn ghost"
+            href={icsDataUrl(
+              buildIcs({
+                uid: `${game.id}@pitchfinder`,
+                title: `Football: ${pitch ? pitchName(pitch) : game.pitch_name}`,
+                startsAt: game.starts_at,
+                location: [pitch ? pitchName(pitch) : game.pitch_name, pitch?.postcode]
+                  .filter(Boolean)
+                  .join(', '),
+                description: `${game.notes ? `${game.notes}\n` : ''}In or out? ${window.location.origin}/g/${slug}`,
+                url: `${window.location.origin}/g/${slug}`,
+              }),
+            )}
+            download={`football-${slug}.ics`}
+          >
+            Add to calendar
+          </a>
+          <button className="btn ghost" onClick={copyMessage}>
+            {copyStatus === 'copied' ? 'Message copied' : 'Copy message for the group'}
           </button>
           <span className="sr-only" role="status" aria-live="polite">
             {shareStatus === 'copied'

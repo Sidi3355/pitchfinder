@@ -11,10 +11,12 @@ import { costOf, isBounded } from '../lib/data.js'
 import { bookingLabel, surfaceLabel } from '../lib/labels.js'
 import { formatDate, fromInputParts, nextKickoff, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
+import { usePitchDetail } from '../lib/use-detail.js'
 import { Directions } from './Directions.jsx'
 
-export function PitchContent({ pitch }) {
+export function PitchContent({ pitch: indexPitch }) {
   const { state, actions } = useStore()
+  const pitch = usePitchDetail(indexPitch)
   const [panel, setPanel] = useState(null) // null | 'plan' | 'report'
   const [shareStatus, setShareStatus] = useState(null)
 
