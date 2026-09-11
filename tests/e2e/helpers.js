@@ -8,11 +8,46 @@ export async function openGroup(page) {
   await expect(page.getByRole('dialog', { name: 'Your group' })).toBeVisible()
 }
 
-export async function addPlayer(page, name, area) {
+export async function addPlayer(page, name, place) {
   const dialog = page.getByRole('dialog', { name: 'Your group' })
-  if (name) await dialog.getByPlaceholder('Player name').fill(name)
-  await dialog.getByPlaceholder(/Home area/).fill(area)
+  if (name) await dialog.getByPlaceholder('Name (optional)').fill(name)
+  await dialog.getByPlaceholder(/Postcode or place/).fill(place)
   await dialog.getByRole('button', { name: 'Add player' }).click()
+}
+
+/** Canned postcodes.io answers so the flow is deterministic offline. */
+export const POSTCODES = {
+  'E8 3DL': {
+    latitude: 51.5475,
+    longitude: -0.0553,
+    admin_ward: 'Dalston',
+    admin_district: 'Hackney',
+  },
+  'SE15 4AB': {
+    latitude: 51.4741,
+    longitude: -0.0691,
+    admin_ward: 'Rye Lane',
+    admin_district: 'Southwark',
+  },
+}
+
+export async function mockPostcodes(page) {
+  await page.route('https://api.postcodes.io/**', (route) => {
+    const url = new URL(route.request().url())
+    const m = url.pathname.match(/^\/postcodes\/([^/]+)(\/autocomplete)?$/)
+    if (!m) return route.fulfill({ status: 404, json: { status: 404 } })
+    const code = decodeURIComponent(m[1]).toUpperCase()
+    if (m[2]) {
+      const list = Object.keys(POSTCODES).filter((k) =>
+        k.replace(' ', '').startsWith(code.replace(' ', '')),
+      )
+      return route.fulfill({ json: { status: 200, result: list } })
+    }
+    const hit = POSTCODES[code]
+    if (!hit)
+      return route.fulfill({ status: 404, json: { status: 404, error: 'Postcode not found' } })
+    return route.fulfill({ json: { status: 200, result: { postcode: code, ...hit } } })
+  })
 }
 
 export async function closeGroup(page) {

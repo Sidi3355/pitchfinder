@@ -1670,3 +1670,17 @@ textarea.input {
     width: min(640px, 100%);
   }
 }
+
+.recent-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.input.grow,
+.btn.grow {
+  flex: 1;
+}
+.area-suggestions button .dim {
+  font-size: 12px;
+}
