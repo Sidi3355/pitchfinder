@@ -8,7 +8,7 @@ test('home loads the dataset and shows a ranked list', async ({ page }) => {
     }
   })
   await page.goto('/')
-  await expect(page.getByRole('heading', { name: /^Pitches$|Best for your group/ })).toBeVisible()
+  await expect(page.locator('.list-title strong')).toContainText(/pitches/)
   await expect(page.locator('.card').first()).toBeVisible()
   test.info().annotations.push({ type: 'console', description: errors.join('\n') || 'none' })
 })
