@@ -87,23 +87,23 @@ Pitch {
 
 ## Dataset statistics at the start of the run (generated 7 Sep 2026)
 
-| Metric | Count | Share |
-| --- | --- | --- |
-| Pitches | 3,148 | |
-| park | 2,441 | 78% |
-| cage | 367 | 12% |
-| astro | 323 | 10% |
-| commercial | 17 | 0.5% |
-| Named | 199 | 6% |
-| With operator | 46 | 1.5% |
-| Surface known | 1,678 | 53% |
-| Lit known | 1,046 | 33% (302 lit) |
-| Fee known | 5 | 0.2% |
-| Price known | 26 | 0.8% (all curated baseline, none scraped) |
-| Booking URL | 26 | 0.8% |
-| Curated | 26 | |
-| pitchCount > 1 | 1 | |
-| Distinct names | 171 | 13 names duplicated ("Pitch 1" x4 etc.) |
+| Metric         | Count | Share                                     |
+| -------------- | ----- | ----------------------------------------- |
+| Pitches        | 3,148 |                                           |
+| park           | 2,441 | 78%                                       |
+| cage           | 367   | 12%                                       |
+| astro          | 323   | 10%                                       |
+| commercial     | 17    | 0.5%                                      |
+| Named          | 199   | 6%                                        |
+| With operator  | 46    | 1.5%                                      |
+| Surface known  | 1,678 | 53%                                       |
+| Lit known      | 1,046 | 33% (302 lit)                             |
+| Fee known      | 5     | 0.2%                                      |
+| Price known    | 26    | 0.8% (all curated baseline, none scraped) |
+| Booking URL    | 26    | 0.8%                                      |
+| Curated        | 26    |                                           |
+| pitchCount > 1 | 1     |                                           |
+| Distinct names | 171   | 13 names duplicated ("Pitch 1" x4 etc.)   |
 
 Surfaces: grass 1,116, astro 339, hard 200, 3g 17, other 6, unknown 1,470.
 

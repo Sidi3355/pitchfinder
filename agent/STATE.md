@@ -10,14 +10,14 @@ and its plan (BACKLOG.md).
 
 Baseline measurements:
 
-| Metric | Value |
-| --- | --- |
-| Initial JS (gzipped) | 324 KB, MapLibre inline |
-| Dataset | 582 KB raw, 57 KB gzipped, 3,148 pitches |
-| Named pitches | 199 (6%) |
-| Priced pitches | 26 (0.8%), none scraped |
-| Tests | none |
-| Lint | 11 errors before setup, 0 after |
+| Metric               | Value                                    |
+| -------------------- | ---------------------------------------- |
+| Initial JS (gzipped) | 324 KB, MapLibre inline                  |
+| Dataset              | 582 KB raw, 57 KB gzipped, 3,148 pitches |
+| Named pitches        | 199 (6%)                                 |
+| Priced pitches       | 26 (0.8%), none scraped                  |
+| Tests                | none                                     |
+| Lint                 | 11 errors before setup, 0 after          |
 
 What got better: tooling and gates exist; lint is clean.
 What got worse or was discovered: sandbox has no network beyond npm and GitHub, so pipeline
