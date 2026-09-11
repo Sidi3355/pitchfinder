@@ -21,7 +21,7 @@ describe('buildIcs', () => {
     expect(ics).toContain('DTSTART:20261001T183000Z')
     expect(ics).toContain('DTEND:20261001T193000Z')
     expect(ics).toContain('SUMMARY:Football\\, Powerleague Shoreditch')
-    expect(ics).toContain('LOCATION:Powerleague Shoreditch\; E2 8DP')
+    expect(ics).toContain('LOCATION:Powerleague Shoreditch\\; E2 8DP')
     expect(ics).toContain('DESCRIPTION:Bring bibs\\nand a ball')
     expect(ics.endsWith('END:VCALENDAR\r\n')).toBe(true)
     expect(icsDataUrl(ics).startsWith('data:text/calendar;charset=utf-8,BEGIN')).toBe(true)

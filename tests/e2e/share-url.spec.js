@@ -65,7 +65,7 @@ test('no results is a designed state with a way out', async ({ page }) => {
 
 test('a failed dataset download shows an error with a retry', async ({ page }) => {
   let fail = true
-  await page.route('**/data/pitches.json', (route) => (fail ? route.abort() : route.continue()))
+  await page.route(/\/data\/(index|pitches)\.json$/, (route) => (fail ? route.abort() : route.continue()))
   await page.goto('/')
   await expect(page.getByText('Could not load pitch data.')).toBeVisible()
   fail = false
