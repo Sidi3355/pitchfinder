@@ -1,19 +1,26 @@
-// Builds public/data/pitches.json — the full directory of football pitches in
-// Greater London — from OpenStreetMap (Overpass API), merged with the curated
-// commercial-venue list (scripts/curated-venues.json) and any scraped prices
-// (data/prices.json, written by scripts/scrape-prices.mjs).
+// Builds public/data/pitches.json: every public football pitch in Greater
+// London from OpenStreetMap (Overpass), collapsed into venues, named after
+// the park or road they sit on when OSM has no name, geocoded to a nearest
+// postcode, merged with the curated bookable-venue list and any scraped
+// prices, with a source and date on every record.
 //
-// Run by .github/workflows/data-refresh.yml (weekly + on demand). Requires
-// Node 18+ (built-in fetch). No npm dependencies.
+// Run by .github/workflows/data-refresh.yml (weekly + on demand). Node 18+.
+// Offline: FIXTURE=tests/fixtures/overpass-small.json OFFLINE=1 node scripts/build-data.mjs
 //
-// Data © OpenStreetMap contributors, ODbL — attribution is rendered in the app.
+// Data © OpenStreetMap contributors, ODbL. Attribution is rendered in the app.
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { AREAS } from '../src/data/areas.js'
+import { collapse, deriveNames, mergeCurated, summarise, transform } from './lib/pipeline.mjs'
+import { keyFor, loadCache, reversePostcodes, reverseRoads, saveCache, UA } from './lib/geocode.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const OUT = join(ROOT, 'public/data/pitches.json')
+const CACHE_DIR = join(ROOT, 'data/cache')
+const OFFLINE = !!process.env.OFFLINE
+const NOMINATIM_MAX = Number(process.env.NOMINATIM_MAX || 1200)
 
 // Greater London bounding box (south, west, north, east).
 const BBOX = '51.26,-0.53,51.71,0.36'
@@ -24,7 +31,7 @@ const OVERPASS_ENDPOINTS = [
   'https://overpass.private.coffee/api/interpreter',
 ]
 
-const QUERY = `
+const PITCH_QUERY = `
 [out:json][timeout:300];
 (
   nwr["leisure"="pitch"]["sport"~"soccer",i](${BBOX});
@@ -33,21 +40,29 @@ const QUERY = `
 out center;
 `
 
+// Named places a pitch can be named after. Bounds let the pipeline tell
+// "inside this park" from "near this park".
+const PARK_QUERY = `
+[out:json][timeout:300];
+(
+  nwr["leisure"~"^(park|recreation_ground|playing_fields|sports_centre|stadium|common|garden|nature_reserve)$"]["name"](${BBOX});
+  nwr["landuse"~"^(recreation_ground|grass|village_green)$"]["name"](${BBOX});
+);
+out bb;
+`
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
-async function fetchOverpass() {
+async function fetchOverpass(query, label) {
   let lastErr
   for (let attempt = 0; attempt < 3; attempt++) {
     for (const endpoint of OVERPASS_ENDPOINTS) {
       try {
-        console.log(`Querying ${endpoint} (attempt ${attempt + 1}) …`)
+        console.log(`${label}: querying ${endpoint} (attempt ${attempt + 1})`)
         const res = await fetch(endpoint, {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'User-Agent': 'PitchFinderBot/1.0 (+https://github.com/Sidi3355/pitchfinder)',
-          },
-          body: `data=${encodeURIComponent(QUERY)}`,
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': UA },
+          body: `data=${encodeURIComponent(query)}`,
         })
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const json = await res.json()
@@ -61,160 +76,32 @@ async function fetchOverpass() {
     }
     await sleep(30000 * (attempt + 1))
   }
-  throw new Error(`All Overpass endpoints failed: ${lastErr?.message}`)
+  throw new Error(`All Overpass endpoints failed for ${label}: ${lastErr?.message}`)
 }
 
-// ── Classification ───────────────────────────────────────────────────────────
-
-const COMMERCIAL_RE =
-  /powerleague|power league|goals\b|playfootball|play football|soccerdome|footballworx|futsal club/i
-const SCHOOL_RE =
-  /\bschool\b|\bacademy\b|\bcollege\b|sixth form|\bprep\b|\bprimary\b|\bsecondary\b|university/i
-const CAGE_RE = /\bmuga\b|\bcage\b|ball ?court|games area|multi[- ]use/i
-const HARD_SURFACE_RE = /tarmac|asphalt|concrete|paved|macadam/i
-const ARTIFICIAL_RE = /artificial|astro|3g|4g|tartan|synthetic|acrylic/i
-
-function normSurface(s = '') {
-  const v = s.toLowerCase()
-  if (/3g|4g/.test(v)) return '3g'
-  if (ARTIFICIAL_RE.test(v)) return 'astro'
-  if (/grass|turf|meadow/.test(v)) return 'grass'
-  if (HARD_SURFACE_RE.test(v)) return 'hard'
-  return v ? 'other' : null
-}
-
-function classify(tags) {
-  const label = `${tags.name || ''} ${tags.operator || ''}`
-  const sport = (tags.sport || '').toLowerCase()
-  const surface = normSurface(tags.surface)
-  if (COMMERCIAL_RE.test(label)) return 'commercial'
-  if (sport.includes('multi') || CAGE_RE.test(label) || tags.hoops === 'yes' || surface === 'hard')
-    return 'cage'
-  if (surface === '3g' || surface === 'astro') return 'astro'
-  return 'park'
-}
-
-function excluded(tags) {
-  const access = (tags.access || '').toLowerCase()
-  if (access === 'private' || access === 'no' || access === 'military') return true
-  if (SCHOOL_RE.test(`${tags.name || ''} ${tags.operator || ''} ${tags['operator:type'] || ''}`))
-    return true
-  return false
-}
-
-function nearestArea(lat, lng) {
-  let best = null
-  let bestD = Infinity
-  for (const a of AREAS) {
-    const d = (a.lat - lat) ** 2 + ((a.lng - lng) * 0.62) ** 2
-    if (d < bestD) {
-      bestD = d
-      best = a
-    }
-  }
-  return best?.name || null
-}
-
-function distM(a, b) {
-  const dLat = (a.lat - b.lat) * 111320
-  const dLng = (a.lng - b.lng) * 111320 * Math.cos((a.lat * Math.PI) / 180)
-  return Math.hypot(dLat, dLng)
-}
-
-// ── Build ────────────────────────────────────────────────────────────────────
-
-function transform(elements) {
-  const pitches = []
+/** Overpass park elements (out bb) -> { name, lat, lng, bounds }. Very large areas are dropped. */
+export function parksFromElements(elements, maxSpanKm = 4) {
+  const parks = []
   for (const el of elements) {
-    const tags = el.tags || {}
-    const lat = el.lat ?? el.center?.lat
-    const lng = el.lon ?? el.center?.lon
+    const name = el.tags?.name?.trim()
+    if (!name) continue
+    let lat = el.lat
+    let lng = el.lon
+    let bounds = null
+    if (el.bounds) {
+      bounds = el.bounds
+      lat = (bounds.minlat + bounds.maxlat) / 2
+      lng = (bounds.minlon + bounds.maxlon) / 2
+      const spanKm = Math.max(
+        (bounds.maxlat - bounds.minlat) * 111,
+        (bounds.maxlon - bounds.minlon) * 69,
+      )
+      if (spanKm > maxSpanKm) continue
+    }
     if (lat == null || lng == null) continue
-    if (excluded(tags)) continue
-
-    pitches.push({
-      id: `osm-${el.type[0]}${el.id}`,
-      name: tags.name || null,
-      type: classify(tags),
-      operator: tags.operator || null,
-      lat: Math.round(lat * 1e5) / 1e5,
-      lng: Math.round(lng * 1e5) / 1e5,
-      area: nearestArea(lat, lng),
-      surface: normSurface(tags.surface),
-      lit: tags.lit === 'yes' ? true : tags.lit === 'no' ? false : null,
-      access: tags.access || null,
-      fee: tags.fee === 'yes' ? true : tags.fee === 'no' ? false : null,
-      bounded: tags.barrier != null || null,
-    })
+    parks.push({ name, lat, lng, bounds })
   }
-  return pitches
-}
-
-/** Collapse clusters of same-operator commercial pitches into one venue. */
-function collapseCommercial(pitches) {
-  const commercial = pitches.filter((p) => p.type === 'commercial')
-  const rest = pitches.filter((p) => p.type !== 'commercial')
-  const groups = []
-  for (const p of commercial) {
-    const g = groups.find(
-      (grp) => distM(grp, p) < 250 && (grp.operator || '') === (p.operator || ''),
-    )
-    if (g) {
-      g.members.push(p)
-    } else {
-      groups.push({ ...p, members: [p] })
-    }
-  }
-  const collapsed = groups.map((g) => {
-    const { members, ...first } = g
-    return { ...first, pitchCount: members.length }
-  })
-  return [...rest, ...collapsed]
-}
-
-function mergeCurated(pitches, curated, prices) {
-  const out = [...pitches]
-  for (const venue of curated) {
-    const scraped = prices[venue.id]
-    const enrich = {
-      name: venue.name,
-      operator: venue.operator,
-      type: venue.type,
-      surface: venue.surface,
-      formats: venue.formats,
-      pricePerHour: scraped?.min ?? venue.pricePerHour,
-      priceMax: scraped?.max ?? null,
-      priceCheckedAt: scraped?.checkedAt ?? null,
-      priceSource: scraped ? 'scraped' : 'published',
-      bookingUrl: venue.bookingUrl,
-      lit: venue.lit,
-      changingRooms: venue.changingRooms,
-      bounded: venue.type === 'commercial' || venue.type === 'cage' ? true : null,
-      curated: true,
-    }
-    // Attach to the nearest matching OSM feature within 300 m, else add standalone.
-    let best = null
-    let bestD = Infinity
-    for (const p of out) {
-      const d = distM(p, venue)
-      if (d < 300 && d < bestD) {
-        bestD = d
-        best = p
-      }
-    }
-    if (best) {
-      Object.assign(best, enrich, { id: venue.id, matchedOsmId: best.id })
-    } else {
-      out.push({
-        id: venue.id,
-        lat: venue.lat,
-        lng: venue.lng,
-        area: nearestArea(venue.lat, venue.lng),
-        ...enrich,
-      })
-    }
-  }
-  return out
+  return parks
 }
 
 async function main() {
@@ -222,35 +109,108 @@ async function main() {
   const pricesPath = join(ROOT, 'data/prices.json')
   const prices = existsSync(pricesPath) ? JSON.parse(readFileSync(pricesPath, 'utf8')) : {}
 
-  // FIXTURE=path/to/overpass.json runs the transform offline (dev/testing).
-  const elements = process.env.FIXTURE
-    ? JSON.parse(readFileSync(process.env.FIXTURE, 'utf8')).elements
-    : await fetchOverpass()
-  let pitches = transform(elements)
-  pitches = collapseCommercial(pitches)
-  pitches = mergeCurated(pitches, curated, prices)
-
-  // Deterministic order keeps diffs small between refreshes.
-  pitches.sort((a, b) => a.id.localeCompare(b.id))
-
-  const byType = {}
-  for (const p of pitches) byType[p.type] = (byType[p.type] || 0) + 1
-
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    source: 'OpenStreetMap (Overpass API) + curated venue list',
-    attribution: '© OpenStreetMap contributors (ODbL)',
-    count: pitches.length,
-    byType,
-    pitches,
+  let elements
+  let parks
+  let fixtureRoads = null
+  if (process.env.FIXTURE) {
+    const fixture = JSON.parse(readFileSync(process.env.FIXTURE, 'utf8'))
+    elements = fixture.elements
+    parks = fixture.parks || []
+    fixtureRoads = fixture.roads || {}
+  } else {
+    elements = await fetchOverpass(PITCH_QUERY, 'pitches')
+    parks = parksFromElements(await fetchOverpass(PARK_QUERY, 'parks'))
+    console.log(`  ${parks.length} named parks and playing fields`)
   }
 
-  mkdirSync(join(ROOT, 'public/data'), { recursive: true })
-  writeFileSync(join(ROOT, 'public/data/pitches.json'), JSON.stringify(payload))
-  console.log(`Wrote ${pitches.length} pitches`, byType)
+  const pitches = transform(elements, { areas: AREAS })
+  console.log(`${pitches.length} public pitches after exclusions`)
+  let venues = collapse(pitches)
+  console.log(`${venues.length} venues after collapsing duplicates`)
+
+  // Geocoding: postcodes for everything, roads only for what parks cannot name.
+  const postcodeCache = loadCache(join(CACHE_DIR, 'postcodes.json'))
+  const roadCache = loadCache(join(CACHE_DIR, 'nominatim.json'))
+  const points = [...venues, ...curated].map((v) => ({ lat: v.lat, lng: v.lng }))
+  if (!OFFLINE) {
+    await reversePostcodes(points, { cache: postcodeCache, log: console.log })
+    saveCache(join(CACHE_DIR, 'postcodes.json'), postcodeCache)
+  }
+  const namedByPark = deriveNames(venues, { parks, roadAt: () => null })
+  const needRoad = namedByPark.filter((v) => !v.name || v.nameSource === 'area')
+  if (!OFFLINE) {
+    await reverseRoads(needRoad, { cache: roadCache, log: console.log, max: NOMINATIM_MAX })
+    saveCache(join(CACHE_DIR, 'nominatim.json'), roadCache)
+  }
+  const roadAt = (v) =>
+    fixtureRoads?.[keyFor(v.lat, v.lng)] ?? roadCache[keyFor(v.lat, v.lng)]?.road ?? null
+  venues = deriveNames(venues, { parks, roadAt })
+
+  for (const v of venues) {
+    const pc = postcodeCache[keyFor(v.lat, v.lng)]
+    if (pc?.postcode) {
+      v.postcode = pc.postcode
+      v.postcodeSource = 'nearest'
+      v.borough = pc.district || null
+    }
+  }
+
+  let out = mergeCurated(venues, curated, prices, { areas: AREAS })
+  for (const v of out) {
+    if (v.curated && !v.postcode) {
+      const pc = postcodeCache[keyFor(v.lat, v.lng)]
+      if (pc?.postcode) {
+        v.postcode = pc.postcode
+        v.postcodeSource = 'nearest'
+        v.borough = pc.district || null
+      }
+    } else if (v.curated && v.postcode) {
+      v.postcodeSource = 'operator'
+    }
+  }
+
+  // Deterministic order keeps diffs small between refreshes.
+  out.sort((a, b) => a.id.localeCompare(b.id))
+  const generatedAt = new Date().toISOString()
+  for (const v of out) if (v.source === 'osm') v.verifiedAt = generatedAt.slice(0, 10)
+
+  const { byType, byNameSource } = summarise(out)
+  const payload = {
+    schemaVersion: 2,
+    generatedAt,
+    source: 'OpenStreetMap (Overpass API) + curated venue list',
+    attribution: '© OpenStreetMap contributors (ODbL)',
+    sources: {
+      osm: {
+        name: 'OpenStreetMap',
+        url: 'https://www.openstreetmap.org/copyright',
+        licence: 'ODbL',
+      },
+      postcodes: { name: 'postcodes.io', url: 'https://postcodes.io', licence: 'OGL / ONS' },
+      nominatim: {
+        name: 'Nominatim (OpenStreetMap)',
+        url: 'https://nominatim.org',
+        licence: 'ODbL',
+      },
+      curated: {
+        name: 'PitchFinder curated venue list',
+        url: 'https://github.com/Sidi3355/pitchfinder/blob/main/scripts/curated-venues.json',
+      },
+    },
+    count: out.length,
+    byType,
+    byNameSource,
+    pitches: out,
+  }
+
+  mkdirSync(dirname(OUT), { recursive: true })
+  writeFileSync(OUT, JSON.stringify(payload))
+  console.log(`Wrote ${out.length} venues`, byType, byNameSource)
 }
 
-main().catch((err) => {
-  console.error(err)
-  process.exit(1)
-})
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch((err) => {
+    console.error(err)
+    process.exit(1)
+  })
+}

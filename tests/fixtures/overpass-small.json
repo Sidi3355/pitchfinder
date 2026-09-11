@@ -1,0 +1,143 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 1,
+      "lat": 51.5,
+      "lon": -0.1,
+      "tags": { "leisure": "pitch", "sport": "soccer", "name": "Pitch 1", "surface": "grass" }
+    },
+    {
+      "type": "node",
+      "id": 2,
+      "lat": 51.5004,
+      "lon": -0.1,
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer",
+        "name": "Pitch 2",
+        "surface": "grass",
+        "lit": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3,
+      "lat": 51.5008,
+      "lon": -0.1002,
+      "tags": { "leisure": "pitch", "sport": "soccer", "name": "Pitch 3", "surface": "grass" }
+    },
+    {
+      "type": "way",
+      "id": 10,
+      "center": { "lat": 51.52, "lon": -0.05 },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "multi",
+        "surface": "tarmac",
+        "barrier": "fence",
+        "lit": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 11,
+      "center": { "lat": 51.5205, "lon": -0.0502 },
+      "tags": { "leisure": "pitch", "sport": "multi", "surface": "tarmac" }
+    },
+    {
+      "type": "way",
+      "id": 12,
+      "center": { "lat": 51.526, "lon": -0.05 },
+      "tags": { "leisure": "pitch", "sport": "basketball;soccer", "hoops": "yes" }
+    },
+    {
+      "type": "way",
+      "id": 20,
+      "center": { "lat": 51.53, "lon": -0.08 },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer",
+        "name": "Powerleague Testtown",
+        "operator": "Powerleague",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 21,
+      "center": { "lat": 51.5305, "lon": -0.0805 },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer",
+        "operator": "Powerleague",
+        "surface": "artificial_turf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30,
+      "center": { "lat": 51.54, "lon": -0.12 },
+      "tags": { "leisure": "pitch", "sport": "soccer", "name": "St Mary's School Field" }
+    },
+    {
+      "type": "way",
+      "id": 31,
+      "center": { "lat": 51.541, "lon": -0.121 },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer",
+        "name": "Riverside Academy 3G",
+        "access": "customers",
+        "surface": "3g",
+        "lit": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32,
+      "center": { "lat": 51.542, "lon": -0.122 },
+      "tags": {
+        "leisure": "pitch",
+        "sport": "soccer",
+        "name": "Hilltop School 3G",
+        "access": "customers",
+        "surface": "3g"
+      }
+    },
+    {
+      "type": "way",
+      "id": 40,
+      "center": { "lat": 51.55, "lon": -0.2 },
+      "tags": { "leisure": "pitch", "sport": "soccer", "access": "private" }
+    },
+    {
+      "type": "way",
+      "id": 41,
+      "center": { "lat": 51.56, "lon": -0.2 },
+      "tags": { "leisure": "pitch", "sport": "soccer", "surface": "grass" }
+    },
+    {
+      "type": "way",
+      "id": 50,
+      "center": { "lat": 51.57, "lon": -0.3 },
+      "tags": { "leisure": "pitch", "sport": "soccer", "name": "Fairview Playing Fields" }
+    },
+    {
+      "type": "way",
+      "id": 51,
+      "center": { "lat": 51.5703, "lon": -0.3004 },
+      "tags": { "leisure": "pitch", "sport": "soccer", "name": "Fairview Playing Fields" }
+    }
+  ],
+  "parks": [
+    {
+      "name": "Meadow Park",
+      "lat": 51.5005,
+      "lng": -0.1001,
+      "bounds": { "minlat": 51.499, "maxlat": 51.502, "minlon": -0.102, "maxlon": -0.098 }
+    },
+    { "name": "Eastside Rec", "lat": 51.5215, "lng": -0.0505 }
+  ],
+  "roads": { "51.5260,-0.0500": "Cable Street", "51.5600,-0.2000": "Elm Lane" }
+}

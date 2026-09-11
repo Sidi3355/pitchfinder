@@ -36,6 +36,7 @@ jobs:
       - run: npm test
       - run: npm run build:test
       - run: npm run check:bundle
+      - run: node scripts/audit-data.mjs --offline
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - run: npm run lighthouse

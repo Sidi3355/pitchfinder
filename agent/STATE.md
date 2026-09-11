@@ -64,3 +64,24 @@ Backlog items: 2. Approach: schema and RLS first (done, tested on Postgres), the
 module that loads supabase-js on demand, then the game page and profile, then an end-to-end
 test that drives a fake Supabase (real Postgres and RLS behind a small PostgREST-compatible
 server) so the share and RSVP loop is proven without network.
+
+## Iteration 3: pipeline collapse and names, then the mobile layout (planned 11 Sep 2026)
+
+Intended user-visible outcome (data half, items 4, 8 and 12 plus the accuracy track): the
+ranked list never shows the same field twice; every pitch has a real name (its own, the park or
+playing field it sits in, or the road it is off) and a nearest postcode, so a shared link says
+which cage it is and directions work; every fact carries a source and a date; a weekly audit
+report in `agent/DATA_QUALITY.md` counts what is still unknown. The word "academy" no longer
+hides real venues. The price scraper writes structured prices with the exact context it saw,
+or nothing.
+
+Intended user-visible outcome (layout half, item 3): on a phone the first screen is a search
+box, the map and a ranked list in one surface: the list is a bottom sheet over the map that
+drags between a peek, half and full height; a pitch opens as a sheet too; the group and filter
+controls live behind one obvious control each. On desktop it is a split view. No tabs.
+
+Approach: pure pipeline functions in `scripts/lib/` with fixture tests, geocoding through
+postcodes.io (bulk reverse) and Nominatim (reverse, 1 request per second, cached in
+`data/cache/`), network steps run by the data-refresh workflow on GitHub Actions against this
+branch. The layout is rebuilt with CSS only where possible; the bottom sheet is a small
+component with pointer events, no library.

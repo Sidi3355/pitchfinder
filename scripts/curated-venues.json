@@ -1,5 +1,5 @@
 {
-  "comment": "Curated commercial/bookable venues with baseline published prices (GBP/hour, whole pitch) and booking URLs. Matched to OSM geometry by proximity + operator during the data build; the price scraper refreshes prices where it can. Prices are indicative and re-checked by CI.",
+  "comment": "Curated bookable venues. Every fact should carry provenance: postcode and address from the operator's page, verifiedAt when a person last checked the page, priceSourceUrl and priceCheckedAt for the baseline price with priceContext quoting the page. Nulls are honest unknowns; the audit counts them. Baseline prices below were compiled from operator sites when the list was first written and have no recorded date, so the app labels them as the operator's published rate and the audit lists them as unverified until the scraper or a person confirms them.",
   "venues": [
     {
       "id": "pl-shoreditch",
@@ -13,7 +13,15 @@
       "pricePerHour": 78,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/shoreditch",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/shoreditch",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pl-vauxhall",
@@ -27,7 +35,15 @@
       "pricePerHour": 75,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/vauxhall",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/vauxhall",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pl-wembley",
@@ -41,7 +57,15 @@
       "pricePerHour": 68,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/wembley",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/wembley",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pl-millhill",
@@ -55,7 +79,15 @@
       "pricePerHour": 62,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/mill-hill",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/mill-hill",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pl-barnet",
@@ -69,7 +101,15 @@
       "pricePerHour": 60,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/barnet",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/barnet",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pl-croydon",
@@ -83,7 +123,15 @@
       "pricePerHour": 58,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/croydon",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/croydon",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pl-canarywharf",
@@ -97,7 +145,15 @@
       "pricePerHour": 80,
       "bookingUrl": "https://www.powerleague.co.uk/five-a-side-london/canary-wharf",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.powerleague.co.uk/five-a-side-london/canary-wharf",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-beckenham",
@@ -111,7 +167,15 @@
       "pricePerHour": 60,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/beckenham",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/beckenham",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-bexleyheath",
@@ -125,7 +189,15 @@
       "pricePerHour": 56,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/bexleyheath",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/bexleyheath",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-dagenham",
@@ -139,7 +211,15 @@
       "pricePerHour": 54,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/dagenham",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/dagenham",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-ruislip",
@@ -153,7 +233,15 @@
       "pricePerHour": 55,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/ruislip",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/ruislip",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-hayes",
@@ -167,7 +255,15 @@
       "pricePerHour": 54,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/hayes",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/hayes",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-gillettecorner",
@@ -181,7 +277,15 @@
       "pricePerHour": 58,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/gillette-corner",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/gillette-corner",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-chingford",
@@ -195,7 +299,15 @@
       "pricePerHour": 55,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/chingford",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/chingford",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "go-sutton",
@@ -209,7 +321,15 @@
       "pricePerHour": 54,
       "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/sutton",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/sutton",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "lc-westway",
@@ -223,7 +343,15 @@
       "pricePerHour": 50,
       "bookingUrl": "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "lc-mileend",
@@ -237,7 +365,15 @@
       "pricePerHour": 45,
       "bookingUrl": "https://www.better.org.uk/leisure-centre/london/tower-hamlets/mile-end-park-leisure-centre",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.better.org.uk/leisure-centre/london/tower-hamlets/mile-end-park-leisure-centre",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "lc-battersea",
@@ -251,7 +387,15 @@
       "pricePerHour": 48,
       "bookingUrl": "https://enablelc.org/millennium-arena",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://enablelc.org/millennium-arena",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "lc-paddingtonrec",
@@ -265,7 +409,15 @@
       "pricePerHour": 46,
       "bookingUrl": "https://www.everyoneactive.com/centre/paddington-recreation-ground/",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.everyoneactive.com/centre/paddington-recreation-ground/",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "lc-talacre",
@@ -279,7 +431,15 @@
       "pricePerHour": 40,
       "bookingUrl": "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "lc-crystalpalace",
@@ -293,7 +453,15 @@
       "pricePerHour": 44,
       "bookingUrl": "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "cm-blackprince",
@@ -307,7 +475,15 @@
       "pricePerHour": 35,
       "bookingUrl": "https://www.blackprincetrust.org.uk/",
       "lit": true,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.blackprincetrust.org.uk/",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "cm-coram",
@@ -321,7 +497,15 @@
       "pricePerHour": 25,
       "bookingUrl": "https://www.coramsfields.org.uk/sports-programme/",
       "lit": true,
-      "changingRooms": false
+      "changingRooms": false,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.coramsfields.org.uk/sports-programme/",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pk-hackneymarshes",
@@ -335,7 +519,15 @@
       "pricePerHour": 0,
       "bookingUrl": "https://hackney.gov.uk/hackney-marshes",
       "lit": false,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://hackney.gov.uk/hackney-marshes",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "pk-regents",
@@ -349,7 +541,15 @@
       "pricePerHour": 12,
       "bookingUrl": "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/the-hub",
       "lit": false,
-      "changingRooms": true
+      "changingRooms": true,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/the-hub",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     },
     {
       "id": "cg-marketroad",
@@ -363,7 +563,15 @@
       "pricePerHour": 0,
       "bookingUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity",
       "lit": true,
-      "changingRooms": false
+      "changingRooms": false,
+      "sport": "football",
+      "postcode": null,
+      "address": null,
+      "website": null,
+      "priceSourceUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity",
+      "priceCheckedAt": null,
+      "priceContext": null,
+      "verifiedAt": null
     }
   ]
 }
