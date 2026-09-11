@@ -165,14 +165,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 60,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/beckenham",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/beckenham",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/beckenham",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/beckenham",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -182,7 +182,9 @@
         "https://www.goalsfootball.co.uk/centres/beckenham",
         "https://www.goalsfootball.co.uk/goals-beckenham",
         "https://www.goalsfootball.co.uk/venues/beckenham"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-bexleyheath",
@@ -194,14 +196,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 56,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/bexleyheath",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/bexleyheath",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/bexleyheath",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/bexleyheath",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -211,7 +213,9 @@
         "https://www.goalsfootball.co.uk/centres/bexleyheath",
         "https://www.goalsfootball.co.uk/goals-bexleyheath",
         "https://www.goalsfootball.co.uk/venues/bexleyheath"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-dagenham",
@@ -223,14 +227,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 54,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/dagenham",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/dagenham",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/dagenham",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/dagenham",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -240,7 +244,9 @@
         "https://www.goalsfootball.co.uk/centres/dagenham",
         "https://www.goalsfootball.co.uk/goals-dagenham",
         "https://www.goalsfootball.co.uk/venues/dagenham"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-ruislip",
@@ -252,14 +258,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 55,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/ruislip",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/ruislip",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/ruislip",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/ruislip",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -269,7 +275,9 @@
         "https://www.goalsfootball.co.uk/centres/ruislip",
         "https://www.goalsfootball.co.uk/goals-ruislip",
         "https://www.goalsfootball.co.uk/venues/ruislip"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-hayes",
@@ -281,14 +289,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 54,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/hayes",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/hayes",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/hayes",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/hayes",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -298,7 +306,9 @@
         "https://www.goalsfootball.co.uk/centres/hayes",
         "https://www.goalsfootball.co.uk/goals-hayes",
         "https://www.goalsfootball.co.uk/venues/hayes"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-gillettecorner",
@@ -310,14 +320,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 58,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/gillette-corner",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/gillette-corner",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/gillette-corner",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/gillette-corner",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -327,7 +337,9 @@
         "https://www.goalsfootball.co.uk/centres/gillette-corner",
         "https://www.goalsfootball.co.uk/goals-gillette-corner",
         "https://www.goalsfootball.co.uk/venues/gillette-corner"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-chingford",
@@ -339,14 +351,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 55,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/chingford",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/chingford",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/chingford",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/chingford",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -356,7 +368,9 @@
         "https://www.goalsfootball.co.uk/centres/chingford",
         "https://www.goalsfootball.co.uk/goals-chingford",
         "https://www.goalsfootball.co.uk/venues/chingford"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "go-sutton",
@@ -368,14 +382,14 @@
       "surface": "3g",
       "formats": [5, 7],
       "pricePerHour": 54,
-      "bookingUrl": "https://www.goalsfootball.co.uk/goals-centres/sutton",
+      "bookingUrl": "https://www.goalsfootball.co.uk/football-centres/sutton",
       "lit": true,
       "changingRooms": true,
       "sport": "football",
       "postcode": null,
       "address": null,
       "website": "https://www.goalsfootball.co.uk/",
-      "priceSourceUrl": "https://www.goalsfootball.co.uk/goals-centres/sutton",
+      "priceSourceUrl": "https://www.goalsfootball.co.uk/football-centres/sutton",
       "priceCheckedAt": null,
       "priceContext": null,
       "verifiedAt": null,
@@ -385,7 +399,9 @@
         "https://www.goalsfootball.co.uk/centres/sutton",
         "https://www.goalsfootball.co.uk/goals-sutton",
         "https://www.goalsfootball.co.uk/venues/sutton"
-      ]
+      ],
+      "bookingUrlCheckedAt": "2026-09-11",
+      "bookingUrlNote": "Old /goals-centres/ path returned 404; this path returned 200 in the 11 Sep audit"
     },
     {
       "id": "lc-westway",
@@ -519,11 +535,16 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.better.org.uk/",
       "priceSourceUrl": "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre",
+        "https://www.better.org.uk/",
+        "https://www.crystalpalacensc.co.uk/"
+      ]
     },
     {
       "id": "cm-blackprince",
@@ -563,11 +584,16 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.coramsfields.org.uk/",
       "priceSourceUrl": "https://www.coramsfields.org.uk/sports-programme/",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.coramsfields.org.uk/",
+        "https://www.coramsfields.org/",
+        "https://coramsfields.org.uk/"
+      ]
     },
     {
       "id": "pk-hackneymarshes",
@@ -601,7 +627,7 @@
       "surface": "grass",
       "formats": [5, 7, 11],
       "pricePerHour": 12,
-      "bookingUrl": "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/the-hub",
+      "bookingUrl": "https://www.royalparks.org.uk/",
       "lit": false,
       "changingRooms": true,
       "sport": "football",
@@ -616,8 +642,10 @@
         "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/the-hub",
         "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/sports-and-leisure/the-hub",
         "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill/sports-and-leisure",
-        "https://www.royalparks.org.uk/the-hub"
-      ]
+        "https://www.royalparks.org.uk/the-hub",
+        "https://www.royalparks.org.uk/visit/parks/the-regents-park-primrose-hill"
+      ],
+      "bookingUrlNote": "The Hub page returned 404 in the 11 Sep audit; the site root is the only verified link. Candidates listed for the audit."
     },
     {
       "id": "cg-marketroad",
@@ -635,11 +663,18 @@
       "sport": "football",
       "postcode": null,
       "address": null,
-      "website": null,
+      "website": "https://www.islington.gov.uk/",
       "priceSourceUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity",
       "priceCheckedAt": null,
       "priceContext": null,
-      "verifiedAt": null
+      "verifiedAt": null,
+      "urlCandidates": [
+        "https://www.islington.gov.uk/sport-and-leisure",
+        "https://www.islington.gov.uk/leisure-and-sport",
+        "https://www.islington.gov.uk/sports-parks-and-trees",
+        "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches",
+        "https://www.islington.gov.uk/"
+      ]
     }
   ]
 }
