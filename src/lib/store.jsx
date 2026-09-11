@@ -1,7 +1,7 @@
 // App-wide state. The address bar is the source of truth for the group, the
 // filters and the selected pitch (see url-state.js), so those are derived from
 // the location rather than held in memory. The store holds the dataset, the
-// session and transient UI state, and exposes actions that rewrite the URL.
+// session (Supabase) and transient UI state, and exposes actions.
 
 import React, {
   createContext,
@@ -11,7 +11,7 @@ import React, {
   useMemo,
   useReducer,
 } from 'react'
-import * as auth from './auth.js'
+import * as sb from './supabase.js'
 import { loadPitchData } from './data.js'
 import { DEFAULT_FILTERS, rankPitches } from './score.js'
 import { matchRoute, navigate, useLocation } from './location.js'
@@ -19,12 +19,17 @@ import { buildHref, parseSearch } from './url-state.js'
 
 const StoreContext = createContext(null)
 
+const RETURN_KEY = 'pf:return-to'
+
 const initialState = {
   data: null, // { generatedAt, count, byType, pitches } once loaded
   dataError: null,
   dataAttempt: 0,
-  user: null,
-  authModal: null, // null | 'login' | 'register'
+  user: null, // { id, email, displayName } | null
+  authStatus: 'checking', // 'checking' | 'in' | 'out'
+  authAvailable: sb.configured,
+  authModal: null, // null | { reason: 'save' | 'game' | 'group' | 'generic' }
+  savedIds: new Set(),
 }
 
 function reducer(state, action) {
@@ -35,25 +40,43 @@ function reducer(state, action) {
       return { ...state, dataError: action.message }
     case 'data:retry':
       return { ...state, dataError: null, dataAttempt: state.dataAttempt + 1 }
-    case 'user':
-      return { ...state, user: action.user, authModal: null }
+    case 'auth':
+      return {
+        ...state,
+        user: action.user,
+        authStatus: action.user ? 'in' : 'out',
+        authModal: action.user ? null : state.authModal,
+        savedIds: action.user ? state.savedIds : new Set(),
+      }
+    case 'authUnavailable':
+      return { ...state, authAvailable: false, authStatus: 'out', user: null }
     case 'authModal':
-      return { ...state, authModal: action.mode }
+      return { ...state, authModal: action.modal }
+    case 'saved':
+      return { ...state, savedIds: new Set(action.ids) }
+    case 'displayName':
+      return { ...state, user: state.user ? { ...state.user, displayName: action.name } : null }
     default:
       return state
   }
 }
 
+function clearLegacyStorage() {
+  // The pre-Supabase build kept accounts in localStorage under topbins:*.
+  try {
+    for (const key of Object.keys(localStorage))
+      if (key.startsWith('topbins:')) localStorage.removeItem(key)
+  } catch {}
+}
+
 export function StoreProvider({ children }) {
-  const [state, dispatch] = useReducer(reducer, initialState, (s) => ({
-    ...s,
-    user: auth.currentUser(),
-  }))
+  const [state, dispatch] = useReducer(reducer, initialState)
   const location = useLocation()
   const route = useMemo(() => matchRoute(location.path), [location.path])
   const urlState = useMemo(() => parseSearch(location.search), [location.search])
   const { group: squad, filters, pitch: selectedPitchId } = urlState
 
+  // ── Dataset ──
   useEffect(() => {
     let cancelled = false
     loadPitchData()
@@ -63,6 +86,58 @@ export function StoreProvider({ children }) {
       cancelled = true
     }
   }, [state.dataAttempt])
+
+  // ── Session ──
+  useEffect(() => {
+    clearLegacyStorage()
+    if (!sb.configured) {
+      dispatch({ type: 'authUnavailable' })
+      return
+    }
+    const returning = /access_token=/.test(window.location.hash)
+    if (!sb.hasStoredSession() && !returning) {
+      dispatch({ type: 'auth', user: null })
+      return
+    }
+    let cancelled = false
+    let unsubscribe = null
+    sb.onAuthChange((user) => {
+      if (cancelled) return
+      dispatch({ type: 'auth', user })
+    })
+      .then((u) => (unsubscribe = u))
+      .catch(() => !cancelled && dispatch({ type: 'auth', user: null }))
+    sb.currentUser({ force: true })
+      .then((user) => {
+        if (cancelled) return
+        dispatch({ type: 'auth', user })
+        if (returning) {
+          const to = sessionStorage.getItem(RETURN_KEY)
+          sessionStorage.removeItem(RETURN_KEY)
+          if (to && to.startsWith('/')) navigate(to, { replace: true })
+          else if (window.location.hash)
+            window.history.replaceState(null, '', window.location.pathname + window.location.search)
+        }
+      })
+      .catch(() => !cancelled && dispatch({ type: 'auth', user: null }))
+    return () => {
+      cancelled = true
+      unsubscribe?.()
+    }
+  }, [])
+
+  // ── Saved pitches follow the session ──
+  const userId = state.user?.id
+  useEffect(() => {
+    if (!userId) return
+    let cancelled = false
+    sb.listSaved()
+      .then((ids) => !cancelled && dispatch({ type: 'saved', ids }))
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [userId])
 
   const results = useMemo(
     () => (state.data ? rankPitches(state.data.pitches, squad, filters) : []),
@@ -90,98 +165,87 @@ export function StoreProvider({ children }) {
   const actions = useMemo(() => {
     const setUrl = (patch, { replace = true } = {}) =>
       navigate(buildHref(location.path, { ...urlState, ...patch }), { replace })
+    const requireUser = (reason) => {
+      if (state.user) return true
+      dispatch({ type: 'authModal', modal: { reason } })
+      return false
+    }
+    const returnUrl = () => `${window.location.origin}/`
 
     return {
       go: (path, opts) => navigate(hrefFor(path), opts),
       hrefFor,
       pitchHref: (id) => buildHref(`/p/${id}`, { group: squad }),
-      openAuth: (mode) => dispatch({ type: 'authModal', mode }),
-      closeAuth: () => dispatch({ type: 'authModal', mode: null }),
-      async register(fields) {
-        const user = await auth.register(fields)
-        dispatch({ type: 'user', user })
-      },
-      async login(fields) {
-        const user = await auth.login(fields)
-        dispatch({ type: 'user', user })
-      },
-      logout() {
-        auth.logout()
-        dispatch({ type: 'user', user: null })
-      },
       retryData: () => dispatch({ type: 'data:retry' }),
+
+      openAuth: (reason = 'generic') => dispatch({ type: 'authModal', modal: { reason } }),
+      closeAuth: () => dispatch({ type: 'authModal', modal: null }),
+      async signInWithEmail(email) {
+        sessionStorage.setItem(RETURN_KEY, location.href)
+        await sb.signInWithEmail(email, returnUrl())
+      },
+      async signInWithGoogle() {
+        sessionStorage.setItem(RETURN_KEY, location.href)
+        await sb.signInWithGoogle(returnUrl())
+      },
+      async signOut() {
+        try {
+          await sb.signOut()
+        } finally {
+          dispatch({ type: 'auth', user: null })
+        }
+      },
+      async updateDisplayName(name) {
+        if (!state.user) return
+        await sb.updateDisplayName(state.user.id, name)
+        dispatch({ type: 'displayName', name })
+      },
 
       addFriend: (friend) => setUrl({ group: [...squad, friend] }),
       removeFriend: (id) => setUrl({ group: squad.filter((f) => f.id !== id) }),
       setFriendMode: (id, mode) =>
         setUrl({ group: squad.map((f) => (f.id === id ? { ...f, mode } : f)) }),
-      setSquad: (group) => setUrl({ group }),
+      setSquad: (group, opts) => setUrl({ group }, opts),
       setFilters: (patch) => setUrl({ filters: { ...filters, ...patch } }),
       resetFilters: () => setUrl({ filters: DEFAULT_FILTERS }),
       // Opening a pitch pushes history so the back button closes it.
       selectPitch: (id) => setUrl({ pitch: id || null }, { replace: !id }),
 
-      toggleSave(pitchId) {
-        const { user } = state
-        if (!user) {
-          dispatch({ type: 'authModal', mode: 'login' })
-          return
+      /** Save or unsave. Returns false when the user has to sign in first. */
+      async toggleSave(pitchId) {
+        if (!requireUser('save')) return false
+        const next = new Set(state.savedIds)
+        if (next.has(pitchId)) {
+          next.delete(pitchId)
+          dispatch({ type: 'saved', ids: next })
+          await sb.unsavePitch(pitchId)
+        } else {
+          next.add(pitchId)
+          dispatch({ type: 'saved', ids: next })
+          await sb.savePitch(state.user.id, pitchId)
         }
-        const saved = user.savedPitchIds.includes(pitchId)
-          ? user.savedPitchIds.filter((id) => id !== pitchId)
-          : [...user.savedPitchIds, pitchId]
-        dispatch({ type: 'user', user: auth.updateUser(user.username, { savedPitchIds: saved }) })
+        return true
       },
 
-      createGame(game) {
-        const { user } = state
-        if (!user) {
-          dispatch({ type: 'authModal', mode: 'login' })
-          return
-        }
-        const entry = { id: `k${Date.now()}`, createdAt: Date.now(), rsvps: {}, ...game }
-        dispatch({
-          type: 'user',
-          user: auth.updateUser(user.username, { kickabouts: [...user.kickabouts, entry] }),
-        })
-        return entry
+      /** Creates a game and returns it (with share_slug), or null if sign-in is needed. */
+      async createGame({ pitchId, pitchName, startsAt, notes }) {
+        if (!requireUser('game')) return null
+        return sb.createGame(state.user.id, { pitchId, pitchName, startsAt, notes })
       },
 
-      setRsvp(gameId, name, status) {
-        const { user } = state
-        if (!user) return
-        const kickabouts = user.kickabouts.map((k) =>
-          k.id === gameId ? { ...k, rsvps: { ...k.rsvps, [name]: status } } : k,
-        )
-        dispatch({ type: 'user', user: auth.updateUser(user.username, { kickabouts }) })
-      },
-
-      deleteGame(gameId) {
-        const { user } = state
-        if (!user) return
-        const kickabouts = user.kickabouts.filter((k) => k.id !== gameId)
-        dispatch({ type: 'user', user: auth.updateUser(user.username, { kickabouts }) })
-      },
-
-      saveSquad() {
-        const { user } = state
-        if (!user || !squad.length) return
-        dispatch({ type: 'user', user: auth.updateUser(user.username, { squads: [squad] }) })
-      },
-
-      loadSquad() {
-        const { user } = state
-        if (user?.squads?.[0]) setUrl({ group: user.squads[0] })
+      async saveGroup(name) {
+        if (!requireUser('group')) return null
+        const members = squad.map(({ name: n, label, lat, lng, mode }) => ({
+          name: n,
+          label,
+          lat,
+          lng,
+          mode,
+        }))
+        return sb.saveGroup(state.user.id, { name, members })
       },
     }
-  }, [state, squad, filters, urlState, location.path, hrefFor])
-
-  // Keep the session in sync if another tab logs in or out.
-  useEffect(() => {
-    const onStorage = () => dispatch({ type: 'user', user: auth.currentUser() })
-    window.addEventListener('storage', onStorage)
-    return () => window.removeEventListener('storage', onStorage)
-  }, [])
+  }, [state.user, state.savedIds, squad, filters, urlState, location.path, location.href, hrefFor])
 
   const value = useMemo(
     () => ({

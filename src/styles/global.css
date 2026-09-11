@@ -1156,3 +1156,144 @@ a {
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
+
+/* ── Forms ──────────────────────────────────────────────────────────────── */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.select.wide {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 14px;
+}
+textarea.input {
+  resize: vertical;
+  min-height: 64px;
+  font-family: inherit;
+}
+.or-rule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-3);
+  font-size: 12px;
+}
+.or-rule::before,
+.or-rule::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid var(--border);
+}
+.report-form {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.seg.lg button {
+  padding: 11px 18px;
+  font-size: 14px;
+  flex: 1;
+}
+.seg.lg {
+  display: flex;
+  width: 100%;
+}
+
+/* ── Game page ──────────────────────────────────────────────────────────── */
+.game-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.game-head h1 {
+  margin: 2px 0 4px;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.game-where {
+  margin: 0;
+  font-size: 15px;
+}
+.game-where a {
+  color: var(--ink);
+  font-weight: 600;
+}
+.section-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+.game-rsvp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--surface);
+}
+.rsvp-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.rsvp-col h3 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.rsvp-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+.game-admin {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.group-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+}
+.group-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 13.5px;
+}
+.past-games {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.past-games ul {
+  margin-top: 8px;
+}

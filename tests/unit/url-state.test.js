@@ -51,6 +51,11 @@ describe('group encoding', () => {
 })
 
 describe('search string', () => {
+  it('parses an empty query as the default filters, no group, no pitch', () => {
+    expect(parseSearch('')).toEqual({ group: [], filters: DEFAULT_FILTERS, pitch: null })
+    expect(parseSearch('?g=Sam~E8~51.5~-0.1~t').filters).toEqual(DEFAULT_FILTERS)
+  })
+
   it('is empty for default state', () => {
     expect(buildSearch({ group: [], filters: DEFAULT_FILTERS, pitch: null })).toBe('')
   })

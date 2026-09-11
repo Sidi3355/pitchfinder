@@ -8,6 +8,7 @@ import { AuthModal } from './components/AuthModal.jsx'
 import { PitchDetail } from './components/PitchDetail.jsx'
 import { PitchPage } from './components/PitchPage.jsx'
 import { NotFound } from './components/NotFound.jsx'
+import { GamePage } from './components/GamePage.jsx'
 
 const TITLES = {
   find: 'PitchFinder: where to play football in London',
@@ -40,6 +41,9 @@ export function App() {
       break
     case 'pitch':
       page = <PitchPage id={route.params.id} />
+      break
+    case 'game':
+      page = <GamePage slug={route.params.slug} />
       break
     default:
       page = <NotFound />

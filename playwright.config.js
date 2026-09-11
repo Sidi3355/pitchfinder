@@ -8,6 +8,7 @@ const executablePath =
   process.env.PW_CHROMIUM_PATH || (existsSync(localChromium) ? localChromium : undefined)
 
 const PORT = Number(process.env.PW_PORT || 4173)
+const FAKE_PORT = Number(process.env.FAKE_SUPABASE_PORT || 4177)
 
 export default defineConfig({
   testDir: 'tests/e2e',
@@ -33,10 +34,20 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
   ],
-  webServer: {
-    command: `node scripts/serve.mjs --port ${PORT}`,
-    url: `http://localhost:${PORT}`,
-    reuseExistingServer: !process.env.CI,
-    timeout: 60_000,
-  },
+  webServer: [
+    {
+      command: `node scripts/serve.mjs --port ${PORT}`,
+      url: `http://localhost:${PORT}`,
+      reuseExistingServer: !process.env.CI,
+      timeout: 60_000,
+    },
+    {
+      // Stand-in Supabase: real Postgres and RLS when DATABASE_URL is set,
+      // otherwise a server that answers 503 so account tests skip cleanly.
+      command: `node tests/e2e/fake-supabase.mjs --port ${FAKE_PORT}`,
+      url: `http://localhost:${FAKE_PORT}/health`,
+      reuseExistingServer: !process.env.CI,
+      timeout: 60_000,
+    },
+  ],
 })

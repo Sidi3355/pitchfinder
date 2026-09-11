@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import { Link } from './Link.jsx'
 import { useStore } from '../lib/store.jsx'
 import { AREAS } from '../data/areas.js'
 import { TRAVEL_MODES } from '../lib/geo.js'
@@ -133,24 +134,7 @@ export function SquadBuilder() {
         </ul>
       )}
 
-      {state.user && (
-        <div className="row">
-          <button
-            className="btn ghost sm"
-            onClick={actions.saveSquad}
-            disabled={!state.squad.length}
-          >
-            Save group
-          </button>
-          <button
-            className="btn ghost sm"
-            onClick={actions.loadSquad}
-            disabled={!state.user.squads?.[0]?.length}
-          >
-            Load saved group
-          </button>
-        </div>
-      )}
+      {state.squad.length > 0 && <SaveGroup />}
 
       {state.squad.length === 0 && (
         <p className="hint dim">
@@ -158,5 +142,67 @@ export function SquadBuilder() {
         </p>
       )}
     </section>
+  )
+}
+
+function SaveGroup() {
+  const { state, actions } = useStore()
+  const [open, setOpen] = useState(false)
+  const [name, setName] = useState('Thursday football')
+  const [phase, setPhase] = useState('idle') // idle | saving | saved | error
+  const [error, setError] = useState('')
+
+  if (!state.authAvailable) return null
+
+  async function save(e) {
+    e.preventDefault()
+    setPhase('saving')
+    setError('')
+    try {
+      const saved = await actions.saveGroup(name.trim() || 'My group')
+      setPhase(saved ? 'saved' : 'idle')
+    } catch (err) {
+      setError(err.message)
+      setPhase('error')
+    }
+  }
+
+  if (phase === 'saved') {
+    return (
+      <p className="hint" role="status">
+        Group saved. Find it under <Link href={actions.hrefFor('/me')}>My games</Link>.
+      </p>
+    )
+  }
+  if (!open) {
+    return (
+      <div className="row">
+        <button className="btn ghost sm" onClick={() => setOpen(true)}>
+          Save this group
+        </button>
+      </div>
+    )
+  }
+  return (
+    <form className="row" onSubmit={save}>
+      <input
+        className="input"
+        value={name}
+        maxLength={60}
+        onChange={(e) => setName(e.target.value)}
+        aria-label="Group name"
+      />
+      <button className="btn primary sm" type="submit" disabled={phase === 'saving'}>
+        {state.user ? 'Save' : 'Sign in and save'}
+      </button>
+      <button className="btn ghost sm" type="button" onClick={() => setOpen(false)}>
+        Cancel
+      </button>
+      {error && (
+        <p className="form-error" role="alert">
+          {error}
+        </p>
+      )}
+    </form>
   )
 }

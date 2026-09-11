@@ -36,3 +36,22 @@ Status: todo | doing | done | blocked. Found items are folded under the item the
 - No 404 route -> item 1.
 - Console noise from map style failures -> item 7 (Q4).
 - README rewrite -> final iteration.
+
+## From the iteration 1 critique (11 Sep)
+
+| #   | Item                                                                                              | Status | Notes                                     |
+| --- | ------------------------------------------------------------------------------------------------- | ------ | ----------------------------------------- |
+| C1  | Mobile header overflows 390 px, clipping drawer and dialog                                        | todo   | P0, fix before iteration 3                |
+| C2  | Budget default read as £0                                                                         | done   | Unit test added                           |
+| C3  | Directions links (Google Maps, Apple Maps, Citymapper) on pitch page; address for unnamed pitches | todo   | Links now; address via pipeline in item 4 |
+| C4  | Share keeps the group                                                                             | todo   | P1                                        |
+| C5  | Whole card opens the pitch                                                                        | todo   | P1                                        |
+| C6  | Empty state gets a Reset; error state gets Try again and no raw exception                         | todo   | P1                                        |
+| C7  | Group rows show where each player is from                                                         | todo   | P1, the label was never stored            |
+| C8  | Em dashes in About and group copy; extend copy check to `src`                                     | todo   | P1                                        |
+| C9  | "Top-rated pitches" is untrue; rank badges misalign titles; "Show more (N remaining)"             | todo   | P1/P2                                     |
+| C10 | "Book at venue" on council pages should say what it is                                            | todo   | P1, label by link kind                    |
+| C11 | Heart contrast 1.47:1; loading notice displaces tabs; modal focus trap                            | todo   | P1/P2                                     |
+| C12 | Reasons repeat facts; unknown facts outrank known                                                 | todo   | Item 6                                    |
+| C13 | Duplicate unnamed cages in top ten                                                                | todo   | Item 4                                    |
+| C14 | Filters count; live counts                                                                        | todo   | Item 11                                   |

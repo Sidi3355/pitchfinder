@@ -4,7 +4,7 @@ import { Link } from './Link.jsx'
 
 export function Header() {
   const { state, actions } = useStore()
-  const { view, user, data } = state
+  const { view, user, data, authStatus } = state
 
   const nav = [
     ['/', 'find', 'Map'],
@@ -44,21 +44,13 @@ export function Header() {
 
       <div className="header-auth">
         {user ? (
-          <>
-            <span className="header-user">{user.displayName}</span>
-            <button className="btn ghost sm" onClick={actions.logout}>
-              Sign out
-            </button>
-          </>
-        ) : (
-          <>
-            <button className="btn ghost sm" onClick={() => actions.openAuth('login')}>
-              Sign in
-            </button>
-            <button className="btn primary sm" onClick={() => actions.openAuth('register')}>
-              Sign up
-            </button>
-          </>
+          <Link className="header-user" href={actions.hrefFor('/me')}>
+            {user.displayName}
+          </Link>
+        ) : authStatus === 'checking' ? null : (
+          <button className="btn ghost sm" onClick={() => actions.openAuth('generic')}>
+            Sign in
+          </button>
         )}
       </div>
     </header>

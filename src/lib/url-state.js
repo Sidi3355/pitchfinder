@@ -97,6 +97,7 @@ function parseRawQuery(search) {
 }
 
 function intInRange(value, min, max) {
+  if (value == null || value === '') return null
   const n = Number(value)
   if (!Number.isInteger(n) || n < min || n > max) return null
   return n

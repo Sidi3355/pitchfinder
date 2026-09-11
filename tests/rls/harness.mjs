@@ -24,6 +24,9 @@ const SUPABASE_STUB = `
     if not exists (select 1 from pg_roles where rolname = 'anon') then create role anon nologin; end if;
     if not exists (select 1 from pg_roles where rolname = 'authenticated') then create role authenticated nologin; end if;
   end $$;
+  grant usage on schema auth to anon, authenticated;
+  grant execute on function auth.uid() to anon, authenticated;
+  grant execute on function auth.role() to anon, authenticated;
 `
 
 export async function createTestDatabase() {
@@ -46,8 +49,17 @@ export async function createTestDatabase() {
     await client.query(readFileSync(join(MIGRATIONS, file), 'utf8'))
   }
 
-  async function asUser(userId, fn) {
-    // One transaction per call, the way PostgREST scopes a request.
+  // One connection, so calls are serialised: each runs in its own
+  // transaction, the way PostgREST scopes a request.
+  let chain = Promise.resolve()
+  function asUser(userId, fn) {
+    const run = () => runAs(userId, fn)
+    const next = chain.then(run, run)
+    chain = next.catch(() => {})
+    return next
+  }
+
+  async function runAs(userId, fn) {
     await client.query('begin')
     try {
       const claims = userId ? { sub: userId, role: 'authenticated' } : { role: 'anon' }

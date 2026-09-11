@@ -2,7 +2,9 @@ name: Check
 
 on:
   push:
+    branches: [main, 'agent/**']
   pull_request:
+    branches: [main]
 
 concurrency:
   group: check-${{ github.ref }}
@@ -32,7 +34,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
-      - run: npm run build
+      - run: npm run build:test
       - run: npm run check:bundle
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
