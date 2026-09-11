@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { Suspense, useEffect } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { PitchContent } from './PitchContent.jsx'
-import { MiniMap } from './MiniMap.jsx'
+const MiniMap = React.lazy(() => import('./MiniMap.jsx').then((m) => ({ default: m.MiniMap })))
 import { MapBoundary } from './MapBoundary.jsx'
 import { NotFound } from './NotFound.jsx'
 import { Link } from './Link.jsx'
@@ -55,7 +55,9 @@ export function PitchPage({ id }) {
         </p>
       </header>
       <MapBoundary compact>
-        <MiniMap pitch={pitch} />
+        <Suspense fallback={<div className="mini-map map-loading" aria-hidden="true" />}>
+          <MiniMap pitch={pitch} />
+        </Suspense>
       </MapBoundary>
       <div className="pitch-page-body">
         <PitchContent pitch={pitch} />

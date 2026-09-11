@@ -4,15 +4,10 @@
 
 import React from 'react'
 
-export function webglSupported() {
-  if (typeof document === 'undefined') return false
-  try {
-    const canvas = document.createElement('canvas')
-    return !!(canvas.getContext('webgl2') || canvas.getContext('webgl'))
-  } catch {
-    return false
-  }
-}
+// No up-front WebGL probe: creating a throwaway GL context costs hundreds of
+// milliseconds on software renderers and counts against the browser's context
+// limit. MapLibre throws GPUInitializationError when WebGL is missing, and
+// the boundary below turns that into the placeholder.
 
 export function MapUnavailable({ compact = false }) {
   return (
@@ -41,8 +36,7 @@ export class MapBoundary extends React.Component {
   }
 
   render() {
-    if (this.state.failed || !webglSupported())
-      return <MapUnavailable compact={this.props.compact} />
+    if (this.state.failed) return <MapUnavailable compact={this.props.compact} />
     return this.props.children
   }
 }

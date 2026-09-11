@@ -3,10 +3,11 @@
 // pitch takes the sheet over; on desktop it is a split view with the pitch
 // in a drawer. Group and filter editing happen in panels.
 
-import React, { useCallback, useState } from 'react'
+import React, { Suspense, useCallback, useState } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { MOBILE_QUERY, useMediaQuery } from '../lib/media.js'
-import { MapView } from './MapView.jsx'
+// MapLibre (about 240 KB gzipped with its worker) loads only when a map is on screen.
+const MapView = React.lazy(() => import('./MapView.jsx').then((m) => ({ default: m.MapView })))
 import { MapBoundary } from './MapBoundary.jsx'
 import { SquadBuilder } from './SquadBuilder.jsx'
 import { Filters, countActiveFilters } from './Filters.jsx'
@@ -123,7 +124,9 @@ export function Finder() {
       <div className="finder mobile">
         <div className="map-pane">
           <MapBoundary>
-            <MapView bottomPadding={Math.round(SNAPS[effectiveSnap] * 100)} />
+            <Suspense fallback={<div className="map-loading" aria-hidden="true" />}>
+              <MapView bottomPadding={Math.round(SNAPS[effectiveSnap] * 100)} />
+            </Suspense>
           </MapBoundary>
           <GroupBar onEdit={() => setPanel('group')} />
         </div>
@@ -151,7 +154,9 @@ export function Finder() {
       </aside>
       <div className="map-pane">
         <MapBoundary>
-          <MapView />
+          <Suspense fallback={<div className="map-loading" aria-hidden="true" />}>
+            <MapView />
+          </Suspense>
         </MapBoundary>
       </div>
       {panels}

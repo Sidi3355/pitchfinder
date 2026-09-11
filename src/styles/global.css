@@ -1684,3 +1684,9 @@ textarea.input {
 .area-suggestions button .dim {
   font-size: 12px;
 }
+
+.map-loading {
+  position: absolute;
+  inset: 0;
+  background: #e9edea;
+}
