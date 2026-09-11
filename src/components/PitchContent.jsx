@@ -48,13 +48,33 @@ export function PitchContent({ pitch }) {
             {cost.known && cost.perHour > 0 && (
               <span className="fact-note">
                 {pitch.priceSource === 'scraped' && pitch.priceCheckedAt
-                  ? `venue page, checked ${formatDate(pitch.priceCheckedAt)}`
-                  : "operator's published rate, whole pitch"}
+                  ? `whole pitch, from the venue page, checked ${formatDate(pitch.priceCheckedAt)}`
+                  : `whole pitch, operator's published rate${pitch.priceCheckedAt ? `, checked ${formatDate(pitch.priceCheckedAt)}` : ', date not recorded'}`}
+                {pitch.priceSourceUrl && (
+                  <>
+                    {' '}
+                    <a href={pitch.priceSourceUrl} target="_blank" rel="noopener noreferrer">
+                      source
+                    </a>
+                  </>
+                )}
               </span>
             )}
             {!cost.known && pitch.bookingUrl && <span className="fact-note">set at booking</span>}
           </dd>
         </div>
+        {pitch.postcode && (
+          <div>
+            <dt>{pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'}</dt>
+            <dd>
+              {pitch.postcode}
+              {pitch.borough && <span className="fact-note">{pitch.borough}</span>}
+              {pitch.postcodeSource !== 'operator' && (
+                <span className="fact-note">approx., nearest to the pitch</span>
+              )}
+            </dd>
+          </div>
+        )}
         <div>
           <dt>Enclosure</dt>
           <dd>{isBounded(pitch) ? 'Bounded, ball stays in play' : 'Open pitch'}</dd>
@@ -174,13 +194,32 @@ export function PitchContent({ pitch }) {
       <p className="hint dim drawer-footnote">
         {pitch.curated ? (
           <>
-            Data: curated venue list{pitch.matchedOsmId ? ' and OpenStreetMap' : ''}. Location and
-            facilities from the operator; check the venue page before travelling.
+            Data: curated venue list{pitch.matchedOsmId ? ' and OpenStreetMap' : ''}
+            {pitch.verifiedAt
+              ? `, checked ${formatDate(pitch.verifiedAt)}`
+              : ', not yet verified against the operator'}
+            . Check the venue page before travelling.
           </>
         ) : (
           <>
-            Data: OpenStreetMap contributors (ODbL)
-            {state.data?.generatedAt ? `, refreshed ${formatDate(state.data.generatedAt)}` : ''}.
+            Data:{' '}
+            {pitch.sourceUrl ? (
+              <a href={pitch.sourceUrl} target="_blank" rel="noopener noreferrer">
+                OpenStreetMap
+              </a>
+            ) : (
+              'OpenStreetMap'
+            )}{' '}
+            contributors (ODbL)
+            {pitch.verifiedAt || state.data?.generatedAt
+              ? `, checked ${formatDate(pitch.verifiedAt || state.data.generatedAt)}`
+              : ''}
+            .{' '}
+            {pitch.nameSource === 'park' ||
+            pitch.nameSource === 'road' ||
+            pitch.nameSource === 'area'
+              ? `The name is ours, from the nearest ${pitch.nameSource === 'road' ? 'road' : pitch.nameSource === 'park' ? 'park or playing field' : 'area'}; the pitch has no name on the map. `
+              : ''}
             Lighting and surface reflect what is mapped; conditions on the ground can differ.
           </>
         )}{' '}

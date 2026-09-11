@@ -57,7 +57,7 @@ function formatPrice(pitch) {
   return cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hr`
 }
 
-export function MapView() {
+export function MapView({ bottomPadding = 0 }) {
   const { state, results, actions } = useStore()
   const containerRef = useRef(null)
   const mapRef = useRef(null)
@@ -74,11 +74,15 @@ export function MapView() {
       center: LONDON_CENTER,
       zoom: 9.7,
       minZoom: 8,
-      attributionControl: { compact: true },
+      attributionControl: {
+        compact: true,
+        customAttribution: 'Pitch data © OpenStreetMap contributors',
+      },
     })
     mapRef.current = map
-    if (typeof window !== 'undefined') window.__pfMap = map // debugging handle
-    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
+    if (!window.matchMedia('(pointer: coarse)').matches) {
+      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
+    }
     map.addControl(
       new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true } }),
       'top-right',
@@ -222,6 +226,20 @@ export function MapView() {
       )
     }
 
+    // Frame the group so the map shows where everyone is.
+    if (state.squad.length) {
+      const lats = state.squad.map((f) => f.lat)
+      const lngs = state.squad.map((f) => f.lng)
+      const pad = 0.012
+      map.fitBounds(
+        [
+          [Math.min(...lngs) - pad, Math.min(...lats) - pad],
+          [Math.max(...lngs) + pad, Math.max(...lats) + pad],
+        ],
+        { maxZoom: 13, duration: 500 },
+      )
+    }
+
     if (state.squad.length > 1) {
       const c = centroid(state.squad)
       const el = document.createElement('div')
@@ -232,6 +250,14 @@ export function MapView() {
       )
     }
   }, [state.squad])
+
+  // ── Keep the visible part of the map above the sheet ──
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    const bottom = Math.round((bottomPadding / 100) * map.getContainer().clientHeight)
+    map.setPadding({ top: 72, bottom, left: 0, right: 0 })
+  }, [bottomPadding])
 
   // ── Fly to selection ──
   useEffect(() => {

@@ -1,6 +1,21 @@
 import React from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES } from '../data/types.js'
+import { DEFAULT_FILTERS } from '../lib/score.js'
+
+/** How many filter controls differ from the default. */
+export function countActiveFilters(f) {
+  let n = 0
+  if (f.types?.length) n++
+  if (f.enclosure !== DEFAULT_FILTERS.enclosure) n++
+  if (f.format != null) n++
+  if (f.maxPricePerHead != null) n++
+  if (f.maxEta != null) n++
+  if (f.needsFloodlights) n++
+  if (f.freeOnly) n++
+  if (f.bookableOnly) n++
+  return n
+}
 
 export function Filters() {
   const { state, actions } = useStore()
@@ -13,13 +28,6 @@ export function Filters() {
 
   return (
     <section className="stack">
-      <div className="row between">
-        <span className="hint">Narrow down the map and results.</span>
-        <button className="btn ghost sm" onClick={actions.resetFilters}>
-          Reset
-        </button>
-      </div>
-
       <fieldset className="filter-group">
         <legend>Pitch type</legend>
         <div className="check-list">

@@ -63,7 +63,8 @@ export function PitchCard({ row, rank }) {
         <p className="card-meta">
           <span className="type-dot" style={{ background: t.color }} />
           {t.short}
-          {pitch.area && <> · {pitch.area}</>}
+          {pitch.area && !(pitch.name || '').includes(pitch.area) && <> · {pitch.area}</>}
+          {pitch.postcode && <> · {pitch.postcode}</>}
           {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
           {pitch.pitchCount > 1 && <> · {pitch.pitchCount} pitches</>}
         </p>

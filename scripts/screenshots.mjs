@@ -24,8 +24,18 @@ const FAKE = `http://localhost:${FAKE_PORT}`
 const SCREENS = [
   ['home', '/'],
   ['home-group', `/?${GROUP}`],
-  ['group-tab', `/?${GROUP}`, (p) => p.getByRole('tab', { name: 'Your group' }).click()],
-  ['filters-tab', '/', (p) => p.getByRole('tab', { name: 'Filters' }).click()],
+  ['group-panel', `/?${GROUP}`, (p) => p.getByRole('button', { name: '+ Add' }).click()],
+  ['group-empty-panel', '/', (p) => p.getByRole('button', { name: /Where is everyone/ }).click()],
+  ['filters-panel', '/', (p) => p.getByRole('button', { name: /^Filters/ }).click()],
+  [
+    'more-menu',
+    '/',
+    (p) =>
+      p
+        .getByRole('button', { name: 'More' })
+        .click()
+        .catch(() => {}),
+  ],
   ['pitch-drawer', `/?${GROUP}&p=pl-shoreditch`],
   ['pitch-page', `/p/pl-shoreditch?${GROUP}`],
   ['pitch-page-osm', '/p/osm-n11415654181'],

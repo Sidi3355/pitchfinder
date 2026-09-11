@@ -17,14 +17,15 @@ test('two-person group to ranked list within the tap and time budget', async ({ 
   await page.goto('/')
   await expect(page.locator('.card').first()).toBeVisible()
 
-  await tap(page.getByRole('tab', { name: 'Your group' }))
-  await type(page.getByPlaceholder(/Home area/), 'Peckham')
-  await tap(page.getByRole('button', { name: 'Add player' }))
-  await type(page.getByPlaceholder(/Home area/), 'Hackney')
-  await tap(page.getByRole('button', { name: 'Add player' }))
-  await tap(page.getByRole('tab', { name: 'Results' }))
+  await tap(page.getByRole('button', { name: /Where is everyone coming from/ }))
+  const dialog = page.getByRole('dialog', { name: 'Your group' })
+  await type(dialog.getByPlaceholder(/Home area/), 'Peckham')
+  await tap(dialog.getByRole('button', { name: 'Add player' }))
+  await type(dialog.getByPlaceholder(/Home area/), 'Hackney')
+  await tap(dialog.getByRole('button', { name: 'Add player' }))
+  await tap(page.getByRole('button', { name: 'Rank for 2 people' }))
 
-  await expect(page.getByRole('heading', { name: /Best for your group of 2/ })).toBeVisible()
+  await expect(page.getByText('ranked for your group of 2')).toBeVisible()
   await expect(page.locator('.card').first()).toContainText(/min/)
   const elapsed = (Date.now() - t0) / 1000
   test.info().annotations.push({ type: 'taps', description: String(taps) })

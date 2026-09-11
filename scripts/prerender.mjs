@@ -30,7 +30,10 @@ function priceText(pitch) {
 
 function describe(pitch) {
   const t = PITCH_TYPES[pitch.type]?.label || 'Pitch'
-  const parts = [`${t}${pitch.area ? ` in ${pitch.area}` : ''}.`, `${priceText(pitch)}.`]
+  const parts = [
+    `${t}${pitch.area ? ` in ${pitch.area}` : ''}${pitch.postcode ? ` (${pitch.postcode})` : ''}.`,
+    `${priceText(pitch)}.`,
+  ]
   const facts = []
   if (pitch.surface) facts.push(surfaceLabel(pitch.surface))
   if (pitch.lit === true) facts.push('floodlit')
@@ -47,6 +50,7 @@ function summary(pitch) {
   const rows = [
     ['Type', t],
     ['Area', pitch.area || 'Not known'],
+    ['Nearest postcode', pitch.postcode || 'Not known'],
     ['Price', priceText(pitch)],
     ['Surface', pitch.surface ? surfaceLabel(pitch.surface) : 'Not known'],
     ['Floodlights', pitch.lit === true ? 'Yes' : pitch.lit === false ? 'No' : 'Not known'],

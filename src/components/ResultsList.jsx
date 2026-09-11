@@ -16,19 +16,6 @@ export function ResultsList() {
 
   return (
     <section className="stack">
-      <div className="row between">
-        <h2 className="side-title">
-          {state.squad.length ? `Best for your group of ${state.squad.length}` : 'Pitches'}
-        </h2>
-        <span className="hint dim">{results.length.toLocaleString('en-GB')} match</span>
-      </div>
-
-      {!state.squad.length && (
-        <p className="hint dim">
-          Add your group to rank by journey time. Until then this is a list, not a ranking.
-        </p>
-      )}
-
       {results.length === 0 ? (
         <div className="state-block" role="status">
           <p>

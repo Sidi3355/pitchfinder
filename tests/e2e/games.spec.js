@@ -103,7 +103,7 @@ test.describe('accounts and shared games', () => {
   test('a group can be saved and reused', async ({ page, request, baseURL }) => {
     await signIn(page, request, baseURL, `cara-${Date.now()}@example.com`)
     await page.goto('/?g=Sam~Peckham~51.4741~-0.0691~t;Ali~Hackney~51.545~-0.0553~c')
-    await page.getByRole('tab', { name: 'Your group' }).click()
+    await page.getByRole('button', { name: '+ Add' }).click()
     await page.getByRole('button', { name: 'Save this group' }).click()
     await page.getByLabel('Group name').fill('Thursday lot')
     await page.getByRole('button', { name: 'Save', exact: true }).click()

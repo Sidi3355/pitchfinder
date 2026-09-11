@@ -57,3 +57,44 @@ export function PitchDetail() {
     </aside>
   )
 }
+
+/** Pitch content for the phone bottom sheet: a back row, the header, the body. */
+export function PitchSheet() {
+  const { state, pitchById, actions } = useStore()
+  const pitch = pitchById.get(state.selectedPitchId)
+  if (!pitch) {
+    return (
+      <div className="pitch-sheet">
+        <button className="back-row" onClick={() => actions.selectPitch(null)}>
+          Back to results
+        </button>
+        {state.data && <p className="hint">That pitch is not in the current dataset.</p>}
+      </div>
+    )
+  }
+  const t = PITCH_TYPES[pitch.type]
+  const name = pitchName(pitch)
+  return (
+    <div className="pitch-sheet">
+      <button className="back-row" onClick={() => actions.selectPitch(null)}>
+        Back to results
+      </button>
+      <header className="drawer-head">
+        <div>
+          <p className="drawer-type" style={{ color: t.color }}>
+            <span className="type-dot" style={{ background: t.color }} />
+            {t.label}
+          </p>
+          <h2>{name}</h2>
+          <p className="drawer-sub">
+            {[pitch.name ? pitch.area : null, pitch.operator].filter(Boolean).join(' · ')}
+          </p>
+        </div>
+      </header>
+      <PitchContent pitch={pitch} />
+      <p className="hint">
+        <Link href={actions.pitchHref(pitch.id)}>Open this pitch as a page</Link>
+      </p>
+    </div>
+  )
+}

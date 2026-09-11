@@ -8,6 +8,7 @@ import { AuthModal } from './components/AuthModal.jsx'
 import { PitchDetail } from './components/PitchDetail.jsx'
 import { PitchPage } from './components/PitchPage.jsx'
 import { NotFound } from './components/NotFound.jsx'
+import { MOBILE_QUERY, useMediaQuery } from './lib/media.js'
 import { GamePage } from './components/GamePage.jsx'
 
 const TITLES = {
@@ -21,6 +22,7 @@ export function App() {
   const { state } = useStore()
   const { route } = state
   const mainRef = useRef(null)
+  const mobile = useMediaQuery(MOBILE_QUERY)
 
   useEffect(() => {
     if (TITLES[route.name]) document.title = TITLES[route.name]
@@ -56,7 +58,7 @@ export function App() {
         {page}
       </main>
       {state.authModal && <AuthModal />}
-      {route.name === 'find' && state.selectedPitchId && <PitchDetail />}
+      {route.name === 'find' && !mobile && state.selectedPitchId && <PitchDetail />}
     </div>
   )
 }
