@@ -1,18 +1,18 @@
 [
   {
     "date": "2026-09-11",
-    "datasetGeneratedAt": "2026-09-07T09:21:33.147Z",
-    "pitches": 3148,
-    "unnamed": 2949,
-    "noSurface": 1470,
-    "noLit": 2102,
-    "noPostcode": 3148,
-    "duplicates": 8,
+    "datasetGeneratedAt": "2026-09-11T22:15:49.066Z",
+    "pitches": 1586,
+    "unnamed": 0,
+    "noSurface": 744,
+    "noLit": 1051,
+    "noPostcode": 125,
+    "duplicates": 0,
     "curated": 26,
-    "unverifiedCuratedFacts": 104,
+    "unverifiedCuratedFacts": 152,
     "stalePrices": 26,
-    "deadBookingUrls": null,
-    "coordinateMismatches": null,
-    "offline": true
+    "deadBookingUrls": 22,
+    "coordinateMismatches": 0,
+    "offline": false
   }
 ]
