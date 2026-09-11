@@ -20,6 +20,9 @@ import { costOf } from '../lib/data.js'
 const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron'
 const LONDON_CENTER = [-0.1, 51.5072]
 
+const isDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches
+// The fallback (no tiles) is inverted by the dark-mode canvas filter, so it
+// stays light here and reads dark on screen.
 const FALLBACK_STYLE = {
   version: 8,
   sources: {},
@@ -277,9 +280,10 @@ export function MapView({ bottomPadding = 0 }) {
   return (
     <div
       ref={containerRef}
-      className="map-container"
+      className="map-container map-dark"
       role="application"
       aria-label="Map of London football pitches"
+      data-scheme={isDark() ? 'dark' : 'light'}
     />
   )
 }

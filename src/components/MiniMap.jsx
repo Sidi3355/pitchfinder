@@ -47,7 +47,7 @@ export function MiniMap({ pitch }) {
     <div className="mini-map-wrap">
       <div
         ref={ref}
-        className="mini-map"
+        className="mini-map map-dark"
         role="img"
         aria-label={`Map showing the location of the pitch`}
       />

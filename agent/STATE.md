@@ -117,3 +117,16 @@ snapshot on games (migration 0003) and a Vercel function that serves per-game Op
 HTML from `game_by_slug` (the static server emulates it for tests); a pending-action store
 in sessionStorage for sign-in; a name field on sign-in; reasons rebuilt in score.js with
 unit tests asserting every reason's precondition.
+
+## Iteration 5: design system pass (planned 11 Sep 2026)
+
+Intended user-visible outcome: the app looks like one calm product on every screen and in
+both light and dark modes (the map included), every tappable thing on a phone is at least
+44 px, keyboard focus is always visible, type sits on one scale (12, 13, 14, 16, 20, 24) and
+spacing on one grid (4, 8, 12, 16, 24), secondary text is readable in daylight, and every
+loading, empty, error and no-results state is designed. The package is named pitchfinder.
+
+Backlog item: 9. Approach: rewrite global.css around tokens (light and dark), a coarse-pointer
+media query for target sizes, focus-visible rings, and skeletons for the game and pitch pages.
+An e2e spec checks dark mode on the body and map, focus visibility after Tab, and measures
+every visible control on the mobile home, group panel, pitch sheet and game page.

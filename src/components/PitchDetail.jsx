@@ -60,8 +60,10 @@ export function PitchDetail() {
 
       <PitchContent pitch={pitch} />
 
-      <p className="hint">
-        <Link href={actions.pitchHref(pitch.id)}>Open this pitch as a page</Link>
+      <p className="row">
+        <Link className="btn ghost sm" href={actions.pitchHref(pitch.id)}>
+          Open this pitch as a page
+        </Link>
       </p>
     </aside>
   )
@@ -101,8 +103,10 @@ export function PitchSheet() {
         </div>
       </header>
       <PitchContent pitch={pitch} />
-      <p className="hint">
-        <Link href={actions.pitchHref(pitch.id)}>Open this pitch as a page</Link>
+      <p className="row">
+        <Link className="btn ghost sm" href={actions.pitchHref(pitch.id)}>
+          Open this pitch as a page
+        </Link>
       </p>
     </div>
   )

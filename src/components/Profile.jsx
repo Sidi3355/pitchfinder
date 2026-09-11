@@ -27,8 +27,9 @@ export function Profile() {
 
   if (authStatus === 'checking') {
     return (
-      <section className="page-narrow" aria-busy="true">
-        <p className="hint">Checking your session…</p>
+      <section className="page-narrow" aria-busy="true" aria-label="Checking your session">
+        <div className="skeleton-line w-40" />
+        <div className="skeleton-card" />
       </section>
     )
   }

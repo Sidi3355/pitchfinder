@@ -29,8 +29,11 @@ export function PitchPage({ id }) {
   }
   if (!state.data) {
     return (
-      <section className="page-narrow" aria-busy="true">
-        <p className="hint">Loading pitch…</p>
+      <section className="page-narrow" aria-busy="true" aria-label="Loading pitch">
+        <div className="skeleton-line w-40" />
+        <div className="skeleton-line w-60" />
+        <div className="skeleton-block" />
+        <div className="skeleton-card" />
       </section>
     )
   }

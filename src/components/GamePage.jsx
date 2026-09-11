@@ -163,8 +163,11 @@ export function GamePage({ slug }) {
   }
   if (phase === 'loading') {
     return (
-      <section className="page-narrow" aria-busy="true">
-        <p className="hint">Loading game…</p>
+      <section className="page-narrow" aria-busy="true" aria-label="Loading game">
+        <div className="skeleton-line w-40" />
+        <div className="skeleton-line w-60" />
+        <div className="skeleton-card" />
+        <div className="skeleton-block" />
       </section>
     )
   }

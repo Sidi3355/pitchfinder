@@ -1,8 +1,8 @@
 {
-  "name": "topbins",
+  "name": "pitchfinder",
   "private": true,
   "version": "0.1.0",
-  "description": "TopBins — find the perfect football pitch for your squad, across London.",
+  "description": "PitchFinder: where to play football in London, ranked for your whole group.",
   "type": "module",
   "scripts": {
     "dev": "vite",

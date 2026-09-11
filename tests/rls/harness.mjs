@@ -49,14 +49,17 @@ export async function createTestDatabase() {
     await client.query(readFileSync(join(MIGRATIONS, file), 'utf8'))
   }
 
-  // One connection, so calls are serialised: each runs in its own
-  // transaction, the way PostgREST scopes a request.
+  // One connection, so every call is serialised through one queue: each
+  // request runs in its own transaction, the way PostgREST scopes a request,
+  // and admin queries never interleave with a role-switched transaction.
   let chain = Promise.resolve()
-  function asUser(userId, fn) {
-    const run = () => runAs(userId, fn)
-    const next = chain.then(run, run)
+  function enqueue(fn) {
+    const next = chain.then(fn, fn)
     chain = next.catch(() => {})
     return next
+  }
+  function asUser(userId, fn) {
+    return enqueue(() => runAs(userId, fn))
   }
 
   async function runAs(userId, fn) {
@@ -78,15 +81,17 @@ export async function createTestDatabase() {
 
   return {
     /** Run SQL as the superuser (like the service role). */
-    admin: (text, params) => client.query(text, params),
+    admin: (text, params) => enqueue(() => client.query(text, params)),
     /** Run a function's queries as an anonymous API caller. */
     asAnon: (fn) => asUser(null, fn),
     /** Run a function's queries as the signed-in user with this id. */
     asUser,
     async createUser(email) {
-      const { rows } = await client.query(
-        'insert into auth.users (id, email) values (gen_random_uuid(), $1) returning id',
-        [email],
+      const { rows } = await enqueue(() =>
+        client.query(
+          'insert into auth.users (id, email) values (gen_random_uuid(), $1) returning id',
+          [email],
+        ),
       )
       return rows[0].id
     },
