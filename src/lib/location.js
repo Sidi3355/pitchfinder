@@ -42,7 +42,9 @@ export function useLocation() {
 
 /** Route table. Order matters: first match wins. */
 const ROUTES = [
-  { name: 'find', pattern: /^\/$/ },
+  { name: 'home', pattern: /^\/$/ },
+  { name: 'find', pattern: /^\/find\/?$/ },
+  { name: 'privacy', pattern: /^\/privacy\/?$/ },
   { name: 'pitch', pattern: /^\/p\/([a-z0-9-]{1,40})\/?$/i, params: ['id'] },
   { name: 'game', pattern: /^\/g\/([a-z0-9-]{1,64})\/?$/i, params: ['slug'] },
   { name: 'about', pattern: /^\/about\/?$/ },
@@ -59,4 +61,14 @@ export function matchRoute(path) {
     }
   }
   return { name: 'notFound', params: {} }
+}
+
+// Query keys that carry finder state; a root URL with any of them is an old
+// shared link and goes to /find with the query intact.
+const FINDER_KEYS = ['g', 'p', 't', 'enc', 'fmt', 'budget', 'eta', 'lit', 'free', 'book']
+
+export function isLegacyFinderLink(path, search) {
+  if (path !== '/' || !search) return false
+  const params = new URLSearchParams(search)
+  return FINDER_KEYS.some((k) => params.has(k))
 }

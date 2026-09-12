@@ -23,25 +23,32 @@ const FAKE = `http://localhost:${FAKE_PORT}`
 // [name, path, setup(page)]
 const SCREENS = [
   ['home', '/'],
-  ['home-group', `/?${GROUP}`],
-  ['group-panel', `/?${GROUP}`, (p) => p.getByRole('button', { name: '+ Add' }).click()],
-  ['group-empty-panel', '/', (p) => p.getByRole('button', { name: /Where is everyone/ }).click()],
-  ['filters-panel', '/', (p) => p.getByRole('button', { name: /^Filters/ }).click()],
+  ['home-bottom', '/', (p) => p.evaluate(() => document.querySelector('main').scrollTo(0, 99999))],
+  ['find', '/find'],
+  ['find-group', `/find?${GROUP}`],
+  ['group-panel', `/find?${GROUP}`, (p) => p.getByRole('button', { name: '+ Add' }).click()],
   [
-    'more-menu',
+    'group-empty-panel',
+    '/find',
+    (p) => p.getByRole('button', { name: /Where is everyone/ }).click(),
+  ],
+  ['filters-panel', '/find', (p) => p.getByRole('button', { name: /^Filters/ }).click()],
+  [
+    'menu',
     '/',
     (p) =>
       p
-        .getByRole('button', { name: 'More' })
+        .getByRole('button', { name: 'Menu' })
         .click()
         .catch(() => {}),
   ],
-  ['pitch-drawer', `/?${GROUP}&p=pl-shoreditch`],
+  ['pitch-drawer', `/find?${GROUP}&p=pl-shoreditch`],
   ['pitch-page', `/p/pl-shoreditch?${GROUP}`],
   ['pitch-page-osm', '/p/osm-n11415654181'],
-  ['no-results', '/?t=commercial&free=1'],
+  ['no-results', '/find?t=commercial&free=1'],
   ['not-found', '/nowhere'],
   ['about', '/about'],
+  ['privacy', '/privacy'],
   ['profile-signed-out', '/me'],
 ]
 
@@ -85,7 +92,14 @@ try {
     'desktop-dark': { viewport: { width: 1280, height: 800 }, colorScheme: 'dark' },
   }
   // Dark mode gets the screens where the map, cards and panels all appear.
-  const DARK = new Set(['home-group', 'group-panel', 'filters-panel', 'pitch-drawer', 'pitch-page'])
+  const DARK = new Set([
+    'home',
+    'find-group',
+    'group-panel',
+    'filters-panel',
+    'pitch-drawer',
+    'pitch-page',
+  ])
   // A game to screenshot: created once through the UI as a signed-in organiser.
   let gameUrl = null
   if (withDb) {

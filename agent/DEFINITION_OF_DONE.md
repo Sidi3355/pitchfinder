@@ -7,7 +7,8 @@ script that measures it. "Refined" notes come from the codebase read.
 
 - [x] **CF1** A new user on a phone goes from landing to a ranked list for a 2-person group,
       starting from postcodes, in under 60 s and under 8 taps. `tests/e2e/core-flow.spec.js`
-      (mobile project) counts taps and elapsed time.
+      (mobile project) counts taps and elapsed time. Since iteration 7 the flow starts on the
+      landing page's quick start: 6 taps.
 - [x] **CF2** Every meaningful state is in the URL: view, filters, group (encoded), selected
       pitch. Reload and share reproduce the state. `tests/e2e/share-url.spec.js` plus unit tests for
       encode/decode in `src/lib/url-state.test.js`.
@@ -41,10 +42,11 @@ script that measures it. "Refined" notes come from the codebase read.
 - [ ] **Q1** Lighthouse mobile on `/` and `/p/{id}`: Performance >= 85, Accessibility >= 95,
       Best Practices >= 95, SEO >= 90. `scripts/lighthouse.mjs`. Status: every score holds on
       the pitch route (98 to 100) and every non-performance score holds on `/` (100 / 100 / 100).
-      Home Performance is 47 to 58 wherever it can be measured here (sandbox and GitHub runner):
+      The finder's (`/find`) Performance is 47 to 75 wherever it can be measured here (sandbox and GitHub runner):
       headless Chrome has no GPU, MapLibre's WebGL context is set up by SwiftShader, and a CPU
       profile (`scripts/profile-home.mjs`) shows that setup at 1 to 2 s with our own code under
-      40 ms. The script reports the home score without gating it (see its header comment).
+      40 ms. The script reports the finder's score without gating it (see its header comment);
+      the landing page at `/` is gated in full and scores 97 or more.
       Escalation: measure on a phone or with PageSpeed Insights against the deployed site; if that
       also fails, the map must load after first interaction on phones, which is a product decision.
 - [x] **Q2** Initial JS < 350 KB gzipped; MapLibre code-split and loaded only when the map is on

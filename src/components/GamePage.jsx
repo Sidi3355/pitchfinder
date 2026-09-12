@@ -199,7 +199,7 @@ export function GamePage({ slug }) {
         <p className="empty-body">
           Check the link you were sent. The organiser may have deleted the game.
         </p>
-        <Link className="btn primary" href={actions.hrefFor('/')}>
+        <Link className="btn primary" href={actions.hrefFor('/find')}>
           Open the map
         </Link>
       </section>

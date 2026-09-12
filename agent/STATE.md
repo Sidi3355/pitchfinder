@@ -159,3 +159,28 @@ because the home Lighthouse Performance score is 47 to 58 under headless softwar
 CPU profile shows MapLibre's GL context setup at 1 to 2 s and our code under 40 ms); that
 gate is now reported, not enforced, on the home route only, and is raised as the escalation.
 Kept, nothing reverted.
+
+## Iteration 7: a product site around the tool (12 Sep 2026, user-directed)
+
+The user's call, after seeing the build: the site opened straight into the finder with nothing
+to say what it was, and they want it to work like a commercial product site. That overrides
+the brief's "first screen stays search box, map and list" and "no hero sections" lines for the
+front door; the finder itself keeps that bar.
+
+Intended user-visible outcome: `/` is a landing page that says what PitchFinder does in one
+sentence, lets you start from your own postcode, shows the real numbers (places, floodlit,
+priced, last refresh), explains the three steps, lets you browse by type, and lists what you
+get, with a footer on every content page. A header menu on desktop and a Menu panel on phones
+reach Home, Find a pitch, About, My games, Privacy and Sign in. The finder lives at `/find`;
+every link shared before today (`/?g=...`) still opens it with its state. A privacy page says
+plainly what is stored and where.
+
+Approach: two routes and two pages, no new dependencies, the same tokens and components. The
+quick start reuses the group form's geocoder and writes the first person into the URL. The
+Lighthouse gate now covers the landing in full and measures with real throttling (the
+simulation put the finder's first paint at 3.7 s while its own filmstrip showed the list at
+2.3 s). The footer sits below the first screen so a page's data arriving never moves it.
+
+Reflection: landing 97 / 100 / 100 / 100 with first paint at 2.1 s on throttled slow 4G; the
+finder is unchanged in code and in numbers; 63 e2e tests pass including the quick start, the
+legacy redirect, the menu on both form factors and the privacy page. Kept.

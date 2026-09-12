@@ -12,7 +12,7 @@ const TRANSIT = 'Sam~Peckham~51.4741~-0.0691~t'
 test('cards and the pitch page show routed minutes tagged as routes', async ({ page }) => {
   const osrmCalls = []
   page.on('request', (r) => r.url().includes('/osrm/') && osrmCalls.push(r.url()))
-  await page.goto(`/?g=${WALK_CYCLE}`)
+  await page.goto(`/find?g=${WALK_CYCLE}`)
   const first = page.locator('.card').first()
   // Each person gets their own routed minutes on the card.
   await expect(first.locator('.card-journey .src-tag')).toHaveText(['route', 'route'])
@@ -36,7 +36,7 @@ test('cards and the pitch page show routed minutes tagged as routes', async ({ p
 
 test('the estimate stays, labelled, when the router is down', async ({ page }) => {
   await page.route('**/osrm/**', (route) => route.fulfill({ status: 503, json: {} }))
-  await page.goto(`/?g=${WALK_CYCLE}`)
+  await page.goto(`/find?g=${WALK_CYCLE}`)
   const first = page.locator('.card').first()
   await expect(first.locator('.card-journey')).toContainText(/Sam about \d+ min/)
   await expect(first.locator('.card-journey .src-tag')).toHaveText(['est.', 'est.'])
@@ -49,7 +49,7 @@ test('the estimate stays, labelled, when the router is down', async ({ page }) =
 test('public transport is an estimate and asks no router without a TfL key', async ({ page }) => {
   const osrmCalls = []
   page.on('request', (r) => r.url().includes('/osrm/') && osrmCalls.push(r.url()))
-  await page.goto(`/?g=${TRANSIT}`)
+  await page.goto(`/find?g=${TRANSIT}`)
   const first = page.locator('.card').first()
   await expect(first.locator('.card-journey .src-tag')).toHaveText('est.')
   await expect(first.locator('.card-journey')).toContainText(/Sam about \d+ min/)
@@ -62,14 +62,14 @@ test('a bigger group gets one summed-up line, and no rank badges without a group
 }) => {
   const four =
     'A~Peckham~51.4741~-0.0691~w;B~Hackney~51.545~-0.0553~w;C~Bow~51.53~-0.02~w;D~Brixton~51.46~-0.11~w'
-  await page.goto(`/?g=${four}`)
+  await page.goto(`/find?g=${four}`)
   const first = page.locator('.card').first()
   await expect(first.locator('.card-journey .src-tag')).toHaveText('route')
   await expect(first.locator('.card-journey')).toContainText(
     /everyone within \d+ min|a similar journey for everyone|\d+ min on average|up to \d+ min/,
   )
   await expect(first.locator('.rank')).toHaveText('1')
-  await page.goto('/')
+  await page.goto('/find')
   await expect(page.locator('.card').first()).toBeVisible()
   await expect(page.locator('.card .rank')).toHaveCount(0)
 })

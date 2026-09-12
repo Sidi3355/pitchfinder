@@ -8,12 +8,18 @@ import { AuthModal } from './components/AuthModal.jsx'
 import { PitchDetail } from './components/PitchDetail.jsx'
 import { PitchPage } from './components/PitchPage.jsx'
 import { NotFound } from './components/NotFound.jsx'
+import { Home } from './components/Home.jsx'
+import { Privacy } from './components/Privacy.jsx'
+import { Footer } from './components/Footer.jsx'
 import { MOBILE_QUERY, useMediaQuery } from './lib/media.js'
 import { GamePage } from './components/GamePage.jsx'
+import { isLegacyFinderLink, navigate, useLocation } from './lib/location.js'
 
 const TITLES = {
-  find: 'PitchFinder: where to play football in London',
+  home: 'PitchFinder: pick a pitch the whole group can get to',
+  find: 'Find a pitch: PitchFinder',
   about: 'About: PitchFinder',
+  privacy: 'Privacy: PitchFinder',
   profile: 'My games: PitchFinder',
   notFound: 'Page not found: PitchFinder',
 }
@@ -23,6 +29,13 @@ export function App() {
   const { route } = state
   const mainRef = useRef(null)
   const mobile = useMediaQuery(MOBILE_QUERY)
+  const location = useLocation()
+
+  // Links shared before the finder moved to /find still open the finder.
+  const legacy = isLegacyFinderLink(location.path, location.search)
+  useEffect(() => {
+    if (legacy) navigate(`/find${location.search}`, { replace: true })
+  }, [legacy, location.search])
 
   useEffect(() => {
     if (!state.notice) return
@@ -38,11 +51,17 @@ export function App() {
 
   let page
   switch (route.name) {
+    case 'home':
+      page = legacy ? null : <Home />
+      break
     case 'find':
       page = <Finder />
       break
     case 'about':
       page = <About />
+      break
+    case 'privacy':
+      page = <Privacy />
       break
     case 'profile':
       page = <Profile />
@@ -62,6 +81,7 @@ export function App() {
       <Header />
       <main ref={mainRef} className={route.name === 'find' ? 'main-find' : 'main-page'}>
         {page}
+        {route.name !== 'find' && !legacy && <Footer />}
       </main>
       {state.authModal && <AuthModal />}
       <div className="toast-region" role="status" aria-live="polite">

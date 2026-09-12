@@ -18,7 +18,7 @@ export function Profile() {
         <p className="empty-body">
           The map, ranking, filters and pitch pages all work without one.
         </p>
-        <Link className="btn primary" href={actions.hrefFor('/')}>
+        <Link className="btn primary" href={actions.hrefFor('/find')}>
           Open the map
         </Link>
       </section>

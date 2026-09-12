@@ -31,7 +31,9 @@ missing facts, duplicate names, coordinates more than 150 m from their postcode,
 that do not answer 200, curated facts nobody has verified. The refresh publishes the result to
 `agent/DATA_QUALITY.md`.
 
-**Frontend** (Vite + React). The URL is the only state: group (`g=`), filters, selected pitch.
+**Frontend** (Vite + React). `/` is the landing page, `/find` the finder, `/p/{id}` a pitch,
+`/g/{slug}` a game, plus About, Privacy and My games. In the finder the URL is the only state:
+group (`g=`), filters, selected pitch.
 Ranking runs on straight-line estimates so the list is instant and gives plain-language reasons
 that are true by construction; there is no score on screen. Journey times on cards, pitch pages
 and game pages are then routed by OSRM (walking, cycling, driving) and tagged "route"; public

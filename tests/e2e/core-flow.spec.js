@@ -18,13 +18,17 @@ test('two-person group to ranked list within the tap and time budget', async ({ 
   await mockPostcodes(page)
   const t0 = Date.now()
   await page.goto('/')
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
+
+  // Landing: the first person comes from the quick start.
+  await type(page.getByLabel('Your postcode or area'), 'E8 3DL')
+  await tap(page.getByRole('button', { name: 'Start' }))
+  await expect(page).toHaveURL(/\/find\?g=/)
   await expect(page.locator('.card').first()).toBeVisible()
 
-  await tap(page.getByRole('button', { name: /Where is everyone coming from/ }))
+  // Finder: the second person through the group panel.
+  await tap(page.getByRole('button', { name: '+ Add' }))
   const dialog = page.getByRole('dialog', { name: 'Your group' })
-  await type(dialog.getByPlaceholder(/Postcode or place/), 'E8 3DL')
-  await tap(dialog.getByRole('button', { name: 'Add player' }))
-  await expect(dialog.getByText('E8 3DL').last()).toBeVisible()
   await type(dialog.getByPlaceholder(/Postcode or place/), 'SE15 4AB')
   await tap(dialog.getByRole('button', { name: 'Add player' }))
   await expect(dialog.getByText('SE15 4AB').last()).toBeVisible()

@@ -6,7 +6,7 @@ import { closeFilters, openFilters } from './helpers.js'
 // appears once there is a group to measure from.
 
 test('filter options carry live counts that match the result count', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/find')
   await expect(page.locator('.card').first()).toBeVisible()
   await openFilters(page)
   const dialog = page.getByRole('dialog', { name: 'Filters' })
@@ -28,7 +28,7 @@ test('filter options carry live counts that match the result count', async ({ pa
 
 test('an option that would leave nothing is switched off, not hidden', async ({ page }) => {
   // Free and commercial cannot both hold: commercial venues charge.
-  await page.goto('/?free=1')
+  await page.goto('/find?free=1')
   await expect(page.locator('.card').first()).toBeVisible()
   await openFilters(page)
   const dialog = page.getByRole('dialog', { name: 'Filters' })
@@ -39,7 +39,7 @@ test('an option that would leave nothing is switched off, not hidden', async ({ 
 })
 
 test('the travel-time filter appears with a group', async ({ page }) => {
-  await page.goto('/?g=Sam~Peckham~51.4741~-0.0691~t')
+  await page.goto('/find?g=Sam~Peckham~51.4741~-0.0691~t')
   await expect(page.locator('.card').first()).toBeVisible()
   await openFilters(page)
   const dialog = page.getByRole('dialog', { name: 'Filters' })
