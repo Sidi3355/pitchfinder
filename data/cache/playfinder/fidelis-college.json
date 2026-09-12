@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/fidelis-college",
+ "finalUrl": "https://www.playfinder.com/london/venue/fidelis-college",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:42:50.974Z",
+ "title": "Fidelis College, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFidelis College\nTennisNetballBasketballFootballRugbySpace Hire\n Book Online at Fidelis College\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 147 Central Hill, Greater London, London, SE19 1RT\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Crystal Palace Station\n\nOpening Hours\nMonday\t17:30 - 22:00\nTuesday\t17:30 - 22:00\nWednesday\t17:30 - 22:00\nThursday\t17:30 - 22:00\nFriday\t17:30 - 22:00\nSaturday\t8:00 - 22:00\nSunday\t8:00 - 22:00\nDescription\n\nIf you're in Central Hill and need a tennis court, consider booking the one at Fidelis College. It's a sensational facility that's perfect whether you're playing a casual game with friends or you're part of a team or league. The court has a concrete surface.\n\nYou don't have to be a member to book the court; you can book on a pay as you play basis.\n\nIf you're driving, you'll be glad to know there's free parking available at the facility. Just be aware that spaces are limited, and the car park can get busy, especially on weekends.\n\nFor teams looking to secure a regular time slot, you can inquire about making a block booking. This typically involves booking the court for a set number of consecutive weeks, around 10 weeks on average, ensuring you have a guaranteed time to play every week.\n\n Tennis Court\nCourt | Concrete\nFacilities\n free parking\n Address\n\nFidelis College\n147 Central Hill\nGreater London\nSE19 1RT\n\n\nVIEW ON MAP\n Nearby Tennis Courts\nGravesham Legend Sports\nGravesend\n\n 21.4 miles away\n\nGravesham Legend Sports\nGravesend\n\n 21.4 miles away\n\nSouthfield Rec\nMiddlesex\n\n 9.1 miles away\n\nActon Park\nLondon\n\n 9.2 miles away\n\nChurchfields Recreation Ground\nWeybridge\n\n 12.4 miles away\n\n",
+ "name": "Fidelis College",
+ "area": "Croydon",
+ "address": "147 Central Hill, Greater London, London, SE19 1RT",
+ "postcode": "SE19 1RT",
+ "hours": {
+  "mon": [
+   [
+    "17:30",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:30",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:30",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:30",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:30",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:30 - 22:00",
+  "Tuesday 17:30 - 22:00",
+  "Wednesday 17:30 - 22:00",
+  "Thursday 17:30 - 22:00",
+  "Friday 17:30 - 22:00",
+  "Saturday 8:00 - 22:00",
+  "Sunday 8:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/fidelis-college/football-5-a-side-pitch-93437",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

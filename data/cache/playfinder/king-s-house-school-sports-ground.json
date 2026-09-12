@@ -1,0 +1,115 @@
+{
+ "url": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:00:46.944Z",
+ "title": "King's House School Sports Ground, London | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nKing's House School Sports Ground\nFootballRugbyNetballLacrosseCricketAthleticsTennis\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n King’s House School Sports Ground, Riverside Drive, Chiswick, W4 2SP\n\nPrices\n\nPublic Transport\n\n Barnes Bridge Train\n\nOpening Hours\nMonday\t9am - 10pm\nTuesday\t9am - 10pm\nWednesday\t9am - 10pm\nThursday\t9am - 10pm\nFriday\t9am - 10pm\nSaturday\t9am - 10pm\nSunday\t9 am – 7 pm\nDescription\n\nKing’s House School Sports Ground includes two modern 3G synthetic pitch, providing excellent performance in all conditions. Suitable for both football and rugby, this versatile space supports matches, training sessions and community sport. Set beside the River Thames in West London, it reflects the site’s commitment to accessible, high-quality facilities for all users. Please visit https://www.kingshousesportsground.co.uk/\nto make a booking.\n\n Football Pitches\n11 a side pitch | 3G Astroturf11 a side | Grass5 a side pitch | Grass7 a side pitch | Grass9 a side pitch | Grass\n Address\n\nKing's House School Sports Ground\nKing’s House School Sports Ground\nRiverside Drive\nW4 2SP\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Football Pitches\nFairfield Recreation Ground\nKingston upon Thames\n\n 5.1 miles away\n\nManor Park\nNew Malden\n\n 6.2 miles away\n\nAlexandra Recreation Ground\nSurbiton\n\n 6.4 miles away\n\nClarion\nBarnet\n\n 6.8 miles away\n\nClarion\nBarnet\n\n 6.8 miles away\n\n",
+ "name": "King's House School Sports Ground",
+ "area": "London",
+ "address": "King’s House School Sports Ground, Riverside Drive, Chiswick, W4 2SP",
+ "postcode": "W4 2SP",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 9am - 10pm",
+  "Tuesday 9am - 10pm",
+  "Wednesday 9am - 10pm",
+  "Thursday 9am - 10pm",
+  "Friday 9am - 10pm",
+  "Saturday 9am - 10pm",
+  "Sunday 9 am – 7 pm"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground/football-11-a-side-pitch-93522",
+   "label": "11 a side pitch | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground/football-11-a-side-93525",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground/football-5-a-side-pitch-93526",
+   "label": "5 a side pitch | Grass",
+   "format": 5,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground/football-7-a-side-pitch-93527",
+   "label": "7 a side pitch | Grass",
+   "format": 7,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/king-s-house-school-sports-ground/football-9-a-side-pitch-93528",
+   "label": "9 a side pitch | Grass",
+   "format": 9,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

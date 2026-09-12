@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/braywick-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/braywick-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:15:42.238Z",
+ "title": "Braywick Park Gym and Pitches, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBraywick Park Gym and Pitches Non-Partner \nGymFootballHockey\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Braywick Sports Ground, Maidenhead, Windsor and Maidenhead, SL6 1BN\n\nPrices\n\nAround £45.00/hour\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\nMonday\t12:30-21:30\nTuesday\t12:30-21:30\nWednesday\t12:30-21:30\nThursday\t12:30-21:30\nFriday\t12:30-21:30\nSaturday\t09:30-15:00\nSunday\t09:30-15:00\nDescription\n\nWant to join a gym and live or work in Maidenhead? Braywick Park Gym and Pitches has some of the best gym facilities around. Going to the gym on a regular basis is a great way to keep active and live a healthy lifestyle. Whether you're just starting out or you're a gym regular, Braywick Park Gym and Pitches is one of the best gyms in Maidenhead. The gym provides a wide array of equipment to use with expert staff to guide you on the best and safest ways to use them.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nYou have to be a member to make use of the gym facilities at Braywick Park Gym and Pitches. This means the facility is unfortunately not available to book on a one-off basis. The facility offers various membership options, so please contact the venue if you are interested in becoming a member.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nIf you're looking to travel using public transport, then the nearest station is Maidenhead. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Gym\nIndoor\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 11.3 miles away\n\n",
+ "name": "Braywick Park Gym and Pitches",
+ "area": "Windsor and Maidenhead",
+ "address": "Braywick Sports Ground, Maidenhead, Windsor and Maidenhead, SL6 1BN",
+ "postcode": "SL6 1BN",
+ "hours": {
+  "mon": [
+   [
+    "12:30",
+    "21:30"
+   ]
+  ],
+  "tue": [
+   [
+    "12:30",
+    "21:30"
+   ]
+  ],
+  "wed": [
+   [
+    "12:30",
+    "21:30"
+   ]
+  ],
+  "thu": [
+   [
+    "12:30",
+    "21:30"
+   ]
+  ],
+  "fri": [
+   [
+    "12:30",
+    "21:30"
+   ]
+  ],
+  "sat": [
+   [
+    "09:30",
+    "15:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:30",
+    "15:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 12:30-21:30",
+  "Tuesday 12:30-21:30",
+  "Wednesday 12:30-21:30",
+  "Thursday 12:30-21:30",
+  "Friday 12:30-21:30",
+  "Saturday 09:30-15:00",
+  "Sunday 09:30-15:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/braywick-leisure-centre/football-11-a-side-34591",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Around £45.00/hour",
+ "skipped": "no artificial football pitch"
+}

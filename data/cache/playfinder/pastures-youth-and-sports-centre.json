@@ -1,0 +1,81 @@
+{
+ "url": "https://www.playfinder.com/london/venue/pastures-youth-and-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/pastures-youth-and-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:34:43.075Z",
+ "title": "Pastures Centre, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nPastures Centre\nSpace HireVolleyballNetballCricketBasketballFootballBadminton\n Book Online at Pastures Centre\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Davis Lane, Leytonstone, London, E11 3DR\n\nPrices\n\nPlease see calendar for availability and prices.\n\nPublic Transport\n\n Tube - Leytonstone High Road / Bus - either 257 or W14\n\nOpening Hours\n\nMon - Sun: 09:00 - 22:00\n\nDescription\n\nPastures Centre is a wonderful location if you're looking for kitchen space hire in East London. It’s an ideal place to hold events as it’s spacious but still allows for an excellent atmosphere. It’s a very popular location for locals, so be sure to book it early to avoid disappointment on the big day. The kitchen does allow people to bring their own equipment or materials, but it’s sensible to check in with the reception to confirm what is and isn’t allowed. If additional staff are required to ensure the event runs smoothly then speak with the venue about availability, suitable skills and costings.\n\nIf public transport isn't your thing, there is limited parking spaces available nearby.\n\nThe venue is open to the public to come and use on a one off basis. Their pay as you use system means that you can book now and use the kitchen without being a member.\n\nFor those who like the security of knowing you can use the kitchen at the same time every week without fail, you can make a block booking at Pastures Centre. The very accommodating team at Playfinder will help you with any booking questions you may have. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Leytonstone High Road and if you are using the bus, the bus routes will be 257 and W14. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Space Hire\nKitchenMulti purpose roomSports hall\n Address\n\nPastures Centre\nDavis Lane\nLeytonstone\nE11 3DR\n\n\nVIEW ON MAP\n Nearby Space Hire\nMarcus Lipton Community Enterprise\nLambeth\n\n 8.3 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 14.4 miles away\n\nWallington County Grammar School\nWallington\n\n 15.1 miles away\n\nWallington County Grammar School\nWallington\n\n 15.1 miles away\n\nThe Mill Primary Academy\nCrawley\n\n 32.4 miles away\n\n",
+ "name": "Pastures Centre",
+ "area": "Waltham Forest",
+ "address": "Davis Lane, Leytonstone, London, E11 3DR",
+ "postcode": "E11 3DR",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Mon - Sun: 09:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/pastures-youth-and-sports-centre/football-5-a-side-42339",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar for availability and prices.",
+ "skipped": "no artificial football pitch"
+}

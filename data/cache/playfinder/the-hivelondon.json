@@ -1,0 +1,139 @@
+{
+ "url": "https://www.playfinder.com/london/venue/the-hivelondon",
+ "finalUrl": "https://www.playfinder.com/london/venue/the-hivelondon",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:38:27.884Z",
+ "title": "The Hive London, Harrow | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nThe Hive London\nFootball\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n The Hive London, Camrose Avenue, London, HA8 6AG\n\nPrices\n\nPlease contact The Hive London for prices\n\nPublic Transport\n\n Burnt Oak\n\nOpening Hours\nMonday\t7:00 – 23:00\nTuesday\t7:00 – 23:00\nWednesday\t7:00 – 23:00\nThursday\t7:00 – 23:00\nFriday\t7:00 – 23:00\nSaturday\t7:00 – 23:00\nSunday\t7:00 – 23:00\nDescription\n\nThe Hive London is the largest football facility in Europe with many synthetic pitches available for leisure play. They have FIFA Pro 2* 5-a-sides and 11-a-side quality surface!\n\nThey have so many facilities to choose from: 9x 5-a-side pitches, 3x 11-a-side pitches, 6x 7-a-side pitches, 2x 9-a-side pitches!\n\n\nTo book please visit: https://thehivelondon.com/\n\n\nYou can also book viewing times from:\n\nMonday – 12:00midday – 8:00pm\n\nTuesday - 12:00midday – 8:00pm\n\nWednesday - Subject to Availability*\n\nThursday - Subject to Availability*\n\nFriday - 12:00midday – 8:00pm\n\nSaturday - 12:00midday – 8:00pm\n\nSunday - 12:00midday – 8:00pm\n\n Football Pitches\n11 a side pitch | 4g Astroturf9 a side pitch | 4g Astroturf7 a side pitch | 4g Astroturf5 a side pitch | 4g Astroturf11 a side pitch | 3G Astroturf7 a side pitch | 3G Astroturf9 a side pitch | 3G Astroturf\nFacilities\n floodlights free parking\n Address\n\nThe Hive London\nThe Hive London,\nCamrose Avenue\nHA8 6AG\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Football Pitches\nClarion\nBarnet\n\n 3.6 miles away\n\nClarion\nBarnet\n\n 3.6 miles away\n\nFairfield Recreation Ground\nKingston upon Thames\n\n 13.3 miles away\n\nAlexandra Recreation Ground\nSurbiton\n\n 14.8 miles away\n\nManor Park\nNew Malden\n\n 14.9 miles away\n\n",
+ "name": "The Hive London",
+ "area": "Harrow",
+ "address": "The Hive London, Camrose Avenue, London, HA8 6AG",
+ "postcode": "HA8 6AG",
+ "hours": {
+  "mon": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ],
+  "tue": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ],
+  "wed": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ],
+  "thu": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ],
+  "fri": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ],
+  "sat": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ],
+  "sun": [
+   [
+    "07:00",
+    "23:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 7:00 – 23:00",
+  "Tuesday 7:00 – 23:00",
+  "Wednesday 7:00 – 23:00",
+  "Thursday 7:00 – 23:00",
+  "Friday 7:00 – 23:00",
+  "Saturday 7:00 – 23:00",
+  "Sunday 7:00 – 23:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   7,
+   9,
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-11-a-side-pitch-93079",
+   "label": "11 a side pitch | 4g Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-9-a-side-pitch-93080",
+   "label": "9 a side pitch | 4g Astroturf",
+   "format": 9,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-7-a-side-pitch-93081",
+   "label": "7 a side pitch | 4g Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-5-a-side-pitch-93082",
+   "label": "5 a side pitch | 4g Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-11-a-side-pitch-93091",
+   "label": "11 a side pitch | 3G Astroturf",
+   "format": 11,
+   "surface": "3g"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-7-a-side-pitch-93095",
+   "label": "7 a side pitch | 3G Astroturf",
+   "format": 7,
+   "surface": "3g"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-hivelondon/football-9-a-side-pitch-93097",
+   "label": "9 a side pitch | 3G Astroturf",
+   "format": 9,
+   "surface": "3g"
+  }
+ ],
+ "priceSummary": "Please contact The Hive London for prices"
+}

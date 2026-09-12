@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/abbey-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/abbey-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:29:37.709Z",
+ "title": "Abbey Leisure Centre, Cambridge | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAbbey Leisure Centre Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Abbey Leisure Complex, Whitehill Road, Cambridge, CB5 8NT\n\nPrices\n\nPublic Transport\n\n Cambridge\n\nOpening Hours\nMonday\t06:30 - 22:00\nTuesday\t06:30 - 22:00\nWednesday\t06:30 - 22:00\nThursday\t06:30 - 22:00\nFriday\t06:30 - 22:00\nSaturday\t08:00 - 18:00\nSunday\t08:00 - 18:00\n Football Pitches\n7 a side | Astroturf11 a side | Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nO.R. Tambo Recreation Ground (formerly Albert Road Rec)\nHaringey\n\n 43.6 miles away\n\nMuswell Hill Playing Fields\nHaringey\n\n 44.1 miles away\n\nMarkfield Park\nLondon\n\n 44.4 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 45.4 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 45.4 miles away\n\n",
+ "name": "Abbey Leisure Centre",
+ "area": "Cambridge",
+ "address": "Abbey Leisure Complex, Whitehill Road, Cambridge, CB5 8NT",
+ "postcode": "CB5 8NT",
+ "hours": {
+  "mon": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 06:30 - 22:00",
+  "Tuesday 06:30 - 22:00",
+  "Wednesday 06:30 - 22:00",
+  "Thursday 06:30 - 22:00",
+  "Friday 06:30 - 22:00",
+  "Saturday 08:00 - 18:00",
+  "Sunday 08:00 - 18:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/abbey-leisure-centre/football-7-a-side-40000",
+   "label": "7 a side | Astroturf",
+   "format": 7,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/abbey-leisure-centre/football-11-a-side-40001",
+   "label": "11 a side | Astroturf",
+   "format": 11,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

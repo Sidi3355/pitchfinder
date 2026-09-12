@@ -1,0 +1,92 @@
+{
+ "url": "https://www.playfinder.com/london/venue/ferndale-community-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/ferndale-community-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:08:33.861Z",
+ "title": "Ferndale Community Sports Centre, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFerndale Community Sports Centre Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Ferndale Community Sports Centre, Nursery Road, Brixton, Lambeth, SW9 8BP\n\nPrices\n\nFrom £28.38-£79.72/hour\n\nPublic Transport\n\n Brixton\n\nOpening Hours\nMonday\t09:00 - 21:00\nTuesday\t09:00 - 21:00\nWednesday\t09:00 - 21:00\nThursday\t09:00 - 21:00\nFriday\t09:00 - 21:00\nSaturday\t09:00 - 18:00\nSunday\t09:00 - 18:00\nDescription\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Ferndale Community Sports Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nIf you're looking to travel using public transport, then the nearest station is Brixton. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 1.5 miles away\n\nMallinson Sports Centre\nHighgate\n\n 7.9 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 9.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.2 miles away\n\n",
+ "name": "Ferndale Community Sports Centre",
+ "area": "Lambeth",
+ "address": "Ferndale Community Sports Centre, Nursery Road, Brixton, Lambeth, SW9 8BP",
+ "postcode": "SW9 8BP",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 21:00",
+  "Tuesday 09:00 - 21:00",
+  "Wednesday 09:00 - 21:00",
+  "Thursday 09:00 - 21:00",
+  "Friday 09:00 - 21:00",
+  "Saturday 09:00 - 18:00",
+  "Sunday 09:00 - 18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/ferndale-community-sports-centre/football-5-a-side-32207",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £28.38-£79.72/hour"
+}

@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/tadworth-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/tadworth-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:29:06.062Z",
+ "title": "Tadworth Leisure Centre, Epsom and Ewell | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nTadworth Leisure Centre Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Preston Manor Road, Epsom, Tadworth, KT20 5FB\n\nPrices\n\nPublic Transport\n\n Tattenham Corner\n\nOpening Hours\nMonday\t06:45 - 22:00\nTuesday\t06:45 - 22:00\nWednesday\t06:45 - 22:00\nThursday\t06:45 - 22:00\nFriday\t06:45 - 22:00\nSaturday\t07:00 - 20:00\nSunday\t07:00 - 20:00\nDescription\n\n5-a-side football at Tadworth Leisure Centre, which is the one of the finest sports venues in south west London and also caters for a wide range of sporting activities, is the place to be if you’re looking to play 5-a-side football. One of the best activities that sports fans are able to enjoy here is 5-a-side football on an immaculate 3G Astroturf surface.\n\nTadworth Leisure Centre operates a pay and display parking system. Those keen on driving to the venue should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nThe changing rooms on offer at Tadworth Leisure Centre are excellent. Well maintained and spacious changing rooms provide the perfect environment in which to prepare for your match. Tadworth Leisure Centre changing rooms provide toilets and also a communal changing area with a large bench area. The well-equipped changing rooms provided add an additional excellence to this already outstanding venue.\n\nCustomers will be pleased to know that Tadworth Leisure Centre operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game.\n\nTadworth Leisure Centre is surrounded by modern floodlighting that make this venue perfect for football all year around. The state-of-the-art lights are kept in excellent condition. The lights will be turned off by the venue once all sports bookings have been complete.\n\nLooking to set up regular games at Tadworth Leisure Centre? Why not enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel to Tadworth Leisure Centre using public transport, then the nearest station is Sanderstead Station. This venue has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 4.5 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 13.6 miles away\n\nMallinson Sports Centre\nHighgate\n\n 19.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 21.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 21.1 miles away\n\n",
+ "name": "Tadworth Leisure Centre",
+ "area": "Epsom and Ewell",
+ "address": "Preston Manor Road, Epsom, Tadworth, KT20 5FB",
+ "postcode": "KT20 5FB",
+ "hours": {
+  "mon": [
+   [
+    "06:45",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:45",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:45",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:45",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:45",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "07:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "07:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 06:45 - 22:00",
+  "Tuesday 06:45 - 22:00",
+  "Wednesday 06:45 - 22:00",
+  "Thursday 06:45 - 22:00",
+  "Friday 06:45 - 22:00",
+  "Saturday 07:00 - 20:00",
+  "Sunday 07:00 - 20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/tadworth-leisure-centre/football-5-a-side-40008",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

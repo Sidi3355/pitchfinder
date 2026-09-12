@@ -1,0 +1,106 @@
+{
+ "url": "https://www.playfinder.com/london/venue/somers-town-community-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/somers-town-community-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:29:32.628Z",
+ "title": "Somers Town Community Sports Centre, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSomers Town Community Sports Centre Non-Partner \nBadmintonFootballVolleyballBasketballFutsalNetballCricketSpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 134 Chalton Street, London, London, NW1 1RX\n\nPrices\n\n£15.00/hr\n\nPublic Transport\n\n The Sports Centre is close to Euston and Mornington Crescent Tube Stations, and Kings Cross St. Pancras is also within easy reach. Buses 168 and 253 stop in nearby Eversholt Street.\n\nOpening Hours\n\nDuring School Term Time: Monday to Friday: 15:00 - 22:00. Saturday: 09:00 - 21:00 and Sunday: 10:00 - 21:00. During School Holidays: Monday to Friday: 09:00 - 22:00. Saturday: 09:00 - 21:00 and Sunday: 10:00 - 21:00.\n\nDescription\n\n**Due to COVID-19 restrictions, Badminton doubles is only allowed if the participants are from the same household.**\n\n**If you qualify for a Member or Concession discount at Somers Town Community Sports Centre, please fill in the enquiry form and a discount will be applied to you accordingly.**\n\nAnyone looking to book a badminton court in North London should be looking to play badminton at Somers Town Community Sports Centre. Availability varies, but the badminton facilities are excellent. Leagues can operate from the venue, as well as one off games with your friends. Rackets and shuttlecocks are sometimes available for hire from the reception desk for those that don’t possess the correct badminton equipment, but we recommend you call the facility before arrival to double check. Nets are also stored on site and checked on a regular basis to ensure it is kept to the highest standard.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\n Badminton Court\nIndoor\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 3.1 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 13.2 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 13.2 miles away\n\nAldenham School Sports Centre\nRadlett\n\n 12.3 miles away\n\nBolder Academy\nLondon\n\n 9 miles away\n\n",
+ "name": "Somers Town Community Sports Centre",
+ "area": "Camden",
+ "address": "134 Chalton Street, London, London, NW1 1RX",
+ "postcode": "NW1 1RX",
+ "hours": {
+  "mon": [
+   [
+    "15:00",
+    "22:00"
+   ],
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "15:00",
+    "22:00"
+   ],
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "15:00",
+    "22:00"
+   ],
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "15:00",
+    "22:00"
+   ],
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "15:00",
+    "22:00"
+   ],
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday to Friday: 15:00 - 22:00",
+  "Saturday: 09:00 - 21:00",
+  "Sunday: 10:00 - 21:00",
+  "Monday to Friday: 09:00 - 22:00",
+  "Saturday: 09:00 - 21:00",
+  "Sunday: 10:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/somers-town-community-sports-centre/football-5-a-side-39971",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "£15.00/hr",
+ "skipped": "no artificial football pitch"
+}

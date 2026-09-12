@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/wallington-county-grammar-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/wallington-county-grammar-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:37:06.630Z",
+ "title": "Wallington County Grammar School, Sutton | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWallington County Grammar School\nRugbySpace HireCricketNetballFootballBasketball\nContains Data © Sport England\n Book Online at Wallington County Grammar School\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Wallington County Grammar School Croydon Road, Wallington North, Wallington, SM6 7PH\n\nPublic Transport\n\n Wallington County Grammar School bus stop\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t09:00 - 22:00\nSunday\t09:00 - 22:00\nDescription\n\nThinking of playing rugby at Wallington County Grammar School in South London? Wallington County Grammar School boasts one of the nicest rugby pitches in London so you won’t be disappointed. The excellent playing field, which is available for hire, is the perfect facility to host training sessions, matches and leagues. Clear markings on a very well maintained grass pitch make Wallington County Grammar School an excellent rugby venue. A ball might be able to hire for a small fee from the facility but we advise that you call directly before your arrival to make sure. The pitch is suitable for rugby union, rugby league, tag rugby and touch rugby.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nLooking to set up regular games at Wallington County Grammar School? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest bus stop is Wallington County Grammar School. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Rugby Pitches\nTraining pitch | GrassPitch | Grass\n Address\n\nWallington County Grammar School\nWallington County Grammar School Croydon Road\nWallington North\nSM6 7PH\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Rugby Pitches\nHaverstock School\nCamden\n\n 12.1 miles away\n\n",
+ "name": "Wallington County Grammar School",
+ "area": "Sutton",
+ "address": "Wallington County Grammar School Croydon Road, Wallington North, Wallington, SM6 7PH",
+ "postcode": "SM6 7PH",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 09:00 - 22:00",
+  "Sunday 09:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/wallington-county-grammar-school/football-5-a-side-92514",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": null,
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/sutton-life-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/sutton-life-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:14:30.578Z",
+ "title": "Sutton Life Centre, Sutton | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSutton Life Centre Non-Partner \nFootballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 24 Alcorn Close, West Sutton, Surrey, SM3 9PX\n\nPrices\n\nWhole pitch £40 / hour\n\nPublic Transport\n\n Sutton Common\n\nOpening Hours\nMonday\t08.30-20.00\nTuesday\t08.30-20.00\nWednesday\t08.30-20.00\nThursday\t08.30-20.00\nFriday\t08.30-20.00\nSaturday\t09.00-17.00\nSunday\t10.00-13.30\nDescription\n\nSutton Life Centre is located in South London and boasts an incredible 5-a-side concrete pitch. Not many 5-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 5-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space. Facilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Sutton Life Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks. The venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nThe venue is situated near Sutton Common station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitch\n5 a side | Concrete\nFacilities\n floodlights changing rooms 5 a side 6 a side 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 3.3 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 8.3 miles away\n\nMallinson Sports Centre\nHighgate\n\n 13.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 17.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 17.7 miles away\n\n",
+ "name": "Sutton Life Centre",
+ "area": "Sutton",
+ "address": "24 Alcorn Close, West Sutton, Surrey, SM3 9PX",
+ "postcode": "SM3 9PX",
+ "hours": {
+  "mon": [
+   [
+    "08:30",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:30",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:30",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:30",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:30",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "13:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08.30-20.00",
+  "Tuesday 08.30-20.00",
+  "Wednesday 08.30-20.00",
+  "Thursday 08.30-20.00",
+  "Friday 08.30-20.00",
+  "Saturday 09.00-17.00",
+  "Sunday 10.00-13.30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [
+   5,
+   6,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/sutton-life-centre/football-5-a-side-33837",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Whole pitch £40 / hour",
+ "skipped": "no artificial football pitch"
+}

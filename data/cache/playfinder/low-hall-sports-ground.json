@@ -1,0 +1,106 @@
+{
+ "url": "https://www.playfinder.com/london/venue/low-hall-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/low-hall-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:57:26.857Z",
+ "title": "Low Hall Sports Ground, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nLow Hall Sports Ground\nFootballCricket\n Book Online at Low Hall Sports Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n South Access Road, Walthamstow, Waltham Forest, E17 8AX\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Lea Bridge\n\nOpening Hours\nMonday\t14:30 - 22:30\nTuesday\t14:30 - 22:30\nWednesday\t14:30 - 22:30\nThursday\t14:30 - 22:30\nFriday\t14:30 - 22:30\nSaturday\t09:30 - 22:30\nSunday\t09:30 - 22:30\nDescription\n\n**Plateau 9-aside Pitch 1**\n\n**Please note that the hot water in the showers is currently unavailable until further notice.**\n\nBook the 9-a-side football pitch at Low Hall Sports Ground if you're looking for an excellent pitch and live or work in East London. This venue has sensational footballing facilities, so whether you like to play 9-a-side football casually or you're part of a team or league, Low Hall Sports Ground is ideal for you. Everyone has their favourite surface for playing 9-a-side football on and this pitch is grass.\n\nThe venue operates a pay and display parking system. Those keen on driving to the facility should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Low Hall Sports Ground? Block bookings are a great way to guarantee a weekly game and socialise with your friends.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nThe venue is situated near Lea Bridge station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n9 a side | Grass9 a side | Astroturf7 a side | 3G Astroturf\nFacilities\n changing rooms free parking\n Address\n\nLow Hall Sports Ground\nSouth Access Road\nWalthamstow\nE17 8AX\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nCastlehaven Sports Pitch\nCamden Town\n\n 5 miles away\n\nMarkfield Park\nLondon\n\n 1.1 miles away\n\nO.R. Tambo Recreation Ground (formerly Albert Road Rec)\nHaringey\n\n 4.4 miles away\n\nMuswell Hill Playing Fields\nHaringey\n\n 5.3 miles away\n\nNorth Acton Playing Fields\nActon\n\n 10.6 miles away\n\n",
+ "name": "Low Hall Sports Ground",
+ "area": "Waltham Forest",
+ "address": "South Access Road, Walthamstow, Waltham Forest, E17 8AX",
+ "postcode": "E17 8AX",
+ "hours": {
+  "mon": [
+   [
+    "14:30",
+    "22:30"
+   ]
+  ],
+  "tue": [
+   [
+    "14:30",
+    "22:30"
+   ]
+  ],
+  "wed": [
+   [
+    "14:30",
+    "22:30"
+   ]
+  ],
+  "thu": [
+   [
+    "14:30",
+    "22:30"
+   ]
+  ],
+  "fri": [
+   [
+    "14:30",
+    "22:30"
+   ]
+  ],
+  "sat": [
+   [
+    "09:30",
+    "22:30"
+   ]
+  ],
+  "sun": [
+   [
+    "09:30",
+    "22:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 14:30 - 22:30",
+  "Tuesday 14:30 - 22:30",
+  "Wednesday 14:30 - 22:30",
+  "Thursday 14:30 - 22:30",
+  "Friday 14:30 - 22:30",
+  "Saturday 09:30 - 22:30",
+  "Sunday 09:30 - 22:30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": true,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": "3g",
+  "formats": [
+   9
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/low-hall-sports-ground/football-9-a-side-92580",
+   "label": "9 a side | Grass",
+   "format": 9,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/low-hall-sports-ground/football-9-a-side-32261",
+   "label": "9 a side | Astroturf",
+   "format": 9,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/low-hall-sports-ground/football-7-a-side-37580",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices"
+}

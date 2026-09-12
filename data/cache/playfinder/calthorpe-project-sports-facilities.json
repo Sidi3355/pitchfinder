@@ -1,0 +1,92 @@
+{
+ "url": "https://www.playfinder.com/london/venue/calthorpe-project-sports-facilities",
+ "finalUrl": "https://www.playfinder.com/london/venue/calthorpe-project-sports-facilities",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:08:07.827Z",
+ "title": "Calthorpe Community Garden, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCalthorpe Community Garden Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 258-274 Grays Inn Road, Camden, London, WC1X 8LH\n\nPrices\n\nBetween 09:00 - 17:30 - £40/hr whilst between 17.30 - 21.30 - £65/hr\n\nPublic Transport\n\n Kings Cross St Pancras\n\nOpening Hours\nMonday\t09:00 - 21:30\nTuesday\t09:00 - 21:30\nWednesday\t09:00 - 21:30\nThursday\t09:00 - 21:30\nFriday\t09:00 - 21:30\nSaturday\t11:00 - 19:00\nSunday\t12:00 - 21:00\nDescription\n\nLooking to hire a 5-a-side football pitch in Camden? Calthorpe Community Garden has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Calthorpe Community Garden is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Calthorpe Community Garden is the right choice for you.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Calthorpe Community Garden? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility. Changing facilities unavailable for evening bookings.\n\nThe closest station when travelling is Kings Cross. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n'An Inner City Oasis', the Calthorpe Community Garden is a beautiful open space maintained by the Calthorpe Community Garden charity.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights 6 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 3 miles away\n\nMallinson Sports Centre\nHighgate\n\n 3.7 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 13.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14 miles away\n\n",
+ "name": "Calthorpe Community Garden",
+ "area": "Camden",
+ "address": "258-274 Grays Inn Road, Camden, London, WC1X 8LH",
+ "postcode": "WC1X 8LH",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "21:30"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:30"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:30"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:30"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "21:30"
+   ]
+  ],
+  "sat": [
+   [
+    "11:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "12:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 21:30",
+  "Tuesday 09:00 - 21:30",
+  "Wednesday 09:00 - 21:30",
+  "Thursday 09:00 - 21:30",
+  "Friday 09:00 - 21:30",
+  "Saturday 11:00 - 19:00",
+  "Sunday 12:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/calthorpe-project-sports-facilities/football-5-a-side-32180",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Between 09:00 - 17:30 - £40/hr whilst between 17.30 - 21.30 - £65/hr"
+}

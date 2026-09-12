@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/camden-rhino-turf",
+ "finalUrl": "https://www.playfinder.com/london/venue/camden-rhino-turf",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:01:28.404Z",
+ "title": "Camden Rhino Turf, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCamden Rhino Turf Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Castlehaven Road, Camden, London, NW1 8RU\n\nPrices\n\nFrom £75.00-£84.00/hour\n\nPublic Transport\n\n Camden Town; Camden Road (Overground)\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t11:00 - 19:00\nSunday\t11:00 - 18:00\nDescription\n\nLooking to hire a 5-a-side football pitch in North West London? Camden Rhino Turf has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Camden Rhino Turf is played on astroturf.\n\nSo whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Camden Rhino Turf is the right choice for you.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Camden Rhino Turf? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe closest station when travelling is Camden Town. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitches\n5 a side | Astroturf9 a side | Astroturf\nFacilities\n floodlights changing rooms 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 2.2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 4.3 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 13.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 15.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 15.5 miles away\n\n",
+ "name": "Camden Rhino Turf",
+ "area": "Camden",
+ "address": "Castlehaven Road, Camden, London, NW1 8RU",
+ "postcode": "NW1 8RU",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "11:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "11:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 11:00 - 19:00",
+  "Sunday 11:00 - 18:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/camden-rhino-turf/football-5-a-side-33858",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/camden-rhino-turf/football-9-a-side-36034",
+   "label": "9 a side | Astroturf",
+   "format": 9,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £75.00-£84.00/hour"
+}

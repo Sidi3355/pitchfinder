@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/feel-good-too-sports-centre-ive-farm",
+ "finalUrl": "https://www.playfinder.com/london/venue/feel-good-too-sports-centre-ive-farm",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:34:28.871Z",
+ "title": "Feel Good Too (formerly Ive Farm Fields), Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFeel Good Too (formerly Ive Farm Fields)\nVolleyballFootballFutsalHockeySpace Hire\n Book Online at Feel Good Too (formerly Ive Farm Fields)\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 1 Pavilion Walk, Leyton, London, E10 5UE\n\nPrices\n\nPlease see calendar for availability and prices.\n\nPublic Transport\n\n Leyton\n\nOpening Hours\nMonday\t14:00 - 21:30\nTuesday\t14:00 - 21:30\nWednesday\t14:00 - 21:30\nThursday\t14:00 - 21:30\nFriday\t14:00 - 21:30\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nVolleyball in London is hugely popular and this is reflected with the volleyball facilities at Feel Good Too (formerly Ive Farm Fields), located in East London, which is a truly superb venue in which to enjoy the sport. The outdoor sand (beach) court is well-kept throughout the calendar year. Volleyball offers a substantial workout in terms of aerobic exercise and physical performance. Feel Good Too (formerly Ive Farm Fields) provides a platform to play, accommodating varying skill levels. League teams are also welcome to play here. The volleyball court markings at Feel Good Too (formerly Ive Farm Fields) are clearly visible and preserved by the team on site.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThe venue operates a pay and display parking system. Those keen on driving to the facility should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Feel Good Too (formerly Ive Farm Fields). This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you if you need assistance booking. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nThe closest station when travelling is Leyton. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Volleyball Court\nCourt | Sand (beach)\nFacilities\n floodlights changing rooms\n Address\n\nFeel Good Too (formerly Ive Farm Fields)\n1 Pavilion Walk\nLeyton\nE10 5UE\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Volleyball Courts\nCastlehaven Sports Pitch\nCamden Town\n\n 5.5 miles away\n\nMarlborough Sports Garden\nLondon\n\n 5.1 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 22.1 miles away\n\nThe Downside Settlement\nSouthwark\n\n 4.8 miles away\n\nWimbledon Park\nWimbledon\n\n 11.7 miles away\n\n",
+ "name": "Feel Good Too (formerly Ive Farm Fields)",
+ "area": "Waltham Forest",
+ "address": "1 Pavilion Walk, Leyton, London, E10 5UE",
+ "postcode": "E10 5UE",
+ "hours": {
+  "mon": [
+   [
+    "14:00",
+    "21:30"
+   ]
+  ],
+  "tue": [
+   [
+    "14:00",
+    "21:30"
+   ]
+  ],
+  "wed": [
+   [
+    "14:00",
+    "21:30"
+   ]
+  ],
+  "thu": [
+   [
+    "14:00",
+    "21:30"
+   ]
+  ],
+  "fri": [
+   [
+    "14:00",
+    "21:30"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 14:00 - 21:30",
+  "Tuesday 14:00 - 21:30",
+  "Wednesday 14:00 - 21:30",
+  "Thursday 14:00 - 21:30",
+  "Friday 14:00 - 21:30",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/feel-good-too-sports-centre-ive-farm/football-7-a-side-42130",
+   "label": "football",
+   "format": 7,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar for availability and prices.",
+ "skipped": "no artificial football pitch"
+}

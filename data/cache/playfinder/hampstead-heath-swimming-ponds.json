@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/hampstead-heath-swimming-ponds",
+ "finalUrl": "https://www.playfinder.com/london/venue/hampstead-heath-swimming-ponds",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:33:48.665Z",
+ "title": "Hampstead Heath Swimming Ponds, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHampstead Heath Swimming Ponds Non-Partner \nSwimming\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Hampstead Heath Swimming Ponds, Hampstead, London, NW3 1BP\n\nPrices\n\nAdult: £4.00 / 30 mins; Child (Under 16) £2.00 / 30 mins\n\nPublic Transport\n\n Hampstead Heath\n\nOpening Hours\nMonday\t07:00-20:30\nTuesday\t07:00-20:30\nWednesday\t07:00-20:30\nThursday\t07:00-20:30\nFriday\t07:00-20:30\nSaturday\t07:00-20:30\nSunday\t07:00-20:30\nDescription\n\nYes, you can go wild swimming in London. Yes, it’s freezing, it’s muddy and there are ducks.\n\nAnd it’s glorious.\n\nThe Ladies' Pond is on the Highgate side of the Heath. Lifeguarded and open year round, from 7am to between 2:15pm and 8:30pm:\n\nPeriod from\n27 January: 7am - 2.15pm\n24 March: 7am - 4.30pm\n15 April: 7am - 6.30pm\n6 May: 7am - 8.30pm\n19 August: 7am - 7.30pm\n28 August: 7am - 6.30pm\n24 September: 7am - 4.30pm\n28 October: 7am - 2.15pm\n2 December: 7.30am - 2.45pm\n\nBe aware that on hot weekends in the summer all the ponds get very busy. They’re best enjoyed on weekdays, or on cooler weekends, when you don’t have to queue with half of London.\n\n Swimming Pools\nOutdoor | LadiesOutdoor | MixedOutdoor | Mens\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n",
+ "name": "Hampstead Heath Swimming Ponds",
+ "area": "Camden",
+ "address": "Hampstead Heath Swimming Ponds, Hampstead, London, NW3 1BP",
+ "postcode": "NW3 1BP",
+ "hours": {
+  "mon": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ],
+  "tue": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ],
+  "wed": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ],
+  "thu": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ],
+  "fri": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ],
+  "sat": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ],
+  "sun": [
+   [
+    "07:00",
+    "20:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 07:00-20:30",
+  "Tuesday 07:00-20:30",
+  "Wednesday 07:00-20:30",
+  "Thursday 07:00-20:30",
+  "Friday 07:00-20:30",
+  "Saturday 07:00-20:30",
+  "Sunday 07:00-20:30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Adult: £4.00 / 30 mins; Child (Under 16) £2.00 / 30 mins",
+ "skipped": "no artificial football pitch"
+}

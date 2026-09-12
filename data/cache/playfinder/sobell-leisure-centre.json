@@ -1,0 +1,97 @@
+{
+ "url": "https://www.playfinder.com/london/venue/sobell-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/sobell-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:59:22.165Z",
+ "title": "Sobell Leisure Centre, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSobell Leisure Centre Non-Partner \nFootballVolleyballTable Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Hornsey Road, Upper Holloway, Islington, N7 7NY\n\nPrices\n\nFrom £72.15-£74.90/hour\n\nPublic Transport\n\n Finsbury Park\n\nOpening Hours\nMonday\t07:15-22:30\nTuesday\t07:15-22:30\nWednesday\t07:15-22:30\nThursday\t07:15-22:30\nFriday\t07:15-22:30\nSaturday\t09:00-18:00\nSunday\t09:00-21:30\nDescription\n\nLooking to hire a 5-a-side football pitch in North London? Sobell Leisure Centre has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Sobell Leisure Centre is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Sobell Leisure Centre is the right choice for you.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Sobell Leisure Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nThe venue is situated near Finsbury Park station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n5 a side | 3G Astroturf5 a side | Indoor\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 2.2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 5.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14.7 miles away\n\n",
+ "name": "Sobell Leisure Centre",
+ "area": "Islington",
+ "address": "Hornsey Road, Upper Holloway, Islington, N7 7NY",
+ "postcode": "N7 7NY",
+ "hours": {
+  "mon": [
+   [
+    "07:15",
+    "22:30"
+   ]
+  ],
+  "tue": [
+   [
+    "07:15",
+    "22:30"
+   ]
+  ],
+  "wed": [
+   [
+    "07:15",
+    "22:30"
+   ]
+  ],
+  "thu": [
+   [
+    "07:15",
+    "22:30"
+   ]
+  ],
+  "fri": [
+   [
+    "07:15",
+    "22:30"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "21:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 07:15-22:30",
+  "Tuesday 07:15-22:30",
+  "Wednesday 07:15-22:30",
+  "Thursday 07:15-22:30",
+  "Friday 07:15-22:30",
+  "Saturday 09:00-18:00",
+  "Sunday 09:00-21:30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/sobell-leisure-centre/football-5-a-side-33816",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/sobell-leisure-centre/football-5-a-side-33819",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  }
+ ],
+ "priceSummary": "From £72.15-£74.90/hour"
+}

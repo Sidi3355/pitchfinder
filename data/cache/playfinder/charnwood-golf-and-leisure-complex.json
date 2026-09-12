@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/charnwood-golf-and-leisure-complex",
+ "finalUrl": "https://www.playfinder.com/london/venue/charnwood-golf-and-leisure-complex",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:20:02.997Z",
+ "title": "Charnwood Golf and Leisure Complex, Luton | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCharnwood Golf and Leisure Complex\nFootballGolfRugby\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Derby Road, Loughborough, Loughborough, LE11 5AD\n\nPrices\n\nPeak £35\n\n5pm -10pm\n\nOff Peak £25\n\n10am - 5pm\n\nWeekends £25\n\nPublic Transport\n\n Derby Road\n\nOpening Hours\nMonday\t10:00-22:00\nTuesday\t10:00-22:00\nWednesday\t10:00-22:00\nThursday\t10:00-22:00\nFriday\t10:00-22:00\nSaturday\t10:00-22:00\nSunday\t10:00-22:00\nDescription\n\nCharnwood Golf and Leisure Complex near Loughborough have a number of fantastic facilities available to hire on both an ad hoc and block booking basis.\n\nThe venue houses two excellently maintained 3G Astroturf football pitches which are perfect for those looking to play 5 a side football. Bookings for the pitches can be made via the online calendar above, while block booking enquiries can be sent via the enquiry form on this page.\n\nThe venue also offers a range of top quality golfing facilities which include mini golf and a golf range for which those interested can enquire with the form on this page.\n\nFor any sportspeople looking to for refreshments after their game, or bring an additional social element to their game can make use of the on site sports bar. Whether your looking to run an event, play football, or brush up on your golf swing Charnwood Golf and Leisure Centre has what you need.\n\nThe venue is fully floodlit and has on site changing facilities and free parking for its customers.\n\nFootball Equipment Hire\n£2.00* for a Standard Football\n£4.00* for a Superior Football\n£5.00 *Per set of bibs\n*£5 per ball deposit required\n\n Football Pitches\n5 a side | 3G Astroturf5 a side | Astroturf\nFacilities\n floodlights changing rooms 5 a side\n Address\n\nCharnwood Golf and Leisure Complex\nDerby Road\nLoughborough\nLE11 5AD\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\nMAKE A BOOKING\n Nearby Football Pitches\nVision West Nottinghamshire College\nMansfield\n\n 23.4 miles away\n\nTupton Hall School\nChesterfield\n\n 28.4 miles away\n\nNetherthorpe School\nChesterfield\n\n 33.6 miles away\n\nRoe Lane Playing Fields\nStaffordshire\n\n 43.9 miles away\n\nPowerleague Coventry\nConventry\n\n 29.7 miles away\n\n",
+ "name": "Charnwood Golf and Leisure Complex",
+ "area": "Luton",
+ "address": "Derby Road, Loughborough, Loughborough, LE11 5AD",
+ "postcode": "LE11 5AD",
+ "hours": {
+  "mon": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 10:00-22:00",
+  "Tuesday 10:00-22:00",
+  "Wednesday 10:00-22:00",
+  "Thursday 10:00-22:00",
+  "Friday 10:00-22:00",
+  "Saturday 10:00-22:00",
+  "Sunday 10:00-22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": true,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/charnwood-golf-and-leisure-complex/football-5-a-side-35648",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/charnwood-golf-and-leisure-complex/football-5-a-side-35653",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Peak £35"
+}

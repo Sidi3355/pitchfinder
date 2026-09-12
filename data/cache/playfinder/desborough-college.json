@@ -1,0 +1,36 @@
+{
+ "url": "https://www.playfinder.com/london/venue/desborough-college",
+ "finalUrl": "https://www.playfinder.com/london/venue/desborough-college",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:18:06.119Z",
+ "title": "Desborough College, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nDesborough College Non-Partner \nRugbyCricketFootballTennisBadmintonBasketball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Desborough College, Shoppenhangers Road, Windsor and Maidenhead, SL6 2QB\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\n\nNot Specified\n\n Rugby Pitch\nUnion | Grass\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nDownhills Park\nHaringey\n\n 27.8 miles away\n\nTooting and Mitcham Community Sports Club\nMorden\n\n 25.4 miles away\n\nNew River Sport & Fitness\nHaringey\n\n 27.6 miles away\n\nNew River Sport & Fitness\nHaringey\n\n 27.6 miles away\n\n",
+ "name": "Desborough College",
+ "area": "Windsor and Maidenhead",
+ "address": "Desborough College, Shoppenhangers Road, Windsor and Maidenhead, SL6 2QB",
+ "postcode": "SL6 2QB",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/desborough-college/football-11-a-side-35548",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}

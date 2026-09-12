@@ -1,0 +1,106 @@
+{
+ "url": "https://www.playfinder.com/london/venue/sylvestrian-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/sylvestrian-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:09:34.119Z",
+ "title": "Sylvestrian Leisure Centre, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSylvestrian Leisure Centre Non-Partner \nFootballNetballGymCricketTennisBasketballBadmintonSpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n College Place, Snaresbrook, Waltham Forest, E17 3PY\n\nPrices\n\nAround £40.00/hour\n\nPublic Transport\n\n Snaresbrook\n\nOpening Hours\nMonday\t07.00-22.00\nTuesday\t07.00-22.00\nWednesday\t07.00-22.00\nThursday\t07.00-22.00\nFriday\t07.00-22.00\nSaturday\t08.00-18.00\nSunday\t09.00-18.00\nDescription\n\n5-a-side football can be played at Sylvestrian Leisure Centre. It is one of the finest sports facilities in North East London and it is the place to be if you’re looking for a 5-a-side football pitch. One of the best activities that sports fans are able to enjoy here is 5-a-side football on the immaculate indoor surface. Five-a-side football remains one of the most prevalent sporting activities in London and the staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round. If public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nLooking to set up regular games at Sylvestrian Leisure Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time. The venue is situated near Snaresbrook  station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n5 a side | Indoor5 a side | Astroturf7 a side | Astroturf\nFacilities\n floodlights changing rooms free parking 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 7.2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 8.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 11.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 11.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 11.7 miles away\n\n",
+ "name": "Sylvestrian Leisure Centre",
+ "area": "Waltham Forest",
+ "address": "College Place, Snaresbrook, Waltham Forest, E17 3PY",
+ "postcode": "E17 3PY",
+ "hours": {
+  "mon": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "07:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 07.00-22.00",
+  "Tuesday 07.00-22.00",
+  "Wednesday 07.00-22.00",
+  "Thursday 07.00-22.00",
+  "Friday 07.00-22.00",
+  "Saturday 08.00-18.00",
+  "Sunday 09.00-18.00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/sylvestrian-leisure-centre/football-5-a-side-32322",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/sylvestrian-leisure-centre/football-5-a-side-34329",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/sylvestrian-leisure-centre/football-7-a-side-36083",
+   "label": "7 a side | Astroturf",
+   "format": 7,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Around £40.00/hour"
+}

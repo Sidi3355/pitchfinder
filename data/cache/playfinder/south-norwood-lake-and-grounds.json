@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/south-norwood-lake-and-grounds",
+ "finalUrl": "https://www.playfinder.com/london/venue/south-norwood-lake-and-grounds",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:07:12.843Z",
+ "title": "South Norwood Lake and Grounds, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSouth Norwood Lake and Grounds Non-Partner \nFootballTennisCricket\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n South Norwood Lake and Grounds, Auckland Road, Woodvale Avenue, South Norwood, Croydon, SE25 4AN\n\nPrices\n\nPublic Transport\n\n Anerly (train / Overground)\n\nOpening Hours\n\n08.00 - Dusk\n\nDescription\n\nSouth Norwood Lake and Grounds, which is based in Croydon, has 3 Football facilities, which are Grass. This facility is pay as you play.\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 9 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 2.9 miles away\n\nBeaumont School\nHertfordshire\n\n 26 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 10.5 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 11.1 miles away\n\n",
+ "name": "South Norwood Lake and Grounds",
+ "area": "Croydon",
+ "address": "South Norwood Lake and Grounds, Auckland Road, Woodvale Avenue, South Norwood, Croydon, SE25 4AN",
+ "postcode": "SE25 4AN",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/south-norwood-lake-and-grounds/football-11-a-side-32116",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

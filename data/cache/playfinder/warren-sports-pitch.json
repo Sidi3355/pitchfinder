@@ -1,0 +1,92 @@
+{
+ "url": "https://www.playfinder.com/london/venue/warren-sports-pitch",
+ "finalUrl": "https://www.playfinder.com/london/venue/warren-sports-pitch",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:59:32.346Z",
+ "title": "Warren Sports Pitch, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWarren Sports Pitch Non-Partner \nFootballRugby\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Whitfield Place, Fitzrovia, Camden, W1T 5NZ\n\nPrices\n\nFrom £45.00-£85.00/hour\n\nPublic Transport\n\n Warren Street\n\nOpening Hours\nMonday\t09:00 - 21:00\nTuesday\t09:00 - 21:00\nWednesday\t09:00 - 21:00\nThursday\t09:00 - 21:00\nFriday\t09:00 - 21:00\nSaturday\t10:00 - 14:00\nSunday\t10:00 - 14:00\nDescription\n\n*PLEASE NOTE THAT METAL STUDS WILL NOT BE ALLOWED ON THE PITCH*\n\nA variety of sports can be played at the Warren Sports Pitch with the main one being 5-a-side football. The Warren Sports Pitch is one of the finest and best located sports facilities in Central London and it is the place to be if you’re looking for a 5-a-side football pitch, Tag Rugby or an outside exercise area to hire for Bootcamps, Circuit Training, Kid Parties and SAQs.\n\nFive-a-side football remains one of the most popular activities played at Warren Sports Pitch and the staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends. The Warren Sports Pitch benefits from high quality floodlights which means the facility is perfect for those who love to play sport after work.\n\nParking is available on the surrounding streets with parking meters close by. Those keen on driving to the facility should remember to bring change for the machines.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make advance bookings at Warren Sports Pitch dependent on availability.\n\nThe very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative.\n\nThe closest station when travelling is Warren Street. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights 5 a side 6 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 3 miles away\n\nMallinson Sports Centre\nHighgate\n\n 3.6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 12.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14.8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 14.8 miles away\n\n",
+ "name": "Warren Sports Pitch",
+ "area": "Camden",
+ "address": "Whitfield Place, Fitzrovia, Camden, W1T 5NZ",
+ "postcode": "W1T 5NZ",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "14:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "14:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 21:00",
+  "Tuesday 09:00 - 21:00",
+  "Wednesday 09:00 - 21:00",
+  "Thursday 09:00 - 21:00",
+  "Friday 09:00 - 21:00",
+  "Saturday 10:00 - 14:00",
+  "Sunday 10:00 - 14:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/warren-sports-pitch/football-5-a-side-34522",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £45.00-£85.00/hour"
+}

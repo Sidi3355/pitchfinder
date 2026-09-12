@@ -1,0 +1,111 @@
+{
+ "url": "https://www.playfinder.com/london/venue/new-river-sport-fitness",
+ "finalUrl": "https://www.playfinder.com/london/venue/new-river-sport-fitness",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:03:34.273Z",
+ "title": "New River Sport & Fitness, Haringey | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nNew River Sport & Fitness\nFootballRugbyAthleticsTennis\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n White Hart Lane, Wood Green, Haringey, N22 5QW\n\nPrices\n\nFrom £18.29-£35.00/hour\n\nPublic Transport\n\n Wood Green\n\nOpening Hours\nMonday\t06:00-22:00\nTuesday\t06:00-22:00\nWednesday\t06:00-22:00\nThursday\t06:00-22:00\nFriday\t06:00-22:00\nSaturday\t08:00-20:00\nSunday\t08:00-20:00\nDescription\n\nLooking to hire a 5-a-side football pitch in North London? New River Sport and Fitness has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at New River Sport and Fitness is played on 3g-astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, New River Sport and Fitness is the right choice for you.\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at New River Sport and Fitness? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after. The closest station when travelling is Wood Green. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitches\n5 a side | 3G Astroturf11 a side | 3G Astroturf7 a side | 3G Astroturf\nFacilities\n floodlights changing rooms 5 a side 6 a side 7 a side\n Address\n\nNew River Sport & Fitness\nWhite Hart Lane\nWood Green\nN22 5QW\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Football Pitches\nMallinson Sports Centre\nHighgate\n\n 3.3 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 8.3 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16 miles away\n\n",
+ "name": "New River Sport & Fitness",
+ "area": "Haringey",
+ "address": "White Hart Lane, Wood Green, Haringey, N22 5QW",
+ "postcode": "N22 5QW",
+ "hours": {
+  "mon": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 06:00-22:00",
+  "Tuesday 06:00-22:00",
+  "Wednesday 06:00-22:00",
+  "Thursday 06:00-22:00",
+  "Friday 06:00-22:00",
+  "Saturday 08:00-20:00",
+  "Sunday 08:00-20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/new-river-sport-fitness/football-5-a-side-34315",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/new-river-sport-fitness/football-11-a-side-34317",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/new-river-sport-fitness/football-7-a-side-36067",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £18.29-£35.00/hour"
+}

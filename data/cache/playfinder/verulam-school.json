@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/verulam-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/verulam-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:17:54.335Z",
+ "title": "Verulam School, St Albans | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nVerulam School Non-Partner \nFootballCricketRugby\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Brampton Road, St Albans, St Albans, AL1 4PR\n\nPrices\n\n(not specified)\n\nPublic Transport\n\n Bus Stop Harlesdon Road\n\nOpening Hours\n\n8:30am–5pm\n\n Football Pitch\n11 a side | Grass\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 27.2 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 29 miles away\n\nBeaumont School\nHertfordshire\n\n 0.7 miles away\n\nBull Lane Playing Fields\nLondon\n\n 14.4 miles away\n\nNorth Acton Playing Fields\nActon\n\n 16.4 miles away\n\n",
+ "name": "Verulam School",
+ "area": "St Albans",
+ "address": "Brampton Road, St Albans, St Albans, AL1 4PR",
+ "postcode": "AL1 4PR",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/verulam-school/football-11-a-side-35277",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "(not specified)",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/paradise-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/paradise-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:59:10.560Z",
+ "title": "Paradise Park, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nParadise Park Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 164, Mackenzie Road, Islington, N7 8SE\n\nPrices\n\nFrom £41.30-£42.75/hour\n\nPublic Transport\n\n Caledonian Road\n\nOpening Hours\nMonday\t08.00-22.00\nTuesday\t08.00-22.00\nWednesday\t08.00-22.00\nThursday\t08.00-22.00\nFriday\t08.00-22.00\nSaturday\t08.00-18.00\nSunday\t08.00-20.00\nDescription\n\nParadise Park is located in North London and boasts an incredible 7-a-side 3G astroturf pitch. Not many 7-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 7-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nThe venue operates a pay and display parking system. Those keen on driving to the facility should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Paradise Park. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Caledonian Road. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n7 a side | 3G Astroturf\nFacilities\n floodlights free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHaberdasher's Crayford Academy\nKent\n\n 14.4 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 14.6 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 13 miles away\n\nMarkfield Park\nLondon\n\n 3 miles away\n\nO.R. Tambo Recreation Ground (formerly Albert Road Rec)\nHaringey\n\n 3.8 miles away\n\n",
+ "name": "Paradise Park",
+ "area": "Islington",
+ "address": "164, Mackenzie Road, Islington, N7 8SE",
+ "postcode": "N7 8SE",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08.00-22.00",
+  "Tuesday 08.00-22.00",
+  "Wednesday 08.00-22.00",
+  "Thursday 08.00-22.00",
+  "Friday 08.00-22.00",
+  "Saturday 08.00-18.00",
+  "Sunday 08.00-20.00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/paradise-park/football-7-a-side-33589",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £41.30-£42.75/hour"
+}

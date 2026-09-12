@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/ainslie-wood-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/ainslie-wood-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:24:55.339Z",
+ "title": "Ainslie Wood Sports Ground, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAinslie Wood Sports Ground\nFootball\n Book Online at Ainslie Wood Sports Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 125 Ainslie Wood Rd, Chingford, London, E4 9EE\n\nPrices\n\nWeekday £75.00\n\nWeekend £90.00\n\nBlock Booking £415.00 - £638.00\n\nPrice varies depending on day.\n\nPublic Transport\n\n Highams Park\n\nOpening Hours\nMonday\t09:00 - 16:00\nTuesday\t09:00 - 16:00\nWednesday\t09:00 - 16:00\nThursday\t09:00 - 16:00\nFriday\t09:00 - 16:00\nSaturday\t09:00 - 16:00\nSunday\t09:00 - 16:00\nDescription\n\nAinslie Wood Sports Ground in east London, boasts an amazing 11-a-side grass pitch. The staff at Ainslie Wood Sports Ground really care for and maintain this pitch to a high standard. This venue is also the perfect place for an 11-a-side league in east London as matches would be played on grass. So, whether you're an experienced 11-a-side team or you're just getting into the game, this facility is definitely worth checking out. Footballs and other equipment might be supplied by the facility for a small fee but we advise that you call the facility after your booking has been confirmed to check before your arrival.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Ainslie Wood Sports Ground? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nThe closest station when travelling is Highams Park. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms\n Address\n\nAinslie Wood Sports Ground\n125 Ainslie Wood Rd\nChingford\nE4 9EE\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 20.6 miles away\n\nBull Lane Playing Fields\nLondon\n\n 2.9 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 3.5 miles away\n\nNorth Acton Playing Fields\nActon\n\n 12.9 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 13.1 miles away\n\n",
+ "name": "Ainslie Wood Sports Ground",
+ "area": "Waltham Forest",
+ "address": "125 Ainslie Wood Rd, Chingford, London, E4 9EE",
+ "postcode": "E4 9EE",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 16:00",
+  "Tuesday 09:00 - 16:00",
+  "Wednesday 09:00 - 16:00",
+  "Thursday 09:00 - 16:00",
+  "Friday 09:00 - 16:00",
+  "Saturday 09:00 - 16:00",
+  "Sunday 09:00 - 16:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/ainslie-wood-sports-ground/football-11-a-side-37571",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Weekday £75.00",
+ "skipped": "no artificial football pitch"
+}

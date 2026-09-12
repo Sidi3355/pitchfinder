@@ -1,0 +1,81 @@
+{
+ "url": "https://www.playfinder.com/london/venue/bluehut-youth-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/bluehut-youth-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:22:50.411Z",
+ "title": "Blue Hut Youth and Community Centre, Hackney | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBlue Hut Youth and Community Centre\nSpace HireFootball\n Book Online at Blue Hut Youth and Community Centre\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 49 Provost Street, London, London, N1 7NZ\n\nPrices\n\nPlease check calendar above for availability and prices.\n\nPublic Transport\n\n Old Street or Hoxton\n\nOpening Hours\n\nMon - Sun: 10:00 - 22:00. Free Parking after 18:30\n\nDescription\n\nFlip chart and marker pens, 32-inch plasma TV, 60-inch interactive monitor (laptop compatible for presentation purposes) and Desks and seating.\n\nIf you’re looking for space to hire in central London then you’ve come to the right place. The main hall at Blue Hut Youth and Community Centre is ideal for a wide range of occasions including activities and events. The main hall is able to hold a good number of people, but it’s worth checking in with the venue before booking to ensure the maximum number isn’t surpassed to affect health and safety. For those people looking to hold a regular event it’s a good idea to explore the option of a block booking to guarantee a weekly spot to avoid disappointments.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-use booking system. This method avoids the monthly membership charges and gives you the freedom to use the facility as and when you like.\n\nFor those who like the security of knowing you can use the facility at the same time every week without fail, you can make a block booking at Blue Hut Youth and Community Centre. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe closest station when travelling is Old Street or Hoxton. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Space Hire\nMain hallKitchenGymStudio\nFacilities\n free parking\n Address\n\nBlue Hut Youth and Community Centre\n49 Provost Street\nLondon\nN1 7NZ\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Space Hire\nLondon Tigers Sports Complex\nEaling\n\n 12.5 miles away\n\nWallington County Grammar School\nWallington\n\n 11.4 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 11.5 miles away\n\nCopthall School\nLondon\n\n 8.1 miles away\n\nStanley Primary School\nLondon\n\n 12.9 miles away\n\n",
+ "name": "Blue Hut Youth and Community Centre",
+ "area": "Hackney",
+ "address": "49 Provost Street, London, London, N1 7NZ",
+ "postcode": "N1 7NZ",
+ "hours": {
+  "mon": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Mon - Sun: 10:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/bluehut-youth-centre/football-5-a-side-36875",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please check calendar above for availability and prices.",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,82 @@
+{
+ "url": "https://www.playfinder.com/london/venue/canons-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/canons-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:21:05.807Z",
+ "title": "Canons Leisure Centre, Merton | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCanons Leisure Centre Non-Partner \nGymSwimmingBadmintonBasketballFootballSquash\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Canons Leisure Centre, Madeira Road, Mitcham, CR4 4HD\n\nPrices\n\nPublic Transport\n\n Mitcham Junction (rail station)\n\nOpening Hours\n\nWeekdays: 06:30 - 22:00, Weekends: 08:00 - 19:00\n\n Gym\nGym\nMAKE A BOOKING\n",
+ "name": "Canons Leisure Centre",
+ "area": "Merton",
+ "address": "Canons Leisure Centre, Madeira Road, Mitcham, CR4 4HD",
+ "postcode": "CR4 4HD",
+ "hours": {
+  "mon": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "19:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Weekdays: 06:30 - 22:00",
+  "Weekends: 08:00 - 19:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/canons-leisure-centre/football-5-a-side-35793",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

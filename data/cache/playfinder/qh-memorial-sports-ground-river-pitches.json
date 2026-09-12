@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/qh-memorial-sports-ground-river-pitches",
+ "finalUrl": "https://www.playfinder.com/london/venue/qh-memorial-sports-ground-river-pitches",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:35:17.364Z",
+ "title": "QH Memorial Sports Ground - River Pitches, Chiswick | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nQH Memorial Sports Ground - River Pitches\nFootballRugby\n Book Online at QH Memorial Sports Ground - River Pitches\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n The Hogg Pavilion, River Gate - Memorial Sports Ground, 1 Quintin Lane, London, W4 3UJ\n\nPrices\n\nPlease check calendar above for availability and price.\n\nPublic Transport\n\n Chiswick Train Station and Mortlake Train Station\n\nOpening Hours\nMonday\t13:00 - 21:30\nTuesday\t13:00 - 21:30\nWednesday\t13:00 - 21:30\nThursday\t13:00 - 21:30\nFriday\t13:00 - 21:30\nSaturday\t08:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nBook the 7-a-side football pitch (R2 Pitch) at QH Memorial Sports Ground - River Pitches if you're looking for an excellent pitch and live or work in west London. This venue has sensational footballing facilities, so whether you like to play 7-a-side football casually or you're part of a team or league, QH Memorial Sports Ground - River Pitches is ideal for you. Everyone has their favourite surface for playing 7-a-side football on and this pitch is 3G astroturf.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThe venue operates a pay and display parking system. Payment is made using the RingGo app. With over 100 parking spaces, including accessible, electrical vehicle and motorcycle parking, there is ample parking available.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member.\n\nLooking to set up regular games at QH Memorial Sports Ground - River Pitches? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Chiswick Train Station and Mortlake Train Station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n7 a side | 3G Astroturf11 a side | 3G Astroturf\nFacilities\n floodlights\n Address\n\nQH Memorial Sports Ground - River Pitches\nThe Hogg Pavilion, River Gate - Memorial Sports Ground\n1 Quintin Lane\nW4 3UJ\n\n\nVIEW ON MAP\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 7.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 19.7 miles away\n\nNorth Acton Playing Fields\nActon\n\n 3.1 miles away\n\nPerivale Park\nEaling\n\n 4.9 miles away\n\nBeavers Lodge\nHounslow\n\n 5.7 miles away\n\n",
+ "name": "QH Memorial Sports Ground - River Pitches",
+ "area": "Chiswick",
+ "address": "The Hogg Pavilion, River Gate - Memorial Sports Ground, 1 Quintin Lane, London, W4 3UJ",
+ "postcode": "W4 3UJ",
+ "hours": {
+  "mon": [
+   [
+    "13:00",
+    "21:30"
+   ]
+  ],
+  "tue": [
+   [
+    "13:00",
+    "21:30"
+   ]
+  ],
+  "wed": [
+   [
+    "13:00",
+    "21:30"
+   ]
+  ],
+  "thu": [
+   [
+    "13:00",
+    "21:30"
+   ]
+  ],
+  "fri": [
+   [
+    "13:00",
+    "21:30"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 13:00 - 21:30",
+  "Tuesday 13:00 - 21:30",
+  "Wednesday 13:00 - 21:30",
+  "Thursday 13:00 - 21:30",
+  "Friday 13:00 - 21:30",
+  "Saturday 08:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/qh-memorial-sports-ground-river-pitches/football-7-a-side-43161",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/qh-memorial-sports-ground-river-pitches/football-11-a-side-43163",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please check calendar above for availability and price."
+}

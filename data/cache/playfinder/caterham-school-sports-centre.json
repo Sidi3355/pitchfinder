@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/caterham-school-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/caterham-school-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:31:03.217Z",
+ "title": "Caterham School Sports Centre, Surrey | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCaterham School Sports Centre Non-Partner \nSpace HireFootballBadmintonBasketballHockeyNetballFutsalCricket\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Harestone Valley Road, Caterham, Surrey, CR3 6YA\n\nPrices\n\n£30.00 per hour\n\nPublic Transport\n\n Caterham\n\nOpening Hours\nMonday\t18:00 - 21:00\nTuesday\t18:00 - 21:00\nWednesday\t18:00 - 21:00\nThursday\t18:00 - 21:00\nFriday\t18:00 - 21:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nThe multi-use, fully air-conditioned function room at Caterham School Sports Centre is an open plan room with a servery and covered external balcony commanding an impressive panoramic view of the school and grounds. It is ideally suited to accommodate almost any activity ranging from children’s parties, small meetings, aerobics classes and martial arts.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nThe venue is open to the public to come and book on a one-off basis. Their pay as you go system means that you can book now without being a member. This gives you the freedom to make a one-off booking without having to pay a monthly membership fee.\n\nIf a one-off booking isn't enough, then why not take advantage of the block booking option at Caterham School Sports Centre? Block bookings are a great way to guarantee a weekly booking. It also takes the hassle out of paying before each session as there is a one-time payment.\n\nThe venue has well maintained changing facilities to use when you book, and is situated near Caterham station.\n\n Space Hire\nFunction roomSports hall\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHarris Institute of Teaching and Leadership\nBeckenham\n\n 10.2 miles away\n\nThe Chalfonts Community College\nGerrards Cross\n\n 31.2 miles away\n\nDanbury Leisure Centre\nEssex\n\n 42.1 miles away\n\n",
+ "name": "Caterham School Sports Centre",
+ "area": "Surrey",
+ "address": "Harestone Valley Road, Caterham, Surrey, CR3 6YA",
+ "postcode": "CR3 6YA",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 21:00",
+  "Tuesday 18:00 - 21:00",
+  "Wednesday 18:00 - 21:00",
+  "Thursday 18:00 - 21:00",
+  "Friday 18:00 - 21:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/caterham-school-sports-centre/football-11-a-side-40637",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "£30.00 per hour",
+ "skipped": "no artificial football pitch"
+}

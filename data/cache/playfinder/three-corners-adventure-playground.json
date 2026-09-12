@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/three-corners-adventure-playground",
+ "finalUrl": "https://www.playfinder.com/london/venue/three-corners-adventure-playground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:16:26.669Z",
+ "title": "Three Corners Adventure Playground, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nThree Corners Adventure Playground\nFootball\n Book Online at Three Corners Adventure Playground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Corporation Row, Islington, Islington, EC1R 0ND\n\nPrices\n\nFrom £30.00-£60.42/hour\n\nPublic Transport\n\n Angel; Farringdon (National Rail)\n\nOpening Hours\nMonday\t09:00 - 21:00\nTuesday\t09:00 - 21:00\nWednesday\t09:00 - 21:00\nThursday\t09:00 - 21:00\nFriday\t09:00 - 21:00\nSaturday\t09:00 - 19:00\nSunday\t09:00 - 19:00\nDescription\n\nLooking to hire a 5-a-side football pitch in central London? Three Corners Adventure Playground is the perfect pitch for lovers of the small-sided version of the beautiful game. 5-a-side football at Three Corners Adventure Playground is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Three Corners Adventure Playground is the right choice for you.\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Three Corners Adventure Playground. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you with any booking questions you may have. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nIf you're looking to travel using public transport, then the nearest station is Angel. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n**Getting to the venue**\n\nIf you use Google Maps or sat nav to travel to the venue, please be sure to enter 'Corporation Row, London, EC1R' to be taken to the pitch entrance.\n\nEnter the pitch to the left of the Playfinder banner and walk down the stairs on your right. The changing rooms will then be on your left and the gate to the pitch is slightly further along also on your left.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\n Address\n\nThree Corners Adventure Playground\nCorporation Row\nIslington\nEC1R 0ND\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nHenry Fawcett Primary School\nLondon\n\n 2.9 miles away\n\nMallinson Sports Centre\nHighgate\n\n 4.1 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 13.3 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.5 miles away\n\n",
+ "name": "Three Corners Adventure Playground",
+ "area": "Islington",
+ "address": "Corporation Row, Islington, Islington, EC1R 0ND",
+ "postcode": "EC1R 0ND",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 21:00",
+  "Tuesday 09:00 - 21:00",
+  "Wednesday 09:00 - 21:00",
+  "Thursday 09:00 - 21:00",
+  "Friday 09:00 - 21:00",
+  "Saturday 09:00 - 19:00",
+  "Sunday 09:00 - 19:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/three-corners-adventure-playground/football-5-a-side-34933",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £30.00-£60.42/hour"
+}

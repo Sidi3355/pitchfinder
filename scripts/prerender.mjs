@@ -103,7 +103,7 @@ const data = JSON.parse(readFileSync(join(ROOT, 'public/data/pitches.json'), 'ut
 mkdirSync(join(DIST, 'p'), { recursive: true })
 let n = 0
 for (const pitch of data.pitches) {
-  if (!/^[a-z0-9-]{1,40}$/i.test(pitch.id)) continue
+  if (!/^[a-z0-9-]{1,64}$/i.test(pitch.id)) continue
   writeFileSync(join(DIST, 'p', `${pitch.id}.html`), render(template, pitch))
   n++
 }
@@ -123,7 +123,7 @@ writeFileSync(
   JSON.stringify({ ...meta, pitches: pitches.map(compactPitch) }),
 )
 for (const pitch of pitches) {
-  if (!/^[a-z0-9-]{1,40}$/i.test(pitch.id)) continue
+  if (!/^[a-z0-9-]{1,64}$/i.test(pitch.id)) continue
   writeFileSync(join(DIST, 'data', 'p', `${pitch.id}.json`), JSON.stringify(pitch))
 }
 console.log(

@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/princes-park-youth-football-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/princes-park-youth-football-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:04:47.840Z",
+ "title": "Princes Park Youth Football Club, Brent | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nPrinces Park Youth Football Club\nFootball\n Book Online at Princes Park Youth Football Club\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Woodfield Park, Cool Oak Lane, West Hendon, London, NW9 7ND\n\nPrices\n\nPlease see calendar above for availability and prices.\n\nPublic Transport\n\n Hendon Overground\n\nOpening Hours\nMonday\t08:00 - 23:00\nTuesday\t08:00 - 23:00\nWednesday\t08:00 - 23:00\nThursday\t08:00 - 23:00\nFriday\t08:00 - 23:00\nSaturday\t15:00 - 23:00\nSunday\t15:00 - 23:00\nDescription\n\nIf you are looking to place a booking before 20:00 hrs, please contact the venue.\n\nPlease note that the facility is NOT open so there is no access to toilets or changing rooms.\n\nLooking to hire a 7-a-side football pitch in London? Princes Park Youth Football Club has the perfect facilities for lovers of the small-sided version of the beautiful game. 7-a-side football at Princes Park Youth Football Club is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 7-a-side football machine, Princes Park Youth Football Club is the right choice for you.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Princes Park Youth Football Club. This ensures you stay in the game and keep up your fitness on a regular basis. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe closest station when travelling is Hendon Overground. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n7 a side | 3G Astroturf\nFacilities\n floodlights free parking\n Address\n\nPrinces Park Youth Football Club\nWoodfield Park\nCool Oak Lane, West Hendon\nNW9 7ND\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 14.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 20.4 miles away\n\nNorth Acton Playing Fields\nActon\n\n 3.9 miles away\n\nMuswell Hill Playing Fields\nHaringey\n\n 4.2 miles away\n\nPerivale Park\nEaling\n\n 5.3 miles away\n\n",
+ "name": "Princes Park Youth Football Club",
+ "area": "Brent",
+ "address": "Woodfield Park, Cool Oak Lane, West Hendon, London, NW9 7ND",
+ "postcode": "NW9 7ND",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ],
+  "sat": [
+   [
+    "15:00",
+    "23:00"
+   ]
+  ],
+  "sun": [
+   [
+    "15:00",
+    "23:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00 - 23:00",
+  "Tuesday 08:00 - 23:00",
+  "Wednesday 08:00 - 23:00",
+  "Thursday 08:00 - 23:00",
+  "Friday 08:00 - 23:00",
+  "Saturday 15:00 - 23:00",
+  "Sunday 15:00 - 23:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/princes-park-youth-football-club/football-7-a-side-42759",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices."
+}

@@ -1,0 +1,29 @@
+{
+ "url": "https://www.playfinder.com/london/venue/weybridge-padel-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/weybridge-padel-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:32:45.648Z",
+ "title": "Weybridge Padel Club, Surrey | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWeybridge Padel Club Non-Partner \nPadel Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Bannatyne Spa, Walton Lane, Weybridge, KT13 8QA\n\nPrices\n\nPublic Transport\n\n Addlestone\n\n Padel Tennis Court\nOutdoor court | Sand-based Astroturf\nFacilities\n changing rooms\nMAKE A BOOKING\n",
+ "name": "Weybridge Padel Club",
+ "area": "Surrey",
+ "address": "Bannatyne Spa, Walton Lane, Weybridge, KT13 8QA",
+ "postcode": "KT13 8QA",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,50 @@
+{
+ "url": "https://www.playfinder.com/london/venue/churchfields-recreation-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/churchfields-recreation-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:41:17.313Z",
+ "title": "Churchfields Recreation Ground, Kingston upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nChurchfields Recreation Ground\nFootball\n Book Online at Churchfields Recreation Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Churchfields Recreation Ground, Compton Crescent & Church Rise, Chessington, KT9 2HD\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Church Lane (P), 4 min walk\n\nDescription\n\nBook the 9-a-side football pitch at Churchfields Recreation Ground if you're looking for an excellent pitch and live or work in New Malden. This venue has sensational footballing facilities, so whether you like to play 9-a-side football casually or you're part of a team or league, Churchfields Recreation Ground is ideal for you. Everyone has their favourite surface for playing 9-a-side football on and this pitch is grass.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Churchfields Recreation Ground? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated a 4 minute walk from Church Lane (P) bus stop.\n\n Football Pitches\n9 a side pitch | Grass7 a side pitch | Grass11 a side pitch | Grass\nFacilities\n changing rooms free parking\n Address\n\nChurchfields Recreation Ground\nChurchfields Recreation Ground\nCompton Crescent & Church Rise\nKT9 2HD\n\n\nVIEW ON MAP\n Nearby Football Pitches\nBull Lane Playing Fields\nLondon\n\n 19.8 miles away\n\nKing Georges Playing Field\nChessington\n\n 1.1 miles away\n\nLatchmere Recreation Ground\nKingston upon Thames\n\n 4.4 miles away\n\nSheen Way Playing Field\nWallington\n\n 7.6 miles away\n\nLoreto College\nSt Albans\n\n 27.1 miles away\n\n",
+ "name": "Churchfields Recreation Ground",
+ "area": "Kingston upon Thames",
+ "address": "Churchfields Recreation Ground, Compton Crescent & Church Rise, Chessington, KT9 2HD",
+ "postcode": "KT9 2HD",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   9
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/churchfields-recreation-ground/football-9-a-side-pitch-93314",
+   "label": "9 a side pitch | Grass",
+   "format": 9,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/churchfields-recreation-ground/football-7-a-side-pitch-93313",
+   "label": "7 a side pitch | Grass",
+   "format": 7,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/churchfields-recreation-ground/football-11-a-side-pitch-93312",
+   "label": "11 a side pitch | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/reach-academy-feltham",
+ "finalUrl": "https://www.playfinder.com/london/venue/reach-academy-feltham",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:26:03.147Z",
+ "title": "Reach Academy Feltham, Hounslow | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nReach Academy Feltham Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 53-55 High Street, Feltham, London, TW13 4AB\n\nPrices\n\nFrom £30.00-£40.00/hour\n\nPublic Transport\n\n Feltham\n\nOpening Hours\nMonday\t18:00-22:00\nTuesday\t18:00-22:00\nWednesday\t18:00-22:00\nThursday\t18:00-22:00\nFriday\t18:00-21:00\nSaturday\t10:00-16:00\nSunday\t10:00-16:00\nDescription\n\nLooking to hire this amazing rooftop 5-a-side football pitch in South West London?\n\nReach Academy Feltham has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Reach Academy Feltham is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Reach Academy Feltham is the right choice for you.\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Reach Academy Feltham. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe closest station when travelling is Feltham. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 8.2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 13.3 miles away\n\nMallinson Sports Centre\nHighgate\n\n 14.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 25.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 25.9 miles away\n\n",
+ "name": "Reach Academy Feltham",
+ "area": "Hounslow",
+ "address": "53-55 High Street, Feltham, London, TW13 4AB",
+ "postcode": "TW13 4AB",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "16:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00-22:00",
+  "Tuesday 18:00-22:00",
+  "Wednesday 18:00-22:00",
+  "Thursday 18:00-22:00",
+  "Friday 18:00-21:00",
+  "Saturday 10:00-16:00",
+  "Sunday 10:00-16:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/reach-academy-feltham/football-5-a-side-37623",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £30.00-£40.00/hour"
+}

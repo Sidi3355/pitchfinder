@@ -1,0 +1,36 @@
+{
+ "url": "https://www.playfinder.com/london/venue/newlands-girl-s-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/newlands-girl-s-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:19:23.206Z",
+ "title": "Newlands Girl's School, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nNewlands Girl's School Non-Partner \nGymSwimmingBadmintonNetballFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Newlands Girl's School, Farm Road, Windsor and Maidenhead, SL6 5JB\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Maidenhead (Or Furze Platt)\n\nOpening Hours\n\nOut of School Hours\n\n Gym\nIndoor\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 13.4 miles away\n\n",
+ "name": "Newlands Girl's School",
+ "area": "Windsor and Maidenhead",
+ "address": "Newlands Girl's School, Farm Road, Windsor and Maidenhead, SL6 5JB",
+ "postcode": "SL6 5JB",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/newlands-girl-s-school/football-5-a-side-35605",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}

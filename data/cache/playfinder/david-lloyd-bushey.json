@@ -1,0 +1,29 @@
+{
+ "url": "https://www.playfinder.com/london/venue/david-lloyd-bushey",
+ "finalUrl": "https://www.playfinder.com/london/venue/david-lloyd-bushey",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:05:13.533Z",
+ "title": "David Lloyd Bushey, Hertfordshire | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nDavid Lloyd Bushey Non-Partner \nPadel Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Hartspring Lane, Bushey, Watford, WD23 2DL\n\nPrices\n\nPublic Transport\n\n Bus Stop: Hilfield Brook\n\n Padel Tennis Court\nIndoor court | Sand-based Astroturf\nFacilities\n changing rooms\nMAKE A BOOKING\n",
+ "name": "David Lloyd Bushey",
+ "area": "Hertfordshire",
+ "address": "Hartspring Lane, Bushey, Watford, WD23 2DL",
+ "postcode": "WD23 2DL",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

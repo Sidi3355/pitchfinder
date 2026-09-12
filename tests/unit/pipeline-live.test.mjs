@@ -305,6 +305,57 @@ const slots = {
         fetchedAt: '2026-09-13T03:45:00.000Z',
       },
       {
+        slug: 'powerleague-newham',
+        url: 'https://www.playfinder.com/london/venue/powerleague-newham',
+        name: 'Powerleague Newham',
+        postcode: 'E6 5ND',
+        lat: 51.52,
+        lng: 0.05,
+        region: 'London',
+        district: 'Newham',
+        inLondon: true,
+        hours: { mon: [['09:00', '22:00']], tue: [], wed: [], thu: [], fri: [], sat: [], sun: [] },
+        facilities: { lit: true, changingRooms: true },
+        pitches: [{ url: 'x/football-5-a-side-9', format: 5, surface: '3g' }],
+        bands: [
+          {
+            format: 5,
+            surface: '3g',
+            amount: 90,
+            minutes: 40,
+            days: ['mon'],
+            windows: [['18:00', '20:00']],
+            slotsSeen: 4,
+          },
+        ],
+        fetchedAt: '2026-09-13T03:58:00.000Z',
+      },
+      {
+        slug: 'dagenham-goals',
+        url: 'https://www.playfinder.com/london/venue/dagenham-goals',
+        name: 'Goals Dagenham',
+        postcode: 'RM10 9AB',
+        lat: 51.53,
+        lng: 0.15,
+        region: 'London',
+        inLondon: true,
+        hours: { mon: [['12:00', '20:00']], tue: [], wed: [], thu: [], fri: [], sat: [], sun: [] },
+        facilities: { lit: true },
+        pitches: [{ url: 'x/football-5-a-side-10', format: 5, surface: '3g' }],
+        bands: [
+          {
+            format: 5,
+            surface: '3g',
+            amount: 77,
+            minutes: 60,
+            days: ['mon'],
+            windows: [['17:30', '17:30']],
+            slotsSeen: 1,
+          },
+        ],
+        fetchedAt: '2026-09-13T03:59:00.000Z',
+      },
+      {
         slug: 'grass-only-park',
         url: 'https://www.playfinder.com/london/venue/grass-only-park',
         name: 'Grass Only Park',
@@ -385,6 +436,36 @@ const slotBaseline = [
     surface: '3g',
   },
   { id: 'osm-9', name: 'Park astro', type: 'astro', lat: 51.6, lng: -0.3 },
+  {
+    id: 'osm-77',
+    name: 'Powerleague Newham pitch',
+    nameSource: 'osm',
+    type: 'astro',
+    lat: 51.5205,
+    lng: 0.0505,
+  },
+  {
+    id: 'osm-78',
+    name: 'Powerleague Shoreditch pitches',
+    nameSource: 'osm',
+    source: 'osm',
+    type: 'astro',
+    lat: 51.5263,
+    lng: -0.0815,
+  },
+  {
+    id: 'go-dagenham',
+    name: 'Goals Dagenham',
+    operator: 'Goals',
+    type: 'commercial',
+    lat: 51.5301,
+    lng: 0.1501,
+    pricePerHour: 54,
+    priceSource: 'operator-site',
+    hours: { mon: [['10:00', '23:00']] },
+    hoursSource: 'operator-site',
+    bookingUrl: 'https://www.goalsfootball.co.uk/play/book-a-game',
+  },
 ]
 
 describe('slot calendars on top of the venues', () => {
@@ -450,7 +531,47 @@ describe('slot calendars on top of the venues', () => {
     expect(added.hours.mon).toEqual([['09:00', '21:00']])
     expect(out.find((v) => v.id === 'pf-grass-only-park')).toBeUndefined()
     expect(out.find((v) => v.id === 'pf-crayford-academy')).toBeUndefined()
-    expect(out).toHaveLength(slotBaseline.length + 1)
+    expect(out).toHaveLength(slotBaseline.length + 1 - 1) // one added, one twin dropped
+  })
+  it("turns an operator's club the map only knew as a pitch into their football centre, by name", () => {
+    const n = out.find((v) => v.id === 'osm-77')
+    expect(n).toMatchObject({
+      type: 'commercial',
+      brand: 'powerleague',
+      operator: 'Powerleague',
+      name: 'Powerleague Newham',
+      nameSource: 'playfinder',
+      pricePerHour: 135,
+      priceSlot: { amount: 90, minutes: 40 },
+      bookingUrl: 'https://www.playfinder.com/london/venue/powerleague-newham',
+    })
+    expect(out.find((v) => v.id === 'pl-newham')).toBeUndefined()
+    // The club's own entry wins over the map's copy, and the copy goes.
+    expect(out.find((v) => v.id === 'pl-shoreditch').priceSource).toBe('playfinder')
+    expect(out.find((v) => v.id === 'osm-78')).toBeUndefined()
+  })
+  it("keeps a Goals club's prices from Goals' own site when Playfinder also sells it", () => {
+    const g = out.find((v) => v.id === 'go-dagenham')
+    expect(g.priceSource).toBe('playfinder') // no Pitchbooking read in this fixture, so Playfinder fills in
+    expect(g.hoursSource).toBe('operator-site') // Goals' own hours stand
+    expect(out.find((v) => v.name === 'Goals Dagenham' && v.id !== 'go-dagenham')).toBeUndefined()
+    const withOwn = applySlots(
+      [
+        {
+          ...slotBaseline.find((v) => v.id === 'go-dagenham'),
+          priceSource: 'pitchbooking',
+          pricePerHour: 67,
+          bookingUrl: 'https://pitchbooking.com/book/goals/x',
+        },
+      ],
+      {
+        playfinder: { venues: slots.playfinder.venues.filter((v) => v.slug === 'dagenham-goals') },
+      },
+    )[0]
+    expect(withOwn.priceSource).toBe('pitchbooking')
+    expect(withOwn.bookingUrl).toBe('https://pitchbooking.com/book/goals/x')
+    expect(withOwn.playfinderUrl).toBe('https://www.playfinder.com/london/venue/dagenham-goals')
+    expect(withOwn.hoursSource).toBe('operator-site')
   })
   it('matches by shared words nearby, by being the only astro on the spot, or not at all', () => {
     const venues = [

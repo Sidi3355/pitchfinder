@@ -1,0 +1,44 @@
+{
+ "url": "https://www.playfinder.com/london/venue/barnet-sfl",
+ "finalUrl": "https://www.playfinder.com/london/venue/barnet-sfl",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:37:22.334Z",
+ "title": "Barnet SFL, Barnet | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBarnet SFL Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Great Cambridge Road, London, London, N9 9LE\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Bury Street bus stop\n\nDescription\n\nBook the 11-a-side football pitch at British Alevi Federation if you're looking for an excellent pitch and live or work in North London. This venue has sensational footballing facilities, so whether you like to play 11-a-side football casually or you're part of a team or league, British Alevi Federation is ideal for you. Everyone has their favourite surface for playing 11-a-side football on and this pitch is Grass.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at British Alevi Federation? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe venue is situated near Bury streeet bus stop. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n11 a side | Grass7 a side | Grass\nFacilities\n floodlights free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 20.6 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 18.6 miles away\n\nBull Lane Playing Fields\nLondon\n\n 1.6 miles away\n\nBeaumont School\nHertfordshire\n\n 12.9 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 5.4 miles away\n\n",
+ "name": "Barnet SFL",
+ "area": "Barnet",
+ "address": "Great Cambridge Road, London, London, N9 9LE",
+ "postcode": "N9 9LE",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/barnet-sfl/football-11-a-side-92484",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/barnet-sfl/football-7-a-side-92485",
+   "label": "7 a side | Grass",
+   "format": 7,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

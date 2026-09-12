@@ -1,0 +1,44 @@
+{
+ "url": "https://www.playfinder.com/london/venue/wanstead-flats-playing-fields-aldersbrook-road",
+ "finalUrl": "https://www.playfinder.com/london/venue/wanstead-flats-playing-fields-aldersbrook-road",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:12:00.283Z",
+ "title": "Wanstead Flats Playing Fields (Aldersbrook Road), City of London | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWanstead Flats Playing Fields (Aldersbrook Road) Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Wanstead Flats Playing Fields, Aldersbrook Road, City of London, E12 5HH\n\nPrices\n\nWeekday: £50 / match; Sat: £66; Sun: £73\n\nPublic Transport\n\n Wanstead Park (Overground)\n\nOpening Hours\n\n08.00 - Dusk\n\nDescription\n\nCasual matches available on weekend during the football season, please call to book.\n\nThere are twelve 11 a side football pitches available for hire at the Wanstead Flats Playing Fields (Aldersbrook Road) on a grass surface. It is situated in City of London, East London and the nearest tube is Wanstead Park (Overground). All the facilities are available on a pay as you go basis\n\n Football Pitches\n11 a side | Grass5 a side | Grass\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 19.1 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 14.5 miles away\n\nBeaumont School\nHertfordshire\n\n 19.5 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 2.4 miles away\n\nBull Lane Playing Fields\nLondon\n\n 5.7 miles away\n\n",
+ "name": "Wanstead Flats Playing Fields (Aldersbrook Road)",
+ "area": "City of London",
+ "address": "Wanstead Flats Playing Fields, Aldersbrook Road, City of London, E12 5HH",
+ "postcode": "E12 5HH",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/wanstead-flats-playing-fields-aldersbrook-road/football-11-a-side-33597",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/wanstead-flats-playing-fields-aldersbrook-road/football-5-a-side-33598",
+   "label": "5 a side | Grass",
+   "format": 5,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Weekday: £50 / match; Sat: £66; Sun: £73",
+ "skipped": "no artificial football pitch"
+}

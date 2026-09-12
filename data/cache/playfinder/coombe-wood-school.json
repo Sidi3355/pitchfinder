@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/coombe-wood-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/coombe-wood-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:37:17.220Z",
+ "title": "Coombe Wood School, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCoombe Wood School\nSpace HireNetballFootballCricketBasketballBadminton\nContains Data © Sport England\n Book Online at Coombe Wood School\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 30 Melville Avenue, South Croydon, South Croydon, CR2 7HY\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t09:00 - 22:00\nSunday\t09:00 - 22:00\nDescription\n\nIf you’re looking for space to hire in Croydon then you’ve come to the right place. The drama studio at Coombe Wood School is ideal for a wide range of occasions including classes. The drama studio is able to hold a good number of people, but it’s worth checking in with the venue before booking to ensure the maximum number isn’t surpassed to affect health and safety. For those people looking to hold a regular event it’s a good idea to explore the option of a block booking to guarantee a weekly spot to avoid disappointments.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car. This also makes it the perfect facility for teams hosting a game or event, as it means the facility is extremely accommodating for travelling guests.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-use booking system. This method avoids the monthly membership charges and gives you the freedom to use the facility as and when you like, without the commitment of a weekly booking or a membership fee.\n\nFor those who like the security of knowing you can use the facility at the same time every week without fail, you can make a block booking at Coombe Wood School.\n\nThe venue is situated near Lloyd Park Tram Stop. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Space Hire\nDrama studioKitchenStudio | Fitness studioMain hallClassroomClassroom | LargeSports hallPlaygroundSports hall | Half sports hall\n Address\n\nCoombe Wood School\n30 Melville Avenue\nSouth Croydon\nCR2 7HY\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Space Hire\nWallington County Grammar School\nWallington\n\n 3.2 miles away\n\nBeaumont School\nHertfordshire\n\n 28.7 miles away\n\nKings International College\nCamberley\n\n 29.3 miles away\n\nBolder Academy\nLondon\n\n 14 miles away\n\nRiddlesdown Collegiate\nPurley\n\n 2.7 miles away\n\n",
+ "name": "Coombe Wood School",
+ "area": "Croydon",
+ "address": "30 Melville Avenue, South Croydon, South Croydon, CR2 7HY",
+ "postcode": "CR2 7HY",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 09:00 - 22:00",
+  "Sunday 09:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/coombe-wood-school/football-7-a-side-92616",
+   "label": "football",
+   "format": 7,
+   "surface": null
+  }
+ ],
+ "priceSummary": null,
+ "skipped": "no artificial football pitch"
+}

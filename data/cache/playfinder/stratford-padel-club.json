@@ -1,0 +1,29 @@
+{
+ "url": "https://www.playfinder.com/london/venue/stratford-padel-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/stratford-padel-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:32:29.584Z",
+ "title": "Stratford Padel Club, Newham | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nStratford Padel Club Non-Partner \nPadel Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 221 High Street, Stratford, London, E15 2AE\n\nPrices\n\nPublic Transport\n\n Stratford\n\n Padel Tennis Court\nIndoor court | Sand-based Astroturf\nFacilities\n changing rooms\nMAKE A BOOKING\n",
+ "name": "Stratford Padel Club",
+ "area": "Newham",
+ "address": "221 High Street, Stratford, London, E15 2AE",
+ "postcode": "E15 2AE",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

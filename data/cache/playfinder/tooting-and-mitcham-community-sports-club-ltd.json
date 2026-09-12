@@ -1,0 +1,55 @@
+{
+ "url": "https://www.playfinder.com/london/venue/tooting-and-mitcham-community-sports-club-ltd",
+ "finalUrl": "https://www.playfinder.com/london/venue/tooting-and-mitcham-community-sports-club-ltd",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:27:34.723Z",
+ "title": "Tooting and Mitcham Community Sports Club, Merton | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nTooting and Mitcham Community Sports Club\nFootballRugbyHockey\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Imperial Fields, Bishopsford Road, Morden, SM4 6BF\n\nPrices\n\nPrice on request\n\nPublic Transport\n\n Mitcham Junction\n\nOpening Hours\n\n09:00 - 22:00\n\nDescription\n\nNeed an 11-a-side football pitch in south London? Tooting and Mitcham Community Sports Club Ltd boasts a spectacular 11-a-side grass football pitch which is available for footballers looking for a one-off game or a regular block booking. It is a full size pitch that is available to book for one-off training sessions or a season long league. Check with the facility about hiring officials and other equipment.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Tooting and Mitcham Community Sports Club Ltd? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Mitcham Junction. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n11 a side | Grass11 a side | 3G Astroturf7 a side | 3G Astroturf\nFacilities\n floodlights\n Address\n\nTooting and Mitcham Community Sports Club\nImperial Fields\nBishopsford Road\nSM4 6BF\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\nMAKE A BOOKING\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 4.9 miles away\n\nBeaumont School\nHertfordshire\n\n 25.5 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 8.5 miles away\n\nNorth Acton Playing Fields\nActon\n\n 9.7 miles away\n\nElthorne Waterside Pitches\nLondon\n\n 10 miles away\n\n",
+ "name": "Tooting and Mitcham Community Sports Club",
+ "area": "Merton",
+ "address": "Imperial Fields, Bishopsford Road, Morden, SM4 6BF",
+ "postcode": "SM4 6BF",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/tooting-and-mitcham-community-sports-club-ltd/football-11-a-side-38433",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/tooting-and-mitcham-community-sports-club-ltd/football-11-a-side-38434",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/tooting-and-mitcham-community-sports-club-ltd/football-7-a-side-38460",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Price on request"
+}

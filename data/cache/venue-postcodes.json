@@ -76,5 +76,1851 @@
     "lng": -0.242833,
     "region": "London",
     "district": "Merton"
+  },
+  "CB5 8NT": {
+    "lat": 52.209635,
+    "lng": 0.155796,
+    "region": "East of England",
+    "district": "Cambridge"
+  },
+  "W3 7JX": {
+    "lat": 51.506978,
+    "lng": -0.259743,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "CR0 7EB": {
+    "lat": 51.37906,
+    "lng": -0.071983,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "E4 9EE": {
+    "lat": 51.611328,
+    "lng": -0.008775,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "N22 7XL": {
+    "lat": 51.600509,
+    "lng": -0.133951,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "WD6 3AJ": {
+    "lat": 51.663268,
+    "lng": -0.327894,
+    "region": "East of England",
+    "district": "Hertsmere"
+  },
+  "KT5 9AA": {
+    "lat": 51.387444,
+    "lng": -0.289418,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SL6 4PU": {
+    "lat": 51.516293,
+    "lng": -0.750755,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SW9 7QP": {
+    "lat": 51.468794,
+    "lng": -0.110908,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SE1 7LQ": null,
+  "SW10 0DT": {
+    "lat": 51.481822,
+    "lng": -0.177802,
+    "region": "London",
+    "district": "Kensington and Chelsea"
+  },
+  "CR0 6RX": {
+    "lat": 51.383528,
+    "lng": -0.065917,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "N14 5RJ": {
+    "lat": 51.632683,
+    "lng": -0.136127,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "N14 7NP": {
+    "lat": 51.628901,
+    "lng": -0.136947,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "N1 6BY": {
+    "lat": 51.528573,
+    "lng": -0.08453,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "RM4 4XX": null,
+  "RM7 0XU": {
+    "lat": 51.560332,
+    "lng": 0.174592,
+    "region": "London",
+    "district": "Barking and Dagenham"
+  },
+  "RM8 2JR": {
+    "lat": 51.545449,
+    "lng": 0.113017,
+    "region": "London",
+    "district": "Barking and Dagenham"
+  },
+  "N9 9LE": {
+    "lat": 51.63304,
+    "lng": -0.070871,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "SW11 2DA": {
+    "lat": 51.464619,
+    "lng": -0.179552,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "TW4 6BE": {
+    "lat": 51.4691,
+    "lng": -0.399175,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "UB6 7QJ": {
+    "lat": 51.549931,
+    "lng": -0.330726,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "E2 0EL": {
+    "lat": 51.526758,
+    "lng": -0.055744,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "SE5 0YF": {
+    "lat": 51.480713,
+    "lng": -0.096662,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "KT3 4LL": {
+    "lat": 51.403848,
+    "lng": -0.247514,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SE19 3HT": {
+    "lat": 51.415625,
+    "lng": -0.104025,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "RG40 5SJ": {
+    "lat": 51.443869,
+    "lng": -0.818247,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 3ST": {
+    "lat": 51.46758,
+    "lng": -0.750475,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL7 1RR": {
+    "lat": 51.558101,
+    "lng": -0.775099,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "N1 7NZ": {
+    "lat": 51.529771,
+    "lng": -0.089065,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "SL6 6JE": {
+    "lat": 51.521033,
+    "lng": -0.744975,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 1BN": {
+    "lat": 51.515484,
+    "lng": -0.719057,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "W7 1JJ": {
+    "lat": 51.524691,
+    "lng": -0.340948,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "CM13 3FD": {
+    "lat": 51.594142,
+    "lng": 0.313473,
+    "region": "East of England",
+    "district": "Brentwood"
+  },
+  "RM13 7LP": {
+    "lat": 51.542276,
+    "lng": 0.186105,
+    "region": "London",
+    "district": "Havering"
+  },
+  "NW10 8LW": {
+    "lat": 51.541066,
+    "lng": -0.266273,
+    "region": "London",
+    "district": "Brent"
+  },
+  "E17 5DU": {
+    "lat": 51.601148,
+    "lng": -0.020945,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "SW9 8BP": {
+    "lat": 51.463297,
+    "lng": -0.116317,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SE24 0NG": {
+    "lat": 51.452776,
+    "lng": -0.102991,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "BR1 2TW": {
+    "lat": 51.3953,
+    "lng": 0.057127,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "N11 1JJ": {
+    "lat": 51.619502,
+    "lng": -0.142504,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "N18 1SX": {
+    "lat": 51.60939,
+    "lng": -0.075268,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "SE5 0AH": {
+    "lat": 51.483043,
+    "lng": -0.087865,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "HA8 0NP": {
+    "lat": 51.604993,
+    "lng": -0.255347,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "HA3 7FE": {
+    "lat": 51.593927,
+    "lng": -0.329157,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "WC1X 8LH": {
+    "lat": 51.525834,
+    "lng": -0.11701,
+    "region": "London",
+    "district": "Camden"
+  },
+  "NW1 8RU": {
+    "lat": 51.542811,
+    "lng": -0.144604,
+    "region": "London",
+    "district": "Camden"
+  },
+  "CR4 4HD": {
+    "lat": 51.39959,
+    "lng": -0.161533,
+    "region": "London",
+    "district": "Merton"
+  },
+  "DA10 1BR": {
+    "lat": 51.437542,
+    "lng": 0.308516,
+    "region": "South East",
+    "district": "Dartford"
+  },
+  "CR3 6YA": {
+    "lat": 51.272625,
+    "lng": -0.086592,
+    "region": "South East",
+    "district": "Tandridge"
+  },
+  "E4 9AR": {
+    "lat": 51.606357,
+    "lng": -0.013671,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "HA7 2NP": {
+    "lat": 51.599942,
+    "lng": -0.306541,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "HA8 6JD": {
+    "lat": 51.605208,
+    "lng": -0.285867,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "LE11 5AD": {
+    "lat": 52.785126,
+    "lng": -1.237533,
+    "region": "East Midlands",
+    "district": "Charnwood"
+  },
+  "NW2 2AT": {
+    "lat": 51.56628,
+    "lng": -0.199864,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "KT13 8AG": {
+    "lat": 51.371498,
+    "lng": -0.457722,
+    "region": "South East",
+    "district": "Elmbridge"
+  },
+  "W7 3BP": {
+    "lat": 51.514298,
+    "lng": -0.344928,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "KT9 2HD": {
+    "lat": 51.361273,
+    "lng": -0.299773,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SE1 5LA": {
+    "lat": 51.489227,
+    "lng": -0.064674,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "SW4 9DE": {
+    "lat": 51.457586,
+    "lng": -0.145039,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "BR3 3SR": {
+    "lat": 51.388585,
+    "lng": -0.022484,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "CR2 7HY": {
+    "lat": 51.362237,
+    "lng": -0.078205,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "NW7 2EP": {
+    "lat": 51.608485,
+    "lng": -0.232033,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "WC1N 1DN": {
+    "lat": 51.524425,
+    "lng": -0.11998,
+    "region": "London",
+    "district": "Camden"
+  },
+  "N19 4LP": {
+    "lat": 51.563512,
+    "lng": -0.121961,
+    "region": "London",
+    "district": "Islington"
+  },
+  "SL6 3AX": {
+    "lat": 51.508438,
+    "lng": -0.755393,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "DA7 4HH": {
+    "lat": 51.460249,
+    "lng": 0.124527,
+    "region": "London",
+    "district": "Bexley"
+  },
+  "SE19 2BB": {
+    "lat": 51.418998,
+    "lng": -0.067743,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "WD23 2DL": {
+    "lat": 51.66339,
+    "lng": -0.36531,
+    "region": "East of England",
+    "district": "Hertsmere"
+  },
+  "IG7 6BQ": null,
+  "SL6 1HJ": {
+    "lat": 51.519967,
+    "lng": -0.723658,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SE8 4RJ": {
+    "lat": 51.47748,
+    "lng": -0.023567,
+    "region": "London",
+    "district": "Lewisham"
+  },
+  "LE11 5FJ": {
+    "lat": 52.785182,
+    "lng": -1.230845,
+    "region": "East Midlands",
+    "district": "Charnwood"
+  },
+  "SL6 2QB": {
+    "lat": 51.515841,
+    "lng": -0.727089,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 4BB": {
+    "lat": 51.512686,
+    "lng": -0.740536,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "BS6 7XW": {
+    "lat": 51.486773,
+    "lng": -2.596961,
+    "region": "South West",
+    "district": "Bristol, City of"
+  },
+  "SE16 5AA": {
+    "lat": 51.499203,
+    "lng": -0.035147,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "UB1 3JB": {
+    "lat": 51.516981,
+    "lng": -0.367013,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "N17 9AU": {
+    "lat": 51.593051,
+    "lng": -0.062749,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "N17 6PE": {
+    "lat": 51.588968,
+    "lng": -0.085183,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "E15 2DD": {
+    "lat": 51.552833,
+    "lng": -0.00615,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "W7 2AD": {
+    "lat": 51.50048,
+    "lng": -0.329307,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "KT19 9JW": {
+    "lat": 51.362957,
+    "lng": -0.275333,
+    "region": "South East",
+    "district": "Epsom and Ewell"
+  },
+  "KT1 2PY": {
+    "lat": 51.409262,
+    "lng": -0.297549,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "UB2 5HF": {
+    "lat": 51.499626,
+    "lng": -0.386493,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "E10 5UE": null,
+  "SE19 1RT": {
+    "lat": 51.422248,
+    "lng": -0.092662,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "EC1V 3PU": {
+    "lat": 51.526119,
+    "lng": -0.095129,
+    "region": "London",
+    "district": "Islington"
+  },
+  "N4 1EE": {
+    "lat": 51.574647,
+    "lng": -0.103116,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "NW3 2QT": {
+    "lat": 51.553445,
+    "lng": -0.160847,
+    "region": "London",
+    "district": "Camden"
+  },
+  "SL6 2PZ": {
+    "lat": 51.513295,
+    "lng": -0.726958,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 7NQ": {
+    "lat": 51.535825,
+    "lng": -0.739118,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 2LU": {
+    "lat": 51.490824,
+    "lng": -0.708931,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "AL8 6XE": {
+    "lat": 51.790714,
+    "lng": -0.213026,
+    "region": "East of England",
+    "district": "Welwyn Hatfield"
+  },
+  "N14 6RA": {
+    "lat": 51.632198,
+    "lng": -0.117622,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "W3 8LQ": {
+    "lat": 51.499454,
+    "lng": -0.286828,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "DA1 4RS": {
+    "lat": 51.455234,
+    "lng": 0.18308,
+    "region": "London",
+    "district": "Bexley"
+  },
+  "SE14 5NY": {
+    "lat": 51.473439,
+    "lng": -0.04105,
+    "region": "London",
+    "district": "Lewisham"
+  },
+  "SE14 5SF": {
+    "lat": 51.467333,
+    "lng": -0.043241,
+    "region": "London",
+    "district": "Lewisham"
+  },
+  "SE4 2ED": {
+    "lat": 51.465442,
+    "lng": -0.048505,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "E5 8NP": {
+    "lat": 51.552754,
+    "lng": -0.059411,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "E2 8NH": {
+    "lat": 51.531647,
+    "lng": -0.06857,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "NW3 1BP": {
+    "lat": 51.559686,
+    "lng": -0.171227,
+    "region": "London",
+    "district": "Camden"
+  },
+  "RM15 5AY": {
+    "lat": 51.512534,
+    "lng": 0.276907,
+    "region": "East of England",
+    "district": "Thurrock"
+  },
+  "BR5 4LG": {
+    "lat": 51.373091,
+    "lng": 0.114037,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "BR3 1QP": {
+    "lat": 51.417278,
+    "lng": -0.042661,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "SE20 8RH": null,
+  "HA3 5BD": {
+    "lat": 51.592526,
+    "lng": -0.327418,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "RM12 4PN": {
+    "lat": 51.552573,
+    "lng": 0.193321,
+    "region": "London",
+    "district": "Havering"
+  },
+  "HA1 4QU": {
+    "lat": 51.584976,
+    "lng": -0.348005,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "HA3 6EL": {
+    "lat": 51.604929,
+    "lng": -0.340234,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "LE12 5LJ": {
+    "lat": 52.797054,
+    "lng": -1.252779,
+    "region": "East Midlands",
+    "district": "Charnwood"
+  },
+  "NW3 2BQ": {
+    "lat": 51.544794,
+    "lng": -0.153999,
+    "region": "London",
+    "district": "Camden"
+  },
+  "RM11 2DB": {
+    "lat": 51.575725,
+    "lng": 0.213687,
+    "region": "London",
+    "district": "Havering"
+  },
+  "HA2 6PX": {
+    "lat": 51.593693,
+    "lng": -0.352699,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "SE11 5BZ": {
+    "lat": 51.484709,
+    "lng": -0.111864,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "N5 1QN": {
+    "lat": 51.550245,
+    "lng": -0.099486,
+    "region": "London",
+    "district": "Islington"
+  },
+  "SW2 3HL": {
+    "lat": 51.438087,
+    "lng": -0.116146,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SL6 2NA": {
+    "lat": 51.488849,
+    "lng": -0.716549,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 5NG": {
+    "lat": 51.545763,
+    "lng": -0.815262,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 5LW": {
+    "lat": 51.540713,
+    "lng": -0.81297,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "RM11 1EE": {
+    "lat": 51.56983,
+    "lng": 0.19962,
+    "region": "London",
+    "district": "Havering"
+  },
+  "TW7 4NQ": {
+    "lat": 51.480716,
+    "lng": -0.348492,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "UB5 5EE": {
+    "lat": 51.545695,
+    "lng": -0.382052,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "E1W 2QD": {
+    "lat": 51.504224,
+    "lng": -0.061229,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E1 4AX": {
+    "lat": 51.523236,
+    "lng": -0.051007,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E4 9SF": {
+    "lat": 51.612898,
+    "lng": 0.004106,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "SE11 4DA": {
+    "lat": 51.48431,
+    "lng": -0.110569,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "NW6 4LB": {
+    "lat": 51.543471,
+    "lng": -0.196741,
+    "region": "London",
+    "district": "Camden"
+  },
+  "KT9 1PL": {
+    "lat": 51.37138,
+    "lng": -0.305964,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SW18 3HS": {
+    "lat": 51.450021,
+    "lng": -0.177614,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "KT9 1TR": {
+    "lat": 51.369949,
+    "lng": -0.285444,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "W4 2SP": {
+    "lat": 51.479099,
+    "lng": -0.258457,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "RG10 9XB": {
+    "lat": 51.50897,
+    "lng": -0.814559,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "NW5 1RP": {
+    "lat": 51.56,
+    "lng": -0.149416,
+    "region": "London",
+    "district": "Camden"
+  },
+  "SM7 2NB": {
+    "lat": 51.322953,
+    "lng": -0.198571,
+    "region": "South East",
+    "district": "Reigate and Banstead"
+  },
+  "SL6 7JZ": {
+    "lat": 51.53421,
+    "lng": -0.721183,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SW8 2PX": {
+    "lat": 51.47198,
+    "lng": -0.131252,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SW11 5AD": {
+    "lat": 51.471392,
+    "lng": -0.162364,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "KT2 5TT": {
+    "lat": 51.422139,
+    "lng": -0.296294,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SW15 1LS": {
+    "lat": 51.469455,
+    "lng": -0.22339,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "SE1 3TD": {
+    "lat": 51.501511,
+    "lng": -0.08385,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "TW11 9NU": {
+    "lat": 51.427933,
+    "lng": -0.318922,
+    "region": "London",
+    "district": "Richmond upon Thames"
+  },
+  "E10 7ND": {
+    "lat": 51.566285,
+    "lng": -0.026859,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "E10 6PY": {
+    "lat": 51.568293,
+    "lng": -0.008923,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "KT1 2EE": {
+    "lat": 51.403273,
+    "lng": -0.303163,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SW15 5PH": {
+    "lat": 51.456845,
+    "lng": -0.244146,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "WC2A 3TL": {
+    "lat": 51.516773,
+    "lng": -0.114962,
+    "region": "London",
+    "district": "Camden"
+  },
+  "SL6 3RA": {
+    "lat": 51.51248,
+    "lng": -0.792823,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "E8 3QN": {
+    "lat": 51.543271,
+    "lng": -0.061833,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "UB1 2AR": {
+    "lat": 51.516829,
+    "lng": -0.379342,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "E17 8AX": {
+    "lat": 51.576755,
+    "lng": -0.035037,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "N2 0DQ": {
+    "lat": 51.585557,
+    "lng": -0.17758,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "SL6 8AW": {
+    "lat": 51.526006,
+    "lng": -0.717593,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "SL6 2AA": {
+    "lat": 51.50823,
+    "lng": -0.702977,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "N6 4NY": {
+    "lat": 51.574226,
+    "lng": -0.157959,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "KT3 6AU": {
+    "lat": 51.387643,
+    "lng": -0.252919,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SW9 7UH": {
+    "lat": 51.468108,
+    "lng": -0.103507,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "N7 9PL": {
+    "lat": 51.546665,
+    "lng": -0.118933,
+    "region": "London",
+    "district": "Islington"
+  },
+  "N15 6UL": {
+    "lat": 51.580308,
+    "lng": -0.070319,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "SE1 1SD": {
+    "lat": 51.50351,
+    "lng": -0.093363,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "SW9 7NE": {
+    "lat": 51.466639,
+    "lng": -0.109989,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "RH1 3QA": {
+    "lat": 51.257818,
+    "lng": -0.144378,
+    "region": "South East",
+    "district": "Reigate and Banstead"
+  },
+  "HA4 7SB": {
+    "lat": 51.586845,
+    "lng": -0.439889,
+    "region": "London",
+    "district": "Hillingdon"
+  },
+  "E3 4HL": {
+    "lat": 51.519438,
+    "lng": -0.03197,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E5 0AR": {
+    "lat": 51.557104,
+    "lng": -0.044107,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "SE1 1QU": {
+    "lat": 51.501763,
+    "lng": -0.096519,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "CR2 8HD": {
+    "lat": 51.350981,
+    "lng": -0.046881,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "HA5 3LP": {
+    "lat": 51.599323,
+    "lng": -0.390268,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "HA3 0DS": {
+    "lat": 51.583639,
+    "lng": -0.307797,
+    "region": "London",
+    "district": "Brent"
+  },
+  "N10 1JP": {
+    "lat": 51.603334,
+    "lng": -0.154514,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "LE11 3YE": {
+    "lat": 52.751831,
+    "lng": -1.246469,
+    "region": "East Midlands",
+    "district": "Charnwood"
+  },
+  "N22 5QW": {
+    "lat": 51.604659,
+    "lng": -0.100032,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "N11 1LB": {
+    "lat": 51.619276,
+    "lng": -0.145243,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "SL6 5JB": {
+    "lat": 51.522969,
+    "lng": -0.760503,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "RM3 7YA": null,
+  "W3 0AX": {
+    "lat": 51.519721,
+    "lng": -0.27321,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "SE10 0BG": {
+    "lat": 51.493246,
+    "lng": 0.011243,
+    "region": "London",
+    "district": "Greenwich"
+  },
+  "WD23 2TD": {
+    "lat": 51.655628,
+    "lng": -0.373584,
+    "region": "East of England",
+    "district": "Hertsmere"
+  },
+  "SL6 6HY": {
+    "lat": 51.527257,
+    "lng": -0.743492,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "N14 6QB": {
+    "lat": 51.638886,
+    "lng": -0.12249,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "SE25 4QL": {
+    "lat": 51.392572,
+    "lng": -0.059829,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "IG7 5AB": {
+    "lat": 51.617576,
+    "lng": 0.060664,
+    "region": "East of England",
+    "district": "Epping Forest"
+  },
+  "AL4 0DB": {
+    "lat": 51.745913,
+    "lng": -0.29961,
+    "region": "East of England",
+    "district": "St Albans"
+  },
+  "N14 5HD": {
+    "lat": 51.634335,
+    "lng": -0.134311,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "SW14 8RE": {
+    "lat": 51.459587,
+    "lng": -0.259761,
+    "region": "London",
+    "district": "Richmond upon Thames"
+  },
+  "N7 8SE": {
+    "lat": 51.549322,
+    "lng": -0.111352,
+    "region": "London",
+    "district": "Islington"
+  },
+  "CR0 5SX": {
+    "lat": 51.36722,
+    "lng": -0.090898,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "E4 9AS": {
+    "lat": 51.606586,
+    "lng": -0.009661,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "E11 3DR": {
+    "lat": 51.564475,
+    "lng": 0.011904,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "KT8 9DX": null,
+  "UB6 8HA": {
+    "lat": 51.532875,
+    "lng": -0.342308,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "SL6 6QE": {
+    "lat": 51.528867,
+    "lng": -0.763802,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "HA5 5JR": {
+    "lat": 51.586797,
+    "lng": -0.380563,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "SE9 3LX": {
+    "lat": 51.437061,
+    "lng": 0.053608,
+    "region": "London",
+    "district": "Greenwich"
+  },
+  "E14 0ED": {
+    "lat": 51.511435,
+    "lng": -0.011735,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "N10 1ST": {
+    "lat": 51.605675,
+    "lng": -0.151805,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "SW8 5EJ": {
+    "lat": 51.477842,
+    "lng": -0.138544,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "CR0 4RW": {
+    "lat": 51.357258,
+    "lng": -0.124434,
+    "region": "London",
+    "district": "Sutton"
+  },
+  "EN1 1HQ": {
+    "lat": 51.6358,
+    "lng": -0.066476,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "IG6 3HJ": {
+    "lat": 51.599336,
+    "lng": 0.099865,
+    "region": "London",
+    "district": "Redbridge"
+  },
+  "N12 0RF": {
+    "lat": 51.60809,
+    "lng": -0.163607,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "HA1 2LS": {
+    "lat": 51.580454,
+    "lng": -0.325856,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "NW7 2BB": {
+    "lat": 51.607541,
+    "lng": -0.226726,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "IG11 0AD": {
+    "lat": 51.524357,
+    "lng": 0.078019,
+    "region": "London",
+    "district": "Newham"
+  },
+  "RM7 7AY": {
+    "lat": 51.584466,
+    "lng": 0.167934,
+    "region": "London",
+    "district": "Havering"
+  },
+  "W12 7RW": {
+    "lat": 51.511713,
+    "lng": -0.227684,
+    "region": "London",
+    "district": "Hammersmith and Fulham"
+  },
+  "E1 6GJ": {
+    "lat": 51.523293,
+    "lng": -0.075699,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "SL1 2PU": {
+    "lat": 51.504883,
+    "lng": -0.60338,
+    "region": "South East",
+    "district": "Slough"
+  },
+  "TW13 6SS": {
+    "lat": 51.42882,
+    "lng": -0.396986,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "N17 0SL": {
+    "lat": 51.60658,
+    "lng": -0.053233,
+    "region": "London",
+    "district": "Haringey"
+  },
+  "SE11 6HU": {
+    "lat": 51.491325,
+    "lng": -0.116186,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "WD23 2TY": {
+    "lat": 51.658487,
+    "lng": -0.369014,
+    "region": "East of England",
+    "district": "Hertsmere"
+  },
+  "NW9 7ND": {
+    "lat": 51.573911,
+    "lng": -0.247199,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "RH2 7RL": {
+    "lat": 51.235696,
+    "lng": -0.206135,
+    "region": "South East",
+    "district": "Reigate and Banstead"
+  },
+  "CR2 0NL": {
+    "lat": 51.341805,
+    "lng": -0.095787,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "W4 3UJ": {
+    "lat": 51.475117,
+    "lng": -0.270719,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "EN1 3PL": {
+    "lat": 51.658672,
+    "lng": -0.060716,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "HA3 9PD": {
+    "lat": 51.591411,
+    "lng": -0.290545,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "UB6 9QP": {
+    "lat": 51.529924,
+    "lng": -0.36012,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "HA2 7LP": {
+    "lat": 51.579562,
+    "lng": -0.36848,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "TW13 4AB": {
+    "lat": 51.443553,
+    "lng": -0.411134,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "UB5 6SU": {
+    "lat": 51.536186,
+    "lng": -0.378496,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "AL3 7PP": {
+    "lat": 51.805378,
+    "lng": -0.402155,
+    "region": "East of England",
+    "district": "St Albans"
+  },
+  "RH1 2JF": {
+    "lat": 51.244337,
+    "lng": -0.166627,
+    "region": "South East",
+    "district": "Reigate and Banstead"
+  },
+  "CR5 3DR": {
+    "lat": 51.313424,
+    "lng": -0.154289,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "CR8 1EU": {
+    "lat": 51.325966,
+    "lng": -0.09231,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "W4 1RZ": {
+    "lat": 51.493803,
+    "lng": -0.259683,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "E16 4DD": {
+    "lat": 51.518739,
+    "lng": 0.015524,
+    "region": "London",
+    "district": "Newham"
+  },
+  "E4 9JG": {
+    "lat": 51.609495,
+    "lng": -0.004609,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "N1 3JR": {
+    "lat": 51.539676,
+    "lng": -0.086025,
+    "region": "London",
+    "district": "Islington"
+  },
+  "SW15 5JH": {
+    "lat": 51.463457,
+    "lng": -0.249147,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "HA1 3PD": {
+    "lat": 51.56225,
+    "lng": -0.348455,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "SE5 8EL": {
+    "lat": 51.465077,
+    "lng": -0.090761,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SW11 2TD": {
+    "lat": 51.469378,
+    "lng": -0.166951,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "E4 8ST": {
+    "lat": 51.604126,
+    "lng": -0.021018,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "W3 0JH": {
+    "lat": 51.517821,
+    "lng": -0.275501,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "SE25 5PH": {
+    "lat": 51.391342,
+    "lng": -0.08942,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "SM6 8NR": {
+    "lat": 51.364064,
+    "lng": -0.126023,
+    "region": "London",
+    "district": "Sutton"
+  },
+  "CR0 5EF": {
+    "lat": 51.371389,
+    "lng": -0.053009,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "DA15 9AE": {
+    "lat": 51.43505,
+    "lng": 0.10563,
+    "region": "London",
+    "district": "Bexley"
+  },
+  "SW3 3AP": {
+    "lat": 51.492679,
+    "lng": -0.165887,
+    "region": "London",
+    "district": "Kensington and Chelsea"
+  },
+  "N7 7NY": {
+    "lat": 51.558939,
+    "lng": -0.111574,
+    "region": "London",
+    "district": "Islington"
+  },
+  "NW1 1RX": {
+    "lat": 51.532779,
+    "lng": -0.132944,
+    "region": "London",
+    "district": "Camden"
+  },
+  "SE25 4AN": {
+    "lat": 51.405366,
+    "lng": -0.075996,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "SE25 5AD": {
+    "lat": 51.396459,
+    "lng": -0.076269,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "UB1 3BT": {
+    "lat": 51.510163,
+    "lng": -0.373324,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "EN1 1YP": {
+    "lat": 51.652152,
+    "lng": -0.062324,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "W4 5LD": {
+    "lat": 51.502714,
+    "lng": -0.262701,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "LE11 2TN": {
+    "lat": 52.769109,
+    "lng": -1.203663,
+    "region": "East Midlands",
+    "district": "Charnwood"
+  },
+  "W3 7QH": {
+    "lat": 51.505454,
+    "lng": -0.26189,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "EN4 0PS": {
+    "lat": 51.657309,
+    "lng": -0.137575,
+    "region": "London",
+    "district": "Enfield"
+  },
+  "SE16 2EE": {
+    "lat": 51.498142,
+    "lng": -0.059989,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "SL6 2RA": {
+    "lat": 51.508599,
+    "lng": -0.732536,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "E5 9EF": {
+    "lat": 51.568651,
+    "lng": -0.057119,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "N6 5LY": {
+    "lat": 51.569821,
+    "lng": -0.138642,
+    "region": "London",
+    "district": "Islington"
+  },
+  "SW18 1AE": {
+    "lat": 51.459412,
+    "lng": -0.186482,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "HA6 1AF": {
+    "lat": 51.611768,
+    "lng": -0.421385,
+    "region": "London",
+    "district": "Hillingdon"
+  },
+  "SW9 7HH": {
+    "lat": 51.468054,
+    "lng": -0.108519,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SL6 7EG": {
+    "lat": 51.528191,
+    "lng": -0.721684,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "BS9 4DT": {
+    "lat": 51.485893,
+    "lng": -2.614204,
+    "region": "South West",
+    "district": "Bristol, City of"
+  },
+  "TW11 8UH": {
+    "lat": 51.433711,
+    "lng": -0.344548,
+    "region": "London",
+    "district": "Richmond upon Thames"
+  },
+  "SL2 4PG": {
+    "lat": 51.538288,
+    "lng": -0.595767,
+    "region": "South East",
+    "district": "Buckinghamshire"
+  },
+  "E15 2AE": {
+    "lat": 51.534693,
+    "lng": -0.005559,
+    "region": "London",
+    "district": "Newham"
+  },
+  "SE21 7EX": {
+    "lat": 51.443126,
+    "lng": -0.070984,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "SM3 9PX": {
+    "lat": 51.378383,
+    "lng": -0.202561,
+    "region": "London",
+    "district": "Sutton"
+  },
+  "BR3 1RL": {
+    "lat": 51.422662,
+    "lng": -0.026969,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "E17 3PY": {
+    "lat": 51.585588,
+    "lng": 0.009357,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "KT20 5FB": {
+    "lat": 51.302033,
+    "lng": -0.231424,
+    "region": "South East",
+    "district": "Reigate and Banstead"
+  },
+  "SE11 6AA": {
+    "lat": 51.491351,
+    "lng": -0.115032,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "SE1 2EZ": {
+    "lat": 51.500594,
+    "lng": -0.076151,
+    "region": "London",
+    "district": "Southwark"
+  },
+  "HA8 6AG": {
+    "lat": 51.60152,
+    "lng": -0.288851,
+    "region": "London",
+    "district": "Harrow"
+  },
+  "CM17 0GJ": {
+    "lat": 51.788067,
+    "lng": 0.145232,
+    "region": "East of England",
+    "district": "Harlow"
+  },
+  "TW18 1PF": {
+    "lat": 51.426473,
+    "lng": -0.487705,
+    "region": "South East",
+    "district": "Spelthorne"
+  },
+  "LE11 3BT": {
+    "lat": 52.767512,
+    "lng": -1.220321,
+    "region": "East Midlands",
+    "district": "Charnwood"
+  },
+  "SW16 3BX": {
+    "lat": 51.421463,
+    "lng": -0.120857,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "EC1R 0ND": {
+    "lat": 51.525293,
+    "lng": -0.105716,
+    "region": "London",
+    "district": "Islington"
+  },
+  "SM4 6BF": {
+    "lat": 51.393645,
+    "lng": -0.171848,
+    "region": "London",
+    "district": "Merton"
+  },
+  "SW17 8JU": {
+    "lat": 51.434882,
+    "lng": -0.149196,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "SW17 0NE": {
+    "lat": 51.429598,
+    "lng": -0.173564,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "W13 0DD": {
+    "lat": 51.524492,
+    "lng": -0.32628,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "CR7 7JH": {
+    "lat": 51.39729,
+    "lng": -0.103533,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "EN5 5NY": {
+    "lat": 51.656687,
+    "lng": -0.181653,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "N7 0EB": {
+    "lat": 51.558853,
+    "lng": -0.132612,
+    "region": "London",
+    "district": "Islington"
+  },
+  "RM14 2AJ": {
+    "lat": 51.554038,
+    "lng": 0.248483,
+    "region": "London",
+    "district": "Havering"
+  },
+  "SE19 3PY": {
+    "lat": 51.416405,
+    "lng": -0.092776,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "SE11 6PX": {
+    "lat": 51.492752,
+    "lng": -0.114931,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "AL1 4PR": {
+    "lat": 51.755468,
+    "lng": -0.316188,
+    "region": "East of England",
+    "district": "St Albans"
+  },
+  "KT6 5JL": {
+    "lat": 51.390291,
+    "lng": -0.312726,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "SM6 7PH": {
+    "lat": 51.369018,
+    "lng": -0.149167,
+    "region": "London",
+    "district": "Sutton"
+  },
+  "RG10 0PL": {
+    "lat": 51.470992,
+    "lng": -0.803522,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "E17 8RN": {
+    "lat": 51.575928,
+    "lng": -0.028621,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "E17 9RZ": {
+    "lat": 51.585208,
+    "lng": -0.013727,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "SW18 3RT": {
+    "lat": 51.450634,
+    "lng": -0.171962,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "E12 5HH": {
+    "lat": 51.562315,
+    "lng": 0.033912,
+    "region": "London",
+    "district": "Redbridge"
+  },
+  "E11 3QD": null,
+  "W1T 5NZ": {
+    "lat": 51.524346,
+    "lng": -0.139257,
+    "region": "London",
+    "district": "Camden"
+  },
+  "W3 9QA": {
+    "lat": 51.509933,
+    "lng": -0.280915,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "SE18 6DL": null,
+  "SE1 7BE": {
+    "lat": 51.500891,
+    "lng": -0.108803,
+    "region": "London",
+    "district": "Lambeth"
+  },
+  "N6 6PL": {
+    "lat": 51.567255,
+    "lng": -0.146408,
+    "region": "London",
+    "district": "Camden"
+  },
+  "E2 0DR": null,
+  "W10 5BD": {
+    "lat": 51.524388,
+    "lng": -0.211334,
+    "region": "London",
+    "district": "Kensington and Chelsea"
+  },
+  "KT13 8QA": {
+    "lat": 51.378574,
+    "lng": -0.446075,
+    "region": "South East",
+    "district": "Elmbridge"
+  },
+  "W12 0HR": {
+    "lat": 51.518923,
+    "lng": -0.229868,
+    "region": "London",
+    "district": "Hammersmith and Fulham"
+  },
+  "E1 0LB": {
+    "lat": 51.513566,
+    "lng": -0.049749,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E1 5BA": {
+    "lat": 51.519872,
+    "lng": -0.060751,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "NW2 1TR": {
+    "lat": 51.573408,
+    "lng": -0.219136,
+    "region": "London",
+    "district": "Barnet"
+  },
+  "N19 4RS": {
+    "lat": 51.561134,
+    "lng": -0.129604,
+    "region": "London",
+    "district": "Islington"
+  },
+  "W13 8DJ": {
+    "lat": 51.528044,
+    "lng": -0.318754,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "NW10 3QX": {
+    "lat": 51.540142,
+    "lng": -0.230876,
+    "region": "London",
+    "district": "Brent"
+  },
+  "SW18 5NW": {
+    "lat": 51.439245,
+    "lng": -0.203669,
+    "region": "London",
+    "district": "Wandsworth"
+  },
+  "SL4 5JB": {
+    "lat": 51.485051,
+    "lng": -0.619714,
+    "region": "South East",
+    "district": "Windsor and Maidenhead"
+  },
+  "UB2 4JS": {
+    "lat": 51.496806,
+    "lng": -0.375716,
+    "region": "London",
+    "district": "Ealing"
+  },
+  "CR5 2EH": {
+    "lat": 51.331074,
+    "lng": -0.139326,
+    "region": "London",
+    "district": "Croydon"
+  },
+  "EN2 8GH": {
+    "lat": 51.665496,
+    "lng": -0.100249,
+    "region": "London",
+    "district": "Enfield"
   }
 }

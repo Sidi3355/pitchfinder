@@ -1,0 +1,59 @@
+{
+ "url": "https://www.playfinder.com/london/venue/down-lane-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/down-lane-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:01:00.582Z",
+ "title": "Down Lane Park, Haringey | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nDown Lane Park\nFootball\n Book Online at Down Lane Park\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 43A, Park View Road, Haringey, N17 9AU\n\nPrices\n\nPlease see calendar above for prices and availability\n\nPublic Transport\n\n Tottenham Hale\n\nOpening Hours\nMonday\tClosed\nTuesday\tClosed\nWednesday\tClosed\nThursday\tClosed\nFriday\tClosed\nSaturday\t10:00-16:30\nSunday\t10:00-16:30\n Football Pitch\n11 a side | Grass\n Address\n\nDown Lane Park\n43A\nPark View Road\nN17 9AU\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 18.2 miles away\n\nBeaumont School\nHertfordshire\n\n 15.2 miles away\n\nBull Lane Playing Fields\nLondon\n\n 1.4 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 2.7 miles away\n\nNorth Acton Playing Fields\nActon\n\n 10.3 miles away\n\n",
+ "name": "Down Lane Park",
+ "area": "Haringey",
+ "address": "43A, Park View Road, Haringey, N17 9AU",
+ "postcode": "N17 9AU",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Saturday 10:00-16:30",
+  "Sunday 10:00-16:30"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/down-lane-park/football-11-a-side-32032",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for prices and availability",
+ "skipped": "no artificial football pitch"
+}

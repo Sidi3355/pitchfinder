@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/highbury-fields",
+ "finalUrl": "https://www.playfinder.com/london/venue/highbury-fields",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:01:05.780Z",
+ "title": "Highbury Fields, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHighbury Fields Non-Partner \nFootballNetball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Baalbec Road, Highbury, Islington, N5 1QN\n\nPrices\n\nFrom £72.90-£75.70/hour\n\nPublic Transport\n\n Highbury & Islington\n\nOpening Hours\nMonday\t08:00 - 21:00\nTuesday\t08:00 - 21:00\nWednesday\t08:00 - 21:00\nThursday\t08:00 - 21:00\nFriday\t08:00 - 21:00\nSaturday\t08:00 - 21:00\nSunday\t08:00 - 21:00\nDescription\n\n\n\nLooking to hire a 7-a-side football pitch in North London? Highbury Fields has the perfect facilities for lovers of the small-sided version of the beautiful game. 7-a-side football at Highbury Fields is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 7-a-side football machine, Highbury Fields is the right choice for you.\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Highbury Fields? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe closest station when travelling is Highbury and Islington. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n7 a side | 3G Astroturf\nFacilities\n floodlights free parking 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHaberdasher's Crayford Academy\nKent\n\n 14 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 15 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 13.1 miles away\n\nMarkfield Park\nLondon\n\n 2.6 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 3.4 miles away\n\n",
+ "name": "Highbury Fields",
+ "area": "Islington",
+ "address": "Baalbec Road, Highbury, Islington, N5 1QN",
+ "postcode": "N5 1QN",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00 - 21:00",
+  "Tuesday 08:00 - 21:00",
+  "Wednesday 08:00 - 21:00",
+  "Thursday 08:00 - 21:00",
+  "Friday 08:00 - 21:00",
+  "Saturday 08:00 - 21:00",
+  "Sunday 08:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/highbury-fields/football-7-a-side-32235",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £72.90-£75.70/hour"
+}

@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/featherstone-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/featherstone-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:38:22.768Z",
+ "title": "Featherstone Sports Centre, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFeatherstone Sports Centre\nSpace HireFootballBadmintonTable TennisCricket\n Book Online at Featherstone Sports Centre\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 11 Montague Waye, Southall, London, UB2 5HF\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Southall (National Rail)\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t09:00 - 16:00\nSunday\t13:00 - 21:00\nDescription\n\nBalcony Dance Studio Hire\n\n Space Hire\nStudio | Dance studioStudioSports hall\nFacilities\n changing rooms free parking\n Address\n\nFeatherstone Sports Centre\n11 Montague Waye\nSouthall\nUB2 5HF\n\n\nVIEW ON MAP\n Nearby Space Hire\nLifestyle Fitness Epsom\nEpsom\n\n 10.6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 10.6 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 16.5 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 6.5 miles away\n\nCopthall School\nLondon\n\n 10.2 miles away\n\n",
+ "name": "Featherstone Sports Centre",
+ "area": "Ealing",
+ "address": "11 Montague Waye, Southall, London, UB2 5HF",
+ "postcode": "UB2 5HF",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "sun": [
+   [
+    "13:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 09:00 - 16:00",
+  "Sunday 13:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/featherstone-sports-centre/football-6-a-side-93021",
+   "label": "football",
+   "format": 6,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

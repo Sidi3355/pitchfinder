@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/coram-s-fields-indoor-spaces",
+ "finalUrl": "https://www.playfinder.com/london/venue/coram-s-fields-indoor-spaces",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:02:18.433Z",
+ "title": "Coram's Fields Hall Bookings, London | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCoram's Fields Hall Bookings\nSpace Hire\n Book Online at Coram's Fields Hall Bookings\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 93 Guilford Street, Greater London, London, WC1N 1DN\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Russell Square\n\nOpening Hours\nMonday\t10:00 - 22:00\nTuesday\t10:00 - 22:00\nWednesday\t10:00 - 22:00\nThursday\t10:00 - 22:00\nFriday\t10:00 - 22:00\nSaturday\t10:00 - 16:30\nSunday\t10:00 - 16:30\nDescription\n\n* Guides Hall *\n\n\nCoram's Fields is a wonderful location if you're looking for a hall in London. It’s an ideal place to hold an event as it’s spacious but still allows for an excellent atmosphere. It’s a very popular location for locals, so be sure to book it early to avoid disappointment on the big day. The hall does allow people to bring their own equipment or materials, but it’s sensible to check in with the reception to confirm what is and isn’t allowed. If additional staff are required to ensure the event runs smoothly then speak with the venue about availability, suitable skills and costings.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-use booking system. This method avoids the monthly membership charges and gives you the freedom to use the facility as and when you like, without the commitment of a weekly booking or a membership fee.\n\nFor those who like the security of knowing you can use the facility at the same time every week without fail, you can make a block booking at Coram's Fields.\n\n Space Hire\nMain hallWhole facility\n Address\n\nCoram's Fields Hall Bookings\n93 Guilford Street\nGreater London\nWC1N 1DN\n\n\nVIEW ON MAP\n Nearby Space Hire\nLondon Tigers Sports Complex\nEaling\n\n 11.2 miles away\n\nWallington County Grammar School\nWallington\n\n 10.8 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 11.3 miles away\n\nCopthall School\nLondon\n\n 7.5 miles away\n\nStanley Primary School\nLondon\n\n 11.6 miles away\n\n",
+ "name": "Coram's Fields Hall Bookings",
+ "area": "London",
+ "address": "93 Guilford Street, Greater London, London, WC1N 1DN",
+ "postcode": "WC1N 1DN",
+ "hours": {
+  "mon": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 10:00 - 22:00",
+  "Tuesday 10:00 - 22:00",
+  "Wednesday 10:00 - 22:00",
+  "Thursday 10:00 - 22:00",
+  "Friday 10:00 - 22:00",
+  "Saturday 10:00 - 16:30",
+  "Sunday 10:00 - 16:30"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

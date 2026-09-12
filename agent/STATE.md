@@ -302,6 +302,34 @@ astro on the spot, and adds the rest pinned at their postcode. The run is polite
 browser, robots honoured, two seconds a page) and bounded (page budget, deadline, caches, an
 offline rebuild), and both the venue-fetch and the weekly refresh workflows run it.
 
+Reflection: three runs on GitHub. The first read every Playfinder venue in its sitemap (333
+London venue pages, 507 pages in 52 minutes): all 15 London Powerleague clubs came back with a
+week of real slot prices (weekday 40-minute slots at £95 off-peak and £110 peak, hour-long
+weekend slots at £75, in Shoreditch's case), nine of them clubs the map did not have; 84
+astros gained an hours table; 86 astros with an artificial pitch showed no calendar, and a
+probe found why: those venues sell through a Bookteq widget in an iframe that shows
+availability without prices until a slot is chosen, which is left for a later iteration. The
+first run read no Goals club at all: Pitchbooking's sitemap does not list Goals' pages and
+Goals' club picker is drawn by script, so the twelve London pages were found by web search
+and seeded, each checked against its own title. The second run read eleven clubs for seven
+days each (about 330 slots a club); it also showed that the pitch size in the URL does not
+switch Pitchbooking's list, so the 7 and 8-a-side rows repeated the 5-a-side prices: the
+reader now picks the size in the page's own select and keeps a slot only when its per-player
+figure is the price over twice that many players; the third run read all twelve clubs
+(Bexleyheath included, whose own site had answered with its shell that day) with the sizes
+apart: Beckenham sells a 5-a-side hour at £88 and an 8-a-side hour at £124 off-peak. A band grouped by price alone had claimed
+"every day 09:00 to 22:00" for a £86 hour that costs £106 on weekday evenings; days now fold
+into a band only when its windows hide no other price that day. Tolworth is not on
+Pitchbooking under any name searched and keeps its hours only; Powerleague Wembley and
+Canary Wharf have no Playfinder page and keep the unverified baseline. The refresh wrote
+274 venues: 12 Goals clubs and 15 Powerleague clubs with a week of real prices by pitch size,
+59 venues added from Playfinder (nine of them Powerleague clubs the map lacked), 84 astros
+with an hours table, and no astro with a slot price yet. A probe of the Bookteq widget those
+astros sell through showed a week of availability cells (closed, unavailable, available,
+fully booked) and no price at all until the booking flow itself, one facility at a time; a
+reader would have to pick a facility, find an available cell and open the basket for each
+venue, which is the next thing to build, not this iteration. Kept.
+
 ## Iteration 11: the UI, redone with the 21st.dev connector (12 Sep 2026, user-directed)
 
 The user's call: "redo the UI properly using the new 21st.dev connector."

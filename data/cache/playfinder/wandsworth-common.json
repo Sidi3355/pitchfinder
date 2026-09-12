@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/wandsworth-common",
+ "finalUrl": "https://www.playfinder.com/london/venue/wandsworth-common",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:07:35.241Z",
+ "title": "Wandsworth Common, Wandsworth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWandsworth Common Non-Partner \nFootballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Wandsworth Common, Dorlcote Road, Wandsworth, Wandsworth, SW18 3RT\n\nPrices\n\nPublic Transport\n\n Clapham Junction (Overground)\n\nOpening Hours\n\n08.00 - Dusk\n\nDescription\n\nThere are eleven 11 a side football pitches available at the Wandsworth Common on a grass surface. It is situated in Wandsworth, South London and the nearest tube is Clapham Junction (Overground). All the facilities are available on a pay as you go basis\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 7.5 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 7.3 miles away\n\nBeaumont School\nHertfordshire\n\n 21.7 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 5.3 miles away\n\nNorth Acton Playing Fields\nActon\n\n 6.4 miles away\n\n",
+ "name": "Wandsworth Common",
+ "area": "Wandsworth",
+ "address": "Wandsworth Common, Dorlcote Road, Wandsworth, Wandsworth, SW18 3RT",
+ "postcode": "SW18 3RT",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/wandsworth-common/football-11-a-side-32142",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

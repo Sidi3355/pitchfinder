@@ -1,0 +1,96 @@
+{
+ "url": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-jerningham-site",
+ "finalUrl": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-jerningham-site",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:36:43.786Z",
+ "title": "Haberdashers' Hatcham College - Jerningham Site, Lewisham | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHaberdashers' Hatcham College - Jerningham Site\nFootballBasketballSpace HireHockeyNetball\n Book Online at Haberdashers' Hatcham College - Jerningham Site\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Jerningham Road, London, London, SE14 5NY\n\nPrices\n\nPlease check calendars above for prices\n\nPublic Transport\n\n New Cross Gate\n\nOpening Hours\nMonday\t17:00 - 20:00\nTuesday\t17:00 - 20:00\nWednesday\t17:00 - 20:00\nThursday\t17:00 - 20:00\nFriday\t17:00 - 20:00\nSaturday\t10:00 - 17:00\nSunday\t10:00 - 17:00\nDescription\n\n**Outdoor Playground**\n\nHaberdashers' Hatcham College - Jerningham Site is located in South East London and boasts an incredible 5-a-side hard (macadam) pitch. Not many 5-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 5-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Haberdashers' Hatcham College - Jerningham Site? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nIf you're looking to travel using public transport, then the nearest station is New Cross Gate. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n5 a side | Hard (macadam)7 a side | Hard (macadam)\nFacilities\n free parking\n Address\n\nHaberdashers' Hatcham College - Jerningham Site\nJerningham Road\nLondon\nSE14 5NY\n\n\nVIEW ON MAP\n Nearby Football Pitches\nHenry Fawcett Primary School\nLondon\n\n 3.1 miles away\n\nMallinson Sports Centre\nHighgate\n\n 8.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 9.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 9.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 9.9 miles away\n\n",
+ "name": "Haberdashers' Hatcham College - Jerningham Site",
+ "area": "Lewisham",
+ "address": "Jerningham Road, London, London, SE14 5NY",
+ "postcode": "SE14 5NY",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 20:00",
+  "Tuesday 17:00 - 20:00",
+  "Wednesday 17:00 - 20:00",
+  "Thursday 17:00 - 20:00",
+  "Friday 17:00 - 20:00",
+  "Saturday 10:00 - 17:00",
+  "Sunday 10:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-jerningham-site/football-5-a-side-43647",
+   "label": "5 a side | Hard (macadam)",
+   "format": 5,
+   "surface": null
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-jerningham-site/football-7-a-side-92347",
+   "label": "7 a side | Hard (macadam)",
+   "format": 7,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please check calendars above for prices",
+ "skipped": "no artificial football pitch"
+}

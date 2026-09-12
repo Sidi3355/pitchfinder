@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/childs-hill-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/childs-hill-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:06:10.515Z",
+ "title": "Childs Hill Park, Barnet | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nChilds Hill Park Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Childs Hill Park, Granville Road, Golders Green, Barnet, NW2 2AT\n\nPrices\n\nPublic Transport\n\n Golders Green\n\nOpening Hours\n\n08.00 - Dusk\n\nDescription\n\nChilds Hill Park, which is based in Barnet, has 1 Football facilities, which are Grass. This facility is pay as you play.\n\n Football Pitch\n11 a side | Grass\nFacilities\n free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 14.4 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 15 miles away\n\nBeaumont School\nHertfordshire\n\n 13.7 miles away\n\nNorth Acton Playing Fields\nActon\n\n 4.4 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 5.1 miles away\n\n",
+ "name": "Childs Hill Park",
+ "area": "Barnet",
+ "address": "Childs Hill Park, Granville Road, Golders Green, Barnet, NW2 2AT",
+ "postcode": "NW2 2AT",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/childs-hill-park/football-11-a-side-32019",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

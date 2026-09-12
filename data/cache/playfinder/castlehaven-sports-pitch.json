@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/castlehaven-sports-pitch",
+ "finalUrl": "https://www.playfinder.com/london/venue/castlehaven-sports-pitch",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:31:27.095Z",
+ "title": "Castlehaven Sports Pitch, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCastlehaven Sports Pitch\nFootballHockeyRugbyVolleyball\n Book Online at Castlehaven Sports Pitch\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 23 Castlehaven Road, Camden Town, Camden Town, NW1 8RU\n\nPrices\n\nPlease check calendar for availability and prices\n\nPublic Transport\n\n Camden Town\n\nOpening Hours\nMonday\t09:00 – 15:00 & 17:00 – 22:00\nTuesday\t09:00 – 15:00 & 17:00 – 22:00\nWednesday\t09:00 – 15:00 & 17:00 – 22:00\nThursday\t09:00 – 15:00 & 17:00 – 22:00\nFriday\t09:00 – 15:00 & 17:00 – 22:00\nSaturday\t09:00 - 19:00\nSunday\t09:00 - 19:00\nDescription\n\nWelcome to Castlehaven Sports Pitch – a high-quality 9-a-side football facility located in the heart of Camden Town.\n\nOur top-tier 3G astroturf pitch is perfect for casual kickabouts, regular team training, or league matches. It’s available all year-round and fully equipped with floodlights, so you can play into the evening, whatever the season.\n\nWe offer Pay As You Play bookings – no membership required – and block bookings for teams and groups wanting to reserve a regular weekly slot.\n\nComfortable changing rooms are available onsite, making your visit smooth and enjoyable.\n\nThe venue is very well connected by public transport, making it easy for teams and players to get here from across London.\n\nFootwear & Pitch Rules:\nTo protect the 3G playing surface and ensure everyone’s safety, please follow these guidelines:\n\n✅ Permitted footwear: moulded boots, AG (artificial ground) boots, or Astro trainers\n✅ Flat-soled trainers are allowed but may offer less grip\n❌ No metal studs or blades – strictly prohibited\n❌ No food or chewing gum on the pitch\n\n Football Pitches\n9 a side | Astroturf5 a side | Astroturf\nFacilities\n floodlights\n Address\n\nCastlehaven Sports Pitch\n23 Castlehaven Road\nCamden Town\nNW1 8RU\n\n\nVIEW ON MAP\n Nearby Football Pitches\nLow Hall Sports Ground\nWaltham Forest\n\n 5 miles away\n\nMuswell Hill Playing Fields\nHaringey\n\n 4 miles away\n\nO.R. Tambo Recreation Ground (formerly Albert Road Rec)\nHaringey\n\n 4.2 miles away\n\nMarkfield Park\nLondon\n\n 4.4 miles away\n\nNorth Acton Playing Fields\nActon\n\n 5.7 miles away\n\n",
+ "name": "Castlehaven Sports Pitch",
+ "area": "Camden",
+ "address": "23 Castlehaven Road, Camden Town, Camden Town, NW1 8RU",
+ "postcode": "NW1 8RU",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 – 15:00",
+  "Tuesday 09:00 – 15:00",
+  "Wednesday 09:00 – 15:00",
+  "Thursday 09:00 – 15:00",
+  "Friday 09:00 – 15:00",
+  "Saturday 09:00 - 19:00",
+  "Sunday 09:00 - 19:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   9
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/castlehaven-sports-pitch/football-9-a-side-41636",
+   "label": "9 a side | Astroturf",
+   "format": 9,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/castlehaven-sports-pitch/football-5-a-side-42250",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please check calendar for availability and prices"
+}

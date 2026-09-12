@@ -1,0 +1,95 @@
+{
+ "url": "https://www.playfinder.com/london/venue/sheen-way-playing-field",
+ "finalUrl": "https://www.playfinder.com/london/venue/sheen-way-playing-field",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:43:12.486Z",
+ "title": "Sheen Way Playing Field, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSheen Way Playing Field\nFootball\n Book Online at Sheen Way Playing Field\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Sheen Way Playing Field, Greater London, Wallington, SM6 8NR\n\nPrices\n\nPublic Transport\n\n Waddon\n\nOpening Hours\nMonday\t17:00 - 20:00\nTuesday\t17:00 - 20:00\nWednesday\t17:00 - 20:00\nThursday\t17:00 - 20:00\nFriday\t17:00 - 20:00\nSaturday\t8:00 - 18:00\nSunday\t8:00 - 18:00\nDescription\n\nSheen Way Playing Fields is a well-used community sports facility located in Wallington, Greater London, offering a spacious 9-a-side football pitch suitable for both casual and competitive play. The pitch is ideal for youth teams, local clubs, school fixtures, and training sessions, providing a quality playing surface in a convenient South London setting.\n\nBookings are available for one-off matches or as part of a regular block booking, making it easy for teams and organisers to secure a consistent slot throughout the season. Whether you're planning a single friendly game or setting up weekly fixtures, the flexible hire options cater to a variety of needs.\n\nThere is free parking available around the surrounding streets, so players and spectators can attend without worrying about permits or additional fees. The facility also includes access to changing rooms, offering teams a comfortable space to get ready before kick-off and to cool down after the game.\n\nSheen Way Playing Fields combines accessibility, convenience, and essential amenities to create a reliable venue for 9-a-side football. It’s a great option for grassroots clubs, community teams, and schools looking for a local pitch in the Wallington area.\n\n Football Pitches\n9 a side pitch | Grass7 a side pitch | Grass\nFacilities\n changing rooms free parking\n Address\n\nSheen Way Playing Field\nSheen Way Playing Field\nGreater London\nSM6 8NR\n\n\nVIEW ON MAP\n Nearby Football Pitches\nBull Lane Playing Fields\nLondon\n\n 17.1 miles away\n\nKing Georges Playing Field\nChessington\n\n 6.9 miles away\n\nChurchfields Recreation Ground\nChessington\n\n 7.6 miles away\n\nLatchmere Recreation Ground\nKingston upon Thames\n\n 8.4 miles away\n\nLoreto College\nSt Albans\n\n 27.8 miles away\n\n",
+ "name": "Sheen Way Playing Field",
+ "area": "Croydon",
+ "address": "Sheen Way Playing Field, Greater London, Wallington, SM6 8NR",
+ "postcode": "SM6 8NR",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 20:00",
+  "Tuesday 17:00 - 20:00",
+  "Wednesday 17:00 - 20:00",
+  "Thursday 17:00 - 20:00",
+  "Friday 17:00 - 20:00",
+  "Saturday 8:00 - 18:00",
+  "Sunday 8:00 - 18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   9
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/sheen-way-playing-field/football-9-a-side-pitch-93495",
+   "label": "9 a side pitch | Grass",
+   "format": 9,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/sheen-way-playing-field/football-7-a-side-pitch-93494",
+   "label": "7 a side pitch | Grass",
+   "format": 7,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

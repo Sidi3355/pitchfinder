@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/the-downside-settlement",
+ "finalUrl": "https://www.playfinder.com/london/venue/the-downside-settlement",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:37:59.289Z",
+ "title": "The Downside Settlement, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nThe Downside Settlement\nSpace HireFootballGymTable TennisCricketBasketballVolleyballSwimmingBadminton\n Book Online at The Downside Settlement\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Coxson Place, Druid Street, Southwark, SE1 2EZ\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n London Bridge\n\nOpening Hours\nMonday\t09:00 - 18:00\nTuesday\t09:00 - 18:00\nWednesday\t09:00 - 18:00\nThursday\t09:00 - 18:00\nFriday\t09:00 - 18:00\nSaturday\t09:00 - 16:00\nSunday\t09:00 - 16:00\nDescription\n\nIf you’re looking for Dance Studio in Southwark, London then you’ve come to the right place. The dance studio at The Downside Settlement is ideal for a wide range of occasions including classes. The dance studio is able to hold a good number of people, but it’s worth checking in with the venue before booking to ensure the maximum number isn’t surpassed to affect health and safety. For those people looking to hold a regular event it’s a good idea to explore the option of a block booking to guarantee a weekly spot to avoid disappointments.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-use booking system. This method avoids the monthly membership charges and gives you the freedom to use the facility as and when you like, without the commitment of a weekly booking or a membership fee.\n\nFor those who like the security of knowing you can use the facility at the same time every week without fail, you can make a block booking at The Downside Settlement. The changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe closest station when travelling is London Bridge station. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Space Hire\nStudio | Dance studioDrama studioMulti purpose roomMeeting roomClimbing wall\nFacilities\n changing rooms\n Address\n\nThe Downside Settlement\nCoxson Place\nDruid Street\nSE1 2EZ\n\n\nVIEW ON MAP\n Nearby Space Hire\nLifestyle Fitness Epsom\nEpsom\n\n 12.8 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 12.8 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 9.5 miles away\n\nKings International College\nCamberley\n\n 31.6 miles away\n\nMarcus Lipton Community Enterprise\nLambeth\n\n 2.5 miles away\n\n",
+ "name": "The Downside Settlement",
+ "area": "Southwark",
+ "address": "Coxson Place, Druid Street, Southwark, SE1 2EZ",
+ "postcode": "SE1 2EZ",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "16:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 18:00",
+  "Tuesday 09:00 - 18:00",
+  "Wednesday 09:00 - 18:00",
+  "Thursday 09:00 - 18:00",
+  "Friday 09:00 - 18:00",
+  "Saturday 09:00 - 16:00",
+  "Sunday 09:00 - 16:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/the-downside-settlement/football-5-a-side-92714",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

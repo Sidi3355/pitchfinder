@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/lifestyle-fitness-kingston",
+ "finalUrl": "https://www.playfinder.com/london/venue/lifestyle-fitness-kingston",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:44:10.154Z",
+ "title": "Lifestyle Fitness Kingston, Kingston upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nLifestyle Fitness Kingston\nSpace Hire\n Book Online at Lifestyle Fitness Kingston\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Kingston University Penrhyn Road Campus, Greater London, Kingston upon Thames, KT1 2EE\n\nPrices\n\nPublic Transport\n\n Berrylands\n\nOpening Hours\nMonday\t6:00 - 22:00\nTuesday\t6:00 - 22:00\nWednesday\t6:00 - 22:00\nThursday\t6:00 - 22:00\nFriday\t6:00 - 22:00\nSaturday\t8:00 - 17:00\nSunday\t8:00 - 17:00\nDescription\n\nThe exercise studio at Lifestyle Fitness Kingston is available to hire for fitness classes, exercise sessions, personal training, workshops and group activities. The spacious and versatile studio provides a dedicated environment for instructors, trainers, clubs and community groups to run a variety of sessions.\n\nWhether you're looking to host a regular fitness class, group workout or one-off exercise session, the studio offers a flexible space to suit your needs. Free parking is available at the venue, making it convenient for both organisers and participants.\n\nBook the exercise studio at Lifestyle Fitness Kingston today and get active!\n\n Space Hire\nStudio\nFacilities\n free parking\n Address\n\nLifestyle Fitness Kingston\nKingston University Penrhyn Road Campus\nGreater London\nKT1 2EE\n\n\nVIEW ON MAP\n Nearby Space Hire\nLifestyle Fitness Epsom\nEpsom\n\n 3 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 3 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 10.2 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 8.1 miles away\n\nMarcus Lipton Community Enterprise\nLambeth\n\n 9.7 miles away\n\n",
+ "name": "Lifestyle Fitness Kingston",
+ "area": "Kingston upon Thames",
+ "address": "Kingston University Penrhyn Road Campus, Greater London, Kingston upon Thames, KT1 2EE",
+ "postcode": "KT1 2EE",
+ "hours": {
+  "mon": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 6:00 - 22:00",
+  "Tuesday 6:00 - 22:00",
+  "Wednesday 6:00 - 22:00",
+  "Thursday 6:00 - 22:00",
+  "Friday 6:00 - 22:00",
+  "Saturday 8:00 - 17:00",
+  "Sunday 8:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

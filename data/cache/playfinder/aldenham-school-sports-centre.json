@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/aldenham-school-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/aldenham-school-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:26:47.733Z",
+ "title": "Aldenham School Sports Centre, Watford | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAldenham School Sports Centre\nBadmintonCricketFootballNetballBasketballHockeyTable TennisTennisSpace HireFutsal\n Book Online at Aldenham School Sports Centre\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Aldenham Road, Elstree, Radlett, WD6 3AJ\n\nPrices\n\nPlease see calender above for availability and prices\n\nPublic Transport\n\n Radlett\n\nOpening Hours\nMonday\t06:00 – 23:00\nTuesday\t06:00 – 23:00\nWednesday\t06:00 – 23:00\nThursday\t06:00 – 23:00\nFriday\t06:00 – 23:00\nSaturday\t08:00 – 19:00\nSunday\t09:00 – 21:00\nDescription\n\nAldenham School Sports Centre has excellent badminton facilities for anyone looking in the Hertfordshire/North London area. They have a total of 9 badminton court, posts and nets are included. Leagues and clubs can operate from the venue, as well as casual games with friends/colleagues.\n\nAldenham School Sports Centre provides free parking on site to those who are travelling by car or motorcycle. The nearest transport links to the venue by train are as follows:\n\nFrom London\nLondon - St Pancras International (Thameslink) to Elstree & Borehamwood and a 5 minute taxi to the School. Trains run every 20 minutes and the journey takes 20-25 minutes.\n\nFrom the North West:\nMajority of the InterCity trains stop at Watford Junction on the way into Euston. The school is a 10 minute taxi ride from Watford. Please not that you should instruct the driver to go to the School and not the village of Aldenham.\n\nDirections by Tube:\nJubilee Line to Stanmore and taxi from the station.\n\nThe venue is open to the public to come and play on a one-off basis.\n\nIf you would like to secure your booking on a regular basis a block booking option is available for customers. This takes away the hassle of paying each session with one upfront fee and secures the booking for a number of weeks.\n\nPlease adhere to all terms and conditions of Aldenham School Sports Centre\n\nIf you need assistance on the day of your booking please call the site phone: 07857 915362\n\n Badminton Court\nIndoor | Hard\nFacilities\n free parking\n Address\n\nAldenham School Sports Centre\nAldenham Road\nElstree\nWD6 3AJ\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Badminton Courts\nMallinson Sports Centre\nHighgate\n\n 9.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 20.9 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 20.9 miles away\n\nBolder Academy\nLondon\n\n 12.1 miles away\n\nWillowbrook Leisure Centre\nOxfordshire\n\n 39.3 miles away\n\n",
+ "name": "Aldenham School Sports Centre",
+ "area": "Watford",
+ "address": "Aldenham Road, Elstree, Radlett, WD6 3AJ",
+ "postcode": "WD6 3AJ",
+ "hours": {
+  "mon": [
+   [
+    "06:00",
+    "23:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:00",
+    "23:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:00",
+    "23:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:00",
+    "23:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:00",
+    "23:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 06:00 – 23:00",
+  "Tuesday 06:00 – 23:00",
+  "Wednesday 06:00 – 23:00",
+  "Thursday 06:00 – 23:00",
+  "Friday 06:00 – 23:00",
+  "Saturday 08:00 – 19:00",
+  "Sunday 09:00 – 21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/aldenham-school-sports-centre/football-5-a-side-38259",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calender above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

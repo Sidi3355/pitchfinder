@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/maidenhead-golf-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/maidenhead-golf-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:19:12.592Z",
+ "title": "Maidenhead Golf Centre, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nMaidenhead Golf Centre Non-Partner \nGolf\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Maidenhead Golf Centre, Braywick Road, Windsor and Maidenhead, SL6 1BN\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\nMonday\t10:00-21:00\nTuesday\t9:00-21:00\nWednesday\t9:00-21:00\nThursday\t9:00-21:00\nFriday\t10:00-20:00\nSaturday\t9:00-19:00\nSunday\t9:00-19:00\n Golf Course\n9 hole | Yes\nMAKE A BOOKING\n",
+ "name": "Maidenhead Golf Centre",
+ "area": "Windsor and Maidenhead",
+ "address": "Maidenhead Golf Centre, Braywick Road, Windsor and Maidenhead, SL6 1BN",
+ "postcode": "SL6 1BN",
+ "hours": {
+  "mon": [
+   [
+    "10:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "10:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 10:00-21:00",
+  "Tuesday 9:00-21:00",
+  "Wednesday 9:00-21:00",
+  "Thursday 9:00-21:00",
+  "Friday 10:00-20:00",
+  "Saturday 9:00-19:00",
+  "Sunday 9:00-19:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}

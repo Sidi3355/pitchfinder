@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/oaken-grove",
+ "finalUrl": "https://www.playfinder.com/london/venue/oaken-grove",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:19:28.859Z",
+ "title": "Oaken Grove, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nOaken Grove Non-Partner \nFootballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Oaken Grove, Courthouse Road, Windsor and Maidenhead, SL6 6HY\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Furze Platt\n\nOpening Hours\n\nNot Specified\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 23.2 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 31 miles away\n\nBeaumont School\nHertfordshire\n\n 24.6 miles away\n\nElthorne Waterside Pitches\nLondon\n\n 17.9 miles away\n\nNorth Acton Playing Fields\nActon\n\n 20.3 miles away\n\n",
+ "name": "Oaken Grove",
+ "area": "Windsor and Maidenhead",
+ "address": "Oaken Grove, Courthouse Road, Windsor and Maidenhead, SL6 6HY",
+ "postcode": "SL6 6HY",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/oaken-grove/football-11-a-side-35606",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}

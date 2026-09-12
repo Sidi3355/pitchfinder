@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/docklands-settlements-astroturf",
+ "finalUrl": "https://www.playfinder.com/london/venue/docklands-settlements-astroturf",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:24:09.764Z",
+ "title": "Docklands Settlements AstroTurf, Tower Hamlets | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nDocklands Settlements AstroTurf Non-Partner \nFootballFutsal\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 400 Salter Road, Rotherhithe, London, SE16 5AA\n\nPrices\n\nFrom £15.00-£30.00/hour\n\nPublic Transport\n\n Canada Water\n\nOpening Hours\nMonday\t09:00 - 21:00\nTuesday\t09:00 - 21:00\nWednesday\t09:00 - 21:00\nThursday\t09:00 - 21:00\nFriday\t09:00 - 21:00\nSaturday\t09:00 - 19:00\nSunday\t09:00 - 19:00\nDescription\n\n\n\n**PLEASE ENSURE YOU WEAR PLASTIC-STUDDED FOOTWEAR ONLY, DO NOT USE METAL STUDE, BLADES, DIMPLED OR FLAT SHOES.**\n\nDockland Settlements Charity recently had the 5 a-side astroturf pitch re-laid with a shockpad and 50mm “Tiger Turf” – the best astroturf on the market. The pitch is a large 5-a-side pitch (19m x 30m) with Futsal style goals and line markings allowing teams the option of either playing within the lines or off the boards. It also has a roof-net so no lost balls or interruptions in play. All profits from pitch hire go towards charitable causes.\nThe Dockland Settlements Community Centre has changing rooms, showers, lockers, floodlights, a café, free car parking on the road, a dance studio and large indoor sports hall.\nThe closest stations are Canada Water and Surrey Quays – just a short walk from either or a quick bus - for more details on how to access the facility please get in touch.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 3.5 miles away\n\nMallinson Sports Centre\nHighgate\n\n 7.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 10 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 10 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 10 miles away\n\n",
+ "name": "Docklands Settlements AstroTurf",
+ "area": "Tower Hamlets",
+ "address": "400 Salter Road, Rotherhithe, London, SE16 5AA",
+ "postcode": "SE16 5AA",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 21:00",
+  "Tuesday 09:00 - 21:00",
+  "Wednesday 09:00 - 21:00",
+  "Thursday 09:00 - 21:00",
+  "Friday 09:00 - 21:00",
+  "Saturday 09:00 - 19:00",
+  "Sunday 09:00 - 19:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": true,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/docklands-settlements-astroturf/football-5-a-side-37506",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £15.00-£30.00/hour"
+}

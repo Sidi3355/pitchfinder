@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/atam-academy",
+ "finalUrl": "https://www.playfinder.com/london/venue/atam-academy",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:36:16.089Z",
+ "title": "ATAM Academy, Redbridge | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nATAM Academy Non-Partner \nBadmintonFootballSpace HireNetballBasketballFutsal\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Little Heath, Barley Lane, Romford, RM4 4XX\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Bus stop: Heathfield Park Drive\n\nOpening Hours\nMonday\t18:00 - 23:00\nTuesday\t18:00 - 23:00\nWednesday\t18:00 - 23:00\nThursday\t18:00 - 23:00\nFriday\t18:00 - 23:00\nSaturday\t08:00 - 23:00\nSunday\t08:00 - 23:00\nDescription\n\nBadminton at ATAM Academy allows you to play on one of the best badminton courts in Romford. The pristine sports hall provides an excellent arena in which to show off your badminton skills and these courts can be booked all year around. The nets provided are well kept and will be placed on the court and set up for your arrival. You must provide your own racket and shuttlecocks. The venue does not have any to rent out.\n\nThose driving are able to park free of charge at the facility.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at ATAM Academy? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe venue is situated near Heathfield Park Drive bus stop. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Badminton Court\nIndoor\nFacilities\n changing rooms free parking\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 11.8 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 22.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 22.5 miles away\n\nAldenham School Sports Centre\nRadlett\n\n 19.9 miles away\n\nBolder Academy\nLondon\n\n 20.2 miles away\n\n",
+ "name": "ATAM Academy",
+ "area": "Redbridge",
+ "address": "Little Heath, Barley Lane, Romford, RM4 4XX",
+ "postcode": "RM4 4XX",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "23:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 23:00",
+  "Tuesday 18:00 - 23:00",
+  "Wednesday 18:00 - 23:00",
+  "Thursday 18:00 - 23:00",
+  "Friday 18:00 - 23:00",
+  "Saturday 08:00 - 23:00",
+  "Sunday 08:00 - 23:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/atam-academy/football-11-a-side-43674",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

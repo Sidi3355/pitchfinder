@@ -1,0 +1,29 @@
+{
+ "url": "https://www.playfinder.com/london/venue/north-london-padel-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/north-london-padel-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:32:40.310Z",
+ "title": "North London Padel Club, Hertfordshire | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nNorth London Padel Club Non-Partner \nPadel Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Bushey Grove Leisure Centre, Aldenham Road, Bushey, WD23 2TD\n\nPrices\n\nPublic Transport\n\n Bus Stop: Leisure Centre\n\n Padel Tennis Court\nOutdoor court | Sand-based Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n",
+ "name": "North London Padel Club",
+ "area": "Hertfordshire",
+ "address": "Bushey Grove Leisure Centre, Aldenham Road, Bushey, WD23 2TD",
+ "postcode": "WD23 2TD",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

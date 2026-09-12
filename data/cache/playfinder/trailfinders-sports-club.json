@@ -1,0 +1,101 @@
+{
+ "url": "https://www.playfinder.com/london/venue/trailfinders-sports-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/trailfinders-sports-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:22:14.745Z",
+ "title": "Trailfinders Sports Club, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nTrailfinders Sports Club Non-Partner \nFootballNetballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Vallis Way, West Ealing, Ealing, W13 0DD\n\nPrices\n\nAround £40.00/hour\n\nPublic Transport\n\n Ealing Broadway\n\nOpening Hours\nMonday\t07:00 - 17:00\nTuesday\t07:00 - 17:00\nWednesday\t07:00 - 17:00\nThursday\t07:00 - 17:00\nFriday\t07:00 - 17:00\nSaturday\t07:00 - 17:00\nSunday\t07:00 - 17:00\nDescription\n\nLooking to hire a 5-a-side football pitch in west London? Trailfinders Sports Club has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Trailfinders Sports Club is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Trailfinders Sports Club is the right choice for you. The 3G pitch at the venue also facilitiates 7-a-side football on the 3G astroturf pitch.\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nThose driving are able to park free of charge at the facility. If you’re travelling by car, then you’ll be glad to know there is ample free parking provided by the venue so finding a space should never be an issue.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Trailfinders Sports Club? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe venue is situated near Castle Bar Park station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking. Alternatively the venue is well served by local bus routes and is a short stroll from the bus stops at Scotch Common.\n\n Football Pitches\n5 a side | 3G Astroturf7 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 8.2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 9.8 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 11.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 22.8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 22.8 miles away\n\n",
+ "name": "Trailfinders Sports Club",
+ "area": "Ealing",
+ "address": "Vallis Way, West Ealing, Ealing, W13 0DD",
+ "postcode": "W13 0DD",
+ "hours": {
+  "mon": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ],
+  "tue": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ],
+  "wed": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ],
+  "thu": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ],
+  "fri": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ],
+  "sat": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "07:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 07:00 - 17:00",
+  "Tuesday 07:00 - 17:00",
+  "Wednesday 07:00 - 17:00",
+  "Thursday 07:00 - 17:00",
+  "Friday 07:00 - 17:00",
+  "Saturday 07:00 - 17:00",
+  "Sunday 07:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": true,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/trailfinders-sports-club/football-5-a-side-36018",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/trailfinders-sports-club/football-7-a-side-36060",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Around £40.00/hour"
+}

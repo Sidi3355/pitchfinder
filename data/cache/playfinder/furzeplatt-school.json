@@ -1,0 +1,107 @@
+{
+ "url": "https://www.playfinder.com/london/venue/furzeplatt-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/furzeplatt-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:17:06.620Z",
+ "title": "Furze Platt Leisure Centre, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFurze Platt Leisure Centre Non-Partner \nFootballGymCricketNetballTennisBasketballHockeyBadmintonSpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Furze Platt Road, Maidenhead, Windsor and Maidenhead, SL6 7NQ\n\nPrices\n\nFrom £35.70-£64.60/hour\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\n\nTerm Time: Mon - Thu 4:30 pm-10:00 pm, Fri 4:30-9pm, Weekend 9:00-18:00 School Holidays: 9:00 am-10:00 pm, Fri:9:00am - 9:00am Weekends 9:00 am-6:00 pm\n\nDescription\n\nLooking to hire a 7-a-side football pitch in Maidenhead? Furze Platt Leisure Centre has the perfect facilities for lovers of the small-sided version of the beautiful game.\n\n7-a-side football at Furze Platt Leisure Centre is played on 3g astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 7-a-side football machine, Furze Platt Leisure Centre is the right choice for you.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Furze Platt Leisure Centre? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nIf you're looking to travel using public transport, then the nearest station is Maidenhead. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n7 a side | 3G Astroturf11 a side | 3G Astroturf5 a side | Indoor\nFacilities\n floodlights changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 23.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 40.3 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 31.1 miles away\n\nKings International College\nCamberley\n\n 14.8 miles away\n\nBeavers Lodge\nHounslow\n\n 15.3 miles away\n\n",
+ "name": "Furze Platt Leisure Centre",
+ "area": "Windsor and Maidenhead",
+ "address": "Furze Platt Road, Maidenhead, Windsor and Maidenhead, SL6 7NQ",
+ "postcode": "SL6 7NQ",
+ "hours": {
+  "mon": [
+   [
+    "16:30",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "16:30",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "16:30",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "16:30",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "04:30",
+    "21:00"
+   ],
+   [
+    "09:00",
+    "09:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Mon - Thu 4:30 pm-10:00 pm",
+  "Fri 4:30-9pm",
+  "Fri:9:00am - 9:00am",
+  "Weekends 9:00 am-6:00 pm"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/furzeplatt-school/football-7-a-side-35113",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/furzeplatt-school/football-11-a-side-35528",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/furzeplatt-school/football-5-a-side-35536",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  }
+ ],
+ "priceSummary": "From £35.70-£64.60/hour"
+}

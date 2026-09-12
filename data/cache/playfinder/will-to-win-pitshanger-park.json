@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/will-to-win-pitshanger-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/will-to-win-pitshanger-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:13:28.976Z",
+ "title": "Park Sports Pitshanger Park, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nPark Sports Pitshanger Park Non-Partner \nFootballTennisNetball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n The Lodge, Pitshanger Park, Woodbury Park Rd, W13 8DJ\n\nPrices\n\nAround £40/hour\n\nPublic Transport\n\n Ealing Broadway then E2, E9 or N7 bus\n\nOpening Hours\nMonday\t08:00-21:00\nTuesday\t08:00-21:00\nWednesday\t08:00-21:00\nThursday\t08:00-21:00\nFriday\t08:00-20:00\nSaturday\t08:00-19:00\nSunday\t08:00-18:00\nDescription\n\nPark Sports Pitshanger Park is located in Ealing (West London) and has one 3G 5-a-side floodlit football pitch.\n\nWhether you want to play a game with your mates or train as a team, this facility is definitely worth playing at. The venue is a public pay and play facility, giving you the freedom to play a one-off game, without having to sign up or pay a monthly membership fee. All bookings can be made online in advance, with discounted off-peak prices.\n\nIf a one-off game isn't enough, then block bookings are available on request via email at pitshanger@parksports.co.uk. Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThose driving, can park free of charge at Perivale Gardens car park. Alternatively, if you're looking to travel using public transport, the nearest train station is Ealing Broadway, and the facility has excellent bus transport links making it easy for all participants to reach the venue.\n\nAt Park Sports Pitshanger Park, there is also a café, toilets, and 8 tennis and netball courts for hire. It has previously received an award for Playfinder London Outstanding Venue, which is determined by Playfinder users, and is based on pitch quality, venue amenities and customer experience.\n\nFor individuals looking to play as part of a team, their nearby Park Sports Lammas Park venue also hosts weekly adult and youth 5-a-side leagues. These are also FA Youth Football Courses, Walking Football, Drop-in sessions, and Holiday Camps available to book on their website parksports.co.uk.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 7.6 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 9.4 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 11.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 22.3 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 22.3 miles away\n\n",
+ "name": "Park Sports Pitshanger Park",
+ "area": "Ealing",
+ "address": "The Lodge, Pitshanger Park, Woodbury Park Rd, W13 8DJ",
+ "postcode": "W13 8DJ",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "19:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00-21:00",
+  "Tuesday 08:00-21:00",
+  "Wednesday 08:00-21:00",
+  "Thursday 08:00-21:00",
+  "Friday 08:00-20:00",
+  "Saturday 08:00-19:00",
+  "Sunday 08:00-18:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/will-to-win-pitshanger-park/football-5-a-side-33800",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Around £40/hour"
+}

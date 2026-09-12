@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/haberdasher-s-crayford-academy",
+ "finalUrl": "https://www.playfinder.com/london/venue/haberdasher-s-crayford-academy",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:35:43.074Z",
+ "title": "Haberdasher's Crayford Academy, Bexley | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHaberdasher's Crayford Academy\nNetballFootballSpace HireBasketballBadmintonVolleyballFutsal\n Book Online at Haberdasher's Crayford Academy\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Iron Mill Lane, Crayford, Kent, DA1 4RS\n\nPrices\n\nPlease check calendar above\n\nPublic Transport\n\n Bus stop - Village Green Road\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t08:00 - 22:00\nSunday\t08:00 - 22:00\nDescription\n\n**2 netball courts**\n\nIf you're a netball player in the east London area, then you simply have to check out the astroturf netball facilities for hire at Haberdasher's Crayford Academy. The excellent outdoor court makes it suitable for netball teams or individuals who want to practise or play more competitive matches. If you're someone who has never tried netball before and you’re thinking of getting into it, then get in touch today to book a netball court. The netball court at Haberdasher's Crayford Academy has clear markings and good quality nets. It is well maintained by the staff who are proud to have such an amazing netball court in east London.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nLooking to set up regular games at Haberdasher's Crayford Academy? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Village Green Road bus stop station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Netball Courts\nOutdoor | AstroturfOutdoor | AstroturfOutdoor | Astroturf\nFacilities\n free parking\n Address\n\nHaberdasher's Crayford Academy\nIron Mill Lane\nCrayford\nDA1 4RS\n\n\nVIEW ON MAP\n Nearby Netball Courts\nHaberdasher's Crayford Academy\nKent\n\n 0 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 0 miles away\n\nBeaumont School\nHertfordshire\n\n 29.3 miles away\n\nBolder Academy\nLondon\n\n 22.4 miles away\n\nStanley Primary School\nLondon\n\n 23 miles away\n\n",
+ "name": "Haberdasher's Crayford Academy",
+ "area": "Bexley",
+ "address": "Iron Mill Lane, Crayford, Kent, DA1 4RS",
+ "postcode": "DA1 4RS",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 08:00 - 22:00",
+  "Sunday 08:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/haberdasher-s-crayford-academy/football-5-a-side-92599",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please check calendar above",
+ "skipped": "no artificial football pitch"
+}

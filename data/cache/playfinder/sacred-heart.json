@@ -1,0 +1,68 @@
+{
+ "url": "https://www.playfinder.com/london/venue/sacred-heart",
+ "finalUrl": "https://www.playfinder.com/london/venue/sacred-heart",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:28:17.990Z",
+ "title": "Sacred Heart R C Primary School, Wandsworth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSacred Heart R C Primary School\nFootball\n Book Online at Sacred Heart R C Primary School\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Este Rd, Takhar Mews, Battersea, SW11 2TD\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Clapham Junction\n\nOpening Hours\nMonday\tNA\nTuesday\tNA\nWednesday\tNA\nThursday\tNA\nFriday\t17:00 - 22:00\nSaturday\t09:00 - 21:00\nSunday\t09:00 - 21:00\nDescription\n\nManaged by Football567.com\n\n6-a-side or 7-a-side football can be played at Sacred Heart Catholic School. It is one of the finest sports facilities in South London and it is the place to be if you’re looking for a 6-a-side or 7-a-side football pitch. One of the best activities that sports fans are able to enjoy here is football on the immaculate 3G astroturf surface.\n\n6-a-side or 7-a-side-a-side football remains one of the most prevalent sporting activities in London and the staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nIf public transport isn't your thing, then parking facilities are available where a free parking is provided.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Sacred Heart Catholic School. This ensures you stay in the game and keep up your fitness on a regular basis. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Clapham Juntion. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n6 a side | 3G Astroturf\nFacilities\n floodlights\n Address\n\nSacred Heart R C Primary School\nEste Rd\nTakhar Mews\nSW11 2TD\n\n\nVIEW ON MAP\n Nearby Football Pitches\nSt John's Primary School\nLondon\n\n 2.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 8.6 miles away\n\nPowerleague Sunbury-on-Thames\nLondon\n\n 10.3 miles away\n\nPowerleague Fairlop\nIlford\n\n 14.6 miles away\n\nClub Langley\nBeckenham\n\n 8.4 miles away\n\n",
+ "name": "Sacred Heart R C Primary School",
+ "area": "Wandsworth",
+ "address": "Este Rd, Takhar Mews, Battersea, SW11 2TD",
+ "postcode": "SW11 2TD",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Friday 17:00 - 22:00",
+  "Saturday 09:00 - 21:00",
+  "Sunday 09:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   6,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/sacred-heart/football-6-a-side-39399",
+   "label": "6 a side | 3G Astroturf",
+   "format": 6,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices"
+}

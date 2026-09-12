@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/henry-fawcett-primary-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/henry-fawcett-primary-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:37:44.034Z",
+ "title": "Henry Fawcett Primary School, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHenry Fawcett Primary School\nFootball\n Book Online at Henry Fawcett Primary School\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Henry Fawcett Primary School, Bowling Green Street, London, SE11 5BZ\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Oval\n\nOpening Hours\nMonday\t17:00 - 18:00\nTuesday\t17:00 - 18:00\nWednesday\t17:00 - 18:00\nThursday\t17:00 - 18:00\nFriday\t17:00 - 21:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nLooking to hire a 5-a-side football pitch in south west London? Henry Fawcett Primary School has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Henry Fawcett Primary School is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Henry Fawcett Primary School is the right choice for you.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Henry Fawcett Primary School? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe closest station when travelling is Oval. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking\n Address\n\nHenry Fawcett Primary School\nHenry Fawcett Primary School\nBowling Green Street\nSE11 5BZ\n\n\nVIEW ON MAP\n Nearby Football Pitches\nMallinson Sports Centre\nHighgate\n\n 6.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 10.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13 miles away\n\n",
+ "name": "Henry Fawcett Primary School",
+ "area": "Lambeth",
+ "address": "Henry Fawcett Primary School, Bowling Green Street, London, SE11 5BZ",
+ "postcode": "SE11 5BZ",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "18:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "18:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "18:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "18:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 18:00",
+  "Tuesday 17:00 - 18:00",
+  "Wednesday 17:00 - 18:00",
+  "Thursday 17:00 - 18:00",
+  "Friday 17:00 - 21:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/henry-fawcett-primary-school/football-5-a-side-92578",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices"
+}

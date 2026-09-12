@@ -1,0 +1,71 @@
+{
+ "url": "https://www.playfinder.com/london/venue/markfield-park-",
+ "finalUrl": "https://www.playfinder.com/london/venue/markfield-park-",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:34:17.286Z",
+ "title": "Markfield Park, Haringey | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nMarkfield Park\nFootballCricket\n Book Online at Markfield Park\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Crowland Road, London, London, N15 6UL\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Seven Sisters Station and South Tottenham Station\n\nOpening Hours\nMonday\tClosed\nTuesday\tClosed\nWednesday\tClosed\nThursday\tClosed\nFriday\tClosed\nSaturday\t10:00-16:30\nSunday\t10:00-16:30\nDescription\n\nBook the 11-a-side Junior grass football pitch for U14 at Markfield Park if you're looking for an excellent pitch and live or work in North London. This venue has sensational footballing facilities, so whether you like to play 11-a-side football casually or you're part of a team or league, Markfield Park is ideal for you.\n\n**Nets and Flags are not provided**\n\nThe venue operates a pay and display parking system. Those keen on driving to the facility should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Markfield Park? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Seven Sisters Station and South Tottenham Station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n11 a side junior | Grass9 a side | Grass7 a side | Grass\n Address\n\nMarkfield Park\nCrowland Road\nLondon\nN15 6UL\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nMuswell Hill Playing Fields\nHaringey\n\n 4.3 miles away\n\nManor Park\nNew Malden\n\n 15.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.8 miles away\n\nAllen Park\nKempston\n\n 42.4 miles away\n\nCastle View School\nEssex\n\n 28.5 miles away\n\n",
+ "name": "Markfield Park",
+ "area": "Haringey",
+ "address": "Crowland Road, London, London, N15 6UL",
+ "postcode": "N15 6UL",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Saturday 10:00-16:30",
+  "Sunday 10:00-16:30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/markfield-park-/football-11-a-side-junior-42099",
+   "label": "11 a side junior | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/markfield-park-/football-9-a-side-42100",
+   "label": "9 a side | Grass",
+   "format": 9,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/markfield-park-/football-7-a-side-42101",
+   "label": "7 a side | Grass",
+   "format": 7,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

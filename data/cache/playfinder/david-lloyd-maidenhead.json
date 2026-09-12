@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/david-lloyd-maidenhead",
+ "finalUrl": "https://www.playfinder.com/london/venue/david-lloyd-maidenhead",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:04:00.955Z",
+ "title": "David Lloyd Maidenhead, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nDavid Lloyd Maidenhead Non-Partner \nSwimmingGym\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n David Lloyd Maidenhead, Grenfell Place, Windsor and Maidenhead, SL6 1HJ\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\nMonday\t6:00-22:00\nTuesday\t6:00-22:00\nWednesday\t6:00-22:00\nThursday\t6:00-22:00\nFriday\t6:00-20:00\nSaturday\t8:00-18:00\nSunday\t8:00-18:00\n Swimming Pools\nIndoorIndoor\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nThe Downside Settlement\nSouthwark\n\n 27.8 miles away\n\n",
+ "name": "David Lloyd Maidenhead",
+ "area": "Windsor and Maidenhead",
+ "address": "David Lloyd Maidenhead, Grenfell Place, Windsor and Maidenhead, SL6 1HJ",
+ "postcode": "SL6 1HJ",
+ "hours": {
+  "mon": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 6:00-22:00",
+  "Tuesday 6:00-22:00",
+  "Wednesday 6:00-22:00",
+  "Thursday 6:00-22:00",
+  "Friday 6:00-20:00",
+  "Saturday 8:00-18:00",
+  "Sunday 8:00-18:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}
