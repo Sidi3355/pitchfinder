@@ -13,7 +13,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 110
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,6 +24,9 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: Read the operators' club pages (polite, cached)
         run: node scripts/fetch-venues.mjs
+      - name: Read the slot calendars for prices (Pitchbooking, Playfinder; polite, cached)
+        run: node scripts/fetch-slots.mjs
+        continue-on-error: true
       - name: Commit and push if changed
         env:
           BRANCH: ${{ github.ref_name }}
@@ -31,7 +34,7 @@ jobs:
           set -e
           git config user.name "pitchfinder-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          OUTPUTS="data/venues-live.json data/cache/pages data/cache/venue-postcodes.json"
+          OUTPUTS="data/venues-live.json data/slots-live.json data/cache/pages data/cache/probe data/cache/playfinder data/cache/pitchbooking data/cache/venue-postcodes.json"
           STAGE="$(mktemp -d)"
           for p in $OUTPUTS; do
             if [ -e "$p" ]; then mkdir -p "$STAGE/$(dirname "$p")" && cp -r "$p" "$STAGE/$p"; fi
@@ -45,6 +48,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes."
           else
-            git commit -m "Refresh operator venue facts (opening hours, prices, facilities)"
+            git commit -m "Refresh operator venue facts and slot prices"
             git push origin "HEAD:$BRANCH"
           fi

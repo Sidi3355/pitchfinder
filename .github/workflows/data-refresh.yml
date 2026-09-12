@@ -26,6 +26,9 @@ jobs:
       - name: Read the operators' club pages (best-effort, cached, polite)
         run: node scripts/fetch-venues.mjs
         continue-on-error: true
+      - name: Read the slot calendars for prices (best-effort, cached, polite)
+        run: node scripts/fetch-slots.mjs
+        continue-on-error: true
       - name: Scrape venue prices (best-effort, cached, polite)
         run: node scripts/scrape-prices.mjs
         continue-on-error: true
@@ -43,7 +46,7 @@ jobs:
           set -e
           git config user.name "pitchfinder-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          OUTPUTS="public/data data/prices.json data/venues-live.json data/cache data/audit-history.json agent/DATA_QUALITY.md"
+          OUTPUTS="public/data data/prices.json data/venues-live.json data/slots-live.json data/cache data/audit-history.json agent/DATA_QUALITY.md"
           # The refresh takes a quarter of an hour and the branch may have moved.
           # Generated files are copied aside, the branch is reset to the remote
           # head, and the files are put back on top: no merge, no conflicts.

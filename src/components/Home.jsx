@@ -33,7 +33,7 @@ const STEPS = [
 const FEATURES = [
   {
     title: 'Prices you can plan around',
-    body: 'Per hour, per player, peak and off-peak, straight from the operator, with the date it was read. What is not published says so.',
+    body: 'The slots on sale, by pitch size, days and kick-off time, read from the booking calendars with the date. What is not published says so.',
   },
   {
     title: 'Opening times, live',
@@ -53,7 +53,7 @@ const FEATURES = [
   },
   {
     title: 'Honest data, refreshed weekly',
-    body: 'Operators are read every week; the map comes from OpenStreetMap. Report a problem from any pitch page.',
+    body: 'Booking calendars and operators are read every week; the map comes from OpenStreetMap. Report a problem from any pitch page.',
   },
 ]
 
@@ -151,16 +151,16 @@ export function Home() {
           <span className="blob b3" />
         </div>
         <div className="hero-inner">
-          <p className="kicker hero-kicker">London 5-a-side, 7-a-side and astro hire</p>
-          <h1 className="hero-title">
+          <p className="kicker hero-kicker appear">London 5-a-side, 7-a-side and astro hire</p>
+          <h1 className="hero-title appear">
             Pick a pitch the <em>whole group</em> can get to.
           </h1>
-          <p className="hero-lead">
+          <p className="hero-lead appear d1">
             One link. Everyone adds where they are coming from and what they need. PitchFinder ranks
-            Goals, Powerleague and astro pitches across London for all of you, with prices and
-            opening times from the operator.
+            Goals, Powerleague and astro pitches across London for all of you, with real slot prices
+            and opening times.
           </p>
-          <div className="hero-actions">
+          <div className="hero-actions appear d2">
             {state.authAvailable ? (
               <button
                 className="btn primary xl"
@@ -177,7 +177,23 @@ export function Home() {
               Browse the map
             </Link>
           </div>
-          <QuickStart />
+          <div className="appear d3">
+            <QuickStart />
+          </div>
+        </div>
+        <div className="hero-mockup appear d4">
+          <div className="mockup-frame">
+            <div className="mockup">
+              <img
+                src="/img/finder-desktop.jpg"
+                alt="The finder: a map of London with a ranked list of pitches for a group of three, each card showing the price, whether it is open and everyone's journey time"
+                width="1280"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -257,11 +273,12 @@ export function Home() {
       <section className="home-section home-trust" aria-labelledby="trust-title">
         <h2 id="trust-title">Where the data comes from</h2>
         <p>
-          Prices, opening times and facilities are read from each operator&rsquo;s own pages every
-          week, with the date shown. Pitch locations come from OpenStreetMap (© OpenStreetMap
-          contributors, ODbL), postcodes from postcodes.io and routes from OSRM. Nothing is guessed:
-          where a fact is not known, the page says so.{' '}
-          <Link href="/about">More about the data</Link>.
+          Prices are read from the booking calendars every week (Goals&rsquo; own booking site and
+          Playfinder), by pitch size and kick-off time, with the date shown; opening times and
+          facilities from the operator&rsquo;s own page or the booking site&rsquo;s listing. Pitch
+          locations come from OpenStreetMap (© OpenStreetMap contributors, ODbL), postcodes from
+          postcodes.io and routes from OSRM. Nothing is guessed: where a fact is not known, the page
+          says so. <Link href="/about">More about the data</Link>.
         </p>
       </section>
     </div>

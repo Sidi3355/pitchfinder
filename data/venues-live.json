@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-12T15:53:53.415Z",
+ "fetchedAt": "2026-09-12T16:32:23.196Z",
  "offline": false,
  "operators": [
   {
@@ -106,7 +106,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:51:19.753Z"
+     "fetchedAt": "2026-09-12T16:29:43.064Z"
     },
     {
      "id": "go-bexleyheath",
@@ -202,12 +202,12 @@
      "parking": true,
      "changingRooms": null,
      "showers": null,
-     "bar": null,
+     "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:51:29.191Z"
+     "fetchedAt": "2026-09-12T16:29:51.826Z"
     },
     {
      "id": "go-chingford",
@@ -308,7 +308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:51:42.866Z"
+     "fetchedAt": "2026-09-12T16:30:10.023Z"
     },
     {
      "id": "go-dagenham",
@@ -409,7 +409,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:51:55.152Z"
+     "fetchedAt": "2026-09-12T16:30:23.157Z"
     },
     {
      "id": "go-eltham",
@@ -502,7 +502,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:52:08.752Z"
+     "fetchedAt": "2026-09-12T16:30:36.547Z"
     },
     {
      "id": "go-gillettecorner",
@@ -603,7 +603,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:52:17.499Z"
+     "fetchedAt": "2026-09-12T16:30:45.154Z"
     },
     {
      "id": "go-hayes",
@@ -704,7 +704,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:52:30.857Z"
+     "fetchedAt": "2026-09-12T16:30:59.744Z"
     },
     {
      "id": "go-heathrow",
@@ -804,7 +804,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:52:38.077Z"
+     "fetchedAt": "2026-09-12T16:31:08.545Z"
     },
     {
      "id": "go-ruislip",
@@ -905,7 +905,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:53:05.559Z"
+     "fetchedAt": "2026-09-12T16:31:35.676Z"
     },
     {
      "id": "go-sutton",
@@ -1006,7 +1006,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:53:19.244Z"
+     "fetchedAt": "2026-09-12T16:31:48.967Z"
     },
     {
      "id": "go-tolworth",
@@ -1107,7 +1107,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:53:28.343Z"
+     "fetchedAt": "2026-09-12T16:31:57.588Z"
     },
     {
      "id": "go-wembley",
@@ -1208,7 +1208,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:53:37.111Z"
+     "fetchedAt": "2026-09-12T16:32:05.452Z"
     },
     {
      "id": "go-wimbledon",
@@ -1308,7 +1308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T15:53:44.904Z"
+     "fetchedAt": "2026-09-12T16:32:14.991Z"
     }
    ]
   },

@@ -53,10 +53,23 @@ for (const [, list] of byName) {
       if (distM(list[i], list[j]) < 200) duplicates.push([list[i].id, list[j].id, list[i].name])
 }
 
+const bySource = (key) => {
+  const out = {}
+  for (const p of pitches) {
+    const k = p[key] || 'none'
+    out[k] = (out[k] || 0) + 1
+  }
+  return out
+}
+const byPriceSource = bySource('priceSource')
+const byHoursSource = bySource('hoursSource')
+
 const pitchReport = {
   total: pitches.length,
   byType: data.byType,
   byNameSource,
+  byPriceSource,
+  byHoursSource,
   unnamed: count((p) => !p.name),
   noSurface: count((p) => !p.surface),
   noLit: count((p) => p.lit == null),
@@ -220,6 +233,13 @@ lines.push(`| Surface not known | ${pitchReport.noSurface} | ${pct(pitchReport.n
 lines.push(`| Floodlights not known | ${pitchReport.noLit} | ${pct(pitchReport.noLit)} |`)
 lines.push(`| No postcode | ${pitchReport.noPostcode} | ${pct(pitchReport.noPostcode)} |`)
 lines.push(`| Same name within 200 m | ${pitchReport.duplicatesWithin200m} | |`)
+lines.push('')
+lines.push('## Where prices and hours come from')
+lines.push('')
+lines.push('| Source | Prices | Opening hours |')
+lines.push('| --- | --- | --- |')
+for (const src of new Set([...Object.keys(byPriceSource), ...Object.keys(byHoursSource)]))
+  lines.push(`| ${src} | ${byPriceSource[src] || 0} | ${byHoursSource[src] || 0} |`)
 lines.push('')
 lines.push('## Curated venues')
 lines.push('')

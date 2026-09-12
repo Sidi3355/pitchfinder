@@ -43,6 +43,10 @@ test.describe('accounts and shared games', () => {
       /<meta property="og:description" content="Football at Powerleague Shoreditch[^"]*Bring bibs/,
     )
     await expect(page.locator('.event-when')).toContainText('19:30')
+    // The cover counts down to kick-off; the game is weeks away, so no "Starts soon".
+    await expect(page.getByText('Kick-off in')).toBeVisible()
+    await expect(page.locator('.countdown')).toBeVisible()
+    await expect(page.locator('.badge-soon')).toHaveCount(0)
     await expect(page.locator('.cover-time')).toHaveText('7:30pm')
     await expect(page.getByText('Bring bibs')).toBeVisible()
     await expect(page.getByRole('link', { name: 'Powerleague Shoreditch' })).toBeVisible()

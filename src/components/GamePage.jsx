@@ -76,6 +76,13 @@ export function GamePage({ slug }) {
     if (game) document.title = `${game.pitch_name}, ${formatWhen(game.starts_at)}: PitchFinder`
   }, [game])
 
+  // The countdown to kick-off moves on its own; a minute is close enough.
+  useEffect(() => {
+    if (phase !== 'ready') return
+    const t = setInterval(() => setNow(Date.now()), 30000)
+    return () => clearInterval(t)
+  }, [phase])
+
   // Answers arrive while the organiser keeps this page open: refresh every 20 s when visible.
   useEffect(() => {
     if (phase !== 'ready') return
@@ -135,7 +142,7 @@ export function GamePage({ slug }) {
       pitchName: pitch ? pitchName(pitch) : game.pitch_name,
       when: formatWhen(game.starts_at),
       postcode: pitch?.postcode,
-      pricePerHour: cost.known ? cost.perHour : null,
+      pricePerHour: cost.known ? cost.slot.amount : null,
       inCount: inCount >= 2 ? inCount : 0,
       url: `${window.location.origin}/g/${slug}`,
       notes: game.notes,
@@ -235,6 +242,7 @@ export function GamePage({ slug }) {
   )
   const inNames = rsvps.filter((r) => r.status === 'in').map((r) => r.name)
   const open = pitch ? openLine(pitch, starts) : null
+  const soon = now > 0 && starts.getTime() - now > 0 && starts.getTime() - now < 24 * 3600e3
 
   return (
     <article className={`event game-event${cancelled ? ' is-cancelled' : ''}`}>
@@ -243,7 +251,9 @@ export function GamePage({ slug }) {
           <span className="cover-day">{dayLabel}</span>
           <span className="cover-date">{dateLabel}</span>
           <span className="cover-time">{timeLabel}</span>
+          {!cancelled && !happened && soon && <span className="badge-soon">Starts soon</span>}
         </div>
+        {!cancelled && !happened && now > 0 && <Countdown startsAt={game.starts_at} now={now} />}
         <p className="kicker">
           {cancelled
             ? 'Cancelled'
@@ -384,16 +394,20 @@ export function GamePage({ slug }) {
               const cost = costOf(pitch)
               if (!cost.known) return null
               if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
-              const each = inCount >= 2 ? splitCost(cost.perHour, inCount) : null
+              const { amount, minutes } = cost.slot
+              const each = inCount >= 2 ? splitCost(amount, inCount) : null
+              const calendar =
+                pitch.priceSource === 'pitchbooking' || pitch.priceSource === 'playfinder'
+              const note = calendar
+                ? `the cheapest ${minutes === 60 ? 'hour' : `${minutes}-minute slot`} on the booking calendar, whole pitch; peak times cost more`
+                : 'operator\u2019s published rate for an hour, whole pitch'
               return (
                 <p className="game-cost">
-                  {formatMoney(cost.perHour)} for the pitch
+                  {formatMoney(amount)} for the pitch
                   {each
                     ? `, ${formatMoney(each)} each with ${inCount} in`
                     : ', split between whoever is in'}
-                  <span className="fact-note">
-                    operator&rsquo;s published rate for an hour, whole pitch
-                  </span>
+                  <span className="fact-note">{note}</span>
                 </p>
               )
             })()}
@@ -527,6 +541,46 @@ export function GamePage({ slug }) {
         )}
       </div>
     </article>
+  )
+}
+
+/**
+ * Days, hours and minutes to kick-off, as three tiles (after the Event
+ * Countdown Card on 21st.dev). The minutes tile breathes while the clock
+ * runs; nothing moves when motion is reduced.
+ */
+function Countdown({ startsAt, now }) {
+  const ms = new Date(startsAt).getTime() - now
+  if (ms <= 0) {
+    return (
+      <p className="countdown-label" role="status">
+        Kicking off now
+      </p>
+    )
+  }
+  const days = Math.floor(ms / 86400e3)
+  const hours = Math.floor((ms % 86400e3) / 3600e3)
+  const mins = Math.floor((ms % 3600e3) / 60e3)
+  const units = [
+    [days, days === 1 ? 'day' : 'days'],
+    [hours, hours === 1 ? 'hour' : 'hours'],
+    [mins, 'min'],
+  ]
+  const spoken = `${days} days, ${hours} hours and ${mins} minutes to kick-off`
+  return (
+    <div>
+      <p className="countdown-label" id="countdown-label">
+        Kick-off in
+      </p>
+      <div className="countdown" role="timer" aria-label={spoken}>
+        {units.map(([value, label], i) => (
+          <div key={label} className={`count-unit${i === 2 ? ' live' : ''}`} aria-hidden="true">
+            <strong>{String(value).padStart(2, '0')}</strong>
+            <span>{label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 

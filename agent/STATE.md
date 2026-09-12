@@ -275,3 +275,49 @@ answers a real browser with 403, so its seven clubs keep the baseline and say so
 green at 4.0:1 under white text and a heavy hero glow on the first pass (90 / 96); fixed to 94 /
 100 with the accent a shade darker, dark text on the bright green in dark mode, and two gradient
 glows moved on the compositor. Kept.
+
+## Iteration 10: the real prices, from the booking calendars (12 Sep 2026, user-directed)
+
+The user's call: "scrape all Goals and Powerleague and astro in London accurately for prices
+and timings, figure it out and add it properly."
+
+Intended user-visible outcome: every Goals club, every Powerleague club and every astro that
+sells its pitches online shows what a slot really costs, by pitch size, on which days and at
+which kick-off times, with the slot length, the source, the date it was read and how many
+slots backed it. The card shows the cheapest slot as it is sold and what that is each for the
+group; budgets and "about £9 each" mean what the group pays for one game. Opening hours come
+from the operator's page where it has one, else from the booking site's listing, and say
+which. Astros that sell online but were not on the map are added.
+
+Approach: a probe run on GitHub first, to see what each candidate source really serves rather
+than guess. Pitchbooking (Goals' own booking site) shows a day of bookable slots per club and
+pitch size with a price on each; Playfinder shows a week of slots per pitch for Powerleague
+and for the council, club and leisure-centre astros, plus the venue's address, hours table,
+facilities and pitch list, and its robots.txt allows the venue pages. Powerleague's own site
+still answers 403 and is left alone. The readers were then written against the saved pages,
+with those pages as test fixtures (the 26 Goals Beckenham slots agree between the two sites).
+Slots fold into bands; nothing is extrapolated to days that were not read. The merge matches
+Playfinder venues by name, by a shared distinctive word within 300 m, or by being the only
+astro on the spot, and adds the rest pinned at their postcode. The run is polite (identified
+browser, robots honoured, two seconds a page) and bounded (page budget, deadline, caches, an
+offline rebuild), and both the venue-fetch and the weekly refresh workflows run it.
+
+## Iteration 11: the UI, redone with the 21st.dev connector (12 Sep 2026, user-directed)
+
+The user's call: "redo the UI properly using the new 21st.dev connector."
+
+What the connector gives on the free tier: unlimited catalogue search and reranking, two
+component-code retrievals a day, no hosted generation, and the sandbox cannot load the preview
+images. The two retrievals went on the components with the most structure to borrow: "Hero
+with Mockup" by serafimcloud (Launch UI) for the landing page and "Event Countdown Card" by
+isaiahbjork for the game page. Both are Tailwind and shadcn; they were rewritten as plain CSS
+on the existing tokens rather than adding a utility framework to a 64 KB app.
+
+Intended user-visible outcome: the landing opens with a headline that fades from ink, the
+copy, the actions and the quick start appearing in order, a soft glow behind, and the product
+itself in a framed screenshot below the fold. Primary actions carry a brand gradient and a
+tinted shadow and lift on hover; cards lift and the selected one wears a ring; filter counts
+sit in badges; the header floats over the page. The game page counts down to kick-off in days,
+hours and minutes, wears a "Starts soon" badge inside 24 hours, and the "In" answer glows.
+Everything stays still under reduced motion; every gate from iteration 9 (44 px targets, focus
+rings, contrast, Lighthouse) still passes.

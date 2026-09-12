@@ -183,6 +183,16 @@ export function PitchContent({ pitch: indexPitch }) {
               <dd>{pitch.pitchCount}</dd>
             </div>
           )}
+          {pitch.playfinderUrl && pitch.playfinderUrl !== pitch.bookingUrl && (
+            <div>
+              <dt>Also bookable on</dt>
+              <dd>
+                <a href={pitch.playfinderUrl} target="_blank" rel="noopener noreferrer">
+                  Playfinder
+                </a>
+              </dd>
+            </div>
+          )}
         </dl>
 
         <section className="drawer-section">
@@ -197,6 +207,16 @@ export function PitchContent({ pitch: indexPitch }) {
               {pitch.matchedOsmId ? ' and OpenStreetMap' : ''}
               {pitch.verifiedAt ? `, read ${formatDate(pitch.verifiedAt)}` : ''}. Check the venue
               page before travelling.
+            </>
+          ) : pitch.source === 'playfinder' ? (
+            <>
+              Data:{' '}
+              <a href={pitch.sourceUrl} target="_blank" rel="noopener noreferrer">
+                Playfinder&rsquo;s venue page
+              </a>
+              {pitch.verifiedAt ? `, read ${formatDate(pitch.verifiedAt)}` : ''}. The pin is at the
+              venue&rsquo;s postcode; the entrance may be a short walk away. Check the venue page
+              before travelling.
             </>
           ) : pitch.curated ? (
             <>
