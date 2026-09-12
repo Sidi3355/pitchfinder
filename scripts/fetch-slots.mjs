@@ -45,6 +45,10 @@ const PAUSE_MS = 2000
 const MAX_PAGES = Number(process.env.SLOTS_MAX_PAGES || 650)
 const DEADLINE_MS = Number(process.env.SLOTS_DEADLINE_MINUTES || 70) * 60000
 const MAX_PITCHES_PER_VENUE = 4
+// A page read this recently is not read again (the weekly refresh after a
+// fetch run reuses the cache); --force reads everything.
+const MAX_AGE_MS = Number(process.env.SLOTS_MAX_AGE_HOURS || 72) * 3600e3
+const FORCE = process.argv.includes('--force')
 const PLAYFINDER = 'https://www.playfinder.com'
 const PITCHBOOKING = 'https://pitchbooking.com'
 const GOALS_BOOKING = 'https://www.goalsfootball.co.uk/play/book-a-pitch'
@@ -64,6 +68,10 @@ function loadJson(path, fallback) {
 function saveJson(path, value) {
   mkdirSync(dirname(path), { recursive: true })
   writeFileSync(path, JSON.stringify(value, null, 1) + '\n')
+}
+function fresh(cached) {
+  if (FORCE || !cached?.fetchedAt) return false
+  return Date.now() - new Date(cached.fetchedAt).getTime() < MAX_AGE_MS
 }
 function outOfBudget() {
   if (pagesRead >= MAX_PAGES) stoppedBy = stoppedBy || 'budget'
@@ -283,11 +291,20 @@ function priorityOf(slug, pitchSlugs, pitchUrlsKnown, knownNames, cached) {
 async function readPlayfinder(page, knownNames, today) {
   const { venues, pitchUrlsKnown } = await discoverPlayfinder(page)
   const queue = []
+  let skipped = 0
   for (const [slug, pitchSlugs] of venues) {
     const cached = loadJson(join(PF_CACHE, `${slug}.json`), null)
+    if (fresh(cached)) {
+      skipped++
+      continue
+    }
     const pr = priorityOf(slug, pitchSlugs, pitchUrlsKnown, knownNames, cached)
     if (pr) queue.push({ slug, ...pr })
   }
+  if (skipped)
+    console.log(
+      `Playfinder: ${skipped} venues read within the last ${MAX_AGE_MS / 3600e3} hours; kept`,
+    )
   // Powerleague first, then venues that look like ones on the map, then the
   // rest; within a tier the never-read and the oldest first.
   queue.sort((a, b) => b.score - a.score || b.age - a.age)
@@ -434,11 +451,18 @@ async function readPitchbooking(page, londonClubs, today) {
         await sleep(PAUSE_MS)
         continue
       }
+      const cachePath = join(PB_CACHE, `${club.id}.json`)
+      if (fresh(loadJson(cachePath, null))) {
+        console.log(
+          `Pitchbooking: ${club.id} read within the last ${MAX_AGE_MS / 3600e3} hours; kept`,
+        )
+        await sleep(PAUSE_MS)
+        continue
+      }
       const picker = got.selects.find((s) => s.options.some((o) => formatFromLabel(o.label)))
       const pitchTypes = (picker?.options || [])
         .map((o) => ({ value: o.value, label: o.label, format: formatFromLabel(o.label) }))
         .filter((o) => o.format && o.value)
-      const cachePath = join(PB_CACHE, `${club.id}.json`)
       const record = {
         id: club.id,
         slug: club.slug,
