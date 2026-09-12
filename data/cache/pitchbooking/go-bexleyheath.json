@@ -1,0 +1,703 @@
+{
+ "id": "go-bexleyheath",
+ "slug": "bexleyheath",
+ "name": "Goals Bexleyheath",
+ "url": "https://pitchbooking.com/book/goals/fa55cad3-5428-47b9-8f02-1f650d3ff955",
+ "fetchedAt": "2026-09-12T18:27:18.287Z",
+ "text": "Skip to main content\nSolutions\nProducts\nResources\nPick a date\n\nFind venues\n\nLog in\nGoals Bexleyheath\n\nGraham Road, DA6 7EG\n\nbexleyheath@goalsfootball.co.uk\n\n0208 301 2000\n\nDate\n13-Sep-2026\nPitch Type\nSelect an option\n5-A-Side\n7-A-Side\n8-A-side\n\n4:30PM\n\n60 mins\n\n~£6.10\nPER PLAYER\n£61.00\nSelect a pitch\nPitch 3 - Estadio Azteca\nPitch 5 - La Bombonera\nPitch 7 - Stade de France\nPitch 8 - Estadio da Luz\nPitch 9 - Amsterdam Arena\nPitch 10 - Olympiastadion\nPitch 11 - Estadio Centenario\nBook Pitch\n\n5:30PM\n\n60 mins\n\n~£6.10\nPER PLAYER\n£61.00\nSelect a pitch\nPitch 5 - La Bombonera\nPitch 7 - Stade de France\nPitch 8 - Estadio da Luz\nPitch 9 - Amsterdam Arena\nPitch 10 - Olympiastadion\nPitch 11 - Estadio Centenario\nBook Pitch\n\n6:30PM\n\n60 mins\n\n~£6.10\nPER PLAYER\n£61.00\nSelect a pitch\nPitch 5 - La Bombonera\nPitch 7 - Stade de France\nPitch 8 - Estadio da Luz\nPitch 9 - Amsterdam Arena\nPitch 10 - Olympiastadion\nPitch 11 - Estadio Centenario\nBook Pitch\n\n7:30PM\n\n60 mins\n\n~£6.10\nPER PLAYER\n£61.00\nSelect a pitch\nPitch 3 - Estadio Azteca\nPitch 5 - La Bombonera\nPitch 9 - Amsterdam Arena\nPitch 10 - Olympiastadion\nPitch 11 - Estadio Centenario\nBook Pitch\n\n8:30PM\n\n60 mins\n\n~£6.10\nPER PLAYER\n£61.00\nSelect a pitch\nPitch 5 - La Bombonera\nPitch 7 - Stade de France\nPitch 8 - Estadio da Luz\nPitch 9 - Amsterdam Arena\nPitch 10 - Olympiastadion\nPitch 11 - Estadio Centenario\nBook Pitch\n\nWe use cookies to enhance your browsing experience and analyze site traffic. By continuing to browse or closing this banner, you consent to our use of cookies.\n\nAccept\nPitchbooking\n\nBecome a Partner\n\nKnowledge Centre\nPitchbooking Manager\nPitchbooking Solutions\nFootball Associations\nSporting Bodies\nSchools\nCouncils\nClubs\nUniversities\nLeisure Centres\nIndoor Facilities\nCompany\nBlog\nTestimonials\nCareers\n\nPitchbooking 2026 All rights reserved\n\nPrivacy Policy\nTerms & Conditions",
+ "postcode": "DA6 7EG",
+ "pitchTypes": [
+  {
+   "value": "72",
+   "label": "5-A-Side",
+   "format": 5
+  },
+  {
+   "value": "74",
+   "label": "7-A-Side",
+   "format": 7
+  },
+  {
+   "value": "225",
+   "label": "8-A-side",
+   "format": 8
+  }
+ ],
+ "days": {
+  "2026-09-13": {
+   "5": [
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "16:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 7
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "19:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 5
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "16:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 1
+    }
+   ],
+   "8": [
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-13",
+     "day": "sun",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    }
+   ]
+  },
+  "2026-09-14": {
+   "5": [
+    {
+     "date": "2026-09-14",
+     "day": "mon",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 97,
+     "perPlayer": 9.7,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-14",
+     "day": "mon",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 7
+    },
+    {
+     "date": "2026-09-14",
+     "day": "mon",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 1
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-14",
+     "day": "mon",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 134,
+     "perPlayer": 9.57,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-14",
+     "day": "mon",
+     "time": "21:30",
+     "minutes": 60,
+     "amount": 153,
+     "perPlayer": 10.93,
+     "pitches": 1
+    }
+   ],
+   "8": [
+    {
+     "date": "2026-09-14",
+     "day": "mon",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 142,
+     "perPlayer": 8.88,
+     "pitches": 1
+    }
+   ]
+  },
+  "2026-09-15": {
+   "5": [
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 97,
+     "perPlayer": 9.7,
+     "pitches": 5
+    },
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 5
+    },
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "19:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 4
+    },
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "21:30",
+     "minutes": 60,
+     "amount": 72,
+     "perPlayer": 7.2,
+     "pitches": 5
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 134,
+     "perPlayer": 9.57,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 153,
+     "perPlayer": 10.93,
+     "pitches": 2
+    }
+   ],
+   "8": [
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 142,
+     "perPlayer": 8.88,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-15",
+     "day": "tue",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 168,
+     "perPlayer": 10.5,
+     "pitches": 1
+    }
+   ]
+  },
+  "2026-09-16": {
+   "5": [
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 97,
+     "perPlayer": 9.7,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 3
+    },
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "19:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 4
+    },
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "21:30",
+     "minutes": 60,
+     "amount": 72,
+     "perPlayer": 7.2,
+     "pitches": 5
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 134,
+     "perPlayer": 9.57,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-16",
+     "day": "wed",
+     "time": "21:30",
+     "minutes": 60,
+     "amount": 153,
+     "perPlayer": 10.93,
+     "pitches": 1
+    }
+   ],
+   "8": []
+  },
+  "2026-09-17": {
+   "5": [
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 97,
+     "perPlayer": 9.7,
+     "pitches": 7
+    },
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 3
+    },
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "19:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 3
+    },
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 114,
+     "perPlayer": 11.4,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "21:30",
+     "minutes": 60,
+     "amount": 72,
+     "perPlayer": 7.2,
+     "pitches": 5
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 134,
+     "perPlayer": 9.57,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 153,
+     "perPlayer": 10.93,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "21:30",
+     "minutes": 60,
+     "amount": 153,
+     "perPlayer": 10.93,
+     "pitches": 1
+    }
+   ],
+   "8": [
+    {
+     "date": "2026-09-17",
+     "day": "thu",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 142,
+     "perPlayer": 8.88,
+     "pitches": 1
+    }
+   ]
+  },
+  "2026-09-18": {
+   "5": [
+    {
+     "date": "2026-09-18",
+     "day": "fri",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-18",
+     "day": "fri",
+     "time": "18:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 4
+    },
+    {
+     "date": "2026-09-18",
+     "day": "fri",
+     "time": "19:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 3
+    },
+    {
+     "date": "2026-09-18",
+     "day": "fri",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 5
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-18",
+     "day": "fri",
+     "time": "17:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-18",
+     "day": "fri",
+     "time": "20:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 1
+    }
+   ],
+   "8": []
+  },
+  "2026-09-19": {
+   "5": [
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "09:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 3
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "10:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "11:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 5
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "12:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 5
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "13:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "14:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "15:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 5
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "16:30",
+     "minutes": 60,
+     "amount": 61,
+     "perPlayer": 6.1,
+     "pitches": 6
+    }
+   ],
+   "7": [
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "09:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "10:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "11:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "12:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "13:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "14:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "15:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "16:30",
+     "minutes": 60,
+     "amount": 102,
+     "perPlayer": 7.29,
+     "pitches": 2
+    }
+   ],
+   "8": [
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "11:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "12:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "14:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "15:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    },
+    {
+     "date": "2026-09-19",
+     "day": "sat",
+     "time": "16:30",
+     "minutes": 60,
+     "amount": 108.5,
+     "perPlayer": 6.78,
+     "pitches": 1
+    }
+   ]
+  }
+ }
+}

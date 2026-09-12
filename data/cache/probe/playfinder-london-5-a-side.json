@@ -1,7 +1,7 @@
 {
  "key": "playfinder-london-5-a-side",
  "url": "https://www.playfinder.com/london/football/5-a-side",
- "fetchedAt": "2026-09-12T18:17:53.874Z",
+ "fetchedAt": "2026-09-12T18:51:22.942Z",
  "robotsAllows": true,
  "status": 404,
  "finalUrl": "https://www.playfinder.com/london/football/5-a-side",
@@ -278,11 +278,11 @@
  ],
  "frames": [
   {
-   "url": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fwww.playfinder.com%2Flondon%2Ffootball%2F5-a-side&title=Playfinder%20%7C%20404%20Page%20not%20found!&referrer=&muid=ac78ef5a-ccfa-4d5d-be57-c3eaa45515d0e18a35&sid=d7003735-dfd5-4838-9c55-f226ec33b340c678d6&version=6&preview=false&__shared_params__[version]=v3",
+   "url": "https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Fwww.playfinder.com%2Flondon%2Ffootball%2F5-a-side&title=Playfinder%20%7C%20404%20Page%20not%20found!&referrer=&muid=afcfc46f-1ad4-4b4a-b1fd-0b3987cfecc26671a2&sid=f87fc037-f6f9-45aa-aa69-4d9687e94e7f6bcb72&version=6&preview=false&__shared_params__[version]=v3",
    "text": ""
   },
   {
-   "url": "https://m.stripe.network/inner.html#url=https%3A%2F%2Fwww.playfinder.com%2Flondon%2Ffootball%2F5-a-side&title=Playfinder%20%7C%20404%20Page%20not%20found!&referrer=&muid=ac78ef5a-ccfa-4d5d-be57-c3eaa45515d0e18a35&sid=d7003735-dfd5-4838-9c55-f226ec33b340c678d6&version=6&preview=false&__shared_params__[version]=v3",
+   "url": "https://m.stripe.network/inner.html#url=https%3A%2F%2Fwww.playfinder.com%2Flondon%2Ffootball%2F5-a-side&title=Playfinder%20%7C%20404%20Page%20not%20found!&referrer=&muid=afcfc46f-1ad4-4b4a-b1fd-0b3987cfecc26671a2&sid=f87fc037-f6f9-45aa-aa69-4d9687e94e7f6bcb72&version=6&preview=false&__shared_params__[version]=v3",
    "text": ""
   }
  ],

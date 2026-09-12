@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-12T18:14:59.798Z",
+ "fetchedAt": "2026-09-12T18:48:52.781Z",
  "offline": false,
  "pitchbooking": {
   "site": "https://pitchbooking.com",
@@ -36,7 +36,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 316,
+    "slotsSeen": 266,
     "bands": [
      {
       "format": 5,
@@ -133,7 +133,92 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 88,
+      "amount": 124,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "18:30"
+       ]
+      ],
+      "slotsSeen": 104
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 155,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "wed"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "18:30"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 4
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:25:41.533Z"
+   },
+   {
+    "id": "go-bexleyheath",
+    "slug": "bexleyheath",
+    "name": "Goals Bexleyheath",
+    "url": "https://pitchbooking.com/book/goals/fa55cad3-5428-47b9-8f02-1f650d3ff955",
+    "postcode": "DA6 7EG",
+    "lat": 51.458273,
+    "lng": 0.143638,
+    "region": "London",
+    "district": "Bexley",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "74",
+      "label": "7-A-Side",
+      "format": 7
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 69,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 97,
       "minutes": 60,
       "days": [
        "mon",
@@ -143,20 +228,16 @@
       ],
       "windows": [
        [
-        "10:00",
+        "17:30",
         "17:30"
-       ],
-       [
-        "22:00",
-        "22:00"
        ]
       ],
-      "slotsSeen": 67
+      "slotsSeen": 4
      },
      {
-      "format": 8,
+      "format": 5,
       "surface": "3g",
-      "amount": 111,
+      "amount": 114,
       "minutes": 60,
       "days": [
        "mon",
@@ -167,7 +248,107 @@
       "windows": [
        [
         "18:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 11
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 61,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 17
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 72,
+      "minutes": 60,
+      "days": [
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "21:30",
         "21:30"
+       ]
+      ],
+      "slotsSeen": 3
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 134,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 153,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "18:30"
+       ],
+       [
+        "20:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 102,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:30",
+        "18:30"
+       ],
+       [
+        "20:30",
+        "20:30"
        ]
       ],
       "slotsSeen": 14
@@ -175,7 +356,25 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 67,
+      "amount": 142,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 3
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 108.5,
       "minutes": 60,
       "days": [
        "sat",
@@ -183,47 +382,38 @@
       ],
       "windows": [
        [
-        "09:00",
-        "22:00"
+        "11:30",
+        "12:30"
+       ],
+       [
+        "14:30",
+        "17:30"
+       ],
+       [
+        "20:30",
+        "20:30"
        ]
       ],
-      "slotsSeen": 51
+      "slotsSeen": 7
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 99,
+      "amount": 168,
       "minutes": 60,
       "days": [
-       "wed",
-       "thu"
+       "tue"
       ],
       "windows": [
        [
-        "18:00",
-        "18:00"
+        "18:30",
+        "18:30"
        ]
       ],
-      "slotsSeen": 2
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 72,
-      "minutes": 60,
-      "days": [
-       "fri"
-      ],
-      "windows": [
-       [
-        "10:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 24
+      "slotsSeen": 1
      }
     ],
-    "fetchedAt": "2026-09-12T17:55:06.844Z"
+    "fetchedAt": "2026-09-12T18:27:18.287Z"
    },
    {
     "id": "go-chingford",
@@ -257,7 +447,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 346,
+    "slotsSeen": 235,
     "bands": [
      {
       "format": 5,
@@ -322,7 +512,7 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 88.5,
+      "amount": 124,
       "minutes": 60,
       "days": [
        "mon",
@@ -336,15 +526,19 @@
       "windows": [
        [
         "09:00",
+        "18:00"
+       ],
+       [
+        "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 141
+      "slotsSeen": 57
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 93,
+      "amount": 142,
       "minutes": 60,
       "days": [
        "mon",
@@ -356,31 +550,16 @@
        [
         "18:00",
         "19:00"
-       ]
-      ],
-      "slotsSeen": 11
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 98,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
+       ],
        [
-        "19:30",
+        "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 21
+      "slotsSeen": 5
      }
     ],
-    "fetchedAt": "2026-09-12T17:56:35.928Z"
+    "fetchedAt": "2026-09-12T18:29:37.353Z"
    },
    {
     "id": "go-dagenham",
@@ -419,7 +598,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 498,
+    "slotsSeen": 385,
     "bands": [
      {
       "format": 5,
@@ -466,55 +645,48 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 85,
+      "amount": 106,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
        "wed",
        "thu",
-       "fri",
-       "sat",
-       "sun"
+       "fri"
       ],
       "windows": [
        [
-        "09:00",
-        "22:00"
+        "10:00",
+        "19:00"
        ]
       ],
-      "slotsSeen": 88
+      "slotsSeen": 89
      },
      {
       "format": 7,
       "surface": "3g",
-      "amount": 77,
+      "amount": 135,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
        "wed",
-       "thu",
-       "fri"
+       "thu"
       ],
       "windows": [
        [
-        "10:00",
-        "17:30"
+        "19:30",
+        "22:00"
        ]
       ],
-      "slotsSeen": 78
+      "slotsSeen": 11
      },
      {
-      "format": 8,
+      "format": 7,
       "surface": "3g",
-      "amount": 85,
+      "amount": 124,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
        "fri",
        "sat",
        "sun"
@@ -525,12 +697,12 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 88
+      "slotsSeen": 54
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 77,
+      "amount": 125,
       "minutes": 60,
       "days": [
        "mon",
@@ -541,14 +713,49 @@
       ],
       "windows": [
        [
-        "10:00",
-        "17:30"
+        "10:30",
+        "18:30"
        ]
       ],
-      "slotsSeen": 78
+      "slotsSeen": 40
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 145,
+      "minutes": 60,
+      "days": [
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 3
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 129.5,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 22
      }
     ],
-    "fetchedAt": "2026-09-12T17:58:04.144Z"
+    "fetchedAt": "2026-09-12T18:31:16.743Z"
    },
    {
     "id": "go-eltham",
@@ -582,7 +789,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 334,
+    "slotsSeen": 232,
     "bands": [
      {
       "format": 5,
@@ -667,74 +874,15 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 92,
+      "amount": 124,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
        "wed",
        "thu",
-       "fri"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "18:00"
-       ],
-       [
-        "22:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 91
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 97,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "21:00",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 7
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 106,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "18:30",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 13
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 67,
-      "minutes": 60,
-      "days": [
        "fri",
-       "sat",
-       "sun"
+       "sat"
       ],
       "windows": [
        [
@@ -742,10 +890,29 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 56
+      "slotsSeen": 58
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 155,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 7
      }
     ],
-    "fetchedAt": "2026-09-12T18:00:28.654Z"
+    "fetchedAt": "2026-09-12T18:33:38.411Z"
    },
    {
     "id": "go-gillettecorner",
@@ -779,7 +946,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 316,
+    "slotsSeen": 278,
     "bands": [
      {
       "format": 5,
@@ -882,91 +1049,31 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 86,
+      "amount": 94.5,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
        "wed",
        "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 74
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
        "fri",
-       "sat"
-      ],
-      "windows": [
-       [
-        "08:30",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 106
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 60,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "21:30",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 4
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 90,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "18:30",
-        "18:30"
-       ],
-       [
-        "21:00",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 8
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 104,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "19:00",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 14
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 57.5,
-      "minutes": 60,
-      "days": [
+       "sat",
        "sun"
       ],
       "windows": [
@@ -975,10 +1082,46 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 37
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 115,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed"
+      ],
+      "windows": [
+       [
+        "21:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 3
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 143,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 6
      }
     ],
-    "fetchedAt": "2026-09-12T18:03:04.447Z"
+    "fetchedAt": "2026-09-12T18:35:49.725Z"
    },
    {
     "id": "go-hayes",
@@ -1017,7 +1160,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 483,
+    "slotsSeen": 454,
     "bands": [
      {
       "format": 5,
@@ -1083,7 +1226,7 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 86,
+      "amount": 120,
       "minutes": 60,
       "days": [
        "mon",
@@ -1100,12 +1243,12 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 133
+      "slotsSeen": 138
      },
      {
       "format": 7,
       "surface": "3g",
-      "amount": 74,
+      "amount": 111.5,
       "minutes": 60,
       "days": [
        "mon",
@@ -1125,26 +1268,29 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 106,
+      "amount": 143,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
-       "wed",
-       "thu"
+       "wed"
       ],
       "windows": [
        [
         "19:00",
+        "19:00"
+       ],
+       [
+        "20:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 23
+      "slotsSeen": 7
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 86,
+      "amount": 130,
       "minutes": 60,
       "days": [
        "mon",
@@ -1161,18 +1307,17 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 133
+      "slotsSeen": 131
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 74,
+      "amount": 119,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
        "wed",
-       "thu",
        "fri"
       ],
       "windows": [
@@ -1181,17 +1326,16 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 4
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 106,
+      "amount": 156,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
-       "wed",
        "thu"
       ],
       "windows": [
@@ -1200,10 +1344,10 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 23
+      "slotsSeen": 8
      }
     ],
-    "fetchedAt": "2026-09-12T18:04:24.636Z"
+    "fetchedAt": "2026-09-12T18:37:19.584Z"
    },
    {
     "id": "go-heathrow",
@@ -1237,7 +1381,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 256,
+    "slotsSeen": 221,
     "bands": [
      {
       "format": 5,
@@ -1303,7 +1447,7 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 86,
+      "amount": 130,
       "minutes": 60,
       "days": [
        "mon",
@@ -1320,12 +1464,12 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 96
+      "slotsSeen": 61
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 74,
+      "amount": 108,
       "minutes": 60,
       "days": [
        "mon",
@@ -1336,16 +1480,16 @@
       ],
       "windows": [
        [
-        "22:00",
-        "22:00"
+        "15:00",
+        "17:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 24
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 106,
+      "amount": 156,
       "minutes": 60,
       "days": [
        "mon",
@@ -1356,13 +1500,34 @@
       "windows": [
        [
         "18:30",
-        "21:30"
+        "18:30"
+       ],
+       [
+        "21:00",
+        "21:00"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 6
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 119,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "wed"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 2
      }
     ],
-    "fetchedAt": "2026-09-12T18:06:49.942Z"
+    "fetchedAt": "2026-09-12T18:39:49.288Z"
    },
    {
     "id": "go-ruislip",
@@ -1401,7 +1566,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 249,
+    "slotsSeen": 166,
     "bands": [
      {
       "format": 5,
@@ -1498,27 +1663,7 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 85,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri"
-      ],
-      "windows": [
-       [
-        "22:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 5
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 100.5,
+      "amount": 152,
       "minutes": 60,
       "days": [
        "mon",
@@ -1529,7 +1674,11 @@
       "windows": [
        [
         "16:30",
-        "18:00"
+        "19:30"
+       ],
+       [
+        "21:30",
+        "21:30"
        ]
       ],
       "slotsSeen": 15
@@ -1537,26 +1686,7 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 111,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "18:30",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 13
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 92,
+      "amount": 131,
       "minutes": 60,
       "days": [
        "fri",
@@ -1566,89 +1696,38 @@
       "windows": [
        [
         "08:30",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 41
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 66,
-      "minutes": 60,
-      "days": [
-       "sat"
-      ],
-      "windows": [
+        "09:30"
+       ],
        [
-        "18:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 9
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 85,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri"
-      ],
-      "windows": [
-       [
-        "22:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 5
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 100.5,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "16:30",
-        "18:00"
-       ]
-      ],
-      "slotsSeen": 15
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 111,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "18:30",
+        "11:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 13
+      "slotsSeen": 23
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 92,
+      "amount": 168,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 18
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 144,
       "minutes": 60,
       "days": [
        "fri",
@@ -1657,30 +1736,14 @@
       ],
       "windows": [
        [
-        "08:30",
+        "08:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 41
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 66,
-      "minutes": 60,
-      "days": [
-       "sat"
-      ],
-      "windows": [
-       [
-        "18:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 9
+      "slotsSeen": 27
      }
     ],
-    "fetchedAt": "2026-09-12T18:08:15.399Z"
+    "fetchedAt": "2026-09-12T18:41:25.622Z"
    },
    {
     "id": "go-sutton",
@@ -1714,7 +1777,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 232,
+    "slotsSeen": 166,
     "bands": [
      {
       "format": 5,
@@ -1760,7 +1823,7 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 80,
+      "amount": 124,
       "minutes": 60,
       "days": [
        "mon",
@@ -1773,33 +1836,36 @@
       ],
       "windows": [
        [
-        "09:00",
-        "22:00"
+        "09:30",
+        "21:30"
        ]
       ],
-      "slotsSeen": 92
+      "slotsSeen": 46
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 110,
+      "amount": 154,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
-       "wed",
        "thu"
       ],
       "windows": [
        [
-        "17:00",
-        "21:15"
+        "17:30",
+        "18:30"
+       ],
+       [
+        "21:30",
+        "21:30"
        ]
       ],
-      "slotsSeen": 24
+      "slotsSeen": 4
      }
     ],
-    "fetchedAt": "2026-09-12T18:10:14.594Z"
+    "fetchedAt": "2026-09-12T18:43:36.207Z"
    },
    {
     "id": "go-wembley",
@@ -1838,7 +1904,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 471,
+    "slotsSeen": 323,
     "bands": [
      {
       "format": 5,
@@ -1906,7 +1972,7 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 95,
+      "amount": 144,
       "minutes": 60,
       "days": [
        "mon",
@@ -1920,19 +1986,15 @@
       "windows": [
        [
         "08:30",
-        "08:30"
-       ],
-       [
-        "10:00",
-        "21:00"
+        "20:30"
        ]
       ],
-      "slotsSeen": 111
+      "slotsSeen": 28
      },
      {
       "format": 7,
       "surface": "3g",
-      "amount": 110,
+      "amount": 102,
       "minutes": 60,
       "days": [
        "mon",
@@ -1943,33 +2005,16 @@
       ],
       "windows": [
        [
-        "18:30",
-        "22:00"
+        "10:30",
+        "15:30"
        ]
       ],
-      "slotsSeen": 30
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 70,
-      "minutes": 60,
-      "days": [
-       "sat",
-       "sun"
-      ],
-      "windows": [
-       [
-        "16:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 16
+      "slotsSeen": 28
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 95,
+      "amount": 151,
       "minutes": 60,
       "days": [
        "mon",
@@ -1982,20 +2027,16 @@
       ],
       "windows": [
        [
-        "08:30",
-        "08:30"
-       ],
-       [
-        "10:00",
-        "21:00"
+        "11:00",
+        "22:00"
        ]
       ],
-      "slotsSeen": 111
+      "slotsSeen": 46
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 110,
+      "amount": 106,
       "minutes": 60,
       "days": [
        "mon",
@@ -2006,16 +2047,16 @@
       ],
       "windows": [
        [
-        "18:30",
-        "22:00"
+        "10:00",
+        "15:30"
        ]
       ],
-      "slotsSeen": 30
+      "slotsSeen": 50
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 70,
+      "amount": 142,
       "minutes": 60,
       "days": [
        "sat",
@@ -2027,10 +2068,10 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 16
+      "slotsSeen": 14
      }
     ],
-    "fetchedAt": "2026-09-12T18:11:33.634Z"
+    "fetchedAt": "2026-09-12T18:45:03.994Z"
    },
    {
     "id": "go-wimbledon",
@@ -2064,7 +2105,7 @@
      "2026-09-18",
      "2026-09-19"
     ],
-    "slotsSeen": 316,
+    "slotsSeen": 220,
     "bands": [
      {
       "format": 5,
@@ -2129,7 +2170,7 @@
      {
       "format": 7,
       "surface": "3g",
-      "amount": 80,
+      "amount": 124,
       "minutes": 60,
       "days": [
        "mon",
@@ -2146,48 +2187,32 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 130
+      "slotsSeen": 57
      },
      {
       "format": 7,
       "surface": "3g",
-      "amount": 73.5,
+      "amount": 154,
       "minutes": 60,
       "days": [
        "mon",
        "tue",
-       "wed",
-       "thu"
+       "wed"
       ],
       "windows": [
        [
-        "22:00",
+        "18:00",
+        "18:00"
+       ],
+       [
+        "21:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 4
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 110,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "17:30",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 24
+      "slotsSeen": 5
      }
     ],
-    "fetchedAt": "2026-09-12T18:13:35.893Z"
+    "fetchedAt": "2026-09-12T18:47:20.815Z"
    }
   ]
  },
@@ -29438,7 +29463,7 @@
   ]
  },
  "run": {
-  "pagesRead": 193,
+  "pagesRead": 215,
   "stoppedBy": null
  }
 }

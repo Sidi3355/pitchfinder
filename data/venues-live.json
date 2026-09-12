@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-12T17:54:41.025Z",
+ "fetchedAt": "2026-09-12T18:25:34.494Z",
  "offline": false,
  "operators": [
   {
@@ -106,7 +106,108 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:50:18.142Z"
+     "fetchedAt": "2026-09-12T18:22:55.824Z"
+    },
+    {
+     "id": "go-bexleyheath",
+     "slug": "bexleyheath",
+     "name": "Goals Bexleyheath",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/clubs/south-east/bexleyheath",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "address": "Graham Road, Bexleyheath, DA6 7EG",
+     "postcode": "DA6 7EG",
+     "district": "Bexley",
+     "region": "London",
+     "lat": 51.4595,
+     "lng": 0.1429,
+     "geoSource": "page",
+     "inLondon": true,
+     "openingHours": {
+      "mon": [
+       [
+        "17:30",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "17:30",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "17:30",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "17:30",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "17:30",
+        "22:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:30",
+        "21:30"
+       ]
+      ],
+      "sun": [
+       [
+        "09:30",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "text",
+     "hoursQuotes": [
+      "Monday 17:30 - 23:00",
+      "Tuesday 17:30 - 23:00",
+      "Wednesday 17:30 - 23:00",
+      "Thursday 17:30 - 23:00",
+      "Friday 17:30 - 22:00",
+      "Saturday 09:30 - 21:30",
+      "Sunday 09:30 - 22:00"
+     ],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": null,
+     "showers": null,
+     "bar": true,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": null,
+     "fetchedAt": "2026-09-12T18:23:04.928Z"
     },
     {
      "id": "go-chingford",
@@ -207,7 +308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:50:56.286Z"
+     "fetchedAt": "2026-09-12T18:23:20.255Z"
     },
     {
      "id": "go-dagenham",
@@ -308,7 +409,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:51:23.909Z"
+     "fetchedAt": "2026-09-12T18:23:34.173Z"
     },
     {
      "id": "go-eltham",
@@ -401,7 +502,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:51:49.824Z"
+     "fetchedAt": "2026-09-12T18:23:47.943Z"
     },
     {
      "id": "go-gillettecorner",
@@ -502,7 +603,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:51:59.303Z"
+     "fetchedAt": "2026-09-12T18:23:55.483Z"
     },
     {
      "id": "go-hayes",
@@ -603,7 +704,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:52:15.960Z"
+     "fetchedAt": "2026-09-12T18:24:09.420Z"
     },
     {
      "id": "go-heathrow",
@@ -703,7 +804,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:52:34.098Z"
+     "fetchedAt": "2026-09-12T18:24:17.829Z"
     },
     {
      "id": "go-ruislip",
@@ -804,7 +905,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:53:04.758Z"
+     "fetchedAt": "2026-09-12T18:24:46.260Z"
     },
     {
      "id": "go-sutton",
@@ -905,7 +1006,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:53:50.334Z"
+     "fetchedAt": "2026-09-12T18:24:59.915Z"
     },
     {
      "id": "go-tolworth",
@@ -1006,7 +1107,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:54:00.421Z"
+     "fetchedAt": "2026-09-12T18:25:08.898Z"
     },
     {
      "id": "go-wembley",
@@ -1107,7 +1208,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:54:10.067Z"
+     "fetchedAt": "2026-09-12T18:25:17.810Z"
     },
     {
      "id": "go-wimbledon",
@@ -1207,7 +1308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-12T17:54:32.804Z"
+     "fetchedAt": "2026-09-12T18:25:26.240Z"
     }
    ]
   },

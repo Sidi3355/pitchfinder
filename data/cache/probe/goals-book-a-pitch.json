@@ -1,12 +1,12 @@
 {
  "key": "goals-book-a-pitch",
  "url": "https://www.goalsfootball.co.uk/play/book-a-pitch",
- "fetchedAt": "2026-09-12T18:15:55.091Z",
+ "fetchedAt": "2026-09-12T18:49:46.176Z",
  "robotsAllows": true,
  "status": 200,
  "finalUrl": "https://www.goalsfootball.co.uk/play/book-a-pitch",
  "title": "Booking | Goals Football | Casual Booking",
- "text": "BOOK YOUR GAME\nCasual Booking\nBOOK YOUR\nPITCH\nClub\n​\n​\nBOOK NOW\nOUR BRAND PARTNERS\nFacebook\nTwitter\nTikTok\nInstagram\nLinkedIn\nYouTube\nCUSTOMER SERVICE\nNews\nCustomer Feedback\nCareers\nPolicies & Documents\nLEAGUES\nFixtures/Results/Tables\nLoyalty Scheme\nChallenge League\nBecome a Referee\nJoin a League\nBook a Trial Game\nFOOTBALL\nTournaments\nWomen's Football\nStudents\nJuniors\nWinter Football\nBlock Booking\nEVENTS\nFunctions\nKids Parties\nBubble Football\nCorporate Events\nKIDS\nKids Parties\nCoaching\nKickabout\nHoliday Camps\n\n©2026 Northwind 5s LTD trading as “GOALS”. All rights reserved\n\nWeb Design GlasgowBy Parachute\n\nFREE FOOTBALL?\n\nSAY LESS.\n\nDownload the GOALS app, join GOALS+ and enter the September prize draw of a FREE league season or block booking. Book pitches, manage your squad and access GOALS+ rewards from your phone.\n\nGET IN THE DRAW\nNO THANKS",
+ "text": "BOOK YOUR GAME\nCasual Booking\nBOOK YOUR\nPITCH\nClub\n​\n​\nBOOK NOW\nOUR BRAND PARTNERS\nFacebook\nTwitter\nTikTok\nInstagram\nLinkedIn\nYouTube\nCUSTOMER SERVICE\nNews\nCustomer Feedback\nCareers\nPolicies & Documents\nLEAGUES\nFixtures/Results/Tables\nLoyalty Scheme\nChallenge League\nBecome a Referee\nJoin a League\nBook a Trial Game\nFOOTBALL\nTournaments\nWomen's Football\nStudents\nJuniors\nWinter Football\nBlock Booking\nEVENTS\nFunctions\nKids Parties\nBubble Football\nCorporate Events\nKIDS\nKids Parties\nCoaching\nKickabout\nHoliday Camps\n\n©2026 Northwind 5s LTD trading as “GOALS”. All rights reserved\n\nWeb Design GlasgowBy Parachute\n\nGOALS[+]",
  "jsonld": [],
  "links": [
   {
@@ -237,6 +237,7 @@
   "li: Coaching",
   "li: Kickabout",
   "li: Holiday Camps",
+  "button.needsclick.klaviyo-close-form.go2324193863: Close teaser",
   "button.needsclick.klaviyo-close-form.go2324193863: Close dialog",
   "button.needsclick.go1418416598.go4033861592: GET IN THE DRAW",
   "button.needsclick.go2690139864.go4033861592: NO THANKS"
@@ -247,7 +248,7 @@
    "text": ""
   },
   {
-   "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-7306853395836950&output=html&adk=293675617&adf=814277786&abgtt=6&lmt=1789236956&plat=2%3A16777216%2C3%3A16%2C4%3A16%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fwww.goalsfootball.co.uk%2Fplay%2Fbook-a-pitch&pra=5&aiof=11&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJMaW51eCIsIiIsIng4NiIsIiIsIjE1My4wLjgwMTAuMTIiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNTMuMC44MDEwLjEyIl0sWyJOb3RfQSBCcmFuZCIsIjguMC4wLjAiXSxbIkNocm9taXVtIiwiMTUzLjAuODAxMC4xMiJdXSwwXQ..&dt=1789236956599&bpp=3&bdt=1211&idt=69&shv=r20260909&mjsv=m202609080101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=2740890896618&frm=20&pv=2&u_tz=0&u_his=18&u_h=900&u_w=1280&u_ah=900&u_aw=1280&u_cd=24&u_sd=1&dmc=16&adx=-12245933&ady=-12245933&biw=1280&bih=900&scr_x=0&scr_y=0&eid=95399629%2C95400775%2C122880931&oid=2&pvsid=1345364734703186&tmod=20998967&uas=0&nvt=1&fsapi=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C900%2C1280%2C900&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&pgls=CAk.&ifi=1&uci=a!1&fsb=1&dtd=90",
+   "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-7306853395836950&output=html&adk=293675617&adf=814277786&abgtt=6&lmt=1789238987&plat=2%3A16777216%2C3%3A16%2C4%3A16%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fwww.goalsfootball.co.uk%2Fplay%2Fbook-a-pitch&pra=5&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJMaW51eCIsIiIsIng4NiIsIiIsIjE1My4wLjgwMTAuMTIiLG51bGwsMCxudWxsLCI2NCIsW1siSGVhZGxlc3NDaHJvbWUiLCIxNTMuMC44MDEwLjEyIl0sWyJOb3RfQSBCcmFuZCIsIjguMC4wLjAiXSxbIkNocm9taXVtIiwiMTUzLjAuODAxMC4xMiJdXSwwXQ..&dt=1789238987545&bpp=3&bdt=1297&idt=80&shv=r20260909&mjsv=m202609040101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=7896789694781&frm=20&pv=2&u_tz=0&u_his=18&u_h=900&u_w=1280&u_ah=900&u_aw=1280&u_cd=24&u_sd=1&dmc=16&adx=-12245933&ady=-12245933&biw=1280&bih=900&scr_x=0&scr_y=0&eid=95399629%2C95400774%2C122880930&oid=2&pvsid=405790840091467&tmod=594274135&uas=0&nvt=1&fsapi=1&fc=1920&brdim=0%2C0%2C0%2C0%2C1280%2C0%2C1280%2C900%2C1280%2C900&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&pgls=CAk.&ifi=1&uci=a!1&fsb=1&dtd=107",
    "text": ""
   },
   {
