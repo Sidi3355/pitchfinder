@@ -86,3 +86,9 @@ Status: todo | doing | done | blocked. Found items are folded under the item the
 | E7  | Rank badges and outer-London picks without a group                                                                                                                        | done   | No badges; central London first                                                       |
 | E8  | P2s: cost line with one in, RSVP below the fold, OG title repeats, not-found copy, nav label, zero-result footer, badge count, plumbing text, report thank-you on curated | done   |                                                                                       |
 | E9  | P2s open: organiser auto-in, remove or rename an answer, signed-in offline header, desktop Share confirmation, "Use my location" label offline                            | todo   |                                                                                       |
+
+## User-directed (12 Sep)
+
+| #   | Item                                                                                        | Status | Notes                                                                     |
+| --- | ------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------- |
+| U1  | A product site around the tool: landing page, header menu, footer, privacy, finder at /find | done   | Iteration 7; overrides the brief's first-screen and no-hero lines for `/` |

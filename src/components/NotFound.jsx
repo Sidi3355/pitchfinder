@@ -16,7 +16,7 @@ export function NotFound({ kind = 'page' }) {
           ? 'It may have been removed from OpenStreetMap or merged into a venue. Everything current is on the map.'
           : 'Check the link you were sent, or start from the map.'}
       </p>
-      <Link className="btn primary" href={actions.hrefFor('/')}>
+      <Link className="btn primary" href={actions.hrefFor('/find')}>
         Open the map
       </Link>
     </section>

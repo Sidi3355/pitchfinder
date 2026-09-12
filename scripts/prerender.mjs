@@ -62,7 +62,7 @@ function summary(pitch) {
     pitch.bookingUrl
       ? `<p><a href="${esc(pitch.bookingUrl)}" rel="noopener">Book at venue</a></p>`
       : ''
-  }<p><a href="/">All pitches</a></p><p>Pitch data © OpenStreetMap contributors (ODbL).</p></main>`
+  }<p><a href="/find">All pitches</a></p><p>Pitch data © OpenStreetMap contributors (ODbL).</p></main>`
 }
 
 function setMeta(html, attr, name, content) {

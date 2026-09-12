@@ -5,7 +5,7 @@ test('group, filters and selected pitch live in the URL and survive reload and s
   page,
   browser,
 }) => {
-  await page.goto('/')
+  await page.goto('/find')
   await expect(page.locator('.card').first()).toBeVisible()
 
   await openGroup(page)
@@ -57,7 +57,7 @@ test('group, filters and selected pitch live in the URL and survive reload and s
 })
 
 test('no results is a designed state with a way out', async ({ page }) => {
-  await page.goto('/?t=commercial&free=1')
+  await page.goto('/find?t=commercial&free=1')
   await expect(page.getByText(/No pitches match/)).toBeVisible()
   await page.getByRole('button', { name: 'Reset filters' }).click()
   await expect(page.locator('.card').first()).toBeVisible()
@@ -68,7 +68,7 @@ test('a failed dataset download shows an error with a retry', async ({ page }) =
   await page.route(/\/data\/(index|pitches)\.json$/, (route) =>
     fail ? route.abort() : route.continue(),
   )
-  await page.goto('/')
+  await page.goto('/find')
   await expect(page.getByText('Could not load pitch data.')).toBeVisible()
   fail = false
   await page.getByRole('button', { name: 'Try again' }).click()

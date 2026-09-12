@@ -202,6 +202,10 @@ textarea.input:focus-visible {
   gap: var(--space-2);
   white-space: nowrap;
 }
+/* The phone menu is rendered from inside the header; its text wraps normally. */
+.header-auth .panel-sheet {
+  white-space: normal;
+}
 .header-user {
   display: inline-flex;
   align-items: center;
@@ -1401,7 +1405,9 @@ textarea.input {
 }
 .drawer-footnote a,
 .about a,
-.game-address a {
+.game-address a,
+.home-section p a,
+.quick-start .hint a {
   display: inline-block;
   padding: 12px 0;
   margin: -12px 0;
@@ -1868,5 +1874,247 @@ textarea.input {
 @media (max-width: 340px) {
   .brand-name {
     display: none;
+  }
+}
+
+/* ── Home (landing) ─────────────────────────────────────────────────────── */
+.btn.lg {
+  min-height: 48px;
+  padding: 0 var(--space-6);
+  font-size: var(--text-lg);
+}
+.home {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.home-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr);
+  gap: var(--space-6);
+  align-items: start;
+  padding-top: var(--space-4);
+}
+.home-intro h1 {
+  margin: 0 0 var(--space-3);
+  font-size: clamp(28px, 4.2vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 14ch;
+}
+.home-lead {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  color: var(--ink-2);
+  max-width: 52ch;
+}
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.quick-start {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.quick-start-title {
+  margin: 0;
+  font-size: var(--text-md);
+  font-weight: 600;
+}
+.quick-start-row {
+  display: flex;
+  gap: var(--space-2);
+}
+.quick-start-row .input {
+  flex: 1;
+  min-width: 0;
+}
+.quick-start .hint {
+  margin: 0;
+}
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.home-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.home-stats strong {
+  font-size: var(--text-xl);
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.home-stats span {
+  font-size: var(--text-sm);
+  color: var(--ink-3);
+}
+.home-section h2 {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-xl);
+  letter-spacing: -0.01em;
+}
+.home-section h3 {
+  margin: 0 0 var(--space-1);
+  font-size: var(--text-md);
+}
+.home-section p {
+  margin: 0;
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+.home-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  counter-reset: step;
+}
+.home-steps li {
+  position: relative;
+  padding-left: 44px;
+}
+.home-step-n {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-types,
+.home-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+.home-types {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.home-features {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4) var(--space-6);
+}
+.home-type {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  min-height: var(--tap);
+}
+.home-type:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+.home-type-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.home-type-head .dim {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+.home-type-blurb {
+  font-size: var(--text-sm);
+  color: var(--ink-2);
+  line-height: 1.4;
+}
+.home-trust p {
+  max-width: 72ch;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  margin-top: auto;
+}
+.footer-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--ink-3);
+}
+.footer-brand {
+  font-weight: 700;
+  color: var(--ink);
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+}
+.footer-nav a,
+.footer-legal a {
+  color: var(--ink-2);
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+}
+.footer-legal {
+  margin: 0;
+  flex-basis: 100%;
+}
+/* The page fills the viewport before the footer, so the footer never sits
+   in the first screen and then jumps down when the page's data arrives. */
+.main-page > :not(.footer) {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 859px) {
+  .home {
+    gap: 32px;
+    padding-top: var(--space-4);
+  }
+  .home-intro,
+  .home-steps,
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+  .home-stats,
+  .home-types {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home-actions .btn {
+    flex: 1;
   }
 }

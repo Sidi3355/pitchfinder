@@ -7,7 +7,7 @@ import { addPlayer, closeGroup, openGroup } from './helpers.js'
 
 test('dark mode applies to the page and the map', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' })
-  await page.goto('/')
+  await page.goto('/find')
   await expect(page.locator('.card').first()).toBeVisible()
   const bodyBg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor)
   // Dark background: every channel under 40.
@@ -24,7 +24,7 @@ test('dark mode applies to the page and the map', async ({ page }) => {
 })
 
 test('keyboard focus is visible on every focused control', async ({ page }) => {
-  await page.goto('/')
+  await page.goto('/find')
   await expect(page.locator('.card').first()).toBeVisible()
   for (let i = 0; i < 6; i++) {
     await page.keyboard.press('Tab')
@@ -76,8 +76,11 @@ test('mobile controls are at least 44 px', async ({ page, isMobile }) => {
     expect(small, `${label}: ${JSON.stringify(small)}`).toEqual([])
   }
   await page.goto('/')
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
+  await check('landing')
+  await page.goto('/find')
   await expect(page.locator('.card').first()).toBeVisible()
-  await check('home')
+  await check('finder')
   await openGroup(page)
   await check('group panel')
   await addPlayer(page, 'Sam', 'Peckham')

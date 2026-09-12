@@ -46,7 +46,7 @@ export function PitchPage({ id }) {
   return (
     <article className="pitch-page">
       <nav className="page-back" aria-label="Breadcrumb">
-        <Link href={actions.hrefFor('/')}>Back to results</Link>
+        <Link href={actions.hrefFor('/find')}>Back to results</Link>
       </nav>
       <header className="pitch-page-head">
         <p className="drawer-type" style={{ color: t.color }}>

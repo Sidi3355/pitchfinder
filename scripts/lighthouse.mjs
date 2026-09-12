@@ -17,10 +17,10 @@ const GATES = { performance: 85, accessibility: 95, 'best-practices': 95, seo: 9
 const FCP_GATE_MS = 3000
 // Headless Chrome has no GPU, so the map (MapLibre, WebGL) is painted by
 // SwiftShader and its context setup alone costs 1 to 2 s of main thread at
-// 4x CPU throttling: a CPU profile shows our own code under 40 ms. The home
+// 4x CPU throttling: a CPU profile shows our own code under 40 ms. The finder
 // route's Performance score is therefore reported but not gated here; see
 // agent/DEFINITION_OF_DONE.md (Q1) for how to measure it on real hardware.
-const UNGATED = { '/': new Set(['performance']) }
+const UNGATED = { '/find': new Set(['performance']) }
 
 function pickPitchId() {
   try {
@@ -74,7 +74,11 @@ async function main() {
     })
     mkdirSync(OUT, { recursive: true })
     const pitchId = pickPitchId()
-    const routes = [['home', '/'], ...(pitchId ? [['pitch', `/p/${pitchId}`]] : [])]
+    const routes = [
+      ['home', '/'],
+      ['find', '/find'],
+      ...(pitchId ? [['pitch', `/p/${pitchId}`]] : []),
+    ]
     try {
       for (const [name, path] of routes) {
         const result = await lighthouse(
@@ -85,7 +89,11 @@ async function main() {
             settings: {
               formFactor: 'mobile',
               screenEmulation: { mobile: true, width: 390, height: 844, deviceScaleFactor: 3 },
-              throttlingMethod: 'simulate',
+              // Real CPU and network throttling with observed metrics. The default
+              // simulation modelled the finder's first paint at 3.7 s while its own
+              // filmstrip showed the list painted by 2.3 s; the map's GL setup right
+              // after first paint confuses the model. LH_THROTTLE=simulate restores it.
+              throttlingMethod: process.env.LH_THROTTLE === 'simulate' ? 'simulate' : 'devtools',
               onlyCategories: Object.keys(GATES),
             },
           },
@@ -124,7 +132,7 @@ async function main() {
       `| ${r.route} | ${r.performance} | ${r.accessibility} | ${r['best-practices']} | ${r.seo} | ${(r.fcpMs / 1000).toFixed(1)} s | ${(r.lcpMs / 1000).toFixed(1)} s | ${r.tbtMs} ms | ${r.cls} |`,
     )
   }
-  const md = `# Lighthouse (mobile, simulated slow 4G)\n\nMeasured ${new Date().toISOString()} against a local static build served like Vercel.\nGates: performance >= ${GATES.performance}, accessibility >= ${GATES.accessibility}, best practices >= ${GATES['best-practices']}, SEO >= ${GATES.seo}, FCP <= ${FCP_GATE_MS / 1000} s.\nThe home route's Performance is measured under software WebGL (no GPU in headless Chrome) and is reported, not gated: the map's context setup dominates it. Measure it on a phone or with PageSpeed Insights against the deployed site.\n\n${lines.join('\n')}\n\nResult: ${failed ? 'FAILED' : 'PASSED'}\n`
+  const md = `# Lighthouse (mobile, throttled to slow 4G and a 4x slower CPU)\n\nMeasured ${new Date().toISOString()} against a local static build served like Vercel.\nGates: performance >= ${GATES.performance}, accessibility >= ${GATES.accessibility}, best practices >= ${GATES['best-practices']}, SEO >= ${GATES.seo}, FCP <= ${FCP_GATE_MS / 1000} s.\nThe finder route's Performance is measured under software WebGL (no GPU in headless Chrome) and is reported, not gated: the map's context setup dominates it. Measure it on a phone or with PageSpeed Insights against the deployed site.\n\n${lines.join('\n')}\n\nResult: ${failed ? 'FAILED' : 'PASSED'}\n`
   writeFileSync(join(OUT, 'summary.md'), md)
   console.log(md)
   if (failed && !process.env.LH_SOFT) process.exit(1)
