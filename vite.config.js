@@ -7,6 +7,9 @@ export default defineConfig({
   // Absolute base: the app uses real routes (/p/{id}, /g/{slug}) so assets
   // must resolve from the site root, not relative to the current path.
   base: '/',
+  // The Supabase to Vercel integration sets NEXT_PUBLIC_SUPABASE_URL and
+  // NEXT_PUBLIC_SUPABASE_ANON_KEY; accept those as well as the VITE_ names.
+  envPrefix: ['VITE_', 'NEXT_PUBLIC_'],
   server: { port: 5173, host: true },
   build: {
     sourcemap: true,

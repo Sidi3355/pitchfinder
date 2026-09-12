@@ -3,8 +3,11 @@
 // restore or the user taps an action that needs an account. Every function
 // here returns plain data or throws an Error with a message fit to show.
 
-const URL_ = import.meta.env.VITE_SUPABASE_URL
-const ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
+// Either the VITE_ names from .env.local, or the NEXT_PUBLIC_ names the
+// Supabase to Vercel integration sets on the Vercel project.
+const URL_ = import.meta.env.VITE_SUPABASE_URL || import.meta.env.NEXT_PUBLIC_SUPABASE_URL
+const ANON_KEY =
+  import.meta.env.VITE_SUPABASE_ANON_KEY || import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 /** True when the build has Supabase credentials. */
 export const configured = !!(URL_ && ANON_KEY)
