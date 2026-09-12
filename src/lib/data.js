@@ -33,11 +33,19 @@ export async function loadPitchDetail(id) {
  * @returns {{ known: boolean, perHour: number|null }}
  */
 export function costOf(pitch) {
-  if (pitch.pricePerHour != null) return { known: true, perHour: pitch.pricePerHour }
-  if ((pitch.type === 'park' || pitch.type === 'cage') && pitch.fee !== true) {
-    return { known: true, perHour: 0 }
+  if (pitch.pricePerHour != null) {
+    // The cheapest bookable slot: what a group pays for one game. An hour
+    // unless the venue sells shorter slots (Powerleague's weekday 40 minutes).
+    const slot =
+      pitch.priceSlot && pitch.priceSlot.amount != null && pitch.priceSlot.minutes > 0
+        ? { amount: pitch.priceSlot.amount, minutes: pitch.priceSlot.minutes }
+        : { amount: pitch.pricePerHour, minutes: 60 }
+    return { known: true, perHour: pitch.pricePerHour, slot }
   }
-  return { known: false, perHour: null }
+  if ((pitch.type === 'park' || pitch.type === 'cage') && pitch.fee !== true) {
+    return { known: true, perHour: 0, slot: { amount: 0, minutes: 60 } }
+  }
+  return { known: false, perHour: null, slot: null }
 }
 
 export function isBounded(pitch) {

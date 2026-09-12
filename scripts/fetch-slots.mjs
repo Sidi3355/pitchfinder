@@ -21,6 +21,7 @@ import { allowedByRobots } from './lib/robots.mjs'
 import { lookupPostcodes } from './lib/postcode-lookup.mjs'
 import { extractFacilities, extractPostcode } from './lib/venue-facts.mjs'
 import { parseHoursText } from '../src/lib/hours.js'
+import { nameSimilarity } from './lib/pipeline.mjs'
 import {
   addDays,
   bandsFromSlots,
@@ -47,30 +48,6 @@ const MAX_PITCHES_PER_VENUE = 4
 const PLAYFINDER = 'https://www.playfinder.com'
 const PITCHBOOKING = 'https://pitchbooking.com'
 const GOALS_BOOKING = 'https://www.goalsfootball.co.uk/play/book-a-pitch'
-const STOP_WORDS = new Set([
-  'the',
-  'and',
-  'of',
-  'at',
-  'in',
-  'on',
-  'a',
-  'an',
-  'pitch',
-  'pitches',
-  'football',
-  'fc',
-  'formerly',
-  'centre',
-  'center',
-  'sports',
-  'sport',
-  'ground',
-  'grounds',
-  'hub',
-  'to',
-  'off',
-])
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 const started = Date.now()
@@ -92,24 +69,6 @@ function outOfBudget() {
   if (pagesRead >= MAX_PAGES) stoppedBy = stoppedBy || 'budget'
   else if (Date.now() - started > DEADLINE_MS) stoppedBy = stoppedBy || 'deadline'
   return !!stoppedBy
-}
-export function nameTokens(s) {
-  return new Set(
-    String(s || '')
-      .toLowerCase()
-      .replace(/\(.*?\)/g, ' ')
-      .replace(/[^a-z0-9]+/g, ' ')
-      .split(' ')
-      .filter((w) => w && !STOP_WORDS.has(w)),
-  )
-}
-export function nameSimilarity(a, b) {
-  const ta = nameTokens(a)
-  const tb = nameTokens(b)
-  if (!ta.size || !tb.size) return 0
-  let shared = 0
-  for (const w of ta) if (tb.has(w)) shared++
-  return shared / (ta.size + tb.size - shared)
 }
 
 // ── Browser ───────────────────────────────────────────────────────────────

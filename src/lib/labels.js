@@ -18,13 +18,9 @@ export function bookingLabel(url) {
   try {
     const host = new URL(url).hostname
     if (/\.gov\.uk$/.test(host)) return 'Council page'
-    if (
-      /powerleague|goalsfootball|playfootball|playfinder|pitchbooking|better\.org|everyoneactive/.test(
-        host,
-      )
-    ) {
+    if (/playfinder/.test(host)) return 'Book on Playfinder'
+    if (/powerleague|goalsfootball|playfootball|pitchbooking|better\.org|everyoneactive/.test(host))
       return 'Book at venue'
-    }
     return 'Venue website'
   } catch {
     return 'Venue website'
@@ -32,5 +28,5 @@ export function bookingLabel(url) {
 }
 
 export function isBookable(url) {
-  return bookingLabel(url) === 'Book at venue'
+  return /^Book /.test(bookingLabel(url) || '')
 }

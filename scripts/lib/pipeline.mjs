@@ -5,6 +5,9 @@
 
 // ── Classification ───────────────────────────────────────────────────────────
 
+import { parseOsmHours } from '../../src/lib/hours.js'
+import { cheapestBand, linesFromBands, perHour } from './slots.mjs'
+
 export const COMMERCIAL_RE =
   /powerleague|power league|\bgoals\b|playfootball|play football|soccerdome|footballworx|futsal club|football centre/i
 // "academy" is deliberately absent: real venues carry it (Powerleague Academy,
@@ -378,7 +381,6 @@ export function summarise(pitches) {
 
 // ── Bookable venues and the operators' own pages ─────────────────────────────
 
-import { parseOsmHours } from '../../src/lib/hours.js'
 
 /** The app is about places you can book: football centres and astro pitches. */
 export const BOOKABLE_TYPES = new Set(['commercial', 'astro'])
@@ -529,4 +531,200 @@ export function withHours(venue) {
 
 export function onlyBookable(venues) {
   return venues.filter((v) => BOOKABLE_TYPES.has(v.type))
+}
+
+// ── Slot calendars: prices, hours and pitches from the booking sites ──────
+
+const NAME_STOP_WORDS = new Set([
+  'the', 'and', 'of', 'at', 'in', 'on', 'a', 'an', 'pitch', 'pitches', 'football', 'fc',
+  'formerly', 'centre', 'center', 'sports', 'sport', 'ground', 'grounds', 'hub', 'to', 'off',
+])
+
+/** The words that identify a venue name: lower case, no punctuation, no filler. */
+export function nameTokens(s) {
+  return new Set(
+    String(s || '')
+      .toLowerCase()
+      .replace(/\(.*?\)/g, ' ')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .split(' ')
+      .filter((w) => w && !NAME_STOP_WORDS.has(w)),
+  )
+}
+
+/** 0..1: the share of identifying words two names have in common. */
+export function nameSimilarity(a, b) {
+  const ta = nameTokens(a)
+  const tb = nameTokens(b)
+  if (!ta.size || !tb.size) return 0
+  let shared = 0
+  for (const w of ta) if (tb.has(w)) shared++
+  return shared / (ta.size + tb.size - shared)
+}
+
+function unionFormats(a, b) {
+  return [...new Set([...(a || []), ...(b || [])].filter((n) => n > 0))].sort((x, y) => x - y)
+}
+
+/** Price lines and the headline figures from one source's bands. */
+function assignBands(target, bands, { source, sourceUrl, checkedAt }) {
+  if (!bands?.length) return
+  const cheapest = cheapestBand(bands)
+  const rates = bands.map((b) => perHour(b.amount, b.minutes)).filter((r) => r != null)
+  const kept = (target.prices || []).filter((l) => l.unit !== 'slot')
+  target.prices = [...kept, ...linesFromBands(bands, { source, sourceUrl, checkedAt })]
+  target.pricePerHour = perHour(cheapest.amount, cheapest.minutes)
+  const top = Math.max(...rates)
+  target.priceMax = top > target.pricePerHour ? top : null
+  target.priceSlot = { amount: cheapest.amount, minutes: cheapest.minutes }
+  target.priceSource = source
+  target.priceSourceUrl = sourceUrl
+  target.priceCheckedAt = checkedAt
+  target.priceContext = null
+  target.formats = unionFormats(
+    target.formats,
+    bands.map((b) => b.format),
+  )
+}
+
+const FACILITY_KEYS = ['lit', 'changingRooms', 'parking', 'showers', 'bar', 'cafe', 'covered']
+
+function assignPlayfinderVenue(target, venue) {
+  if (venue.hours && target.hoursSource !== 'operator-site') {
+    target.hours = venue.hours
+    target.hoursSource = 'playfinder'
+    target.hoursSourceUrl = venue.url
+    target.hoursCheckedAt = venue.fetchedAt
+    target.hoursQuotes = venue.hoursQuotes || []
+  }
+  for (const k of FACILITY_KEYS)
+    if (target[k] == null && venue.facilities?.[k] === true) target[k] = true
+  const artificial = (venue.pitches || []).filter(
+    (p) => p.format && (p.surface === '3g' || p.surface === 'astro'),
+  )
+  if (!target.surface && artificial.length)
+    target.surface = artificial.some((p) => p.surface === '3g') ? '3g' : 'astro'
+  target.formats = unionFormats(
+    target.formats,
+    artificial.map((p) => p.format),
+  )
+  if (!target.address && venue.address) target.address = venue.address
+  if (!target.postcode && venue.postcode) {
+    target.postcode = venue.postcode
+    target.postcodeSource = 'operator'
+  }
+  assignBands(target, venue.bands, {
+    source: 'playfinder',
+    sourceUrl: venue.url,
+    checkedAt: venue.fetchedAt,
+  })
+  target.playfinderUrl = venue.url
+  if (!target.bookingUrl || brandOf(target.operator, target.name) === 'powerleague')
+    target.bookingUrl = venue.url
+  if (!target.verifiedAt || target.verifiedAt < venue.fetchedAt.slice(0, 10))
+    target.verifiedAt = venue.fetchedAt.slice(0, 10)
+}
+
+/**
+ * Which venue on the map a Playfinder venue is, or null. Powerleague by
+ * name; anything else by a shared distinctive word within 300 m, or the
+ * only astro within 120 m, or a near-identical name within 800 m.
+ */
+export function matchPlayfinderVenue(venue, venues, { radius = 300 } = {}) {
+  const brand = /^powerleague/.test(venue.slug) ? 'powerleague' : 'other'
+  if (brand === 'powerleague') {
+    const exact = venues.find(
+      (v) =>
+        brandOf(v.operator, v.name) === 'powerleague' &&
+        normaliseName(v.name) === normaliseName(venue.name),
+    )
+    if (exact) return exact
+    if (venue.lat == null) return null
+    let best = null
+    for (const v of venues) {
+      if (brandOf(v.operator, v.name) !== 'powerleague') continue
+      const d = distM(v, venue)
+      if (d < 1000 && (!best || d < best.d)) best = { v, d }
+    }
+    return best ? best.v : null
+  }
+  if (venue.lat == null || venue.lng == null) return null
+  let best = null
+  let near = []
+  for (const v of venues) {
+    if (v.type !== 'astro') continue
+    const d = distM(v, venue)
+    if (d <= 120) near.push(v)
+    const sim = nameSimilarity(v.name, venue.name)
+    const ok = (d <= radius && sim >= 0.34) || (d <= 800 && sim >= 0.6)
+    if (ok && (!best || sim > best.sim || (sim === best.sim && d < best.d))) best = { v, sim, d }
+  }
+  if (best) return best.v
+  return near.length === 1 ? near[0] : null
+}
+
+function newPlayfinderVenue(venue, areas) {
+  const artificial = (venue.pitches || []).filter(
+    (p) => p.format && (p.surface === '3g' || p.surface === 'astro'),
+  )
+  const v = {
+    id: `pf-${venue.slug.replace(/[^a-z0-9-]/g, '')}`,
+    name: venue.name,
+    nameSource: 'playfinder',
+    type: 'astro',
+    sport: 'football',
+    brand: 'other',
+    lat: venue.lat,
+    lng: venue.lng,
+    geoSource: 'postcode',
+    area: nearestArea(areas, venue.lat, venue.lng),
+    borough: venue.district || null,
+    pitchCount: Math.max(artificial.length, 1),
+    bounded: null,
+    fee: true,
+    source: 'playfinder',
+    sourceUrl: venue.url,
+    bookingUrl: venue.url,
+  }
+  assignPlayfinderVenue(v, venue)
+  return v
+}
+
+/**
+ * The slot calendars (data/slots-live.json) on top of the venues: Goals
+ * prices from Pitchbooking, Goals' own booking site; Powerleague and astro
+ * prices, hours, facilities and pitches from Playfinder. A Playfinder venue
+ * in London with an artificial football pitch that matches nothing on the
+ * map is added, pinned at its postcode.
+ */
+export function applySlots(venues, slots, { areas = [] } = {}) {
+  const out = venues.map((v) => ({ ...v }))
+  for (const club of slots?.pitchbooking?.clubs || []) {
+    if (!club.bands?.length) continue
+    const target =
+      out.find((v) => v.id === club.id) ||
+      out.find(
+        (v) =>
+          brandOf(v.operator, v.name) === 'goals' &&
+          normaliseName(v.name) === normaliseName(club.name),
+      )
+    if (!target) continue
+    assignBands(target, club.bands, {
+      source: 'pitchbooking',
+      sourceUrl: club.url,
+      checkedAt: club.fetchedAt,
+    })
+    target.bookingUrl = club.url
+  }
+  for (const venue of slots?.playfinder?.venues || []) {
+    if (venue.skipped || !venue.inLondon || !venue.name) continue
+    const artificial = (venue.pitches || []).some(
+      (p) => p.format && (p.surface === '3g' || p.surface === 'astro'),
+    )
+    const target = matchPlayfinderVenue(venue, out)
+    if (target) assignPlayfinderVenue(target, venue)
+    else if (artificial && venue.lat != null && venue.lng != null)
+      out.push(newPlayfinderVenue(venue, areas))
+  }
+  return out
 }

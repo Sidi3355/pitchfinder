@@ -21,6 +21,7 @@ import {
   summarise,
   transform,
   applyLive,
+  applySlots,
   onlyBookable,
   withHours,
 } from './lib/pipeline.mjs'
@@ -127,8 +128,9 @@ export function parksFromElements(elements, maxSpanKm = 4) {
  * built and then left out; the product is about places with a price and a
  * booking page.
  */
-function finalise(out, live) {
-  return onlyBookable(applyLive(out, live, { areas: AREAS }).map(withHours))
+function finalise(out, live, slots) {
+  const withLive = applyLive(out, live, { areas: AREAS })
+  return onlyBookable(applySlots(withLive, slots, { areas: AREAS }).map(withHours))
 }
 
 async function main() {
@@ -137,13 +139,15 @@ async function main() {
   const prices = existsSync(pricesPath) ? JSON.parse(readFileSync(pricesPath, 'utf8')) : {}
   const livePath = join(ROOT, 'data/venues-live.json')
   const live = existsSync(livePath) ? JSON.parse(readFileSync(livePath, 'utf8')) : null
+  const slotsPath = join(ROOT, 'data/slots-live.json')
+  const slots = existsSync(slotsPath) ? JSON.parse(readFileSync(slotsPath, 'utf8')) : null
 
   // FROM_EXISTING=1 re-applies the operators' pages, hours and the bookable
   // filter to the last dataset without OpenStreetMap or geocoding: for
   // working on the merge offline. The weekly refresh always builds in full.
   if (process.env.FROM_EXISTING) {
     const existing = JSON.parse(readFileSync(OUT, 'utf8'))
-    const out = finalise(existing.pitches, live).sort((a, b) => a.id.localeCompare(b.id))
+    const out = finalise(existing.pitches, live, slots).sort((a, b) => a.id.localeCompare(b.id))
     writeOutput(out, existing.generatedAt)
     return
   }
@@ -200,7 +204,7 @@ async function main() {
   }
 
   let out = mergeCurated(venues, curated, prices, { areas: AREAS })
-  out = finalise(out, live)
+  out = finalise(out, live, slots)
   for (const v of out) {
     if (v.curated && !v.postcode) {
       const pc = postcodeCache[keyFor(v.lat, v.lng)]

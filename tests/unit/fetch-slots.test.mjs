@@ -4,13 +4,13 @@ import { describe, expect, it } from 'vitest'
 import {
   artificialFootball,
   goalsSlug,
-  nameSimilarity,
   playfinderPitch,
   playfinderSlug,
   priorityOf,
   slotsFromPage,
   venueFacts,
 } from '../../scripts/fetch-slots.mjs'
+import { nameSimilarity } from '../../scripts/lib/pipeline.mjs'
 
 const got = JSON.parse(
   readFileSync(

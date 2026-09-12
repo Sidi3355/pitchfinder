@@ -193,10 +193,17 @@ describe('filterCounts', () => {
 
 describe('cost model', () => {
   it('treats parks and cages as free unless a fee is recorded, and everything else as unknown', () => {
-    expect(costOf({ type: 'park' })).toEqual({ known: true, perHour: 0 })
-    expect(costOf({ type: 'cage', fee: true })).toEqual({ known: false, perHour: null })
-    expect(costOf({ type: 'astro' })).toEqual({ known: false, perHour: null })
-    expect(costOf({ type: 'commercial', pricePerHour: 78 })).toEqual({ known: true, perHour: 78 })
+    expect(costOf({ type: 'park' })).toMatchObject({ known: true, perHour: 0 })
+    expect(costOf({ type: 'cage', fee: true })).toMatchObject({ known: false, perHour: null })
+    expect(costOf({ type: 'astro' })).toMatchObject({ known: false, perHour: null })
+    expect(costOf({ type: 'commercial', pricePerHour: 78 })).toEqual({
+      known: true,
+      perHour: 78,
+      slot: { amount: 78, minutes: 60 },
+    })
+    expect(
+      costOf({ type: 'commercial', pricePerHour: 143, priceSlot: { amount: 95, minutes: 40 } }).slot,
+    ).toEqual({ amount: 95, minutes: 40 })
   })
   it('journeyReason says "about" and rounds to 5 for estimates, exact minutes for routes', () => {
     const est = journeyReason({ avgEta: 11, maxEta: 13, spreadEta: 4, etaCount: 2 })
@@ -232,7 +239,7 @@ describe('cost model', () => {
         changingRooms: true,
         bookingUrl: 'https://x.example/book',
       },
-      cost: { known: true, perHour: 60 },
+      cost: { known: true, perHour: 60, slot: { amount: 60, minutes: 60 } },
       pricePerHead: 6,
       headCount: 10,
     })

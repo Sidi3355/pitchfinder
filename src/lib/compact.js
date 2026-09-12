@@ -19,6 +19,7 @@ export const INDEX_FIELDS = [
   'bounded',
   'pricePerHour',
   'priceMax',
+  'priceSlot',
   'bookingUrl',
   'formats',
   'changingRooms',

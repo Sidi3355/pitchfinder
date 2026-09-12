@@ -2571,6 +2571,48 @@ h1 {
   font-weight: 500;
   color: var(--ink-3);
 }
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 10px;
+}
+.price-table caption {
+  text-align: left;
+  font-weight: 800;
+  padding: 0 0 4px;
+  color: var(--ink-1);
+}
+.price-table th {
+  text-align: left;
+  font-weight: 500;
+  padding: 6px 12px 6px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.price-table td {
+  text-align: right;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  vertical-align: top;
+}
+.price-table tr:last-child th,
+.price-table tr:last-child td {
+  border-bottom: 0;
+}
+.price-days {
+  display: block;
+  font-weight: 700;
+  color: var(--ink-1);
+}
+.price-when {
+  display: block;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.price-stated {
+  margin-top: 4px;
+}
 .open-state {
   display: flex;
   align-items: center;

@@ -26,31 +26,147 @@ export function BrandBadge({ pitch, className = '' }) {
   )
 }
 
-/** 'from £42/hr' and '£7 each for 6', or an honest 'price on booking'. */
+function money(n) {
+  return Number.isInteger(n) ? `£${n}` : `£${n.toFixed(2)}`
+}
+
+/**
+ * 'from £42/hr' or 'from £95 for 40 min', and '£9.50 each for 10' (the
+ * cheapest slot split between the group), or an honest 'Price on booking'.
+ */
 export function priceLine(pitch, headCount = 0) {
   const cost = costOf(pitch)
   if (!cost.known) return { known: false, main: 'Price on booking', each: null }
   if (cost.perHour === 0) return { known: true, main: 'Free', each: null }
   const range = pitch.priceMax != null && pitch.priceMax > cost.perHour
+  const { amount, minutes } = cost.slot
   const each =
     headCount >= 2
-      ? `£${Math.ceil((cost.perHour / headCount) * 100) / 100} each for ${headCount}`
+      ? `${money(Math.ceil((amount / headCount) * 100) / 100)} each for ${headCount}`
       : null
-  return { known: true, main: `${range ? 'from ' : ''}£${cost.perHour}/hr`, each }
+  const main =
+    minutes === 60
+      ? `${range ? 'from ' : ''}${money(amount)}/hr`
+      : `${range ? 'from ' : ''}${money(amount)} for ${minutes} min`
+  return { known: true, main, each }
 }
 
 const UNIT_LABEL = { hour: '/hr', session: ' a session', person: ' a player' }
 
+/** '5-a-side, Mon to Thu, kick-off 10:00 to 17:30' -> { days, when }. */
+function splitSlotLabel(label) {
+  const rest = String(label || '').replace(/^\d+-a-side,\s*/, '')
+  const at = rest.indexOf(', kick-off ')
+  if (at < 0) return { days: rest, when: '' }
+  return { days: rest.slice(0, at), when: rest.slice(at + 2) }
+}
+
+function SourceLink({ url, children }) {
+  return url ? (
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  ) : (
+    children
+  )
+}
+
 /**
- * Every price known for the venue: the pitch-hire rate (curated baseline or
- * the operator's page) and each price the operator's page states with what
- * it is for. Each carries its source.
+ * The slots on sale, by pitch size: each row is a set of days and kick-off
+ * times at one price for one slot length, read from the booking calendar.
+ */
+function SlotPrices({ pitch, lines, stated }) {
+  const groups = new Map()
+  for (const l of lines) {
+    const key = l.format || 0
+    if (!groups.has(key)) groups.set(key, [])
+    groups.get(key).push(l)
+  }
+  const order = [...groups.keys()].sort((a, b) => a - b)
+  const source = lines[0].source
+  const url = pitch.priceSourceUrl || lines[0].sourceUrl
+  const read = pitch.priceCheckedAt || lines[0].checkedAt
+  const slotsSeen = lines.reduce((n, l) => n + (l.slotsSeen || 0), 0)
+  return (
+    <>
+      {order.map((format) => {
+        const rows = groups.get(format)
+        const surface = rows.find((r) => r.surface)?.surface
+        return (
+          <table className="price-table" key={format}>
+            <caption>
+              {format ? `${format}-a-side` : 'Pitch'}
+              {surface === '3g' ? ' on 3G' : surface === 'astro' ? ' on astroturf' : ''}
+            </caption>
+            <tbody>
+              {rows.map((l, i) => {
+                const { days, when } = splitSlotLabel(l.label)
+                return (
+                  <tr key={`${l.amount}-${l.minutes}-${i}`}>
+                    <th scope="row">
+                      <span className="price-days">{days}</span>
+                      {when && <span className="price-when">{when}</span>}
+                    </th>
+                    <td>
+                      <strong className="price-amount">{money(l.amount)}</strong>
+                      <span className="price-unit">
+                        {l.minutes === 60 ? ' an hour' : ` for ${l.minutes} min`}
+                      </span>
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        )
+      })}
+      {stated.length > 0 && (
+        <ul className="price-list price-stated">
+          {stated.map((l, i) => (
+            <li key={`${l.amount}-${l.unit}-${i}`}>
+              <span className="price-label">{l.label}</span>
+              <strong className="price-amount">
+                {money(l.amount)}
+                <span className="price-unit">{UNIT_LABEL[l.unit] || ''}</span>
+              </strong>
+            </li>
+          ))}
+        </ul>
+      )}
+      <p className="fact-source">
+        {source === 'pitchbooking' ? (
+          <>
+            The slots on sale on Goals&rsquo; own booking site,{' '}
+            <SourceLink url={url}>{sourceHost(url) || 'pitchbooking.com'}</SourceLink>
+          </>
+        ) : (
+          <>
+            The slots on sale on <SourceLink url={url}>Playfinder</SourceLink>, which sells this
+            venue&rsquo;s pitches
+          </>
+        )}
+        {read ? `, read ${formatDate(read)}` : ''}
+        {slotsSeen ? ` from ${slotsSeen} slots over the coming week` : ''}. The booking page shows
+        the exact slot.
+        {stated.length > 0 && ' Per-player prices are the operator\u2019s own words.'}
+      </p>
+    </>
+  )
+}
+
+/**
+ * Every price known for the venue. With a booking calendar read, the slots on
+ * sale by pitch size; otherwise the pitch-hire rate (curated baseline or the
+ * operator's page) and each price the operator's page states. Each carries
+ * its source.
  */
 export function PriceBlock({ pitch }) {
   const cost = costOf(pitch)
-  const stated = Array.isArray(pitch.prices) ? pitch.prices : []
+  const all = Array.isArray(pitch.prices) ? pitch.prices : []
+  const slotLines = all.filter((l) => l.unit === 'slot' && l.amount != null)
+  const stated = all.filter((l) => l.unit !== 'slot')
   const hire =
-    cost.known && cost.perHour > 0
+    !slotLines.length && cost.known && cost.perHour > 0
       ? {
           key: 'hire',
           label: 'Pitch hire',
@@ -71,13 +187,16 @@ export function PriceBlock({ pitch }) {
       <h2 id={`price-${pitch.id}`} className="fact-title">
         Prices
       </h2>
-      {lines.length ? (
+      {slotLines.length ? (
+        <SlotPrices pitch={pitch} lines={slotLines} stated={stated} />
+      ) : lines.length ? (
         <ul className="price-list">
           {lines.map((l, i) => (
             <li key={l.key || `${l.amount}-${l.unit}-${i}`}>
               <span className="price-label">{l.label}</span>
               <strong className="price-amount">
-                {l.from ? 'from ' : ''}£{l.amount}
+                {l.from ? 'from ' : ''}
+                {money(l.amount)}
                 <span className="price-unit">{UNIT_LABEL[l.unit] || ''}</span>
               </strong>
             </li>
@@ -90,46 +209,44 @@ export function PriceBlock({ pitch }) {
           <strong>Not published online.</strong> The booking page shows the price for your slot.
         </p>
       )}
-      <p className="fact-source">
-        {hire && (
-          <>
-            Pitch hire is the whole pitch for an hour, from{' '}
-            {pitch.priceSourceUrl ? (
-              <a href={pitch.priceSourceUrl} target="_blank" rel="noopener noreferrer">
-                {hireHost || 'the operator'}
+      {!slotLines.length && (
+        <p className="fact-source">
+          {hire && (
+            <>
+              Pitch hire is the whole pitch for an hour, from{' '}
+              <SourceLink url={pitch.priceSourceUrl}>{hireHost || 'the operator'}</SourceLink>
+              {pitch.priceCheckedAt
+                ? `, checked ${formatDate(pitch.priceCheckedAt)}`
+                : ', date not recorded'}
+              . Peak slots can cost more.{' '}
+            </>
+          )}
+          {stated.length > 0 && (
+            <>
+              Per-player prices are the operator&rsquo;s own words
+              {pageHost ? ` on ${pageHost}` : ''}
+              {readOn ? `, read ${formatDate(readOn)}` : ''}.{' '}
+            </>
+          )}
+          {!hire && !stated.length && pitch.bookingUrl && (
+            <>
+              Set at booking on{' '}
+              <a href={pitch.bookingUrl} target="_blank" rel="noopener noreferrer">
+                {pageHost || 'the booking page'}
               </a>
-            ) : (
-              'the operator'
-            )}
-            {pitch.priceCheckedAt
-              ? `, checked ${formatDate(pitch.priceCheckedAt)}`
-              : ', date not recorded'}
-            . Peak slots can cost more.{' '}
-          </>
-        )}
-        {stated.length > 0 && (
-          <>
-            Per-player prices are the operator&rsquo;s own words
-            {pageHost ? ` on ${pageHost}` : ''}
-            {readOn ? `, read ${formatDate(readOn)}` : ''}.{' '}
-          </>
-        )}
-        {!hire && !stated.length && pitch.bookingUrl && (
-          <>
-            Set at booking on{' '}
-            <a href={pitch.bookingUrl} target="_blank" rel="noopener noreferrer">
-              {pageHost || 'the booking page'}
-            </a>
-            .
-          </>
-        )}
-        {!hire && !stated.length && !pitch.bookingUrl && 'No booking page is known for this pitch.'}
-      </p>
+              .
+            </>
+          )}
+          {!hire &&
+            !stated.length &&
+            !pitch.bookingUrl &&
+            'No booking page is known for this pitch.'}
+        </p>
+      )}
     </section>
   )
 }
 
-/** Opening times as a week, today first in words, with the source. */
 export function HoursBlock({ pitch, now = new Date() }) {
   const week = pitch.hours || null
   const today = DAYS[(now.getDay() + 6) % 7]
@@ -162,6 +279,12 @@ export function HoursBlock({ pitch, now = new Date() }) {
           <p className="fact-source">
             {pitch.hoursSource === 'osm' ? (
               <>From OpenStreetMap. Hours can change: check before travelling.</>
+            ) : pitch.hoursSource === 'playfinder' ? (
+              <>
+                The hours listed on <SourceLink url={pitch.hoursSourceUrl}>Playfinder</SourceLink>
+                {pitch.hoursCheckedAt ? `, checked ${formatDate(pitch.hoursCheckedAt)}` : ''}. The
+                venue may open longer for direct bookings.
+              </>
             ) : (
               <>
                 From{' '}

@@ -98,7 +98,7 @@ export function journeyReason({ avgEta, maxEta, spreadEta, etaCount, routed = fa
 /** The filter half of the ranking: does this pitch pass for this group? */
 export function passesFilters(pitch, squad, filters, headCount = Math.max(squad.length, 1)) {
   const cost = costOf(pitch)
-  const pricePerHead = cost.known ? cost.perHour / headCount : null
+  const pricePerHead = cost.known ? cost.slot.amount / headCount : null
   if (filters.types.length && !filters.types.includes(pitch.type)) return false
   if (filters.brands?.length && !filters.brands.includes(brandOf(pitch))) return false
   if (filters.pricedOnly && !cost.known) return false
@@ -169,7 +169,7 @@ export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
   for (const pitch of pitches) {
     if (!passesFilters(pitch, squad, filters, headCount)) continue
     const cost = costOf(pitch)
-    const pricePerHead = cost.known ? cost.perHour / headCount : null
+    const pricePerHead = cost.known ? cost.slot.amount / headCount : null
 
     // ── ETAs ──
     const etas = squad.map((f) => ({
