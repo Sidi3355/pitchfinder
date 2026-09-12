@@ -2,6 +2,11 @@ name: Fetch venue facts
 
 on:
   workflow_dispatch:
+    inputs:
+      slots_args:
+        description: 'Arguments for fetch-slots.mjs (for example --force --only-goals)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -25,7 +30,7 @@ jobs:
       - name: Read the operators' club pages (polite, cached)
         run: node scripts/fetch-venues.mjs
       - name: Read the slot calendars for prices (Pitchbooking, Playfinder; polite, cached)
-        run: node scripts/fetch-slots.mjs
+        run: node scripts/fetch-slots.mjs ${{ inputs.slots_args }}
         continue-on-error: true
       - name: Probe candidate sources (polite, cached)
         run: node scripts/probe-sources.mjs

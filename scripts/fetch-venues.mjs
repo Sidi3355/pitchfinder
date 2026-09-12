@@ -208,12 +208,32 @@ async function fetchOperator(browser, op) {
     try {
       const got = await readPage(page, url)
       const fetchedAt = new Date().toISOString()
-      // A slug the site answers with its shell (nav and offers, no club) is not a club.
+      // A slug the site answers with its shell (nav and offers, no club) is not
+      // a club; but a site that answered properly before may be having a bad
+      // minute, so an earlier good read is kept rather than thrown away.
       const facts = extractVenueFacts({ text: got.text, jsonld: got.jsonld })
       if (!facts.postcode && got.text.length < 2500) {
-        console.log(`${op.name}: ${slug} -> ${got.status}, no club on the page; skipped`)
-        const stale = join(PAGE_CACHE, `${id}.json`)
-        if (existsSync(stale)) rmSync(stale)
+        const cachePath = join(PAGE_CACHE, `${id}.json`)
+        const previous = loadJson(cachePath, null)
+        if (
+          previous?.text &&
+          extractVenueFacts({ text: previous.text, jsonld: previous.jsonld || [] }).postcode
+        ) {
+          console.log(
+            `${op.name}: ${slug} -> ${got.status}, shell page today; kept the read from ${previous.fetchedAt}`,
+          )
+          venues.push({
+            id,
+            slug,
+            url,
+            operator: op,
+            got: { ...previous, links: [] },
+            fetchedAt: previous.fetchedAt,
+          })
+        } else {
+          console.log(`${op.name}: ${slug} -> ${got.status}, no club on the page; skipped`)
+          if (existsSync(cachePath)) rmSync(cachePath)
+        }
         await sleep(PAUSE_MS)
         continue
       }

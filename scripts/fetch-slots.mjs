@@ -49,6 +49,12 @@ const MAX_PITCHES_PER_VENUE = 4
 // fetch run reuses the cache); --force reads everything.
 const MAX_AGE_MS = Number(process.env.SLOTS_MAX_AGE_HOURS || 72) * 3600e3
 const FORCE = process.argv.includes('--force')
+// --only-goals / --only-playfinder read one side (a fix run need not re-read the other).
+const ONLY = process.argv.includes('--only-goals')
+  ? 'goals'
+  : process.argv.includes('--only-playfinder')
+    ? 'playfinder'
+    : null
 const PLAYFINDER = 'https://www.playfinder.com'
 const PITCHBOOKING = 'https://pitchbooking.com'
 const GOALS_BOOKING = 'https://www.goalsfootball.co.uk/play/book-a-pitch'
@@ -397,9 +403,7 @@ async function discoverPitchbooking(page, londonClubs) {
   console.log(`Pitchbooking sitemap: ${urls.size} Goals booking pages`)
   // The pages known already (scripts/pitchbooking-goals.json); each is checked against its own title.
   const known = loadJson(join(ROOT, 'scripts/pitchbooking-goals.json'), { clubs: {} })
-  for (const [slug, id] of Object.entries(known.clubs || {})) {
-    if (londonClubs.some((c) => c.slug === slug)) urls.add(`${PITCHBOOKING}/book/goals/${id}`)
-  }
+  for (const id of Object.values(known.clubs || {})) urls.add(`${PITCHBOOKING}/book/goals/${id}`)
   console.log(`Pitchbooking: ${urls.size} booking pages to read`)
   if (urls.size) return [...urls]
   // Fallback: the club picker on Goals' own booking page leads to Pitchbooking.
@@ -451,11 +455,17 @@ async function readPitchbooking(page, londonClubs, today) {
       const got = await readPage(page, url)
       const name = (got.h1 || got.title.split('|')[0]).trim()
       const slug = goalsSlug(name)
-      const club = londonClubs.find((c) => c.slug === slug || goalsSlug(c.name) === slug)
-      if (!club) {
-        console.log(`Pitchbooking: ${name} is not a London club on the map; skipped`)
+      if (!/^goals\s/i.test(name) || !slug) {
+        console.log(`Pitchbooking: ${url} is not a Goals club page ("${name}"); skipped`)
         await sleep(PAUSE_MS)
         continue
+      }
+      // The same id the operator's own page gets, so the two reads meet on one venue;
+      // whether the club is in London is decided by its postcode later.
+      const club = londonClubs.find((c) => c.slug === slug || goalsSlug(c.name) === slug) || {
+        id: `go-${slug.replace(/-/g, '')}`,
+        slug,
+        name,
       }
       const cachePath = join(PB_CACHE, `${club.id}.json`)
       if (fresh(loadJson(cachePath, null))) {
@@ -486,11 +496,25 @@ async function readPitchbooking(page, londonClubs, today) {
           if (outOfBudget()) break
           try {
             const day = await readPage(page, `${url}?date=${date}&pitchType=${type.value}`)
-            const parsed = parsePitchbookingSlots(day.text)
+            // The URL alone does not switch the pitch size: choose it in the page's own select.
+            const picker = page.locator('select').first()
+            await picker.selectOption({ value: type.value }, { timeout: 5000 }).catch(() => {})
+            await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {})
+            await page.waitForTimeout(800)
+            const text = await page.evaluate(() => document.body?.innerText || '')
+            const parsed = parsePitchbookingSlots(text.length > 200 ? text : day.text)
             if (parsed.date && parsed.date !== date)
               console.warn(`Pitchbooking: asked for ${date}, page shows ${parsed.date}`)
+            // A slot belongs to this size only if its per-player figure is the price over 2 x size players.
+            const own = parsed.slots.filter(
+              (s) => Math.abs(s.perPlayer * 2 * type.format - s.amount) <= 0.3,
+            )
+            if (parsed.slots.length && !own.length)
+              console.warn(
+                `Pitchbooking: ${club.id} ${date} ${type.label}: the page still showed another size; skipped`,
+              )
             record.days[date] = record.days[date] || {}
-            record.days[date][type.format] = parsed.slots.map((s) => ({
+            record.days[date][type.format] = own.map((s) => ({
               date: parsed.date || date,
               day: s.day,
               time: s.time,
@@ -651,8 +675,8 @@ async function main() {
       })
       const page = await context.newPage()
       page.setDefaultTimeout(45000)
-      await readPitchbooking(page, londonClubs, today)
-      await readPlayfinder(page, knownNames, today)
+      if (ONLY !== 'playfinder') await readPitchbooking(page, londonClubs, today)
+      if (ONLY !== 'goals') await readPlayfinder(page, knownNames, today)
       await context.close()
     } finally {
       await browser.close()
