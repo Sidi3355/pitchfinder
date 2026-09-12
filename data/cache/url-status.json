@@ -29,6 +29,11 @@
   "finalUrl": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/hackney-marshes",
   "checkedAt": "2026-09-11T22:17:01.486Z"
  },
+ "https://www.better.org.uk/": {
+  "status": 200,
+  "finalUrl": "https://www.better.org.uk/",
+  "checkedAt": "2026-09-12T12:40:26.104Z"
+ },
  "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre": {
   "status": 0,
   "error": "fetch failed",
@@ -49,10 +54,20 @@
   "finalUrl": "https://blackprincetrust.org.uk/",
   "checkedAt": "2026-09-11T22:16:45.663Z"
  },
+ "https://www.coramsfields.org.uk/": {
+  "status": 0,
+  "error": "fetch failed",
+  "checkedAt": "2026-09-12T12:40:38.601Z"
+ },
  "https://www.coramsfields.org.uk/sports-programme/": {
   "status": 0,
   "error": "fetch failed",
   "checkedAt": "2026-09-11T22:16:58.155Z"
+ },
+ "https://www.coramsfields.org/": {
+  "status": 200,
+  "finalUrl": "https://coramsfields.org/",
+  "checkedAt": "2026-09-12T12:40:43.226Z"
  },
  "https://www.enablelc.org/millennium-arena": {
   "status": 202,
@@ -154,10 +169,35 @@
   "finalUrl": "https://www.goalsfootball.co.uk/goals-centres/sutton",
   "checkedAt": "2026-09-11T22:16:19.323Z"
  },
+ "https://www.islington.gov.uk/": {
+  "status": 200,
+  "finalUrl": "https://www.islington.gov.uk/",
+  "checkedAt": "2026-09-12T12:40:54.646Z"
+ },
+ "https://www.islington.gov.uk/leisure-and-sport": {
+  "status": 404,
+  "finalUrl": "https://www.islington.gov.uk/leisure-and-sport",
+  "checkedAt": "2026-09-12T12:40:48.004Z"
+ },
+ "https://www.islington.gov.uk/sport-and-leisure": {
+  "status": 404,
+  "finalUrl": "https://www.islington.gov.uk/sport-and-leisure",
+  "checkedAt": "2026-09-12T12:40:45.790Z"
+ },
+ "https://www.islington.gov.uk/sports-parks-and-trees": {
+  "status": 404,
+  "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees",
+  "checkedAt": "2026-09-12T12:40:50.211Z"
+ },
  "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity",
   "checkedAt": "2026-09-11T22:17:07.150Z"
+ },
+ "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches": {
+  "status": 404,
+  "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches",
+  "checkedAt": "2026-09-12T12:40:52.414Z"
  },
  "https://www.powerleague.co.uk/": {
   "status": 403,
