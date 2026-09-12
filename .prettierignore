@@ -7,3 +7,4 @@ agent/lighthouse
 playwright-report
 test-results
 supabase/.temp
+agent/DATA_QUALITY.md

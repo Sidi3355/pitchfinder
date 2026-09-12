@@ -1,20 +1,38 @@
-import React, { useEffect, useRef } from 'react'
+import React, { Suspense, useEffect, useRef } from 'react'
 import { useStore } from './lib/store.jsx'
 import { Header } from './components/Header.jsx'
-import { Finder } from './components/Finder.jsx'
-import { About } from './components/About.jsx'
-import { Profile } from './components/Profile.jsx'
 import { AuthModal } from './components/AuthModal.jsx'
-import { PitchDetail } from './components/PitchDetail.jsx'
-import { PitchPage } from './components/PitchPage.jsx'
-import { NotFound } from './components/NotFound.jsx'
 import { Home } from './components/Home.jsx'
-import { Privacy } from './components/Privacy.jsx'
 import { Footer } from './components/Footer.jsx'
 import { MOBILE_QUERY, useMediaQuery } from './lib/media.js'
-import { GamePage } from './components/GamePage.jsx'
-import { GroupPage } from './components/GroupPage.jsx'
 import { isLegacyFinderLink, navigate, useLocation } from './lib/location.js'
+
+// The landing page is the first screen, so it ships in the entry chunk; every
+// other route loads when it is opened. Each chunk is a few KB gzipped and the
+// landing's first paint no longer pays for the finder, the pitch page or the
+// event pages.
+const lazy = (load) => React.lazy(load)
+const Finder = lazy(() => import('./components/Finder.jsx').then((m) => ({ default: m.Finder })))
+const About = lazy(() => import('./components/About.jsx').then((m) => ({ default: m.About })))
+const Profile = lazy(() => import('./components/Profile.jsx').then((m) => ({ default: m.Profile })))
+const PitchDetail = lazy(() =>
+  import('./components/PitchDetail.jsx').then((m) => ({ default: m.PitchDetail })),
+)
+const PitchPage = lazy(() =>
+  import('./components/PitchPage.jsx').then((m) => ({ default: m.PitchPage })),
+)
+const NotFound = lazy(() =>
+  import('./components/NotFound.jsx').then((m) => ({ default: m.NotFound })),
+)
+const Privacy = lazy(() => import('./components/Privacy.jsx').then((m) => ({ default: m.Privacy })))
+const GamePage = lazy(() =>
+  import('./components/GamePage.jsx').then((m) => ({ default: m.GamePage })),
+)
+const GroupPage = lazy(() =>
+  import('./components/GroupPage.jsx').then((m) => ({ default: m.GroupPage })),
+)
+
+const PageLoading = () => <div className="page-loading" aria-busy="true" aria-label="Loading" />
 
 const TITLES = {
   home: 'PitchFinder: pick a pitch the whole group can get to',
@@ -84,7 +102,7 @@ export function App() {
     <div className="app">
       <Header />
       <main ref={mainRef} className={route.name === 'find' ? 'main-find' : 'main-page'}>
-        {page}
+        <Suspense fallback={<PageLoading />}>{page}</Suspense>
         {route.name !== 'find' && !legacy && <Footer />}
       </main>
       {state.authModal && <AuthModal />}
@@ -98,7 +116,11 @@ export function App() {
           </div>
         )}
       </div>
-      {route.name === 'find' && !mobile && state.selectedPitchId && <PitchDetail />}
+      {route.name === 'find' && !mobile && state.selectedPitchId && (
+        <Suspense fallback={null}>
+          <PitchDetail />
+        </Suspense>
+      )}
     </div>
   )
 }

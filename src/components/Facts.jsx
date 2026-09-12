@@ -41,38 +41,47 @@ export function priceLine(pitch, headCount = 0) {
 
 const UNIT_LABEL = { hour: '/hr', session: ' a session', person: ' a player' }
 
-/** Every price the operator states, with what it is for and where it was seen. */
+/**
+ * Every price known for the venue: the pitch-hire rate (curated baseline or
+ * the operator's page) and each price the operator's page states with what
+ * it is for. Each carries its source.
+ */
 export function PriceBlock({ pitch }) {
   const cost = costOf(pitch)
-  const lines = Array.isArray(pitch.prices) && pitch.prices.length ? pitch.prices : null
-  const host = sourceHost(pitch.priceSourceUrl || pitch.bookingUrl)
+  const stated = Array.isArray(pitch.prices) ? pitch.prices : []
+  const hire =
+    cost.known && cost.perHour > 0
+      ? {
+          key: 'hire',
+          label: 'Pitch hire',
+          amount: cost.perHour,
+          unit: 'hour',
+          from: pitch.priceMax != null && pitch.priceMax > cost.perHour,
+        }
+      : null
+  const lines = [
+    ...(hire ? [hire] : []),
+    ...stated.filter((l) => !(hire && l.unit === 'hour' && l.amount === hire.amount)),
+  ]
+  const hireHost = sourceHost(pitch.priceSourceUrl)
+  const pageHost = sourceHost(pitch.sourceUrl || pitch.bookingUrl)
+  const readOn = pitch.hoursCheckedAt || pitch.verifiedAt
   return (
     <section className="fact-block" aria-labelledby={`price-${pitch.id}`}>
       <h2 id={`price-${pitch.id}`} className="fact-title">
         Prices
       </h2>
-      {lines ? (
+      {lines.length ? (
         <ul className="price-list">
           {lines.map((l, i) => (
-            <li key={`${l.amount}-${l.unit}-${i}`}>
+            <li key={l.key || `${l.amount}-${l.unit}-${i}`}>
               <span className="price-label">{l.label}</span>
               <strong className="price-amount">
-                £{l.amount}
+                {l.from ? 'from ' : ''}£{l.amount}
                 <span className="price-unit">{UNIT_LABEL[l.unit] || ''}</span>
               </strong>
             </li>
           ))}
-        </ul>
-      ) : cost.known && cost.perHour > 0 ? (
-        <ul className="price-list">
-          <li>
-            <span className="price-label">Pitch hire</span>
-            <strong className="price-amount">
-              {pitch.priceMax != null && pitch.priceMax > cost.perHour ? 'from ' : ''}£
-              {cost.perHour}
-              <span className="price-unit">/hr</span>
-            </strong>
-          </li>
         </ul>
       ) : cost.known && cost.perHour === 0 ? (
         <p className="fact-line">Free to play.</p>
@@ -82,12 +91,12 @@ export function PriceBlock({ pitch }) {
         </p>
       )}
       <p className="fact-source">
-        {cost.known && cost.perHour > 0 ? (
+        {hire && (
           <>
-            Whole pitch, from{' '}
+            Pitch hire is the whole pitch for an hour, from{' '}
             {pitch.priceSourceUrl ? (
               <a href={pitch.priceSourceUrl} target="_blank" rel="noopener noreferrer">
-                {host || 'the operator'}
+                {hireHost || 'the operator'}
               </a>
             ) : (
               'the operator'
@@ -95,19 +104,26 @@ export function PriceBlock({ pitch }) {
             {pitch.priceCheckedAt
               ? `, checked ${formatDate(pitch.priceCheckedAt)}`
               : ', date not recorded'}
-            . Peak slots can cost more.
+            . Peak slots can cost more.{' '}
           </>
-        ) : pitch.bookingUrl ? (
+        )}
+        {stated.length > 0 && (
+          <>
+            Per-player prices are the operator&rsquo;s own words
+            {pageHost ? ` on ${pageHost}` : ''}
+            {readOn ? `, read ${formatDate(readOn)}` : ''}.{' '}
+          </>
+        )}
+        {!hire && !stated.length && pitch.bookingUrl && (
           <>
             Set at booking on{' '}
             <a href={pitch.bookingUrl} target="_blank" rel="noopener noreferrer">
-              {host || 'the booking page'}
+              {pageHost || 'the booking page'}
             </a>
             .
           </>
-        ) : (
-          'No booking page is known for this pitch.'
         )}
+        {!hire && !stated.length && !pitch.bookingUrl && 'No booking page is known for this pitch.'}
       </p>
     </section>
   )

@@ -3198,3 +3198,8 @@ h1 {
     transition: none;
   }
 }
+
+/* A route chunk on its way: keeps the page's height so the footer does not jump. */
+.page-loading {
+  min-height: 60vh;
+}

@@ -239,6 +239,46 @@
   "finalUrl": "https://www.powerleague.com/five-a-side-london/wembley",
   "checkedAt": "2026-09-11T22:15:53.952Z"
  },
+ "https://www.powerleague.com/": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/",
+  "checkedAt": "2026-09-12T15:57:46.953Z"
+ },
+ "https://www.powerleague.com/location/barnet": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/barnet",
+  "checkedAt": "2026-09-12T15:57:40.913Z"
+ },
+ "https://www.powerleague.com/location/canary-wharf": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/canary-wharf",
+  "checkedAt": "2026-09-12T15:57:44.939Z"
+ },
+ "https://www.powerleague.com/location/croydon": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/croydon",
+  "checkedAt": "2026-09-12T15:57:42.927Z"
+ },
+ "https://www.powerleague.com/location/mill-hill": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/mill-hill",
+  "checkedAt": "2026-09-12T15:57:38.901Z"
+ },
+ "https://www.powerleague.com/location/shoreditch": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/shoreditch",
+  "checkedAt": "2026-09-12T15:57:32.860Z"
+ },
+ "https://www.powerleague.com/location/vauxhall": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/vauxhall",
+  "checkedAt": "2026-09-12T15:57:34.875Z"
+ },
+ "https://www.powerleague.com/location/wembley": {
+  "status": 403,
+  "finalUrl": "https://www.powerleague.com/location/wembley",
+  "checkedAt": "2026-09-12T15:57:36.888Z"
+ },
  "https://www.royalparks.org.uk/": {
   "status": 200,
   "finalUrl": "https://www.royalparks.org.uk/",
