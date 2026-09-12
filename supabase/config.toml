@@ -1,0 +1,32 @@
+# Supabase CLI and GitHub-integration config. Migrations live in
+# supabase/migrations and are applied in order by `supabase db push` or by the
+# GitHub integration on the production branch. The auth block documents the
+# settings the live project needs; the dashboard is the source of truth for
+# production, and preview branches read these values.
+
+project_id = "pitchfinder"
+
+[api]
+enabled = true
+schemas = ["public"]
+
+[db]
+major_version = 16
+
+[auth]
+site_url = "https://pitchfinder-pied.vercel.app"
+additional_redirect_urls = ["https://pitchfinder-pied.vercel.app/**", "http://localhost:5173/**"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+# The magic link signs people straight in; there is no separate confirmation step.
+enable_confirmations = false
+double_confirm_changes = true
+
+[auth.external.google]
+# Optional: set the client id and secret to turn on "Continue with Google".
+enabled = false
+client_id = "env(SUPABASE_AUTH_GOOGLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_GOOGLE_SECRET)"

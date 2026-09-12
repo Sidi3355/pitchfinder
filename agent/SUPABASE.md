@@ -13,7 +13,11 @@ supabase db push            # with the Supabase CLI linked to the project
 
 Auth providers to enable in the dashboard: Email (magic link, "Confirm email" off so the link
 signs in directly) and Google. Add the site URL and `https://<site>/**` to the redirect
-allow-list.
+allow-list. `supabase/config.toml` carries the same settings for the CLI and preview branches.
+
+Keys reach the site either as `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` (typed into
+Vercel or `.env.local`) or as the `NEXT_PUBLIC_` names the Supabase to Vercel integration sets;
+the client and the game function accept both.
 
 ## Tables
 
