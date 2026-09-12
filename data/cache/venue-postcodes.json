@@ -1,0 +1,80 @@
+{
+  "BR3 4EJ": {
+    "lat": 51.399948,
+    "lng": -0.050704,
+    "region": "London",
+    "district": "Bromley"
+  },
+  "DA6 7EG": {
+    "lat": 51.458273,
+    "lng": 0.143638,
+    "region": "London",
+    "district": "Bexley"
+  },
+  "E4 8SN": {
+    "lat": 51.607068,
+    "lng": -0.020601,
+    "region": "London",
+    "district": "Waltham Forest"
+  },
+  "RM9 6XW": {
+    "lat": 51.532856,
+    "lng": 0.132563,
+    "region": "London",
+    "district": "Barking and Dagenham"
+  },
+  "SE9 5LU": {
+    "lat": 51.449834,
+    "lng": 0.032304,
+    "region": "London",
+    "district": "Greenwich"
+  },
+  "TW7 5DB": {
+    "lat": 51.48856,
+    "lng": -0.330262,
+    "region": "London",
+    "district": "Hounslow"
+  },
+  "UB4 0LP": {
+    "lat": 51.509831,
+    "lng": -0.399492,
+    "region": "London",
+    "district": "Hillingdon"
+  },
+  "UB3 1LL": {
+    "lat": 51.495068,
+    "lng": -0.430967,
+    "region": "London",
+    "district": "Hillingdon"
+  },
+  "HA4 0JE": {
+    "lat": 51.557384,
+    "lng": -0.39501,
+    "region": "London",
+    "district": "Hillingdon"
+  },
+  "SM3 9BY": {
+    "lat": 51.37617,
+    "lng": -0.221945,
+    "region": "London",
+    "district": "Sutton"
+  },
+  "KT5 9NT": {
+    "lat": 51.377229,
+    "lng": -0.277226,
+    "region": "London",
+    "district": "Kingston upon Thames"
+  },
+  "HA0 1JH": {
+    "lat": 51.534725,
+    "lng": -0.304377,
+    "region": "London",
+    "district": "Brent"
+  },
+  "KT3 4PH": {
+    "lat": 51.401071,
+    "lng": -0.242833,
+    "region": "London",
+    "district": "Merton"
+  }
+}
