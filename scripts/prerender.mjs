@@ -26,7 +26,9 @@ function priceText(pitch) {
   const cost = costOf(pitch)
   if (!cost.known) return 'Price not known'
   if (cost.perHour === 0) return 'Free to play'
-  return `£${cost.perHour} per hour`
+  const { amount, minutes } = cost.slot
+  const from = pitch.priceMax != null && pitch.priceMax > cost.perHour ? 'from ' : ''
+  return minutes === 60 ? `${from}£${amount} per hour` : `${from}£${amount} for ${minutes} min`
 }
 
 function describe(pitch) {
