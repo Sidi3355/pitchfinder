@@ -3729,3 +3729,27 @@ h1 {
     display: none;
   }
 }
+
+/* The headline and lead are the largest paint on the landing: they slide in
+   at full opacity so the page's largest contentful paint is the first frame,
+   and the headline is solid ink so it counts as text. The smaller pieces
+   keep their fade. */
+.hero-title {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--ink);
+}
+@keyframes appear-up {
+  from {
+    transform: translateY(16px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.hero-kicker.appear,
+.hero-title.appear,
+.hero-lead.appear {
+  animation-name: appear-up;
+}
