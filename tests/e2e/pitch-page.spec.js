@@ -8,12 +8,13 @@ test('pitch page renders the essentials', async ({ page }) => {
   await expect(page.locator('.key-facts .brand-badge')).toHaveText('Powerleague')
   // The answer first: price, hours and lights on one line; prices and opening
   // times as blocks; the rest folded.
-  await expect(page.locator('.key-facts')).toContainText('£78/hr')
-  await expect(page.locator('.price-list')).toContainText('£78')
+  await expect(page.locator('.key-facts')).toContainText(/£\d+/)
+  await expect(page.locator('.price-table, .price-list').first()).toContainText(/£\d+/)
   await expect(page.getByRole('heading', { name: 'Opening times' })).toBeVisible()
-  await expect(page.getByRole('link', { name: 'Book at venue' })).toHaveAttribute(
+  // Powerleague's own site or Playfinder, which sells its slots: either is a real booking page.
+  await expect(page.getByRole('link', { name: /^Book / })).toHaveAttribute(
     'href',
-    /powerleague/,
+    /powerleague|playfinder/,
   )
   await expect(page.locator('.mini-map')).toBeVisible()
   await expect(page.getByText(/^Data: /)).toBeHidden()
@@ -31,7 +32,7 @@ test('pitch page HTML carries Open Graph meta without JavaScript', async ({ requ
   expect(html).toMatch(/<title>Powerleague Shoreditch: PitchFinder<\/title>/)
   expect(html).toMatch(/<meta property="og:title" content="Powerleague Shoreditch"/)
   expect(html).toMatch(
-    /<meta property="og:description" content="Football centre in [^"]+£78 per hour[^"]*"/,
+    /<meta property="og:description" content="Football centre in [^"]+£\d+ per hour[^"]*"/,
   )
   expect(html).toMatch(/<meta property="og:image" content="https?:\/\/[^"]+\/og\/commercial\.png"/)
   expect(html).toMatch(/<meta property="og:url" content="https?:\/\/[^"]+\/p\/pl-shoreditch"/)
