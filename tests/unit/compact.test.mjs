@@ -21,7 +21,8 @@ describe('compactPitch', () => {
     const c = compactPitch(full)
     expect(Object.keys(c).every((k) => INDEX_FIELDS.includes(k))).toBe(true)
     expect(c).not.toHaveProperty('memberIds')
-    expect(c).not.toHaveProperty('sourceUrl')
+    expect(c).not.toHaveProperty('openingHours') // the raw string; the parsed week travels as `hours`
+    expect(c.sourceUrl).toBe('https://osm') // the source lines on the drawer need it
     expect(c).not.toHaveProperty('postcode')
     expect(c.pricePerHour).toBe(0)
     expect(c.lit).toBe(false)

@@ -10,7 +10,7 @@
 // Never a hard dependency: exits 0 and leaves the previous file when a site
 // is unreachable.
 
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { allowedByRobots } from './lib/robots.mjs'
@@ -242,6 +242,15 @@ async function fetchOperator(browser, op) {
     try {
       const got = await readPage(page, url)
       const fetchedAt = new Date().toISOString()
+      // A slug the site answers with its shell (nav and offers, no club) is not a club.
+      const facts = extractVenueFacts({ text: got.text, jsonld: got.jsonld })
+      if (!facts.postcode && got.text.length < 2500) {
+        console.log(`${op.name}: ${slug} -> ${got.status}, no club on the page; skipped`)
+        const stale = join(PAGE_CACHE, `${id}.json`)
+        if (existsSync(stale)) rmSync(stale)
+        await sleep(PAUSE_MS)
+        continue
+      }
       mkdirSync(PAGE_CACHE, { recursive: true })
       writeFileSync(
         join(PAGE_CACHE, `${id}.json`),

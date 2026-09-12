@@ -262,4 +262,16 @@ only bookable types. Filters, URL state and the preference collation gained the 
 design system gained a display face, a night-pitch palette, pill buttons, brand badges, avatars,
 event-page layout and a confetti moment on "In", all off under reduced motion.
 
-Reflection: written at the end of the iteration.
+Reflection: the browser fetch read 13 Goals clubs in London from their own pages, five of them
+new to the dataset (Eltham, Heathrow, Tolworth, Wembley, Wimbledon): opening hours for all 13
+(each quoted, for example "Monday 10:00 - 23:00"), formats, parking, cover, addresses and
+coordinates from the pages' schema.org data. Goals do not publish an hourly hire rate on those
+pages; they publish per-player prices for casual games (£5 on 5-a-side, £7 on 7-a-side), which
+now sit in the Prices block next to the baseline hire rate, each with its source. Their club
+list page carries no club links in the DOM, so the fetch tries the clubs known so far at the
+site's own URL pattern; nine slugs answered with the site's shell and are skipped. Powerleague
+answers a real browser with 403, so its seven clubs keep the baseline and say so. The dataset is
+214 bookable venues, 14 with structured hours, 23 with an hourly price. Lighthouse found the new
+green at 4.0:1 under white text and a heavy hero glow on the first pass (90 / 96); fixed to 94 /
+100 with the accent a shade darker, dark text on the bright green in dark mode, and two gradient
+glows moved on the compositor. Kept.
