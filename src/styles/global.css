@@ -2334,8 +2334,8 @@ textarea.input {
   --ink-3: #5e6b64;
   --border: #dde3dc;
   --border-strong: #c4cdc4;
-  --accent: #0f8f3f;
-  --accent-hover: #0b7634;
+  --accent: #0c7d36;
+  --accent-hover: #0a6a2e;
   --accent-soft: #e2f6e8;
   --accent-ink: #0a5a29;
   --pop: #d61f6b;
@@ -2414,7 +2414,16 @@ h1 {
   font-weight: 700;
 }
 .btn.primary {
-  box-shadow: 0 6px 18px rgba(15, 143, 63, 0.28);
+  box-shadow: 0 6px 18px rgba(12, 125, 54, 0.28);
+}
+@media (prefers-color-scheme: dark) {
+  .btn.primary {
+    color: #06130b;
+    box-shadow: 0 6px 18px rgba(61, 220, 119, 0.25);
+  }
+  .rsvp-btn.active.rsvp-in {
+    color: #06130b;
+  }
 }
 .btn.xl {
   min-height: 56px;
@@ -3079,33 +3088,28 @@ h1 {
 .hero {
   position: relative;
   overflow: hidden;
+  contain: paint;
   padding: clamp(40px, 8vw, 96px) var(--space-4) 48px;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
 .hero-glow {
   position: absolute;
-  inset: -20%;
+  inset: 0;
   pointer-events: none;
-  /* Three soft glows drawn as gradients, moved on the compositor: no blur filter to paint. */
+  /* Two soft glows drawn as gradients and moved on the compositor: nothing to blur. */
   background:
     radial-gradient(
-      40% 40% at 12% 12%,
-      color-mix(in srgb, var(--accent) 45%, transparent),
+      45% 55% at 10% 10%,
+      color-mix(in srgb, var(--accent) 40%, transparent),
       transparent 70%
     ),
     radial-gradient(
-      32% 32% at 88% 22%,
-      color-mix(in srgb, var(--pop) 32%, transparent),
-      transparent 70%
-    ),
-    radial-gradient(
-      28% 28% at 55% 96%,
-      color-mix(in srgb, var(--lime) 50%, transparent),
+      40% 50% at 92% 80%,
+      color-mix(in srgb, var(--pop) 28%, transparent),
       transparent 70%
     );
-  animation: drift 22s ease-in-out infinite alternate;
-  will-change: transform;
+  animation: drift 24s ease-in-out infinite alternate;
 }
 .blob {
   display: none;

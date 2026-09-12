@@ -58,9 +58,25 @@ test.describe('shared groups', () => {
     await guest.getByLabel('Where are you coming from?').fill('E8 3DL')
     await guest.getByLabel('Budget').selectOption('8')
     await guest.getByRole('button', { name: 'Floodlights' }).click()
+    // The rest of the preferences sit behind one link: size, days and time of day.
+    await guest.getByRole('button', { name: /More preferences/ }).click()
+    await guest.getByRole('radio', { name: '5-a-side' }).click()
+    await guest.getByRole('button', { name: 'Tue', exact: true }).click()
+    await guest.getByRole('button', { name: 'Thu', exact: true }).click()
+    await guest.getByRole('radio', { name: 'Evenings' }).click()
     await guest.getByRole('button', { name: 'Add me' }).click()
     await expect(guest.getByRole('heading', { name: '2 people in' })).toBeVisible()
-    await expect(guest.locator('.member-row.you')).toContainText('up to £8 each · floodlights')
+    await expect(guest.locator('.member-row.you')).toContainText(
+      'up to £8 each · 5-a-side · floodlights · Tue, Thu · evenings',
+    )
+    // What the group needs, collated: Sam said nothing, so Priya's asks stand.
+    await expect(guest.locator('.needs-list')).toContainText('5-a-side')
+    await expect(guest.locator('.needs-list')).toContainText('Tue, Thu work for everyone')
+    await expect(guest.locator('.needs-list')).toContainText('Evenings')
+    await expect(guest.getByRole('link', { name: 'See all pitches on the map' })).toHaveAttribute(
+      'href',
+      /fmt=5.*open=tue,thu@19:00|open=tue,thu@19:00.*fmt=5/,
+    )
     await expect(guest.locator('.needs-list')).toContainText('Up to £8 each')
     await expect(guest.locator('.needs-list')).toContainText('Floodlights')
     // Their phone remembers them: a reload shows their own entry, not the form.
@@ -70,7 +86,9 @@ test.describe('shared groups', () => {
 
     // The map for the whole group: both chips, the collated filters, and a pitch page that keeps the group.
     await guest.getByRole('link', { name: 'See all pitches on the map' }).click()
-    await expect(guest).toHaveURL(/\/find\?grp=[0-9a-f]{20}&budget=8&lit=1$/)
+    await expect(guest).toHaveURL(
+      /\/find\?grp=[0-9a-f]{20}&fmt=5&budget=8&lit=1&open=tue,thu@19:00$/,
+    )
     await expect(guest.locator('.chip:not(.add)')).toHaveCount(2)
     await expect(guest.locator('.chip', { hasText: 'Priya (you)' })).toBeVisible()
     await expect(guest.getByText('ranked for your group of 2')).toBeVisible()
