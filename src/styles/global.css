@@ -546,6 +546,19 @@ textarea.input {
   position: absolute !important;
   inset: 0;
 }
+.map-note {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 2;
+  margin: 0;
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  background: var(--overlay);
+  color: var(--ink-3);
+  font-size: var(--text-xs);
+  pointer-events: none;
+}
 .map-loading {
   position: absolute;
   inset: 0;
@@ -1036,6 +1049,15 @@ textarea.input {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+.card-journey {
+  margin: 4px 0 0;
+  font-size: var(--text-sm);
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.card-journey-item {
+  white-space: nowrap;
 }
 .card-reasons {
   margin: 6px 0 0;

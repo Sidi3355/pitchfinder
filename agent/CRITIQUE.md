@@ -69,3 +69,33 @@ touch targets under 44 px; browser-default focus.
 
 **Verdicts:** product: No (the game link previews as the home page and lands on a page with
 no address, directions or journey times). Design: better than iteration 1.
+
+## Iteration 3 (11 to 12 Sep 2026)
+
+Reviewed on the iteration 5 build (design system pass on the refreshed 1,586-venue dataset).
+Full text: `agent/critique/iter3-product.md`. The design critic's run was cut off by an API
+rate limit before it wrote anything; its round is re-run on the next build alongside round 4.
+
+**Fixed since round 2 (product critic):** game link unfurl; game page postcode, directions,
+per-player journeys, cost split, calendar and copy message; next-Thursday default and past
+dates refused; name asked at sign-in; list heart; live "Show N pitches" footer; distinct
+venue names; organiser page refreshes itself; cancel state; rounded minutes; 44 px targets.
+
+**P0:** none.
+
+**P1 (product):** sign-in still loses the job when the emailed link opens in another tab
+(intent only in sessionStorage, redirect to `/`); the top pick for Peckham and Hackney is a
+cage named after a residents' gym with unknown surface and lighting; the same reason on every
+card; no search; the mobile pitch sheet opens at half height with journeys and actions below
+the fold; the silent time change; rank badges and outer-London picks with no group.
+
+**Fixed in iteration 6 (this build):** all of the above except search: sign-in comes back to
+the exact page in any tab (localStorage, redirect to the page); private facilities are no
+longer naming sources and known facts weigh more than a minute of estimated journey; each
+person's minutes on the card with its source, reasons hold facts only; the sheet opens fully
+for a selected pitch and journeys and actions come first; migration 0004 records time changes
+and asks those who answered before; no badges and a central-London order without a group.
+Search is the open P1 for iteration 7.
+
+**Verdict:** product: Yes, narrowly (the game link now beats a Google Maps pin plus a poll;
+trust in the list that leads there is what keeps it narrow).

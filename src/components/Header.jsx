@@ -14,7 +14,7 @@ export function Header() {
   const nav = [
     ['/', 'find', 'Map'],
     ['/about', 'about', 'About'],
-    ['/me', 'profile', user ? 'My games' : 'Profile'],
+    ['/me', 'profile', 'My games'],
   ]
 
   return (

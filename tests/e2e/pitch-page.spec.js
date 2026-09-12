@@ -21,8 +21,8 @@ test('pitch page HTML carries Open Graph meta without JavaScript', async ({ requ
   const res = await request.get('/p/pl-shoreditch')
   expect(res.status()).toBe(200)
   const html = await res.text()
-  expect(html).toMatch(/<title>Powerleague Shoreditch: Commercial centre in [^<]+<\/title>/)
-  expect(html).toMatch(/<meta property="og:title" content="Powerleague Shoreditch: [^"]+"/)
+  expect(html).toMatch(/<title>Powerleague Shoreditch: PitchFinder<\/title>/)
+  expect(html).toMatch(/<meta property="og:title" content="Powerleague Shoreditch"/)
   expect(html).toMatch(
     /<meta property="og:description" content="Commercial centre in [^"]+£78 per hour[^"]*"/,
   )

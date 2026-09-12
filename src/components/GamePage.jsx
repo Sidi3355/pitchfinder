@@ -126,7 +126,7 @@ export function GamePage({ slug }) {
       when: formatWhen(game.starts_at),
       postcode: pitch?.postcode,
       pricePerHour: cost.known ? cost.perHour : null,
-      inCount,
+      inCount: inCount >= 2 ? inCount : 0,
       url: `${window.location.origin}/g/${slug}`,
       notes: game.notes,
     })
@@ -239,44 +239,6 @@ export function GamePage({ slug }) {
         <p className="hint dim">Organised by {game.creator_name}</p>
       </header>
 
-      {pitch && (
-        <section className="game-where-block" aria-labelledby="where-title">
-          <h2 id="where-title" className="section-title">
-            Getting there
-          </h2>
-          <p className="game-address">
-            {pitch.address ? `${pitch.address}. ` : ''}
-            {pitch.postcode
-              ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
-              : 'Postcode not known'}
-            {pitch.borough ? `, ${pitch.borough}` : ''}
-          </p>
-          <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
-          {(() => {
-            const cost = costOf(pitch)
-            if (!cost.known) return null
-            if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
-            const each = splitCost(cost.perHour, inCount)
-            return (
-              <p className="game-cost">
-                {formatMoney(cost.perHour)} for the pitch
-                {each
-                  ? `, ${formatMoney(each)} each with ${inCount} in`
-                  : ', split between whoever is in'}
-                <span className="fact-note">
-                  operator&rsquo;s published rate for an hour, whole pitch
-                </span>
-              </p>
-            )
-          })()}
-          {Array.isArray(game.group) && game.group.length > 0 && (
-            <>
-              <JourneyList people={game.group} pitch={pitch} showFrom />
-            </>
-          )}
-        </section>
-      )}
-
       {cancelled ? (
         <div className="notice" role="status">
           This game has been cancelled by the organiser.{' '}
@@ -334,6 +296,44 @@ export function GamePage({ slug }) {
             <p className="hint dim">Answering as {state.user.displayName}.</p>
           ) : (
             <p className="hint dim">No account needed. Your answer is remembered on this phone.</p>
+          )}
+        </section>
+      )}
+
+      {pitch && (
+        <section className="game-where-block" aria-labelledby="where-title">
+          <h2 id="where-title" className="section-title">
+            Getting there
+          </h2>
+          <p className="game-address">
+            {pitch.address ? `${pitch.address}. ` : ''}
+            {pitch.postcode
+              ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
+              : 'Postcode not known'}
+            {pitch.borough ? `, ${pitch.borough}` : ''}
+          </p>
+          <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
+          {(() => {
+            const cost = costOf(pitch)
+            if (!cost.known) return null
+            if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
+            const each = inCount >= 2 ? splitCost(cost.perHour, inCount) : null
+            return (
+              <p className="game-cost">
+                {formatMoney(cost.perHour)} for the pitch
+                {each
+                  ? `, ${formatMoney(each)} each with ${inCount} in`
+                  : ', split between whoever is in'}
+                <span className="fact-note">
+                  operator&rsquo;s published rate for an hour, whole pitch
+                </span>
+              </p>
+            )
+          })()}
+          {Array.isArray(game.group) && game.group.length > 0 && (
+            <>
+              <JourneyList people={game.group} pitch={pitch} showFrom />
+            </>
           )}
         </section>
       )}

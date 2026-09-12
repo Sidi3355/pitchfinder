@@ -48,6 +48,7 @@ function verify(token) {
 // ── Users (auth.users is real; metadata lives here) ──────────────────────────
 
 const users = new Map() // id -> { id, email, user_metadata }
+let lastOtp = null // the last magic-link request: { email, redirect_to }
 
 async function findOrCreateUser(db, email, metadata = {}) {
   for (const u of users.values()) if (u.email === email) return u
@@ -352,8 +353,10 @@ const server = createServer(async (req, res) => {
     if (url.pathname === '/auth/v1/otp' && req.method === 'POST') {
       if (!body?.email) return json(res, 400, { message: 'email required' })
       await findOrCreateUser(db, body.email)
+      lastOtp = { email: body.email, redirect_to: url.searchParams.get('redirect_to') || null }
       return json(res, 200, {})
     }
+    if (url.pathname === '/__test/last-otp' && req.method === 'GET') return json(res, 200, lastOtp)
     if (url.pathname === '/auth/v1/token' && req.method === 'POST') {
       const grant = url.searchParams.get('grant_type')
       if (grant === 'refresh_token') {

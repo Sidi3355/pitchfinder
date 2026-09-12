@@ -73,12 +73,14 @@ function setMeta(html, attr, name, content) {
 
 function render(template, pitch) {
   const name = pitchName(pitch)
-  const title = `${name}: ${PITCH_TYPES[pitch.type]?.label || 'Pitch'} in ${pitch.area || 'London'}`
+  // The preview title is the name alone; the type and area belong to the
+  // description, so a shared cage does not read "X cage: Cage / MUGA in X".
+  const title = name
   const description = describe(pitch)
   const url = `${SITE}/p/${pitch.id}`
   const image = `${SITE}/og/${PITCH_TYPES[pitch.type] ? pitch.type : 'default'}.png`
   let html = template
-  html = html.replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${esc(`${name}: PitchFinder`)}</title>`)
   html = html.replace(
     /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
     `<link rel="canonical" href="${esc(url)}" />`,

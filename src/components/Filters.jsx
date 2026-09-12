@@ -6,7 +6,7 @@ import { DEFAULT_FILTERS, filterCounts } from '../lib/score.js'
 /** How many filter controls differ from the default. */
 export function countActiveFilters(f) {
   let n = 0
-  if (f.types?.length) n++
+  n += f.types?.length || 0
   if (f.enclosure !== DEFAULT_FILTERS.enclosure) n++
   if (f.format != null) n++
   if (f.maxPricePerHead != null) n++

@@ -59,10 +59,8 @@ function checkReasons(rows) {
       const count = text.match(/^(\d+) pitches$/)
       if (count) expect(pitch.pitchCount).toBe(Number(count[1]))
     }
-    // Journey reasons never appear without a group; at most one of them.
-    const journey = reasons.filter((r) => r.estimate)
-    expect(journey.length).toBeLessThanOrEqual(1)
-    if (row.etas.length === 0) expect(journey).toHaveLength(0)
+    // Journey minutes live on the card's own line, never in the reasons.
+    expect(reasons.some((r) => r.estimate || /min\b/.test(r.text))).toBe(false)
   }
 }
 
@@ -195,18 +193,24 @@ describe('cost model', () => {
       etaCount: 3,
     })
   })
-  it('buildReasons gives at most one journey reason and labels it an estimate', () => {
+  it('buildReasons lists facts only, in priority order', () => {
     const r = buildReasons({
-      pitch: {},
-      cost: { known: false },
-      pricePerHead: null,
-      headCount: 2,
-      avgEta: 10,
-      maxEta: 12,
-      spreadEta: 4,
-      etaCount: 2,
+      pitch: {
+        lit: true,
+        surface: '3g',
+        changingRooms: true,
+        bookingUrl: 'https://x.example/book',
+      },
+      cost: { known: true, perHour: 60 },
+      pricePerHead: 6,
+      headCount: 10,
     })
-    expect(r.filter((x) => x.estimate)).toHaveLength(1)
-    expect(r[0].text).toBe('everyone within about 10 min')
+    expect(r.map((x) => x.text)).toEqual([
+      'about £6 each for 10',
+      'floodlit',
+      '3G',
+      'changing rooms',
+    ])
+    expect(r.some((x) => x.estimate)).toBe(false)
   })
 })

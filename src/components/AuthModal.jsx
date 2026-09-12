@@ -80,7 +80,7 @@ export function AuthModal() {
         ) : phase === 'sent' ? (
           <div className="notice" role="status">
             <strong>Check your inbox.</strong> We sent a sign-in link to {email.trim()}. Open it on
-            this device and you will be back here, signed in.
+            this phone or computer, in any tab, and you will be back here, signed in.
           </div>
         ) : (
           <>

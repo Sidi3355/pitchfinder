@@ -43,17 +43,15 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
       ? 'free'
       : `£${cost.perHour}/hr`
   // The meta line already says the price and the surface; reasons add what it does not.
-  const reasons = (
-    journey
-      ? [
-          journeyReason({ ...stats, routed: journey.routed }),
-          ...row.reasons.filter((r) => !r.estimate),
-        ].filter(Boolean)
-      : row.reasons
-  )
-    .filter((r) => !['free', 'astro', '3G'].includes(r.text))
-    .slice(0, 4)
-  const hasEstimate = reasons.some((r) => r.estimate)
+  const reasons = row.reasons.filter((r) => !['free', 'astro', '3G'].includes(r.text))
+  // Up to three people get their own minutes; a bigger group gets the one line
+  // that sums it up ("everyone within 23 min").
+  const perPerson = journey && journey.rows.length <= 3
+  const summary =
+    journey && !perPerson
+      ? journeyReason({ ...stats, routed: journey.routed })?.text ||
+        `up to ${minutesText(stats.maxEta, journeySource)}`
+      : null
 
   function open() {
     if (onFinder) actions.selectPitch(pitch.id)
@@ -114,20 +112,27 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
           ) : null}
           {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
           <> · {price}</>
-          {journey && (
-            <>
-              {' '}
-              · up to {minutesText(stats.maxEta, journeySource)}{' '}
-              <SourceTag source={journeySource} />
-            </>
-          )}
         </p>
 
-        {reasons.length > 0 && (
-          <p className="card-reasons">
-            {reasons.map((r) => r.text).join(' · ')}
-            {hasEstimate && <span className="dim"> (est.)</span>}
+        {journey && (
+          <p className="card-journey">
+            {perPerson ? (
+              journey.rows.map((r, i) => (
+                <span key={r.person.id || i} className="card-journey-item">
+                  {i > 0 && ' · '}
+                  {r.person.name} {minutesText(r.minutes, r.source)} <SourceTag source={r.source} />
+                </span>
+              ))
+            ) : (
+              <>
+                {summary} <SourceTag source={journeySource} />
+              </>
+            )}
           </p>
+        )}
+
+        {reasons.length > 0 && (
+          <p className="card-reasons">{reasons.map((r) => r.text).join(' · ')}</p>
         )}
       </div>
     </article>

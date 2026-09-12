@@ -2,9 +2,12 @@
 // preferences, and explains each pick with plain-language reasons that are
 // true by construction (see buildReasons). The internal score is never shown.
 
-import { displayMinutes, estimateEta } from './geo.js'
+import { displayMinutes, estimateEta, haversineKm } from './geo.js'
 import { costOf, isBounded } from './data.js'
 import { isBookable } from './labels.js'
+
+// Charing Cross, the conventional centre of London.
+const LONDON_CENTRE = { lat: 51.5074, lng: -0.1278 }
 
 export const DEFAULT_FILTERS = {
   types: [], // [] = all pitch types
@@ -19,23 +22,13 @@ export const DEFAULT_FILTERS = {
 
 /**
  * Reasons a pitch is worth considering, in priority order, each one a fact
- * the card does not already state. Journey reasons are estimates and the
- * card labels them as such. Never a claim about something unknown.
+ * the card does not already state. Never a claim about something unknown.
  */
-export function buildReasons({
-  pitch,
-  cost,
-  pricePerHead,
-  headCount,
-  avgEta,
-  maxEta,
-  spreadEta,
-  etaCount,
-  routed = false,
-}) {
+export function buildReasons({ pitch, cost, pricePerHead, headCount }) {
+  // Journey minutes are the card's own line (per person, each with its source),
+  // so reasons hold only what differs between pitches: price, lights, surface,
+  // changing rooms, booking, pitch count.
   const reasons = []
-  const journey = journeyReason({ avgEta, maxEta, spreadEta, etaCount, routed })
-  if (journey) reasons.push(journey)
   if (cost.known && cost.perHour === 0) reasons.push({ text: 'free' })
   else if (cost.known && headCount > 1 && pricePerHead <= 8) {
     reasons.push({ text: `about £${Math.round(pricePerHead)} each for ${headCount}` })
@@ -166,20 +159,18 @@ export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
       (pitch.changingRooms ? 0.15 : 0) +
       (pitch.curated ? 0.1 : 0)
 
-    const score = squad.length
-      ? 0.3 * sAvg + 0.25 * sWorst + 0.15 * sFair + 0.18 * sPrice + 0.12 * sQuality
-      : 0.55 * sPrice + 0.45 * sQuality
+    // Without a group there is nobody to measure from, so central London
+    // comes first: a first-time visitor should not be shown Rickmansworth.
+    const sCentral = clamp01(1 - haversineKm(pitch, LONDON_CENTRE) / 20)
 
-    const reasons = buildReasons({
-      pitch,
-      cost,
-      pricePerHead,
-      headCount,
-      avgEta,
-      maxEta,
-      spreadEta,
-      etaCount: etas.length,
-    })
+    // Known facts carry real weight: at equal journeys a pitch we know is lit
+    // on a hard court outranks one we know nothing about, and a minute or two
+    // of estimated journey does not overturn that.
+    const score = squad.length
+      ? 0.3 * sAvg + 0.25 * sWorst + 0.1 * sFair + 0.13 * sPrice + 0.22 * sQuality
+      : 0.4 * sPrice + 0.35 * sQuality + 0.25 * sCentral
+
+    const reasons = buildReasons({ pitch, cost, pricePerHead, headCount })
     out.push({ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, score, reasons })
   }
 

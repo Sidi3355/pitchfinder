@@ -40,6 +40,48 @@ export function PitchContent({ pitch: indexPitch }) {
 
   return (
     <>
+      {state.squad.length > 0 && (
+        <section className="drawer-section">
+          <h2 className="section-h">Journey times</h2>
+          <JourneyList people={state.squad} pitch={pitch} />
+        </section>
+      )}
+      {panel === 'plan' ? (
+        <PlanGame pitch={pitch} name={name} onClose={() => setPanel(null)} />
+      ) : panel === 'report' ? (
+        <ReportProblem pitch={pitch} onClose={() => setPanel(null)} />
+      ) : (
+        <div className="drawer-actions">
+          {pitch.bookingUrl && (
+            <a
+              className={`btn ${bookingLabel(pitch.bookingUrl) === 'Book at venue' ? 'primary' : 'ghost'}`}
+              href={pitch.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {bookingLabel(pitch.bookingUrl)}
+            </a>
+          )}
+          <button className="btn ghost" onClick={() => setPanel('plan')}>
+            Plan a game
+          </button>
+          <button
+            className="btn ghost"
+            onClick={() => actions.toggleSave(pitch.id)}
+            aria-pressed={saved}
+          >
+            {saved ? 'Saved' : 'Save'}
+          </button>
+          <button className="btn ghost" onClick={share}>
+            {shareStatus === 'copied'
+              ? 'Link copied'
+              : shareStatus === 'failed'
+                ? 'Copy failed'
+                : 'Share'}
+          </button>
+        </div>
+      )}
+
       <dl className="facts">
         <div>
           <dt>Price</dt>
@@ -114,49 +156,6 @@ export function PitchContent({ pitch: indexPitch }) {
         <h2 className="section-h">Directions</h2>
         <Directions lat={pitch.lat} lng={pitch.lng} name={name} />
       </section>
-
-      {state.squad.length > 0 && (
-        <section className="drawer-section">
-          <h2 className="section-h">Journey times</h2>
-          <JourneyList people={state.squad} pitch={pitch} />
-        </section>
-      )}
-
-      {panel === 'plan' ? (
-        <PlanGame pitch={pitch} name={name} onClose={() => setPanel(null)} />
-      ) : panel === 'report' ? (
-        <ReportProblem pitch={pitch} onClose={() => setPanel(null)} />
-      ) : (
-        <div className="drawer-actions">
-          {pitch.bookingUrl && (
-            <a
-              className={`btn ${bookingLabel(pitch.bookingUrl) === 'Book at venue' ? 'primary' : 'ghost'}`}
-              href={pitch.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {bookingLabel(pitch.bookingUrl)}
-            </a>
-          )}
-          <button className="btn ghost" onClick={() => setPanel('plan')}>
-            Plan a game
-          </button>
-          <button
-            className="btn ghost"
-            onClick={() => actions.toggleSave(pitch.id)}
-            aria-pressed={saved}
-          >
-            {saved ? 'Saved' : 'Save'}
-          </button>
-          <button className="btn ghost" onClick={share}>
-            {shareStatus === 'copied'
-              ? 'Link copied'
-              : shareStatus === 'failed'
-                ? 'Copy failed'
-                : 'Share'}
-          </button>
-        </div>
-      )}
 
       <p className="hint dim drawer-footnote">
         {pitch.curated ? (
@@ -351,8 +350,10 @@ function ReportProblem({ pitch, onClose }) {
   if (phase === 'sent') {
     return (
       <div className="notice" role="status">
-        <strong>Thanks, report received.</strong> Corrections to OpenStreetMap pitches are also
-        welcome on OpenStreetMap itself, where they help everyone.{' '}
+        <strong>Thanks, report received.</strong>{' '}
+        {pitch.curated
+          ? 'We check reports against the operator before changing the listing.'
+          : 'Corrections are also welcome on OpenStreetMap itself, where they help everyone.'}{' '}
         <button className="link-btn" onClick={onClose}>
           Done
         </button>

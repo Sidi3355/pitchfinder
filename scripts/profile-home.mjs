@@ -5,7 +5,11 @@
 import { chromium, devices } from '@playwright/test'
 import { spawn } from 'node:child_process'
 
-const server = spawn('node', ['scripts/serve.mjs', '--port', '4186'], { stdio: 'ignore' })
+const server = spawn(
+  'node',
+  ['scripts/serve.mjs', '--port', '4186', '--root', process.env.PF_DIST || 'dist'],
+  { stdio: 'ignore' },
+)
 await new Promise((r) => setTimeout(r, 800))
 const browser = await chromium.launch({
   executablePath: process.env.PW_CHROMIUM_PATH || '/opt/pw-browsers/chromium',

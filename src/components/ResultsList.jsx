@@ -35,7 +35,12 @@ export function ResultsList() {
         <>
           <div className="stack">
             {visible.map((row, i) => (
-              <PitchCard key={row.pitch.id} row={row} rank={i + 1} journeys={journeys} />
+              <PitchCard
+                key={row.pitch.id}
+                row={row}
+                rank={state.squad.length ? i + 1 : null}
+                journeys={journeys}
+              />
             ))}
           </div>
           {results.length > limit && (

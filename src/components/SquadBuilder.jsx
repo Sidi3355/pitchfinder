@@ -246,10 +246,6 @@ export function SquadBuilder() {
             Use my location
           </button>
         </div>
-        <p className="hint dim">
-          Postcodes via postcodes.io. Place names from OpenStreetMap (Nominatim), searched when you
-          press Add.
-        </p>
       </form>
 
       {state.squad.length > 0 && (
