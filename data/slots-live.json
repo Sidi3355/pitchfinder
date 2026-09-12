@@ -1,9 +1,2195 @@
 {
- "fetchedAt": "2026-09-12T17:44:24.413Z",
+ "fetchedAt": "2026-09-12T18:14:59.798Z",
  "offline": false,
  "pitchbooking": {
   "site": "https://pitchbooking.com",
-  "clubs": []
+  "clubs": [
+   {
+    "id": "go-beckenham",
+    "slug": "beckenham",
+    "name": "Goals Beckenham",
+    "url": "https://pitchbooking.com/book/goals/bbcbb80a-864f-49c5-b934-c60ea76deeaa",
+    "postcode": "BR3 4EJ",
+    "lat": 51.399948,
+    "lng": -0.050704,
+    "region": "London",
+    "district": "Bromley",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 316,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 88,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "17:30"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 67
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 111,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 14
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 67,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 51
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 99,
+      "minutes": 60,
+      "days": [
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 2
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 72,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 24
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 88,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "17:30"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 67
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 111,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 14
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 67,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 51
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 99,
+      "minutes": 60,
+      "days": [
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 2
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 72,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 24
+     }
+    ],
+    "fetchedAt": "2026-09-12T17:55:06.844Z"
+   },
+   {
+    "id": "go-chingford",
+    "slug": "chingford",
+    "name": "Goals Chingford",
+    "url": "https://pitchbooking.com/book/goals/27b8eda5-7da6-4430-9253-432065c1c06a",
+    "postcode": "E4 8SN",
+    "lat": 51.607068,
+    "lng": -0.020601,
+    "region": "London",
+    "district": "Waltham Forest",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 346,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 88.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 141
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 93,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "19:00"
+       ]
+      ],
+      "slotsSeen": 11
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 98,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 21
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 88.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 141
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 93,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "19:00"
+       ]
+      ],
+      "slotsSeen": 11
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 98,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 21
+     }
+    ],
+    "fetchedAt": "2026-09-12T17:56:35.928Z"
+   },
+   {
+    "id": "go-dagenham",
+    "slug": "dagenham",
+    "name": "Goals Dagenham",
+    "url": "https://pitchbooking.com/book/goals/4a97b327-4259-42e1-be88-fd163f282c83",
+    "postcode": "RM9 6XW",
+    "lat": 51.532856,
+    "lng": 0.132563,
+    "region": "London",
+    "district": "Barking and Dagenham",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "74",
+      "label": "7-A-Side",
+      "format": 7
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 498,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 88
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 77,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 78
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 88
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 77,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 78
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 88
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 77,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:00",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 78
+     }
+    ],
+    "fetchedAt": "2026-09-12T17:58:04.144Z"
+   },
+   {
+    "id": "go-eltham",
+    "slug": "eltham",
+    "name": "Goals Eltham",
+    "url": "https://pitchbooking.com/book/goals/5c75dc20-a876-4479-a982-def79f267839",
+    "postcode": "SE9 5LU",
+    "lat": 51.449834,
+    "lng": 0.032304,
+    "region": "London",
+    "district": "Greenwich",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 334,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 92,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "18:00"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 91
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 97,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "21:00",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 7
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 67,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 56
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 92,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "18:00"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 91
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 97,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "21:00",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 7
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 67,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 56
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:00:28.654Z"
+   },
+   {
+    "id": "go-gillettecorner",
+    "slug": "gillette-corner",
+    "name": "Goals Gillette Corner",
+    "url": "https://pitchbooking.com/book/goals/f168cc05-35fa-4b1e-8699-7c2b4de66cc3",
+    "postcode": "TW7 5DB",
+    "lat": 51.48856,
+    "lng": -0.330262,
+    "region": "London",
+    "district": "Hounslow",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 316,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 106
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 60,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "21:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 90,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "18:30"
+       ],
+       [
+        "21:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 8
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 104,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 14
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 57.5,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 26
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 106
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 60,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "21:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 90,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "18:30"
+       ],
+       [
+        "21:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 8
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 104,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 14
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 57.5,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 26
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:03:04.447Z"
+   },
+   {
+    "id": "go-hayes",
+    "slug": "hayes",
+    "name": "Goals Hayes",
+    "url": "https://pitchbooking.com/book/goals/aba6379d-215c-40fa-8792-6470508d004e",
+    "postcode": "UB4 0LP",
+    "lat": 51.509831,
+    "lng": -0.399492,
+    "region": "London",
+    "district": "Hillingdon",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "74",
+      "label": "7-A-Side",
+      "format": 7
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 483,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 133
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 74,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 23
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 133
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 74,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 23
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 133
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 74,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 23
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:04:24.636Z"
+   },
+   {
+    "id": "go-heathrow",
+    "slug": "heathrow",
+    "name": "Goals Heathrow",
+    "url": "https://pitchbooking.com/book/goals/e6ef5594-1724-4aea-9071-413318b8dacf",
+    "postcode": "UB3 1LL",
+    "lat": 51.495068,
+    "lng": -0.430967,
+    "region": "London",
+    "district": "Hillingdon",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 256,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 96
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 74,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 27
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 86,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 96
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 74,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 106,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 27
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:06:49.942Z"
+   },
+   {
+    "id": "go-ruislip",
+    "slug": "ruislip",
+    "name": "Goals Ruislip",
+    "url": "https://pitchbooking.com/book/goals/de7af580-000c-4736-97b1-8086ec53f6e8",
+    "postcode": "HA4 0JE",
+    "lat": 51.557384,
+    "lng": -0.39501,
+    "region": "London",
+    "district": "Hillingdon",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "74",
+      "label": "7-A-Side",
+      "format": 7
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 249,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 100.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 15
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 111,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 92,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 41
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 66,
+      "minutes": 60,
+      "days": [
+       "sat"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 9
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 100.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 15
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 111,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 92,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 41
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 66,
+      "minutes": 60,
+      "days": [
+       "sat"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 9
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 5
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 100.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 15
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 111,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 92,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 41
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 66,
+      "minutes": 60,
+      "days": [
+       "sat"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 9
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:08:15.399Z"
+   },
+   {
+    "id": "go-sutton",
+    "slug": "sutton",
+    "name": "Goals Sutton",
+    "url": "https://pitchbooking.com/book/goals/7966874b-27ed-454f-841a-d434bbb7bc86",
+    "postcode": "SM3 9BY",
+    "lat": 51.37617,
+    "lng": -0.221945,
+    "region": "London",
+    "district": "Sutton",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 232,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 80,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 92
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:00",
+        "21:15"
+       ]
+      ],
+      "slotsSeen": 24
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 80,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 92
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:00",
+        "21:15"
+       ]
+      ],
+      "slotsSeen": 24
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:10:14.594Z"
+   },
+   {
+    "id": "go-wembley",
+    "slug": "wembley",
+    "name": "Goals Wembley",
+    "url": "https://pitchbooking.com/book/goals/54e0c5b3-ffcf-489e-8ad4-5dbddb2fe3ac",
+    "postcode": "HA0 1JH",
+    "lat": 51.534725,
+    "lng": -0.304377,
+    "region": "London",
+    "district": "Brent",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "74",
+      "label": "7-A-Side",
+      "format": 7
+     },
+     {
+      "value": "225",
+      "label": "8-A-side",
+      "format": 8
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 471,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "08:30"
+       ],
+       [
+        "10:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 111
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 30
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "16:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 16
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "08:30"
+       ],
+       [
+        "10:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 111
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 30
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "16:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 16
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:30",
+        "08:30"
+       ],
+       [
+        "10:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 111
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 30
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "16:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 16
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:11:33.634Z"
+   },
+   {
+    "id": "go-wimbledon",
+    "slug": "wimbledon",
+    "name": "Goals Wimbledon",
+    "url": "https://pitchbooking.com/book/goals/5c0d2039-9919-4362-8d7f-07c638bcaa32",
+    "postcode": "KT3 4PH",
+    "lat": 51.401071,
+    "lng": -0.242833,
+    "region": "London",
+    "district": "Merton",
+    "inLondon": true,
+    "pitchTypes": [
+     {
+      "value": "72",
+      "label": "5-A-Side",
+      "format": 5
+     },
+     {
+      "value": "74",
+      "label": "7-A-Side",
+      "format": 7
+     }
+    ],
+    "dates": [
+     "2026-09-13",
+     "2026-09-14",
+     "2026-09-15",
+     "2026-09-16",
+     "2026-09-17",
+     "2026-09-18",
+     "2026-09-19"
+    ],
+    "slotsSeen": 316,
+    "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 80,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 130
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 73.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 24
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 80,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 130
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 73.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 24
+     }
+    ],
+    "fetchedAt": "2026-09-12T18:13:35.893Z"
+   }
+  ]
  },
  "playfinder": {
   "site": "https://www.playfinder.com",
@@ -27252,7 +29438,7 @@
   ]
  },
  "run": {
-  "pagesRead": 507,
+  "pagesRead": 193,
   "stoppedBy": null
  }
 }
