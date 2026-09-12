@@ -48,6 +48,20 @@ script that measures it. "Refined" notes come from the codebase read.
       identifies itself and honours robots.txt; a site that answers 403 is left alone and its
       baseline facts stay marked unverified. Unit tests cover the merge, the hours parsers and
       the extractor; e2e asserts the price and hours blocks on the pitch page.
+- [x] **D8** (added 12 Sep, user-directed) Prices come from the booking calendars, not from
+      marketing copy: Pitchbooking for Goals, Playfinder for Powerleague and the astros that
+      sell online. Every price line names the pitch size, the days seen, the kick-off window
+      and the slot length, carries its source, the date read and the number of slots behind
+      it, and nothing is extrapolated to days that were not read. The card shows the cheapest
+      slot as it is sold; budgets mean what the group pays for one game. Hours from a booking
+      site's listing say so. Venues added from a booking site are pinned at their postcode and
+      say so. Unit tests read the saved pages; the pipeline tests cover the merge and matching.
+- [x] **D9** (added 12 Sep, user-directed) The UI is rebuilt on the 21st.dev catalogue: two
+      retrieved components (Hero with Mockup, Event Countdown Card) adapted as plain CSS on the
+      existing tokens, and their language (appear motion, gradient primary actions, lifted
+      cards, framed mockup, countdown) carried through. Reduced motion stills everything; the
+      44 px, focus-ring, contrast and Lighthouse gates still pass; screenshots in
+      `agent/screenshots/iter11/`.
 - [ ] **Q1** Lighthouse mobile on `/` and `/p/{id}`: Performance >= 85, Accessibility >= 95,
       Best Practices >= 95, SEO >= 90. `scripts/lighthouse.mjs`. Status: every score holds on
       the pitch route (98 to 100) and every non-performance score holds on `/` (100 / 100 / 100).

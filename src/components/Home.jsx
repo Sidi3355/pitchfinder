@@ -151,16 +151,16 @@ export function Home() {
           <span className="blob b3" />
         </div>
         <div className="hero-inner">
-          <p className="kicker hero-kicker">London 5-a-side, 7-a-side and astro hire</p>
-          <h1 className="hero-title">
+          <p className="kicker hero-kicker appear">London 5-a-side, 7-a-side and astro hire</p>
+          <h1 className="hero-title appear">
             Pick a pitch the <em>whole group</em> can get to.
           </h1>
-          <p className="hero-lead">
+          <p className="hero-lead appear d1">
             One link. Everyone adds where they are coming from and what they need. PitchFinder ranks
-            Goals, Powerleague and astro pitches across London for all of you, with prices and
-            opening times from the operator.
+            Goals, Powerleague and astro pitches across London for all of you, with real slot prices
+            and opening times.
           </p>
-          <div className="hero-actions">
+          <div className="hero-actions appear d2">
             {state.authAvailable ? (
               <button
                 className="btn primary xl"
@@ -177,7 +177,23 @@ export function Home() {
               Browse the map
             </Link>
           </div>
-          <QuickStart />
+          <div className="appear d3">
+            <QuickStart />
+          </div>
+        </div>
+        <div className="hero-mockup appear d4">
+          <div className="mockup-frame">
+            <div className="mockup">
+              <img
+                src="/img/finder-desktop.jpg"
+                alt="The finder: a map of London with a ranked list of pitches for a group of three, each card showing the price, whether it is open and everyone's journey time"
+                width="1280"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

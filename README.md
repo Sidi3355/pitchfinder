@@ -28,10 +28,25 @@ it was read (`data/venues-live.json`, page text in `data/cache/pages/`). Only th
 JSON file per pitch, and a prerendered HTML page per pitch at `/p/{id}` with Open Graph meta so
 a shared link unfurls.
 
-**Prices** (`scripts/scrape-prices.mjs`). A polite re-check of curated venues' public pages:
-identifies itself, honours robots.txt, one request every two seconds, page text cached in
-`data/cache/pages/`. A price is written only when the page states it per hour or per session.
-Otherwise the app says "price on booking" rather than guessing.
+**Prices and hours from the booking calendars** (`scripts/fetch-slots.mjs`, weekly). The
+calendars are the only place the real prices live, so the refresh reads them with the same
+identified browser: Pitchbooking, Goals' own booking site, for every London Goals club (the
+next seven days, each pitch size); Playfinder's public venue pages for Powerleague and for the
+council, club and leisure-centre astros (address, hours table, facilities, the pitches, and a
+week of slots on each artificial football pitch), within a page budget and a deadline so a run
+always ends. `scripts/lib/slots.mjs` folds the priced slots into bands: what a pitch of each
+size costs, for how many minutes, on which days and at which kick-off times, with the number of
+slots each band was read from; nothing is extrapolated to days that were not read. `applySlots`
+lays them on the venues (`data/slots-live.json`; page text and slots in `data/cache/playfinder/`
+and `data/cache/pitchbooking/`): a Goals club takes its prices and booking link from
+Pitchbooking; Powerleague and the astros take prices, hours, facilities and pitches from
+Playfinder, matched by name or by being the astro on that spot; a Playfinder venue in London
+with an artificial pitch that matches nothing on the map is added, pinned at its postcode and
+labelled as such. The pitch page shows a table per pitch size (days, kick-off window, price for
+the slot length) with the source, the date and the slot count; the card shows the cheapest slot
+as it is sold ("from £95 for 40 min" where the hour is not the unit) and what that is each for
+the group. `scripts/scrape-prices.mjs` remains a fallback re-check of curated pages for venues
+on neither site.
 
 **Audit** (`scripts/audit-data.mjs`). Runs offline in CI and online in the weekly refresh:
 missing facts, duplicate names, coordinates more than 150 m from their postcode, booking URLs
@@ -125,9 +140,10 @@ them uses the live project. The weekly refresh commits the dataset and Vercel re
 - Public transport times are estimates unless a TfL key is configured.
 - Venues whose operator does not publish a price or opening times say so; the app links to the
   booking page rather than guess.
-- Powerleague's site answers automated browsers with 403, so its facts come from the curated
-  baseline and are marked unverified until the operator can be read.
-- Live slot availability is not public API territory for the big operators.
+- Powerleague's own site answers automated browsers with 403 and is left alone; its prices,
+  hours and booking link come from Playfinder, which sells its pitches, and say so.
+- Availability is not live: the calendars are read once a week for prices and hours, not for
+  what is free tonight. The booking page is one tap away.
 - Park pitches and cages are built but not shown: the product is about places you can book.
 
 ## Project history
