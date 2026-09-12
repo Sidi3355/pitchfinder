@@ -27,6 +27,12 @@ const SUPABASE_STUB = `
   grant usage on schema auth to anon, authenticated;
   grant execute on function auth.uid() to anon, authenticated;
   grant execute on function auth.role() to anon, authenticated;
+  -- A hosted project also grants every privilege on each new table, sequence
+  -- and function in public to the API roles by default. Mirrored here so the
+  -- tests prove the migrations take those grants back.
+  alter default privileges in schema public grant all on tables to anon, authenticated;
+  alter default privileges in schema public grant all on sequences to anon, authenticated;
+  alter default privileges in schema public grant all on functions to anon, authenticated;
 `
 
 export async function createTestDatabase() {
