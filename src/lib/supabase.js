@@ -3,11 +3,21 @@
 // restore or the user taps an action that needs an account. Every function
 // here returns plain data or throws an Error with a message fit to show.
 
-// Either the VITE_ names from .env.local, or the NEXT_PUBLIC_ names the
-// Supabase to Vercel integration sets on the Vercel project.
-const URL_ = import.meta.env.VITE_SUPABASE_URL || import.meta.env.NEXT_PUBLIC_SUPABASE_URL
+import { LIVE_SUPABASE_ANON_KEY, LIVE_SUPABASE_URL } from './live-project.js'
+
+// Either the VITE_ names from .env.local, the NEXT_PUBLIC_ names the Supabase
+// to Vercel integration sets on the Vercel project, or, in a production build
+// with neither, the live project itself. Test builds talk to the stand-in
+// backend and development uses .env.local, so those two never fall back.
+const live = import.meta.env.MODE === 'production'
+const URL_ =
+  import.meta.env.VITE_SUPABASE_URL ||
+  import.meta.env.NEXT_PUBLIC_SUPABASE_URL ||
+  (live ? LIVE_SUPABASE_URL : undefined)
 const ANON_KEY =
-  import.meta.env.VITE_SUPABASE_ANON_KEY || import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  import.meta.env.VITE_SUPABASE_ANON_KEY ||
+  import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  (live ? LIVE_SUPABASE_ANON_KEY : undefined)
 
 /** True when the build has Supabase credentials. */
 export const configured = !!(URL_ && ANON_KEY)

@@ -75,12 +75,16 @@ VITE_TFL_APP_KEY=<optional>                # public transport times from TfL; es
 
 The Supabase to Vercel integration (Supabase dashboard, Integrations, Vercel) sets
 `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` on the Vercel project; the app
-accepts those names too, so linking the project there replaces typing the two values in.
+accepts those names too. With neither pair set, a production build and the game function use
+the live project's URL and anon key from `src/lib/live-project.js` (both public by design, and
+the anon key can only do what the row-level policies allow), so the site works with no
+variables at all; set them to point at another project or a rotated key.
 
 Supabase setup: apply the migrations in order (`supabase db push`, the GitHub integration on
 the production branch, or paste each file into the SQL editor), turn on the Email provider with
 "Confirm email" off, and add the site URL plus `https://<site>/**` to the redirect URLs. Google
-is optional. Details and the policy tests are in `agent/SUPABASE.md`.
+is optional. The live project has the migrations applied; details and the policy tests are in
+`agent/SUPABASE.md`.
 
 Tests: `npm test` runs the unit tests and, when `DATABASE_URL` points at a local Postgres, the
 RLS tests. `npm run test:e2e` runs Playwright on an iPhone 13 profile and a desktop profile
@@ -100,8 +104,8 @@ node scripts/audit-data.mjs --write   # writes agent/DATA_QUALITY.md
 ## Deployment
 
 Vercel builds `main` on every push (`vercel.json`: clean URLs, `/g/:slug` to the game function,
-everything else to the app). The two Supabase variables above must be set in the Vercel project.
-The weekly refresh commits the dataset and Vercel redeploys.
+everything else to the app). The Supabase variables are optional on Vercel: a build without
+them uses the live project. The weekly refresh commits the dataset and Vercel redeploys.
 
 ## What it does not do
 

@@ -4,21 +4,25 @@
 // the browser uses, with the anon key only.
 
 import { fetchGame, renderGameHtml } from '../src/lib/game-html.js'
+import { LIVE_SUPABASE_ANON_KEY, LIVE_SUPABASE_URL } from '../src/lib/live-project.js'
 
 export default async function handler(req, res) {
   const slug = String(req.query?.slug || '').slice(0, 64)
   const proto = req.headers['x-forwarded-proto'] || 'https'
   const host = req.headers['x-forwarded-host'] || req.headers.host
   const siteUrl = process.env.SITE_URL || `${proto}://${host}`
-  // The VITE_ names from a manual setup, or the ones the Supabase to Vercel integration sets.
+  // The VITE_ names from a manual setup, the ones the Supabase to Vercel
+  // integration sets, or the live project.
   const supabaseUrl =
     process.env.VITE_SUPABASE_URL ||
     process.env.NEXT_PUBLIC_SUPABASE_URL ||
-    process.env.SUPABASE_URL
+    process.env.SUPABASE_URL ||
+    LIVE_SUPABASE_URL
   const supabaseKey =
     process.env.VITE_SUPABASE_ANON_KEY ||
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-    process.env.SUPABASE_ANON_KEY
+    process.env.SUPABASE_ANON_KEY ||
+    LIVE_SUPABASE_ANON_KEY
   try {
     const [templateRes, payload] = await Promise.all([
       fetch(`${siteUrl}/`, { headers: { 'x-pitchfinder-shell': '1' } }),

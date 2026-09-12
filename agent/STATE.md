@@ -212,3 +212,24 @@ server.
 Reflection: the shared-group round trip is proven end to end on both form factors (organiser
 creates, guest joins with preferences, the map ranks for both, the organiser removes someone)
 plus eight RLS tests; unit and e2e suites green. Kept.
+
+## Live Supabase: migrations applied, grants tightened, keys built in (12 Sep 2026, user-directed)
+
+The user connected the Supabase and Vercel connectors and asked for the setup to be done. The
+live project had no schema at all: the GitHub integration had deployed nothing. Migrations 0001
+to 0005 went on through the connector, in order. The project's security advisor then showed two
+things the tests had not caught. A hosted project grants the API roles everything on every new
+table and function by default, so anon held select, insert, update, delete and truncate on every
+table (Row Level Security still decided every row, so nothing was readable, but the grants were
+wider than SUPABASE.md said). And four functions ran with the caller's search_path. Migration
+0006 fixes both; the test harness now sets the hosted defaults on its throwaway database, so
+five existing tests fail without 0006, and three new tests cover the grants directly.
+
+The deployed bundle carried no Supabase URL or key, so the live site had no backend. The
+connectors cannot set Vercel variables, so a production build and the game function now fall
+back to the live project's URL and anon key (`src/lib/live-project.js`, both public by design,
+the environment still overrides them). Test builds and development never fall back.
+
+Left for the dashboard, which no connector reaches: the auth URL configuration (site URL and
+the redirect list) and "Confirm email" off. Until the first is set, a magic link lands on the
+default site URL rather than the page the person was on.

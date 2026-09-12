@@ -417,3 +417,36 @@ d('reports', () => {
     expect(rows[0].n).toBe(2)
   })
 })
+
+d('grants', () => {
+  // A hosted project grants the API roles everything on a new table and every
+  // new function by default; the harness mirrors that and migration 0006
+  // takes it back. Row security decides rows, these decide the door.
+  it('anon has no direct table access beyond profiles and reports', async () => {
+    for (const table of ['saved_pitches', 'groups', 'group_members', 'games', 'rsvps']) {
+      await expect(db.asAnon((q) => q(`select 1 from ${table}`))).rejects.toThrow(
+        /permission denied/,
+      )
+      await expect(db.asAnon((q) => q(`delete from ${table}`))).rejects.toThrow(/permission denied/)
+    }
+    await expect(
+      db.asAnon((q) => q('update profiles set display_name = $1', ['x'])),
+    ).rejects.toThrow(/permission denied/)
+  })
+  it('signed-in only functions cannot be called by anon', async () => {
+    for (const call of [
+      'select * from my_games()',
+      'select my_groups()',
+      "select rsvp_user('x', 'in')",
+    ]) {
+      await expect(db.asAnon((q) => q(call))).rejects.toThrow(/permission denied/)
+    }
+    const games = await db.asUser(bob, (q) => q('select * from my_games()'))
+    expect(Array.isArray(games.rows)).toBe(true)
+  })
+  it('the API roles cannot truncate or alter through a granted privilege', async () => {
+    for (const role of [db.asAnon, (fn) => db.asUser(bob, fn)]) {
+      await expect(role((q) => q('truncate reports'))).rejects.toThrow(/permission denied/)
+    }
+  })
+})
