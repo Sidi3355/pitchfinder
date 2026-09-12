@@ -2,9 +2,12 @@
 // preferences, and explains each pick with plain-language reasons that are
 // true by construction (see buildReasons). The internal score is never shown.
 
-import { displayMinutes, estimateEta } from './geo.js'
+import { displayMinutes, estimateEta, haversineKm } from './geo.js'
 import { costOf, isBounded } from './data.js'
 import { isBookable } from './labels.js'
+
+// Charing Cross, the conventional centre of London.
+const LONDON_CENTRE = { lat: 51.5074, lng: -0.1278 }
 
 export const DEFAULT_FILTERS = {
   types: [], // [] = all pitch types
@@ -19,28 +22,13 @@ export const DEFAULT_FILTERS = {
 
 /**
  * Reasons a pitch is worth considering, in priority order, each one a fact
- * the card does not already state. Journey reasons are estimates and the
- * card labels them as such. Never a claim about something unknown.
+ * the card does not already state. Never a claim about something unknown.
  */
-export function buildReasons({
-  pitch,
-  cost,
-  pricePerHead,
-  headCount,
-  avgEta,
-  maxEta,
-  spreadEta,
-  etaCount,
-}) {
+export function buildReasons({ pitch, cost, pricePerHead, headCount }) {
+  // Journey minutes are the card's own line (per person, each with its source),
+  // so reasons hold only what differs between pitches: price, lights, surface,
+  // changing rooms, booking, pitch count.
   const reasons = []
-  if (etaCount > 0) {
-    if (maxEta <= 25)
-      reasons.push({ text: `everyone within about ${displayMinutes(maxEta)} min`, estimate: true })
-    else if (etaCount > 1 && spreadEta <= 10)
-      reasons.push({ text: 'a similar journey for everyone', estimate: true })
-    else if (avgEta <= 30)
-      reasons.push({ text: `about ${displayMinutes(avgEta)} min on average`, estimate: true })
-  }
   if (cost.known && cost.perHour === 0) reasons.push({ text: 'free' })
   else if (cost.known && headCount > 1 && pricePerHead <= 8) {
     reasons.push({ text: `about £${Math.round(pricePerHead)} each for ${headCount}` })
@@ -54,46 +42,108 @@ export function buildReasons({
   return reasons.slice(0, 4)
 }
 
+/** Average, worst and spread of a set of journey minutes. */
+export function journeyStats(mins) {
+  const avgEta = mins.length ? Math.round(mins.reduce((s, m) => s + m, 0) / mins.length) : 0
+  const maxEta = mins.length ? Math.max(...mins) : 0
+  const spreadEta = mins.length ? maxEta - Math.min(...mins) : 0
+  return { avgEta, maxEta, spreadEta, etaCount: mins.length }
+}
+
+/**
+ * The one journey reason, if any. Estimates are rounded to 5 and say "about";
+ * routed minutes (OSRM or TfL) are shown as they came back.
+ */
+export function journeyReason({ avgEta, maxEta, spreadEta, etaCount, routed = false }) {
+  if (!etaCount) return null
+  const min = (m) => (routed ? `${m} min` : `about ${displayMinutes(m)} min`)
+  const estimate = !routed
+  if (maxEta <= 25) return { text: `everyone within ${min(maxEta)}`, estimate }
+  if (etaCount > 1 && spreadEta <= 10) return { text: 'a similar journey for everyone', estimate }
+  if (avgEta <= 30) return { text: `${min(avgEta)} on average`, estimate }
+  return null
+}
+
 /**
  * @param pitches dataset array
  * @param squad   [{ id, name, lat, lng, mode }]
  * @param filters DEFAULT_FILTERS shape
  * @returns sorted [{ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, reasons }]
  */
+/** The filter half of the ranking: does this pitch pass for this group? */
+export function passesFilters(pitch, squad, filters, headCount = Math.max(squad.length, 1)) {
+  const cost = costOf(pitch)
+  const pricePerHead = cost.known ? cost.perHour / headCount : null
+  if (filters.types.length && !filters.types.includes(pitch.type)) return false
+  if (filters.enclosure === 'bounded' && !isBounded(pitch)) return false
+  if (filters.enclosure === 'open' && isBounded(pitch)) return false
+  if (filters.freeOnly && !(cost.known && cost.perHour === 0)) return false
+  if (filters.bookableOnly && !isBookable(pitch.bookingUrl)) return false
+  if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead)
+    return false
+  if (
+    filters.format != null &&
+    Array.isArray(pitch.formats) &&
+    !pitch.formats.includes(filters.format)
+  )
+    return false
+  if (filters.needsFloodlights && pitch.lit !== true) return false
+  if (filters.maxEta != null && squad.length) {
+    for (const f of squad) {
+      if (estimateEta({ lat: f.lat, lng: f.lng }, pitch, f.mode) > filters.maxEta) return false
+    }
+  }
+  return true
+}
+
+/**
+ * How many pitches each filter option would leave, with every other filter
+ * as it is. Multi-select types count each type on its own.
+ */
+export function filterCounts(pitches, squad, filters = DEFAULT_FILTERS) {
+  const count = (patch) => {
+    const f = { ...filters, ...patch }
+    let n = 0
+    for (const p of pitches) if (passesFilters(p, squad, f)) n++
+    return n
+  }
+  const types = {}
+  for (const p of pitches) types[p.type] = 0
+  for (const t of Object.keys(types)) types[t] = count({ types: [t] })
+  return {
+    types,
+    enclosure: {
+      any: count({ enclosure: 'any' }),
+      bounded: count({ enclosure: 'bounded' }),
+      open: count({ enclosure: 'open' }),
+    },
+    format: {
+      any: count({ format: null }),
+      5: count({ format: 5 }),
+      7: count({ format: 7 }),
+      11: count({ format: 11 }),
+    },
+    needsFloodlights: count({ needsFloodlights: true }),
+    freeOnly: count({ freeOnly: true }),
+    bookableOnly: count({ bookableOnly: true }),
+  }
+}
+
 export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
   const headCount = Math.max(squad.length, 1)
   const out = []
 
   for (const pitch of pitches) {
+    if (!passesFilters(pitch, squad, filters, headCount)) continue
     const cost = costOf(pitch)
     const pricePerHead = cost.known ? cost.perHour / headCount : null
-
-    // ── Filters ──
-    if (filters.types.length && !filters.types.includes(pitch.type)) continue
-    if (filters.enclosure === 'bounded' && !isBounded(pitch)) continue
-    if (filters.enclosure === 'open' && isBounded(pitch)) continue
-    if (filters.freeOnly && !(cost.known && cost.perHour === 0)) continue
-    if (filters.bookableOnly && !isBookable(pitch.bookingUrl)) continue
-    if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead)
-      continue
-    if (
-      filters.format != null &&
-      Array.isArray(pitch.formats) &&
-      !pitch.formats.includes(filters.format)
-    )
-      continue
-    if (filters.needsFloodlights && pitch.lit !== true) continue
 
     // ── ETAs ──
     const etas = squad.map((f) => ({
       friend: f,
       minutes: estimateEta({ lat: f.lat, lng: f.lng }, pitch, f.mode),
     }))
-    const mins = etas.map((e) => e.minutes)
-    const avgEta = mins.length ? Math.round(mins.reduce((s, m) => s + m, 0) / mins.length) : 0
-    const maxEta = mins.length ? Math.max(...mins) : 0
-    const spreadEta = mins.length ? maxEta - Math.min(...mins) : 0
-    if (filters.maxEta != null && squad.length && maxEta > filters.maxEta) continue
+    const { avgEta, maxEta, spreadEta } = journeyStats(etas.map((e) => e.minutes))
 
     // ── Score components, each in [0, 1]; ordering only, never shown ──
     const sAvg = clamp01(1 - avgEta / 60)
@@ -109,20 +159,18 @@ export function rankPitches(pitches, squad, filters = DEFAULT_FILTERS) {
       (pitch.changingRooms ? 0.15 : 0) +
       (pitch.curated ? 0.1 : 0)
 
-    const score = squad.length
-      ? 0.3 * sAvg + 0.25 * sWorst + 0.15 * sFair + 0.18 * sPrice + 0.12 * sQuality
-      : 0.55 * sPrice + 0.45 * sQuality
+    // Without a group there is nobody to measure from, so central London
+    // comes first: a first-time visitor should not be shown Rickmansworth.
+    const sCentral = clamp01(1 - haversineKm(pitch, LONDON_CENTRE) / 20)
 
-    const reasons = buildReasons({
-      pitch,
-      cost,
-      pricePerHead,
-      headCount,
-      avgEta,
-      maxEta,
-      spreadEta,
-      etaCount: etas.length,
-    })
+    // Known facts carry real weight: at equal journeys a pitch we know is lit
+    // on a hard court outranks one we know nothing about, and a minute or two
+    // of estimated journey does not overturn that.
+    const score = squad.length
+      ? 0.3 * sAvg + 0.25 * sWorst + 0.1 * sFair + 0.13 * sPrice + 0.22 * sQuality
+      : 0.4 * sPrice + 0.35 * sQuality + 0.25 * sCentral
+
+    const reasons = buildReasons({ pitch, cost, pricePerHead, headCount })
     out.push({ pitch, etas, avgEta, maxEta, spreadEta, cost, pricePerHead, score, reasons })
   }
 

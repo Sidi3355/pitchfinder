@@ -10,7 +10,8 @@
 
 import { estimateEta } from './geo.js'
 
-const OSRM = 'https://router.project-osrm.org'
+// VITE_OSRM_URL points the test build at the stub in tests/e2e/fake-supabase.mjs.
+const OSRM = import.meta.env?.VITE_OSRM_URL || 'https://router.project-osrm.org'
 const PROFILES = { walk: 'foot', cycle: 'bike', drive: 'car' }
 const TFL_KEY = import.meta.env?.VITE_TFL_APP_KEY || ''
 const CACHE_KEY = 'pf:routes'
@@ -135,3 +136,6 @@ export const SOURCE_LABELS = {
   tfl: 'TfL Journey Planner',
   estimate: 'estimate',
 }
+
+/** Short tag next to a number; the full label goes in the title attribute. */
+export const SOURCE_SHORT = { osrm: 'route', tfl: 'TfL', estimate: 'est.' }

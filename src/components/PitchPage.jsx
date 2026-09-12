@@ -13,7 +13,8 @@ export function PitchPage({ id }) {
 
   useEffect(() => {
     if (pitch) document.title = `${pitchName(pitch)}: PitchFinder`
-  }, [pitch])
+    else if (state.data) document.title = 'Pitch not found: PitchFinder'
+  }, [pitch, state.data])
 
   if (state.dataError) {
     return (

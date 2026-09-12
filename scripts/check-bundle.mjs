@@ -6,7 +6,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { gzipSync } from 'node:zlib'
 import { join } from 'node:path'
 
-const DIST = new URL('../dist/', import.meta.url).pathname
+const DIST = process.env.PF_DIST || new URL('../dist/', import.meta.url).pathname
 const BUDGET_KB = 350
 
 const html = readFileSync(join(DIST, 'index.html'), 'utf8')

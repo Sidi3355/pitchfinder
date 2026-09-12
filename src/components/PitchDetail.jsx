@@ -33,7 +33,7 @@ export function PitchDetail() {
             ✕
           </button>
         </header>
-        <p className="hint">That pitch is not in the current dataset.</p>
+        <p className="hint">That pitch is not on the map any more.</p>
       </aside>
     )
   }
@@ -79,7 +79,7 @@ export function PitchSheet() {
         <button className="back-row" onClick={() => actions.selectPitch(null)}>
           Back to results
         </button>
-        {state.data && <p className="hint">That pitch is not in the current dataset.</p>}
+        {state.data && <p className="hint">That pitch is not on the map any more.</p>}
       </div>
     )
   }

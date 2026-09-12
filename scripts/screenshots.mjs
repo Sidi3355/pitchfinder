@@ -76,7 +76,16 @@ try {
   const profiles = {
     mobile: { ...devices['iPhone 13'], defaultBrowserType: 'chromium', deviceScaleFactor: 1 },
     desktop: { viewport: { width: 1280, height: 800 } },
+    'mobile-dark': {
+      ...devices['iPhone 13'],
+      defaultBrowserType: 'chromium',
+      deviceScaleFactor: 1,
+      colorScheme: 'dark',
+    },
+    'desktop-dark': { viewport: { width: 1280, height: 800 }, colorScheme: 'dark' },
   }
+  // Dark mode gets the screens where the map, cards and panels all appear.
+  const DARK = new Set(['home-group', 'group-panel', 'filters-panel', 'pitch-drawer', 'pitch-page'])
   // A game to screenshot: created once through the UI as a signed-in organiser.
   let gameUrl = null
   if (withDb) {
@@ -116,7 +125,9 @@ try {
   for (const [profile, opts] of Object.entries(profiles)) {
     const ctx = await browser.newContext(opts)
     const page = await ctx.newPage()
+    const dark = profile.endsWith('-dark')
     for (const [name, path, setup] of SCREENS) {
+      if (dark && !DARK.has(name)) continue
       await page.goto(`${BASE}${path}`)
       await page.waitForTimeout(1500)
       if (setup) {
@@ -125,7 +136,7 @@ try {
       }
       await shot(page, join(OUT, `${profile}-${name}.jpg`))
     }
-    if (gameUrl) {
+    if (gameUrl && !dark) {
       await page.goto(`${BASE}${gameUrl}`)
       await page.waitForTimeout(1200)
       await shot(page, join(OUT, `${profile}-game-guest.jpg`))

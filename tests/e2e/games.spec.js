@@ -22,7 +22,8 @@ test.describe('accounts and shared games', () => {
   }) => {
     await signIn(page, request, baseURL, `alice-${Date.now()}@example.com`)
 
-    await page.goto('/p/pl-shoreditch')
+    // The group in the URL travels with the game so the game page can show journeys.
+    await page.goto('/p/pl-shoreditch?g=Sam~Peckham~51.4741~-0.0691~w')
     await page.getByRole('button', { name: 'Plan a game' }).click()
     await page.getByLabel('Date').fill('2026-10-01')
     await page.getByLabel('Kick-off').fill('19:30')
@@ -46,6 +47,10 @@ test.describe('accounts and shared games', () => {
     await expect(page.getByRole('link', { name: 'Powerleague Shoreditch' })).toBeVisible()
     await expect(page.getByRole('heading', { name: 'Organiser' })).toBeVisible()
     await expect(page.getByText('Nobody has answered yet')).toBeVisible()
+    // Journey times for the saved group, routed where the router answered.
+    await expect(page.locator('.eta-list li')).toHaveCount(1)
+    await expect(page.locator('.eta-list li').first()).toContainText('Sam from Peckham')
+    await expect(page.locator('.eta-list li .src-tag').first()).toHaveText('route')
 
     // A friend with the link and no account.
     const ctx = await browser.newContext()
@@ -65,12 +70,32 @@ test.describe('accounts and shared games', () => {
     // Reload: the phone remembers who they are.
     await guest.reload()
     await expect(guest.getByRole('heading', { name: 'Your answer: Maybe' })).toBeVisible()
-    await ctx.close()
 
-    // The organiser sees the answer, then cancels.
+    // The organiser sees the answer and moves the kick-off.
     await page.reload()
     await expect(page.getByText('Priya')).toBeVisible()
     await expect(page.getByRole('heading', { name: '0 in, 1 answered' })).toBeVisible()
+    await page.getByRole('button', { name: 'Change time or notes' }).click()
+    await page.getByLabel('Kick-off time').fill('20:00')
+    await page.getByRole('button', { name: 'Save changes' }).click()
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('20:00')
+    await expect(page.getByText(/Moved from .*19:30/)).toBeVisible()
+    await expect(page.getByText('1 answer was given before the time changed')).toBeVisible()
+    await expect(page.getByText('Priya (before the time changed)')).toBeVisible()
+
+    // The guest who answered for 19:30 is told, and confirming clears the flag.
+    await guest.reload()
+    await expect(guest.getByText(/Moved from .*19:30/)).toBeVisible()
+    await expect(guest.getByText('The kick-off moved after you answered')).toBeVisible()
+    await guest.getByRole('button', { name: 'In', exact: true }).click()
+    await expect(guest.getByRole('heading', { name: 'Your answer: In' })).toBeVisible()
+    await expect(guest.getByText('The kick-off moved after you answered')).toHaveCount(0)
+    await ctx.close()
+
+    // The organiser cancels.
+    await page.reload()
+    await expect(page.getByRole('heading', { name: '1 in, 1 answered' })).toBeVisible()
+    await expect(page.getByText('before the time changed')).toHaveCount(0)
     await page.getByRole('button', { name: 'Cancel game' }).click()
     await page.getByRole('button', { name: 'Yes, cancel it' }).click()
     await expect(page.getByText('cancelled by the organiser')).toBeVisible()
@@ -93,7 +118,7 @@ test.describe('accounts and shared games', () => {
     baseURL,
   }) => {
     const email = `bob-${Date.now()}@example.com`
-    await page.goto('/p/pl-shoreditch')
+    await page.goto('/p/pl-shoreditch?g=Sam~Peckham~51.4741~-0.0691~w')
     await page.getByRole('button', { name: 'Save', exact: true }).click()
     const dialog = page.getByRole('dialog', { name: 'Sign in' })
     await expect(dialog).toContainText('Sign in to save pitches')
@@ -102,19 +127,29 @@ test.describe('accounts and shared games', () => {
     await dialog.getByRole('button', { name: 'Email me a sign-in link' }).click()
     await expect(dialog).toContainText('Check your inbox')
 
-    // "Open" the emailed link: the app returns to the pitch, signed in, and finishes the save.
+    // The app asked to come back to this very page, group included.
+    const otp = await (await request.get(`${FAKE}/__test/last-otp`)).json()
+    expect(otp.redirect_to).toBe(`${baseURL}/p/pl-shoreditch?g=Sam~Peckham~51.4741~-0.0691~w`)
+
+    // The emailed link opens in a new tab, as it does from a mail app: the pitch
+    // comes back with the group, signed in, and the save is finished.
     const res = await request.get(
-      `${FAKE}/__test/magic-link?email=${encodeURIComponent(email)}&redirect=${encodeURIComponent(`${baseURL}/`)}`,
+      `${FAKE}/__test/magic-link?email=${encodeURIComponent(email)}&redirect=${encodeURIComponent(otp.redirect_to)}`,
     )
     const { url } = await res.json()
-    await page.goto(url)
-    await expect(page.getByRole('button', { name: 'Saved' })).toBeVisible()
-    await expect(page.locator('.header-user')).toHaveText('Bob')
-    await page.reload()
-    await expect(page.getByRole('button', { name: 'Saved' })).toBeVisible()
-    await page.goto('/me')
-    await expect(page.getByRole('heading', { name: 'Saved pitches' })).toBeVisible()
-    await expect(page.locator('.card-title', { hasText: 'Powerleague Shoreditch' })).toBeVisible()
+    const tab = await page.context().newPage()
+    await tab.goto(url)
+    await expect(tab.getByRole('button', { name: 'Saved' })).toBeVisible()
+    await expect(tab.locator('.header-user')).toHaveText('Bob')
+    await expect(tab).toHaveURL(/\/p\/pl-shoreditch\?g=Sam/)
+    expect(new URL(tab.url()).hash).toBe('')
+    await expect(tab.locator('.eta-list li')).toHaveCount(1)
+    await tab.reload()
+    await expect(tab.getByRole('button', { name: 'Saved' })).toBeVisible()
+    await tab.goto('/me')
+    await expect(tab.getByRole('heading', { name: 'Saved pitches' })).toBeVisible()
+    await expect(tab.locator('.card-title', { hasText: 'Powerleague Shoreditch' })).toBeVisible()
+    await tab.close()
   })
 
   test('a group can be saved and reused', async ({ page, request, baseURL }) => {

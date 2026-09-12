@@ -86,12 +86,19 @@ async function fetchOverpass(query, label) {
   throw new Error(`All Overpass endpoints failed for ${label}: ${lastErr?.message}`)
 }
 
+// A pitch must not borrow its name from a private facility: a cage next to a
+// residents' gym is not "the gym's cage", and the name would read as private.
+const PRIVATE_NAME_RE =
+  /\b(residents?|gym|spa|fitness|health club|leisure club|hotel|apartments?|private|members)\b/i
+const PRIVATE_ACCESS = new Set(['private', 'no', 'customers', 'members'])
+
 /** Overpass park elements (out bb) -> { name, lat, lng, bounds }. Very large areas are dropped. */
 export function parksFromElements(elements, maxSpanKm = 4) {
   const parks = []
   for (const el of elements) {
     const name = el.tags?.name?.trim()
     if (!name) continue
+    if (PRIVATE_NAME_RE.test(name) || PRIVATE_ACCESS.has(el.tags.access)) continue
     let lat = el.lat
     let lng = el.lon
     let bounds = null

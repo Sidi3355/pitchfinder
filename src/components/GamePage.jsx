@@ -11,10 +11,10 @@ import { pitchName } from '../data/types.js'
 import { bookingLabel } from '../lib/labels.js'
 import { Link } from './Link.jsx'
 import { Directions } from './Directions.jsx'
+import { JourneyList } from './Journeys.jsx'
 import { usePitchDetail } from '../lib/use-detail.js'
 import { buildIcs, buildSummary, formatMoney, icsDataUrl, splitCost } from '../lib/game-extras.js'
 import { costOf } from '../lib/data.js'
-import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { setGuest, useGuest } from '../lib/guest.js'
 
 const STATUSES = [
@@ -126,7 +126,7 @@ export function GamePage({ slug }) {
       when: formatWhen(game.starts_at),
       postcode: pitch?.postcode,
       pricePerHour: cost.known ? cost.perHour : null,
-      inCount,
+      inCount: inCount >= 2 ? inCount : 0,
       url: `${window.location.origin}/g/${slug}`,
       notes: game.notes,
     })
@@ -215,6 +215,7 @@ export function GamePage({ slug }) {
     rsvps.filter((r) => r.status === status),
   ])
   const inCount = rsvps.filter((r) => r.status === 'in').length
+  const staleCount = rsvps.filter((r) => r.before_change).length
 
   return (
     <article className="game-page">
@@ -223,6 +224,11 @@ export function GamePage({ slug }) {
           {cancelled ? 'Cancelled' : relativeDay(game.starts_at, new Date(now))}
         </p>
         <h1>{formatWhen(game.starts_at)}</h1>
+        {game.previous_starts_at && !cancelled && !happened && (
+          <p className="game-moved" role="status">
+            Moved from {formatWhen(game.previous_starts_at)}.
+          </p>
+        )}
         <p className="game-where">
           <Link href={actions.pitchHref(game.pitch_id)}>
             {pitch ? pitchName(pitch) : game.pitch_name}
@@ -232,61 +238,6 @@ export function GamePage({ slug }) {
         {game.notes && <p className="game-notes">{game.notes}</p>}
         <p className="hint dim">Organised by {game.creator_name}</p>
       </header>
-
-      {pitch && (
-        <section className="game-where-block" aria-labelledby="where-title">
-          <h2 id="where-title" className="section-title">
-            Getting there
-          </h2>
-          <p className="game-address">
-            {pitch.address ? `${pitch.address}. ` : ''}
-            {pitch.postcode
-              ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
-              : 'Postcode not known'}
-            {pitch.borough ? `, ${pitch.borough}` : ''}
-          </p>
-          <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
-          {(() => {
-            const cost = costOf(pitch)
-            if (!cost.known) return null
-            if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
-            const each = splitCost(cost.perHour, inCount)
-            return (
-              <p className="game-cost">
-                {formatMoney(cost.perHour)} for the pitch
-                {each
-                  ? `, ${formatMoney(each)} each with ${inCount} in`
-                  : ', split between whoever is in'}
-                <span className="fact-note">
-                  operator&rsquo;s published rate for an hour, whole pitch
-                </span>
-              </p>
-            )
-          })()}
-          {Array.isArray(game.group) && game.group.length > 0 && (
-            <>
-              <ul className="eta-list">
-                {game.group.map((m, i) => (
-                  <li key={`${m.name}-${i}`}>
-                    <span>
-                      {m.name}
-                      {m.label ? <span className="dim"> from {m.label}</span> : null}{' '}
-                      <span className="dim">
-                        ({(TRAVEL_MODES[m.mode]?.label || 'public transport').toLowerCase()})
-                      </span>
-                    </span>
-                    <span className="eta-dots" />
-                    <strong>about {displayMinutes(estimateEta(m, pitch, m.mode))} min</strong>
-                  </li>
-                ))}
-              </ul>
-              <p className="hint dim">
-                Journey times are estimates from straight-line distance and typical speeds.
-              </p>
-            </>
-          )}
-        </section>
-      )}
 
       {cancelled ? (
         <div className="notice" role="status">
@@ -330,6 +281,12 @@ export function GamePage({ slug }) {
               </button>
             ))}
           </div>
+          {mine?.before_change && (
+            <p className="notice" role="status">
+              The kick-off moved after you answered. Tap your answer again to confirm it for the new
+              time.
+            </p>
+          )}
           {rsvpError && (
             <p className="form-error" role="alert">
               {rsvpError}
@@ -343,10 +300,54 @@ export function GamePage({ slug }) {
         </section>
       )}
 
+      {pitch && (
+        <section className="game-where-block" aria-labelledby="where-title">
+          <h2 id="where-title" className="section-title">
+            Getting there
+          </h2>
+          <p className="game-address">
+            {pitch.address ? `${pitch.address}. ` : ''}
+            {pitch.postcode
+              ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
+              : 'Postcode not known'}
+            {pitch.borough ? `, ${pitch.borough}` : ''}
+          </p>
+          <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
+          {(() => {
+            const cost = costOf(pitch)
+            if (!cost.known) return null
+            if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
+            const each = inCount >= 2 ? splitCost(cost.perHour, inCount) : null
+            return (
+              <p className="game-cost">
+                {formatMoney(cost.perHour)} for the pitch
+                {each
+                  ? `, ${formatMoney(each)} each with ${inCount} in`
+                  : ', split between whoever is in'}
+                <span className="fact-note">
+                  operator&rsquo;s published rate for an hour, whole pitch
+                </span>
+              </p>
+            )
+          })()}
+          {Array.isArray(game.group) && game.group.length > 0 && (
+            <>
+              <JourneyList people={game.group} pitch={pitch} showFrom />
+            </>
+          )}
+        </section>
+      )}
+
       <section aria-labelledby="who-title">
         <h2 id="who-title" className="section-title">
           {inCount} in{rsvps.length ? `, ${rsvps.length} answered` : ''}
         </h2>
+        {staleCount > 0 && !cancelled && !happened && (
+          <p className="hint dim">
+            {staleCount === 1 ? '1 answer was' : `${staleCount} answers were`} given before the time
+            changed and may not stand.
+          </p>
+        )}
         {rsvps.length === 0 ? (
           <p className="hint">
             {game.is_creator
@@ -365,6 +366,9 @@ export function GamePage({ slug }) {
                     <li key={r.id}>
                       {r.name}
                       {r.is_you && <span className="dim"> (you)</span>}
+                      {r.before_change && !cancelled && !happened && (
+                        <span className="dim"> (before the time changed)</span>
+                      )}
                     </li>
                   ))}
                 </ul>

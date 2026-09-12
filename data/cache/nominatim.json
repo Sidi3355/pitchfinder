@@ -99,10 +99,40 @@
   "suburb": "Otford",
   "at": "2026-09-11"
  },
+ "51.3143,-0.3849": {
+  "road": "Stoke Road",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
+ "51.3143,-0.3891": {
+  "road": "Station Road",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
+ "51.3145,-0.3922": {
+  "road": "Station Road",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
  "51.3153,-0.1626": {
   "road": "How Lane",
   "suburb": null,
   "at": "2026-09-11"
+ },
+ "51.3161,-0.3852": {
+  "road": "Stoke Road",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
+ "51.3161,-0.3904": {
+  "road": "Station Road",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
+ "51.3182,-0.3864": {
+  "road": "Winston Drive",
+  "suburb": null,
+  "at": "2026-09-12"
  },
  "51.3286,0.1353": {
   "road": "The Meadows",
@@ -383,6 +413,11 @@
   "road": "Hayes Lane",
   "suburb": "Widmore",
   "at": "2026-09-11"
+ },
+ "51.3954,0.0215": {
+  "road": "Cromwell Close",
+  "suburb": "Widmore",
+  "at": "2026-09-12"
  },
  "51.3982,-0.4645": {
   "road": "Briar Road",
@@ -729,6 +764,16 @@
   "suburb": null,
   "at": "2026-09-11"
  },
+ "51.4498,-0.0366": {
+  "road": "Stillness Road",
+  "suburb": "Honor Oak",
+  "at": "2026-09-12"
+ },
+ "51.4504,-0.0361": {
+  "road": "Otford Crescent",
+  "suburb": "Honor Oak",
+  "at": "2026-09-12"
+ },
  "51.4506,-0.4621": {
   "road": "Short Lane",
   "suburb": null,
@@ -814,6 +859,11 @@
   "suburb": "Blackheath",
   "at": "2026-09-11"
  },
+ "51.4657,-0.2019": {
+  "road": "Lightermans Walk",
+  "suburb": "Wandsworth",
+  "at": "2026-09-12"
+ },
  "51.4667,0.1276": {
   "road": "Alexander Road",
   "suburb": "West Heath",
@@ -874,6 +924,11 @@
   "suburb": "North End",
   "at": "2026-09-11"
  },
+ "51.4758,-0.1210": {
+  "road": "Hampson Way",
+  "suburb": "Stockwell",
+  "at": "2026-09-12"
+ },
  "51.4760,-0.1386": {
   "road": "Patmore Street",
   "suburb": "Clapham Junction",
@@ -898,6 +953,11 @@
   "road": "London Road",
   "suburb": "West Thurrock",
   "at": "2026-09-11"
+ },
+ "51.4790,-0.3498": {
+  "road": "Burlington Road",
+  "suburb": "Spring Grove",
+  "at": "2026-09-12"
  },
  "51.4790,0.2412": {
   "road": "London Road",
@@ -944,6 +1004,11 @@
   "suburb": "Little Thurrock",
   "at": "2026-09-11"
  },
+ "51.4838,0.0602": {
+  "road": "Ha Ha Road",
+  "suburb": "Shooters Hill",
+  "at": "2026-09-12"
+ },
  "51.4843,-0.3683": {
   "road": "Wheatlands",
   "suburb": "Heston",
@@ -974,10 +1039,35 @@
   "suburb": "Little Thurrock",
   "at": "2026-09-11"
  },
+ "51.4881,-0.4007": {
+  "road": "M4",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
  "51.4891,-0.0203": {
   "road": "Westferry Road",
   "suburb": "Isle of Dogs",
   "at": "2026-09-11"
+ },
+ "51.4894,-0.4010": {
+  "road": "M4",
+  "suburb": null,
+  "at": "2026-09-12"
+ },
+ "51.4932,-0.0726": {
+  "road": "Southwark Park Road",
+  "suburb": "Old Kent Road",
+  "at": "2026-09-12"
+ },
+ "51.4938,-0.3159": {
+  "road": "The Ride",
+  "suburb": "Spring Grove",
+  "at": "2026-09-12"
+ },
+ "51.4938,0.2911": {
+  "road": "A13",
+  "suburb": "Chafford Hundred",
+  "at": "2026-09-12"
  },
  "51.4947,-0.0686": {
   "road": "Lucey Road",
@@ -1038,6 +1128,16 @@
   "road": "Dorset Way",
   "suburb": "Scrattons Farm",
   "at": "2026-09-11"
+ },
+ "51.5250,0.0774": {
+  "road": "Spur Road",
+  "suburb": "Cyprus",
+  "at": "2026-09-12"
+ },
+ "51.5252,-0.2155": {
+  "road": "Canal Way",
+  "suburb": "North Kensington",
+  "at": "2026-09-12"
  },
  "51.5272,-0.5231": {
   "road": "Martindale",
@@ -1234,6 +1334,11 @@
   "suburb": "Stoke Newington",
   "at": "2026-09-11"
  },
+ "51.5736,-0.3691": {
+  "road": "Rayners Lane",
+  "suburb": "Rayners Lane",
+  "at": "2026-09-12"
+ },
  "51.5742,-0.3539": {
   "road": "Whitmore Road",
   "suburb": "Rayners Lane",
@@ -1309,6 +1414,11 @@
   "suburb": "Snaresbrook",
   "at": "2026-09-11"
  },
+ "51.5864,-0.3524": {
+  "road": "Canterbury Road",
+  "suburb": "Rayners Lane",
+  "at": "2026-09-12"
+ },
  "51.5866,0.0517": {
   "road": "Woodford Avenue",
   "suburb": "Clayhall",
@@ -1318,6 +1428,11 @@
   "road": "Elizabeth Clyde Close",
   "suburb": "West Green",
   "at": "2026-09-11"
+ },
+ "51.5886,0.0136": {
+  "road": "Cheyne Avenue",
+  "suburb": "Snaresbrook",
+  "at": "2026-09-12"
  },
  "51.5901,0.0688": {
   "road": "Tiptree Crescent",
@@ -1423,6 +1538,11 @@
   "road": "Compton Avenue",
   "suburb": "Hutton Mount",
   "at": "2026-09-11"
+ },
+ "51.6238,0.0553": {
+  "road": "Lower Queen's Road",
+  "suburb": null,
+  "at": "2026-09-12"
  },
  "51.6253,0.0561": {
   "road": "Roding Lane",
@@ -1759,15 +1879,35 @@
   "suburb": "Enfield Lock",
   "at": "2026-09-11"
  },
+ "51.6775,-0.0651": {
+  "road": "Hotspur Way",
+  "suburb": "Bulls Cross",
+  "at": "2026-09-12"
+ },
+ "51.6784,-0.0618": {
+  "road": "Hotspur Way",
+  "suburb": "Bulls Cross",
+  "at": "2026-09-12"
+ },
  "51.6789,-0.0436": {
   "road": "Bridgend Road",
   "suburb": "Bullsmoor",
   "at": "2026-09-11"
  },
+ "51.6790,-0.0666": {
+  "road": "Hotspur Way",
+  "suburb": "Bulls Cross",
+  "at": "2026-09-12"
+ },
  "51.6806,0.0124": {
   "road": "M25",
   "suburb": "Waltham Abbey",
   "at": "2026-09-11"
+ },
+ "51.6807,-0.0695": {
+  "road": "Whitewebbs Lane",
+  "suburb": "Bulls Cross",
+  "at": "2026-09-12"
  },
  "51.6870,0.0200": {
   "road": "Hillhouse",

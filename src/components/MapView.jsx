@@ -60,6 +60,22 @@ function formatPrice(pitch) {
   return cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hr`
 }
 
+/**
+ * Software WebGL (SwiftShader, llvmpipe: blocklisted GPUs, some emulators,
+ * headless browsers) paints a vector basemap at a crawl. Those devices get a
+ * plain background with the pitch layers instead, which stays responsive.
+ */
+function softwareRenderer(map) {
+  try {
+    const gl = map.painter?.context?.gl
+    const info = gl?.getExtension('WEBGL_debug_renderer_info')
+    const renderer = info ? String(gl.getParameter(info.UNMASKED_RENDERER_WEBGL)) : ''
+    return /swiftshader|llvmpipe|softpipe|software/i.test(renderer)
+  } catch {
+    return false
+  }
+}
+
 export function MapView({ bottomPadding = 0 }) {
   const { state, results, actions } = useStore()
   const containerRef = useRef(null)
@@ -83,6 +99,14 @@ export function MapView({ bottomPadding = 0 }) {
       },
     })
     mapRef.current = map
+    const basic = softwareRenderer(map)
+    if (basic) {
+      map.setStyle(FALLBACK_STYLE, { diff: false })
+      const note = document.createElement('p')
+      note.className = 'map-note'
+      note.textContent = 'Basic map on this device'
+      containerRef.current.appendChild(note)
+    }
     if (!window.matchMedia('(pointer: coarse)').matches) {
       map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right')
     }
@@ -93,7 +117,7 @@ export function MapView({ bottomPadding = 0 }) {
 
     // If the vector style can't be fetched (offline, blocked network), swap in
     // a plain background so the pitch layers still render and work.
-    let fellBack = false
+    let fellBack = basic
     const fallBack = () => {
       if (!fellBack && !readyRef.current) {
         fellBack = true

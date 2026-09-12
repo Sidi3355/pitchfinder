@@ -48,6 +48,7 @@ function verify(token) {
 // ── Users (auth.users is real; metadata lives here) ──────────────────────────
 
 const users = new Map() // id -> { id, email, user_metadata }
+let lastOtp = null // the last magic-link request: { email, redirect_to }
 
 async function findOrCreateUser(db, email, metadata = {}) {
   for (const u of users.values()) if (u.email === email) return u
@@ -282,6 +283,26 @@ function readBody(req) {
   })
 }
 
+// OSRM table stub for the test build (VITE_OSRM_URL): minutes from straight-line
+// distance at a fixed speed per profile, so routed labels can be tested offline.
+// A coordinate string containing "fail" gets a 503 for the fallback tests.
+const OSRM_KMH = { foot: 5, bike: 15, car: 28 }
+function osrmStub(url, res) {
+  const m = url.pathname.match(/^\/osrm\/table\/v1\/(foot|bike|car)\/(.+)$/)
+  if (!m) return json(res, 404, { code: 'InvalidService' })
+  const [src, ...dests] = m[2].split(';').map((c) => c.split(',').map(Number))
+  const km = ([lng1, lat1], [lng2, lat2]) => {
+    const toRad = (d) => (d * Math.PI) / 180
+    const h =
+      Math.sin(toRad(lat2 - lat1) / 2) ** 2 +
+      Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(toRad(lng2 - lng1) / 2) ** 2
+    return 2 * 6371 * Math.asin(Math.sqrt(h))
+  }
+  const durations = [dests.map((d) => Math.round(((km(src, d) * 1.3) / OSRM_KMH[m[1]]) * 3600))]
+  const distances = [dests.map((d) => Math.round(km(src, d) * 1300))]
+  return json(res, 200, { code: 'Ok', durations, distances })
+}
+
 const db = process.env.DATABASE_URL ? await createTestDatabase() : null
 
 const server = createServer(async (req, res) => {
@@ -291,6 +312,7 @@ const server = createServer(async (req, res) => {
     return res.end()
   }
   if (url.pathname === '/health') return json(res, 200, { ok: true, database: !!db })
+  if (url.pathname.startsWith('/osrm/')) return osrmStub(url, res)
   if (!db) return json(res, 503, { message: 'no DATABASE_URL: fake Supabase has no database' })
 
   try {
@@ -331,8 +353,10 @@ const server = createServer(async (req, res) => {
     if (url.pathname === '/auth/v1/otp' && req.method === 'POST') {
       if (!body?.email) return json(res, 400, { message: 'email required' })
       await findOrCreateUser(db, body.email)
+      lastOtp = { email: body.email, redirect_to: url.searchParams.get('redirect_to') || null }
       return json(res, 200, {})
     }
+    if (url.pathname === '/__test/last-otp' && req.method === 'GET') return json(res, 200, lastOtp)
     if (url.pathname === '/auth/v1/token' && req.method === 'POST') {
       const grant = url.searchParams.get('grant_type')
       if (grant === 'refresh_token') {

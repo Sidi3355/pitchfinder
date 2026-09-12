@@ -546,6 +546,19 @@ textarea.input {
   position: absolute !important;
   inset: 0;
 }
+.map-note {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  z-index: 2;
+  margin: 0;
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  background: var(--overlay);
+  color: var(--ink-3);
+  font-size: var(--text-xs);
+  pointer-events: none;
+}
 .map-loading {
   position: absolute;
   inset: 0;
@@ -1037,6 +1050,15 @@ textarea.input {
   align-items: center;
   flex-wrap: wrap;
 }
+.card-journey {
+  margin: 4px 0 0;
+  font-size: var(--text-sm);
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.card-journey-item {
+  white-space: nowrap;
+}
 .card-reasons {
   margin: 6px 0 0;
   font-size: var(--text-sm);
@@ -1230,6 +1252,32 @@ textarea.input {
 .check-item:hover .check-label {
   color: var(--ink);
 }
+/* Live counts: what an option would leave. */
+.check-item .count {
+  margin-left: auto;
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+}
+.check-item.off {
+  cursor: default;
+}
+.check-item.off .check-label,
+.check-item.off .count {
+  color: var(--ink-3);
+  opacity: 0.7;
+}
+.seg button .count {
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+.seg button.active .count {
+  color: inherit;
+  opacity: 0.85;
+}
+.seg button:disabled {
+  color: var(--ink-3);
+  opacity: 0.6;
+}
 
 /* ── Drawer (desktop pitch detail) ──────────────────────────────────────── */
 .drawer {
@@ -1328,6 +1376,20 @@ textarea.input {
   flex: 1;
   border-bottom: 1px dotted var(--border-strong);
 }
+/* Where a number came from: route, TfL or est. */
+.src-tag {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+  border: 1px solid var(--border-strong);
+  border-radius: 3px;
+  padding: 0 4px;
+  vertical-align: 1px;
+  white-space: nowrap;
+}
 .drawer-actions {
   display: flex;
   gap: var(--space-2);
@@ -1343,6 +1405,12 @@ textarea.input {
   display: inline-block;
   padding: 12px 0;
   margin: -12px 0;
+}
+/* Small-print links ("source") keep a 44 px hit area without moving the text. */
+.fact-note a {
+  display: inline-block;
+  padding: 15px 6px;
+  margin: -15px -6px;
 }
 .directions {
   display: flex;
@@ -1520,6 +1588,12 @@ textarea.input {
 .game-where a {
   color: var(--ink);
   font-weight: 600;
+}
+.game-moved {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--danger);
+  font-weight: 500;
 }
 .game-notes {
   color: var(--ink-2);

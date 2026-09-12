@@ -79,12 +79,14 @@ export function Finder() {
   const { state, results, actions } = useStore()
   const mobile = useMediaQuery(MOBILE_QUERY)
   const [panel, setPanel] = useState(null) // null | 'group' | 'filters'
-  const [snap, setSnapState] = useState('half')
-  const setSnap = useCallback((s) => setSnapState(s), [])
   const closePanel = useCallback(() => setPanel(null), [])
   const selected = state.selectedPitchId
-
-  // A selected pitch always gets at least half the screen.
+  // The sheet opens fully for a newly selected pitch (its journeys and actions
+  // are the point) and returns to half for the list; a drag overrides either
+  // until the selection changes again.
+  const [snapState, setSnapState] = useState({ key: null, snap: 'half' })
+  const snap = snapState.key === selected ? snapState.snap : selected ? 'full' : 'half'
+  const setSnap = useCallback((s) => setSnapState({ key: selected, snap: s }), [selected])
   const effectiveSnap = selected && snap === 'peek' ? 'half' : snap
 
   const panels = panel && (
@@ -101,9 +103,10 @@ export function Finder() {
             >
               Reset
             </button>
-            <button className="btn primary" onClick={closePanel}>
-              Show {results.length.toLocaleString('en-GB')}{' '}
-              {results.length === 1 ? 'pitch' : 'pitches'}
+            <button className="btn primary" onClick={closePanel} disabled={!results.length}>
+              {results.length
+                ? `Show ${results.length.toLocaleString('en-GB')} ${results.length === 1 ? 'pitch' : 'pitches'}`
+                : 'No pitches match'}
             </button>
           </>
         ) : (

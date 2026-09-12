@@ -16,11 +16,9 @@ import { loadPitchData } from './data.js'
 import { DEFAULT_FILTERS, rankPitches } from './score.js'
 import { matchRoute, navigate, useLocation } from './location.js'
 import { buildHref, parseSearch } from './url-state.js'
-import { setPending, takePending } from './pending.js'
+import { setPending, setReturnTo, takePending, takeReturnTo } from './pending.js'
 
 const StoreContext = createContext(null)
-
-const RETURN_KEY = 'pf:return-to'
 
 const initialState = {
   data: null, // { generatedAt, count, byType, pitches } once loaded
@@ -148,11 +146,12 @@ export function StoreProvider({ children }) {
         if (cancelled) return
         dispatch({ type: 'auth', user })
         if (returning) {
-          const to = sessionStorage.getItem(RETURN_KEY)
-          sessionStorage.removeItem(RETURN_KEY)
-          if (to && to.startsWith('/')) navigate(to, { replace: true })
-          else if (window.location.hash)
-            window.history.replaceState(null, '', window.location.pathname + window.location.search)
+          // The link brought us to the page that asked (redirectTo); the stored
+          // return path is the fallback. Either way the token hash goes.
+          const here = window.location.pathname + window.location.search
+          const to = takeReturnTo()
+          if (to && to !== here) navigate(to, { replace: true })
+          else window.history.replaceState(null, '', here)
           if (user) finishPending(user)
         }
       })
@@ -208,7 +207,9 @@ export function StoreProvider({ children }) {
       dispatch({ type: 'authModal', modal: { reason } })
       return false
     }
-    const returnUrl = () => `${window.location.origin}/`
+    // Sign-in comes back to this exact page, group and all, whichever tab opens the link.
+    const returnUrl = () =>
+      `${window.location.origin}${window.location.pathname}${window.location.search}`
 
     return {
       go: (path, opts) => navigate(hrefFor(path), opts),
@@ -219,12 +220,12 @@ export function StoreProvider({ children }) {
       openAuth: (reason = 'generic') => dispatch({ type: 'authModal', modal: { reason } }),
       closeAuth: () => dispatch({ type: 'authModal', modal: null }),
       async signInWithEmail(email, name) {
-        sessionStorage.setItem(RETURN_KEY, location.href)
+        setReturnTo(window.location.pathname + window.location.search)
         sb.rememberPendingName(name)
         await sb.signInWithEmail(email, returnUrl())
       },
       async signInWithGoogle(name) {
-        sessionStorage.setItem(RETURN_KEY, location.href)
+        setReturnTo(window.location.pathname + window.location.search)
         sb.rememberPendingName(name)
         await sb.signInWithGoogle(returnUrl())
       },
@@ -294,7 +295,7 @@ export function StoreProvider({ children }) {
       },
       clearNotice: () => dispatch({ type: 'notice', text: null }),
     }
-  }, [state.user, state.savedIds, squad, filters, urlState, location.path, location.href, hrefFor])
+  }, [state.user, state.savedIds, squad, filters, urlState, location.path, hrefFor])
 
   const value = useMemo(
     () => ({

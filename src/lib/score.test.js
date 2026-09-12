@@ -4,7 +4,14 @@
 
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_FILTERS, rankPitches, buildReasons } from './score.js'
+import {
+  DEFAULT_FILTERS,
+  rankPitches,
+  buildReasons,
+  filterCounts,
+  journeyReason,
+  journeyStats,
+} from './score.js'
 import { costOf } from './data.js'
 import { displayMinutes } from './geo.js'
 import { isBookable } from './labels.js'
@@ -52,10 +59,8 @@ function checkReasons(rows) {
       const count = text.match(/^(\d+) pitches$/)
       if (count) expect(pitch.pitchCount).toBe(Number(count[1]))
     }
-    // Journey reasons never appear without a group; at most one of them.
-    const journey = reasons.filter((r) => r.estimate)
-    expect(journey.length).toBeLessThanOrEqual(1)
-    if (row.etas.length === 0) expect(journey).toHaveLength(0)
+    // Journey minutes live on the card's own line, never in the reasons.
+    expect(reasons.some((r) => r.estimate || /min\b/.test(r.text))).toBe(false)
   }
 }
 
@@ -117,6 +122,44 @@ describe('ranking order and filters', () => {
   })
 })
 
+describe('filterCounts', () => {
+  const pitches = [
+    { id: 'a', type: 'park', lit: true, lat: 51.5, lng: -0.1, bounded: false },
+    { id: 'b', type: 'cage', lit: false, lat: 51.5, lng: -0.1, bounded: true },
+    {
+      id: 'c',
+      type: 'commercial',
+      pricePerHour: 60,
+      lit: true,
+      lat: 51.5,
+      lng: -0.1,
+      formats: [5],
+    },
+  ]
+  it('counts what each option would leave with the other filters as they are', () => {
+    const c = filterCounts(pitches, [], DEFAULT_FILTERS)
+    expect(c.types).toEqual({ park: 1, cage: 1, commercial: 1 })
+    expect(c.needsFloodlights).toBe(2)
+    expect(c.freeOnly).toBe(2) // parks and cages are free unless a fee is recorded
+    expect(c.format).toEqual({ any: 3, 5: 3, 7: 2, 11: 2 })
+    const lit = filterCounts(pitches, [], { ...DEFAULT_FILTERS, needsFloodlights: true })
+    expect(lit.types).toEqual({ park: 1, cage: 0, commercial: 1 })
+    expect(lit.freeOnly).toBe(1)
+  })
+  it('agrees with the ranking for every option on the real dataset', () => {
+    const squad = [{ id: 'm0', lat: 51.4741, lng: -0.0691, mode: 'transit' }]
+    const filters = { ...DEFAULT_FILTERS, maxEta: 30 }
+    const c = filterCounts(data.pitches, squad, filters)
+    expect(c.needsFloodlights).toBe(
+      rankPitches(data.pitches, squad, { ...filters, needsFloodlights: true }).length,
+    )
+    expect(c.types.park).toBe(
+      rankPitches(data.pitches, squad, { ...filters, types: ['park'] }).length,
+    )
+    expect(c.enclosure.any).toBe(rankPitches(data.pitches, squad, filters).length)
+  })
+})
+
 describe('cost model', () => {
   it('treats parks and cages as free unless a fee is recorded, and everything else as unknown', () => {
     expect(costOf({ type: 'park' })).toEqual({ known: true, perHour: 0 })
@@ -124,18 +167,50 @@ describe('cost model', () => {
     expect(costOf({ type: 'astro' })).toEqual({ known: false, perHour: null })
     expect(costOf({ type: 'commercial', pricePerHour: 78 })).toEqual({ known: true, perHour: 78 })
   })
-  it('buildReasons gives at most one journey reason and labels it an estimate', () => {
-    const r = buildReasons({
-      pitch: {},
-      cost: { known: false },
-      pricePerHead: null,
-      headCount: 2,
-      avgEta: 10,
-      maxEta: 12,
+  it('journeyReason says "about" and rounds to 5 for estimates, exact minutes for routes', () => {
+    const est = journeyReason({ avgEta: 11, maxEta: 13, spreadEta: 4, etaCount: 2 })
+    expect(est).toEqual({ text: 'everyone within about 15 min', estimate: true })
+    const routed = journeyReason({
+      avgEta: 11,
+      maxEta: 13,
       spreadEta: 4,
       etaCount: 2,
+      routed: true,
     })
-    expect(r.filter((x) => x.estimate)).toHaveLength(1)
-    expect(r[0].text).toBe('everyone within about 10 min')
+    expect(routed).toEqual({ text: 'everyone within 13 min', estimate: false })
+    expect(
+      journeyReason({ avgEta: 28, maxEta: 40, spreadEta: 24, etaCount: 2, routed: true }),
+    ).toEqual({
+      text: '28 min on average',
+      estimate: false,
+    })
+    expect(journeyReason({ avgEta: 40, maxEta: 50, spreadEta: 20, etaCount: 2 })).toBeNull()
+    expect(journeyReason({ avgEta: 0, maxEta: 0, spreadEta: 0, etaCount: 0 })).toBeNull()
+    expect(journeyStats([10, 20, 33])).toEqual({
+      avgEta: 21,
+      maxEta: 33,
+      spreadEta: 23,
+      etaCount: 3,
+    })
+  })
+  it('buildReasons lists facts only, in priority order', () => {
+    const r = buildReasons({
+      pitch: {
+        lit: true,
+        surface: '3g',
+        changingRooms: true,
+        bookingUrl: 'https://x.example/book',
+      },
+      cost: { known: true, perHour: 60 },
+      pricePerHead: 6,
+      headCount: 10,
+    })
+    expect(r.map((x) => x.text)).toEqual([
+      'about £6 each for 10',
+      'floodlit',
+      '3G',
+      'changing rooms',
+    ])
+    expect(r.some((x) => x.estimate)).toBe(false)
   })
 })

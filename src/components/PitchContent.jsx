@@ -6,13 +6,13 @@ import { useStore } from '../lib/store.jsx'
 import { navigate } from '../lib/location.js'
 import * as sb from '../lib/supabase.js'
 import { pitchName } from '../data/types.js'
-import { TRAVEL_MODES, displayMinutes, estimateEta } from '../lib/geo.js'
 import { costOf, isBounded } from '../lib/data.js'
 import { bookingLabel, surfaceLabel } from '../lib/labels.js'
 import { formatDate, fromInputParts, nextKickoff, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
 import { usePitchDetail } from '../lib/use-detail.js'
 import { Directions } from './Directions.jsx'
+import { JourneyList } from './Journeys.jsx'
 
 export function PitchContent({ pitch: indexPitch }) {
   const { state, actions } = useStore()
@@ -40,6 +40,48 @@ export function PitchContent({ pitch: indexPitch }) {
 
   return (
     <>
+      {state.squad.length > 0 && (
+        <section className="drawer-section">
+          <h2 className="section-h">Journey times</h2>
+          <JourneyList people={state.squad} pitch={pitch} />
+        </section>
+      )}
+      {panel === 'plan' ? (
+        <PlanGame pitch={pitch} name={name} onClose={() => setPanel(null)} />
+      ) : panel === 'report' ? (
+        <ReportProblem pitch={pitch} onClose={() => setPanel(null)} />
+      ) : (
+        <div className="drawer-actions">
+          {pitch.bookingUrl && (
+            <a
+              className={`btn ${bookingLabel(pitch.bookingUrl) === 'Book at venue' ? 'primary' : 'ghost'}`}
+              href={pitch.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {bookingLabel(pitch.bookingUrl)}
+            </a>
+          )}
+          <button className="btn ghost" onClick={() => setPanel('plan')}>
+            Plan a game
+          </button>
+          <button
+            className="btn ghost"
+            onClick={() => actions.toggleSave(pitch.id)}
+            aria-pressed={saved}
+          >
+            {saved ? 'Saved' : 'Save'}
+          </button>
+          <button className="btn ghost" onClick={share}>
+            {shareStatus === 'copied'
+              ? 'Link copied'
+              : shareStatus === 'failed'
+                ? 'Copy failed'
+                : 'Share'}
+          </button>
+        </div>
+      )}
+
       <dl className="facts">
         <div>
           <dt>Price</dt>
@@ -114,63 +156,6 @@ export function PitchContent({ pitch: indexPitch }) {
         <h2 className="section-h">Directions</h2>
         <Directions lat={pitch.lat} lng={pitch.lng} name={name} />
       </section>
-
-      {state.squad.length > 0 && (
-        <section className="drawer-section">
-          <h2 className="section-h">Journey times (estimates)</h2>
-          <ul className="eta-list">
-            {state.squad.map((f) => (
-              <li key={f.id}>
-                <span>
-                  {f.name} <span className="dim">({TRAVEL_MODES[f.mode].label.toLowerCase()})</span>
-                </span>
-                <span className="eta-dots" />
-                <strong>about {displayMinutes(estimateEta(f, pitch, f.mode))} min</strong>
-              </li>
-            ))}
-          </ul>
-          <p className="hint dim">
-            Estimated from straight-line distance and typical speeds. Check a journey planner before
-            you set off.
-          </p>
-        </section>
-      )}
-
-      {panel === 'plan' ? (
-        <PlanGame pitch={pitch} name={name} onClose={() => setPanel(null)} />
-      ) : panel === 'report' ? (
-        <ReportProblem pitch={pitch} onClose={() => setPanel(null)} />
-      ) : (
-        <div className="drawer-actions">
-          {pitch.bookingUrl && (
-            <a
-              className={`btn ${bookingLabel(pitch.bookingUrl) === 'Book at venue' ? 'primary' : 'ghost'}`}
-              href={pitch.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {bookingLabel(pitch.bookingUrl)}
-            </a>
-          )}
-          <button className="btn ghost" onClick={() => setPanel('plan')}>
-            Plan a game
-          </button>
-          <button
-            className="btn ghost"
-            onClick={() => actions.toggleSave(pitch.id)}
-            aria-pressed={saved}
-          >
-            {saved ? 'Saved' : 'Save'}
-          </button>
-          <button className="btn ghost" onClick={share}>
-            {shareStatus === 'copied'
-              ? 'Link copied'
-              : shareStatus === 'failed'
-                ? 'Copy failed'
-                : 'Share'}
-          </button>
-        </div>
-      )}
 
       <p className="hint dim drawer-footnote">
         {pitch.curated ? (
@@ -365,8 +350,10 @@ function ReportProblem({ pitch, onClose }) {
   if (phase === 'sent') {
     return (
       <div className="notice" role="status">
-        <strong>Thanks, report received.</strong> Corrections to OpenStreetMap pitches are also
-        welcome on OpenStreetMap itself, where they help everyone.{' '}
+        <strong>Thanks, report received.</strong>{' '}
+        {pitch.curated
+          ? 'We check reports against the operator before changing the listing.'
+          : 'Corrections are also welcome on OpenStreetMap itself, where they help everyone.'}{' '}
         <button className="link-btn" onClick={onClose}>
           Done
         </button>
