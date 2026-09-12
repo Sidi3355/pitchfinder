@@ -608,7 +608,29 @@ function assignBands(target, bands, { source, sourceUrl, checkedAt }) {
 
 const FACILITY_KEYS = ['lit', 'changingRooms', 'parking', 'showers', 'bar', 'cafe', 'covered']
 
+/** Which operator a Playfinder venue belongs to, from its slug and name. */
+function playfinderBrand(venue) {
+  if (/^powerleague/.test(venue.slug || '')) return 'powerleague'
+  return brandOf(null, venue.name)
+}
+
+/** 'Powerleague Finchley pitch' -> 'powerleague finchley': the map's derived suffixes do not count. */
+function coreName(name) {
+  return normaliseName(name).replace(/\s+(pitch|pitches|centre|center)$/, '')
+}
+
 function assignPlayfinderVenue(target, venue) {
+  const brand = playfinderBrand(venue)
+  if (brand !== 'other') {
+    // An operator's club, whatever the map called it: a football centre run by them.
+    target.type = 'commercial'
+    target.brand = brand
+    if (!target.operator) target.operator = brand === 'goals' ? 'Goals' : 'Powerleague'
+    if (['park', 'road', 'area', 'osm'].includes(target.nameSource) || !target.name) {
+      target.name = venue.name
+      target.nameSource = 'playfinder'
+    }
+  }
   if (venue.hours && target.hoursSource !== 'operator-site') {
     target.hours = venue.hours
     target.hoursSource = 'playfinder'
@@ -632,14 +654,16 @@ function assignPlayfinderVenue(target, venue) {
     target.postcode = venue.postcode
     target.postcodeSource = 'operator'
   }
-  assignBands(target, venue.bands, {
-    source: 'playfinder',
-    sourceUrl: venue.url,
-    checkedAt: venue.fetchedAt,
-  })
+  // The operator's own booking site (Goals on Pitchbooking) outranks a reseller.
+  const ownSite = target.priceSource === 'pitchbooking'
+  if (!ownSite)
+    assignBands(target, venue.bands, {
+      source: 'playfinder',
+      sourceUrl: venue.url,
+      checkedAt: venue.fetchedAt,
+    })
   target.playfinderUrl = venue.url
-  if (!target.bookingUrl || brandOf(target.operator, target.name) === 'powerleague')
-    target.bookingUrl = venue.url
+  if (!ownSite && (!target.bookingUrl || brand === 'powerleague')) target.bookingUrl = venue.url
   if (!target.verifiedAt || target.verifiedAt < venue.fetchedAt.slice(0, 10))
     target.verifiedAt = venue.fetchedAt.slice(0, 10)
 }
@@ -650,18 +674,20 @@ function assignPlayfinderVenue(target, venue) {
  * only astro within 120 m, or a near-identical name within 800 m.
  */
 export function matchPlayfinderVenue(venue, venues, { radius = 300 } = {}) {
-  const brand = /^powerleague/.test(venue.slug) ? 'powerleague' : 'other'
-  if (brand === 'powerleague') {
-    const exact = venues.find(
-      (v) =>
-        brandOf(v.operator, v.name) === 'powerleague' &&
-        normaliseName(v.name) === normaliseName(venue.name),
-    )
+  const brand = playfinderBrand(venue)
+  if (brand !== 'other') {
+    // An operator's club: the same club by name (their own entry before the
+    // map's copy of it), else the nearest of theirs within a kilometre.
+    const exact = venues
+      .filter(
+        (v) => brandOf(v.operator, v.name) === brand && coreName(v.name) === coreName(venue.name),
+      )
+      .sort((a, b) => (b.type === 'commercial') - (a.type === 'commercial'))[0]
     if (exact) return exact
     if (venue.lat == null) return null
     let best = null
     for (const v of venues) {
-      if (brandOf(v.operator, v.name) !== 'powerleague') continue
+      if (brandOf(v.operator, v.name) !== brand) continue
       const d = distM(v, venue)
       if (d < 1000 && (!best || d < best.d)) best = { v, d }
     }
@@ -686,13 +712,21 @@ function newPlayfinderVenue(venue, areas) {
   const artificial = (venue.pitches || []).filter(
     (p) => p.format && (p.surface === '3g' || p.surface === 'astro'),
   )
+  const brand = playfinderBrand(venue)
+  const slug = venue.slug.replace(/[^a-z0-9-]/g, '')
   const v = {
-    id: `pf-${venue.slug.replace(/[^a-z0-9-]/g, '')}`,
+    id:
+      brand === 'powerleague'
+        ? `pl-${slug.replace(/^powerleague-?/, '').replace(/-/g, '')}`
+        : brand === 'goals'
+          ? `go-${slug.replace(/^goals-?|-?goals$/g, '').replace(/-/g, '')}`
+          : `pf-${slug}`,
     name: venue.name,
     nameSource: 'playfinder',
-    type: 'astro',
+    type: brand === 'other' ? 'astro' : 'commercial',
     sport: 'football',
-    brand: 'other',
+    brand,
+    operator: brand === 'goals' ? 'Goals' : brand === 'powerleague' ? 'Powerleague' : undefined,
     lat: venue.lat,
     lng: venue.lng,
     geoSource: 'postcode',
@@ -745,5 +779,22 @@ export function applySlots(venues, slots, { areas = [] } = {}) {
     else if (artificial && venue.lat != null && venue.lng != null)
       out.push(newPlayfinderVenue(venue, areas))
   }
-  return out
+  return dropOperatorTwins(out)
+}
+
+/**
+ * The map often holds an operator's club twice: their own entry and the
+ * pitch someone drew for it. Once the club has its prices, the map's copy
+ * within 300 m (same operator, no prices of its own) is the same place.
+ */
+function dropOperatorTwins(venues) {
+  const clubs = venues.filter(
+    (v) => v.type === 'commercial' && brandOf(v.operator, v.name) !== 'other',
+  )
+  return venues.filter((v) => {
+    if (v.type === 'commercial' || v.source !== 'osm' || v.pricePerHour != null) return true
+    const brand = brandOf(v.operator, v.name)
+    if (brand === 'other') return true
+    return !clubs.some((c) => brandOf(c.operator, c.name) === brand && distM(c, v) < 300)
+  })
 }
