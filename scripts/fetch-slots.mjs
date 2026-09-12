@@ -395,6 +395,12 @@ async function discoverPitchbooking(page, londonClubs) {
     if (m) urls.add(`${PITCHBOOKING}/book/goals/${m[1].toLowerCase()}`)
   }
   console.log(`Pitchbooking sitemap: ${urls.size} Goals booking pages`)
+  // The pages known already (scripts/pitchbooking-goals.json); each is checked against its own title.
+  const known = loadJson(join(ROOT, 'scripts/pitchbooking-goals.json'), { clubs: {} })
+  for (const [slug, id] of Object.entries(known.clubs || {})) {
+    if (londonClubs.some((c) => c.slug === slug)) urls.add(`${PITCHBOOKING}/book/goals/${id}`)
+  }
+  console.log(`Pitchbooking: ${urls.size} booking pages to read`)
   if (urls.size) return [...urls]
   // Fallback: the club picker on Goals' own booking page leads to Pitchbooking.
   try {

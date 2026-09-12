@@ -1,0 +1,18 @@
+{
+  "note": "Goals' booking pages on Pitchbooking (Goals' own booking site). Pitchbooking's sitemap does not list them and Goals' club picker is drawn by script, so these were found by web search on 12 Sep 2026. The reader checks each page's own title against the club before it reads a slot, so a wrong entry is skipped, never shown.",
+  "site": "https://pitchbooking.com/book/goals/",
+  "clubs": {
+    "beckenham": "bbcbb80a-864f-49c5-b934-c60ea76deeaa",
+    "bexleyheath": "fa55cad3-5428-47b9-8f02-1f650d3ff955",
+    "chingford": "27b8eda5-7da6-4430-9253-432065c1c06a",
+    "dagenham": "4a97b327-4259-42e1-be88-fd163f282c83",
+    "eltham": "5c75dc20-a876-4479-a982-def79f267839",
+    "gillette-corner": "f168cc05-35fa-4b1e-8699-7c2b4de66cc3",
+    "hayes": "aba6379d-215c-40fa-8792-6470508d004e",
+    "heathrow": "e6ef5594-1724-4aea-9071-413318b8dacf",
+    "ruislip": "de7af580-000c-4736-97b1-8086ec53f6e8",
+    "sutton": "7966874b-27ed-454f-841a-d434bbb7bc86",
+    "wembley": "54e0c5b3-ffcf-489e-8ad4-5dbddb2fe3ac",
+    "wimbledon": "5c0d2039-9919-4362-8d7f-07c638bcaa32"
+  }
+}

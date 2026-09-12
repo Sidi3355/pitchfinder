@@ -27,6 +27,9 @@ jobs:
       - name: Read the slot calendars for prices (Pitchbooking, Playfinder; polite, cached)
         run: node scripts/fetch-slots.mjs
         continue-on-error: true
+      - name: Probe candidate sources (polite, cached)
+        run: node scripts/probe-sources.mjs
+        continue-on-error: true
       - name: Commit and push if changed
         env:
           BRANCH: ${{ github.ref_name }}
