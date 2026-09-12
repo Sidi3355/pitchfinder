@@ -233,3 +233,33 @@ the environment still overrides them). Test builds and development never fall ba
 Left for the dashboard, which no connector reaches: the auth URL configuration (site URL and
 the redirect list) and "Confirm email" off. Until the first is set, a magic link lands on the
 default site URL rather than the page the person was on.
+
+## Iteration 9: bookable only, prices and times, preferences that add up, a new look (12 Sep 2026, user-directed)
+
+The user's call, in full: only Goals, Powerleague and astro hire; every venue with prices and
+timings in a clear, readable format; the UI to feel like Partiful and Luma (clear, full-screen,
+fun, accessible, not boring); preferences beyond floodlights.
+
+Intended user-visible outcome: the map and list hold about 200 bookable venues instead of 1,600
+pitches. Every card says what an hour costs (and what that is each for the group), whether the
+place is open now, and who runs it. Every pitch page has a Prices block (each stated price with
+what it is for, per hour, per player, peak and off-peak, with the source and the date) and an
+Opening times block (the week, today in bold, open or closed now), or an honest "not published
+online" with the booking page. The landing page is a hero with one big way in. The group page
+and the game page read like invites: a cover tile, the name, "Hosted by", the people as avatars,
+one big share button, and the body in cards. Each person can pick a budget, floodlights, cover,
+changing rooms, parking, pitch size, surface, operator, longest journey, days and time of day;
+the group page shows what the group needs and who asked, and the ranking applies it.
+
+Approach: Goals and Powerleague render their sites in the browser and answer plain fetches with
+nothing or 403, which is why the price scraper had brought back nothing since the start. A
+headless-browser fetch (honest user agent, robots honoured, two seconds between pages) reads
+their club lists and club pages on GitHub, where the network is open, and writes every fact
+with the words behind it. Powerleague answers even a real browser with 403; that is left alone
+rather than worked around, and its baseline facts stay marked unverified. The build lays the
+live facts over the curated baseline, parses OpenStreetMap hours for the astros, and writes out
+only bookable types. Filters, URL state and the preference collation gained the new fields; the
+design system gained a display face, a night-pitch palette, pill buttons, brand badges, avatars,
+event-page layout and a confetti moment on "In", all off under reduced motion.
+
+Reflection: written at the end of the iteration.

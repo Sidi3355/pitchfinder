@@ -42,7 +42,8 @@ test.describe('accounts and shared games', () => {
     expect(html).toMatch(
       /<meta property="og:description" content="Football at Powerleague Shoreditch[^"]*Bring bibs/,
     )
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('19:30')
+    await expect(page.locator('.event-when')).toContainText('19:30')
+    await expect(page.locator('.cover-time')).toHaveText('7:30pm')
     await expect(page.getByText('Bring bibs')).toBeVisible()
     await expect(page.getByRole('link', { name: 'Powerleague Shoreditch' })).toBeVisible()
     await expect(page.getByRole('heading', { name: 'Organiser' })).toBeVisible()
@@ -78,7 +79,7 @@ test.describe('accounts and shared games', () => {
     await page.getByRole('button', { name: 'Change time or notes' }).click()
     await page.getByLabel('Kick-off time').fill('20:00')
     await page.getByRole('button', { name: 'Save changes' }).click()
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('20:00')
+    await expect(page.locator('.event-when')).toContainText('20:00')
     await expect(page.getByText(/Moved from .*19:30/)).toBeVisible()
     await expect(page.getByText('1 answer was given before the time changed')).toBeVisible()
     await expect(page.getByText('Priya (before the time changed)')).toBeVisible()

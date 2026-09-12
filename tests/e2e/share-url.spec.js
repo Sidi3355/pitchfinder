@@ -15,7 +15,10 @@ test('group, filters and selected pitch live in the URL and survive reload and s
   await expect(page.locator('.chip-main')).toHaveCount(2)
 
   await openFilters(page)
-  await page.getByLabel('Floodlit (evening games)').check()
+  await page
+    .getByRole('dialog', { name: 'Filters' })
+    .getByRole('button', { name: 'Floodlights' })
+    .click()
   await closeFilters(page)
   await expect(page.getByRole('button', { name: /^Filters/ })).toContainText('1')
 
@@ -57,7 +60,7 @@ test('group, filters and selected pitch live in the URL and survive reload and s
 })
 
 test('no results is a designed state with a way out', async ({ page }) => {
-  await page.goto('/find?t=commercial&free=1')
+  await page.goto('/find?priced=1&budget=0')
   await expect(page.getByText(/No pitches match/)).toBeVisible()
   await page.getByRole('button', { name: 'Reset filters' }).click()
   await expect(page.locator('.card').first()).toBeVisible()

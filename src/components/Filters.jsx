@@ -1,19 +1,34 @@
 import React, { useMemo } from 'react'
 import { useStore } from '../lib/store.jsx'
-import { PITCH_TYPES } from '../data/types.js'
+import { BRANDS } from '../data/types.js'
 import { DEFAULT_FILTERS, filterCounts } from '../lib/score.js'
+import { DAYS } from '../lib/hours.js'
+
+const DAY_LABEL = {
+  mon: 'Mon',
+  tue: 'Tue',
+  wed: 'Wed',
+  thu: 'Thu',
+  fri: 'Fri',
+  sat: 'Sat',
+  sun: 'Sun',
+}
 
 /** How many filter controls differ from the default. */
 export function countActiveFilters(f) {
   let n = 0
   n += f.types?.length || 0
-  if (f.enclosure !== DEFAULT_FILTERS.enclosure) n++
+  n += f.brands?.length || 0
   if (f.format != null) n++
+  if (f.surface) n++
   if (f.maxPricePerHead != null) n++
   if (f.maxEta != null) n++
   if (f.needsFloodlights) n++
-  if (f.freeOnly) n++
-  if (f.bookableOnly) n++
+  if (f.needsCovered) n++
+  if (f.needsChanging) n++
+  if (f.needsParking) n++
+  if (f.pricedOnly) n++
+  if (f.openOn && (f.openOn.days?.length || f.openOn.from)) n++
   return n
 }
 
@@ -26,6 +41,14 @@ function Count({ n }) {
   )
 }
 
+const NEEDS = [
+  ['needsFloodlights', 'Floodlights', 'evening games'],
+  ['needsCovered', 'Under cover', 'rain or shine'],
+  ['needsChanging', 'Changing rooms', 'showers after'],
+  ['needsParking', 'Parking', 'coming by car'],
+  ['pricedOnly', 'Published price', 'no surprises'],
+]
+
 export function Filters() {
   const { state, actions } = useStore()
   const f = state.filters
@@ -35,58 +58,56 @@ export function Filters() {
     [state.data, state.squad, f],
   )
   const off = (n, selected) => counts != null && n === 0 && !selected
+  const openOn = f.openOn || { days: null, from: null }
+  const days = openOn.days || []
 
-  function toggleType(type) {
-    const types = f.types.includes(type) ? f.types.filter((t) => t !== type) : [...f.types, type]
-    actions.setFilters({ types })
+  function toggleBrand(brand) {
+    const brands = f.brands.includes(brand)
+      ? f.brands.filter((b) => b !== brand)
+      : [...f.brands, brand]
+    actions.setFilters({ brands })
+  }
+  function toggleDay(day) {
+    const next = days.includes(day) ? days.filter((d) => d !== day) : [...days, day]
+    const ordered = DAYS.filter((d) => next.includes(d))
+    actions.setFilters({
+      openOn:
+        ordered.length || openOn.from
+          ? { days: ordered.length ? ordered : null, from: openOn.from }
+          : null,
+    })
+  }
+  function setFrom(from) {
+    actions.setFilters({
+      openOn: days.length || from ? { days: days.length ? days : null, from } : null,
+    })
   }
 
   return (
-    <section className="stack">
+    <section className="stack filters">
       <fieldset className="filter-group">
-        <legend>Pitch type</legend>
-        <div className="check-list">
-          {Object.entries(PITCH_TYPES).map(([key, t]) => (
-            <label
-              key={key}
-              className={`check-item ${off(counts?.types[key] ?? 1, f.types.includes(key)) ? 'off' : ''}`}
-            >
-              <input
-                type="checkbox"
-                checked={f.types.includes(key)}
-                disabled={off(counts?.types[key] ?? 1, f.types.includes(key))}
-                onChange={() => toggleType(key)}
-              />
-              <span className="type-dot" style={{ background: t.color }} />
-              <span className="check-label">{t.label}</span>
-              <Count n={counts?.types[key] ?? 0} />
-            </label>
-          ))}
+        <legend>Where to play</legend>
+        <div className="chip-row">
+          {Object.entries(BRANDS).map(([key, b]) => {
+            const on = f.brands.includes(key)
+            return (
+              <button
+                key={key}
+                type="button"
+                className={`pref-chip brand-${key}${on ? ' on' : ''}`}
+                aria-pressed={on}
+                disabled={off(counts?.brands[key] ?? 1, on)}
+                onClick={() => toggleBrand(key)}
+              >
+                {b.label} <Count n={counts?.brands[key]} />
+              </button>
+            )
+          })}
         </div>
       </fieldset>
 
       <fieldset className="filter-group">
-        <legend>Enclosure</legend>
-        <div className="seg">
-          {[
-            ['any', 'Any'],
-            ['bounded', 'Caged / walled'],
-            ['open', 'Open pitch'],
-          ].map(([value, label]) => (
-            <button
-              key={value}
-              className={f.enclosure === value ? 'active' : ''}
-              disabled={off(counts?.enclosure[value], f.enclosure === value)}
-              onClick={() => actions.setFilters({ enclosure: value })}
-            >
-              {label} <Count n={counts?.enclosure[value]} />
-            </button>
-          ))}
-        </div>
-      </fieldset>
-
-      <fieldset className="filter-group">
-        <legend>Format</legend>
+        <legend>Pitch size</legend>
         <div className="seg">
           {[null, 5, 7, 11].map((format) => (
             <button
@@ -100,8 +121,50 @@ export function Filters() {
           ))}
         </div>
         <p className="hint dim">
-          Format is known for bookable venues; other pitches aren&rsquo;t excluded.
+          Size is known for operators&rsquo; venues; other pitches stay in.
         </p>
+      </fieldset>
+
+      <fieldset className="filter-group">
+        <legend>Surface</legend>
+        <div className="seg">
+          {[
+            [null, 'Any'],
+            ['3g', '3G'],
+            ['astro', 'Astro'],
+          ].map(([value, label]) => (
+            <button
+              key={String(value)}
+              className={f.surface === value ? 'active' : ''}
+              disabled={off(counts?.surface[value ?? 'any'], f.surface === value)}
+              onClick={() => actions.setFilters({ surface: value })}
+            >
+              {label} <Count n={counts?.surface[value ?? 'any']} />
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="filter-group">
+        <legend>Must have</legend>
+        <div className="chip-row">
+          {NEEDS.map(([key, label, sub]) => {
+            const on = !!f[key]
+            return (
+              <button
+                key={key}
+                type="button"
+                className={`pref-chip${on ? ' on' : ''}`}
+                aria-pressed={on}
+                disabled={off(counts?.[key], on)}
+                onClick={() => actions.setFilters({ [key]: !on })}
+                title={sub}
+              >
+                {label} <Count n={counts?.[key]} />
+              </button>
+            )
+          })}
+        </div>
       </fieldset>
 
       <fieldset className="filter-group">
@@ -124,6 +187,11 @@ export function Filters() {
           }}
           aria-label="Maximum price per person per hour"
         />
+        <p className="hint dim">
+          {state.squad.length > 1
+            ? `The pitch price split ${state.squad.length} ways.`
+            : 'Split between the people in your group.'}
+        </p>
       </fieldset>
 
       {state.squad.length > 0 ? (
@@ -152,42 +220,44 @@ export function Filters() {
       )}
 
       <fieldset className="filter-group">
-        <legend>Requirements</legend>
-        <div className="check-list">
-          <label
-            className={`check-item ${off(counts?.needsFloodlights, f.needsFloodlights) ? 'off' : ''}`}
-          >
-            <input
-              type="checkbox"
-              checked={f.needsFloodlights}
-              disabled={off(counts?.needsFloodlights, f.needsFloodlights)}
-              onChange={() => actions.setFilters({ needsFloodlights: !f.needsFloodlights })}
-            />
-            <span className="check-label">Floodlit (evening games)</span>
-            <Count n={counts?.needsFloodlights} />
-          </label>
-          <label className={`check-item ${off(counts?.freeOnly, f.freeOnly) ? 'off' : ''}`}>
-            <input
-              type="checkbox"
-              checked={f.freeOnly}
-              disabled={off(counts?.freeOnly, f.freeOnly)}
-              onChange={() => actions.setFilters({ freeOnly: !f.freeOnly })}
-            />
-            <span className="check-label">Free to play only</span>
-            <Count n={counts?.freeOnly} />
-          </label>
-          <label className={`check-item ${off(counts?.bookableOnly, f.bookableOnly) ? 'off' : ''}`}>
-            <input
-              type="checkbox"
-              checked={f.bookableOnly}
-              disabled={off(counts?.bookableOnly, f.bookableOnly)}
-              onChange={() => actions.setFilters({ bookableOnly: !f.bookableOnly })}
-            />
-            <span className="check-label">Bookable online only</span>
-            <Count n={counts?.bookableOnly} />
-          </label>
+        <legend>When</legend>
+        <div className="chip-row days" role="group" aria-label="Days">
+          {DAYS.map((day) => {
+            const on = days.includes(day)
+            return (
+              <button
+                key={day}
+                type="button"
+                className={`pref-chip day${on ? ' on' : ''}`}
+                aria-pressed={on}
+                onClick={() => toggleDay(day)}
+              >
+                {DAY_LABEL[day]}
+              </button>
+            )
+          })}
         </div>
+        <div className="seg">
+          {[
+            [null, 'Any time'],
+            ['19:00', 'Evenings'],
+            ['12:00', 'Daytime'],
+          ].map(([value, label]) => (
+            <button
+              key={String(value)}
+              className={openOn.from === value ? 'active' : ''}
+              onClick={() => setFrom(value)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <p className="hint dim">
+          Places open then stay in. A place whose hours are not published stays in too, and says so.
+        </p>
       </fieldset>
     </section>
   )
 }
+
+export { DEFAULT_FILTERS }

@@ -28,8 +28,8 @@ test('an unknown place on the landing page says so and keeps you there', async (
 
 test('browse-by-type cards open the finder with that filter', async ({ page }) => {
   await page.goto('/')
-  await page.getByRole('link', { name: /Commercial centre/ }).click()
-  await expect(page).toHaveURL(/\/find\?t=commercial/)
+  await page.getByRole('link', { name: /Goals/ }).click()
+  await expect(page).toHaveURL(/\/find\?op=goals/)
   await expect(page.getByRole('button', { name: /^Filters, 1 on/ })).toBeVisible()
 })
 

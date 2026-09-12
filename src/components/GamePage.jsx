@@ -16,6 +16,8 @@ import { usePitchDetail } from '../lib/use-detail.js'
 import { buildIcs, buildSummary, formatMoney, icsDataUrl, splitCost } from '../lib/game-extras.js'
 import { costOf } from '../lib/data.js'
 import { setGuest, useGuest } from '../lib/guest.js'
+import { Avatar, AvatarStack, BrandBadge, Confetti, openLine } from './Facts.jsx'
+import { formatTime } from '../lib/hours.js'
 
 const STATUSES = [
   ['in', 'In'],
@@ -38,6 +40,7 @@ export function GamePage({ slug }) {
   const [shareStatus, setShareStatus] = useState(null)
   const [copyStatus, setCopyStatus] = useState(null)
   const [now, setNow] = useState(0)
+  const [cheer, setCheer] = useState(false)
   // Called before any early return: hooks must run in the same order every render.
   const pitchDetail = usePitchDetail(game ? pitchById.get(game.pitch_id) : null)
 
@@ -88,6 +91,12 @@ export function GamePage({ slug }) {
     return () => clearTimeout(t)
   }, [shareStatus])
 
+  useEffect(() => {
+    if (!cheer) return undefined
+    const t = setTimeout(() => setCheer(false), 1800)
+    return () => clearTimeout(t)
+  }, [cheer])
+
   async function answer(status) {
     setRsvpError('')
     const name = guestName.trim().slice(0, 40)
@@ -103,6 +112,7 @@ export function GamePage({ slug }) {
         await sb.rsvpAsGuest(slug, name, guest.key, status)
       }
       await load()
+      if (status === 'in') setCheer(true)
     } catch (err) {
       setRsvpError(err.message)
     } finally {
@@ -217,246 +227,305 @@ export function GamePage({ slug }) {
   const inCount = rsvps.filter((r) => r.status === 'in').length
   const staleCount = rsvps.filter((r) => r.before_change).length
 
+  const starts = new Date(game.starts_at)
+  const dayLabel = starts.toLocaleDateString('en-GB', { weekday: 'short' })
+  const dateLabel = starts.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+  const timeLabel = formatTime(
+    `${String(starts.getHours()).padStart(2, '0')}:${String(starts.getMinutes()).padStart(2, '0')}`,
+  )
+  const inNames = rsvps.filter((r) => r.status === 'in').map((r) => r.name)
+  const open = pitch ? openLine(pitch, starts) : null
+
   return (
-    <article className="game-page">
-      <header className="game-head">
-        <p className="empty-kicker">
-          {cancelled ? 'Cancelled' : relativeDay(game.starts_at, new Date(now))}
+    <article className={`event game-event${cancelled ? ' is-cancelled' : ''}`}>
+      <aside className="event-cover">
+        <div className="cover-tile tile-game" aria-hidden="true">
+          <span className="cover-day">{dayLabel}</span>
+          <span className="cover-date">{dateLabel}</span>
+          <span className="cover-time">{timeLabel}</span>
+        </div>
+        <p className="kicker">
+          {cancelled
+            ? 'Cancelled'
+            : happened
+              ? 'Played'
+              : relativeDay(game.starts_at, new Date(now))}
         </p>
-        <h1>{formatWhen(game.starts_at)}</h1>
+        <h1 className="event-title">
+          <Link href={actions.pitchHref(game.pitch_id)}>
+            {pitch ? pitchName(pitch) : game.pitch_name}
+          </Link>
+        </h1>
+        <p className="event-when">
+          {formatWhen(game.starts_at)}
+          {pitch?.area && <span className="dim"> · {pitch.area}</span>}
+        </p>
         {game.previous_starts_at && !cancelled && !happened && (
           <p className="game-moved" role="status">
             Moved from {formatWhen(game.previous_starts_at)}.
           </p>
         )}
-        <p className="game-where">
-          <Link href={actions.pitchHref(game.pitch_id)}>
-            {pitch ? pitchName(pitch) : game.pitch_name}
-          </Link>
-          {pitch?.area && <span className="dim"> · {pitch.area}</span>}
-        </p>
         {game.notes && <p className="game-notes">{game.notes}</p>}
-        <p className="hint dim">Organised by {game.creator_name}</p>
-      </header>
-
-      {cancelled ? (
-        <div className="notice" role="status">
-          This game has been cancelled by the organiser.{' '}
-          <Link href={actions.pitchHref(game.pitch_id)}>Plan another at this pitch</Link>
-        </div>
-      ) : happened ? (
-        <div className="notice" role="status">
-          This game has happened. {inCount} said they were in.
-        </div>
-      ) : (
-        <section className="game-rsvp" aria-labelledby="rsvp-title">
-          <h2 id="rsvp-title" className="section-title">
-            {mine
-              ? `Your answer: ${mine.status === 'in' ? 'In' : mine.status === 'maybe' ? 'Maybe' : 'Out'}`
-              : 'Are you in?'}
-          </h2>
-          {!state.user && (
-            <label className="field">
-              <span className="field-label">Your name</span>
-              <input
-                className="input"
-                value={guestName}
-                maxLength={40}
-                autoComplete="given-name"
-                placeholder="So the group knows who answered"
-                onChange={(e) => setGuestName(e.target.value)}
-              />
-            </label>
-          )}
-          <div className="seg lg" role="group" aria-label="Your answer">
-            {STATUSES.map(([status, label]) => (
-              <button
-                key={status}
-                className={mine?.status === status ? 'active' : ''}
-                aria-pressed={mine?.status === status}
-                disabled={busy}
-                onClick={() => answer(status)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-          {mine?.before_change && (
-            <p className="notice" role="status">
-              The kick-off moved after you answered. Tap your answer again to confirm it for the new
-              time.
-            </p>
-          )}
-          {rsvpError && (
-            <p className="form-error" role="alert">
-              {rsvpError}
-            </p>
-          )}
-          {state.user ? (
-            <p className="hint dim">Answering as {state.user.displayName}.</p>
-          ) : (
-            <p className="hint dim">No account needed. Your answer is remembered on this phone.</p>
-          )}
-        </section>
-      )}
-
-      {pitch && (
-        <section className="game-where-block" aria-labelledby="where-title">
-          <h2 id="where-title" className="section-title">
-            Getting there
-          </h2>
-          <p className="game-address">
-            {pitch.address ? `${pitch.address}. ` : ''}
-            {pitch.postcode
-              ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
-              : 'Postcode not known'}
-            {pitch.borough ? `, ${pitch.borough}` : ''}
-          </p>
-          <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
-          {(() => {
-            const cost = costOf(pitch)
-            if (!cost.known) return null
-            if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
-            const each = inCount >= 2 ? splitCost(cost.perHour, inCount) : null
-            return (
-              <p className="game-cost">
-                {formatMoney(cost.perHour)} for the pitch
-                {each
-                  ? `, ${formatMoney(each)} each with ${inCount} in`
-                  : ', split between whoever is in'}
-                <span className="fact-note">
-                  operator&rsquo;s published rate for an hour, whole pitch
-                </span>
-              </p>
-            )
-          })()}
-          {Array.isArray(game.group) && game.group.length > 0 && (
-            <>
-              <JourneyList people={game.group} pitch={pitch} showFrom />
-            </>
-          )}
-        </section>
-      )}
-
-      <section aria-labelledby="who-title">
-        <h2 id="who-title" className="section-title">
-          {inCount} in{rsvps.length ? `, ${rsvps.length} answered` : ''}
-        </h2>
-        {staleCount > 0 && !cancelled && !happened && (
-          <p className="hint dim">
-            {staleCount === 1 ? '1 answer was' : `${staleCount} answers were`} given before the time
-            changed and may not stand.
-          </p>
-        )}
-        {rsvps.length === 0 ? (
-          <p className="hint">
-            {game.is_creator
-              ? 'Nobody has answered yet. Share the link.'
-              : 'Nobody has answered yet. Be the first.'}
-          </p>
-        ) : (
-          <div className="rsvp-columns">
-            {groups.map(([label, list]) => (
-              <div key={label} className="rsvp-col">
-                <h3>
-                  {label} <span className="dim">{list.length}</span>
-                </h3>
-                <ul>
-                  {list.map((r) => (
-                    <li key={r.id}>
-                      {r.name}
-                      {r.is_you && <span className="dim"> (you)</span>}
-                      {r.before_change && !cancelled && !happened && (
-                        <span className="dim"> (before the time changed)</span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
-
-      {!cancelled && (
-        <div className="drawer-actions">
-          <button className="btn primary" onClick={share}>
-            {shareStatus === 'copied'
-              ? 'Link copied'
-              : shareStatus === 'failed'
-                ? 'Copy failed'
-                : 'Share link'}
-          </button>
-          <a
-            className="btn ghost"
-            href={icsDataUrl(
-              buildIcs({
-                uid: `${game.id}@pitchfinder`,
-                title: `Football: ${pitch ? pitchName(pitch) : game.pitch_name}`,
-                startsAt: game.starts_at,
-                location: [pitch ? pitchName(pitch) : game.pitch_name, pitch?.postcode]
-                  .filter(Boolean)
-                  .join(', '),
-                description: `${game.notes ? `${game.notes}\n` : ''}In or out? ${window.location.origin}/g/${slug}`,
-                url: `${window.location.origin}/g/${slug}`,
-              }),
-            )}
-            download={`football-${slug}.ics`}
-          >
-            Add to calendar
-          </a>
-          <button className="btn ghost" onClick={copyMessage}>
-            {copyStatus === 'copied' ? 'Message copied' : 'Copy message for the group'}
-          </button>
-          <span className="sr-only" role="status" aria-live="polite">
-            {shareStatus === 'copied'
-              ? 'Link copied to clipboard'
-              : shareStatus === 'failed'
-                ? 'Could not copy the link'
-                : ''}
+        <p className="event-host">
+          <Avatar name={game.creator_name} size="sm" />
+          <span>
+            Hosted by <strong>{game.creator_name}</strong>
           </span>
-          {pitch?.bookingUrl && !happened && (
+        </p>
+        <p className="event-count">
+          {inNames.length ? <AvatarStack names={inNames} /> : null}
+          <span>
+            {inCount} in{rsvps.length ? `, ${rsvps.length} answered` : ''}
+          </span>
+        </p>
+        {!cancelled && (
+          <div className="event-share">
+            <button className="btn primary lg wide" onClick={share}>
+              {shareStatus === 'copied'
+                ? 'Link copied'
+                : shareStatus === 'failed'
+                  ? 'Copy failed'
+                  : 'Share the invite'}
+            </button>
+          </div>
+        )}
+      </aside>
+
+      <div className="event-body">
+        {cancelled ? (
+          <div className="event-card notice" role="status">
+            This game has been cancelled by the organiser.{' '}
+            <Link href={actions.pitchHref(game.pitch_id)}>Plan another at this pitch</Link>
+          </div>
+        ) : happened ? (
+          <div className="event-card notice" role="status">
+            This game has happened. {inCount} said they were in.
+          </div>
+        ) : (
+          <section
+            className={`event-card rsvp-card${cheer ? ' celebrate' : ''}`}
+            aria-labelledby="rsvp-title"
+          >
+            <Confetti active={cheer} />
+            <h2 id="rsvp-title" className="section-title">
+              {mine
+                ? `Your answer: ${mine.status === 'in' ? 'In' : mine.status === 'maybe' ? 'Maybe' : 'Out'}`
+                : 'Are you in?'}
+            </h2>
+            {!state.user && (
+              <label className="field">
+                <span className="field-label">Your name</span>
+                <input
+                  className="input"
+                  value={guestName}
+                  maxLength={40}
+                  autoComplete="given-name"
+                  placeholder="So the group knows who answered"
+                  onChange={(e) => setGuestName(e.target.value)}
+                />
+              </label>
+            )}
+            <div className="rsvp-buttons" role="group" aria-label="Your answer">
+              {STATUSES.map(([status, label]) => (
+                <button
+                  key={status}
+                  className={`rsvp-btn rsvp-${status}${mine?.status === status ? ' active' : ''}`}
+                  aria-pressed={mine?.status === status}
+                  disabled={busy}
+                  onClick={() => answer(status)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            {mine?.before_change && (
+              <p className="notice" role="status">
+                The kick-off moved after you answered. Tap your answer again to confirm it for the
+                new time.
+              </p>
+            )}
+            {rsvpError && (
+              <p className="form-error" role="alert">
+                {rsvpError}
+              </p>
+            )}
+            {state.user ? (
+              <p className="hint dim">Answering as {state.user.displayName}.</p>
+            ) : (
+              <p className="hint dim">
+                No account needed. Your answer is remembered on this phone.
+              </p>
+            )}
+          </section>
+        )}
+
+        {pitch && (
+          <section className="event-card game-where-block" aria-labelledby="where-title">
+            <h2 id="where-title" className="section-title">
+              Getting there
+            </h2>
+            <p className="game-venue-line">
+              <BrandBadge pitch={pitch} />
+              {open && (
+                <span className={`key-open ${open.open ? 'is-open' : 'is-closed'}`}>
+                  {open.open ? 'Open at kick-off' : 'Closed at kick-off, check the hours'}
+                </span>
+              )}
+            </p>
+            <p className="game-address">
+              {pitch.address ? `${pitch.address}. ` : ''}
+              {pitch.postcode
+                ? `${pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'} ${pitch.postcode}`
+                : 'Postcode not known'}
+              {pitch.borough ? `, ${pitch.borough}` : ''}
+            </p>
+            <Directions lat={pitch.lat} lng={pitch.lng} name={pitchName(pitch)} />
+            {(() => {
+              const cost = costOf(pitch)
+              if (!cost.known) return null
+              if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
+              const each = inCount >= 2 ? splitCost(cost.perHour, inCount) : null
+              return (
+                <p className="game-cost">
+                  {formatMoney(cost.perHour)} for the pitch
+                  {each
+                    ? `, ${formatMoney(each)} each with ${inCount} in`
+                    : ', split between whoever is in'}
+                  <span className="fact-note">
+                    operator&rsquo;s published rate for an hour, whole pitch
+                  </span>
+                </p>
+              )
+            })()}
+            {Array.isArray(game.group) && game.group.length > 0 && (
+              <JourneyList people={game.group} pitch={pitch} showFrom />
+            )}
+          </section>
+        )}
+
+        <section className="event-card" aria-labelledby="who-title">
+          <h2 id="who-title" className="section-title">
+            {inCount} in{rsvps.length ? `, ${rsvps.length} answered` : ''}
+          </h2>
+          {staleCount > 0 && !cancelled && !happened && (
+            <p className="hint dim">
+              {staleCount === 1 ? '1 answer was' : `${staleCount} answers were`} given before the
+              time changed and may not stand.
+            </p>
+          )}
+          {rsvps.length === 0 ? (
+            <p className="hint">
+              {game.is_creator
+                ? 'Nobody has answered yet. Share the link.'
+                : 'Nobody has answered yet. Be the first.'}
+            </p>
+          ) : (
+            <div className="rsvp-columns">
+              {groups.map(([label, list]) => (
+                <div key={label} className="rsvp-col">
+                  <h3>
+                    {label} <span className="dim">{list.length}</span>
+                  </h3>
+                  <ul>
+                    {list.map((r) => (
+                      <li key={r.id}>
+                        <Avatar name={r.name} size="sm" you={r.is_you} />
+                        <span>
+                          {r.name}
+                          {r.is_you && <span className="dim"> (you)</span>}
+                          {r.before_change && !cancelled && !happened && (
+                            <span className="dim"> (before the time changed)</span>
+                          )}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {!cancelled && (
+          <div className="drawer-actions event-actions">
+            <button className="btn ghost" onClick={share}>
+              {shareStatus === 'copied'
+                ? 'Link copied'
+                : shareStatus === 'failed'
+                  ? 'Copy failed'
+                  : 'Share link'}
+            </button>
             <a
               className="btn ghost"
-              href={pitch.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={icsDataUrl(
+                buildIcs({
+                  uid: `${game.id}@pitchfinder`,
+                  title: `Football: ${pitch ? pitchName(pitch) : game.pitch_name}`,
+                  startsAt: game.starts_at,
+                  location: [pitch ? pitchName(pitch) : game.pitch_name, pitch?.postcode]
+                    .filter(Boolean)
+                    .join(', '),
+                  description: `${game.notes ? `${game.notes}\n` : ''}In or out? ${window.location.origin}/g/${slug}`,
+                  url: `${window.location.origin}/g/${slug}`,
+                }),
+              )}
+              download={`football-${slug}.ics`}
             >
-              {bookingLabel(pitch.bookingUrl)}
+              Add to calendar
             </a>
-          )}
-        </div>
-      )}
+            <button className="btn ghost" onClick={copyMessage}>
+              {copyStatus === 'copied' ? 'Message copied' : 'Copy message for the group'}
+            </button>
+            <span className="sr-only" role="status" aria-live="polite">
+              {shareStatus === 'copied'
+                ? 'Link copied to clipboard'
+                : shareStatus === 'failed'
+                  ? 'Could not copy the link'
+                  : ''}
+            </span>
+            {pitch?.bookingUrl && !happened && (
+              <a
+                className="btn ghost"
+                href={pitch.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {bookingLabel(pitch.bookingUrl)}
+              </a>
+            )}
+          </div>
+        )}
 
-      {game.is_creator && !cancelled && !happened && (
-        <section className="game-admin" aria-labelledby="admin-title">
-          <h2 id="admin-title" className="section-title">
-            Organiser
-          </h2>
-          {editing ? (
-            <EditGame game={game} onDone={() => setEditing(false)} onSaved={load} />
-          ) : confirmCancel ? (
-            <div className="row">
-              <span className="hint">Cancel this game for everyone?</span>
-              <button className="btn danger" disabled={busy} onClick={cancelGame}>
-                Yes, cancel it
-              </button>
-              <button className="btn ghost" onClick={() => setConfirmCancel(false)}>
-                Keep it
-              </button>
-            </div>
-          ) : (
-            <div className="row">
-              <button className="btn ghost" onClick={() => setEditing(true)}>
-                Change time or notes
-              </button>
-              <button className="btn danger" onClick={() => setConfirmCancel(true)}>
-                Cancel game
-              </button>
-            </div>
-          )}
-        </section>
-      )}
+        {game.is_creator && !cancelled && !happened && (
+          <section className="event-card game-admin" aria-labelledby="admin-title">
+            <h2 id="admin-title" className="section-title">
+              Organiser
+            </h2>
+            {editing ? (
+              <EditGame game={game} onDone={() => setEditing(false)} onSaved={load} />
+            ) : confirmCancel ? (
+              <div className="row">
+                <span className="hint">Cancel this game for everyone?</span>
+                <button className="btn danger" disabled={busy} onClick={cancelGame}>
+                  Yes, cancel it
+                </button>
+                <button className="btn ghost" onClick={() => setConfirmCancel(false)}>
+                  Keep it
+                </button>
+              </div>
+            ) : (
+              <div className="row">
+                <button className="btn ghost" onClick={() => setEditing(true)}>
+                  Change time or notes
+                </button>
+                <button className="btn danger" onClick={() => setConfirmCancel(true)}>
+                  Cancel game
+                </button>
+              </div>
+            )}
+          </section>
+        )}
+      </div>
     </article>
   )
 }

@@ -68,14 +68,18 @@ describe('search string', () => {
   it('round-trips every filter and the selected pitch', () => {
     const filters = {
       ...DEFAULT_FILTERS,
-      types: ['park', 'cage'],
-      enclosure: 'bounded',
+      types: ['astro'],
+      brands: ['goals', 'other'],
+      surface: '3g',
       format: 7,
       maxPricePerHead: 6,
       maxEta: 30,
       needsFloodlights: true,
-      freeOnly: true,
-      bookableOnly: true,
+      needsCovered: true,
+      needsChanging: true,
+      needsParking: true,
+      pricedOnly: true,
+      openOn: { days: ['tue', 'thu'], from: '19:00' },
     }
     const search = buildSearch({ group: [sam], filters, pitch: 'pl-shoreditch' })
     const parsed = parseSearch(search)
@@ -86,8 +90,14 @@ describe('search string', () => {
   })
 
   it('ignores junk values rather than crashing', () => {
-    const parsed = parseSearch('?t=park,alien&fmt=9&budget=99&eta=abc&p=../../x&g=nope&lit=maybe')
-    expect(parsed.filters.types).toEqual(['park'])
+    const parsed = parseSearch(
+      '?t=park,astro,alien&op=goals,alien&sf=grass&open=xyz@9pm&need=cover,alien&fmt=9&budget=99&eta=abc&p=../../x&g=nope&lit=maybe',
+    )
+    expect(parsed.filters.types).toEqual(['astro']) // park pitches are no longer a type
+    expect(parsed.filters.brands).toEqual(['goals'])
+    expect(parsed.filters.surface).toBeNull()
+    expect(parsed.filters.openOn).toBeNull()
+    expect(parsed.filters.needsCovered).toBe(true)
     expect(parsed.filters.format).toBeNull()
     expect(parsed.filters.maxPricePerHead).toBeNull()
     expect(parsed.filters.maxEta).toBeNull()
@@ -102,7 +112,12 @@ describe('search string', () => {
   })
 
   it('builds a full href', () => {
-    expect(buildHref('/', { filters: { ...DEFAULT_FILTERS, freeOnly: true } })).toBe('/?free=1')
+    expect(buildHref('/', { filters: { ...DEFAULT_FILTERS, pricedOnly: true } })).toBe('/?priced=1')
+    expect(
+      buildHref('/find', {
+        filters: { ...DEFAULT_FILTERS, openOn: { days: ['sat'], from: null } },
+      }),
+    ).toBe('/find?open=sat')
     expect(buildHref('/p/abc', {})).toBe('/p/abc')
   })
 })

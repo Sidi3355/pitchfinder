@@ -1,11 +1,11 @@
-// The front door: what PitchFinder is, how it works, and a quick start that
-// puts the first person on the map. Plain sections, real numbers from the
-// dataset, one primary action.
+// The front door: what PitchFinder is, one big way in, real numbers from the
+// dataset, and how it works. Bold, full-width and short; the tool is one tap
+// away.
 
 import React, { useState } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { AREAS } from '../data/areas.js'
-import { PITCH_TYPES } from '../data/types.js'
+import { BRANDS, brandOf } from '../data/types.js'
 import { resolveLocation } from '../lib/geocode-client.js'
 import { encodeGroup } from '../lib/url-state.js'
 import { formatDate } from '../lib/format.js'
@@ -14,48 +14,51 @@ import { Link } from './Link.jsx'
 
 const STEPS = [
   {
-    title: 'Everyone says where they are coming from',
-    body: 'Share one group link. Each person adds their own postcode or area, how they travel and what they need. Nothing needs an account.',
+    emoji: '🔗',
+    title: 'Make a group link',
+    body: 'One tap. Send it to the chat. No app to install, no accounts for your mates.',
   },
   {
-    title: 'Get a short list you can trust',
-    body: 'Every pitch in London ranked for the whole group: journey times routed door to door, prices from the operator, floodlights and surface from the map.',
+    emoji: '📍',
+    title: 'Everyone adds themselves',
+    body: 'Each person puts in where they are coming from, how they travel and what they need: budget, size, floodlights, days.',
   },
   {
-    title: 'Share one link, everyone says in or out',
-    body: 'The link unfurls in the chat with the pitch, day and time. Friends answer without signing up, and the organiser sees the count update.',
+    emoji: '🏆',
+    title: 'Get the pitches that work for everyone',
+    body: 'Goals, Powerleague and astro hire across London, ranked by journey time for the whole group, with prices and opening times from the operator.',
   },
 ]
 
 const FEATURES = [
   {
+    title: 'Prices you can plan around',
+    body: 'Per hour, per player, peak and off-peak, straight from the operator, with the date it was read. What is not published says so.',
+  },
+  {
+    title: 'Opening times, live',
+    body: 'Open now, opens at 9am, closed Sundays: each venue shows its week and whether it is open when you want to play.',
+  },
+  {
     title: 'Journey times for everyone',
-    body: 'Walking, cycling and driving are routed over real roads and tagged as routes. Anything estimated says so.',
+    body: 'Walking, cycling and driving routed over real roads. Anything estimated is labelled.',
   },
   {
-    title: 'Prices with a source',
-    body: 'Bookable venues show the operator’s published rate and where it was seen. When a venue prices at booking, we say that rather than guess.',
+    title: 'An invite that works on the night',
+    body: 'Kick-off, pitch, directions, who is in. Friends answer with a name and the count updates live.',
   },
   {
-    title: 'A game link that works on the night',
-    body: 'Nearest postcode, one-tap directions, a calendar file and a message ready to paste into the group chat.',
+    title: 'Preferences that add up',
+    body: 'Everyone says what they need. The group gets the tightest budget, the days everyone can do, and floodlights if anyone asked.',
   },
   {
-    title: 'Answers without accounts',
-    body: 'Guests say in, maybe or out with just a name. Their phone remembers them, and a moved kick-off asks everyone again.',
-  },
-  {
-    title: 'Filters that tell the truth',
-    body: 'Floodlit, free, bookable, budget per head, format: each option says how many pitches it leaves before you tap it.',
-  },
-  {
-    title: 'Open data, refreshed weekly',
-    body: 'Pitches come from OpenStreetMap and are rebuilt every week. Report a problem from any pitch page.',
+    title: 'Honest data, refreshed weekly',
+    body: 'Operators are read every week; the map comes from OpenStreetMap. Report a problem from any pitch page.',
   },
 ]
 
 function QuickStart() {
-  const { state, actions } = useStore()
+  const { state } = useStore()
   const [query, setQuery] = useState('')
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
@@ -117,22 +120,9 @@ function QuickStart() {
         <p className="hint dim">
           Add the rest of the group on the next screen.{' '}
           <Link href="/find">
-            Or browse all {state.data ? state.data.count.toLocaleString('en-GB') : ''} pitches
+            Or browse all {state.data ? state.data.count.toLocaleString('en-GB') : ''} places
           </Link>
           .
-        </p>
-      )}
-      {state.authAvailable && (
-        <p className="quick-start-group">
-          Organising for a group?{' '}
-          <button
-            type="button"
-            className="link-btn"
-            onClick={() => actions.createSharedGroup('Football').catch(() => {})}
-          >
-            Create a group link
-          </button>{' '}
-          and everyone adds themselves.
         </p>
       )}
     </form>
@@ -140,49 +130,73 @@ function QuickStart() {
 }
 
 export function Home() {
-  const { state } = useStore()
+  const { state, actions } = useStore()
   const data = state.data
   const priced = data ? data.pitches.filter((p) => p.pricePerHour > 0).length : null
-  const lit = data ? data.pitches.filter((p) => p.lit === true).length : null
+  const hours = data ? data.pitches.filter((p) => p.hours).length : null
+  const byBrand = data
+    ? data.pitches.reduce((acc, p) => {
+        const b = brandOf(p)
+        acc[b] = (acc[b] || 0) + 1
+        return acc
+      }, {})
+    : null
 
   return (
     <div className="home">
-      <section className="home-intro">
-        <div className="home-intro-copy">
-          <p className="empty-kicker">Football in London</p>
-          <h1>Pick a pitch the whole group can get to.</h1>
-          <p className="home-lead">
-            PitchFinder ranks every football pitch in London for your group, from wherever each
-            person starts, then gives you one link for the chat so everyone can say in or out.
-          </p>
-          <div className="home-actions">
-            <Link className="btn primary lg" href="/find">
-              Find a pitch
-            </Link>
-            <a className="btn ghost lg" href="#how">
-              How it works
-            </a>
-          </div>
+      <section className="hero">
+        <div className="hero-glow" aria-hidden="true">
+          <span className="blob b1" />
+          <span className="blob b2" />
+          <span className="blob b3" />
         </div>
-        <QuickStart />
+        <div className="hero-inner">
+          <p className="kicker hero-kicker">London 5-a-side, 7-a-side and astro hire</p>
+          <h1 className="hero-title">
+            Pick a pitch the <em>whole group</em> can get to.
+          </h1>
+          <p className="hero-lead">
+            One link. Everyone adds where they are coming from and what they need. PitchFinder ranks
+            Goals, Powerleague and astro pitches across London for all of you, with prices and
+            opening times from the operator.
+          </p>
+          <div className="hero-actions">
+            {state.authAvailable ? (
+              <button
+                className="btn primary xl"
+                onClick={() => actions.createSharedGroup('Football').catch(() => {})}
+              >
+                Create a group link
+              </button>
+            ) : (
+              <Link className="btn primary xl" href="/find">
+                Find a pitch
+              </Link>
+            )}
+            <Link className="btn ghost xl" href="/find">
+              Browse the map
+            </Link>
+          </div>
+          <QuickStart />
+        </div>
       </section>
 
       <section className="home-stats" aria-label="What is on the map">
         <div>
           <strong>{data ? data.count.toLocaleString('en-GB') : '…'}</strong>
-          <span>places to play</span>
-        </div>
-        <div>
-          <strong>{lit != null ? lit.toLocaleString('en-GB') : '…'}</strong>
-          <span>known to be floodlit</span>
+          <span>places to book</span>
         </div>
         <div>
           <strong>{priced != null ? priced : '…'}</strong>
-          <span>bookable venues with a published price</span>
+          <span>with a published price</span>
+        </div>
+        <div>
+          <strong>{hours != null ? hours : '…'}</strong>
+          <span>with opening times</span>
         </div>
         <div>
           <strong>{data?.generatedAt ? formatDate(data.generatedAt) : '…'}</strong>
-          <span>data last refreshed</span>
+          <span>last refreshed</span>
         </div>
       </section>
 
@@ -191,7 +205,10 @@ export function Home() {
         <ol className="home-steps">
           {STEPS.map((s, i) => (
             <li key={s.title}>
-              <span className="home-step-n">{i + 1}</span>
+              <span className="home-step-n" aria-hidden="true">
+                <span className="home-step-emoji">{s.emoji}</span>
+                {i + 1}
+              </span>
               <h3>{s.title}</h3>
               <p>{s.body}</p>
             </li>
@@ -200,19 +217,25 @@ export function Home() {
       </section>
 
       <section className="home-section" aria-labelledby="types-title">
-        <h2 id="types-title">Browse by type</h2>
+        <h2 id="types-title">Where to play</h2>
         <ul className="home-types">
-          {Object.entries(PITCH_TYPES).map(([key, t]) => (
+          {Object.entries(BRANDS).map(([key, b]) => (
             <li key={key}>
-              <Link href={`/find?t=${key}`} className="home-type">
+              <Link href={`/find?op=${key}`} className={`home-type brand-${key}`}>
                 <span className="home-type-head">
-                  <span className="type-dot" style={{ background: t.color }} />
-                  <strong>{t.label}</strong>
-                  {data?.byType?.[key] != null && (
-                    <span className="dim">{data.byType[key].toLocaleString('en-GB')}</span>
+                  <span className="brand-badge">{b.short}</span>
+                  <strong>{b.label}</strong>
+                  {byBrand?.[key] != null && (
+                    <span className="dim">{byBrand[key].toLocaleString('en-GB')}</span>
                   )}
                 </span>
-                <span className="home-type-blurb">{t.blurb}</span>
+                <span className="home-type-blurb">
+                  {key === 'goals'
+                    ? 'Floodlit 3G centres, 5 and 7-a-side, bookable by the hour.'
+                    : key === 'powerleague'
+                      ? 'Caged 5, 6 and 7-a-side pitches with changing rooms and a bar.'
+                      : 'Council and club astros, sports hubs and leisure centres you can hire.'}
+                </span>
               </Link>
             </li>
           ))}
@@ -234,10 +257,11 @@ export function Home() {
       <section className="home-section home-trust" aria-labelledby="trust-title">
         <h2 id="trust-title">Where the data comes from</h2>
         <p>
-          Pitch locations and facilities come from OpenStreetMap (© OpenStreetMap contributors,
-          ODbL). Postcodes come from postcodes.io, routes from OSRM, and prices from each
-          operator&rsquo;s own pages. Nothing is guessed: where a fact is not known, the page says
-          so. <Link href="/about">More about the data</Link>.
+          Prices, opening times and facilities are read from each operator&rsquo;s own pages every
+          week, with the date shown. Pitch locations come from OpenStreetMap (© OpenStreetMap
+          contributors, ODbL), postcodes from postcodes.io and routes from OSRM. Nothing is guessed:
+          where a fact is not known, the page says so.{' '}
+          <Link href="/about">More about the data</Link>.
         </p>
       </section>
     </div>

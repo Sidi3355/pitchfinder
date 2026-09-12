@@ -1,31 +1,34 @@
-// Pitch taxonomy. Colors are used for map markers and type indicators ,
-// muted, saturated tones chosen to stay legible on a light basemap.
+// Pitch taxonomy: what can be booked. Colours mark the map and the type
+// indicators; muted, saturated tones that stay legible on a light basemap.
 
 export const PITCH_TYPES = {
   commercial: {
-    label: 'Commercial centre',
-    short: 'Commercial',
+    label: 'Football centre',
+    short: 'Centre',
     color: '#1d4ed8',
-    blurb: 'Powerleague, Goals and similar. Caged, floodlit, bookable by the hour.',
+    blurb: 'Goals, Powerleague and the like: caged, floodlit, bookable by the hour.',
   },
   astro: {
-    label: 'Bookable astro',
+    label: 'Astro pitch',
     short: 'Astro',
     color: '#0f766e',
-    blurb: 'Artificial pitches at leisure centres, sports hubs and clubs.',
+    blurb: 'Artificial pitches at leisure centres, sports hubs and clubs, booked by the hour.',
   },
-  park: {
-    label: 'Park pitch',
-    short: 'Park',
-    color: '#15803d',
-    blurb: 'Grass pitches in parks and playing fields. Usually free.',
-  },
-  cage: {
-    label: 'Cage / MUGA',
-    short: 'Cage',
-    color: '#b45309',
-    blurb: 'Free caged courts and multi-use games areas for small-sided games.',
-  },
+}
+
+/** Operators, for the filter chips and the card badge. */
+export const BRANDS = {
+  goals: { label: 'Goals', short: 'Goals', color: '#e11d48' },
+  powerleague: { label: 'Powerleague', short: 'Powerleague', color: '#7c3aed' },
+  other: { label: 'Astro hire', short: 'Astro', color: '#0f766e' },
+}
+
+export function brandOf(pitch) {
+  if (pitch?.brand && BRANDS[pitch.brand]) return pitch.brand
+  const s = `${pitch?.operator || ''} ${pitch?.name || ''}`.toLowerCase()
+  if (/\bgoals\b/.test(s)) return 'goals'
+  if (/powerleague/.test(s)) return 'powerleague'
+  return 'other'
 }
 
 /** Display name for a pitch, with a sensible fallback for unnamed OSM pitches. */

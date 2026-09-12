@@ -3,23 +3,30 @@
 Pick a pitch for the group, on your phone, from where everyone is coming from. Live at
 https://pitchfinder-pied.vercel.app/
 
-PitchFinder maps every football pitch in Greater London that OpenStreetMap knows about, about
-1,600 places once pitches on the same ground are grouped, and ranks them for a group of people by
-journey time, price and facilities. One link carries the group, the filters and the chosen pitch.
-A game link lets everyone say in or out without an account.
+PitchFinder is for the places you can book: Goals and Powerleague centres and the astro pitches
+at leisure centres, sports hubs and clubs across Greater London, about 200 venues. Each shows
+its prices and opening times where the operator publishes them, and says so where it does not.
+One person makes a group link; everyone else adds where they are coming from and what they need
+(budget, size, floodlights, days), and the venues are ranked for the whole group by journey
+time, price and facilities. A game link lets everyone say in or out without an account.
 
 ## How it works
 
 **Data pipeline** (`scripts/build-data.mjs`, weekly in
 `.github/workflows/data-refresh.yml`). Overpass gives every `leisure=pitch` for football or
-multi-use in Greater London. Each pitch is classified (commercial centre, bookable astro, park
-pitch, cage), private and school grounds are excluded, pitches on the same site are collapsed
-into one venue, unnamed pitches are named after the park, playing field or road they sit on,
-postcodes.io gives the nearest postcode and Nominatim the road, and the curated list of bookable
-venues (`scripts/curated-venues.json`) is merged with any scraped prices. Every record carries
-its provenance (`source`, `sourceUrl`, `verifiedAt`). The build writes a compact
-`public/data/index.json`, one JSON file per pitch, and a prerendered HTML page per pitch at
-`/p/{id}` with Open Graph meta so a shared link unfurls.
+multi-use in Greater London. Each pitch is classified (football centre, astro, park pitch,
+cage), private and school grounds are excluded, pitches on the same site are collapsed into one
+venue, unnamed pitches are named after the park, playing field or road they sit on, postcodes.io
+gives the nearest postcode and Nominatim the road, and the curated list of bookable venues
+(`scripts/curated-venues.json`) is merged in. `scripts/fetch-venues.mjs` then reads the
+operators' own club pages with a headless browser (identified in its user agent, robots.txt
+honoured, one page every two seconds) and lays their facts on top: opening hours, every stated
+price with what it is for, facilities, address, each with the words that back it and the date
+it was read (`data/venues-live.json`, page text in `data/cache/pages/`). Only the bookable types
+(football centres and astro pitches) are written out. Every record carries its provenance
+(`source`, `sourceUrl`, `verifiedAt`). The build writes a compact `public/data/index.json`, one
+JSON file per pitch, and a prerendered HTML page per pitch at `/p/{id}` with Open Graph meta so
+a shared link unfurls.
 
 **Prices** (`scripts/scrape-prices.mjs`). A polite re-check of curated venues' public pages:
 identifies itself, honours robots.txt, one request every two seconds, page text cached in
@@ -32,8 +39,10 @@ that do not answer 200, curated facts nobody has verified. The refresh publishes
 `agent/DATA_QUALITY.md`.
 
 **Frontend** (Vite + React). `/` is the landing page, `/find` the finder, `/p/{id}` a pitch,
-`/g/{slug}` a game, plus About, Privacy and My games. In the finder the URL is the only state:
-group (`g=`), filters, selected pitch.
+`/group/{slug}` a shared group, `/g/{slug}` a game, plus About, Privacy and My games. The group
+and game pages are laid out like event pages: a cover with the name, host and link, then the
+body. In the finder the URL is the only state: group (`g=` or `grp=`), filters (operator, size,
+surface, needs, budget, journey, days and time of day), selected pitch.
 Ranking runs on straight-line estimates so the list is instant and gives plain-language reasons
 that are true by construction; there is no score on screen. Journey times on cards, pitch pages
 and game pages are then routed by OSRM (walking, cycling, driving) and tagged "route"; public
@@ -43,8 +52,12 @@ the bundle budget. Light and dark themes follow the system.
 
 **Groups, accounts and games** (Supabase). One person creates a group link (that needs a
 sign-in, by magic link or Google); everyone else opens it and adds where they are coming from,
-how they travel and what they need, with no account. The group page shows who is in and the best
-pitches for everyone, and the finder ranks for the shared group. Signed-in people also save
+how they travel and what they need, with no account: budget, floodlights, cover, changing rooms,
+parking, pitch size, surface, operator, longest journey, days and time of day. The group page
+collates them (a need stated by anyone is a must; the tightest budget and shortest journey
+apply; size, surface and operator apply when everyone who chose agrees; the days are the ones
+everyone can do), shows who is in and the best pitches for everyone, and the finder ranks for
+the shared group. Signed-in people also save
 pitches and create games. A game has an unguessable link at `/g/{slug}`;
 anyone with the link reads it through a security-definer function and answers as a guest with a
 name their phone remembers. Row Level Security keeps everything else private; the policies are
@@ -110,8 +123,12 @@ them uses the live project. The weekly refresh commits the dataset and Vercel re
 ## What it does not do
 
 - Public transport times are estimates unless a TfL key is configured.
-- Most bookable venues price at booking time; the app links to the booking page and says so.
+- Venues whose operator does not publish a price or opening times say so; the app links to the
+  booking page rather than guess.
+- Powerleague's site answers automated browsers with 403, so its facts come from the curated
+  baseline and are marked unverified until the operator can be read.
 - Live slot availability is not public API territory for the big operators.
+- Park pitches and cages are built but not shown: the product is about places you can book.
 
 ## Project history
 

@@ -20,6 +20,9 @@ import {
   mergeCurated,
   summarise,
   transform,
+  applyLive,
+  onlyBookable,
+  withHours,
 } from './lib/pipeline.mjs'
 import { keyFor, loadCache, reversePostcodes, reverseRoads, saveCache, UA } from './lib/geocode.mjs'
 
@@ -118,10 +121,32 @@ export function parksFromElements(elements, maxSpanKm = 4) {
   return parks
 }
 
+/**
+ * The operators' own pages on top, structured hours, and only what can be
+ * booked: football centres and astro pitches. Park pitches and cages are
+ * built and then left out; the product is about places with a price and a
+ * booking page.
+ */
+function finalise(out, live) {
+  return onlyBookable(applyLive(out, live, { areas: AREAS }).map(withHours))
+}
+
 async function main() {
   const curated = JSON.parse(readFileSync(join(ROOT, 'scripts/curated-venues.json'), 'utf8')).venues
   const pricesPath = join(ROOT, 'data/prices.json')
   const prices = existsSync(pricesPath) ? JSON.parse(readFileSync(pricesPath, 'utf8')) : {}
+  const livePath = join(ROOT, 'data/venues-live.json')
+  const live = existsSync(livePath) ? JSON.parse(readFileSync(livePath, 'utf8')) : null
+
+  // FROM_EXISTING=1 re-applies the operators' pages, hours and the bookable
+  // filter to the last dataset without OpenStreetMap or geocoding: for
+  // working on the merge offline. The weekly refresh always builds in full.
+  if (process.env.FROM_EXISTING) {
+    const existing = JSON.parse(readFileSync(OUT, 'utf8'))
+    const out = finalise(existing.pitches, live).sort((a, b) => a.id.localeCompare(b.id))
+    writeOutput(out, existing.generatedAt)
+    return
+  }
 
   let elements
   let parks
@@ -175,6 +200,7 @@ async function main() {
   }
 
   let out = mergeCurated(venues, curated, prices, { areas: AREAS })
+  out = finalise(out, live)
   for (const v of out) {
     if (v.curated && !v.postcode) {
       const pc = postcodeCache[keyFor(v.lat, v.lng)]
@@ -192,12 +218,15 @@ async function main() {
   out.sort((a, b) => a.id.localeCompare(b.id))
   const generatedAt = new Date().toISOString()
   for (const v of out) if (v.source === 'osm') v.verifiedAt = generatedAt.slice(0, 10)
+  writeOutput(out, generatedAt)
+}
 
+function writeOutput(out, generatedAt) {
   const { byType, byNameSource } = summarise(out)
   const payload = {
     schemaVersion: 2,
     generatedAt,
-    source: 'OpenStreetMap (Overpass API) + curated venue list',
+    source: "OpenStreetMap (Overpass API) + the operators' own pages + curated venue list",
     attribution: '© OpenStreetMap contributors (ODbL)',
     sources: {
       osm: {
@@ -214,6 +243,10 @@ async function main() {
       curated: {
         name: 'PitchFinder curated venue list',
         url: 'https://github.com/Sidi3355/pitchfinder/blob/main/scripts/curated-venues.json',
+      },
+      operators: {
+        name: "The operators' own club pages (Goals, Powerleague)",
+        url: 'https://github.com/Sidi3355/pitchfinder/blob/main/scripts/fetch-venues.mjs',
       },
     },
     count: out.length,

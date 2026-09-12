@@ -3,8 +3,9 @@
 // else (deposits, memberships, per-person fees, offers) is discarded rather
 // than guessed at.
 
-const PER_HOUR_RE = /\b(per|an|a|each)\s*(hour|hr)\b|\/\s*(hour|hr)\b|\bhourly\b|\bp\/h\b|\bph\b/i
-const PER_SESSION_RE =
+export const PER_HOUR_RE =
+  /\b(per|an|a|each)\s*(hour|hr)\b|\/\s*(hour|hr)\b|\bhourly\b|\bp\/h\b|\bph\b/i
+export const PER_SESSION_RE =
   /\b(per|a|each)\s*(session|game|match|booking|slot|block)\b|\/\s*(session|game|match)\b/i
 const PER_PERSON_RE =
   /\bper\s*(person|player|head)\b|\bpp\b|\beach\s+player\b|\bmembership\b|\bdeposit\b|\bvoucher\b/i

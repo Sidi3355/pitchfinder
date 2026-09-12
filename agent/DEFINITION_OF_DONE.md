@@ -39,6 +39,15 @@ script that measures it. "Refined" notes come from the codebase read.
 
 ## Quality
 
+- [x] **D7** (added 12 Sep, user-directed) The dataset holds only what can be booked: football
+      centres (Goals, Powerleague) and astro pitches. Every venue shows its prices (each stated
+      price with what it is for, per hour, per player, peak and off-peak, with the source and the
+      date read) and its opening times (the week, open or closed now) where the operator or
+      OpenStreetMap publishes them, and says "not published online" with the booking page where
+      not. Operator facts come from the operators' own pages read by a headless browser that
+      identifies itself and honours robots.txt; a site that answers 403 is left alone and its
+      baseline facts stay marked unverified. Unit tests cover the merge, the hours parsers and
+      the extractor; e2e asserts the price and hours blocks on the pitch page.
 - [ ] **Q1** Lighthouse mobile on `/` and `/p/{id}`: Performance >= 85, Accessibility >= 95,
       Best Practices >= 95, SEO >= 90. `scripts/lighthouse.mjs`. Status: every score holds on
       the pitch route (98 to 100) and every non-performance score holds on `/` (100 / 100 / 100).

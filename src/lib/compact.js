@@ -24,6 +24,15 @@ export const INDEX_FIELDS = [
   'changingRooms',
   'curated',
   'pitchCount',
+  'operator',
+  'brand',
+  'hours',
+  'hoursSource',
+  'prices',
+  'priceSource',
+  'parking',
+  'covered',
+  'showers',
 ]
 
 export function compactPitch(pitch) {
