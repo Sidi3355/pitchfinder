@@ -324,8 +324,11 @@ Pitchbooking under any name searched and keeps its hours only; Powerleague Wembl
 Canary Wharf have no Playfinder page and keep the unverified baseline. The refresh wrote
 274 venues: 12 Goals clubs and 15 Powerleague clubs with a week of real prices by pitch size,
 59 venues added from Playfinder (nine of them Powerleague clubs the map lacked), 84 astros
-with an hours table, and no astro with a slot price yet: that needs a Bookteq reader, which
-is the next thing to build. Kept.
+with an hours table, and no astro with a slot price yet. A probe of the Bookteq widget those
+astros sell through showed a week of availability cells (closed, unavailable, available,
+fully booked) and no price at all until the booking flow itself, one facility at a time; a
+reader would have to pick a facility, find an available cell and open the basket for each
+venue, which is the next thing to build, not this iteration. Kept.
 
 ## Iteration 11: the UI, redone with the 21st.dev connector (12 Sep 2026, user-directed)
 

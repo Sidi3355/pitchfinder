@@ -3720,3 +3720,12 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Phones get the hero without the framed screenshot: the lazy image sat just
+   below the fold there, loaded on a slow connection and took the largest
+   paint with it. The screenshot is for the wide view. */
+@media (max-width: 700px) {
+  .hero-mockup {
+    display: none;
+  }
+}
