@@ -33,7 +33,7 @@ const STEPS = [
 const FEATURES = [
   {
     title: 'Prices you can plan around',
-    body: 'Per hour, per player, peak and off-peak, straight from the operator, with the date it was read. What is not published says so.',
+    body: 'The slots on sale, by pitch size, days and kick-off time, read from the booking calendars with the date. What is not published says so.',
   },
   {
     title: 'Opening times, live',
@@ -53,7 +53,7 @@ const FEATURES = [
   },
   {
     title: 'Honest data, refreshed weekly',
-    body: 'Operators are read every week; the map comes from OpenStreetMap. Report a problem from any pitch page.',
+    body: 'Booking calendars and operators are read every week; the map comes from OpenStreetMap. Report a problem from any pitch page.',
   },
 ]
 
@@ -273,11 +273,12 @@ export function Home() {
       <section className="home-section home-trust" aria-labelledby="trust-title">
         <h2 id="trust-title">Where the data comes from</h2>
         <p>
-          Prices, opening times and facilities are read from each operator&rsquo;s own pages every
-          week, with the date shown. Pitch locations come from OpenStreetMap (© OpenStreetMap
-          contributors, ODbL), postcodes from postcodes.io and routes from OSRM. Nothing is guessed:
-          where a fact is not known, the page says so.{' '}
-          <Link href="/about">More about the data</Link>.
+          Prices are read from the booking calendars every week (Goals&rsquo; own booking site and
+          Playfinder), by pitch size and kick-off time, with the date shown; opening times and
+          facilities from the operator&rsquo;s own page or the booking site&rsquo;s listing. Pitch
+          locations come from OpenStreetMap (© OpenStreetMap contributors, ODbL), postcodes from
+          postcodes.io and routes from OSRM. Nothing is guessed: where a fact is not known, the page
+          says so. <Link href="/about">More about the data</Link>.
         </p>
       </section>
     </div>

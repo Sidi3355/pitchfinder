@@ -124,8 +124,10 @@ Rebuild the dataset (needs open internet; the sandbox this was built in did not 
 data steps run as the `data-refresh` workflow on demand):
 
 ```bash
-node scripts/scrape-prices.mjs        # optional, best-effort
-node scripts/build-data.mjs           # writes public/data/, data/cache/
+node scripts/fetch-venues.mjs         # the operators' club pages (browser; --offline re-reads the cache)
+node scripts/fetch-slots.mjs          # the booking calendars (browser; --offline, --force, SLOTS_MAX_PAGES)
+node scripts/scrape-prices.mjs        # optional fallback re-check of curated pages
+node scripts/build-data.mjs           # writes public/data/, data/cache/ (FROM_EXISTING=1 re-merges offline)
 node scripts/audit-data.mjs --write   # writes agent/DATA_QUALITY.md
 ```
 

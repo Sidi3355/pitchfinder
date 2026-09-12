@@ -41,8 +41,20 @@ export function About() {
         {data?.generatedAt ? `, last on ${formatDate(data.generatedAt)}` : ''}. Pitches with no name
         on the map are named after the park, playing field or road they sit on; each pitch page says
         when that is the case. Nearest postcodes come from postcodes.io and road names from
-        Nominatim. Bookable venues carry the operator&rsquo;s published price with a link to where
-        it was seen; when a venue sets prices at booking we say so rather than guess.
+        Nominatim.
+      </p>
+      <p>
+        Prices are read from the booking calendars every week: Goals&rsquo; own booking site
+        (Pitchbooking) for Goals, and{' '}
+        <a href="https://www.playfinder.com/" target="_blank" rel="noopener noreferrer">
+          Playfinder
+        </a>
+        , which sells the pitches, for Powerleague and the council, club and leisure-centre astros.
+        Each price says the pitch size, the days and kick-off times it was seen on, the slot length,
+        where it was read, when, and from how many slots. Opening times come from the
+        operator&rsquo;s own page where it has one, otherwise from the booking site&rsquo;s listing,
+        and say which. Powerleague&rsquo;s own site does not answer automated readers, so its facts
+        come from Playfinder and say so. When a venue publishes nothing we say so rather than guess.
       </p>
       <p>
         Walking, cycling and driving times on the cards and pitch pages are routed by OSRM over
