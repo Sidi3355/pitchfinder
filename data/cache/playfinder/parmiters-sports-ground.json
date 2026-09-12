@@ -1,0 +1,50 @@
+{
+ "url": "https://www.playfinder.com/london/venue/parmiters-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/parmiters-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:25:48.999Z",
+ "title": "Parmiters Sports Ground, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nParmiters Sports Ground\nFootballCricket\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 102a, Nelson Road, Chingford, E4 9AS\n\nPrices\n\nWeekday £90.00\n\nWeekend £115.00\n\nBlock Booking £503.00 - £750.00\n\nPrice varies depending on day.\n\nPublic Transport\n\n Highams Park\n\nOpening Hours\n\nWinter opening hours: 09:00 - 16:00 / Summer opening hours: 09:00 - 20:00\n\nDescription\n\nBook the 11-a-side football pitch at Parmiters Sports Ground if you're looking for an excellent pitch and live or work in East London. This venue has sensational footballing facilities, so whether you like to play 11-a-side football casually or you're part of a team or league, Parmiters Sports Ground is ideal for you. Everyone has their favourite surface for playing 11-a-side football on and this pitch is grass.\n\nThose driving are able to park free of charge on the street but please be aware of the local restrictions. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Parmiters Sports Ground. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you with any booking questions you may have. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe closest station when travelling is Highams Park. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitches\n11 a side | Grass5 a side | Grass9 a side | Grass\nFacilities\n changing rooms free parking\n Address\n\nParmiters Sports Ground\n102a\nNelson Road\nE4 9AS\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\nMAKE A BLOCK BOOKING\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 20.3 miles away\n\nBull Lane Playing Fields\nLondon\n\n 2.8 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 3.1 miles away\n\nNorth Acton Playing Fields\nActon\n\n 12.7 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 12.9 miles away\n\n",
+ "name": "Parmiters Sports Ground",
+ "area": "Waltham Forest",
+ "address": "102a, Nelson Road, Chingford, E4 9AS",
+ "postcode": "E4 9AS",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/parmiters-sports-ground/football-11-a-side-37583",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/parmiters-sports-ground/football-5-a-side-37585",
+   "label": "5 a side | Grass",
+   "format": 5,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/parmiters-sports-ground/football-9-a-side-38891",
+   "label": "9 a side | Grass",
+   "format": 9,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Weekday £90.00",
+ "skipped": "no artificial football pitch"
+}

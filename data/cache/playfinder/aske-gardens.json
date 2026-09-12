@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/aske-gardens",
+ "finalUrl": "https://www.playfinder.com/london/venue/aske-gardens",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:59:42.986Z",
+ "title": "Aske Gardens, Hackney | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAske Gardens Non-Partner \nTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Pitfield Street, Hackney, London, N1 6BY\n\nPrices\n\nPublic Transport\n\n Old Street - Hoxton\n\nOpening Hours\nMonday\t08:00-18:00\nTuesday\t08:00-18:00\nWednesday\t08:00-18:00\nThursday\t08:00-18:00\nFriday\t08:00-18:00\nSaturday\t08:00-18:00\nSunday\t08:00-18:00\n Tennis Court\nOutdoor | Hard (macadam)\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 14 miles away\n\nLong Road Sports Ground\nCambridge\n\n 45.9 miles away\n\nBeaumont School\nHertfordshire\n\n 18.1 miles away\n\nBolder Academy\nLondon\n\n 10.9 miles away\n\nStanley Primary School\nLondon\n\n 13 miles away\n\n",
+ "name": "Aske Gardens",
+ "area": "Hackney",
+ "address": "Pitfield Street, Hackney, London, N1 6BY",
+ "postcode": "N1 6BY",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00-18:00",
+  "Tuesday 08:00-18:00",
+  "Wednesday 08:00-18:00",
+  "Thursday 08:00-18:00",
+  "Friday 08:00-18:00",
+  "Saturday 08:00-18:00",
+  "Sunday 08:00-18:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,103 @@
+{
+ "url": "https://www.playfinder.com/london/venue/city-of-london-academy-southwark",
+ "finalUrl": "https://www.playfinder.com/london/venue/city-of-london-academy-southwark",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:43:26.552Z",
+ "title": "City of London Academy Southwark, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCity of London Academy Southwark\nFootballSpace HireBasketballNetball\n Book Online at City of London Academy Southwark\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 240 Lynton Road, Greater London, London, SE1 5LA\n\nPrices\n\nPublic Transport\n\n Bermondsey\n\nOpening Hours\nMonday\t17:00 - 23:00\nTuesday\t17:00 - 23:00\nWednesday\t17:00 - 23:00\nThursday\t17:00 - 23:00\nFriday\t17:00 - 23:00\nSaturday\t9:00 - 22:00\nSunday\t9:00 - 22:00\nDescription\n\nPlay on a high-quality 3G full-size pitch suitable for 11-a-side football at City of London Academy Southwark, located in the heart of Southwark, London. The pitch features a modern artificial surface designed for consistent play in all weather conditions, making it ideal for matches, training sessions, and league fixtures.\n\nThe venue is easily accessible by public transport, with Bermondsey Underground Station just a short walk away, offering excellent links across London. Local amenities and secure surroundings make this a convenient and reliable choice for teams of all levels.\n\nPerfect for competitive fixtures, casual games, and organised football events, the pitch is available for both single and repeat bookings.\n\n Football Pitches\nPitch | 3G Astroturf7 a side | 3G Astroturf5 a side | Indoor\nFacilities\n free parking\n Address\n\nCity of London Academy Southwark\n240 Lynton Road\nGreater London\nSE1 5LA\n\n\nVIEW ON MAP\n Nearby Football Pitches\nThe Broxbourne School\nBroxbourne\n\n 17.5 miles away\n\nThe Broxbourne School\nBroxbourne\n\n 17.5 miles away\n\nWinston Sports Centre\nWoking\n\n 26.2 miles away\n\nThe Mill Primary Academy\nCrawley\n\n 26.5 miles away\n\nLea Manor Recreation Centre 3G Pitch\nLuton\n\n 34.1 miles away\n\n",
+ "name": "City of London Academy Southwark",
+ "area": "Southwark",
+ "address": "240 Lynton Road, Greater London, London, SE1 5LA",
+ "postcode": "SE1 5LA",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "23:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "23:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "23:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "23:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "23:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 23:00",
+  "Tuesday 17:00 - 23:00",
+  "Wednesday 17:00 - 23:00",
+  "Thursday 17:00 - 23:00",
+  "Friday 17:00 - 23:00",
+  "Saturday 9:00 - 22:00",
+  "Sunday 9:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/city-of-london-academy-southwark/football-pitch-93571",
+   "label": "Pitch | 3G Astroturf",
+   "format": null,
+   "surface": "3g"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/city-of-london-academy-southwark/football-7-a-side-93572",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/city-of-london-academy-southwark/football-5-a-side-93578",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

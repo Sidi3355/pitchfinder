@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/leyton-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/leyton-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:25:43.900Z",
+ "title": "Leyton Sports Ground, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nLeyton Sports Ground\nSpace HireCricketFootballGym\n Book Online at Leyton Sports Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Crawley Road, Leyton, London, E10 6PY\n\nPrices\n\n£50/hr\n\nPublic Transport\n\n Leyton Midland Road\n\nOpening Hours\nMonday\t09:00 - 21:00\nTuesday\t09:00 - 21:00\nWednesday\t09:00 - 21:00\nThursday\t09:00 - 21:00\nFriday\t09:00 - 21:00\nSaturday\t09:00 - 21:00\nSunday\t09:00 - 21:00\nDescription\n\nThe Club Room is an ideal space for functions, meetings, conferences & training workshops which is located at Leyton Cricket Hub set within the grounds of the iconic Leyton Sports Ground (Formally Leyton County Cricket Ground). Fully equipped with 2 large magnetic whiteboards and a 75” Smart 4K TV with built in Apple TV for easy connectivity.103sqm with a max capacity of 77. Event catering is also available subject to additional costs. Wifi & Limited parking is also available at Leyton Cricket Hub.\n\nIf you’re driving then it is worth noting that there are not any free parking spaces provided by the venue. There are spaces available to park your car but these are pay and display areas and are monitored.\n\nLooking to set up regular meetings at Leyton Sports Ground? Enquire about making a block booking to ensure you secure the time slot you want to use the facility every week. Block bookings are perfect for those who want to be assured that they'll be using the facility regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Leyton Midland Road. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Space Hire\nClubhouseMulti purpose roomStudio | Dance studio\n Address\n\nLeyton Sports Ground\nCrawley Road\nLeyton\nE10 6PY\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n",
+ "name": "Leyton Sports Ground",
+ "area": "Waltham Forest",
+ "address": "Crawley Road, Leyton, London, E10 6PY",
+ "postcode": "E10 6PY",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 21:00",
+  "Tuesday 09:00 - 21:00",
+  "Wednesday 09:00 - 21:00",
+  "Thursday 09:00 - 21:00",
+  "Friday 09:00 - 21:00",
+  "Saturday 09:00 - 21:00",
+  "Sunday 09:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/leyton-sports-ground/football-11-a-side-37578",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "£50/hr",
+ "skipped": "no artificial football pitch"
+}

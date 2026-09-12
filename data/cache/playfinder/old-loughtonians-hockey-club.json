@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/old-loughtonians-hockey-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/old-loughtonians-hockey-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:19:56.494Z",
+ "title": "Old Loughtonians Hockey Club, Redbridge | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nOld Loughtonians Hockey Club Non-Partner \nHockeySpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Roding Sports Centre, Luxborough Lane, Chigwell, IG7 5AB\n\nPrices\n\nPublic Transport\n\n Chigwell\n\nOpening Hours\nMonday\t08:00 - 22:00\nTuesday\t08:00 - 22:00\nWednesday\t08:00 - 22:00\nThursday\t08:00 - 22:00\nFriday\t08:00 - 22:00\nSaturday\t08:00 - 00:00\nSunday\t08:00 - 00:00\nDescription\n\n** Green Pitch **\n\n Hockey Pitches\nPitch | Water-based AstroturfPitch | Water-based AstroturfPitch | Sand-based Astroturf\nFacilities\n floodlights\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nWatlington MUGA\nWatlington\n\n 45.7 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 5.2 miles away\n\nKings International College\nCamberley\n\n 40.4 miles away\n\nHaberdashers' Hatcham College - Jerningham Site\nLondon\n\n 10.8 miles away\n\n",
+ "name": "Old Loughtonians Hockey Club",
+ "area": "Redbridge",
+ "address": "Roding Sports Centre, Luxborough Lane, Chigwell, IG7 5AB",
+ "postcode": "IG7 5AB",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "00:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "00:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00 - 22:00",
+  "Tuesday 08:00 - 22:00",
+  "Wednesday 08:00 - 22:00",
+  "Thursday 08:00 - 22:00",
+  "Friday 08:00 - 22:00",
+  "Saturday 08:00 - 00:00",
+  "Sunday 08:00 - 00:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

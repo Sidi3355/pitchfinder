@@ -1,0 +1,95 @@
+{
+ "url": "https://www.playfinder.com/london/venue/oasis-academy-arena",
+ "finalUrl": "https://www.playfinder.com/london/venue/oasis-academy-arena",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:26:14.596Z",
+ "title": "Oasis Academy Arena, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nOasis Academy Arena Non-Partner \nFootballBasketballNetballTennisCricket\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Albert Road, Croydon, London, SE25 4QL\n\nPrices\n\n1 Hour £50.00\n\nPay as you play\n\nBlock Booking (10 weeks) £450.00\n\nPublic Transport\n\n Elmers End\n\nOpening Hours\nMonday\t17:00 - 22:00\nTuesday\t17:00 - 22:00\nWednesday\t17:00 - 22:00\nThursday\t17:00 - 22:00\nFriday\t17:00 - 22:00\nSaturday\t09:00 - 15:00\nSunday\t09:00 - 15:00\nDescription\n\nLooking to hire a 5-a-side football pitch in south London? Oasis Academy Arena has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Oasis Academy Arena is played on indoor. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Oasis Academy Arena is the right choice for you.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Oasis Academy Arena? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe venue is situated near Elmers End station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n5 a side | Indoor5 a side | Concrete\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 6.6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 9.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 11.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 11.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 11.6 miles away\n\n",
+ "name": "Oasis Academy Arena",
+ "area": "Croydon",
+ "address": "Albert Road, Croydon, London, SE25 4QL",
+ "postcode": "SE25 4QL",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 22:00",
+  "Tuesday 17:00 - 22:00",
+  "Wednesday 17:00 - 22:00",
+  "Thursday 17:00 - 22:00",
+  "Friday 17:00 - 22:00",
+  "Saturday 09:00 - 15:00",
+  "Sunday 09:00 - 15:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/oasis-academy-arena/football-5-a-side-37709",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/oasis-academy-arena/football-5-a-side-37710",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "1 Hour £50.00",
+ "skipped": "no artificial football pitch"
+}

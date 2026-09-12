@@ -1,0 +1,39 @@
+{
+ "url": "https://www.playfinder.com/london/venue/brunswick-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/brunswick-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:14:24.892Z",
+ "title": "Brunswick Park, Barnet, Barnet | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBrunswick Park, Barnet Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Brunswick Park Road, New Southgate, Barnet, N11 1JJ\n\nPrices\n\n£96.50 / 90 mins\n\nPublic Transport\n\n New Southgate\n\nOpening Hours\n\n8am - Dusk\n\nDescription\n\nLocated close to New Southgate tube station, Brunswick Park offers both 5-a-side and 11-a-side football.\n\n Football Pitch\n11 a side | Grass\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 18.6 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 17.9 miles away\n\nBeaumont School\nHertfordshire\n\n 11.5 miles away\n\nBull Lane Playing Fields\nLondon\n\n 2.9 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 6.6 miles away\n\n",
+ "name": "Brunswick Park, Barnet",
+ "area": "Barnet, Barnet",
+ "address": "Brunswick Park Road, New Southgate, Barnet, N11 1JJ",
+ "postcode": "N11 1JJ",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5,
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/brunswick-park/football-11-a-side-33833",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "£96.50 / 90 mins",
+ "skipped": "no artificial football pitch"
+}

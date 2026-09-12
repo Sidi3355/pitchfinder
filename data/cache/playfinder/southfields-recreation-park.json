@@ -1,0 +1,65 @@
+{
+ "url": "https://www.playfinder.com/london/venue/southfields-recreation-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/southfields-recreation-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:05:02.519Z",
+ "title": "Southfield Road Playing Fields, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSouthfield Road Playing Fields\nFootball\n Book Online at Southfield Road Playing Fields\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 68 Mansell Road, London, London, W3 7QH\n\nPrices\n\nPlease enquire for price\n\nPublic Transport\n\n Acton Central\n\nOpening Hours\nMonday\tClosed\nTuesday\tClosed\nWednesday\tClosed\nThursday\tClosed\nFriday\tClosed\nSaturday\t10:30 - 16:30\nSunday\t10:30 - 16:30\nDescription\n\nNeed an 11-a-side football pitch in West London? Southfield Road Playing Fields boasts a spectacular 11-a-side grass football pitch which is available for footballers looking for a one-off game or a regular block booking. It is a full size pitch that is available to book for one-off training sessions or a season long league. Check with the facility about hiring officials and other equipment.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Southfield Road Playing Fields? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe closest station when travelling is Acton Central. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitches\n11 a side | Grass9 a side | Grass\nFacilities\n changing rooms\n Address\n\nSouthfield Road Playing Fields\n68 Mansell Road\nLondon\nW3 7QH\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 9.7 miles away\n\nNorth Acton Playing Fields\nActon\n\n 1.2 miles away\n\nElthorne Waterside Pitches\nLondon\n\n 3 miles away\n\nBull Lane Playing Fields\nLondon\n\n 10.8 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 11.1 miles away\n\n",
+ "name": "Southfield Road Playing Fields",
+ "area": "Ealing",
+ "address": "68 Mansell Road, London, London, W3 7QH",
+ "postcode": "W3 7QH",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "10:30",
+    "16:30"
+   ]
+  ],
+  "sun": [
+   [
+    "10:30",
+    "16:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Saturday 10:30 - 16:30",
+  "Sunday 10:30 - 16:30"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/southfields-recreation-park/football-11-a-side-41826",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/southfields-recreation-park/football-9-a-side-41827",
+   "label": "9 a side | Grass",
+   "format": 9,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please enquire for price",
+ "skipped": "no artificial football pitch"
+}

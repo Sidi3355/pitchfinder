@@ -1,0 +1,81 @@
+{
+ "url": "https://www.playfinder.com/london/venue/north-greenwich-astroturf",
+ "finalUrl": "https://www.playfinder.com/london/venue/north-greenwich-astroturf",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:29:58.903Z",
+ "title": "North Greenwich Astroturf, Greenwich | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nNorth Greenwich Astroturf Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Millennium Primary School, 50 John Harrison Way, London, SE10 0BG\n\nPrices\n\nPublic Transport\n\n North Greenwich\n\nOpening Hours\nMonday\t18:00-21:00\nTuesday\t-\nWednesday\t18:00-21:00\nThursday\t18:00-21:00\nFriday\t-\nSaturday\t-\nSunday\t-\nDescription\n\nNorth Greenwich Astroturf is located in East London and boasts an incredible 5-a-side astroturf pitch. Not many 5-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 5-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at North Greenwich Astroturf? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe venue is situated near North Greenwich station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n5 a side | Astroturf7 a side | Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 5.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 8 miles away\n\nMallinson Sports Centre\nHighgate\n\n 9.2 miles away\n\n",
+ "name": "North Greenwich Astroturf",
+ "area": "Greenwich",
+ "address": "Millennium Primary School, 50 John Harrison Way, London, SE10 0BG",
+ "postcode": "SE10 0BG",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "fri": [],
+  "sat": [],
+  "sun": []
+ },
+ "hoursQuotes": [
+  "Monday 18:00-21:00",
+  "Tuesday - Wednesday 18:00-21:00",
+  "Thursday 18:00-21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/north-greenwich-astroturf/football-5-a-side-40075",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/north-greenwich-astroturf/football-7-a-side-40076",
+   "label": "7 a side | Astroturf",
+   "format": 7,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

@@ -1,0 +1,36 @@
+{
+ "url": "https://www.playfinder.com/london/venue/ashmole-academy",
+ "finalUrl": "https://www.playfinder.com/london/venue/ashmole-academy",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:43:55.783Z",
+ "title": "Ashmole Academy, Enfield | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAshmole Academy\nSpace HireFootball\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Cecil Road, Greater London, London, N14 5RJ\n\nPrices\n\nPublic Transport\n\n Southgate Station\n\nOpening Hours\n\n8:00 - 22:00 Daily\n\nDescription\n\nThe classrooms at Ashmole Academy are available to hire for a wide range of educational, professional, and community activities. Conveniently located in London, these well-equipped learning spaces are ideal for tutoring, training courses, workshops, meetings, revision sessions, language classes, and after-school clubs.\n\nDesigned to provide a comfortable and productive environment, the classrooms are suitable for both small and larger groups and can accommodate regular bookings as well as one-off sessions.\n\nWhether you're delivering educational programmes, hosting professional training, or running a community group, Ashmole Academy's classrooms offer a practical, affordable, and accessible venue in North London.\n\n Space Hire\nClassroomMain hallDrama studioMuga | ConcreteSports hall\nFacilities\n free parking\n Address\n\nAshmole Academy\nCecil Road\nGreater London\nN14 5RJ\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Space Hire\nWallington County Grammar School\nWallington\n\n 18 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 18.6 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 18.6 miles away\n\nStanley Primary School\nLondon\n\n 16.3 miles away\n\nClarion\nBarnet\n\n 5.3 miles away\n\n",
+ "name": "Ashmole Academy",
+ "area": "Enfield",
+ "address": "Cecil Road, Greater London, London, N14 5RJ",
+ "postcode": "N14 5RJ",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/ashmole-academy/football-pitch-93717",
+   "label": "football",
+   "format": null,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

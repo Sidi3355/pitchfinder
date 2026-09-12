@@ -1,0 +1,44 @@
+{
+ "url": "https://www.playfinder.com/london/venue/leyton-jubilee-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/leyton-jubilee-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:00:10.594Z",
+ "title": "Leyton Jubilee Park, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nLeyton Jubilee Park\nFootball\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 150 Seymour Road, Leyton, London, E10 7ND\n\nPrices\n\nPublic Transport\n\n Leyton Station\n\nOpening Hours\n\nSummer: 9:00 - 17:00 / Winter: 8:00 - 16:00\n\nDescription\n\nLeyton Jubilee Park in East London, boasts an amazing 11-a-side grass pitch. The staff at Leyton Jubilee Park really care for and maintain this pitch to a high standard. This venue is also the perfect place for an 11-a-side league in East London as matches would be played on grass. So whether you're an experienced 11-a-side team or you're just getting into the game, this facility is definitely worth checking out. Footballs and other equipment might be supplied by the facility for a small fee but we advise that you call the facility after your booking has been confirmed to check before your arrival.\n\nIf public transport isn't your thing, then parking facilities are available where a pay and display system is operated. The specific prices may vary depending on the time of day, so if you'd like to know this information then please contact the venue.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nLooking to set up regular games at Leyton Jubilee Park? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nIf you're looking to travel using public transport, then the nearest station is Highams Park. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n11 a side | Grass9 a side | Grass\n Address\n\nLeyton Jubilee Park\n150 Seymour Road\nLeyton\nE10 7ND\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\nMAKE A BLOCK BOOKING\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 17.5 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 0.2 miles away\n\nBeaumont School\nHertfordshire\n\n 17.7 miles away\n\nBull Lane Playing Fields\nLondon\n\n 3.9 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 11 miles away\n\n",
+ "name": "Leyton Jubilee Park",
+ "area": "Waltham Forest",
+ "address": "150 Seymour Road, Leyton, London, E10 7ND",
+ "postcode": "E10 7ND",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/leyton-jubilee-park/football-11-a-side-39332",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/leyton-jubilee-park/football-9-a-side-39334",
+   "label": "9 a side | Grass",
+   "format": 9,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/ashburnham-community-primary-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/ashburnham-community-primary-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:31:59.622Z",
+ "title": "Ashburnham Community Primary School, Kensington and Chelsea | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAshburnham Community Primary School Non-Partner \nFootballNetball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 17 Blantyre Street, Chelsea, London, SW10 0DT\n\nPrices\n\n£45/hr\n\nPublic Transport\n\n Imperial Wharf (Overground)\n\nOpening Hours\nMonday\t17:30 - 20:30\nTuesday\t17:30 - 20:30\nWednesday\t17:30 - 20:30\nThursday\t17:30 - 20:30\nFriday\t17:30 - 20:30\nSaturday\t10:00 - 16:00\nSunday\t10:00 - 16:00\nDescription\n\n**Please note that 2 weeks notice is required for a booking to be rescheduled. No refunds are provided.**\n\n5-a-side football can be played at Ashburnham Community Primary School. It is one of the finest sports facilities in Central London and it is the place to be if you’re looking for a 5-a-side football pitch. One of the best activities that sports fans are able to enjoy here is 5-a-side football on the immaculate astroturf surface. Five-a-side football remains one of the most prevalent sporting activities in London and the staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Ashburnham Community Primary School? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Imperial Wharf (Overground) station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitch\n5 a side | Astroturf\nFacilities\n floodlights free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 2.9 miles away\n\nMallinson Sports Centre\nHighgate\n\n 6.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 9.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 15.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 15.9 miles away\n\n",
+ "name": "Ashburnham Community Primary School",
+ "area": "Kensington and Chelsea",
+ "address": "17 Blantyre Street, Chelsea, London, SW10 0DT",
+ "postcode": "SW10 0DT",
+ "hours": {
+  "mon": [
+   [
+    "17:30",
+    "20:30"
+   ]
+  ],
+  "tue": [
+   [
+    "17:30",
+    "20:30"
+   ]
+  ],
+  "wed": [
+   [
+    "17:30",
+    "20:30"
+   ]
+  ],
+  "thu": [
+   [
+    "17:30",
+    "20:30"
+   ]
+  ],
+  "fri": [
+   [
+    "17:30",
+    "20:30"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "16:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:30 - 20:30",
+  "Tuesday 17:30 - 20:30",
+  "Wednesday 17:30 - 20:30",
+  "Thursday 17:30 - 20:30",
+  "Friday 17:30 - 20:30",
+  "Saturday 10:00 - 16:00",
+  "Sunday 10:00 - 16:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/ashburnham-community-primary-school/football-5-a-side-41755",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "£45/hr"
+}

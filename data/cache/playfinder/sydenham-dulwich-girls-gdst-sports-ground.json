@@ -1,0 +1,101 @@
+{
+ "url": "https://www.playfinder.com/london/venue/sydenham-dulwich-girls-gdst-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/sydenham-dulwich-girls-gdst-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:44:21.120Z",
+ "title": "Sydenham & Dulwich Girls GDST Sports Ground, Bromley | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSydenham & Dulwich Girls GDST Sports Ground\nFootballCricketNetball\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Worsley Bridge Road, Greater London, Beckenham, BR3 1RL\n\nPrices\n\nPublic Transport\n\n Lower Sydenham Station\n\nOpening Hours\nMonday\t18:00 - 19:30\nTuesday\t18:00 - 19:30\nWednesday\t18:00 - 19:30\nThursday\t18:00 - 19:30\nFriday\t18:00 - 19:30\nSaturday\t9:00 - 18:00\nSunday\t9:00 - 18:00\nDescription\n\nThe 11-a-side grass football pitch at Sydenham & Dulwich Girls GDST Sports Ground in Beckenham, Greater London, is available to hire for football clubs, teams, schools, leagues and groups. Whether you're looking for a pitch for a one-off match, training session or regular weekly fixtures, the venue offers flexible options for both single and repeat bookings.\n\nThe spacious natural grass pitch provides an ideal setting for competitive matches, grassroots football and team training. The venue also has changing rooms available, making it convenient for players before and after games, as well as free on-site parking for teams and visitors.\n\nLocated in Beckenham, the ground is easily accessible by public transport, with **Lower Sydenham Station** being the closest train station. With its combination of a full-size 11-a-side grass pitch, changing facilities and free parking, it is a great choice for teams looking for a regular or one-off football venue in South London.\n\n Football Pitches\n11 a side pitch | Grass9 a side pitch | Grass7 a side pitch | Grass\nFacilities\n free parking\n Address\n\nSydenham & Dulwich Girls GDST Sports Ground\nWorsley Bridge Road\nGreater London\nBR3 1RL\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Football Pitches\nRiddlesdown Collegiate\nPurley\n\n 7.1 miles away\n\nManor Park\nNew Malden\n\n 9.9 miles away\n\nKing Georges Playing Field\nChessington\n\n 11.6 miles away\n\nAlexandra Recreation Ground\nSurbiton\n\n 11.6 miles away\n\nFairfield Recreation Ground\nKingston upon Thames\n\n 11.7 miles away\n\n",
+ "name": "Sydenham & Dulwich Girls GDST Sports Ground",
+ "area": "Bromley",
+ "address": "Worsley Bridge Road, Greater London, Beckenham, BR3 1RL",
+ "postcode": "BR3 1RL",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "19:30"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "19:30"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "19:30"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "19:30"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "19:30"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 19:30",
+  "Tuesday 18:00 - 19:30",
+  "Wednesday 18:00 - 19:30",
+  "Thursday 18:00 - 19:30",
+  "Friday 18:00 - 19:30",
+  "Saturday 9:00 - 18:00",
+  "Sunday 9:00 - 18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/sydenham-dulwich-girls-gdst-sports-ground/football-11-a-side-pitch-93814",
+   "label": "11 a side pitch | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/sydenham-dulwich-girls-gdst-sports-ground/football-9-a-side-pitch-93815",
+   "label": "9 a side pitch | Grass",
+   "format": 9,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/sydenham-dulwich-girls-gdst-sports-ground/football-7-a-side-pitch-93816",
+   "label": "7 a side pitch | Grass",
+   "format": 7,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

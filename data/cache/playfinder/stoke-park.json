@@ -1,0 +1,29 @@
+{
+ "url": "https://www.playfinder.com/london/venue/stoke-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/stoke-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:32:55.534Z",
+ "title": "Stoke Park, Aberdeen | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nStoke Park Non-Partner \nPadel Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Park Road, Stoke Poges, Buckinghamshire, SL2 4PG\n\nPrices\n\nPublic Transport\n\n Bus Stop: Whiteford Rd\n\n Padel Tennis Court\nOutdoor court | Clay\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n",
+ "name": "Stoke Park",
+ "area": "Aberdeen",
+ "address": "Park Road, Stoke Poges, Buckinghamshire, SL2 4PG",
+ "postcode": "SL2 4PG",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

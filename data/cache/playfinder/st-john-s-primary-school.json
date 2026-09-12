@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/st-john-s-primary-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/st-john-s-primary-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:37:30.021Z",
+ "title": "St John's Primary School, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSt John's Primary School\nFootball\n Book Online at St John's Primary School\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n St John's Angell Town Primary School, 85 Angell Rd, London, SW9 7HH\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Brixton\n\nOpening Hours\nMonday\t17:00 - 22:00\nTuesday\t17:00 - 22:00\nWednesday\t17:00 - 22:00\nThursday\t17:00 - 22:00\nFriday\t17:00 - 22:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\n6-a-side football can be played at St John's Primary School. It is one of the finest sports facilities in south west London and it is the place to be if you’re looking for a 6-a-side football pitch. One of the best activities that sports fans are able to enjoy here is 6-a-side football on the immaculate 3G astroturf surface. Six-a-side football remains one of the most prevalent sporting activities in London and the staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nLooking to set up regular games at St John's Primary School? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe closest station when travelling is Brixton. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n6 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking\n Address\n\nSt John's Primary School\nSt John's Angell Town Primary School\n85 Angell Rd\nSW9 7HH\n\n\nVIEW ON MAP\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 10.2 miles away\n\nSacred Heart R C Primary School\nBattersea\n\n 2.5 miles away\n\nPowerleague Sunbury-on-Thames\nLondon\n\n 12.7 miles away\n\nPowerleague Fairlop\nIlford\n\n 12.8 miles away\n\nClub Langley\nBeckenham\n\n 6.7 miles away\n\n",
+ "name": "St John's Primary School",
+ "area": "Lambeth",
+ "address": "St John's Angell Town Primary School, 85 Angell Rd, London, SW9 7HH",
+ "postcode": "SW9 7HH",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 22:00",
+  "Tuesday 17:00 - 22:00",
+  "Wednesday 17:00 - 22:00",
+  "Thursday 17:00 - 22:00",
+  "Friday 17:00 - 22:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   6
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/st-john-s-primary-school/football-6-a-side-92577",
+   "label": "6 a side | 3G Astroturf",
+   "format": 6,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices"
+}

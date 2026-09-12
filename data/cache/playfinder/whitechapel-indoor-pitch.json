@@ -1,0 +1,69 @@
+{
+ "url": "https://www.playfinder.com/london/venue/whitechapel-indoor-pitch",
+ "finalUrl": "https://www.playfinder.com/london/venue/whitechapel-indoor-pitch",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:30:39.608Z",
+ "title": "Whitechapel Indoor Pitch, Tower Hamlets | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWhitechapel Indoor Pitch Non-Partner \nNetballFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Bishop Challoner Catholic Federation of Schools, 352 Commercial Rd, London, E1 0LB\n\nPrices\n\nPublic Transport\n\n Shadwell\n\nOpening Hours\nMonday\t18:00-22:00\nTuesday\t18:00-22:00\nWednesday\t18:00-22:00\nThursday\t18:00-22:00\nFriday\t-\nSaturday\t-\nSunday\t-\nDescription\n\nIf you're a netball player in the East London area, then you simply have to check out the indoor netball facilities for hire at Whitechapel Indoor Pitch. The excellent indoor court makes it suitable for netball teams or individuals who want to practise or play more competitive matches. If you're someone who has never tried netball before and you’re thinking of getting into it, then get in touch today to book a netball court. The netball court at Whitechapel Indoor Pitch has clear markings and good quality nets. It is well maintained by the staff who are proud to have such an amazing netball court in East London.\n\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Whitechapel Indoor Pitch. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nIf you're looking to travel using public transport, then the nearest station is Whitechapel. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Netball Court\nCourt | Sports hall\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 14.2 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 10.5 miles away\n\nPastures Centre\nLondon\n\n 4.4 miles away\n\nSingh Sabha Sports Centre\nBerkshire\n\n 23.5 miles away\n\nFidelis College\nLondon\n\n 6.6 miles away\n\n",
+ "name": "Whitechapel Indoor Pitch",
+ "area": "Tower Hamlets",
+ "address": "Bishop Challoner Catholic Federation of Schools, 352 Commercial Rd, London, E1 0LB",
+ "postcode": "E1 0LB",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [],
+  "sat": [],
+  "sun": []
+ },
+ "hoursQuotes": [
+  "Monday 18:00-22:00",
+  "Tuesday 18:00-22:00",
+  "Wednesday 18:00-22:00",
+  "Thursday 18:00-22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/whitechapel-indoor-pitch/football-5-a-side-40083",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

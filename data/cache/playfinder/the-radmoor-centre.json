@@ -1,0 +1,67 @@
+{
+ "url": "https://www.playfinder.com/london/venue/the-radmoor-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/the-radmoor-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:20:54.572Z",
+ "title": "The Radmoor Centre, Slough | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nThe Radmoor Centre Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Radmoor Road, Loughborough, Loughborough, LE11 3BT\n\nPrices\n\nPublic Transport\n\n Loughborough\n\nOpening Hours\n\nmon - fri, 7am–10pm fri 7am–9pm Sat 9am - 5pm\n\n Football Pitches\n5 a side | Indoor5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nVision West Nottinghamshire College\nMansfield\n\n 24.6 miles away\n\nTupton Hall School\nChesterfield\n\n 29.8 miles away\n\nNetherthorpe School\nChesterfield\n\n 35 miles away\n\nRoe Lane Playing Fields\nStaffordshire\n\n 45.1 miles away\n\nPowerleague Coventry\nConventry\n\n 29 miles away\n\n",
+ "name": "The Radmoor Centre",
+ "area": "Slough",
+ "address": "Radmoor Road, Loughborough, Loughborough, LE11 3BT",
+ "postcode": "LE11 3BT",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": []
+ },
+ "hoursQuotes": [
+  "fri 7am–9pm",
+  "Sat 9am - 5pm"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/the-radmoor-centre/football-5-a-side-35657",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/the-radmoor-centre/football-5-a-side-35658",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

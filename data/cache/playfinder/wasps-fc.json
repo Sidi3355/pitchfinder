@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/wasps-fc",
+ "finalUrl": "https://www.playfinder.com/london/venue/wasps-fc",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:35:08.068Z",
+ "title": "Wasps FC, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWasps FC Non-Partner \nRugbyFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Twyford Avenue Sports Ground, Twyford Avenue, London, W3 9QA\n\nPrices\n\nPublic Transport\n\n Ealing Common\n\nOpening Hours\nMonday\t07:00 - 19:30\nTuesday\t07:00 - 18:00\nWednesday\t07:00 - 19:30\nThursday\t07:00 - 18:00\nFriday\t07:00 - 21:30\nSaturday\t07:00 - 21:30\nSunday\t07:00 - 09:00 and 16:00 - 20:30\nDescription\n\nThinking of playing rugby at Wasps FC in West London? Wasps FC boasts one of the nicest rugby pitches in London so you won’t be disappointed. The excellent playing field, which is available for hire, is the perfect facility to host training sessions, matches and leagues. Clear markings on a very well maintained 3G astroturf pitch make Wasps FC an excellent rugby venue. A ball might be able to hire for a small fee from the facility but we advise that you call directly before your arrival to make sure. The pitch is suitable for rugby union, rugby league, tag rugby and touch rugby.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Wasps FC. This ensures you stay in the game and keep up your fitness on a regular basis. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Ealing Common station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Rugby Pitch\nPitch | 3G Astroturf\nFacilities\n floodlights free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nWallington County Grammar School\nWallington\n\n 11.3 miles away\n\nCastle View School\nEssex\n\n 37.5 miles away\n\nFidelis College\nLondon\n\n 10 miles away\n\nReading Rugby Club\nReading\n\n 27.6 miles away\n\nReading Rugby Club\nReading\n\n 27.6 miles away\n\n",
+ "name": "Wasps FC",
+ "area": "Ealing",
+ "address": "Twyford Avenue Sports Ground, Twyford Avenue, London, W3 9QA",
+ "postcode": "W3 9QA",
+ "hours": {
+  "mon": [
+   [
+    "07:00",
+    "19:30"
+   ]
+  ],
+  "tue": [
+   [
+    "07:00",
+    "18:00"
+   ]
+  ],
+  "wed": [
+   [
+    "07:00",
+    "19:30"
+   ]
+  ],
+  "thu": [
+   [
+    "07:00",
+    "18:00"
+   ]
+  ],
+  "fri": [
+   [
+    "07:00",
+    "21:30"
+   ]
+  ],
+  "sat": [
+   [
+    "07:00",
+    "21:30"
+   ]
+  ],
+  "sun": [
+   [
+    "07:00",
+    "09:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 07:00 - 19:30",
+  "Tuesday 07:00 - 18:00",
+  "Wednesday 07:00 - 19:30",
+  "Thursday 07:00 - 18:00",
+  "Friday 07:00 - 21:30",
+  "Saturday 07:00 - 21:30",
+  "Sunday 07:00 - 09:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/wasps-fc/football-11-a-side-43604",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

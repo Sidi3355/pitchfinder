@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/wimbledon-park-",
+ "finalUrl": "https://www.playfinder.com/london/venue/wimbledon-park-",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:39:12.759Z",
+ "title": "Wimbledon Park, Merton | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWimbledon Park\nVolleyball\n Book Online at Wimbledon Park\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Revelstoke Road, Wimbledon Park, Wimbledon, SW18 5NW\n\nPrices\n\nPublic Transport\n\n 8 min walk to Wimbledon Park station\n\nOpening Hours\nMonday\t08:00 - 21:00\nTuesday\t08:00 - 21:00\nWednesday\t08:00 - 21:00\nThursday\t08:00 - 21:00\nFriday\t08:00 - 21:00\nSaturday\t08:00 - 21:00\nSunday\t08:00 - 21:00\n Volleyball Court\nCourt | Sand (beach)\nFacilities\n free parking\n Address\n\nWimbledon Park\nRevelstoke Road\nWimbledon Park\nSW18 5NW\n\n\nVIEW ON MAP\n Nearby Volleyball Courts\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 11.7 miles away\n\nCastlehaven Sports Pitch\nCamden Town\n\n 7.7 miles away\n\nMarlborough Sports Garden\nLondon\n\n 6.6 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 12.2 miles away\n\nThe Downside Settlement\nSouthwark\n\n 7.1 miles away\n\n",
+ "name": "Wimbledon Park",
+ "area": "Merton",
+ "address": "Revelstoke Road, Wimbledon Park, Wimbledon, SW18 5NW",
+ "postcode": "SW18 5NW",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00 - 21:00",
+  "Tuesday 08:00 - 21:00",
+  "Wednesday 08:00 - 21:00",
+  "Thursday 08:00 - 21:00",
+  "Friday 08:00 - 21:00",
+  "Saturday 08:00 - 21:00",
+  "Sunday 08:00 - 21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

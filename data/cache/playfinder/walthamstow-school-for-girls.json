@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/walthamstow-school-for-girls",
+ "finalUrl": "https://www.playfinder.com/london/venue/walthamstow-school-for-girls",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:31:08.190Z",
+ "title": "Walthamstow School for Girls, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWalthamstow School for Girls Non-Partner \nBasketballFootballSpace HireNetball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Church Hill, Walthamstow, London, E17 9RZ\n\nPrices\n\nPlease enquire for price\n\nPublic Transport\n\n Walthamstow Central\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t09:00 - 13:00\nSunday\t09:00 - 13:00\nDescription\n\nLooking to hire a basketball court in London? Walthamstow School for Girls is an excellent place to play basketball in London. The well maintained facility provides an excellent court on which to play. The court has clear basketball markings and excellent lighting, making it a perfect sports facility for a team to practice on or use as a home court. There are multiple basketball courts in London but only a few of this standard and quality - Walthamstow School for Girls has basketball facilities they can be extremely proud of.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Walthamstow School for Girls. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Walthamstow Central. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Basketball Court\nIndoor\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nWallington County Grammar School\nWallington\n\n 15.9 miles away\n\nAldenham School Sports Centre\nRadlett\n\n 14.3 miles away\n\nBolder Academy\nLondon\n\n 15 miles away\n\nCopthall School\nLondon\n\n 9.3 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 23 miles away\n\n",
+ "name": "Walthamstow School for Girls",
+ "area": "Waltham Forest",
+ "address": "Church Hill, Walthamstow, London, E17 9RZ",
+ "postcode": "E17 9RZ",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "13:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "13:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 09:00 - 13:00",
+  "Sunday 09:00 - 13:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/walthamstow-school-for-girls/football-5-a-side-41212",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please enquire for price",
+ "skipped": "no artificial football pitch"
+}

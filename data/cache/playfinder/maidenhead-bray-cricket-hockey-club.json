@@ -1,0 +1,36 @@
+{
+ "url": "https://www.playfinder.com/london/venue/maidenhead-bray-cricket-hockey-club",
+ "finalUrl": "https://www.playfinder.com/london/venue/maidenhead-bray-cricket-hockey-club",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:19:07.112Z",
+ "title": "Maidenhead & Bray Cricket & Hockey Club, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nMaidenhead & Bray Cricket & Hockey Club Non-Partner \nHockeyCricketFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Maidenhead & Bray Cricket & Hockey Club, High Street, Windsor and Maidenhead, SL6 2AA\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\n\nNot Specified\n\n Hockey Pitches\nOutdoor | AstroturfPitch | Grass\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nCastlehaven Sports Pitch\nCamden Town\n\n 24.2 miles away\n\nAldenham School Sports Centre\nRadlett\n\n 19.3 miles away\n\nTooting and Mitcham Community Sports Club\nMorden\n\n 24.3 miles away\n\nDown Grange Sports Complex\nHampshire\n\n 25.7 miles away\n\nDown Grange Sports Complex\nHampshire\n\n 25.7 miles away\n\n",
+ "name": "Maidenhead & Bray Cricket & Hockey Club",
+ "area": "Windsor and Maidenhead",
+ "address": "Maidenhead & Bray Cricket & Hockey Club, High Street, Windsor and Maidenhead, SL6 2AA",
+ "postcode": "SL6 2AA",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": "astro",
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/maidenhead-bray-cricket-hockey-club/football-5-a-side-35595",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}

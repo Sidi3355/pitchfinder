@@ -1,0 +1,92 @@
+{
+ "url": "https://www.playfinder.com/london/venue/bethwin-adventure",
+ "finalUrl": "https://www.playfinder.com/london/venue/bethwin-adventure",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:14:36.531Z",
+ "title": "Bethwin Adventure, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBethwin Adventure Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 4 Bethwin Road, Kennington, London, SE5 0YF\n\nPrices\n\nFrom £55.00-£60.00/hour\n\nPublic Transport\n\n Oval, Kennington, Elephant & Castle\n\nOpening Hours\nMonday\t18:00-22:00\nTuesday\t18:00-22:00\nWednesday\t18:00-22:00\nThursday\t18:00-22:00\nFriday\t18:00-22:00\nSaturday\t12:00-20:00\nSunday\t12:00-20:00\nDescription\n\nLooking to hire a 5-a-side football pitch in South East London? Bethwin Adventure has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Bethwin Adventure is played on astroturf.\n\nSo whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Bethwin Adventure is the right choice for you.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Bethwin Adventure. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel using public transport, then the nearest station is Kennington. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n5 a side | Astroturf\nFacilities\n floodlights 5 a side 6 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 0.8 miles away\n\nMallinson Sports Centre\nHighgate\n\n 7 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 11.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.2 miles away\n\n",
+ "name": "Bethwin Adventure",
+ "area": "Southwark",
+ "address": "4 Bethwin Road, Kennington, London, SE5 0YF",
+ "postcode": "SE5 0YF",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "12:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "12:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00-22:00",
+  "Tuesday 18:00-22:00",
+  "Wednesday 18:00-22:00",
+  "Thursday 18:00-22:00",
+  "Friday 18:00-22:00",
+  "Saturday 12:00-20:00",
+  "Sunday 12:00-20:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   5,
+   6
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/bethwin-adventure/football-5-a-side-33859",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £55.00-£60.00/hour"
+}

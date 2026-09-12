@@ -1,0 +1,108 @@
+{
+ "url": "https://www.playfinder.com/london/venue/white-city-tiger-turf",
+ "finalUrl": "https://www.playfinder.com/london/venue/white-city-tiger-turf",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:14:57.938Z",
+ "title": "White City Tiger Turf, Hammersmith and Fulham | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWhite City Tiger Turf Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Ark Burlington Danes Academy, Wood Lane, White City, Kensington and Chelsea, W12 0HR\n\nPrices\n\nPublic Transport\n\n White City\n\nOpening Hours\nMonday\t18:00-22:00\nTuesday\t18:00-22:00\nWednesday\t18:00-22:00\nThursday\t18:00-22:00\nFriday\t18:00-22:00\nSaturday\t10:00-18:00\nSunday\t10:00-18:00\nDescription\n\nWhite City Tiger Turf in West London, boasts an amazing 11-a-side 3G astroturf pitch. The staff at White City Tiger Turf really care for and maintain this pitch to a high standard. This venue is also the perfect place for an 11-a-side league in West London as matches would be played on 3G astroturf. So whether you're an experienced 11-a-side team or you're just getting into the game, this facility is definitely worth checking out. Footballs and other equipment might be supplied by the facility for a small fee but we advise that you call the facility after your booking has been confirmed to check before your arrival.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nIf you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at White City Tiger Turf? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe venue is situated near White City station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n11 a side | 3G Astroturf7 a side | 3G Astroturf5 a side | Indoor\nFacilities\n floodlights changing rooms 5 a side 6 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 10.9 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 1.7 miles away\n\nNorth Acton Playing Fields\nActon\n\n 1.8 miles away\n\nBeaumont School\nHertfordshire\n\n 16.5 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 12.6 miles away\n\n",
+ "name": "White City Tiger Turf",
+ "area": "Hammersmith and Fulham",
+ "address": "Ark Burlington Danes Academy, Wood Lane, White City, Kensington and Chelsea, W12 0HR",
+ "postcode": "W12 0HR",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00-22:00",
+  "Tuesday 18:00-22:00",
+  "Wednesday 18:00-22:00",
+  "Thursday 18:00-22:00",
+  "Friday 18:00-22:00",
+  "Saturday 10:00-18:00",
+  "Sunday 10:00-18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6,
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/white-city-tiger-turf/football-11-a-side-34383",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/white-city-tiger-turf/football-7-a-side-40077",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/white-city-tiger-turf/football-5-a-side-40078",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

@@ -1,0 +1,62 @@
+{
+ "url": "https://www.playfinder.com/london/venue/rectory-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/rectory-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:30:58.106Z",
+ "title": "Rectory Park, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nRectory Park Non-Partner \nFootballCricket\nGET IN TOUCH\n Book Online at Rectory Park\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Parkfield Drive (off Church Rd), Northolt, Northolt, UB5 6SU\n\nPrices\n\nPlease enquire for price\n\nPublic Transport\n\n Northolt\n\nOpening Hours\n\nOpen only on weekends. Cricket from 12:00 - 20:00\n\nDescription\n\n**Nets and Flags are not provided**\n\n7-a-side football can be played at Rectory Park. It is one of the finest sports facilities in West London and it is the place to be if you’re looking for a 7-a-side football pitch. One of the best activities that sports fans are able to enjoy here is 7-a-side football on the immaculate grass surface. Seven-a-side football remains one of the most prevalent sporting activities in London and the staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends. The size of the pitch is 60 x 40 yards.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Rectory Park? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nIf you're looking to travel using public transport, then the nearest station is Northolt. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n7 a side | Grass11 a side junior | Grass11 a side | Grass5 a side | Grass9 a side | Grass\nFacilities\n changing rooms\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 12.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 25.1 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 17.8 miles away\n\nPerivale Park\nEaling\n\n 1.6 miles away\n\nBeavers Lodge\nHounslow\n\n 4.7 miles away\n\n",
+ "name": "Rectory Park",
+ "area": "Ealing",
+ "address": "Parkfield Drive (off Church Rd), Northolt, Northolt, UB5 6SU",
+ "postcode": "UB5 6SU",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/rectory-park/football-7-a-side-40412",
+   "label": "7 a side | Grass",
+   "format": 7,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/rectory-park/football-11-a-side-junior-40413",
+   "label": "11 a side junior | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/rectory-park/football-11-a-side-41808",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/rectory-park/football-5-a-side-41817",
+   "label": "5 a side | Grass",
+   "format": 5,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/rectory-park/football-9-a-side-41843",
+   "label": "9 a side | Grass",
+   "format": 9,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please enquire for price",
+ "skipped": "no artificial football pitch"
+}

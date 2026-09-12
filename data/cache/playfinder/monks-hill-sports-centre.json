@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/monks-hill-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/monks-hill-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:29:16.757Z",
+ "title": "Monks Hill Sports Centre, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nMonks Hill Sports Centre Non-Partner \nFootballHockey\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Farnborough Ave, South Croydon, Croydon, CR2 8HD\n\nPrices\n\nPublic Transport\n\n Sanderstead station\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nPlease note: this is a 4G astroturf pitch.\n\n11-a-side football at Monks Hill Sports Centre, which is the one of the finest sports venues in south London and also caters for a wide range of sporting activities, is the place to be if you’re looking to play 11-a-side football. One of the best activities that sports fans are able to enjoy here is 11-a-side football on an immaculate 4G Astroturf surface.\n\nMonks Hill Sports Centre operates a pay and display parking system. Those keen on driving to the venue should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nThe changing rooms on offer at Monks Hill Sports Centre are excellent. Well maintained and spacious changing rooms provide the perfect environment in which to prepare for your match. Monks Hill Sports Centre changing rooms provide toilets and also a communal changing area with a large bench area. The well-equipped changing rooms provided add an additional excellence to this already outstanding venue.\n\nCustomers will be pleased to know that Monks Hill Sports Centre operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game.\n\nFinsbury Leisure Centre is surrounded by modern floodlighting that make this venue perfect for football all year around. The state-of-the-art lights are kept in excellent condition. The lights will be turned off by the venue once all sports bookings have been complete.\n\nLooking to set up regular games at Monks Hill Sports Centre? Why not enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel to Monks Hill Sports Centre using public transport, then the nearest station is Sanderstead Station. This venue has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n11 a side | 3G Astroturf5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 9.6 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 1.3 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 13.9 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 14.5 miles away\n\nNorth Acton Playing Fields\nActon\n\n 15 miles away\n\n",
+ "name": "Monks Hill Sports Centre",
+ "area": "Croydon",
+ "address": "Farnborough Ave, South Croydon, Croydon, CR2 8HD",
+ "postcode": "CR2 8HD",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/monks-hill-sports-centre/football-11-a-side-39960",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/monks-hill-sports-centre/football-5-a-side-40009",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Public Transport"
+}

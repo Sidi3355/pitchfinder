@@ -1,0 +1,65 @@
+{
+ "url": "https://www.playfinder.com/london/venue/bull-lane-playing-field-",
+ "finalUrl": "https://www.playfinder.com/london/venue/bull-lane-playing-field-",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:34:08.639Z",
+ "title": "Bull Lane Playing Fields, Haringey | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBull Lane Playing Fields\nFootball\n Book Online at Bull Lane Playing Fields\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Bull Lane, London, London, N18 1SX\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n White Hart Lane Station\n\nOpening Hours\nMonday\tClosed\nTuesday\tClosed\nWednesday\tClosed\nThursday\tClosed\nFriday\tClosed\nSaturday\t10:00-16:30\nSunday\t10:00-16:30\nDescription\n\nNeed an 11-a-side football pitch in North London? Bull Lane Playing Field boasts a spectacular 11-a-side grass football pitch which is available for footballers looking for a one-off game or a regular block booking. It is a full size pitch that is available to book for one-off training sessions or a season long league.\n\n**Nets and Flags are not provided**\n\nIf public transport isn't your thing, then parking facilities are available where a pay and display system is operated. The specific prices may vary depending on the time of day, so if you'd like to know this information then please contact the council.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Bull Lane Playing Field? Block bookings are a great way to guarantee a weekly game and socialise with your friends.\n\nThe venue has changing facilities to use when you book, they are well maintained and suitable for teams or individuals. It's also great for teams as it means you can prepare for games in comfort and in good time.\n\nIf you're looking to travel using public transport, then the nearest station is White Hart Lane Station. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n11 a side | Grass9 a side pitch | Grass\nFacilities\n changing rooms\n Address\n\nBull Lane Playing Fields\nBull Lane\nLondon\nN18 1SX\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nLifestyle Fitness Epsom\nEpsom\n\n 19 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 4 miles away\n\nNorth Acton Playing Fields\nActon\n\n 10.4 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 10.8 miles away\n\nElthorne Waterside Pitches\nLondon\n\n 13.4 miles away\n\n",
+ "name": "Bull Lane Playing Fields",
+ "area": "Haringey",
+ "address": "Bull Lane, London, London, N18 1SX",
+ "postcode": "N18 1SX",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Saturday 10:00-16:30",
+  "Sunday 10:00-16:30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/bull-lane-playing-field-/football-11-a-side-42103",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/bull-lane-playing-field-/football-9-a-side-pitch-42104",
+   "label": "9 a side pitch | Grass",
+   "format": 9,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/alexandra-recreation-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/alexandra-recreation-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:41:01.477Z",
+ "title": "Alexandra Recreation Ground, Kingston upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAlexandra Recreation Ground\nFootball\n Book Online at Alexandra Recreation Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Alexandra Recreation Ground, Greater London, Surbiton, KT5 9AA\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Tolworth station - 10-15 minute walk\n\nOpening Hours\nMonday\t09:00 - 17:00\nTuesday\t09:00 - 17:00\nWednesday\t09:00 - 17:00\nThursday\t09:00 - 17:00\nFriday\t09:00 - 17:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\n** 11-a-side Pitch 1 **\n\n\nBook the 11-a-side football pitch at Alexandra Recreation Ground if you're looking for an excellent pitch and live or work in Surbiton. This venue has sensational footballing facilities, so whether you like to play 11-a-side football casually or you're part of a team or league, Alexandra Recreation Ground is ideal for you. Everyone has their favourite surface for playing 11-a-side football on and this pitch is grass.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Alexandra Recreation Ground? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Tolworth train station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitch\n11 a side pitch | Grass\n Address\n\nAlexandra Recreation Ground\nAlexandra Recreation Ground\nGreater London\nKT5 9AA\n\n\nVIEW ON MAP\n Nearby Football Pitches\nKing Georges Playing Field\nChessington\n\n 1.1 miles away\n\nKing Edwards Recreation Ground\nChessington\n\n 1.2 miles away\n\nFairfield Recreation Ground\nKingston upon Thames\n\n 1.5 miles away\n\nManor Park\nNew Malden\n\n 1.7 miles away\n\nChurchfields Recreation Ground\nChessington\n\n 1.9 miles away\n\n",
+ "name": "Alexandra Recreation Ground",
+ "area": "Kingston upon Thames",
+ "address": "Alexandra Recreation Ground, Greater London, Surbiton, KT5 9AA",
+ "postcode": "KT5 9AA",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 17:00",
+  "Tuesday 09:00 - 17:00",
+  "Wednesday 09:00 - 17:00",
+  "Thursday 09:00 - 17:00",
+  "Friday 09:00 - 17:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/alexandra-recreation-ground/football-11-a-side-pitch-93309",
+   "label": "11 a side pitch | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

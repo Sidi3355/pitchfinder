@@ -1,0 +1,92 @@
+{
+ "url": "https://www.playfinder.com/london/venue/finsbury-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/finsbury-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:58:44.570Z",
+ "title": "Finsbury Leisure Centre, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFinsbury Leisure Centre Non-Partner \nFootballSquashBadmintonBasketballTable TennisSpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Norman Street, Old Street, Islington, EC1V 3PU\n\nPrices\n\nFrom £31.00-£74.45/45 mins\n\nPublic Transport\n\n Old Street\n\nOpening Hours\nMonday\t06:30-22:00\nTuesday\t06:30-22:00\nWednesday\t06:30-22:00\nThursday\t06:30-22:00\nFriday\t06:30-22:00\nSaturday\t09:30-18:00\nSunday\t10:00-20:30\nDescription\n\n5-a-side football at Finsbury Leisure Centre, which is the one of the finest sports venues in central London and also caters for a wide range of sporting activities, is the place to be if you’re looking to play 5-a-side football. One of the best activities that sports fans are able to enjoy here is 5-a-side football on an immaculate 3G Astroturf surface. Five-a-side football remains one of the most prevalent sporting activities in London. The staff keep the playing surface in excellent condition all year around, whatever the weather and temperature. It is possible to play throughout the winter months, whether you are part of a team, league or simply playing with friends.\n\nFinsbury Leisure Centre operates a pay and display parking system. Those keen on driving to the venue should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nThe changing rooms on offer at Finsbury Leisure Centre are excellent. Well maintained and spacious changing rooms provide the perfect environment in which to prepare for your match. Finsbury Leisure Centre's changing rooms provide toilets and also a communal changing area with a large bench area. The well-equipped changing rooms provided add an additional excellence to this already outstanding venue.\n\nCustomers will be pleased to know that Finsbury Leisure Centre operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game.\n\nFinsbury Leisure Centre is surrounded by modern floodlighting that make this venue perfect for football all year around. The state-of-the-art lights are kept in excellent condition. The lights will be turned off by the venue once all sports bookings have been complete.\n\nLooking to set up regular games at Finsbury Leisure Centre? Why not enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you're looking to travel to Finsbury Leisure Centre using public transport, then the nearest station is Old Street. This venue has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking 5 a side 6 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 3 miles away\n\nMallinson Sports Centre\nHighgate\n\n 4.3 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.1 miles away\n\n",
+ "name": "Finsbury Leisure Centre",
+ "area": "Islington",
+ "address": "Norman Street, Old Street, Islington, EC1V 3PU",
+ "postcode": "EC1V 3PU",
+ "hours": {
+  "mon": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "20:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 06:30-22:00",
+  "Tuesday 06:30-22:00",
+  "Wednesday 06:30-22:00",
+  "Thursday 06:30-22:00",
+  "Friday 06:30-22:00",
+  "Saturday 09:30-18:00",
+  "Sunday 10:00-20:30"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/finsbury-leisure-centre/football-5-a-side-32208",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £31.00-£74.45/45 mins"
+}

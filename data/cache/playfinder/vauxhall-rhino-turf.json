@@ -1,0 +1,72 @@
+{
+ "url": "https://www.playfinder.com/london/venue/vauxhall-rhino-turf",
+ "finalUrl": "https://www.playfinder.com/london/venue/vauxhall-rhino-turf",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:01:46.030Z",
+ "title": "Vauxhall Rhino Turf, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nVauxhall Rhino Turf Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Lollard Street, Vauxhall, London, SE11 6PX\n\nPrices\n\nFrom £65.00-£70.00/hour\n\nPublic Transport\n\n Kennington; Vauxhall\n\nOpening Hours\nMonday\t6-10pm\nTuesday\t6-10pm\nWednesday\t6-10pm\nThursday\t6-10pm\nFriday\t7-10pm\nSaturday\t10am-5pm\nSunday\t10am-5pm\nDescription\n\nVauxhall Rhino Turf is located in Central London and boasts an incredible 5-a-side 3G astroturf pitch. Not many 5-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 5-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round. The venue operates a pay and display parking system. Those keen on driving to the facility should remember to bring change for the machine. Midweek evenings and weekends are the busiest times so please be aware that parking availability will be tougher to secure during these times.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Vauxhall Rhino Turf? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nIf you're looking to travel using public transport, then the nearest station is Kennington. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n5 a side | Astroturf7 a side | Astroturf\nFacilities\n floodlights 5 a side 6 a side 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 0.6 miles away\n\nMallinson Sports Centre\nHighgate\n\n 5.9 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 11.3 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.2 miles away\n\n",
+ "name": "Vauxhall Rhino Turf",
+ "area": "Lambeth",
+ "address": "Lollard Street, Vauxhall, London, SE11 6PX",
+ "postcode": "SE11 6PX",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Saturday 10am-5pm",
+  "Sunday 10am-5pm"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/vauxhall-rhino-turf/football-5-a-side-34945",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/vauxhall-rhino-turf/football-7-a-side-36044",
+   "label": "7 a side | Astroturf",
+   "format": 7,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £65.00-£70.00/hour"
+}

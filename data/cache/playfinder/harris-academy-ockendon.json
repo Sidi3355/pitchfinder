@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/harris-academy-ockendon",
+ "finalUrl": "https://www.playfinder.com/london/venue/harris-academy-ockendon",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:31:53.806Z",
+ "title": "Harris Academy Ockendon, Thurrock | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHarris Academy Ockendon\nFootball\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Erriff Drive, South Ockendon, London, RM15 5AY\n\nPrices\n\nPlease check calendar above\n\nPublic Transport\n\n Bus: Elmdon Road\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t08:00 - 22:00\nSunday\t08:00 - 22:00\nDescription\n\nHarris Academy Ockendon is located in East London and boasts an incredible 5-a-side pitch. Not many 5-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 5-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Harris Academy Ockendon? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nIf you're looking to travel using public transport, then the nearest bus stop is the Elmdon Road bus stop. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitch\n5 a side | Indoor\nFacilities\n free parking\n Address\n\nHarris Academy Ockendon\nErriff Drive\nSouth Ockendon\nRM15 5AY\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Football Pitches\nHaberdasher's Crayford Academy\nKent\n\n 5.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 5.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 5.5 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 16.9 miles away\n\nMallinson Sports Centre\nHighgate\n\n 19.2 miles away\n\n",
+ "name": "Harris Academy Ockendon",
+ "area": "Thurrock",
+ "address": "Erriff Drive, South Ockendon, London, RM15 5AY",
+ "postcode": "RM15 5AY",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 08:00 - 22:00",
+  "Sunday 08:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/harris-academy-ockendon/football-5-a-side-42798",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  }
+ ],
+ "priceSummary": "Please check calendar above",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,112 @@
+{
+ "url": "https://www.playfinder.com/london/venue/whitefield-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/whitefield-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:42:18.335Z",
+ "title": "Clarion, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nClarion\nFootballSpace HireBadmintonBasketballNetballTennis\n Book Online at Clarion\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Claremont Road, Greater London, Barnet, NW2 1TR\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Brent Cross West train station is a 10 minute walk from the venue.\n\nOpening Hours\nMonday\t18:00 - 23:00\nTuesday\t18:00 - 23:00\nWednesday\t18:00 - 23:00\nThursday\t18:00 - 23:00\nFriday\t18:00 - 23:00\nSaturday\t08:00 - 17:00\nSunday\t08:00 - 17:00\nDescription\n\n*All Weather Pitch 1*\n\nWhitefield School in Barnet offers a top-quality 11-a-side astroturf pitch, perfect for competitive matches, weekly training sessions, or casual games with friends. The astroturf surface delivers a consistent and reliable playing experience in all weather conditions, making it a great choice for teams and players across North London.\n\nThe venue is conveniently located with free on-site parking, allowing for easy access and a stress-free arrival. With a welcoming atmosphere and well-maintained pitch, Whitefield School is a fantastic place to play football, whether you're booking a one-off game or securing a regular slot.\n\nBrent Cross West station is just a 10-minute walk from the venue, making it easily accessible by public transport as well.\n\n Football Pitches\n11 a side pitch | Water-based Astroturf5 a side pitch | Water-based Astroturf11 a side pitch | Water-based Astroturf5 a side pitch | Water-based Astroturf\nFacilities\n free parking\n Address\n\nClarion\nClaremont Road\nGreater London\nNW2 1TR\n\n\nVIEW ON MAP\n Nearby Football Pitches\nClarion\nBarnet\n\n 0 miles away\n\nFairfield Recreation Ground\nKingston upon Thames\n\n 11.9 miles away\n\nManor Park\nNew Malden\n\n 12.9 miles away\n\nAlexandra Recreation Ground\nSurbiton\n\n 13.3 miles away\n\nKing Georges Playing Field\nChessington\n\n 14.2 miles away\n\n",
+ "name": "Clarion",
+ "area": "Waltham Forest",
+ "address": "Claremont Road, Greater London, Barnet, NW2 1TR",
+ "postcode": "NW2 1TR",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "23:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 23:00",
+  "Tuesday 18:00 - 23:00",
+  "Wednesday 18:00 - 23:00",
+  "Thursday 18:00 - 23:00",
+  "Friday 18:00 - 23:00",
+  "Saturday 08:00 - 17:00",
+  "Sunday 08:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": "astro",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/whitefield-school/football-11-a-side-pitch-93371",
+   "label": "11 a side pitch | Water-based Astroturf",
+   "format": 11,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/whitefield-school/football-5-a-side-pitch-93372",
+   "label": "5 a side pitch | Water-based Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/whitefield-school/football-11-a-side-pitch-93373",
+   "label": "11 a side pitch | Water-based Astroturf",
+   "format": 11,
+   "surface": "astro"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/whitefield-school/football-5-a-side-pitch-93374",
+   "label": "5 a side pitch | Water-based Astroturf",
+   "format": 5,
+   "surface": "astro"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices"
+}

@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/marlborough-sports-garden",
+ "finalUrl": "https://www.playfinder.com/london/venue/marlborough-sports-garden",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:26:24.050Z",
+ "title": "Marlborough Sports Garden, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nMarlborough Sports Garden\nNetballVolleyballFootball\n Book Online at Marlborough Sports Garden\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 11-25 Union Street, London, London, SE1 1SD\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Borough\n\nOpening Hours\nMonday\t09:00 - 12:00 & 14:00 - 15:00\nTuesday\t09:00 - 12:00 & 14:00 - 15:00\nWednesday\t09:00 - 12:00 & 14:00 - 15:00\nThursday\t09:00 - 12:00 & 14:00 - 15:00\nFriday\t09:00 - 12:00 & 14:00 - 15:00\nSaturday\t09:00 - 20:00\nSunday\t09:00 - 20:00\nDescription\n\nIf you're a netball player in the Central London area, then you simply have to check out the netball facilities for hire at Marlborough Sports Garden. The excellent outdoor court makes it suitable for netball teams or individuals who want to practise or play more competitive matches. If you're someone who has never tried netball before and you’re thinking of getting into it, then get in touch today to book a netball court. The netball court at Marlborough Sports Garden has clear markings and good quality nets. It is well maintained by the staff who are proud to have such an amazing netball court in Central London.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Marlborough Sports Garden. This ensures you stay in the game and keep up your fitness on a regular basis. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nIf you’re driving then it is worth noting that there are not any free parking spaces provided by the venue. There are spaces available to park your car but these are pay and display areas and are monitored.\n\nThe closest station when travelling is Borough. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Netball Court\nOutdoor | Hard (macadam)\nFacilities\n floodlights\n Address\n\nMarlborough Sports Garden\n11-25 Union Street\nLondon\nSE1 1SD\n\n\nVIEW ON MAP\n Nearby Netball Courts\nHaberdasher's Crayford Academy\nKent\n\n 12.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.5 miles away\n\nBeaumont School\nHertfordshire\n\n 19.5 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 9.7 miles away\n\n",
+ "name": "Marlborough Sports Garden",
+ "area": "Southwark",
+ "address": "11-25 Union Street, London, London, SE1 1SD",
+ "postcode": "SE1 1SD",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "12:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "12:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "12:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "12:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "12:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 12:00",
+  "Tuesday 09:00 - 12:00",
+  "Wednesday 09:00 - 12:00",
+  "Thursday 09:00 - 12:00",
+  "Friday 09:00 - 12:00",
+  "Saturday 09:00 - 20:00",
+  "Sunday 09:00 - 20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/marlborough-sports-garden/football-5-a-side-37857",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

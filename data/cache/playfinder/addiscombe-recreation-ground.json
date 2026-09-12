@@ -1,0 +1,39 @@
+{
+ "url": "https://www.playfinder.com/london/venue/addiscombe-recreation-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/addiscombe-recreation-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:07:56.945Z",
+ "title": "Addiscombe Recreation Ground, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAddiscombe Recreation Ground Non-Partner \nFootballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Bingham Road, Addiscombe, Croydon, CR0 7EB\n\nPrices\n\nPublic Transport\n\n Addiscombe (tramlink)\n\nOpening Hours\n\n08.00 - Dusk\n\nDescription\n\nAddiscombe Recreation Ground has two 7 a side football pitches on a concrete surface for hire. It is located in Croydon, South London and the nearest tube is Addiscombe (tramlink). The facilities are available on pay as you play basis.\n\n Football Pitch\n5 a side | Concrete\nFacilities\n free parking 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 7.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 8.8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.4 miles away\n\n",
+ "name": "Addiscombe Recreation Ground",
+ "area": "Croydon",
+ "address": "Bingham Road, Addiscombe, Croydon, CR0 7EB",
+ "postcode": "CR0 7EB",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/addiscombe-recreation-ground/football-5-a-side-32152",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/windsor-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/windsor-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:15:31.224Z",
+ "title": "Windsor Leisure Centre, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWindsor Leisure Centre Non-Partner \nGymSwimmingFootballHockeyBasketballBadmintonNetballSpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Stovell Road, Windsor, Windsor and Maidenhead, SL4 5JB\n\nPrices\n\nPublic Transport\n\n Windsor & Eton Central\n\nOpening Hours\nMonday\t06:30-22:00\nTuesday\t06:30-22:00\nWednesday\t06:30-22:00\nThursday\t06:30-22:00\nFriday\t06:30-22:00\nSaturday\t08:00-18:00\nSunday\t09:00-18:00\nDescription\n\nThere is an abundance of gyms in the borough but Windsor Leisure Centre, based in the heart of Windsor, is an excellent one. The vast array of equipment to use makes it easy to train the entire body and means that you’re not lingering around in the gym waiting for the piece of equipment that you actually came to the gym for. The friendly and knowledgeable staff at Windsor Leisure Centre makes joining easier as they not only know the best exercises for you to reach your goals but also like to get to know you and do their best to ensure you don’t injure yourself.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nIf you’re feeling like a one off game just isn’t good enough and you want all the benefits that come with a membership, like feeling part of that community and team, then Windsor Leisure Centre does offer membership. Enjoy as many games as you like for a monthly or annual fee. Please get in touch to find out more information.\n\nLooking to set up regular games at Windsor Leisure Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Windsor and Eton Central station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Gym\nIndoor\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 7 miles away\n\n",
+ "name": "Windsor Leisure Centre",
+ "area": "Windsor and Maidenhead",
+ "address": "Stovell Road, Windsor, Windsor and Maidenhead, SL4 5JB",
+ "postcode": "SL4 5JB",
+ "hours": {
+  "mon": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:30",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 06:30-22:00",
+  "Tuesday 06:30-22:00",
+  "Wednesday 06:30-22:00",
+  "Thursday 06:30-22:00",
+  "Friday 06:30-22:00",
+  "Saturday 08:00-18:00",
+  "Sunday 09:00-18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/windsor-leisure-centre/football-5-a-side-34572",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

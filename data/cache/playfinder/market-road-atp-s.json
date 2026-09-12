@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/market-road-atp-s",
+ "finalUrl": "https://www.playfinder.com/london/venue/market-road-atp-s",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:03:18.037Z",
+ "title": "Market Road Football Pitches, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nMarket Road Football Pitches Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Market Road, Holloway, London, N7 9PL\n\nPrices\n\nFrom £54.14-£94.75/hour\n\nPublic Transport\n\n Holloway Road, Caledonian Road\n\nOpening Hours\nMonday\t09:00 - 22:00\nTuesday\t09:00 - 22:00\nWednesday\t09:00 - 22:00\nThursday\t09:00 - 22:00\nFriday\t09:00 - 22:00\nSaturday\t09:00 - 18:00\nSunday\t09:00 - 18:00\nDescription\n\nPlease note, this venue operates a strict no cancellation or amendment policy on all football bookings.\n\nBook the 11-a-side football pitch at Market Road ATP’s in Holloway if you're looking for an excellent pitch and live or work in North London. This venue has sensational footballing facilities, so whether you like to play 11-a-side football casually or you're part of a team or league, Market Road ATP’s in Holloway is ideal for you. Everyone has their favourite surface for playing 11-a-side football on and this pitch is 3G astroturf.\n\n*For any filming enquiries, please ensure you have the appropriate filming permissions. Your booking will be ended immediately with no refund if you are not able to show proof of permission.*\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nLooking to set up regular games at Market Road ATP’s in Holloway? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe changing rooms on offer here are excellent. They are well-equipped and help to provide an additional excellence to this already outstanding sports facility.\n\nThe venue is situated near Caledonian Road station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n11 a side | 3G Astroturf5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 14.3 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 12.8 miles away\n\nBeaumont School\nHertfordshire\n\n 16.3 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 4.4 miles away\n\nBull Lane Playing Fields\nLondon\n\n 4.8 miles away\n\n",
+ "name": "Market Road Football Pitches",
+ "area": "Islington",
+ "address": "Market Road, Holloway, London, N7 9PL",
+ "postcode": "N7 9PL",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 22:00",
+  "Tuesday 09:00 - 22:00",
+  "Wednesday 09:00 - 22:00",
+  "Thursday 09:00 - 22:00",
+  "Friday 09:00 - 22:00",
+  "Saturday 09:00 - 18:00",
+  "Sunday 09:00 - 18:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/market-road-atp-s/football-11-a-side-34284",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/market-road-atp-s/football-5-a-side-34444",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £54.14-£94.75/hour"
+}

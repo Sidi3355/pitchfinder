@@ -1,0 +1,118 @@
+{
+ "url": "https://www.playfinder.com/london/venue/playfootball-mottingham-coldharbour",
+ "finalUrl": "https://www.playfinder.com/london/venue/playfootball-mottingham-coldharbour",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:22:55.456Z",
+ "title": "Coldharbour Leisure Centre, Greenwich | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nColdharbour Leisure Centre Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Coldharbour Leisure Centre, Chapel Farm Road, Eltham, SE9 3LX\n\nPrices\n\nAround £154.50/hour\n\nPublic Transport\n\n Mottingham\n\nOpening Hours\nMonday\t08:00 - 22:00\nTuesday\t08:00 - 22:00\nWednesday\t08:00 - 22:00\nThursday\t08:00 - 22:00\nFriday\t08:00 - 22:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nNeed an 11-a-side football pitch in east London? Coldharbour Leisure Centre boasts a spectacular 11-a-side 3G astroturf football pitch which is available for footballers looking for a one-off game or a regular block booking. It is a full size pitch that is available to book for one-off training sessions or a season long league. Check with the facility about hiring officials and other equipment.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting home games, as it means the facility is extremely accommodating for travelling away team players.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nLooking to set up regular games at Coldharbour Leisure Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe venue is situated near Mottingham station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n11 a side | 3G Astroturf5 a side | 3G Astroturf7 a side | 3G Astroturf8 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 15 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 7.6 miles away\n\nBeaumont School\nHertfordshire\n\n 26.7 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 9.2 miles away\n\nBull Lane Playing Fields\nLondon\n\n 13.2 miles away\n\n",
+ "name": "Coldharbour Leisure Centre",
+ "area": "Greenwich",
+ "address": "Coldharbour Leisure Centre, Chapel Farm Road, Eltham, SE9 3LX",
+ "postcode": "SE9 3LX",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00 - 22:00",
+  "Tuesday 08:00 - 22:00",
+  "Wednesday 08:00 - 22:00",
+  "Thursday 08:00 - 22:00",
+  "Friday 08:00 - 22:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/playfootball-mottingham-coldharbour/football-11-a-side-38365",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/playfootball-mottingham-coldharbour/football-5-a-side-38366",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/playfootball-mottingham-coldharbour/football-7-a-side-38367",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/playfootball-mottingham-coldharbour/football-8-a-side-38405",
+   "label": "8 a side | 3G Astroturf",
+   "format": 8,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Around £154.50/hour"
+}

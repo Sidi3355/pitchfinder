@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/upminster-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/upminster-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:07:23.859Z",
+ "title": "Upminster Park, Havering | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nUpminster Park Non-Partner \nFootballTennisCricket\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Upminster Park, Corbets Tey Road, Upminster, Havering, RM14 2AJ\n\nPrices\n\nPublic Transport\n\n Upminster Bridge\n\nOpening Hours\n\n08.00 - Dusk\n\nDescription\n\nUpminster Park, which is based in Havering, has 2 Football facilities, which are Grass. This facility is pay as you play.\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 26 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 19.2 miles away\n\nBeaumont School\nHertfordshire\n\n 27.2 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 11.5 miles away\n\nBull Lane Playing Fields\nLondon\n\n 14.4 miles away\n\n",
+ "name": "Upminster Park",
+ "area": "Havering",
+ "address": "Upminster Park, Corbets Tey Road, Upminster, Havering, RM14 2AJ",
+ "postcode": "RM14 2AJ",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/upminster-park/football-11-a-side-32138",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

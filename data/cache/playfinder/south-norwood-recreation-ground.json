@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/south-norwood-recreation-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/south-norwood-recreation-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:09:28.891Z",
+ "title": "South Norwood Recreation Ground, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSouth Norwood Recreation Ground Non-Partner \nFootballTennisAthletics\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n South Norwood Recreation Ground, Cargreen Road, South Norwood, Croydon, SE25 5AD\n\nPrices\n\nFree\n\nPublic Transport\n\n Norwood Junction (Overground)\n\nOpening Hours\n\n08.00 - 20.00\n\nDescription\n\nSouth Norwood Recreation Ground offers a 5 a side game of football on an outdoor concrete surface. It is located in Croydon, South London and the nearest London underground station is Norwood Junction (Overground). The facilities are available on a pay as you play basis.\n\n Football Pitch\n5 a side | Concrete\nFacilities\n floodlights changing rooms 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 6.3 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 8.8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 12.1 miles away\n\n",
+ "name": "South Norwood Recreation Ground",
+ "area": "Croydon",
+ "address": "South Norwood Recreation Ground, Cargreen Road, South Norwood, Croydon, SE25 5AD",
+ "postcode": "SE25 5AD",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/south-norwood-recreation-ground/football-5-a-side-32306",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Free",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/churchfields-recreation-ground-ealing",
+ "finalUrl": "https://www.playfinder.com/london/venue/churchfields-recreation-ground-ealing",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:08:19.438Z",
+ "title": "Churchfield Recreation Ground, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nChurchfield Recreation Ground Non-Partner \nFootballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Church Road, Hanwell, Ealing, W7 3BP\n\nPrices\n\nFree\n\nPublic Transport\n\n Hanwell Mainline (train) or Bus: E3 and E1 on Greenford Avenue, then 83, 92, 195, 207, 282, 427 and 607 with stops on the Uxbridge Road and Ealing Hospital\n\nOpening Hours\n\n07:30 - Dusk\n\nDescription\n\nChurchfields Recreation Ground (Ealing), which is based in Ealing, has Football facilities, which are Concrete. This facility is membership only.\n\n Football Pitch\n5 a side | Concrete\nFacilities\n 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 9 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 10.2 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 10.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 23.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 23.2 miles away\n\n",
+ "name": "Churchfield Recreation Ground",
+ "area": "Ealing",
+ "address": "Church Road, Hanwell, Ealing, W7 3BP",
+ "postcode": "W7 3BP",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/churchfields-recreation-ground-ealing/football-5-a-side-32189",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Free",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/ruskin-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/ruskin-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:07:07.102Z",
+ "title": "Ruskin Park, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nRuskin Park Non-Partner \nFootballRugbyTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Ruskin Park, Ferndene Road, Denmark Hill, Camberwell, Lambeth, SE5 8EL\n\nPrices\n\nPublic Transport\n\n Denmark Hill (Overground)\n\nOpening Hours\nMonday\t08:00-21:00\nTuesday\t08:00-21:00\nWednesday\t08:00-21:00\nThursday\t08:00-21:00\nFriday\t08:00-21:00\nSaturday\t09:00-21:00\nSunday\t09:00-21:00\nDescription\n\nRuskin Park, which is based in Lambeth, has 2 Football facilities, which are Grass. This facility is pay as you play.\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 10.5 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 7.2 miles away\n\nBeaumont School\nHertfordshire\n\n 21.8 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 7.3 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 7.6 miles away\n\n",
+ "name": "Ruskin Park",
+ "area": "Lambeth",
+ "address": "Ruskin Park, Ferndene Road, Denmark Hill, Camberwell, Lambeth, SE5 8EL",
+ "postcode": "SE5 8EL",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00-21:00",
+  "Tuesday 08:00-21:00",
+  "Wednesday 08:00-21:00",
+  "Thursday 08:00-21:00",
+  "Friday 08:00-21:00",
+  "Saturday 09:00-21:00",
+  "Sunday 09:00-21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/ruskin-park/football-11-a-side-32110",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

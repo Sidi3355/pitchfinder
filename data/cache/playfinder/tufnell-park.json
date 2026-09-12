@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/tufnell-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/tufnell-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:07:18.767Z",
+ "title": "Tufnell Park, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nTufnell Park Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Campdale Road, Tufnell Park, Islington, N7 0EB\n\nPrices\n\n£82.50 / game\n\nPublic Transport\n\n Tufnell Park\n\nOpening Hours\nMonday\t08:00-21:00\nTuesday\t08:00-21:00\nWednesday\t08:00-21:00\nThursday\t08:00-21:00\nFriday\t08:00-21:00\nSaturday\t08:00-21:00\nSunday\t08:00-21:00\nDescription\n\nTufnell Park offers a 11 a side game of football on an Outdoor grass surface. It is located in Islington, North London and the nearest London underground station is Tufnell Park. The facilities are available on a pay as you play basis.\n\n Football Pitch\n11 a side | Grass\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 14.8 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 13.7 miles away\n\nBull Lane Playing Fields\nLondon\n\n 4.3 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 4.8 miles away\n\nNorth Acton Playing Fields\nActon\n\n 6.5 miles away\n\n",
+ "name": "Tufnell Park",
+ "area": "Islington",
+ "address": "Campdale Road, Tufnell Park, Islington, N7 0EB",
+ "postcode": "N7 0EB",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00-21:00",
+  "Tuesday 08:00-21:00",
+  "Wednesday 08:00-21:00",
+  "Thursday 08:00-21:00",
+  "Friday 08:00-21:00",
+  "Saturday 08:00-21:00",
+  "Sunday 08:00-21:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/tufnell-park/football-11-a-side-32137",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "£82.50 / game",
+ "skipped": "no artificial football pitch"
+}

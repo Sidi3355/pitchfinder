@@ -1,0 +1,91 @@
+{
+ "url": "https://www.playfinder.com/london/venue/st-faiths-school-wandsworth",
+ "finalUrl": "https://www.playfinder.com/london/venue/st-faiths-school-wandsworth",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:33:54.446Z",
+ "title": "St Faiths School Wandsworth, Wandsworth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSt Faiths School Wandsworth Non-Partner \nFootball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Alma Road, ., Wandworth, SW18 1AE\n\nPrices\n\nPrice on request\n\nPublic Transport\n\n Wandsworth Town, Clapham Junction\n\nOpening Hours\nMonday\t18:00-21:00\nTuesday\t18:00-21:00\nWednesday\t18:00-21:00\nThursday\t18:00-21:00\nFriday\t18:00-21:00\nSaturday\t10:00-17:00\nSunday\t10:00-17:00\n Football Pitch\n5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 3.6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 7.6 miles away\n\nMallinson Sports Centre\nHighgate\n\n 8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16.1 miles away\n\n",
+ "name": "St Faiths School Wandsworth",
+ "area": "Wandsworth",
+ "address": "Alma Road, ., Wandworth, SW18 1AE",
+ "postcode": "SW18 1AE",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00-21:00",
+  "Tuesday 18:00-21:00",
+  "Wednesday 18:00-21:00",
+  "Thursday 18:00-21:00",
+  "Friday 18:00-21:00",
+  "Saturday 10:00-17:00",
+  "Sunday 10:00-17:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/st-faiths-school-wandsworth/football-5-a-side-42056",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Price on request"
+}

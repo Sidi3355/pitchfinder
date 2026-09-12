@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/burgess-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/burgess-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:55:45.134Z",
+ "title": "Burgess Park, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBurgess Park Non-Partner \nFootballTennisCricket\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Burgess Park, Albany Road, Old Kent Road, Southwark, SE5 0AH\n\nPrices\n\nFootball 11-a-side £178.20 / hour\n\nPublic Transport\n\n Oval\n\nOpening Hours\nMonday\t10:00-22:00\nTuesday\t10:00-22:00\nWednesday\t10:00-22:00\nThursday\t10:00-22:00\nFriday\t10:00-22:00\nSaturday\t09:00-20:00\nSunday\t09:00-20:00\nDescription\n\nBurgess Park has one 11 a side football pitch on a 3G Astroturf surface for hire. It is located in Southwark, South London and the nearest tube is Oval. The facilities are available on pay as you play basis.\n\n Football Pitches\n11 a side | 3G Astroturf5 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 11.5 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 8.3 miles away\n\nBeaumont School\nHertfordshire\n\n 20.8 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 6.2 miles away\n\nSouthfield Road Playing Fields\nLondon\n\n 7.5 miles away\n\n",
+ "name": "Burgess Park",
+ "area": "Southwark",
+ "address": "Burgess Park, Albany Road, Old Kent Road, Southwark, SE5 0AH",
+ "postcode": "SE5 0AH",
+ "hours": {
+  "mon": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "10:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 10:00-22:00",
+  "Tuesday 10:00-22:00",
+  "Wednesday 10:00-22:00",
+  "Thursday 10:00-22:00",
+  "Friday 10:00-22:00",
+  "Saturday 09:00-20:00",
+  "Sunday 09:00-20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/burgess-park/football-11-a-side-32011",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/burgess-park/football-5-a-side-32174",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Football 11-a-side £178.20 / hour"
+}

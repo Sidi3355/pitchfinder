@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/fairfield-recreation-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/fairfield-recreation-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:41:26.060Z",
+ "title": "Fairfield Recreation Ground, Kingston upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nFairfield Recreation Ground\nFootballCricket\n Book Online at Fairfield Recreation Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Fairfield Recreation Ground, Greater London, Kingston upon Thames, KT1 2PY\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Kingston train station - 5-10 minute walk\n\nDescription\n\nBook the 11-a-side football pitch at Fairfield Recreation Ground if you're looking for an excellent pitch and live or work in Kingston upon Thames. This venue has sensational footballing facilities, so whether you like to play 11-a-side football casually or you're part of a team or league, Fairfield Recreation Ground is ideal for you. Everyone has their favourite surface for playing 11-a-side football on and this pitch is grass.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Fairfield Recreation Ground? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated a 5-10 minute walk from Kingston train station.\n\n Football Pitch\n11 a side pitch | Grass\nFacilities\n changing rooms\n Address\n\nFairfield Recreation Ground\nFairfield Recreation Ground\nGreater London\nKT1 2PY\n\n\nVIEW ON MAP\n Nearby Football Pitches\nAlexandra Recreation Ground\nSurbiton\n\n 1.5 miles away\n\nManor Park\nNew Malden\n\n 2.5 miles away\n\nKing Edwards Recreation Ground\nChessington\n\n 2.6 miles away\n\nKing Georges Playing Field\nChessington\n\n 2.6 miles away\n\nChurchfields Recreation Ground\nChessington\n\n 3.3 miles away\n\n",
+ "name": "Fairfield Recreation Ground",
+ "area": "Kingston upon Thames",
+ "address": "Fairfield Recreation Ground, Greater London, Kingston upon Thames, KT1 2PY",
+ "postcode": "KT1 2PY",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/fairfield-recreation-ground/football-11-a-side-pitch-93315",
+   "label": "11 a side pitch | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

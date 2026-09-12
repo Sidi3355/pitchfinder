@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-pepys-site",
+ "finalUrl": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-pepys-site",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:36:24.626Z",
+ "title": "Haberdashers' Hatcham College - Pepys Site, Lewisham | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHaberdashers' Hatcham College - Pepys Site\nSpace HireFootballBasketball\n Book Online at Haberdashers' Hatcham College - Pepys Site\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Pepys Road, London, London, SE14 5SF\n\nPrices\n\nPlease check calendar above for prices\n\nPublic Transport\n\n Brockley\n\nOpening Hours\nMonday\t17:00 - 20:00\nTuesday\t17:00 - 20:00\nWednesday\t17:00 - 20:00\nThursday\t17:00 - 20:00\nFriday\t17:00 - 20:00\nSaturday\t10:00 - 17:00\nSunday\t10:00 - 17:00\nDescription\n\nHaberdashers' Hatcham College - Pepys Site is a wonderful location if you're looking for main hall space hire in South East London. It’s an ideal place to hold events as it’s spacious but still allows for an excellent atmosphere. It’s a very popular location for locals, so be sure to book it early to avoid disappointment on the big day. The main hall does allow people to bring their own equipment or materials, but it’s sensible to check in with the reception to confirm what is and isn’t allowed. If additional staff are required to ensure the event runs smoothly then speak with the venue about availability, suitable skills and costings.\n\nIf public transport isn't your thing, then there are alternative travel options. The venue is easily accessible by car and free parking facilities are available on site. This also makes it the perfect facility for teams hosting a game or event, as it means the facility is extremely accommodating for travelling guests.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-use booking system. This method avoids the monthly membership charges and gives you the freedom to use the facility as and when you like, without the commitment of a weekly booking or a membership fee.\n\nFor those who like the security of knowing you can use the facility at the same time every week without fail, you can make a block booking at Haberdashers' Hatcham College - Pepys Site. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe closest station when travelling is Brockley. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Space Hire\nMain hallClassroom | Small\nFacilities\n free parking\n Address\n\nHaberdashers' Hatcham College - Pepys Site\nPepys Road\nLondon\nSE14 5SF\n\n\nVIEW ON MAP\n Nearby Space Hire\nLondon Tigers Sports Complex\nEaling\n\n 14.8 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 7.8 miles away\n\nWallington County Grammar School\nWallington\n\n 8.6 miles away\n\nCopthall School\nLondon\n\n 12.3 miles away\n\nStanley Primary School\nLondon\n\n 13.4 miles away\n\n",
+ "name": "Haberdashers' Hatcham College - Pepys Site",
+ "area": "Lewisham",
+ "address": "Pepys Road, London, London, SE14 5SF",
+ "postcode": "SE14 5SF",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 20:00",
+  "Tuesday 17:00 - 20:00",
+  "Wednesday 17:00 - 20:00",
+  "Thursday 17:00 - 20:00",
+  "Friday 17:00 - 20:00",
+  "Saturday 10:00 - 17:00",
+  "Sunday 10:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/haberdashers-hatcham-college-pepys-site/football-5-a-side-43634",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please check calendar above for prices",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,90 @@
+{
+ "url": "https://www.playfinder.com/london/venue/st-aloysius-college",
+ "finalUrl": "https://www.playfinder.com/london/venue/st-aloysius-college",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:31:47.944Z",
+ "title": "St Aloysius' College, Islington | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSt Aloysius' College Non-Partner \nFootballBadmintonBasketballCricketTable TennisVolleyballSpace HireTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Hornsey Lane, Highgate, London, N6 5LY\n\nPrices\n\nPlease check calendar above\n\nPublic Transport\n\n Archway\n\nOpening Hours\n\nTerm Time: Mon - Fri: 18:00 - 22:00 and Sat & Sun: 08:00 - 20:00. During holiday period: 08:00 - 16:00\n\nDescription\n\nSt Aloysius' College is located in North London and boasts an incredible 5-a-side sports hall pitch. Not many 5-a-side pitches in London are as well maintained and cared for as this pitch. So whether you're an experienced 5-a-side player or you're just getting into the small-sided game, this facility is definitely worth playing at. Footballs might be supplied by the facility for a small fee but we advise that you call the facility to check before your arrival.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at St Aloysius' College? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Archway station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n5 a side | Indoor5 a side | Hard (macadam)\nFacilities\n free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 0.9 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 15.4 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 16.1 miles away\n\n",
+ "name": "St Aloysius' College",
+ "area": "Islington",
+ "address": "Hornsey Lane, Highgate, London, N6 5LY",
+ "postcode": "N6 5LY",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Mon - Fri: 18:00 - 22:00",
+  "Sat & Sun: 08:00 - 20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/st-aloysius-college/football-5-a-side-42444",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/st-aloysius-college/football-5-a-side-42453",
+   "label": "5 a side | Hard (macadam)",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Please check calendar above",
+ "skipped": "no artificial football pitch"
+}

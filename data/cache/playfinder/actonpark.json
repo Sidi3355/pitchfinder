@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/actonpark",
+ "finalUrl": "https://www.playfinder.com/london/venue/actonpark",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:40:19.309Z",
+ "title": "Acton Park, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nActon Park\nTennis\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Centre Avenue, Acton Park, London, W3 7JX\n\nPrices\n\nPublic Transport\n\n tube: Acton Town (Piccadilly and District line)\n\nOpening Hours\nMonday\t07:30-16:30\nTuesday\t07:30-16:30\nWednesday\t07:30-16:30\nThursday\t07:30-16:30\nFriday\t07:30-16:30\nSaturday\t07:30-16:30\nSunday\t07:30-16:30\nDescription\n\nFull, Outdoor, Natural Lighting, Tarmac\n\nLooking for a tennis court in West London? Acton Park is the perfect venue to make a tennis booking!\n\nTo book a court, simply click on any available time slot. Courts may be booked 6 days in advance. You can book a court for a maximum of 90 minutes a day and a minimum of 30 minutes a day.\n\nYou will be prompted to log-in in order to book. If you do not already have a ClubSpark account, you will be required to create one. Complete the booking requirements and when finished, you will be sent a booking confirmation and PIN code via email which you will need to access the court.\n\nYou will receive an access code once your booking has been confirmed. This will be activated 5 minutes before your confirmed booking and end 5 minutes after your booking ends.\n\nThe courts are not floodlit, so please ensure that you do not book a slot when it will be dark.\n\nWhen booked, one, two, three or four people may use the court. Equipment is not supplied.\n\nPlease wear appropriate footwear when playing. As this is a Community Site, frequented by lots of children, please be considerate of others at all times when playing and ensure that shirts are worn on court even in very hot weather.\n\nIf after booking you find that you are no longer able to play, please cancel your booking so that others may use the courts.\n\n Tennis Court\nCourt | Hard (macadam)\n Address\n\nActon Park\nCentre Avenue\nActon Park\nW3 7JX\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Tennis Courts\nFidelis College\nLondon\n\n 9.2 miles away\n\nSouthfield Rec\nMiddlesex\n\n 0.3 miles away\n\nGravesham Legend Sports\nGravesend\n\n 29.1 miles away\n\nGravesham Legend Sports\nGravesend\n\n 29.1 miles away\n\nChurchfields Recreation Ground\nWeybridge\n\n 3.6 miles away\n\n",
+ "name": "Acton Park",
+ "area": "Ealing",
+ "address": "Centre Avenue, Acton Park, London, W3 7JX",
+ "postcode": "W3 7JX",
+ "hours": {
+  "mon": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ],
+  "tue": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ],
+  "wed": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ],
+  "thu": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ],
+  "fri": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ],
+  "sat": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ],
+  "sun": [
+   [
+    "07:30",
+    "16:30"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 07:30-16:30",
+  "Tuesday 07:30-16:30",
+  "Wednesday 07:30-16:30",
+  "Thursday 07:30-16:30",
+  "Friday 07:30-16:30",
+  "Saturday 07:30-16:30",
+  "Sunday 07:30-16:30"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

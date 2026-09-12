@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/barking-and-dagenham-college",
+ "finalUrl": "https://www.playfinder.com/london/venue/barking-and-dagenham-college",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:21:48.008Z",
+ "title": "Barking and Dagenham College, Barking and Dagenham | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBarking and Dagenham College Non-Partner \nFootballBadmintonBasketball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Dagenham Road, Romford, Barking and Dagenham, RM7 0XU\n\nPrices\n\nPublic Transport\n\n Romford (overground)\n\nOpening Hours\n\nMon - Thurs: 7:00 - 21:00, Friday: 9:00 - 20:00, Saturday: 9:00 - 13:00\n\n Football Pitch\n5 a side | Indoor\nFacilities\n changing rooms 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHaberdasher's Crayford Academy\nKent\n\n 7.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 7.2 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 7.2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 13.4 miles away\n\nMallinson Sports Centre\nHighgate\n\n 14.3 miles away\n\n",
+ "name": "Barking and Dagenham College",
+ "area": "Barking and Dagenham",
+ "address": "Dagenham Road, Romford, Barking and Dagenham, RM7 0XU",
+ "postcode": "RM7 0XU",
+ "hours": {
+  "mon": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "13:00"
+   ]
+  ],
+  "sun": []
+ },
+ "hoursQuotes": [
+  "Mon - Thurs: 7:00 - 21:00",
+  "Friday: 9:00 - 20:00",
+  "Saturday: 9:00 - 13:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/barking-and-dagenham-college/football-5-a-side-35926",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

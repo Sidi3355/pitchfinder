@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/wren-academy-enfield",
+ "finalUrl": "https://www.playfinder.com/london/venue/wren-academy-enfield",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:44:15.174Z",
+ "title": "Wren Academy Enfield, Enfield | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWren Academy Enfield\nSpace HireFootball\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 3 Chace Village Road, Greater London, Enfield, EN2 8GH\n\nPrices\n\nPublic Transport\n\n Gordon Hill\n\nOpening Hours\nMonday\t18:00 - 22:00\nTuesday\t18:00 - 22:00\nWednesday\t18:00 - 22:00\nThursday\t18:00 - 22:00\nFriday\t18:00 - 22:00\nSaturday\t8:00 - 22:00\nSunday\t8:00 - 22:00\nDescription\n\nThe Tarmac Muga at Wren Academy Enfield is a versatile outdoor sports facility available for hire, providing a quality space for a range of sporting activities.\n\nThe facility is suitable for netball and tennis, making it ideal for sports clubs, schools, teams, coaches and individuals looking for a reliable space to train, practise or play. Whether you're organising a regular training session, a competitive match or a casual game, the Tarmac Muga offers a practical and flexible environment for players of all abilities.\n\nAvailable for both one-off and regular bookings, the facility is a great option for local sports groups and individuals looking for a convenient outdoor venue in Enfield.\n\n Space Hire\nMuga | ConcreteClassroomSports hallStudio\nFacilities\n free parking\n Address\n\nWren Academy Enfield\n3 Chace Village Road\nGreater London\nEN2 8GH\n\n\nVIEW ON MAP\nMAKE A BOOKING\n Nearby Space Hire\nWatlington MUGA\nWatlington\n\n 38.6 miles away\n\nBolder Academy\nLondon\n\n 15.6 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 23.3 miles away\n\nCastle View School\nEssex\n\n 31.5 miles away\n\nThe Chalfonts Community College\nGerrards Cross\n\n 20.3 miles away\n\n",
+ "name": "Wren Academy Enfield",
+ "area": "Enfield",
+ "address": "3 Chace Village Road, Greater London, Enfield, EN2 8GH",
+ "postcode": "EN2 8GH",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 18:00 - 22:00",
+  "Tuesday 18:00 - 22:00",
+  "Wednesday 18:00 - 22:00",
+  "Thursday 18:00 - 22:00",
+  "Friday 18:00 - 22:00",
+  "Saturday 8:00 - 22:00",
+  "Sunday 8:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/wren-academy-enfield/football-9-a-side-93779",
+   "label": "football",
+   "format": 9,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

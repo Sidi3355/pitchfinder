@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/palewell-common-pitch-and-putt",
+ "finalUrl": "https://www.playfinder.com/london/venue/palewell-common-pitch-and-putt",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:11:50.320Z",
+ "title": "Palewell Common Pitch and Putt, Richmond upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nPalewell Common Pitch and Putt Non-Partner \nGolf\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Palewell Common Pitch and Putt, Palewell Common Drive, East Sheen, Richmond upon Thames, SW14 8RE\n\nPrices\n\n£5\n\nPublic Transport\n\n Mortlake (train)\n\nOpening Hours\nMonday\t09:30 - 18:00\nTuesday\t09:30 - 18:00\nWednesday\t09:30 - 18:00\nThursday\t09:30 - 18:00\nFriday\t09:30 - 18:00\nSaturday\t09:30 - 18:00\nSunday\t09:30 - 18:00\nDescription\n\nPalewell Common Pitch and Putt, which is based in Richmond upon Thames, has Golf facilities. This facility is pay as you play.\n\n Golf Course\n9 hole\nFacilities\n free parking\nMAKE A BOOKING\n",
+ "name": "Palewell Common Pitch and Putt",
+ "area": "Richmond upon Thames",
+ "address": "Palewell Common Pitch and Putt, Palewell Common Drive, East Sheen, Richmond upon Thames, SW14 8RE",
+ "postcode": "SW14 8RE",
+ "hours": {
+  "mon": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:30",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:30 - 18:00",
+  "Tuesday 09:30 - 18:00",
+  "Wednesday 09:30 - 18:00",
+  "Thursday 09:30 - 18:00",
+  "Friday 09:30 - 18:00",
+  "Saturday 09:30 - 18:00",
+  "Sunday 09:30 - 18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "£5",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,38 @@
+{
+ "url": "https://www.playfinder.com/london/venue/kilburn-grange",
+ "finalUrl": "https://www.playfinder.com/london/venue/kilburn-grange",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:08:49.734Z",
+ "title": "Kilburn Grange, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nKilburn Grange Non-Partner \nFootballTennisBasketball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Kilburn Grange Road, Kilburn, Camden, NW6 4LB\n\nPrices\n\nFrom £42.00-£42.60/hour\n\nPublic Transport\n\n West Hampstead\n\nOpening Hours\nMonday\t08:00 - Dusk\nTuesday\t08:00 - Dusk\nWednesday\t08:00 - Dusk\nThursday\t08:00 - Dusk\nFriday\t08:00 - Dusk\nSaturday\t08:00 - Dusk\nSunday\t08:00 - Dusk\nDescription\n\nBookings that finish after 16:00 must be made at least 72 hours in advance. Any bookings made with less than 72 hours notice will be cancelled (with no refund) as the park attendant will not be available.\n\nLooking to hire a 5-a-side football pitch in North West London? Kilburn Grange has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Kilburn Grange is played on hard (macadam). So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Kilburn Grange is the right choice for you.\n\nIf public transport isn't your thing, then parking facilities are available where a pay and display system is operated. The specific prices may vary depending on the time of day, so if you'd like to know this information then please contact the venue.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Kilburn Grange? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe closest station when travelling is West Hampstead. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitch\n5 a side | Hard (macadam)\nFacilities\n floodlights free parking 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 2.7 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 5.5 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 12.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 17.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 17.6 miles away\n\n",
+ "name": "Kilburn Grange",
+ "area": "Camden",
+ "address": "Kilburn Grange Road, Kilburn, Camden, NW6 4LB",
+ "postcode": "NW6 4LB",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/kilburn-grange/football-5-a-side-32247",
+   "label": "5 a side | Hard (macadam)",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "From £42.00-£42.60/hour",
+ "skipped": "no artificial football pitch"
+}

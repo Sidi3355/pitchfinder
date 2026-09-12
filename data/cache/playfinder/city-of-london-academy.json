@@ -1,0 +1,49 @@
+{
+ "url": "https://www.playfinder.com/london/venue/city-of-london-academy",
+ "finalUrl": "https://www.playfinder.com/london/venue/city-of-london-academy",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:02:47.329Z",
+ "title": "City of London Academy, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCity of London Academy Non-Partner \nFootballHockeyRugbyGym\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 240, Lynton Road, Southwark, SE1 5LA\n\nPrices\n\nFrom £150.00-£168.00/hour\n\nPublic Transport\n\n Bermondsey\n\nOpening Hours\n\n9:00-22:00\n\nDescription\n\nCity of London Academy in South London, boasts an amazing 11-a-side astroturf pitch. The staff at City of London Academy really care for and maintain this pitch to a high standard. This venue is also the perfect place for an 11-a-side league in South London as matches would be played on astroturf. So whether you're an experienced 11-a-side team or you're just getting into the game, this facility is definitely worth checking out. Footballs and other equipment might be supplied by the facility for a small fee but we advise that you call the facility after your booking has been confirmed to check before your arrival.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work.\n\nCustomers will be pleased to know that the venue operates a pay-as-you-play booking system. This means sports enthusiasts can just turn up and play depending on availability and book on a pay as you play basis. This method avoids the monthly membership charges and gives you the freedom to play as and when you like, without the commitment of a weekly game or a membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at City of London Academy. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe venue is situated near Bermondsey station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n11 a side | Astroturf7 a side | Astroturf\nFacilities\n floodlights changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 12.5 miles away\n\nBeaumont School\nHertfordshire\n\n 20.9 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 8.7 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 5.3 miles away\n\nBull Lane Playing Fields\nLondon\n\n 8.3 miles away\n\n",
+ "name": "City of London Academy",
+ "area": "Southwark",
+ "address": "240, Lynton Road, Southwark, SE1 5LA",
+ "postcode": "SE1 5LA",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "astro",
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/city-of-london-academy/football-11-a-side-33690",
+   "label": "11 a side | Astroturf",
+   "format": 11,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/city-of-london-academy/football-7-a-side-36011",
+   "label": "7 a side | Astroturf",
+   "format": 7,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £150.00-£168.00/hour"
+}

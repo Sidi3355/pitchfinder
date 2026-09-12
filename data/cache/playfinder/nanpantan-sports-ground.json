@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/nanpantan-sports-ground",
+ "finalUrl": "https://www.playfinder.com/london/venue/nanpantan-sports-ground",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:20:22.908Z",
+ "title": "Nanpantan Sports Ground, Ballymun | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nNanpantan Sports Ground\nCricket\n Book Online at Nanpantan Sports Ground\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Watermead Lane, Loughborough, Loughborough, LE11 3YE\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Loughborough\n\nOpening Hours\nMonday\t09:00 - 19:00\nTuesday\t09:00 - 19:00\nWednesday\t09:00 - 19:00\nThursday\t09:00 - 19:00\nFriday\t09:00 - 19:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\n** CRICKET SQUARE C **\n\n\n* Please note, to add a changing room you will need to make a booking through to 'Make A Block Booking' tab on the right. You can add a changing room at an additional cost at the check-out stage *\n\n\n----------------------------------------------------------------\n\n\nNanpantan Sports Ground, located in the heart of Loughborough, is a top-notch sports facility that caters to sports enthusiasts and athletes alike. Boasting a sprawling and meticulously maintained grass cricket pitch, this establishment is a haven for cricket lovers of all skill levels. Whether you're a seasoned player looking for a challenging match or a newbie trying to grasp the basics, the pitch provides the ideal setting to immerse yourself in the beloved sport.\n\nWith its professionally groomed grass, this venue offers an exceptional cricket experience for both competitive games and casual practices. This exceptional sports facility offers an environment that encourages camaraderie, teamwork, and healthy competition. Whether you aim to refine your batting technique, hone your fielding skills, or show off your bowling prowess, the grass cricket pitch at Nanpantan Sports Ground is the perfect venue for training and friendly matches alike. Immerse yourself in the passion and excitement of cricket at Nanpantan Sports Ground and elevate your game to new heights in this first-class sports facility.\n\n Cricket Facilities\nOutdoor | GrassOutdoor | GrassOutdoor | Grass\nFacilities\n free parking\n Address\n\nNanpantan Sports Ground\nWatermead Lane\nLoughborough\nLE11 3YE\n\n\nVIEW ON MAP\n Nearby Cricket Facilities\nNanpantan Sports Ground\nLoughborough\n\n 0 miles away\n\nNanpantan Sports Ground\nLoughborough\n\n 0 miles away\n\nDerby Road Playing Fields\nLoughborough\n\n 2.5 miles away\n\nDerby Road Playing Fields\nLoughborough\n\n 2.5 miles away\n\nLight Hall School\nSolihull\n\n 34.5 miles away\n\n",
+ "name": "Nanpantan Sports Ground",
+ "area": "Ballymun",
+ "address": "Watermead Lane, Loughborough, Loughborough, LE11 3YE",
+ "postcode": "LE11 3YE",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "19:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 19:00",
+  "Tuesday 09:00 - 19:00",
+  "Wednesday 09:00 - 19:00",
+  "Thursday 09:00 - 19:00",
+  "Friday 09:00 - 19:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

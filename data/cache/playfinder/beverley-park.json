@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/beverley-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/beverley-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:41:08.650Z",
+ "title": "Beverley Park, Kingston upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nBeverley Park\nCricket\n Book Online at Beverley Park\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Beverley Park, Greater London, New Malden, KT3 4LL\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Shannon Corner / Beverley Way Bus Stop is located within 150m of the park.\n\nOpening Hours\nMonday\t09:00 - 20:00\nTuesday\t09:00 - 20:00\nWednesday\t09:00 - 20:00\nThursday\t09:00 - 20:00\nFriday\t09:00 - 20:00\nSaturday\t09:00 - 20:00\nSunday\t09:00 - 20:00\nDescription\n\nWhether you're playing casually or in a team, you'll struggle to find better cricketing facilities than Beverley Park in the South West London area. The brilliant cricket pitch, played on grass, is one of the best places in London to play. With facilities like cricket pitches and cricket nets in London being either fully booked or not local enough, Beverley Park provides an excellent solution to those issues.\n\nIt is the ideal evening activity during the cricket season, whether you’re playing with friends or your team. The nature of cricket practise means you can also just turn up and join a game.\n\nThe venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nIf a one-off game isn't enough, then why not take advantage of the block booking option at Beverley Park? Block bookings are a great way to guarantee a weekly game and socialise with your friends. It also takes the hassle out of paying before each game and collecting money from teammates as there is a one-time payment.\n\nThe venue is situated near Shannon Corner / Beverley Way Bus Stop, located within 150m of the park.\n\n Cricket Facilities\nPitch | Artificial\nFacilities\n free parking\n Address\n\nBeverley Park\nBeverley Park\nGreater London\nKT3 4LL\n\n\nVIEW ON MAP\n Nearby Cricket Facilities\nLondon Tigers Sports Complex\nEaling\n\n 9.7 miles away\n\nWallington County Grammar School\nWallington\n\n 4.8 miles away\n\nWallington County Grammar School\nWallington\n\n 4.8 miles away\n\nLow Hall Sports Ground\nWaltham Forest\n\n 14.8 miles away\n\nManor Park\nNew Malden\n\n 1.2 miles away\n\n",
+ "name": "Beverley Park",
+ "area": "Kingston upon Thames",
+ "address": "Beverley Park, Greater London, New Malden, KT3 4LL",
+ "postcode": "KT3 4LL",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00 - 20:00",
+  "Tuesday 09:00 - 20:00",
+  "Wednesday 09:00 - 20:00",
+  "Thursday 09:00 - 20:00",
+  "Friday 09:00 - 20:00",
+  "Saturday 09:00 - 20:00",
+  "Sunday 09:00 - 20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

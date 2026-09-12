@@ -1,0 +1,87 @@
+{
+ "url": "https://www.playfinder.com/london/venue/woodcote-high-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/woodcote-high-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:05:51.187Z",
+ "title": "Woodcote High School, Croydon | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWoodcote High School\nAthleticsSpace HireNetballFootballRugbyGym\n Book Online at Woodcote High School\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Meadow Rise, Coulsdon, Coulsdon, CR5 2EH\n\nPrices\n\nPublic Transport\n\n Reedham\n\nOpening Hours\nMonday\t17:00 - 22:00\nTuesday\t17:00 - 22:00\nWednesday\t17:00 - 22:00\nThursday\t17:00 - 22:00\nFriday\t17:00 - 22:00\nSaturday\t9:00 - 22:00\nSunday\t9:00 - 22:00\nDescription\n\nThe athletics track at Woodcote High School in Coulsdon is available to hire, offering a reliable and well-maintained outdoor space for a wide range of sporting and fitness activities. Ideal for running clubs, personal training sessions, school use, or casual fitness groups, the track provides a safe and spacious environment suited to both structured training and informal exercise.\n\nLocated within the school grounds, the facility benefits from a quiet and secure setting while remaining easily accessible for local users in and around Coulsdon. The surrounding open space also allows for warm-ups, drills, and group fitness activities, making it a versatile option for different types of bookings.\n\nFlexible hire options are available, including evenings and weekends, making it convenient for both regular sessions and one-off bookings. Whether you’re preparing for competition, running a club session, or simply looking for a dedicated place to train, this athletics track offers a practical and accessible solution.\n\n Athletics Track\nRunning track | Artificial\nFacilities\n free parking\n Address\n\nWoodcote High School\nMeadow Rise\nCoulsdon\nCR5 2EH\n\n\nVIEW ON MAP\n Nearby Athletics Tracks\nKing's House School Sports Ground\nChiswick\n\n 11.2 miles away\n\nKing's House School Sports Ground\nChiswick\n\n 11.2 miles away\n\nFinsbury Park Sports Partnership\nLondon\n\n 16.7 miles away\n\nDown Grange Sports Complex\nHampshire\n\n 43 miles away\n\nDown Grange Sports Complex\nHampshire\n\n 43 miles away\n\n",
+ "name": "Woodcote High School",
+ "area": "Croydon",
+ "address": "Meadow Rise, Coulsdon, Coulsdon, CR5 2EH",
+ "postcode": "CR5 2EH",
+ "hours": {
+  "mon": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "17:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 17:00 - 22:00",
+  "Tuesday 17:00 - 22:00",
+  "Wednesday 17:00 - 22:00",
+  "Thursday 17:00 - 22:00",
+  "Friday 17:00 - 22:00",
+  "Saturday 9:00 - 22:00",
+  "Sunday 9:00 - 22:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/woodcote-high-school/football-11-a-side-93654",
+   "label": "football",
+   "format": 11,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

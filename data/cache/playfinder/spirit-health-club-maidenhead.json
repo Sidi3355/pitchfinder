@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/spirit-health-club-maidenhead",
+ "finalUrl": "https://www.playfinder.com/london/venue/spirit-health-club-maidenhead",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:19:39.934Z",
+ "title": "Spirit Health Club Maidenhead, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nSpirit Health Club Maidenhead Non-Partner \nSwimmingGym\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Spirit Health Club Maidenhead, Manor Lane, Windsor and Maidenhead, SL6 2RA\n\nPrices\n\nNot Specified\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\nMonday\t6:00-22:00\nTuesday\t6:00-22:00\nWednesday\t6:00-22:00\nThursday\t6:00-22:00\nFriday\t6:00-22:00\nSaturday\t7:00-21:00\nSunday\t7:00-21:00\n Swimming Pools\nIndoorIndoor\nFacilities\n changing rooms\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nThe Downside Settlement\nSouthwark\n\n 28.2 miles away\n\n",
+ "name": "Spirit Health Club Maidenhead",
+ "area": "Windsor and Maidenhead",
+ "address": "Spirit Health Club Maidenhead, Manor Lane, Windsor and Maidenhead, SL6 2RA",
+ "postcode": "SL6 2RA",
+ "hours": {
+  "mon": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "06:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "07:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 6:00-22:00",
+  "Tuesday 6:00-22:00",
+  "Wednesday 6:00-22:00",
+  "Thursday 6:00-22:00",
+  "Friday 6:00-22:00",
+  "Saturday 7:00-21:00",
+  "Sunday 7:00-21:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Not Specified",
+ "skipped": "no artificial football pitch"
+}

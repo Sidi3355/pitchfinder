@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/hillside-gardens",
+ "finalUrl": "https://www.playfinder.com/london/venue/hillside-gardens",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:08:44.613Z",
+ "title": "Hillside Gardens, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHillside Gardens Non-Partner \nFootballTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Hillside Gardens, Hillside Road, Streatham, Lambeth, SW2 3HL\n\nPrices\n\nFree\n\nPublic Transport\n\n Tulse Hill (train)\n\nOpening Hours\nMonday\t08:00-21:00\nTuesday\t08:00-21:00\nWednesday\t08:00-21:00\nThursday\t08:00-21:00\nFriday\t08:00-21:00\nSaturday\t08:00-21:00\nSunday\t08:00-21:00\nDescription\n\nHillside Gardens, which is based in Lambeth, has Football facilities, which are Concrete. This facility is membership only.\n\n Football Pitch\n5 a side | Concrete\nFacilities\n 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nHenry Fawcett Primary School\nLondon\n\n 3.2 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 8.5 miles away\n\nMallinson Sports Centre\nHighgate\n\n 9.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.1 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 13.1 miles away\n\n",
+ "name": "Hillside Gardens",
+ "area": "Lambeth",
+ "address": "Hillside Gardens, Hillside Road, Streatham, Lambeth, SW2 3HL",
+ "postcode": "SW2 3HL",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00-21:00",
+  "Tuesday 08:00-21:00",
+  "Wednesday 08:00-21:00",
+  "Thursday 08:00-21:00",
+  "Friday 08:00-21:00",
+  "Saturday 08:00-21:00",
+  "Sunday 08:00-21:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/hillside-gardens/football-5-a-side-32238",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Free",
+ "skipped": "no artificial football pitch"
+}

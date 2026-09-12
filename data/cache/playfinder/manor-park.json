@@ -1,0 +1,101 @@
+{
+ "url": "https://www.playfinder.com/london/venue/manor-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/manor-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:42:00.387Z",
+ "title": "Manor Park, Kingston upon Thames | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nManor Park\nFootballCricket\n Book Online at Manor Park\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Manor Park, Greater London, New Malden, KT3 6AU\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n New Malden Rail Station\n\nOpening Hours\nMonday\t09:00-20:00\nTuesday\t09:00-20:00\nWednesday\t09:00-20:00\nThursday\t09:00-20:00\nFriday\t09:00-20:00\nSaturday\t09:00-20:00\nSunday\t09:00-20:00\nDescription\n\nBook an 11-a-side football pitch pitch at Manor Park if you're looking for an excellent pitch and live or work in Kingston. This venue has sensational footballing facilities, so whether you like to play 11-a-side football pitch casually or you're part of a team or league, Manor Park is ideal for you. Everyone has their favourite surface for playing football on and this pitch is grass.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here.\n\nLooking to set up regular games at Manor Park? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near New Malden Rail Station.\n\n Football Pitches\n11 a side pitch | Grass7 a side | Grass11 a side junior | Grass\nFacilities\n changing rooms free parking\n Address\n\nManor Park\nManor Park\nGreater London\nKT3 6AU\n\n\nVIEW ON MAP\n Nearby Football Pitches\nAlexandra Recreation Ground\nSurbiton\n\n 1.7 miles away\n\nKing Georges Playing Field\nChessington\n\n 1.8 miles away\n\nFairfield Recreation Ground\nKingston upon Thames\n\n 2.5 miles away\n\nKing Edwards Recreation Ground\nChessington\n\n 2.6 miles away\n\nChurchfields Recreation Ground\nChessington\n\n 2.9 miles away\n\n",
+ "name": "Manor Park",
+ "area": "Kingston upon Thames",
+ "address": "Manor Park, Greater London, New Malden, KT3 6AU",
+ "postcode": "KT3 6AU",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00-20:00",
+  "Tuesday 09:00-20:00",
+  "Wednesday 09:00-20:00",
+  "Thursday 09:00-20:00",
+  "Friday 09:00-20:00",
+  "Saturday 09:00-20:00",
+  "Sunday 09:00-20:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/manor-park/football-11-a-side-pitch-93325",
+   "label": "11 a side pitch | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/manor-park/football-7-a-side-93329",
+   "label": "7 a side | Grass",
+   "format": 7,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/manor-park/football-11-a-side-junior-93328",
+   "label": "11 a side junior | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,92 @@
+{
+ "url": "https://www.playfinder.com/london/venue/coram-s-fields",
+ "finalUrl": "https://www.playfinder.com/london/venue/coram-s-fields",
+ "status": 200,
+ "fetchedAt": "2026-09-12T16:58:32.100Z",
+ "title": "Coram's Fields, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCoram's Fields\nFootballSpace Hire\n Book Online at Coram's Fields\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 93 Guilford Street, London, London, WC1N 1DN\n\nPrices\n\n£145.00/hour for evening and weekend bookings. £125.00/hour for lunchtime bookings\n\nPublic Transport\n\n Russell Square\n\nOpening Hours\nMonday\t10:00 - 20:00\nTuesday\t10:00 - 20:00\nWednesday\t10:00 - 20:00\nThursday\t10:00 - 20:00\nFriday\t10:00 - 20:00\nSaturday\t10:00 - 16:00\nSunday\t10:00 - 16:00\nDescription\n\nIf you are between 16-25 years old, click here to make a discounted booking.\n\nFree for young people under the age of 19 years.\n\n50% off for 20-25 years, charitable rates and free for Camden schools.\n\nLooking to hire a 8-a-side football pitch in Central London? Coram's Fields has the perfect facilities for lovers of the small-sided version of the beautiful game. 8-a-side football at Coram's Fields is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 8-a-side football machine, Coram's Fields is the right choice for you.\n\nIf you are looking to hire the pitch for a film or photo shoot, please note that film or photo shoots must also obtain a permit from FilmFixer in advance. Please contact them on info@filmfixer.co.uk or 0207 620 0391.\n\nThe venue is open to the public to come and play on a one off or block booking basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game or several games without having to pay a monthly membership fee.\n\nLooking to set up regular games at Coram's Fields? Enquire about making a Regular Hire booking to ensure you secure the time slot you want to play at every week. Regular Hire bookings are perfect for teams who want to be assured that they'll be playing consistently. Please be aware that Regular Hires will need to pay in advance for their bookings at the start of the month via standing order and will be required to sign a regular booking contract. Regular bookings are not permitted to cancel individual bookings and a one-month cancellation policy applies.\n\nIf you're looking to travel using public transport, then the nearest station is Russell Square. This facility has excellent public transport links making it easy for all participants to reach the venue. The entry gate is at the back of the pitches, via either Mecklenburgh Square or Brunswick Gardens.\n\nUsers should note that Coram’s Fields is a children’s charity. The income received from the hire of their pitches provides essential funding for their community services. However, Coram’s Fields is principally a space dedicated to children and young people and the charity asks that all those hiring their pitches, respect their younger users (please see venue terms and conditions for more information)\n\nPlease be aware that our third pitch has both 5-a-side or 8-a-side goals available. If you would like these changed, please ask our ground staff team and they will happily change them for you.\n\nCancellation Policy: All ad-hoc or block bookings wishing to cancel or re-arrange a booking are required to give at least 30 days’ notice prior to the booking date to be eligible for a refund or re-scheduled match.\n\nFor full terms and conditions visit the Coram’s Fields website.\n\n Football Pitch\n8 a side | 3G Astroturf\nFacilities\n floodlights\n Address\n\nCoram's Fields\n93 Guilford Street\nLondon\nWC1N 1DN\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nGoals Dagenham\nDagenham\n\n 10.8 miles away\n\nGoals Dartford\nDartford\n\n 16.4 miles away\n\nGoals Bexleyheath\nBexley\n\n 12.1 miles away\n\nBridgestone Arena\nBrent\n\n 6.5 miles away\n\nColdharbour Leisure Centre\nEltham\n\n 9.6 miles away\n\n",
+ "name": "Coram's Fields",
+ "area": "Camden",
+ "address": "93 Guilford Street, London, London, WC1N 1DN",
+ "postcode": "WC1N 1DN",
+ "hours": {
+  "mon": [
+   [
+    "10:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "10:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "10:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "10:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "10:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "10:00",
+    "16:00"
+   ]
+  ],
+  "sun": [
+   [
+    "10:00",
+    "16:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 10:00 - 20:00",
+  "Tuesday 10:00 - 20:00",
+  "Wednesday 10:00 - 20:00",
+  "Thursday 10:00 - 20:00",
+  "Friday 10:00 - 20:00",
+  "Saturday 10:00 - 16:00",
+  "Sunday 10:00 - 16:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   8
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/coram-s-fields/football-8-a-side-32191",
+   "label": "8 a side | 3G Astroturf",
+   "format": 8,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "£145.00/hour for evening and weekend bookings. £125.00/hour for lunchtime bookings"
+}

@@ -1,0 +1,107 @@
+{
+ "url": "https://www.playfinder.com/london/venue/cox-green",
+ "finalUrl": "https://www.playfinder.com/london/venue/cox-green",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:16:44.097Z",
+ "title": "Cox Green Leisure Centre, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nCox Green Leisure Centre Non-Partner \nFootballBadmintonNetballBasketballTennisCricketGymSpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Highfield Lane, Maidenhead, Windsor and Maidenhead, SL6 3AX\n\nPrices\n\n1/3 pitch £46 per hour\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\n\nOpening times for the school holiday period are as follows: Monday - Friday 8.00-20.00, Saturday 09.00-15.00\n\nDescription\n\nLooking to hire a 5-a-side football pitch in Windsor and Maidenhead? Cox Green Leisure Centre has the perfect facilities for lovers of the small-sided version of the beautiful game. 5-a-side football at Cox Green Leisure Centre is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 5-a-side football machine, Cox Green Leisure Centre is the right choice for you.\n\nThe venue is surrounded by floodlights which makes this facility perfect all year around. The lights will be turned off by the facility once all sports bookings have been completed.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Cox Green Leisure Centre? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe closest station when travelling is Maidenhead. The facility is located a short walk from here - for more details on how to access the facility please contact the venue.\n\n Football Pitches\n5 a side | 3G Astroturf5 a side | Indoor11 a side | 3G Astroturf5 a side | Astroturf\nFacilities\n floodlights changing rooms 5 a side 6 a side 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nWatlington MUGA\nWatlington\n\n 14.4 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 23 miles away\n\nMallinson Sports Centre\nHighgate\n\n 26.1 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 27.7 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 40.7 miles away\n\n",
+ "name": "Cox Green Leisure Centre",
+ "area": "Windsor and Maidenhead",
+ "address": "Highfield Lane, Maidenhead, Windsor and Maidenhead, SL6 3AX",
+ "postcode": "SL6 3AX",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "15:00"
+   ]
+  ],
+  "sun": []
+ },
+ "hoursQuotes": [
+  "Monday - Friday 8.00-20.00",
+  "Saturday 09.00-15.00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   6,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/cox-green/football-5-a-side-35110",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/cox-green/football-5-a-side-35111",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/cox-green/football-11-a-side-35521",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/cox-green/football-5-a-side-35522",
+   "label": "5 a side | Astroturf",
+   "format": 5,
+   "surface": "astro",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "1/3 pitch £46 per hour"
+}

@@ -1,0 +1,89 @@
+{
+ "url": "https://www.playfinder.com/london/venue/elthorne-sports-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/elthorne-sports-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:12:12.415Z",
+ "title": "Elthorne Sports Centre, Ealing | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nElthorne Sports Centre Non-Partner \nFootballTennisNetballBadminton\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Westlea Road, off Boston Road, Hanwell, W7 2AD\n\nPrices\n\n£27.90 (with floodlights), £27 (without floodlights) - per pitch per hour 4g pitch £46.50 per pitch per hour\n\nPublic Transport\n\n Boston Manor\n\nOpening Hours\nMonday\t16:00-22:00\nTuesday\t16:00-22:00\nWednesday\t16:00-22:00\nThursday\t16:00-22:00\nFriday\t16:00-22:00\nSaturday\t09:00-18:00\nSunday\t09:00-18:00\n Football Pitch\n5 a side | Concrete\nFacilities\n floodlights free parking 5 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 9 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 9.4 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 9.8 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 22.5 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 22.5 miles away\n\n",
+ "name": "Elthorne Sports Centre",
+ "area": "Ealing",
+ "address": "Westlea Road, off Boston Road, Hanwell, W7 2AD",
+ "postcode": "W7 2AD",
+ "hours": {
+  "mon": [
+   [
+    "16:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "16:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "16:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "16:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "16:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "18:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 16:00-22:00",
+  "Tuesday 16:00-22:00",
+  "Wednesday 16:00-22:00",
+  "Thursday 16:00-22:00",
+  "Friday 16:00-22:00",
+  "Saturday 09:00-18:00",
+  "Sunday 09:00-18:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/elthorne-sports-centre/football-5-a-side-33696",
+   "label": "5 a side | Concrete",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "£27.90 (with floodlights), £27 (without floodlights) - per pitch per hour 4g pitch £46.50 per pitch per hour",
+ "skipped": "no artificial football pitch"
+}

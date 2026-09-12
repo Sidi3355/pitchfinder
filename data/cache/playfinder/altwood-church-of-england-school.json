@@ -1,0 +1,81 @@
+{
+ "url": "https://www.playfinder.com/london/venue/altwood-church-of-england-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/altwood-church-of-england-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:17:21.735Z",
+ "title": "Altwood Church of England School, Windsor and Maidenhead | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nAltwood Church of England School Non-Partner \nBadmintonFootballBasketballNetballCricketRugbyHockey\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Altwood Road, Windsor and Maidenhead, SL6 4PU\n\nPrices\n\nMon-Sat £10/hour\n\nSun £21.40/hour\n\nPublic Transport\n\n Maidenhead\n\nOpening Hours\nMonday\t18:00-22:00\nTuesday\t18:00-22:00\nWednesday\t18:00-22:00\nThursday\t18:00-22:00\nFriday\t18:00-22:00\nSaturday\t9:00-14:00\nSunday\tOnApplication\n Badminton Court\nIndoor | Hard\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 23.1 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 23.1 miles away\n\nMallinson Sports Centre\nHighgate\n\n 25.8 miles away\n\nAldenham School Sports Centre\nRadlett\n\n 20.8 miles away\n\nBolder Academy\nLondon\n\n 18.2 miles away\n\n",
+ "name": "Altwood Church of England School",
+ "area": "Windsor and Maidenhead",
+ "address": "Altwood Road, Windsor and Maidenhead, SL6 4PU",
+ "postcode": "SL6 4PU",
+ "hours": {
+  "mon": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "18:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "14:00"
+   ]
+  ],
+  "sun": []
+ },
+ "hoursQuotes": [
+  "Monday 18:00-22:00",
+  "Tuesday 18:00-22:00",
+  "Wednesday 18:00-22:00",
+  "Thursday 18:00-22:00",
+  "Friday 18:00-22:00",
+  "Saturday 9:00-14:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/altwood-church-of-england-school/football-5-a-side-35119",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Mon-Sat £10/hour",
+ "skipped": "no artificial football pitch"
+}

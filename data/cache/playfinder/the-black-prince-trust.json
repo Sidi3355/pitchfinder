@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/the-black-prince-trust",
+ "finalUrl": "https://www.playfinder.com/london/venue/the-black-prince-trust",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:00:41.406Z",
+ "title": "The Black Prince Trust, Southwark | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nThe Black Prince Trust\nBasketballGymSpace Hire\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 5 Beaufoy Walk, Lambeth, London, SE11 6AA\n\nPrices\n\nPlease see calendar above for availability and prices\n\nPublic Transport\n\n Vauxhall (16 min walk)\n\nOpening Hours\nMonday\t09:00-22:00\nTuesday\t09:00-22:00\nWednesday\t09:00-22:00\nThursday\t09:00-22:00\nFriday\t09:00-22:00\nSaturday\t09:00-17:00\nSunday\t09:00-17:00\nDescription\n\n** The Jordan Court **\n\nCapacity: 20 people\n\n2 Basketball Hoops, Free Wifi, Tannoy system to play music of choice, Water Fountain, changing rooms, showers, toilets\n\n Basketball Courts\nCourt | Sports hallCourt | Sports hall\nFacilities\n changing rooms\n Address\n\nThe Black Prince Trust\n5 Beaufoy Walk\nLambeth\nSE11 6AA\n\n\nVIEW ON MAP\n Nearby Basketball Courts\nLifestyle Fitness Epsom\nEpsom\n\n 11.2 miles away\n\nCoombe Wood School\nSouth Croydon\n\n 9 miles away\n\nPastures Centre\nLondon\n\n 7.4 miles away\n\nSingh Sabha Sports Centre\nBerkshire\n\n 20.9 miles away\n\nThe Black Prince Trust\nLondon\n\n 0 miles away\n\n",
+ "name": "The Black Prince Trust",
+ "area": "Southwark",
+ "address": "5 Beaufoy Walk, Lambeth, London, SE11 6AA",
+ "postcode": "SE11 6AA",
+ "hours": {
+  "mon": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "09:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 09:00-22:00",
+  "Tuesday 09:00-22:00",
+  "Wednesday 09:00-22:00",
+  "Thursday 09:00-22:00",
+  "Friday 09:00-22:00",
+  "Saturday 09:00-17:00",
+  "Sunday 09:00-17:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": true,
+  "showers": true,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Please see calendar above for availability and prices",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,44 @@
+{
+ "url": "https://www.playfinder.com/london/venue/hathern-park",
+ "finalUrl": "https://www.playfinder.com/london/venue/hathern-park",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:20:28.000Z",
+ "title": "Hathern Park, Slough | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHathern Park Non-Partner \nFootballCricketNetball\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Pasture Lane, Hathern, Leicestershire, LE12 5LJ\n\nPrices\n\nUnspecified\n\nPublic Transport\n\n Loughborough\n\nOpening Hours\n\nDaylight Hours\n\n Football Pitches\n11 a side | Grass11 a side pitch | Grass\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nTupton Hall School\nChesterfield\n\n 27.4 miles away\n\nRoe Lane Playing Fields\nStaffordshire\n\n 43.1 miles away\n\nStamford AFC\nStamford\n\n 34 miles away\n\nStamford AFC\nStamford\n\n 34 miles away\n\nLady Manners School\nDerby\n\n 33.6 miles away\n\n",
+ "name": "Hathern Park",
+ "area": "Slough",
+ "address": "Pasture Lane, Hathern, Leicestershire, LE12 5LJ",
+ "postcode": "LE12 5LJ",
+ "hours": null,
+ "hoursQuotes": [],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [
+   11
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/hathern-park/football-11-a-side-35652",
+   "label": "11 a side | Grass",
+   "format": 11,
+   "surface": "grass"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/hathern-park/football-11-a-side-pitch-51828",
+   "label": "11 a side pitch | Grass",
+   "format": 11,
+   "surface": "grass"
+  }
+ ],
+ "priceSummary": "Unspecified",
+ "skipped": "no artificial football pitch"
+}

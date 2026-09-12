@@ -1,0 +1,80 @@
+{
+ "url": "https://www.playfinder.com/london/venue/the-rookery",
+ "finalUrl": "https://www.playfinder.com/london/venue/the-rookery",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:23:20.883Z",
+ "title": "The Rookery, Lambeth | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nThe Rookery Non-Partner \nTennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n The Rookery, Covington Way, Lambeth, SW16 3BX\n\nPrices\n\nTennis Court £5.25/hour\n\nPublic Transport\n\n Streatham / Streatham Common\n\nOpening Hours\nMonday\t08:00-21:00\nTuesday\t08:00-21:00\nWednesday\t08:00-21:00\nThursday\t08:00-21:00\nFriday\t08:00-21:00\nSaturday\t08:00-21:00\nSunday\t08:00-21:00\nDescription\n\nThe Rookery is a fantastic place to play tennis for those who live or work in South London. Whether you're an amateur tennis player looking to play a casual game, or whether you're more experienced, the tennis courts at The Rookery are ideal. The surface of these tennis courts are hard (macadam) and the format is outdoor. So if you're keen to play tennis in South London then book these tennis courts today. Those who are looking to try tennis for the first time are also most welcome so we encourage you to get in touch and hire a tennis court today.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at The Rookery? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThe venue is situated near Streatham Common station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Tennis Court\nOutdoor | Hard (macadam)\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nLifestyle Fitness Epsom\nEpsom\n\n 7.8 miles away\n\nBeaumont School\nHertfordshire\n\n 24.4 miles away\n\nStanley Primary School\nLondon\n\n 9.9 miles away\n\nBolder Academy\nLondon\n\n 10.3 miles away\n\nLifestyle Fitness Matthew Arnold\nMiddlesex\n\n 16 miles away\n\n",
+ "name": "The Rookery",
+ "area": "Lambeth",
+ "address": "The Rookery, Covington Way, Lambeth, SW16 3BX",
+ "postcode": "SW16 3BX",
+ "hours": {
+  "mon": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "tue": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "wed": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "thu": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "fri": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sat": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "21:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 08:00-21:00",
+  "Tuesday 08:00-21:00",
+  "Wednesday 08:00-21:00",
+  "Thursday 08:00-21:00",
+  "Friday 08:00-21:00",
+  "Saturday 08:00-21:00",
+  "Sunday 08:00-21:00"
+ ],
+ "facilities": {
+  "parking": null,
+  "changingRooms": null,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [],
+ "priceSummary": "Tennis Court £5.25/hour",
+ "skipped": "no artificial football pitch"
+}

@@ -1,0 +1,56 @@
+{
+ "url": "https://www.playfinder.com/london/venue/waterfront-leisure-centre",
+ "finalUrl": "https://www.playfinder.com/london/venue/waterfront-leisure-centre",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:10:14.666Z",
+ "title": "Waterfront Leisure Centre, Greenwich | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nWaterfront Leisure Centre Non-Partner \nSwimmingSquashBadmintonGymBasketballFootballSpace HireTable Tennis\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 30 Woolwich High Street, Woolwich, Greenwich, SE18 6DL\n\nPrices\n\nPublic Transport\n\n Woolwich Arsenal (DLR)\n\nOpening Hours\n\nWeekday: 07.00 - 22.00; Weekends: 08.00 - 20.00\n\nDescription\n\n\n\nThe indoor swimming pool at Waterfront Leisure Centre is an excellent sized pool and large enough to exercise in. Roped off areas, classes and lessons are available but we recommend you contact the facility to check times, prices and availability. Swimming in London is not only an excellent way to stay fit and healthy, it’s also an excellent way to exercise whilst staying out of the cold weather. Swimming equipment such as goggles, swimming hats and costumes are sometimes available to buy at the facility but we recommend calling ahead to check this. Waterfront Leisure Centre provides one of the best swimming pools in London so make sure you pay it a visit.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe venue is situated near Woolwich Arsenal (DLR) station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n\n Swimming Pool\nIndoor\nFacilities\n changing rooms free parking\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nThe Downside Settlement\nSouthwark\n\n 6 miles away\n\n",
+ "name": "Waterfront Leisure Centre",
+ "area": "Greenwich",
+ "address": "30 Woolwich High Street, Woolwich, Greenwich, SE18 6DL",
+ "postcode": "SE18 6DL",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Weekends: 08.00 - 20.00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": true,
+  "lit": null,
+  "surface": null,
+  "formats": [],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/waterfront-leisure-centre/football-5-a-side-36109",
+   "label": "football",
+   "format": 5,
+   "surface": null
+  }
+ ],
+ "priceSummary": "Public Transport",
+ "skipped": "no artificial football pitch"
+}

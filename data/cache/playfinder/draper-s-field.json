@@ -1,0 +1,100 @@
+{
+ "url": "https://www.playfinder.com/london/venue/draper-s-field",
+ "finalUrl": "https://www.playfinder.com/london/venue/draper-s-field",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:14:03.762Z",
+ "title": "Draper's Field, Waltham Forest | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nDraper's Field\nFootball\n Book Online at Draper's Field\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n Leyton High Road, Leyton, Waltham Forest, E15 2DD\n\nPrices\n\nPlease see calendar for availability and prices.\n\nPublic Transport\n\n Leyton, Stratford\n\nOpening Hours\nMonday\t15:00 - 22:00\nTuesday\t15:00 - 22:00\nWednesday\t15:00 - 22:00\nThursday\t15:00 - 22:00\nFriday\t15:00 - 22:00\nSaturday\t09:00 - 17:00\nSunday\t09:00 - 17:00\nDescription\n\nLooking to hire a 7-a-side football pitch in East London? Draper's Field has the perfect facilities for lovers of the small-sided version of the beautiful game. 7-a-side football at Draper's Field is played on 3G astroturf. So whether you're looking for a casual kick about with your friends or whether you're part of a team that is a cohesive 7-a-side football machine, Draper's Field is the right choice for you.\n\nThis facility is also brilliantly floodlit. Late night sessions are not a problem at this venue, which means the facility is perfect for those who love to play sport after work. If you’re travelling by car, then you’ll be glad to know there is free parking provided by the venue. The free parking at the facility can fill up at peak times and get busy, with weekends being a very popular time, so allow ample time to ensure you secure a space. The venue is open to the public to come and play on a one off basis. Their pay as you play system means that you can book now and play without being a member. This gives you the freedom to play a one off game without having to pay a monthly membership fee.\n\nFor those who like the security of knowing you can play at the same time every week without fail, you can make a block booking at Draper's Field. This ensures you stay in the game and keep up your fitness on a regular basis. The very accommodating team at Playfinder will help you to secure your preferred slot or if that isn’t available, we will help you to secure the best alternative. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after. If you're looking to travel using public transport, then the nearest station is Leyton. This facility has excellent public transport links making it easy for all participants to reach the venue.\n\n Football Pitches\n7 a side | 3G Astroturf11 a side | 3G Astroturf\nFacilities\n floodlights changing rooms\n Address\n\nDraper's Field\nLeyton High Road\nLeyton\nE15 2DD\n\n\nVIEW ON MAP\nREVEAL PHONE NUMBER\n Nearby Football Pitches\nHaberdasher's Crayford Academy\nKent\n\n 10.6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 17.4 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 0.9 miles away\n\nFeel Good Too (formerly Ive Farm Fields)\nLondon\n\n 0.9 miles away\n\nMarkfield Park\nLondon\n\n 3.2 miles away\n\n",
+ "name": "Draper's Field",
+ "area": "Waltham Forest",
+ "address": "Leyton High Road, Leyton, Waltham Forest, E15 2DD",
+ "postcode": "E15 2DD",
+ "hours": {
+  "mon": [
+   [
+    "15:00",
+    "22:00"
+   ]
+  ],
+  "tue": [
+   [
+    "15:00",
+    "22:00"
+   ]
+  ],
+  "wed": [
+   [
+    "15:00",
+    "22:00"
+   ]
+  ],
+  "thu": [
+   [
+    "15:00",
+    "22:00"
+   ]
+  ],
+  "fri": [
+   [
+    "15:00",
+    "22:00"
+   ]
+  ],
+  "sat": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ],
+  "sun": [
+   [
+    "09:00",
+    "17:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Monday 15:00 - 22:00",
+  "Tuesday 15:00 - 22:00",
+  "Wednesday 15:00 - 22:00",
+  "Thursday 15:00 - 22:00",
+  "Friday 15:00 - 22:00",
+  "Saturday 09:00 - 17:00",
+  "Sunday 09:00 - 17:00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/draper-s-field/football-7-a-side-33823",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/draper-s-field/football-11-a-side-33822",
+   "label": "11 a side | 3G Astroturf",
+   "format": 11,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "Please see calendar for availability and prices."
+}

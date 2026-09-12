@@ -1,0 +1,76 @@
+{
+ "url": "https://www.playfinder.com/london/venue/haverstock-school",
+ "finalUrl": "https://www.playfinder.com/london/venue/haverstock-school",
+ "status": 200,
+ "fetchedAt": "2026-09-12T17:06:26.076Z",
+ "title": "Haverstock School, Camden | Sports Facility Hire | Playfinder",
+ "text": " SEARCH\n MANAGE MY BOOKINGS\nLIST YOUR VENUE\n HOME\n LOGIN\n SIGN UP\n BECOME A VENUE PARTNER\n\nChoose a sport and search by location or venue\n\nSelect a sport\nFIND VENUE\n\nList your venue 🏫 Connect your sport facilities with your local communities! Learn more »\n\n Explore nearby venues\nHaverstock School Non-Partner \nFootballNetballCricketBasketballBadmintonRugbySpace Hire\nGET IN TOUCH\nLocation, Opening Hours and Prices\n Click to interact with the map\n\n 24 Haverstock Hill, Chalk Farm, Camden, NW3 2BQ\n\nPrices\n\nFrom £70.00-£91.80/hour\n\nPublic Transport\n\n Chalk Farm\n\nOpening Hours\n\nSchooldays: 18.00 - 22.00; Holidays: 09.00 - 22.00; Weekends: 08.00 - 20.00\n\nDescription\n\n**Bookings must be requested at least a week in advance and slots only available on Friday evenings**\n\nHaverstock School Facilities Hire, which is based in Camden, has an astroturf football pitch suitable for small sided football games. The pitch can be divided into two 5-a-side pitches or used as one 7 a-side. This facility is pay as you play, which is perfect for getting your friends together for an evening kick about.\n\nThis facility has floodlights. These powerful spotlights remove the concern about it being too dark and mean that you can play all year round.\n\nThose driving are able to park free of charge at the facility. There are limited spaces available with weekends being particularly popular. The best parking availability is during the day and before 5pm.\n\nFacilities here can be booked on a pay as you play basis. This means that you do not have to be a member to make a booking here. Just decide when or how often you want to play and it's as simple as that.\n\nLooking to set up regular games at Haverstock School? Enquire about making a block booking to ensure you secure the time slot you want to play at every week. Block bookings are perfect for teams who want to be assured that they'll be playing regularly. A block booking is a booking made for a set number of consecutive weeks, on average this is 10 weeks.\n\nThere are smart and spacious changing rooms available for customers, with well-maintained facilities. This means customers can come straight from work or head out straight after.\n\nThe venue is situated near Chalk Farm station. From there it is a short walk to the facility which works out well for a gentle warm down after your booking.\n\n Football Pitches\n5 a side | 3G Astroturf5 a side | Indoor7 a side | 3G Astroturf\nFacilities\n floodlights changing rooms free parking 5 a side 7 a side\nMAKE A BOOKING\n Book Online at our Nearby Partner Venues\nMallinson Sports Centre\nHighgate\n\n 2 miles away\n\nHenry Fawcett Primary School\nLondon\n\n 4.6 miles away\n\nLifestyle Fitness Epsom\nEpsom\n\n 13.6 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 15.9 miles away\n\nHaberdasher's Crayford Academy\nKent\n\n 15.9 miles away\n\n",
+ "name": "Haverstock School",
+ "area": "Camden",
+ "address": "24 Haverstock Hill, Chalk Farm, Camden, NW3 2BQ",
+ "postcode": "NW3 2BQ",
+ "hours": {
+  "mon": [],
+  "tue": [],
+  "wed": [],
+  "thu": [],
+  "fri": [],
+  "sat": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ],
+  "sun": [
+   [
+    "08:00",
+    "20:00"
+   ]
+  ]
+ },
+ "hoursQuotes": [
+  "Weekends: 08.00 - 20.00"
+ ],
+ "facilities": {
+  "parking": true,
+  "changingRooms": true,
+  "showers": null,
+  "bar": null,
+  "cafe": null,
+  "covered": null,
+  "lit": true,
+  "surface": "3g",
+  "formats": [
+   5,
+   7
+  ],
+  "pitchCount": null
+ },
+ "pitches": [
+  {
+   "url": "https://www.playfinder.com/london/venue/haverstock-school/football-5-a-side-32231",
+   "label": "5 a side | 3G Astroturf",
+   "format": 5,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/haverstock-school/football-5-a-side-33794",
+   "label": "5 a side | Indoor",
+   "format": 5,
+   "surface": "indoor"
+  },
+  {
+   "url": "https://www.playfinder.com/london/venue/haverstock-school/football-7-a-side-37619",
+   "label": "7 a side | 3G Astroturf",
+   "format": 7,
+   "surface": "3g",
+   "weekStart": null,
+   "slots": [],
+   "dayAssignment": "sequence"
+  }
+ ],
+ "priceSummary": "From £70.00-£91.80/hour"
+}
