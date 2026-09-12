@@ -1,0 +1,16 @@
+{
+ "fetchedAt": "2026-09-12T16:46:19.245Z",
+ "offline": true,
+ "pitchbooking": {
+  "site": "https://pitchbooking.com",
+  "clubs": []
+ },
+ "playfinder": {
+  "site": "https://www.playfinder.com",
+  "venues": []
+ },
+ "run": {
+  "pagesRead": 0,
+  "stoppedBy": null
+ }
+}

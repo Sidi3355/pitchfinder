@@ -15,6 +15,7 @@ import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { allowedByRobots } from './lib/robots.mjs'
 import { extractVenueFacts } from './lib/venue-facts.mjs'
+import { lookupPostcodes } from './lib/postcode-lookup.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const PAGE_CACHE = join(ROOT, 'data/cache/pages')
@@ -105,41 +106,6 @@ function loadJson(path, fallback) {
   } catch {
     return fallback
   }
-}
-
-/** postcodes.io bulk lookup with a cache: postcode -> { lat, lng, region, district } or null. */
-async function lookupPostcodes(postcodes) {
-  const cache = loadJson(POSTCODE_CACHE, {})
-  const missing = [...new Set(postcodes.filter((p) => p && !(p in cache)))]
-  if (missing.length && !OFFLINE) {
-    for (let i = 0; i < missing.length; i += 90) {
-      const batch = missing.slice(i, i + 90)
-      try {
-        const res = await fetch('https://api.postcodes.io/postcodes', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'User-Agent': UA },
-          body: JSON.stringify({ postcodes: batch }),
-        })
-        const json = await res.json()
-        for (const r of json.result || []) {
-          const q = r.query
-          cache[q] = r.result
-            ? {
-                lat: r.result.latitude,
-                lng: r.result.longitude,
-                region: r.result.region,
-                district: r.result.admin_district,
-              }
-            : null
-        }
-      } catch (err) {
-        console.warn(`postcodes.io: ${err.message}`)
-      }
-    }
-    mkdirSync(dirname(POSTCODE_CACHE), { recursive: true })
-    writeFileSync(POSTCODE_CACHE, JSON.stringify(cache, null, 2) + '\n')
-  }
-  return cache
 }
 
 async function readPage(page, url) {
@@ -327,7 +293,10 @@ async function main() {
     ...r,
     facts: extractVenueFacts({ text: r.got.text, jsonld: r.got.jsonld }),
   }))
-  const geo = await lookupPostcodes(facts.map((f) => f.facts.postcode))
+  const geo = await lookupPostcodes(
+    facts.map((f) => f.facts.postcode),
+    { cacheFile: POSTCODE_CACHE, offline: OFFLINE, userAgent: UA },
+  )
   const operators = OPERATORS.map((op) => ({
     key: op.key,
     name: op.name,
