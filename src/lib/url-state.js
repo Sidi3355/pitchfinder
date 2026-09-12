@@ -11,7 +11,10 @@ import { DEFAULT_FILTERS } from './score.js'
 
 export const MODE_CODES = { walk: 'w', cycle: 'c', transit: 't', drive: 'd' }
 const CODE_MODES = Object.fromEntries(Object.entries(MODE_CODES).map(([k, v]) => [v, k]))
-const TYPES = ['commercial', 'astro', 'park', 'cage']
+const TYPES = ['commercial', 'astro']
+const BRANDS = ['goals', 'powerleague', 'other']
+const DAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+const SURFACES = ['3g', 'astro']
 const FORMATS = [5, 7, 11]
 
 // Characters that are safe in a query value and read well in a shared link.
@@ -108,8 +111,10 @@ export function decodeFilters(params) {
   const get = (k) => (params.has(k) ? decodeValue(params.get(k)) : null)
   const types = get('t')
   if (types) f.types = [...new Set(types.split(',').filter((t) => TYPES.includes(t)))]
-  const enc = get('enc')
-  if (enc === 'bounded' || enc === 'open') f.enclosure = enc
+  const brands = get('op')
+  if (brands) f.brands = [...new Set(brands.split(',').filter((b) => BRANDS.includes(b)))]
+  const surface = get('sf')
+  if (SURFACES.includes(surface)) f.surface = surface
   const fmt = intInRange(get('fmt'), 5, 11)
   if (FORMATS.includes(fmt)) f.format = fmt
   const budget = intInRange(get('budget'), 0, 14)
@@ -117,8 +122,21 @@ export function decodeFilters(params) {
   const eta = intInRange(get('eta'), 5, 120)
   if (eta != null) f.maxEta = eta
   if (get('lit') === '1') f.needsFloodlights = true
-  if (get('free') === '1') f.freeOnly = true
-  if (get('book') === '1') f.bookableOnly = true
+  const need = get('need')
+  if (need) {
+    const set = new Set(need.split(','))
+    if (set.has('cover')) f.needsCovered = true
+    if (set.has('changing')) f.needsChanging = true
+    if (set.has('parking')) f.needsParking = true
+  }
+  if (get('priced') === '1') f.pricedOnly = true
+  const open = get('open')
+  if (open) {
+    const [dayPart, timePart] = open.split('@')
+    const days = dayPart ? dayPart.split(',').filter((d) => DAYS.includes(d)) : []
+    const from = timePart && /^\d{2}:\d{2}$/.test(timePart) ? timePart : null
+    if (days.length || from) f.openOn = { days: days.length ? days : null, from }
+  }
   return f
 }
 
@@ -126,13 +144,22 @@ export function encodeFilters(filters) {
   const f = { ...DEFAULT_FILTERS, ...filters }
   const out = []
   if (f.types?.length) out.push(['t', f.types.filter((t) => TYPES.includes(t)).join(',')])
-  if (f.enclosure && f.enclosure !== 'any') out.push(['enc', f.enclosure])
+  if (f.brands?.length) out.push(['op', f.brands.filter((b) => BRANDS.includes(b)).join(',')])
+  if (f.surface) out.push(['sf', f.surface])
   if (f.format != null) out.push(['fmt', String(f.format)])
   if (f.maxPricePerHead != null) out.push(['budget', String(f.maxPricePerHead)])
   if (f.maxEta != null) out.push(['eta', String(f.maxEta)])
   if (f.needsFloodlights) out.push(['lit', '1'])
-  if (f.freeOnly) out.push(['free', '1'])
-  if (f.bookableOnly) out.push(['book', '1'])
+  const need = []
+  if (f.needsCovered) need.push('cover')
+  if (f.needsChanging) need.push('changing')
+  if (f.needsParking) need.push('parking')
+  if (need.length) out.push(['need', need.join(',')])
+  if (f.pricedOnly) out.push(['priced', '1'])
+  if (f.openOn && (f.openOn.days?.length || f.openOn.from)) {
+    const days = (f.openOn.days || []).filter((d) => DAYS.includes(d)).join(',')
+    out.push(['open', f.openOn.from ? `${days}@${f.openOn.from}` : days])
+  }
   return out
 }
 

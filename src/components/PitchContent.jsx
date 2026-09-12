@@ -6,13 +6,13 @@ import { useStore } from '../lib/store.jsx'
 import { navigate } from '../lib/location.js'
 import * as sb from '../lib/supabase.js'
 import { pitchName } from '../data/types.js'
-import { costOf, isBounded } from '../lib/data.js'
 import { bookingLabel, surfaceLabel } from '../lib/labels.js'
 import { formatDate, fromInputParts, nextKickoff, toInputParts } from '../lib/format.js'
 import { shareUrl } from '../lib/share.js'
 import { usePitchDetail } from '../lib/use-detail.js'
 import { Directions } from './Directions.jsx'
 import { JourneyList } from './Journeys.jsx'
+import { BrandBadge, FacilityChips, HoursBlock, PriceBlock, openLine, priceLine } from './Facts.jsx'
 
 export function PitchContent({ pitch: indexPitch }) {
   const { state, actions } = useStore()
@@ -26,7 +26,6 @@ export function PitchContent({ pitch: indexPitch }) {
     return () => clearTimeout(t)
   }, [shareStatus])
 
-  const cost = costOf(pitch)
   const saved = state.savedIds.has(pitch.id)
   const name = pitchName(pitch)
 
@@ -47,14 +46,20 @@ export function PitchContent({ pitch: indexPitch }) {
         </section>
       )}
       <p className="key-facts">
-        <span>
-          {!cost.known
-            ? 'Price not known'
-            : cost.perHour === 0
-              ? 'Free to play'
-              : `£${cost.perHour} an hour`}
+        <BrandBadge pitch={pitch} />
+        <span className="key-price">
+          {priceLine(pitch, state.squad.length).main}
+          {priceLine(pitch, state.squad.length).each
+            ? `, ${priceLine(pitch, state.squad.length).each}`
+            : ''}
         </span>
-        <span>{pitch.surface ? surfaceLabel(pitch.surface) : 'Surface not known'}</span>
+        {openLine(pitch) ? (
+          <span className={`key-open ${openLine(pitch).open ? 'is-open' : 'is-closed'}`}>
+            {openLine(pitch).label}
+          </span>
+        ) : (
+          <span className="dim">Hours not published</span>
+        )}
         <span>
           {pitch.lit === true
             ? 'Floodlit'
@@ -63,6 +68,7 @@ export function PitchContent({ pitch: indexPitch }) {
               : 'Floodlights not known'}
         </span>
       </p>
+      <FacilityChips pitch={pitch} />
       {panel === 'plan' ? (
         <PlanGame pitch={pitch} name={name} onClose={() => setPanel(null)} />
       ) : panel === 'report' ? (
@@ -99,34 +105,20 @@ export function PitchContent({ pitch: indexPitch }) {
         </div>
       )}
 
+      <div className="fact-grid">
+        <PriceBlock pitch={pitch} />
+        <HoursBlock pitch={pitch} />
+      </div>
+
       <details className="pitch-more">
         <summary>Details, directions and where the data comes from</summary>
         <dl className="facts">
-          <div>
-            <dt>Price</dt>
-            <dd>
-              {!cost.known ? 'Not known' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hour`}
-              {pitch.priceMax != null &&
-                pitch.priceMax !== pitch.pricePerHour &&
-                ` to £${pitch.priceMax}`}
-              {cost.known && cost.perHour > 0 && (
-                <span className="fact-note">
-                  {pitch.priceSource === 'scraped' && pitch.priceCheckedAt
-                    ? `whole pitch, from the venue page, checked ${formatDate(pitch.priceCheckedAt)}`
-                    : `whole pitch, operator's published rate${pitch.priceCheckedAt ? `, checked ${formatDate(pitch.priceCheckedAt)}` : ', date not recorded'}`}
-                  {pitch.priceSourceUrl && (
-                    <>
-                      {' '}
-                      <a href={pitch.priceSourceUrl} target="_blank" rel="noopener noreferrer">
-                        source
-                      </a>
-                    </>
-                  )}
-                </span>
-              )}
-              {!cost.known && pitch.bookingUrl && <span className="fact-note">set at booking</span>}
-            </dd>
-          </div>
+          {pitch.address && (
+            <div>
+              <dt>Address</dt>
+              <dd>{pitch.address}</dd>
+            </div>
+          )}
           {pitch.postcode && (
             <div>
               <dt>{pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'}</dt>
@@ -139,10 +131,12 @@ export function PitchContent({ pitch: indexPitch }) {
               </dd>
             </div>
           )}
-          <div>
-            <dt>Enclosure</dt>
-            <dd>{isBounded(pitch) ? 'Bounded, ball stays in play' : 'Open pitch'}</dd>
-          </div>
+          {pitch.operator && (
+            <div>
+              <dt>Run by</dt>
+              <dd>{pitch.operator}</dd>
+            </div>
+          )}
           <div>
             <dt>Surface</dt>
             <dd>{pitch.surface ? surfaceLabel(pitch.surface) : 'Not known'}</dd>
@@ -163,6 +157,26 @@ export function PitchContent({ pitch: indexPitch }) {
               <dd>{pitch.changingRooms ? 'Yes' : 'No'}</dd>
             </div>
           )}
+          {pitch.parking != null && (
+            <div>
+              <dt>Parking</dt>
+              <dd>{pitch.parking ? 'Yes' : 'No'}</dd>
+            </div>
+          )}
+          {pitch.covered != null && (
+            <div>
+              <dt>Under cover</dt>
+              <dd>{pitch.covered ? 'Yes' : 'No'}</dd>
+            </div>
+          )}
+          {pitch.phone && (
+            <div>
+              <dt>Phone</dt>
+              <dd>
+                <a href={`tel:${pitch.phone.replace(/\s+/g, '')}`}>{pitch.phone}</a>
+              </dd>
+            </div>
+          )}
           {pitch.pitchCount > 1 && (
             <div>
               <dt>Pitches on site</dt>
@@ -177,7 +191,14 @@ export function PitchContent({ pitch: indexPitch }) {
         </section>
 
         <p className="hint dim drawer-footnote">
-          {pitch.curated ? (
+          {pitch.source === 'operator-site' ? (
+            <>
+              Data: the operator&rsquo;s own page
+              {pitch.matchedOsmId ? ' and OpenStreetMap' : ''}
+              {pitch.verifiedAt ? `, read ${formatDate(pitch.verifiedAt)}` : ''}. Check the venue
+              page before travelling.
+            </>
+          ) : pitch.curated ? (
             <>
               Data: curated venue list{pitch.matchedOsmId ? ' and OpenStreetMap' : ''}
               {pitch.verifiedAt

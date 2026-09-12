@@ -3,21 +3,44 @@
 // true by construction (see buildReasons). The internal score is never shown.
 
 import { displayMinutes, estimateEta, haversineKm } from './geo.js'
-import { costOf, isBounded } from './data.js'
+import { costOf } from './data.js'
+import { toMinutes } from './hours.js'
 import { isBookable } from './labels.js'
+import { brandOf } from '../data/types.js'
 
 // Charing Cross, the conventional centre of London.
 const LONDON_CENTRE = { lat: 51.5074, lng: -0.1278 }
 
 export const DEFAULT_FILTERS = {
   types: [], // [] = all pitch types
-  enclosure: 'any', // 'any' | 'bounded' | 'open'
+  brands: [], // [] = any operator; 'goals' | 'powerleague' | 'other'
   maxPricePerHead: null, // £ per person per hour; null = any
   format: null, // 5 | 7 | 11 | null (only known for curated venues)
+  surface: null, // '3g' | 'astro' | null
   maxEta: null, // minutes; null = any
   needsFloodlights: false,
-  freeOnly: false,
-  bookableOnly: false,
+  needsCovered: false,
+  needsChanging: false,
+  needsParking: false,
+  pricedOnly: false, // only places with a published price
+  openOn: null, // { days: ['tue', ...] | null, from: 'HH:MM' | null }; unknown hours pass
+}
+
+/** Whether the venue is open on any of the days at the time asked for; unknown hours pass. */
+export function openMatches(pitch, openOn) {
+  if (!openOn || (!openOn.days?.length && !openOn.from)) return true
+  if (!pitch.hours) return true
+  const days = openOn.days?.length ? openOn.days : Object.keys(pitch.hours)
+  const from = openOn.from ? toMinutes(openOn.from) : null
+  return days.some((d) =>
+    (pitch.hours[d] || []).some(([o, c]) => {
+      if (from == null) return true
+      const open = toMinutes(o)
+      let close = toMinutes(c)
+      if (close < open) close += 1440
+      return from >= open && from + 60 <= close
+    }),
+  )
 }
 
 /**
@@ -36,7 +59,9 @@ export function buildReasons({ pitch, cost, pricePerHead, headCount }) {
   if (pitch.lit === true) reasons.push({ text: 'floodlit' })
   if (pitch.surface === '3g') reasons.push({ text: '3G' })
   else if (pitch.surface === 'astro') reasons.push({ text: 'astro' })
+  if (pitch.covered === true) reasons.push({ text: 'under cover' })
   if (pitch.changingRooms === true) reasons.push({ text: 'changing rooms' })
+  if (pitch.parking === true) reasons.push({ text: 'parking' })
   if (isBookable(pitch.bookingUrl)) reasons.push({ text: 'book online' })
   if (pitch.pitchCount > 1) reasons.push({ text: `${pitch.pitchCount} pitches` })
   return reasons.slice(0, 4)
@@ -75,12 +100,15 @@ export function passesFilters(pitch, squad, filters, headCount = Math.max(squad.
   const cost = costOf(pitch)
   const pricePerHead = cost.known ? cost.perHour / headCount : null
   if (filters.types.length && !filters.types.includes(pitch.type)) return false
-  if (filters.enclosure === 'bounded' && !isBounded(pitch)) return false
-  if (filters.enclosure === 'open' && isBounded(pitch)) return false
-  if (filters.freeOnly && !(cost.known && cost.perHour === 0)) return false
-  if (filters.bookableOnly && !isBookable(pitch.bookingUrl)) return false
+  if (filters.brands?.length && !filters.brands.includes(brandOf(pitch))) return false
+  if (filters.pricedOnly && !cost.known) return false
   if (filters.maxPricePerHead != null && cost.known && pricePerHead > filters.maxPricePerHead)
     return false
+  if (filters.surface && pitch.surface && pitch.surface !== filters.surface) return false
+  if (filters.needsCovered && pitch.covered !== true) return false
+  if (filters.needsChanging && pitch.changingRooms !== true) return false
+  if (filters.needsParking && pitch.parking !== true) return false
+  if (!openMatches(pitch, filters.openOn)) return false
   if (
     filters.format != null &&
     Array.isArray(pitch.formats) &&
@@ -110,22 +138,27 @@ export function filterCounts(pitches, squad, filters = DEFAULT_FILTERS) {
   const types = {}
   for (const p of pitches) types[p.type] = 0
   for (const t of Object.keys(types)) types[t] = count({ types: [t] })
+  const brands = {}
+  for (const b of ['goals', 'powerleague', 'other']) brands[b] = count({ brands: [b] })
   return {
     types,
-    enclosure: {
-      any: count({ enclosure: 'any' }),
-      bounded: count({ enclosure: 'bounded' }),
-      open: count({ enclosure: 'open' }),
-    },
+    brands,
     format: {
       any: count({ format: null }),
       5: count({ format: 5 }),
       7: count({ format: 7 }),
       11: count({ format: 11 }),
     },
+    surface: {
+      any: count({ surface: null }),
+      '3g': count({ surface: '3g' }),
+      astro: count({ surface: 'astro' }),
+    },
     needsFloodlights: count({ needsFloodlights: true }),
-    freeOnly: count({ freeOnly: true }),
-    bookableOnly: count({ bookableOnly: true }),
+    needsCovered: count({ needsCovered: true }),
+    needsChanging: count({ needsChanging: true }),
+    needsParking: count({ needsParking: true }),
+    pricedOnly: count({ pricedOnly: true }),
   }
 }
 

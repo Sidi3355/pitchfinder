@@ -44,7 +44,7 @@ test.describe('shared groups', () => {
     await expect(page.getByRole('heading', { name: '1 person in' })).toBeVisible()
     await expect(page.locator('.member-row.you')).toContainText('Sam')
     await expect(page.locator('.member-row.you')).toContainText('SE15 4AB')
-    await expect(page.getByRole('heading', { name: 'Best pitches for this group' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Best pitches for everyone' })).toBeVisible()
     await expect(page.locator('.pick')).toHaveCount(3)
 
     // A friend with the link and no account adds themselves, with preferences.
@@ -57,11 +57,12 @@ test.describe('shared groups', () => {
     await guest.getByLabel('Your name').fill('Priya')
     await guest.getByLabel('Where are you coming from?').fill('E8 3DL')
     await guest.getByLabel('Budget').selectOption('8')
-    await guest.getByLabel('I need floodlights').check()
+    await guest.getByRole('button', { name: 'Floodlights' }).click()
     await guest.getByRole('button', { name: 'Add me' }).click()
     await expect(guest.getByRole('heading', { name: '2 people in' })).toBeVisible()
-    await expect(guest.locator('.member-row.you')).toContainText('up to £8 each, needs floodlights')
-    await expect(guest.getByText('floodlit only, up to £8 each, as people asked.')).toBeVisible()
+    await expect(guest.locator('.member-row.you')).toContainText('up to £8 each · floodlights')
+    await expect(guest.locator('.needs-list')).toContainText('Up to £8 each')
+    await expect(guest.locator('.needs-list')).toContainText('Floodlights')
     // Their phone remembers them: a reload shows their own entry, not the form.
     await guest.reload()
     await expect(guest.getByRole('heading', { name: 'You' })).toBeVisible()

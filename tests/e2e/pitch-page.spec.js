@@ -5,9 +5,12 @@ test('pitch page renders the essentials', async ({ page }) => {
   await expect(
     page.getByRole('heading', { level: 1, name: 'Powerleague Shoreditch' }),
   ).toBeVisible()
-  await expect(page.getByText('Commercial centre')).toBeVisible()
-  // The answer first: price, surface and lights on one line; the rest folded.
-  await expect(page.locator('.key-facts')).toContainText('£78 an hour')
+  await expect(page.locator('.key-facts .brand-badge')).toHaveText('Powerleague')
+  // The answer first: price, hours and lights on one line; prices and opening
+  // times as blocks; the rest folded.
+  await expect(page.locator('.key-facts')).toContainText('£78/hr')
+  await expect(page.locator('.price-list')).toContainText('£78')
+  await expect(page.getByRole('heading', { name: 'Opening times' })).toBeVisible()
   await expect(page.getByRole('link', { name: 'Book at venue' })).toHaveAttribute(
     'href',
     /powerleague/,
@@ -15,7 +18,7 @@ test('pitch page renders the essentials', async ({ page }) => {
   await expect(page.locator('.mini-map')).toBeVisible()
   await expect(page.getByText(/^Data: /)).toBeHidden()
   await page.getByText('Details, directions and where the data comes from').click()
-  await expect(page.getByText('£78/hour')).toBeVisible()
+  await expect(page.getByText('Run by')).toBeVisible()
   await expect(page.getByText(/^Data: /)).toBeVisible()
   await expect(page.getByRole('link', { name: 'Back to results' })).toBeVisible()
   await expect(page).toHaveTitle(/Powerleague Shoreditch/)
@@ -28,7 +31,7 @@ test('pitch page HTML carries Open Graph meta without JavaScript', async ({ requ
   expect(html).toMatch(/<title>Powerleague Shoreditch: PitchFinder<\/title>/)
   expect(html).toMatch(/<meta property="og:title" content="Powerleague Shoreditch"/)
   expect(html).toMatch(
-    /<meta property="og:description" content="Commercial centre in [^"]+£78 per hour[^"]*"/,
+    /<meta property="og:description" content="Football centre in [^"]+£78 per hour[^"]*"/,
   )
   expect(html).toMatch(/<meta property="og:image" content="https?:\/\/[^"]+\/og\/commercial\.png"/)
   expect(html).toMatch(/<meta property="og:url" content="https?:\/\/[^"]+\/p\/pl-shoreditch"/)
@@ -40,9 +43,14 @@ test('pitch page HTML carries Open Graph meta without JavaScript', async ({ requ
 test('an unnamed OpenStreetMap pitch still gets a page with a derived title', async ({
   request,
 }) => {
-  const res = await request.get('/p/osm-n11415654181')
+  const index = await (await request.get('/data/index.json')).json()
+  const derived = index.pitches.find((p) => p.type === 'astro' && p.nameSource !== 'osm')
+  expect(derived).toBeTruthy()
+  const res = await request.get(`/p/${derived.id}`)
   expect(res.status()).toBe(200)
-  expect(await res.text()).toMatch(/<meta property="og:image" content="[^"]+\/og\/cage\.png"/)
+  const html = await res.text()
+  expect(html).toMatch(/<meta property="og:image" content="[^"]+\/og\/astro\.png"/)
+  expect(html).toContain(`<h1>${derived.name.replace(/&/g, '&amp;')}</h1>`)
 })
 
 test('unknown pitch id shows a designed not-found state', async ({ page }) => {

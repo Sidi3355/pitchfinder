@@ -26,6 +26,10 @@ const UA =
 const PAUSE_MS = 2000
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
+// Pages under a club that are not the club itself.
+const SUB_PAGE_RE =
+  /^(leagues?|kids-parties|parties|birthday-parties|function-hire|functions|events|offers|contact|book|booking|pitch-hire|tournaments|holiday-camps|camps|academy|walking-football|padel|gallery|news|faqs?|jobs|careers)$/i
+
 export const OPERATORS = [
   {
     key: 'goals',
@@ -37,9 +41,39 @@ export const OPERATORS = [
       'https://www.goalsfootball.co.uk/our-clubs',
       'https://www.goalsfootball.co.uk/',
     ],
-    // /clubs/<region>/<slug> and the older /our-clubs/<region>/<slug>; sub-pages (leagues, parties) are not clubs.
+    // /clubs/<region>/<slug>, /our-clubs/<region>/<slug> or /clubs/<slug>; sub-pages are not clubs.
     linkRe:
-      /^https?:\/\/(?:www\.)?goalsfootball\.co\.uk\/(?:our-)?clubs\/[a-z-]+\/([a-z0-9-]+)\/?$/i,
+      /^https?:\/\/(?:www\.)?goalsfootball\.co\.uk\/(?:our-)?clubs\/(?:[a-z0-9-]+\/)?([a-z0-9-]+)\/?(?:[?#].*)?$/i,
+    // Tried directly when the list pages give nothing: the London clubs known so far.
+    seeds: [
+      'beckenham',
+      'bexleyheath',
+      'chingford',
+      'dagenham',
+      'gillette-corner',
+      'hayes',
+      'ruislip',
+      'sutton',
+      'wembley',
+      'heathrow',
+      'wimbledon',
+      'eltham',
+      'tolworth',
+      'croydon',
+      'leyton',
+      'kingston',
+      'surrey-quays',
+      'norwood',
+      'brentford',
+      'ealing',
+      'hounslow',
+      'harrow',
+    ],
+    seedUrl: (slug) => [
+      `https://www.goalsfootball.co.uk/clubs/south-east/${slug}`,
+      `https://www.goalsfootball.co.uk/our-clubs/south-east/${slug}`,
+      `https://www.goalsfootball.co.uk/clubs/london/${slug}`,
+    ],
   },
   {
     key: 'powerleague',
@@ -47,7 +81,21 @@ export const OPERATORS = [
     prefix: 'pl',
     site: 'https://www.powerleague.com/',
     listUrls: ['https://www.powerleague.com/our-locations', 'https://www.powerleague.com/'],
-    linkRe: /^https?:\/\/(?:www\.)?powerleague\.com\/location\/([a-z0-9-]+)\/?$/i,
+    linkRe: /^https?:\/\/(?:www\.)?powerleague\.com\/location\/([a-z0-9-]+)\/?(?:[?#].*)?$/i,
+    seeds: [
+      'shoreditch',
+      'vauxhall',
+      'wembley',
+      'mill-hill',
+      'barnet',
+      'croydon',
+      'canary-wharf',
+      'battersea',
+      'enfield',
+      'finchley',
+      'tottenham',
+    ],
+    seedUrl: (slug) => [`https://www.powerleague.com/location/${slug}`],
   },
 ]
 
@@ -132,6 +180,7 @@ async function fetchOperator(browser, op) {
   const page = await context.newPage()
   page.setDefaultTimeout(45000)
   const clubUrls = new Map()
+  let blocked = false
   for (const listUrl of op.listUrls) {
     if (!(await allowedByRobots(listUrl, { userAgent: UA }))) {
       console.log(`${op.name}: robots.txt disallows ${listUrl}`)
@@ -139,16 +188,50 @@ async function fetchOperator(browser, op) {
     }
     try {
       const got = await readPage(page, listUrl)
+      if (got.status === 403) blocked = true
       for (const l of got.links) {
         const m = l.href.match(op.linkRe)
-        if (m) clubUrls.set(m[1].toLowerCase(), l.href.replace(/\/$/, ''))
+        if (m && !SUB_PAGE_RE.test(m[1]))
+          clubUrls.set(m[1].toLowerCase(), l.href.replace(/[?#].*$/, '').replace(/\/$/, ''))
       }
       console.log(`${op.name}: ${listUrl} -> ${got.status}, ${clubUrls.size} club links so far`)
+      if (!clubUrls.size) {
+        // Leave the hrefs behind so the pattern can be fixed against what the page really links to.
+        mkdirSync(PAGE_CACHE, { recursive: true })
+        writeFileSync(
+          join(PAGE_CACHE, `_list-${op.key}.json`),
+          JSON.stringify(
+            {
+              url: listUrl,
+              status: got.status,
+              fetchedAt: new Date().toISOString(),
+              hrefs: got.links.slice(0, 400),
+            },
+            null,
+            1,
+          ) + '\n',
+        )
+      }
     } catch (err) {
       console.warn(`${op.name}: ${listUrl} failed: ${err.message}`)
     }
     await sleep(PAUSE_MS)
   }
+  // No list to go on: try the clubs known so far at the site's own URL pattern.
+  if (!clubUrls.size && !blocked && op.seeds) {
+    for (const slug of op.seeds) {
+      for (const url of op.seedUrl(slug)) {
+        const res = await page.request.head(url, { timeout: 20000 }).catch(() => null)
+        if (res?.status() === 200) {
+          clubUrls.set(slug, url)
+          break
+        }
+        await sleep(500)
+      }
+    }
+    console.log(`${op.name}: ${clubUrls.size} clubs found from known slugs`)
+  }
+  if (blocked) console.log(`${op.name}: the site answers this browser with 403; nothing read`)
   const venues = []
   for (const [slug, url] of [...clubUrls.entries()].sort()) {
     const id = `${op.prefix}-${slug.replace(/[^a-z0-9]/g, '')}`
@@ -265,12 +348,14 @@ async function main() {
       region,
       lat,
       lng,
+      geoSource: f.facts.lat != null ? 'page' : pc ? 'postcode' : null,
       inLondon,
       openingHours: f.facts.openingHours,
       hoursSource: f.facts.hoursSource,
       hoursQuotes: f.facts.hoursQuotes,
       prices: f.facts.prices,
       priceFrom: f.facts.priceFrom,
+      surface: f.facts.surface,
       formats: f.facts.formats,
       pitchCount: f.facts.pitchCount,
       parking: f.facts.parking,

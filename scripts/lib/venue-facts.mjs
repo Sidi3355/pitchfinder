@@ -50,6 +50,7 @@ export function extractFacilities(text) {
     cafe: has(/\bcaf[eé]\b|\bcoffee\b/),
     covered: has(/\b(covered|indoor|roofed|under\s+cover)\b/),
     lit: has(/\bfloodli(t|ghts?|ghting)\b/),
+    surface: /\b[34]g\b/.test(t) ? '3g' : /\bastro/.test(t) ? 'astro' : null,
     formats: extractFormats(t),
     pitchCount: extractPitchCount(t),
   }

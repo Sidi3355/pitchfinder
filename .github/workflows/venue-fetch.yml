@@ -41,7 +41,7 @@ jobs:
           for p in $OUTPUTS; do
             if [ -e "$STAGE/$p" ]; then mkdir -p "$(dirname "$p")" && rm -rf "$p" && cp -r "$STAGE/$p" "$p"; fi
           done
-          git add $OUTPUTS
+          for p in $OUTPUTS; do [ -e "$p" ] && git add "$p"; done
           if git diff --cached --quiet; then
             echo "No changes."
           else

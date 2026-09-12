@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { useStore } from '../lib/store.jsx'
-import { PITCH_TYPES, pitchName } from '../data/types.js'
+import { pitchName } from '../data/types.js'
 import { surfaceLabel } from '../lib/labels.js'
 import { estimateEta } from '../lib/geo.js'
 import { journeyReason, journeyStats } from '../lib/score.js'
@@ -8,13 +8,13 @@ import { journeysFor } from '../lib/use-journeys.js'
 import { navigate } from '../lib/location.js'
 import { Link } from './Link.jsx'
 import { SourceTag, minutesText } from './Journeys.jsx'
+import { BrandBadge, openLine, priceLine } from './Facts.jsx'
 
 const NO_JOURNEYS = new Map()
 
 export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
   const { state, actions } = useStore()
-  const { pitch, cost } = row
-  const t = PITCH_TYPES[pitch.type]
+  const { pitch } = row
   const saved = state.savedIds.has(pitch.id)
   const onFinder = state.route.name === 'find'
   const withGroup = row.etas.length > 0
@@ -43,13 +43,12 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
         ? 'tfl'
         : 'osrm'
 
-  const price = !cost.known
-    ? 'price not known'
-    : cost.perHour === 0
-      ? 'free'
-      : `£${cost.perHour}/hr`
-  // The meta line already says the price and the surface; reasons add what it does not.
-  const reasons = row.reasons.filter((r) => !['free', 'astro', '3G'].includes(r.text))
+  const price = priceLine(pitch, row.etas.length)
+  const open = openLine(pitch)
+  // The price and hours have their own lines; reasons add what they do not.
+  const reasons = row.reasons.filter(
+    (r) => !['free', 'astro', '3G'].includes(r.text) && !/each for/.test(r.text),
+  )
   // Up to three people get their own minutes; a bigger group gets the one line
   // that sums it up ("everyone within 23 min").
   const perPerson = journey && journey.rows.length <= 3
@@ -59,7 +58,7 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
         `up to ${minutesText(stats.maxEta, journeySource)}`
       : null
 
-  function open() {
+  function open_() {
     if (onFinder) actions.selectPitch(pitch.id)
     else navigate(actions.pitchHref(pitch.id))
   }
@@ -72,7 +71,7 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
       onClick={(e) => {
         // The whole card opens the pitch; buttons and links inside keep their own jobs.
         if (e.target.closest('a, button')) return
-        open()
+        open_()
       }}
     >
       <div className="card-main">
@@ -111,15 +110,24 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
         </div>
 
         <p className="card-meta">
-          <span className="type-dot" style={{ background: t.color }} />
-          {t.short}
+          <BrandBadge pitch={pitch} />
           {pitch.postcode ? (
             <> · {pitch.postcode}</>
           ) : pitch.area && !(pitch.name || '').includes(pitch.area) ? (
             <> · {pitch.area}</>
           ) : null}
           {pitch.surface && <> · {surfaceLabel(pitch.surface)}</>}
-          <> · {price}</>
+        </p>
+
+        <p className="card-price">
+          <strong className={price.known ? '' : 'dim'}>{price.main}</strong>
+          {price.each && <span className="card-each"> · {price.each}</span>}
+          {open && (
+            <span className={`card-open ${open.open ? 'is-open' : 'is-closed'}`}>
+              {' '}
+              · {open.label}
+            </span>
+          )}
         </p>
 
         {journey && (

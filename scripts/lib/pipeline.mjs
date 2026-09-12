@@ -375,3 +375,158 @@ export function summarise(pitches) {
   }
   return { byType, byNameSource }
 }
+
+// ── Bookable venues and the operators' own pages ─────────────────────────────
+
+import { parseOsmHours } from '../../src/lib/hours.js'
+
+/** The app is about places you can book: football centres and astro pitches. */
+export const BOOKABLE_TYPES = new Set(['commercial', 'astro'])
+
+export function normaliseName(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+}
+
+/** Operator brand for filtering and colour: goals | powerleague | other. */
+export function brandOf(operator, name) {
+  const s = `${operator || ''} ${name || ''}`.toLowerCase()
+  if (/\bgoals\b/.test(s)) return 'goals'
+  if (/powerleague/.test(s)) return 'powerleague'
+  return 'other'
+}
+
+/** Copy only the facts the source states; null and undefined never overwrite. */
+function assignKnown(target, facts) {
+  for (const [k, v] of Object.entries(facts)) {
+    if (v === null || v === undefined) continue
+    if (Array.isArray(v) && v.length === 0) continue
+    target[k] = v
+  }
+  return target
+}
+
+function liveFacts(club) {
+  const hourly = (club.prices || []).filter((p) => p.unit === 'hour').map((p) => p.amount)
+  return {
+    name: club.name,
+    nameSource: 'operator',
+    operator: club.operator,
+    brand: brandOf(club.operator, club.name),
+    type: 'commercial',
+    sport: 'football',
+    surface: club.surface,
+    formats: club.formats,
+    pricePerHour: club.priceFrom,
+    priceMax:
+      hourly.length > 1 && Math.max(...hourly) !== Math.min(...hourly) ? Math.max(...hourly) : null,
+    prices: club.prices,
+    priceSource: club.priceFrom != null ? 'operator-site' : null,
+    priceSourceUrl: club.priceFrom != null ? club.url : null,
+    priceCheckedAt: club.priceFrom != null ? club.fetchedAt : null,
+    bookingUrl: club.bookingUrl || club.url,
+    website: club.url,
+    lit: club.lit,
+    changingRooms: club.changingRooms,
+    showers: club.showers,
+    parking: club.parking,
+    bar: club.bar,
+    cafe: club.cafe,
+    covered: club.covered,
+    hours: club.openingHours,
+    hoursSource: club.openingHours ? 'operator-site' : null,
+    hoursSourceUrl: club.openingHours ? club.url : null,
+    hoursCheckedAt: club.openingHours ? club.fetchedAt : null,
+    hoursQuotes: club.hoursQuotes,
+    postcode: club.postcode,
+    postcodeSource: club.postcode ? 'operator' : null,
+    address: club.address,
+    phone: club.phone,
+    pitchCount: club.pitchCount,
+    bounded: true,
+    curated: true,
+    source: 'operator-site',
+    sourceUrl: club.url,
+    verifiedAt: club.fetchedAt ? club.fetchedAt.slice(0, 10) : null,
+  }
+}
+
+/**
+ * The operators' own pages (data/venues-live.json) on top of the merged list.
+ * A club matches a venue by id, then by brand and name, then by distance
+ * (300 m, football centres only); a London club that matches nothing is
+ * added. A fact the page states wins; a fact it does not state keeps the
+ * baseline's value. Coordinates from the page's own schema.org data replace
+ * the baseline's; a postcode centroid does not.
+ */
+export function applyLive(venues, live, { areas = [], radius = 300 } = {}) {
+  const out = venues.map((v) => ({ ...v }))
+  const clubs = (live?.operators || []).flatMap((op) => op.venues || [])
+  for (const club of clubs) {
+    if (!club.inLondon || club.lat == null || club.lng == null) continue
+    const brand = brandOf(club.operator, club.name)
+    let target = out.find((v) => v.id === club.id)
+    if (!target) {
+      target = out.find(
+        (v) =>
+          brandOf(v.operator, v.name) === brand &&
+          normaliseName(v.name) === normaliseName(club.name),
+      )
+    }
+    if (!target) {
+      let bestD = Infinity
+      for (const v of out) {
+        if (v.type !== 'commercial' || brandOf(v.operator, v.name) !== brand) continue
+        const d = distM(v, club)
+        if (d < radius && d < bestD) {
+          bestD = d
+          target = v
+        }
+      }
+    }
+    const facts = liveFacts(club)
+    if (target) {
+      assignKnown(target, facts)
+      if (club.geoSource === 'page') {
+        target.lat = club.lat
+        target.lng = club.lng
+      }
+      target.liveId = club.id
+    } else {
+      out.push(
+        assignKnown(
+          {
+            id: club.id,
+            lat: club.lat,
+            lng: club.lng,
+            area: nearestArea(areas, club.lat, club.lng),
+            pitchCount: 1,
+            liveId: club.id,
+          },
+          facts,
+        ),
+      )
+    }
+  }
+  return out
+}
+
+/** Structured hours from OpenStreetMap's opening_hours when nothing better is known. */
+export function withHours(venue) {
+  const v = { ...venue }
+  if (!v.brand) v.brand = brandOf(v.operator, v.name)
+  if (!v.hours && v.openingHours) {
+    const week = parseOsmHours(v.openingHours)
+    if (week) {
+      v.hours = week
+      v.hoursSource = 'osm'
+    }
+  }
+  return v
+}
+
+export function onlyBookable(venues) {
+  return venues.filter((v) => BOOKABLE_TYPES.has(v.type))
+}

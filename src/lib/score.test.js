@@ -11,7 +11,9 @@ import {
   filterCounts,
   journeyReason,
   journeyStats,
+  openMatches,
 } from './score.js'
+import { brandOf } from '../data/types.js'
 import { costOf } from './data.js'
 import { displayMinutes } from './geo.js'
 import { isBookable } from './labels.js'
@@ -106,8 +108,9 @@ describe('ranking order and filters', () => {
     const lit = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, needsFloodlights: true })
     expect(lit.every((r) => r.pitch.lit === true)).toBe(true)
     expect(lit.length).toBeLessThan(all.length)
-    const free = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, freeOnly: true })
-    expect(free.every((r) => r.cost.known && r.cost.perHour === 0)).toBe(true)
+    const priced = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, pricedOnly: true })
+    expect(priced.every((r) => r.cost.known)).toBe(true)
+    expect(priced.length).toBeLessThan(all.length)
     const near = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, maxEta: 20 })
     expect(near.every((r) => r.maxEta <= 20)).toBe(true)
     const budget = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, maxPricePerHead: 5 })
@@ -117,34 +120,59 @@ describe('ranking order and filters', () => {
       types: ['commercial'],
     })
     expect(commercial.every((r) => r.pitch.type === 'commercial')).toBe(true)
-    const bookable = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, bookableOnly: true })
-    expect(bookable.every((r) => isBookable(r.pitch.bookingUrl))).toBe(true)
+    const goals = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, brands: ['goals'] })
+    expect(goals.length).toBeGreaterThan(0)
+    expect(goals.every((r) => brandOf(r.pitch) === 'goals')).toBe(true)
+    const parking = rankPitches(data.pitches, squad, { ...DEFAULT_FILTERS, needsParking: true })
+    expect(parking.every((r) => r.pitch.parking === true)).toBe(true)
+  })
+  it('keeps a venue whose hours are unknown and drops one closed at the time asked for', () => {
+    const hours = {
+      mon: [['09:00', '23:00']],
+      tue: [],
+      wed: [],
+      thu: [],
+      fri: [],
+      sat: [],
+      sun: [],
+    }
+    expect(openMatches({ hours: null }, { days: ['tue'], from: '19:00' })).toBe(true)
+    expect(openMatches({ hours }, { days: ['mon'], from: '19:00' })).toBe(true)
+    expect(openMatches({ hours }, { days: ['mon'], from: '22:30' })).toBe(false) // an hour would run past closing
+    expect(openMatches({ hours }, { days: ['tue'], from: null })).toBe(false)
+    expect(openMatches({ hours }, { days: null, from: '10:00' })).toBe(true)
+    expect(openMatches({ hours }, null)).toBe(true)
   })
 })
 
 describe('filterCounts', () => {
   const pitches = [
-    { id: 'a', type: 'park', lit: true, lat: 51.5, lng: -0.1, bounded: false },
-    { id: 'b', type: 'cage', lit: false, lat: 51.5, lng: -0.1, bounded: true },
+    { id: 'a', type: 'astro', lit: true, lat: 51.5, lng: -0.1, covered: true },
+    { id: 'b', type: 'astro', lit: false, lat: 51.5, lng: -0.1 },
     {
       id: 'c',
       type: 'commercial',
+      operator: 'Goals',
       pricePerHour: 60,
       lit: true,
       lat: 51.5,
       lng: -0.1,
       formats: [5],
+      parking: true,
     },
   ]
   it('counts what each option would leave with the other filters as they are', () => {
     const c = filterCounts(pitches, [], DEFAULT_FILTERS)
-    expect(c.types).toEqual({ park: 1, cage: 1, commercial: 1 })
+    expect(c.types).toEqual({ astro: 2, commercial: 1 })
+    expect(c.brands).toEqual({ goals: 1, powerleague: 0, other: 2 })
     expect(c.needsFloodlights).toBe(2)
-    expect(c.freeOnly).toBe(2) // parks and cages are free unless a fee is recorded
+    expect(c.needsCovered).toBe(1)
+    expect(c.needsParking).toBe(1)
+    expect(c.pricedOnly).toBe(1)
     expect(c.format).toEqual({ any: 3, 5: 3, 7: 2, 11: 2 })
     const lit = filterCounts(pitches, [], { ...DEFAULT_FILTERS, needsFloodlights: true })
-    expect(lit.types).toEqual({ park: 1, cage: 0, commercial: 1 })
-    expect(lit.freeOnly).toBe(1)
+    expect(lit.types).toEqual({ astro: 1, commercial: 1 })
+    expect(lit.brands.other).toBe(1)
   })
   it('agrees with the ranking for every option on the real dataset', () => {
     const squad = [{ id: 'm0', lat: 51.4741, lng: -0.0691, mode: 'transit' }]
@@ -153,10 +181,13 @@ describe('filterCounts', () => {
     expect(c.needsFloodlights).toBe(
       rankPitches(data.pitches, squad, { ...filters, needsFloodlights: true }).length,
     )
-    expect(c.types.park).toBe(
-      rankPitches(data.pitches, squad, { ...filters, types: ['park'] }).length,
+    expect(c.types.astro).toBe(
+      rankPitches(data.pitches, squad, { ...filters, types: ['astro'] }).length,
     )
-    expect(c.enclosure.any).toBe(rankPitches(data.pitches, squad, filters).length)
+    expect(c.brands.other).toBe(
+      rankPitches(data.pitches, squad, { ...filters, brands: ['other'] }).length,
+    )
+    expect(c.format.any).toBe(rankPitches(data.pitches, squad, filters).length)
   })
 })
 
