@@ -315,7 +315,9 @@ and seeded, each checked against its own title. The second run read eleven clubs
 days each (about 330 slots a club); it also showed that the pitch size in the URL does not
 switch Pitchbooking's list, so the 7 and 8-a-side rows repeated the 5-a-side prices: the
 reader now picks the size in the page's own select and keeps a slot only when its per-player
-figure is the price over twice that many players. A band grouped by price alone had claimed
+figure is the price over twice that many players; the third run read all twelve clubs
+(Bexleyheath included, whose own site had answered with its shell that day) with the sizes
+apart: Beckenham sells a 5-a-side hour at £88 and an 8-a-side hour at £124 off-peak. A band grouped by price alone had claimed
 "every day 09:00 to 22:00" for a £86 hour that costs £106 on weekday evenings; days now fold
 into a band only when its windows hide no other price that day. Tolworth is not on
 Pitchbooking under any name searched and keeps its hours only; Powerleague Wembley and
