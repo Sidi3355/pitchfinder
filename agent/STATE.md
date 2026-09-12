@@ -321,7 +321,11 @@ apart: Beckenham sells a 5-a-side hour at £88 and an 8-a-side hour at £124 off
 "every day 09:00 to 22:00" for a £86 hour that costs £106 on weekday evenings; days now fold
 into a band only when its windows hide no other price that day. Tolworth is not on
 Pitchbooking under any name searched and keeps its hours only; Powerleague Wembley and
-Canary Wharf have no Playfinder page and keep the unverified baseline. Kept.
+Canary Wharf have no Playfinder page and keep the unverified baseline. The refresh wrote
+274 venues: 12 Goals clubs and 15 Powerleague clubs with a week of real prices by pitch size,
+59 venues added from Playfinder (nine of them Powerleague clubs the map lacked), 84 astros
+with an hours table, and no astro with a slot price yet: that needs a Bookteq reader, which
+is the next thing to build. Kept.
 
 ## Iteration 11: the UI, redone with the 21st.dev connector (12 Sep 2026, user-directed)
 
