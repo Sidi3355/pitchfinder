@@ -235,39 +235,75 @@ export function describeWindows(windows) {
   return `kick-off ${joined}`
 }
 
+function inside(windows, time) {
+  const m = toMinutes(time)
+  return windows.some(([a, b]) => m >= toMinutes(a) && m <= toMinutes(b))
+}
+
 /**
- * Priced slots -> bands, one per (price, length): the days it was seen on,
- * the kick-off windows and how many slots backed it. Most days first, then
- * cheapest, so the first band is the everyday price where there is one.
+ * Priced slots -> bands. A band is one price for one slot length, the days
+ * it was seen on and the kick-off windows it was seen at. Days fold into a
+ * band only when the band's windows do not cover a time at which that day
+ * sold the pitch at another price (a booked slot is not another price), so
+ * a weekday's evening peak never hides inside a weekend's all-day rate.
+ * The band read from the most slots comes first, then the cheapest.
  */
 export function bandsFromSlots(slots, { format = null, surface = null } = {}) {
-  const groups = new Map()
+  const perDay = new Map() // day -> { byKey: Map(amount|minutes -> times), all: [{ time, key }] }
   for (const s of slots) {
     if (s.amount == null || !s.day || !s.time || !(s.minutes > 0)) continue
+    if (!perDay.has(s.day)) perDay.set(s.day, { byKey: new Map(), all: [] })
+    const d = perDay.get(s.day)
     const key = `${s.amount}|${s.minutes}`
-    if (!groups.has(key))
-      groups.set(key, {
-        amount: s.amount,
-        minutes: s.minutes,
-        days: new Set(),
-        times: new Set(),
-        slotsSeen: 0,
-      })
-    const g = groups.get(key)
-    g.days.add(s.day)
-    g.times.add(s.time)
-    g.slotsSeen++
+    if (!d.byKey.has(key)) d.byKey.set(key, [])
+    d.byKey.get(key).push(s.time)
+    d.all.push({ time: s.time, key })
   }
-  const bands = [...groups.values()].map((g) => ({
-    format,
-    surface,
-    amount: g.amount,
-    minutes: g.minutes,
-    days: DAYS.filter((d) => g.days.has(d)),
-    windows: mergeWindows([...g.times]),
-    slotsSeen: g.slotsSeen,
-  }))
-  bands.sort((a, b) => b.days.length - a.days.length || a.amount - b.amount)
+  const compatible = (windows, days, key) =>
+    days.every((day) => {
+      const d = perDay.get(day)
+      const own = mergeWindows(d.byKey.get(key), 90)
+      return !d.all.some((s) => s.key !== key && inside(windows, s.time) && !inside(own, s.time))
+    })
+  const keys = new Set()
+  for (const d of perDay.values()) for (const k of d.byKey.keys()) keys.add(k)
+  const bands = []
+  for (const key of keys) {
+    const [amount, minutes] = key.split('|').map(Number)
+    const clusters = []
+    for (const day of DAYS) {
+      const times = perDay.get(day)?.byKey.get(key)
+      if (!times) continue
+      let placed = false
+      for (const c of clusters) {
+        const windows = mergeWindows([...c.times, ...times], 90)
+        if (compatible(windows, [...c.days, day], key)) {
+          c.days.push(day)
+          c.times.push(...times)
+          placed = true
+          break
+        }
+      }
+      if (!placed) clusters.push({ days: [day], times: [...times] })
+    }
+    for (const c of clusters)
+      bands.push({
+        format,
+        surface,
+        amount,
+        minutes,
+        days: c.days,
+        windows: mergeWindows(c.times, 90),
+        slotsSeen: c.times.length,
+      })
+  }
+  // The band read from the most slots first: the price most of the week is sold at.
+  bands.sort(
+    (a, b) =>
+      b.slotsSeen - a.slotsSeen ||
+      a.amount - b.amount ||
+      toMinutes(a.windows[0]?.[0] || '00:00') - toMinutes(b.windows[0]?.[0] || '00:00'),
+  )
   return bands
 }
 
