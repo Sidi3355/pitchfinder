@@ -110,6 +110,137 @@ d('groups', () => {
   })
 })
 
+d('shared groups', () => {
+  let slug
+  let otherSlug
+  const priya = 'guestkey-priya-0123456789abcdef'
+  const join = (who, args) =>
+    who((q) =>
+      q('select group_join($1, $2, $3, $4, $5, $6, $7, $8) as id', [
+        args.slug ?? slug,
+        args.name,
+        args.label ?? '',
+        args.lat ?? 51.5,
+        args.lng ?? -0.1,
+        args.mode ?? 'transit',
+        JSON.stringify(args.prefs ?? {}),
+        args.key ?? null,
+      ]),
+    )
+  const read = (who, key = null, s = slug) =>
+    who((q) => q('select group_by_slug($1, $2) as g', [s, key])).then((r) => r.rows[0].g)
+
+  it('every group has an unguessable link', async () => {
+    const { rows } = await db.asUser(alice, (q) =>
+      q(`insert into groups (owner_id, name) values ($1, $2) returning share_slug`, [
+        alice,
+        'Thursday lot',
+      ]),
+    )
+    slug = rows[0].share_slug
+    expect(slug).toMatch(/^[0-9a-f]{20}$/)
+    const other = await db.asUser(bob, (q) =>
+      q(`insert into groups (owner_id, name) values ($1, $2) returning share_slug`, [
+        bob,
+        'Sunday lot',
+      ]),
+    )
+    otherSlug = other.rows[0].share_slug
+  })
+  it('anyone with the link reads the group, and an unknown link reads nothing', async () => {
+    const g = await read(db.asAnon)
+    expect(g.group.name).toBe('Thursday lot')
+    expect(g.group.owner_name).toBe('Alice')
+    expect(g.group.is_owner).toBe(false)
+    expect(g.group.owner_id).toBeUndefined()
+    expect(g.members).toEqual([])
+    const none = await db.asAnon((q) => q('select group_by_slug($1) as g', ['nope']))
+    expect(none.rows[0].g).toBeNull()
+  })
+  it('a guest adds themselves with a key and can change their own entry', async () => {
+    const first = await join(db.asAnon, { name: 'Priya', label: 'Peckham', key: priya })
+    const second = await join(db.asAnon, {
+      name: 'Priya',
+      label: 'Brixton',
+      lat: 51.46,
+      lng: -0.11,
+      mode: 'cycle',
+      prefs: { budget: 8, lit: true },
+      key: priya,
+    })
+    expect(first.rows[0].id).toBe(second.rows[0].id)
+    const g = await read(db.asAnon, priya)
+    expect(g.members).toEqual([
+      expect.objectContaining({
+        name: 'Priya',
+        label: 'Brixton',
+        mode: 'cycle',
+        prefs: { budget: 8, lit: true },
+        is_you: true,
+      }),
+    ])
+    const stranger = await read(db.asAnon, 'guestkey-someone-else-0123456789')
+    expect(stranger.members[0].is_you).toBe(false)
+  })
+  it('a signed-in person is keyed by their account, not a guest key', async () => {
+    await join(db.asUser.bind(null, bob), { name: 'Bob', label: 'Hackney' })
+    await join(db.asUser.bind(null, bob), { name: 'Bobby', label: 'Hackney', mode: 'walk' })
+    const g = await read(db.asUser.bind(null, bob))
+    expect(g.members.map((m) => [m.name, m.is_you])).toEqual([
+      ['Priya', false],
+      ['Bobby', true],
+    ])
+  })
+  it('refuses a weak key, a bad mode and a place outside the UK', async () => {
+    await expect(join(db.asAnon, { name: 'X', key: 'short' })).rejects.toThrow(/guest key/)
+    await expect(join(db.asAnon, { name: 'X', key: priya, mode: 'teleport' })).rejects.toThrow(
+      /invalid mode/,
+    )
+    await expect(join(db.asAnon, { name: 'X', key: priya, lat: 40.7, lng: -74 })).rejects.toThrow(
+      /outside the UK/,
+    )
+    await expect(join(db.asAnon, { name: 'X', key: priya, slug: 'nope' })).rejects.toThrow(
+      /group not found/,
+    )
+  })
+  it('members are private to the link: the table is closed and other groups are separate', async () => {
+    await expect(db.asAnon((q) => q('select name from group_members'))).rejects.toThrow(
+      /permission denied/,
+    )
+    const bobs = await db.asUser(bob, (q) => q('select name from group_members'))
+    expect(bobs.rows).toHaveLength(0) // Bob is a member, not the owner
+    const other = await read(db.asAnon, priya, otherSlug)
+    expect(other.members).toEqual([])
+  })
+  it('the owner sees members, lists the group with a count, and can remove someone', async () => {
+    const mine = await db.asUser(alice, (q) => q('select name from group_members order by 1'))
+    expect(mine.rows.map((r) => r.name)).toEqual(['Bobby', 'Priya'])
+    const { rows } = await db.asUser(alice, (q) => q('select my_groups() as g'))
+    const g = rows[0].g.find((x) => x.share_slug === slug)
+    expect(g).toMatchObject({ name: 'Thursday lot', member_count: 2, members: ['Priya', 'Bobby'] })
+    const bobList = await db.asUser(bob, (q) => q('select my_groups() as g'))
+    expect(bobList.rows[0].g.map((x) => x.name)).toEqual(['Sunday lot'])
+    const removed = await db.asUser(alice, (q) =>
+      q(`delete from group_members where name = 'Bobby'`),
+    )
+    expect(removed.rowCount).toBe(1)
+    const notOwner = await db.asUser(bob, (q) =>
+      q(`delete from group_members where name = 'Priya'`),
+    )
+    expect(notOwner.rowCount).toBe(0)
+  })
+  it('a member can leave, and only their own row goes', async () => {
+    await join(db.asUser.bind(null, bob), { name: 'Bob', label: 'Hackney' })
+    await db.asAnon((q) =>
+      q('select group_leave($1, $2)', [slug, 'guestkey-someone-else-0123456789']),
+    )
+    expect((await read(db.asAnon)).members).toHaveLength(2)
+    await db.asAnon((q) => q('select group_leave($1, $2)', [slug, priya]))
+    await db.asUser(bob, (q) => q('select group_leave($1)', [slug]))
+    expect((await read(db.asAnon)).members).toEqual([])
+  })
+})
+
 d('games and RSVPs', () => {
   let slug
   let gameId

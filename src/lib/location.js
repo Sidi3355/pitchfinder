@@ -47,6 +47,7 @@ const ROUTES = [
   { name: 'privacy', pattern: /^\/privacy\/?$/ },
   { name: 'pitch', pattern: /^\/p\/([a-z0-9-]{1,40})\/?$/i, params: ['id'] },
   { name: 'game', pattern: /^\/g\/([a-z0-9-]{1,64})\/?$/i, params: ['slug'] },
+  { name: 'group', pattern: /^\/group\/([a-z0-9-]{1,64})\/?$/i, params: ['slug'] },
   { name: 'about', pattern: /^\/about\/?$/ },
   { name: 'profile', pattern: /^\/me\/?$/ },
 ]
@@ -65,7 +66,7 @@ export function matchRoute(path) {
 
 // Query keys that carry finder state; a root URL with any of them is an old
 // shared link and goes to /find with the query intact.
-const FINDER_KEYS = ['g', 'p', 't', 'enc', 'fmt', 'budget', 'eta', 'lit', 'free', 'book']
+const FINDER_KEYS = ['g', 'grp', 'p', 't', 'enc', 'fmt', 'budget', 'eta', 'lit', 'free', 'book']
 
 export function isLegacyFinderLink(path, search) {
   if (path !== '/' || !search) return false

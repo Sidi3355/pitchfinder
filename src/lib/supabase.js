@@ -220,6 +220,71 @@ export async function deleteGroup(id) {
   if (error) fail(error)
 }
 
+// ── Shared groups (everyone adds themselves through the link) ────────────────
+
+export async function createSharedGroup(userId, name) {
+  const sb = await client()
+  const { data, error } = await sb
+    .from('groups')
+    .insert({ owner_id: userId, name })
+    .select('id, name, share_slug')
+    .single()
+  if (error) fail(error)
+  return data
+}
+
+export async function renameGroup(id, name) {
+  const sb = await client()
+  const { error } = await sb.from('groups').update({ name }).eq('id', id)
+  if (error) fail(error)
+}
+
+export async function groupBySlug(slug, guestKey) {
+  const sb = await client()
+  const { data, error } = await sb.rpc('group_by_slug', {
+    p_slug: slug,
+    p_guest_key: guestKey || null,
+  })
+  if (error) fail(error)
+  return data // { group, members } or null
+}
+
+/** Add or update the caller's own entry. Signed in: keyed by account; else by guest key. */
+export async function groupJoin(slug, { name, label, lat, lng, mode, prefs }, guestKey) {
+  const sb = await client()
+  const { error } = await sb.rpc('group_join', {
+    p_slug: slug,
+    p_name: name,
+    p_label: label || '',
+    p_lat: lat,
+    p_lng: lng,
+    p_mode: mode,
+    p_prefs: prefs || {},
+    p_guest_key: guestKey || null,
+  })
+  if (error) fail(error)
+}
+
+export async function groupLeave(slug, guestKey) {
+  const sb = await client()
+  const { error } = await sb.rpc('group_leave', { p_slug: slug, p_guest_key: guestKey || null })
+  if (error) fail(error)
+}
+
+/** Owner only (RLS): take someone out of the group. */
+export async function removeGroupMember(memberId) {
+  const sb = await client()
+  const { error } = await sb.from('group_members').delete().eq('id', memberId)
+  if (error) fail(error)
+}
+
+export async function myGroups() {
+  const sb = await client()
+  const { data, error } = await sb.rpc('my_groups')
+  if (error) fail(error)
+  return data || []
+}
+
 // ── Games and RSVPs ──────────────────────────────────────────────────────────
 
 const GAME_COLUMNS =

@@ -102,6 +102,7 @@ try {
   ])
   // A game to screenshot: created once through the UI as a signed-in organiser.
   let gameUrl = null
+  let groupUrl = null
   if (withDb) {
     const ctx = await browser.newContext(profiles.desktop)
     const page = await ctx.newPage()
@@ -134,6 +135,25 @@ try {
       await gp.waitForSelector(`text=Your answer: ${status}`)
       await g.close()
     }
+    // A shared group with two people in it, for the group page and the finder's shared mode.
+    await page.goto(`${BASE}/find`)
+    await page.getByRole('button', { name: /Where is everyone coming from/ }).click()
+    await page.getByRole('button', { name: 'Create a group link' }).click()
+    await page.waitForURL(/\/group\//)
+    groupUrl = page.url().replace(BASE, '')
+    await page.getByLabel('Your name').fill('Sam')
+    await page.getByLabel('Where are you coming from?').fill('Peckham')
+    await page.getByRole('button', { name: 'Add me' }).click()
+    await page.waitForSelector('text=1 person in')
+    const g = await browser.newContext()
+    const gp = await g.newPage()
+    await gp.goto(`${BASE}${groupUrl}`)
+    await gp.getByLabel('Your name').fill('Priya')
+    await gp.getByLabel('Where are you coming from?').fill('Hackney')
+    await gp.getByLabel('Budget').selectOption('8')
+    await gp.getByRole('button', { name: 'Add me' }).click()
+    await gp.waitForSelector('text=2 people in')
+    await g.close()
     await ctx.close()
   }
   for (const [profile, opts] of Object.entries(profiles)) {
@@ -149,6 +169,14 @@ try {
         await page.waitForTimeout(400)
       }
       await shot(page, join(OUT, `${profile}-${name}.jpg`))
+    }
+    if (groupUrl && !dark) {
+      await page.goto(`${BASE}${groupUrl}`)
+      await page.waitForTimeout(1200)
+      await shot(page, join(OUT, `${profile}-group-guest.jpg`))
+      await page.goto(`${BASE}/find?grp=${groupUrl.split('/').pop()}&budget=8`)
+      await page.waitForTimeout(1500)
+      await shot(page, join(OUT, `${profile}-find-shared-group.jpg`))
     }
     if (gameUrl && !dark) {
       await page.goto(`${BASE}${gameUrl}`)

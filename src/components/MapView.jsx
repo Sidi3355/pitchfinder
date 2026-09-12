@@ -99,6 +99,8 @@ export function MapView({ bottomPadding = 0 }) {
       },
     })
     mapRef.current = map
+    // Test builds expose the map so end-to-end tests can inspect layers; production does not.
+    if (import.meta.env.MODE === 'test') window.__pfMapDebug = map
     const basic = softwareRenderer(map)
     if (basic) {
       map.setStyle(FALLBACK_STYLE, { diff: false })
@@ -164,6 +166,20 @@ export function MapView({ bottomPadding = 0 }) {
           paint: { 'text-color': '#14532d' },
         })
       }
+      // A ring around the selected pitch, drawn under the points.
+      map.addLayer({
+        id: 'pitch-selected',
+        type: 'circle',
+        source: 'pitches',
+        filter: ['==', ['get', 'id'], '__none__'],
+        paint: {
+          'circle-color': '#15803d',
+          'circle-opacity': 0.18,
+          'circle-radius': 16,
+          'circle-stroke-color': '#15803d',
+          'circle-stroke-width': 2.5,
+        },
+      })
       map.addLayer({
         id: 'pitch-points',
         type: 'circle',
@@ -286,10 +302,17 @@ export function MapView({ bottomPadding = 0 }) {
     map.setPadding({ top: 72, bottom, left: 0, right: 0 })
   }, [bottomPadding])
 
-  // ── Fly to selection ──
+  // ── Fly to selection and ring it ──
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !state.selectedPitchId) return
+    if (!map) return
+    const ring = () => {
+      if (map.getLayer('pitch-selected'))
+        map.setFilter('pitch-selected', ['==', ['get', 'id'], state.selectedPitchId || '__none__'])
+    }
+    if (readyRef.current) ring()
+    else map.once('load', ring)
+    if (!state.selectedPitchId) return
     const row = results.find((r) => r.pitch.id === state.selectedPitchId)
     if (row) {
       map.easeTo({

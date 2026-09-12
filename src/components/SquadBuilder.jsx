@@ -165,6 +165,7 @@ export function SquadBuilder() {
 
   return (
     <section className="stack">
+      {state.authAvailable && <ShareGroupLink />}
       <form className="stack" onSubmit={submit}>
         <label className="field">
           <span className="field-label">Where from?</span>
@@ -290,6 +291,41 @@ export function SquadBuilder() {
         </p>
       )}
     </section>
+  )
+}
+
+/** The better way: one link, everyone adds themselves. */
+function ShareGroupLink() {
+  const { state, actions } = useStore()
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState('')
+  async function start() {
+    setBusy(true)
+    setError('')
+    try {
+      await actions.createSharedGroup('Football')
+    } catch (err) {
+      setError(err.message)
+    } finally {
+      setBusy(false)
+    }
+  }
+  return (
+    <div className="share-group">
+      <p>
+        <strong>Let everyone add themselves.</strong> Create a group link, send it to the chat, and
+        each person puts in where they are coming from.
+      </p>
+      <button className="btn primary sm" type="button" onClick={start} disabled={busy}>
+        {state.user ? 'Create a group link' : 'Sign in and create a group link'}
+      </button>
+      {error && (
+        <p className="form-error" role="alert">
+          {error}
+        </p>
+      )}
+      <p className="hint dim">Or add people yourself below.</p>
+    </div>
   )
 }
 

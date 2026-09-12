@@ -19,6 +19,7 @@ const TABLES = {
   profiles: ['id'],
   saved_pitches: ['user_id', 'pitch_id'],
   groups: ['id'],
+  group_members: ['id'],
   games: ['id'],
   rsvps: ['id'],
   reports: ['id'],

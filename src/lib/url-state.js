@@ -136,23 +136,39 @@ export function encodeFilters(filters) {
   return out
 }
 
-/** @returns {{ group: Array, filters: object, pitch: string|null }} */
+const SLUG_RE = /^[0-9a-f]{20}$/
+
+/**
+ * @returns {{ group: Array, sharedGroup: string|null, filters: object, pitch: string|null }}
+ * `sharedGroup` is the link slug of a group whose members live in Supabase;
+ * when present it replaces the inline `g=` group.
+ */
 export function parseSearch(search) {
   const params = parseRawQuery(search)
   const pitchRaw = params.has('p') ? decodeValue(params.get('p')) : ''
   const pitch = /^[a-z0-9-]{1,40}$/i.test(pitchRaw) ? pitchRaw : null
+  const grpRaw = params.has('grp') ? decodeValue(params.get('grp')) : ''
   return {
     group: decodeGroup(params.get('g') || ''),
+    sharedGroup: SLUG_RE.test(grpRaw) ? grpRaw : null,
     filters: decodeFilters(params),
     pitch,
   }
 }
 
 /** Deterministic query string ('' when everything is default). */
-export function buildSearch({ group = [], filters = DEFAULT_FILTERS, pitch = null } = {}) {
+export function buildSearch({
+  group = [],
+  sharedGroup = null,
+  filters = DEFAULT_FILTERS,
+  pitch = null,
+} = {}) {
   const parts = []
-  const g = encodeGroup(group)
-  if (g) parts.push(`g=${g}`)
+  if (sharedGroup && SLUG_RE.test(sharedGroup)) parts.push(`grp=${sharedGroup}`)
+  else {
+    const g = encodeGroup(group)
+    if (g) parts.push(`g=${g}`)
+  }
   for (const [k, v] of encodeFilters(filters)) parts.push(`${k}=${encodeValue(v)}`)
   if (pitch) parts.push(`p=${encodeValue(pitch)}`)
   return parts.length ? `?${parts.join('&')}` : ''

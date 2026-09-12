@@ -92,3 +92,5 @@ Status: todo | doing | done | blocked. Found items are folded under the item the
 | #   | Item                                                                                        | Status | Notes                                                                     |
 | --- | ------------------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------- |
 | U1  | A product site around the tool: landing page, header menu, footer, privacy, finder at /find | done   | Iteration 7; overrides the brief's first-screen and no-hero lines for `/` |
+| U2  | Shared group links: each person adds themselves and their preferences; the site collates    | done   | Iteration 8; migration 0005, `/group/{slug}`, `grp=` in the finder        |
+| U3  | Less detail on the pitch panel; selected pitch highlighted in the list and on the map       | done   | Iteration 8                                                               |

@@ -32,6 +32,13 @@ allow-list.
   whenever `starts_at` changes; the client cannot set or clear them. `game_by_slug` returns both,
   and marks each RSVP `before_change` when it was last updated before the time moved, so the page
   can ask those people to confirm.
+- Shared groups (migration 0005): `groups.share_slug` (20 hex chars) and a `group_members` table
+  (name, label, lat, lng, mode, prefs jsonb, keyed by `user_id` or a 16 to 64 character
+  `guest_key`). Direct table access is owner only (select and delete). Everyone else goes through
+  `group_by_slug(slug, guest_key)` (`{ group, members }` with `is_you`), `group_join(...)` (upsert
+  your own row, UK bounds and mode checked, 30 members at most), `group_leave(slug, guest_key)`
+  and `my_groups()` (the owner's groups with member counts). The old `members` jsonb column stays
+  for groups saved before shared links existed.
 - `game_by_slug(slug, guest_key default null)` returns `{ game, rsvps }`. The game object never
   includes `creator_id`; it includes `creator_name`, `is_creator` (for the caller) and each RSVP
   carries `is_you` (matched by `auth.uid()` for users or by `guest_key` for guests). Returns
