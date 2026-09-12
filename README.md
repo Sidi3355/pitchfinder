@@ -41,8 +41,11 @@ transport uses the TfL Journey Planner when `VITE_TFL_APP_KEY` is set and is oth
 estimate tagged "est.". MapLibre and the dataset load on demand so the first screen stays under
 the bundle budget. Light and dark themes follow the system.
 
-**Accounts and games** (Supabase). Sign-in is optional and by magic link or Google. Signed-in
-people save pitches and groups and create games. A game has an unguessable link at `/g/{slug}`;
+**Groups, accounts and games** (Supabase). One person creates a group link (that needs a
+sign-in, by magic link or Google); everyone else opens it and adds where they are coming from,
+how they travel and what they need, with no account. The group page shows who is in and the best
+pitches for everyone, and the finder ranks for the shared group. Signed-in people also save
+pitches and create games. A game has an unguessable link at `/g/{slug}`;
 anyone with the link reads it through a security-definer function and answers as a guest with a
 name their phone remembers. Row Level Security keeps everything else private; the policies are
 SQL migrations in `supabase/migrations/` and are tested against a real Postgres. Browsing works

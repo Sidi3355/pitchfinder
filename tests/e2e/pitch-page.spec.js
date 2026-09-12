@@ -6,12 +6,16 @@ test('pitch page renders the essentials', async ({ page }) => {
     page.getByRole('heading', { level: 1, name: 'Powerleague Shoreditch' }),
   ).toBeVisible()
   await expect(page.getByText('Commercial centre')).toBeVisible()
-  await expect(page.getByText('£78/hour')).toBeVisible()
+  // The answer first: price, surface and lights on one line; the rest folded.
+  await expect(page.locator('.key-facts')).toContainText('£78 an hour')
   await expect(page.getByRole('link', { name: 'Book at venue' })).toHaveAttribute(
     'href',
     /powerleague/,
   )
   await expect(page.locator('.mini-map')).toBeVisible()
+  await expect(page.getByText(/^Data: /)).toBeHidden()
+  await page.getByText('Details, directions and where the data comes from').click()
+  await expect(page.getByText('£78/hour')).toBeVisible()
   await expect(page.getByText(/^Data: /)).toBeVisible()
   await expect(page.getByRole('link', { name: 'Back to results' })).toBeVisible()
   await expect(page).toHaveTitle(/Powerleague Shoreditch/)

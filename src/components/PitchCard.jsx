@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useStore } from '../lib/store.jsx'
 import { PITCH_TYPES, pitchName } from '../data/types.js'
 import { surfaceLabel } from '../lib/labels.js'
@@ -18,6 +18,12 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
   const saved = state.savedIds.has(pitch.id)
   const onFinder = state.route.name === 'find'
   const withGroup = row.etas.length > 0
+  const selected = onFinder && state.selectedPitchId === pitch.id
+  const ref = useRef(null)
+  // A pitch picked on the map scrolls its card into view in the list.
+  useEffect(() => {
+    if (selected) ref.current?.scrollIntoView({ block: 'nearest' })
+  }, [selected])
   // The card shows routed minutes where every member has a route, and the
   // ranking's estimates otherwise. The journey reason follows the same numbers.
   const journey = withGroup
@@ -60,7 +66,9 @@ export function PitchCard({ row, rank, journeys = NO_JOURNEYS }) {
 
   return (
     <article
-      className="card clickable"
+      ref={ref}
+      className={`card clickable${selected ? ' selected' : ''}`}
+      aria-current={selected ? 'true' : undefined}
       onClick={(e) => {
         // The whole card opens the pitch; buttons and links inside keep their own jobs.
         if (e.target.closest('a, button')) return

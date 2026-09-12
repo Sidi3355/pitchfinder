@@ -17,6 +17,7 @@ import { DEFAULT_FILTERS, rankPitches } from './score.js'
 import { matchRoute, navigate, useLocation } from './location.js'
 import { buildHref, parseSearch } from './url-state.js'
 import { setPending, setReturnTo, takePending, takeReturnTo } from './pending.js'
+import { getGuest } from './guest.js'
 
 const StoreContext = createContext(null)
 
@@ -30,6 +31,8 @@ const initialState = {
   authModal: null, // null | { reason: 'save' | 'game' | 'group' | 'generic' }
   savedIds: new Set(),
   notice: null, // { text, at } shown briefly after a completed action
+  // A shared group loaded from its link: { slug, status: 'loading'|'ready'|'missing'|'error', group, members }
+  sharedGroup: null,
 }
 
 function reducer(state, action) {
@@ -58,6 +61,8 @@ function reducer(state, action) {
       return { ...state, user: state.user ? { ...state.user, displayName: action.name } : null }
     case 'notice':
       return { ...state, notice: action.text ? { text: action.text, at: Date.now() } : null }
+    case 'sharedGroup':
+      return { ...state, sharedGroup: action.sharedGroup }
     default:
       return state
   }
@@ -76,7 +81,58 @@ export function StoreProvider({ children }) {
   const location = useLocation()
   const route = useMemo(() => matchRoute(location.path), [location.path])
   const urlState = useMemo(() => parseSearch(location.search), [location.search])
-  const { group: squad, filters, pitch: selectedPitchId } = urlState
+  const { filters, pitch: selectedPitchId, sharedGroup: sharedSlug } = urlState
+
+  // A shared group in the URL (grp=) supplies the people; otherwise the inline g= group does.
+  const shared =
+    state.sharedGroup && state.sharedGroup.slug === sharedSlug ? state.sharedGroup : null
+  const squad = useMemo(() => {
+    if (!sharedSlug) return urlState.group
+    if (!shared || shared.status !== 'ready') return []
+    return shared.members.map((m) => ({
+      id: m.id,
+      name: m.name,
+      label: m.label,
+      lat: m.lat,
+      lng: m.lng,
+      mode: m.mode,
+      you: m.is_you,
+    }))
+  }, [sharedSlug, shared, urlState.group])
+
+  useEffect(() => {
+    if (!sharedSlug) return undefined
+    let cancelled = false
+    const load = async () => {
+      try {
+        const data = await sb.groupBySlug(sharedSlug, getGuest().key)
+        if (cancelled) return
+        dispatch({
+          type: 'sharedGroup',
+          sharedGroup: data
+            ? { slug: sharedSlug, status: 'ready', group: data.group, members: data.members }
+            : { slug: sharedSlug, status: 'missing', group: null, members: [] },
+        })
+      } catch {
+        if (!cancelled)
+          dispatch({
+            type: 'sharedGroup',
+            sharedGroup: { slug: sharedSlug, status: 'error', group: null, members: [] },
+          })
+      }
+    }
+    Promise.resolve().then(() => {
+      if (!cancelled)
+        dispatch({
+          type: 'sharedGroup',
+          sharedGroup: { slug: sharedSlug, status: 'loading', group: null, members: [] },
+        })
+      return load()
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [sharedSlug, state.user?.id])
 
   // ── Dataset ──
   useEffect(() => {
@@ -105,6 +161,9 @@ export function StoreProvider({ children }) {
         const game = await sb.createGame(user.id, action)
         dispatch({ type: 'notice', text: 'Game created. Share the link with the group.' })
         navigate(`/g/${game.share_slug}`)
+      } else if (action.type === 'sharedGroup') {
+        const group = await sb.createSharedGroup(user.id, action.name || 'Football')
+        navigate(`/group/${group.share_slug}`)
       }
     } catch (err) {
       dispatch({ type: 'notice', text: `Signed in, but could not finish: ${err.message}` })
@@ -194,8 +253,9 @@ export function StoreProvider({ children }) {
 
   /** Href for another route that keeps the group and filters, drops the selected pitch. */
   const hrefFor = useCallback(
-    (path, patch = {}) => buildHref(path, { group: squad, filters, pitch: null, ...patch }),
-    [squad, filters],
+    (path, patch = {}) =>
+      buildHref(path, { group: squad, sharedGroup: sharedSlug, filters, pitch: null, ...patch }),
+    [squad, sharedSlug, filters],
   )
 
   const actions = useMemo(() => {
@@ -214,7 +274,7 @@ export function StoreProvider({ children }) {
     return {
       go: (path, opts) => navigate(hrefFor(path), opts),
       hrefFor,
-      pitchHref: (id) => buildHref(`/p/${id}`, { group: squad }),
+      pitchHref: (id) => buildHref(`/p/${id}`, { group: squad, sharedGroup: sharedSlug }),
       retryData: () => dispatch({ type: 'data:retry' }),
 
       openAuth: (reason = 'generic') => dispatch({ type: 'authModal', modal: { reason } }),
@@ -242,11 +302,29 @@ export function StoreProvider({ children }) {
         dispatch({ type: 'displayName', name })
       },
 
-      addFriend: (friend) => setUrl({ group: [...squad, friend] }),
-      removeFriend: (id) => setUrl({ group: squad.filter((f) => f.id !== id) }),
+      addFriend: (friend) => setUrl({ group: [...squad, friend], sharedGroup: null }),
+      removeFriend: (id) => setUrl({ group: squad.filter((f) => f.id !== id), sharedGroup: null }),
       setFriendMode: (id, mode) =>
-        setUrl({ group: squad.map((f) => (f.id === id ? { ...f, mode } : f)) }),
-      setSquad: (group, opts) => setUrl({ group }, opts),
+        setUrl({ group: squad.map((f) => (f.id === id ? { ...f, mode } : f)), sharedGroup: null }),
+      setSquad: (group, opts) => setUrl({ group, sharedGroup: null }, opts),
+      /** Start a shared group (needs sign-in) and go to its page. Returns false when sign-in is needed. */
+      async createSharedGroup(name) {
+        if (!requireUser('group', { type: 'sharedGroup', name })) return false
+        const group = await sb.createSharedGroup(state.user.id, name || 'Football')
+        navigate(`/group/${group.share_slug}`)
+        return true
+      },
+      /** Re-read the shared group after someone joins or leaves. */
+      async refreshSharedGroup() {
+        if (!sharedSlug) return
+        const data = await sb.groupBySlug(sharedSlug, getGuest().key)
+        dispatch({
+          type: 'sharedGroup',
+          sharedGroup: data
+            ? { slug: sharedSlug, status: 'ready', group: data.group, members: data.members }
+            : { slug: sharedSlug, status: 'missing', group: null, members: [] },
+        })
+      },
       setFilters: (patch) => setUrl({ filters: { ...filters, ...patch } }),
       resetFilters: () => setUrl({ filters: DEFAULT_FILTERS }),
       // Opening a pitch pushes history so the back button closes it.
@@ -295,13 +373,15 @@ export function StoreProvider({ children }) {
       },
       clearNotice: () => dispatch({ type: 'notice', text: null }),
     }
-  }, [state.user, state.savedIds, squad, filters, urlState, location.path, hrefFor])
+  }, [state.user, state.savedIds, squad, sharedSlug, filters, urlState, location.path, hrefFor])
 
   const value = useMemo(
     () => ({
       state: {
         ...state,
         squad,
+        sharedSlug,
+        sharedGroup: shared,
         filters,
         selectedPitchId,
         route,
@@ -313,7 +393,19 @@ export function StoreProvider({ children }) {
       pitchById,
       actions,
     }),
-    [state, squad, filters, selectedPitchId, route, results, resultById, pitchById, actions],
+    [
+      state,
+      squad,
+      sharedSlug,
+      shared,
+      filters,
+      selectedPitchId,
+      route,
+      results,
+      resultById,
+      pitchById,
+      actions,
+    ],
   )
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>
 }

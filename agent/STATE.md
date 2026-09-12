@@ -184,3 +184,31 @@ simulation put the finder's first paint at 3.7 s while its own filmstrip showed 
 Reflection: landing 97 / 100 / 100 / 100 with first paint at 2.1 s on throttled slow 4G; the
 finder is unchanged in code and in numbers; 63 e2e tests pass including the quick start, the
 legacy redirect, the menu on both form factors and the privacy page. Kept.
+
+## Iteration 8: everyone adds themselves (12 Sep 2026, user-directed)
+
+The user's call: the finder read as one manager typing the whole group in and the pitch panel
+showed everything at once. The product is the other way round: one person makes a group link,
+each person opens it and puts in where they are coming from and what they need, and the site
+collates it. Also asked for: the selected pitch must be visibly highlighted, and less detail.
+
+Intended user-visible outcome: "Create a group link" from the finder, the landing page or My
+games gives `/group/{slug}`. Anyone with the link adds themselves (name, postcode or area, how
+they travel, a budget per head, whether they need floodlights) without an account, changes or
+removes their own entry later, and sees who else is in and the three best pitches for the whole
+group, with the tightest budget and floodlights applied if anyone asked. "See all pitches on the
+map" opens the finder for the shared group, where the chips are the people who added themselves
+and every pitch link keeps the group. The organiser can rename the group and remove someone.
+The pitch panel shows the answer first: journey times, one line of price, surface and lights,
+the actions; everything else is behind one closed disclosure. The selected pitch is highlighted
+in the list, scrolled into view, and ringed on the map.
+
+Approach: migration 0005 (a members table keyed by account or guest key, security-definer
+join, read and leave, owner-only direct access) tested against Postgres; `grp=` in the URL
+supplies the squad from Supabase; the group page polls every 20 s like the game page. The
+inline `g=` group remains for anyone who prefers to type people in, and for links without a
+server.
+
+Reflection: the shared-group round trip is proven end to end on both form factors (organiser
+creates, guest joins with preferences, the map ranks for both, the organiser removes someone)
+plus eight RLS tests; unit and e2e suites green. Kept.

@@ -93,6 +93,10 @@ script that measures it. "Refined" notes come from the codebase read.
       groups, and cannot edit a game they did not create. `tests/rls/*.test.mjs` against Postgres
       with the migrations applied.
 - [x] **S5** No `topbins:*` localStorage keys; `src/lib/auth.js` deleted.
+- [x] **S7** (added 12 Sep, user-directed) Shared groups: a link at `/group/{slug}`; anyone with it
+      adds, changes or removes their own entry (account or guest key) and nobody else's; the owner
+      sees and removes members; the finder ranks for the shared group. RLS tests in
+      `tests/rls/rls.test.mjs`; e2e in `tests/e2e/shared-groups.spec.js`.
 - [x] **S6** With Supabase unreachable, ranking, map, filters and pitch pages work; save and
       game features show an inline "sign in unavailable" notice. E2E blocks the Supabase origin.
 

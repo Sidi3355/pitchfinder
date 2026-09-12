@@ -62,7 +62,7 @@ function SignedInProfile({ user, resultById, pitchById }) {
 
   useEffect(() => {
     let cancelled = false
-    Promise.all([sb.myGames(), sb.listGroups()])
+    Promise.all([sb.myGames(), sb.myGroups()])
       .then(([g, gr]) => {
         if (cancelled) return
         // Games within the last three hours still count as upcoming (in play).
@@ -183,13 +183,13 @@ function SignedInProfile({ user, resultById, pitchById }) {
 
       <section className="panel" aria-labelledby="groups-title">
         <h2 id="groups-title" className="panel-title">
-          Saved groups
+          Your groups
         </h2>
         {groups === null ? (
           <p className="hint">Loading…</p>
         ) : groups.length === 0 ? (
           <p className="hint">
-            Build a group on the map and choose Save group to keep it for next time.
+            Create a group link from the map and everyone adds themselves; your groups appear here.
           </p>
         ) : (
           <ul className="group-list">
@@ -198,13 +198,25 @@ function SignedInProfile({ user, resultById, pitchById }) {
                 <div className="group-info">
                   <strong>{g.name}</strong>
                   <span className="dim">
-                    {g.members.length} {g.members.length === 1 ? 'player' : 'players'}:{' '}
-                    {g.members.map((m) => m.name).join(', ')}
+                    {g.member_count
+                      ? `${g.member_count} in: ${g.members.join(', ')}`
+                      : g.legacy_members?.length
+                        ? `${g.legacy_members.length} typed in by you: ${g.legacy_members.map((m) => m.name).join(', ')}`
+                        : 'Nobody in yet'}
                   </span>
                 </div>
-                <Link className="btn ghost sm" href={`/?g=${encodeGroupForHref(g.members)}`}>
-                  Use
-                </Link>
+                {g.member_count || !g.legacy_members?.length ? (
+                  <Link className="btn ghost sm" href={`/group/${g.share_slug}`}>
+                    Open
+                  </Link>
+                ) : (
+                  <Link
+                    className="btn ghost sm"
+                    href={`/find?g=${encodeGroupForHref(g.legacy_members)}`}
+                  >
+                    Use
+                  </Link>
+                )}
                 <button
                   className="icon-btn"
                   onClick={() => removeGroup(g.id)}

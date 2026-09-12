@@ -14,8 +14,8 @@ import { Link } from './Link.jsx'
 
 const STEPS = [
   {
-    title: 'Say where everyone is coming from',
-    body: 'A postcode or an area for each person, and how they travel. It takes a few taps and nothing needs an account.',
+    title: 'Everyone says where they are coming from',
+    body: 'Share one group link. Each person adds their own postcode or area, how they travel and what they need. Nothing needs an account.',
   },
   {
     title: 'Get a short list you can trust',
@@ -55,7 +55,7 @@ const FEATURES = [
 ]
 
 function QuickStart() {
-  const { state } = useStore()
+  const { state, actions } = useStore()
   const [query, setQuery] = useState('')
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
@@ -120,6 +120,19 @@ function QuickStart() {
             Or browse all {state.data ? state.data.count.toLocaleString('en-GB') : ''} pitches
           </Link>
           .
+        </p>
+      )}
+      {state.authAvailable && (
+        <p className="quick-start-group">
+          Organising for a group?{' '}
+          <button
+            type="button"
+            className="link-btn"
+            onClick={() => actions.createSharedGroup('Football').catch(() => {})}
+          >
+            Create a group link
+          </button>{' '}
+          and everyone adds themselves.
         </p>
       )}
     </form>

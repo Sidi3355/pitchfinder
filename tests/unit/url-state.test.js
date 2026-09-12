@@ -52,7 +52,12 @@ describe('group encoding', () => {
 
 describe('search string', () => {
   it('parses an empty query as the default filters, no group, no pitch', () => {
-    expect(parseSearch('')).toEqual({ group: [], filters: DEFAULT_FILTERS, pitch: null })
+    expect(parseSearch('')).toEqual({
+      group: [],
+      sharedGroup: null,
+      filters: DEFAULT_FILTERS,
+      pitch: null,
+    })
     expect(parseSearch('?g=Sam~E8~51.5~-0.1~t').filters).toEqual(DEFAULT_FILTERS)
   })
 
@@ -99,5 +104,20 @@ describe('search string', () => {
   it('builds a full href', () => {
     expect(buildHref('/', { filters: { ...DEFAULT_FILTERS, freeOnly: true } })).toBe('/?free=1')
     expect(buildHref('/p/abc', {})).toBe('/p/abc')
+  })
+})
+
+describe('shared group links', () => {
+  it('reads a 20-hex link slug, ignores anything else, and lets it replace the inline group', () => {
+    expect(parseSearch('?grp=0123456789abcdef0123').sharedGroup).toBe('0123456789abcdef0123')
+    expect(parseSearch('?grp=not-a-slug').sharedGroup).toBeNull()
+    expect(parseSearch('?grp=0123456789abcdef0123&lit=1').filters.needsFloodlights).toBe(true)
+    const href = buildSearch({
+      group: [{ name: 'Sam', label: 'E8', lat: 51.5, lng: -0.1, mode: 'transit' }],
+      sharedGroup: '0123456789abcdef0123',
+      filters: DEFAULT_FILTERS,
+    })
+    expect(href).toBe('?grp=0123456789abcdef0123')
+    expect(buildSearch({ group: [], sharedGroup: 'bad', filters: DEFAULT_FILTERS })).toBe('')
   })
 })

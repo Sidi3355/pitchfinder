@@ -46,6 +46,23 @@ export function PitchContent({ pitch: indexPitch }) {
           <JourneyList people={state.squad} pitch={pitch} />
         </section>
       )}
+      <p className="key-facts">
+        <span>
+          {!cost.known
+            ? 'Price not known'
+            : cost.perHour === 0
+              ? 'Free to play'
+              : `£${cost.perHour} an hour`}
+        </span>
+        <span>{pitch.surface ? surfaceLabel(pitch.surface) : 'Surface not known'}</span>
+        <span>
+          {pitch.lit === true
+            ? 'Floodlit'
+            : pitch.lit === false
+              ? 'No floodlights'
+              : 'Floodlights not known'}
+        </span>
+      </p>
       {panel === 'plan' ? (
         <PlanGame pitch={pitch} name={name} onClose={() => setPanel(null)} />
       ) : panel === 'report' ? (
@@ -82,122 +99,125 @@ export function PitchContent({ pitch: indexPitch }) {
         </div>
       )}
 
-      <dl className="facts">
-        <div>
-          <dt>Price</dt>
-          <dd>
-            {!cost.known ? 'Not known' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hour`}
-            {pitch.priceMax != null &&
-              pitch.priceMax !== pitch.pricePerHour &&
-              ` to £${pitch.priceMax}`}
-            {cost.known && cost.perHour > 0 && (
-              <span className="fact-note">
-                {pitch.priceSource === 'scraped' && pitch.priceCheckedAt
-                  ? `whole pitch, from the venue page, checked ${formatDate(pitch.priceCheckedAt)}`
-                  : `whole pitch, operator's published rate${pitch.priceCheckedAt ? `, checked ${formatDate(pitch.priceCheckedAt)}` : ', date not recorded'}`}
-                {pitch.priceSourceUrl && (
-                  <>
-                    {' '}
-                    <a href={pitch.priceSourceUrl} target="_blank" rel="noopener noreferrer">
-                      source
-                    </a>
-                  </>
-                )}
-              </span>
-            )}
-            {!cost.known && pitch.bookingUrl && <span className="fact-note">set at booking</span>}
-          </dd>
-        </div>
-        {pitch.postcode && (
+      <details className="pitch-more">
+        <summary>Details, directions and where the data comes from</summary>
+        <dl className="facts">
           <div>
-            <dt>{pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'}</dt>
+            <dt>Price</dt>
             <dd>
-              {pitch.postcode}
-              {pitch.borough && <span className="fact-note">{pitch.borough}</span>}
-              {pitch.postcodeSource !== 'operator' && (
-                <span className="fact-note">approx., nearest to the pitch</span>
+              {!cost.known ? 'Not known' : cost.perHour === 0 ? 'Free' : `£${cost.perHour}/hour`}
+              {pitch.priceMax != null &&
+                pitch.priceMax !== pitch.pricePerHour &&
+                ` to £${pitch.priceMax}`}
+              {cost.known && cost.perHour > 0 && (
+                <span className="fact-note">
+                  {pitch.priceSource === 'scraped' && pitch.priceCheckedAt
+                    ? `whole pitch, from the venue page, checked ${formatDate(pitch.priceCheckedAt)}`
+                    : `whole pitch, operator's published rate${pitch.priceCheckedAt ? `, checked ${formatDate(pitch.priceCheckedAt)}` : ', date not recorded'}`}
+                  {pitch.priceSourceUrl && (
+                    <>
+                      {' '}
+                      <a href={pitch.priceSourceUrl} target="_blank" rel="noopener noreferrer">
+                        source
+                      </a>
+                    </>
+                  )}
+                </span>
               )}
+              {!cost.known && pitch.bookingUrl && <span className="fact-note">set at booking</span>}
             </dd>
           </div>
-        )}
-        <div>
-          <dt>Enclosure</dt>
-          <dd>{isBounded(pitch) ? 'Bounded, ball stays in play' : 'Open pitch'}</dd>
-        </div>
-        <div>
-          <dt>Surface</dt>
-          <dd>{pitch.surface ? surfaceLabel(pitch.surface) : 'Not known'}</dd>
-        </div>
-        {Array.isArray(pitch.formats) && (
+          {pitch.postcode && (
+            <div>
+              <dt>{pitch.postcodeSource === 'operator' ? 'Postcode' : 'Nearest postcode'}</dt>
+              <dd>
+                {pitch.postcode}
+                {pitch.borough && <span className="fact-note">{pitch.borough}</span>}
+                {pitch.postcodeSource !== 'operator' && (
+                  <span className="fact-note">approx., nearest to the pitch</span>
+                )}
+              </dd>
+            </div>
+          )}
           <div>
-            <dt>Formats</dt>
-            <dd>{pitch.formats.map((f) => `${f}-a-side`).join(', ')}</dd>
+            <dt>Enclosure</dt>
+            <dd>{isBounded(pitch) ? 'Bounded, ball stays in play' : 'Open pitch'}</dd>
           </div>
-        )}
-        <div>
-          <dt>Floodlights</dt>
-          <dd>{pitch.lit === true ? 'Yes' : pitch.lit === false ? 'No' : 'Not known'}</dd>
-        </div>
-        {pitch.changingRooms != null && (
           <div>
-            <dt>Changing rooms</dt>
-            <dd>{pitch.changingRooms ? 'Yes' : 'No'}</dd>
+            <dt>Surface</dt>
+            <dd>{pitch.surface ? surfaceLabel(pitch.surface) : 'Not known'}</dd>
           </div>
-        )}
-        {pitch.pitchCount > 1 && (
+          {Array.isArray(pitch.formats) && (
+            <div>
+              <dt>Formats</dt>
+              <dd>{pitch.formats.map((f) => `${f}-a-side`).join(', ')}</dd>
+            </div>
+          )}
           <div>
-            <dt>Pitches on site</dt>
-            <dd>{pitch.pitchCount}</dd>
+            <dt>Floodlights</dt>
+            <dd>{pitch.lit === true ? 'Yes' : pitch.lit === false ? 'No' : 'Not known'}</dd>
           </div>
-        )}
-      </dl>
+          {pitch.changingRooms != null && (
+            <div>
+              <dt>Changing rooms</dt>
+              <dd>{pitch.changingRooms ? 'Yes' : 'No'}</dd>
+            </div>
+          )}
+          {pitch.pitchCount > 1 && (
+            <div>
+              <dt>Pitches on site</dt>
+              <dd>{pitch.pitchCount}</dd>
+            </div>
+          )}
+        </dl>
 
-      <section className="drawer-section">
-        <h2 className="section-h">Directions</h2>
-        <Directions lat={pitch.lat} lng={pitch.lng} name={name} />
-      </section>
+        <section className="drawer-section">
+          <h2 className="section-h">Directions</h2>
+          <Directions lat={pitch.lat} lng={pitch.lng} name={name} />
+        </section>
 
-      <p className="hint dim drawer-footnote">
-        {pitch.curated ? (
-          <>
-            Data: curated venue list{pitch.matchedOsmId ? ' and OpenStreetMap' : ''}
-            {pitch.verifiedAt
-              ? `, checked ${formatDate(pitch.verifiedAt)}`
-              : ', not yet verified against the operator'}
-            . Check the venue page before travelling.
-          </>
-        ) : (
-          <>
-            Data:{' '}
-            {pitch.sourceUrl ? (
-              <a href={pitch.sourceUrl} target="_blank" rel="noopener noreferrer">
-                OpenStreetMap
-              </a>
-            ) : (
-              'OpenStreetMap'
-            )}{' '}
-            contributors (ODbL)
-            {pitch.verifiedAt || state.data?.generatedAt
-              ? `, checked ${formatDate(pitch.verifiedAt || state.data.generatedAt)}`
-              : ''}
-            .{' '}
-            {pitch.nameSource === 'park' ||
-            pitch.nameSource === 'road' ||
-            pitch.nameSource === 'area'
-              ? `The name is ours, from the nearest ${pitch.nameSource === 'road' ? 'road' : pitch.nameSource === 'park' ? 'park or playing field' : 'area'}; the pitch has no name on the map. `
-              : ''}
-            Lighting and surface reflect what is mapped; conditions on the ground can differ.
-          </>
-        )}{' '}
-      </p>
-      {panel !== 'report' && (
-        <p className="row">
-          <button className="btn ghost sm" onClick={() => setPanel('report')}>
-            Report a problem with this pitch
-          </button>
+        <p className="hint dim drawer-footnote">
+          {pitch.curated ? (
+            <>
+              Data: curated venue list{pitch.matchedOsmId ? ' and OpenStreetMap' : ''}
+              {pitch.verifiedAt
+                ? `, checked ${formatDate(pitch.verifiedAt)}`
+                : ', not yet verified against the operator'}
+              . Check the venue page before travelling.
+            </>
+          ) : (
+            <>
+              Data:{' '}
+              {pitch.sourceUrl ? (
+                <a href={pitch.sourceUrl} target="_blank" rel="noopener noreferrer">
+                  OpenStreetMap
+                </a>
+              ) : (
+                'OpenStreetMap'
+              )}{' '}
+              contributors (ODbL)
+              {pitch.verifiedAt || state.data?.generatedAt
+                ? `, checked ${formatDate(pitch.verifiedAt || state.data.generatedAt)}`
+                : ''}
+              .{' '}
+              {pitch.nameSource === 'park' ||
+              pitch.nameSource === 'road' ||
+              pitch.nameSource === 'area'
+                ? `The name is ours, from the nearest ${pitch.nameSource === 'road' ? 'road' : pitch.nameSource === 'park' ? 'park or playing field' : 'area'}; the pitch has no name on the map. `
+                : ''}
+              Lighting and surface reflect what is mapped; conditions on the ground can differ.
+            </>
+          )}{' '}
         </p>
-      )}
-      <p className="hidden"></p>
+        {panel !== 'report' && (
+          <p className="row">
+            <button className="btn ghost sm" onClick={() => setPanel('report')}>
+              Report a problem with this pitch
+            </button>
+          </p>
+        )}
+        <p className="hidden"></p>
+      </details>
     </>
   )
 }

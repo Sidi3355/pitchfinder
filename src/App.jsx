@@ -13,6 +13,7 @@ import { Privacy } from './components/Privacy.jsx'
 import { Footer } from './components/Footer.jsx'
 import { MOBILE_QUERY, useMediaQuery } from './lib/media.js'
 import { GamePage } from './components/GamePage.jsx'
+import { GroupPage } from './components/GroupPage.jsx'
 import { isLegacyFinderLink, navigate, useLocation } from './lib/location.js'
 
 const TITLES = {
@@ -71,6 +72,9 @@ export function App() {
       break
     case 'game':
       page = <GamePage slug={route.params.slug} />
+      break
+    case 'group':
+      page = <GroupPage slug={route.params.slug} />
       break
     default:
       page = <NotFound />

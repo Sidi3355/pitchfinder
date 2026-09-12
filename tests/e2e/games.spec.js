@@ -169,6 +169,8 @@ test.describe('accounts and shared games', () => {
   test('reporting a problem writes a report', async ({ page, request }) => {
     const before = (await (await request.get(`${FAKE}/__test/reports`)).json()).count
     await page.goto('/p/pl-shoreditch')
+    // Details, directions and the report live behind one closed disclosure.
+    await page.getByText('Details, directions and where the data comes from').click()
     await page.getByRole('button', { name: 'Report a problem with this pitch' }).click()
     await page.getByLabel('What is wrong?').selectOption('lit')
     await page.getByLabel('Details').fill('Lights were off at 8pm on Thursday.')
