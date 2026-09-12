@@ -381,7 +381,6 @@ export function summarise(pitches) {
 
 // ── Bookable venues and the operators' own pages ─────────────────────────────
 
-
 /** The app is about places you can book: football centres and astro pitches. */
 export const BOOKABLE_TYPES = new Set(['commercial', 'astro'])
 
@@ -536,8 +535,28 @@ export function onlyBookable(venues) {
 // ── Slot calendars: prices, hours and pitches from the booking sites ──────
 
 const NAME_STOP_WORDS = new Set([
-  'the', 'and', 'of', 'at', 'in', 'on', 'a', 'an', 'pitch', 'pitches', 'football', 'fc',
-  'formerly', 'centre', 'center', 'sports', 'sport', 'ground', 'grounds', 'hub', 'to', 'off',
+  'the',
+  'and',
+  'of',
+  'at',
+  'in',
+  'on',
+  'a',
+  'an',
+  'pitch',
+  'pitches',
+  'football',
+  'fc',
+  'formerly',
+  'centre',
+  'center',
+  'sports',
+  'sport',
+  'ground',
+  'grounds',
+  'hub',
+  'to',
+  'off',
 ])
 
 /** The words that identify a venue name: lower case, no punctuation, no filler. */

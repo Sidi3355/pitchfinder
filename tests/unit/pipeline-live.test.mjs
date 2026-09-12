@@ -143,10 +143,42 @@ const slots = {
         url: 'https://pitchbooking.com/book/goals/bbcbb80a',
         fetchedAt: '2026-09-13T03:10:00.000Z',
         bands: [
-          { format: 5, surface: '3g', amount: 88, minutes: 60, days: ['mon', 'tue', 'wed', 'thu'], windows: [['10:00', '17:30']], slotsSeen: 64 },
-          { format: 5, surface: '3g', amount: 111, minutes: 60, days: ['mon', 'tue', 'wed', 'thu'], windows: [['18:30', '21:30']], slotsSeen: 20 },
-          { format: 5, surface: '3g', amount: 67, minutes: 60, days: ['sun'], windows: [['09:00', '22:00']], slotsSeen: 26 },
-          { format: 8, surface: '3g', amount: 120, minutes: 60, days: ['sat', 'sun'], windows: [['09:00', '20:00']], slotsSeen: 40 },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 88,
+            minutes: 60,
+            days: ['mon', 'tue', 'wed', 'thu'],
+            windows: [['10:00', '17:30']],
+            slotsSeen: 64,
+          },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 111,
+            minutes: 60,
+            days: ['mon', 'tue', 'wed', 'thu'],
+            windows: [['18:30', '21:30']],
+            slotsSeen: 20,
+          },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 67,
+            minutes: 60,
+            days: ['sun'],
+            windows: [['09:00', '22:00']],
+            slotsSeen: 26,
+          },
+          {
+            format: 8,
+            surface: '3g',
+            amount: 120,
+            minutes: 60,
+            days: ['sat', 'sun'],
+            windows: [['09:00', '20:00']],
+            slotsSeen: 40,
+          },
         ],
       },
     ],
@@ -164,17 +196,60 @@ const slots = {
         region: 'London',
         district: 'Hackney',
         inLondon: true,
-        hours: { mon: [['09:00', '22:30']], tue: [['09:00', '22:30']], wed: [], thu: [], fri: [], sat: [['10:00', '18:00']], sun: [] },
+        hours: {
+          mon: [['09:00', '22:30']],
+          tue: [['09:00', '22:30']],
+          wed: [],
+          thu: [],
+          fri: [],
+          sat: [['10:00', '18:00']],
+          sun: [],
+        },
         hoursQuotes: ['Monday 09:00-22:30'],
         facilities: { lit: true, changingRooms: true, parking: null },
         pitches: [
-          { url: 'https://www.playfinder.com/london/venue/powerleague-shoreditch/football-5-a-side-34946', format: 5, surface: '3g' },
-          { url: 'https://www.playfinder.com/london/venue/powerleague-shoreditch/football-7-a-side-36030', format: 7, surface: '3g' },
+          {
+            url: 'https://www.playfinder.com/london/venue/powerleague-shoreditch/football-5-a-side-34946',
+            format: 5,
+            surface: '3g',
+          },
+          {
+            url: 'https://www.playfinder.com/london/venue/powerleague-shoreditch/football-7-a-side-36030',
+            format: 7,
+            surface: '3g',
+          },
         ],
         bands: [
-          { format: 5, surface: '3g', amount: 95, minutes: 40, days: ['mon', 'tue', 'wed', 'thu', 'fri'], windows: [['09:00', '17:00'], ['21:00', '21:00']], slotsSeen: 70 },
-          { format: 5, surface: '3g', amount: 110, minutes: 40, days: ['mon', 'tue', 'wed', 'thu', 'fri'], windows: [['17:40', '20:20']], slotsSeen: 12 },
-          { format: 5, surface: '3g', amount: 75, minutes: 60, days: ['sat', 'sun'], windows: [['10:00', '20:00']], slotsSeen: 14 },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 95,
+            minutes: 40,
+            days: ['mon', 'tue', 'wed', 'thu', 'fri'],
+            windows: [
+              ['09:00', '17:00'],
+              ['21:00', '21:00'],
+            ],
+            slotsSeen: 70,
+          },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 110,
+            minutes: 40,
+            days: ['mon', 'tue', 'wed', 'thu', 'fri'],
+            windows: [['17:40', '20:20']],
+            slotsSeen: 12,
+          },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 75,
+            minutes: 60,
+            days: ['sat', 'sun'],
+            windows: [['10:00', '20:00']],
+            slotsSeen: 14,
+          },
         ],
         fetchedAt: '2026-09-13T03:30:00.000Z',
       },
@@ -191,7 +266,15 @@ const slots = {
         facilities: { lit: true },
         pitches: [{ url: 'x/football-5-a-side-1', format: 5, surface: '3g' }],
         bands: [
-          { format: 5, surface: '3g', amount: 60, minutes: 60, days: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'], windows: [['09:00', '21:00']], slotsSeen: 80 },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 60,
+            minutes: 60,
+            days: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
+            windows: [['09:00', '21:00']],
+            slotsSeen: 80,
+          },
         ],
         fetchedAt: '2026-09-13T03:40:00.000Z',
       },
@@ -209,7 +292,15 @@ const slots = {
         facilities: { lit: true, changingRooms: true },
         pitches: [{ url: 'x/football-5-a-side-2', format: 5, surface: '3g' }],
         bands: [
-          { format: 5, surface: '3g', amount: 48, minutes: 60, days: ['mon'], windows: [['18:00', '21:00']], slotsSeen: 4 },
+          {
+            format: 5,
+            surface: '3g',
+            amount: 48,
+            minutes: 60,
+            days: ['mon'],
+            windows: [['18:00', '21:00']],
+            slotsSeen: 4,
+          },
         ],
         fetchedAt: '2026-09-13T03:45:00.000Z',
       },
@@ -236,7 +327,17 @@ const slots = {
         region: 'South East',
         inLondon: false,
         pitches: [{ url: 'x/football-5-a-side-4', format: 5, surface: '3g' }],
-        bands: [{ format: 5, surface: '3g', amount: 40, minutes: 60, days: ['sat'], windows: [['10:00', '12:00']], slotsSeen: 3 }],
+        bands: [
+          {
+            format: 5,
+            surface: '3g',
+            amount: 40,
+            minutes: 60,
+            days: ['sat'],
+            windows: [['10:00', '12:00']],
+            slotsSeen: 3,
+          },
+        ],
         fetchedAt: '2026-09-13T03:55:00.000Z',
       },
     ],
@@ -244,14 +345,52 @@ const slots = {
 }
 
 const slotBaseline = [
-  { id: 'go-beckenham', name: 'Goals Beckenham', operator: 'Goals', type: 'commercial', lat: 51.3987, lng: -0.0256, pricePerHour: 60, hours: { mon: [['10:00', '23:00']] }, hoursSource: 'operator-site', hoursSourceUrl: 'https://www.goalsfootball.co.uk/clubs/south-east/beckenham', bookingUrl: 'https://www.goalsfootball.co.uk/play/book-a-game', prices: [{ amount: 6, unit: 'person', label: '5-a-side, per player' }], formats: [5, 7, 8] },
-  { id: 'pl-shoreditch', name: 'Powerleague Shoreditch', operator: 'Powerleague', type: 'commercial', lat: 51.5262, lng: -0.0817, pricePerHour: 78, bookingUrl: 'https://www.powerleague.com/location/shoreditch', lit: true, changingRooms: true, formats: [5, 7] },
-  { id: 'lc-westway', name: 'Westway Sports Centre', type: 'astro', lat: 51.5199, lng: -0.2178, pricePerHour: 50, bookingUrl: 'https://www.everyoneactive.com/centre/westway-sports-fitness-centre/', openingHours: 'Mo-Su 07:00-22:00', surface: '3g' },
+  {
+    id: 'go-beckenham',
+    name: 'Goals Beckenham',
+    operator: 'Goals',
+    type: 'commercial',
+    lat: 51.3987,
+    lng: -0.0256,
+    pricePerHour: 60,
+    hours: { mon: [['10:00', '23:00']] },
+    hoursSource: 'operator-site',
+    hoursSourceUrl: 'https://www.goalsfootball.co.uk/clubs/south-east/beckenham',
+    bookingUrl: 'https://www.goalsfootball.co.uk/play/book-a-game',
+    prices: [{ amount: 6, unit: 'person', label: '5-a-side, per player' }],
+    formats: [5, 7, 8],
+  },
+  {
+    id: 'pl-shoreditch',
+    name: 'Powerleague Shoreditch',
+    operator: 'Powerleague',
+    type: 'commercial',
+    lat: 51.5262,
+    lng: -0.0817,
+    pricePerHour: 78,
+    bookingUrl: 'https://www.powerleague.com/location/shoreditch',
+    lit: true,
+    changingRooms: true,
+    formats: [5, 7],
+  },
+  {
+    id: 'lc-westway',
+    name: 'Westway Sports Centre',
+    type: 'astro',
+    lat: 51.5199,
+    lng: -0.2178,
+    pricePerHour: 50,
+    bookingUrl: 'https://www.everyoneactive.com/centre/westway-sports-fitness-centre/',
+    openingHours: 'Mo-Su 07:00-22:00',
+    surface: '3g',
+  },
   { id: 'osm-9', name: 'Park astro', type: 'astro', lat: 51.6, lng: -0.3 },
 ]
 
 describe('slot calendars on top of the venues', () => {
-  const out = applySlots(slotBaseline, slots, { areas: [{ name: 'Islington', lat: 51.53, lng: -0.1 }] })
+  const out = applySlots(slotBaseline, slots, {
+    areas: [{ name: 'Islington', lat: 51.53, lng: -0.1 }],
+  })
   it("gives a Goals club its prices from Goals' own booking site, by size, and links to it", () => {
     const b = out.find((v) => v.id === 'go-beckenham')
     expect(b.pricePerHour).toBe(67)
@@ -286,7 +425,9 @@ describe('slot calendars on top of the venues', () => {
     const w = out.find((v) => v.id === 'lc-westway')
     expect(w.pricePerHour).toBe(60)
     expect(w.priceSource).toBe('playfinder')
-    expect(w.bookingUrl).toBe('https://www.everyoneactive.com/centre/westway-sports-fitness-centre/')
+    expect(w.bookingUrl).toBe(
+      'https://www.everyoneactive.com/centre/westway-sports-fitness-centre/',
+    )
     expect(w.playfinderUrl).toBe('https://www.playfinder.com/london/venue/westway-sports-centre')
     expect(w.lit).toBe(true)
   })
@@ -313,12 +454,28 @@ describe('slot calendars on top of the venues', () => {
   })
   it('matches by shared words nearby, by being the only astro on the spot, or not at all', () => {
     const venues = [
-      { id: 'a', name: 'Paddington Recreation Ground pitches', type: 'astro', lat: 51.53, lng: -0.18 },
+      {
+        id: 'a',
+        name: 'Paddington Recreation Ground pitches',
+        type: 'astro',
+        lat: 51.53,
+        lng: -0.18,
+      },
       { id: 'b', name: 'Pitch off Carlton Vale', type: 'astro', lat: 51.535, lng: -0.19 },
     ]
-    expect(matchPlayfinderVenue({ slug: 'paddington-rec', name: 'Paddington Rec', lat: 51.5305, lng: -0.1805 }, venues)?.id).toBe('a')
-    expect(matchPlayfinderVenue({ slug: 'x', name: 'Something Else', lat: 51.5351, lng: -0.19 }, venues)?.id).toBe('b')
-    expect(matchPlayfinderVenue({ slug: 'y', name: 'Far Away Park', lat: 51.6, lng: -0.3 }, venues)).toBeNull()
+    expect(
+      matchPlayfinderVenue(
+        { slug: 'paddington-rec', name: 'Paddington Rec', lat: 51.5305, lng: -0.1805 },
+        venues,
+      )?.id,
+    ).toBe('a')
+    expect(
+      matchPlayfinderVenue({ slug: 'x', name: 'Something Else', lat: 51.5351, lng: -0.19 }, venues)
+        ?.id,
+    ).toBe('b')
+    expect(
+      matchPlayfinderVenue({ slug: 'y', name: 'Far Away Park', lat: 51.6, lng: -0.3 }, venues),
+    ).toBeNull()
     expect(nameSimilarity('Paddington Recreation Ground', 'paddington-recreation-ground')).toBe(1)
   })
 })

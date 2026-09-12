@@ -202,7 +202,8 @@ describe('cost model', () => {
       slot: { amount: 78, minutes: 60 },
     })
     expect(
-      costOf({ type: 'commercial', pricePerHour: 143, priceSlot: { amount: 95, minutes: 40 } }).slot,
+      costOf({ type: 'commercial', pricePerHour: 143, priceSlot: { amount: 95, minutes: 40 } })
+        .slot,
     ).toEqual({ amount: 95, minutes: 40 })
   })
   it('journeyReason says "about" and rounds to 5 for estimates, exact minutes for routes', () => {
