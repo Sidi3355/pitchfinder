@@ -142,7 +142,7 @@ export function GamePage({ slug }) {
       pitchName: pitch ? pitchName(pitch) : game.pitch_name,
       when: formatWhen(game.starts_at),
       postcode: pitch?.postcode,
-      pricePerHour: cost.known ? cost.perHour : null,
+      pricePerHour: cost.known ? cost.slot.amount : null,
       inCount: inCount >= 2 ? inCount : 0,
       url: `${window.location.origin}/g/${slug}`,
       notes: game.notes,
@@ -394,16 +394,20 @@ export function GamePage({ slug }) {
               const cost = costOf(pitch)
               if (!cost.known) return null
               if (cost.perHour === 0) return <p className="game-cost">Free to play.</p>
-              const each = inCount >= 2 ? splitCost(cost.perHour, inCount) : null
+              const { amount, minutes } = cost.slot
+              const each = inCount >= 2 ? splitCost(amount, inCount) : null
+              const calendar =
+                pitch.priceSource === 'pitchbooking' || pitch.priceSource === 'playfinder'
+              const note = calendar
+                ? `the cheapest ${minutes === 60 ? 'hour' : `${minutes}-minute slot`} on the booking calendar, whole pitch; peak times cost more`
+                : 'operator\u2019s published rate for an hour, whole pitch'
               return (
                 <p className="game-cost">
-                  {formatMoney(cost.perHour)} for the pitch
+                  {formatMoney(amount)} for the pitch
                   {each
                     ? `, ${formatMoney(each)} each with ${inCount} in`
                     : ', split between whoever is in'}
-                  <span className="fact-note">
-                    operator&rsquo;s published rate for an hour, whole pitch
-                  </span>
+                  <span className="fact-note">{note}</span>
                 </p>
               )
             })()}
