@@ -214,6 +214,7 @@ try {
       await shot(page, join(OUT, `${profile}-profile-signed-in.jpg`))
       await page.goto(`${BASE}/p/pl-shoreditch`)
       await page.waitForTimeout(800)
+      await page.getByText('Details, directions and where the data comes from').click()
       await page.getByRole('button', { name: 'Report a problem with this pitch' }).click()
       await page.waitForTimeout(300)
       await shot(page, join(OUT, `${profile}-report-form.jpg`))
