@@ -804,6 +804,16 @@
   "suburb": "Clapham",
   "at": "2026-09-11"
  },
+ "51.4553,-0.2478": {
+  "road": "Clarence Lane",
+  "suburb": "Roehampton",
+  "at": "2026-09-14"
+ },
+ "51.4554,-0.2489": {
+  "road": "Clarence Lane",
+  "suburb": "Roehampton",
+  "at": "2026-09-14"
+ },
  "51.4560,-0.2304": {
   "road": "Westleigh Avenue",
   "suburb": "Roehampton",
@@ -833,6 +843,11 @@
   "road": "Surrey Road",
   "suburb": "Nunhead",
   "at": "2026-09-11"
+ },
+ "51.4584,-0.0495": {
+  "road": "Inverton Road",
+  "suburb": "Nunhead",
+  "at": "2026-09-14"
  },
  "51.4603,-0.2423": {
   "road": "Aubyn Square",
@@ -1184,6 +1199,11 @@
   "suburb": "Stratford",
   "at": "2026-09-11"
  },
+ "51.5413,0.0927": {
+  "road": "Hurstbourne Gardens",
+  "suburb": "Thames View",
+  "at": "2026-09-14"
+ },
  "51.5414,0.0925": {
   "road": "Hurstbourne Gardens",
   "suburb": "Thames View",
@@ -1203,6 +1223,11 @@
   "road": "Godfrey Avenue",
   "suburb": null,
   "at": "2026-09-11"
+ },
+ "51.5434,0.1341": {
+  "road": "Ivy Walk",
+  "suburb": "Becontree",
+  "at": "2026-09-14"
  },
  "51.5435,0.1346": {
   "road": "Ivy Walk",
@@ -1443,6 +1468,11 @@
   "road": "Cheyne Avenue",
   "suburb": "Snaresbrook",
   "at": "2026-09-12"
+ },
+ "51.5899,-0.0250": {
+  "road": "Forest Road",
+  "suburb": "Highams Park",
+  "at": "2026-09-14"
  },
  "51.5901,0.0688": {
   "road": "Tiptree Crescent",
