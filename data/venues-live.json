@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-14T09:54:47.708Z",
+ "fetchedAt": "2026-09-21T09:58:51.478Z",
  "offline": false,
  "operators": [
   {
@@ -95,8 +95,7 @@
      "formats": [
       5,
       7,
-      8,
-      11
+      8
      ],
      "pitchCount": null,
      "parking": true,
@@ -107,7 +106,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:52:00.900Z"
+     "fetchedAt": "2026-09-21T09:56:05.170Z"
     },
     {
      "id": "go-bexleyheath",
@@ -208,7 +207,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:52:09.844Z"
+     "fetchedAt": "2026-09-21T09:56:15.333Z"
     },
     {
      "id": "go-chingford",
@@ -309,7 +308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:52:23.920Z"
+     "fetchedAt": "2026-09-21T09:56:29.950Z"
     },
     {
      "id": "go-dagenham",
@@ -403,14 +402,14 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:52:44.242Z"
+     "fetchedAt": "2026-09-21T09:56:43.785Z"
     },
     {
      "id": "go-eltham",
@@ -498,12 +497,12 @@
      "parking": true,
      "changingRooms": null,
      "showers": null,
-     "bar": null,
+     "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:52:57.658Z"
+     "fetchedAt": "2026-09-21T09:56:58.051Z"
     },
     {
      "id": "go-gillettecorner",
@@ -600,11 +599,11 @@
      "changingRooms": null,
      "showers": null,
      "bar": true,
-     "cafe": null,
+     "cafe": true,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:53:14.371Z"
+     "fetchedAt": "2026-09-21T09:57:08.610Z"
     },
     {
      "id": "go-hayes",
@@ -690,7 +689,7 @@
       }
      ],
      "priceFrom": null,
-     "surface": null,
+     "surface": "astro",
      "formats": [
       5,
       7,
@@ -705,7 +704,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:53:27.414Z"
+     "fetchedAt": "2026-09-21T09:57:23.009Z"
     },
     {
      "id": "go-heathrow",
@@ -800,12 +799,12 @@
      "parking": true,
      "changingRooms": null,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:53:34.551Z"
+     "fetchedAt": "2026-09-21T09:57:31.364Z"
     },
     {
      "id": "go-ruislip",
@@ -906,7 +905,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:54:01.281Z"
+     "fetchedAt": "2026-09-21T09:57:59.327Z"
     },
     {
      "id": "go-sutton",
@@ -1007,7 +1006,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:54:14.751Z"
+     "fetchedAt": "2026-09-21T09:58:13.941Z"
     },
     {
      "id": "go-tolworth",
@@ -1093,7 +1092,7 @@
       }
      ],
      "priceFrom": null,
-     "surface": null,
+     "surface": "astro",
      "formats": [
       5,
       7,
@@ -1104,11 +1103,11 @@
      "changingRooms": null,
      "showers": null,
      "bar": true,
-     "cafe": true,
+     "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:54:21.966Z"
+     "fetchedAt": "2026-09-21T09:58:23.440Z"
     },
     {
      "id": "go-wembley",
@@ -1209,7 +1208,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:54:31.163Z"
+     "fetchedAt": "2026-09-21T09:58:33.791Z"
     },
     {
      "id": "go-wimbledon",
@@ -1309,7 +1308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-14T09:54:39.468Z"
+     "fetchedAt": "2026-09-21T09:58:43.236Z"
     }
    ]
   },

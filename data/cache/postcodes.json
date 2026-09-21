@@ -2204,6 +2204,13 @@
   "distanceM": 177,
   "at": "2026-09-11"
  },
+ "51.3954,-0.3439": {
+  "postcode": "KT7 0YQ",
+  "district": "Elmbridge",
+  "ward": "Thames Ditton",
+  "distanceM": 154,
+  "at": "2026-09-21"
+ },
  "51.3954,-0.3605": {
   "postcode": "KT8 0JT",
   "district": "Elmbridge",
@@ -4891,6 +4898,13 @@
   "ward": "South Richmond",
   "distanceM": 214,
   "at": "2026-09-11"
+ },
+ "51.4641,-0.1380": {
+  "postcode": "SW4 6AL",
+  "district": "Lambeth",
+  "ward": "Clapham Town",
+  "distanceM": 39,
+  "at": "2026-09-21"
  },
  "51.4642,-0.3094": {
   "postcode": "TW9 1QG",
@@ -8245,6 +8259,13 @@
   "distanceM": 87,
   "at": "2026-09-11"
  },
+ "51.5405,-0.5209": {
+  "postcode": "SL0 0RS",
+  "district": "Buckinghamshire",
+  "ward": "Iver",
+  "distanceM": 105,
+  "at": "2026-09-21"
+ },
  "51.5405,0.0042": {
   "postcode": "E15 4PE",
   "district": "Newham",
@@ -8804,6 +8825,13 @@
   "ward": "Kentish Town South",
   "distanceM": 33,
   "at": "2026-09-11"
+ },
+ "51.5497,-0.1367": {
+  "postcode": "NW5 2UB",
+  "district": "Camden",
+  "ward": "Kentish Town South",
+  "distanceM": 23,
+  "at": "2026-09-21"
  },
  "51.5497,-0.1368": {
   "postcode": "NW5 2UB",
@@ -10330,6 +10358,13 @@
   "ward": "Tottenham Hale",
   "distanceM": 31,
   "at": "2026-09-11"
+ },
+ "51.5907,-0.0043": {
+  "postcode": "E17 3HT",
+  "district": "Waltham Forest",
+  "ward": "Wood Street",
+  "distanceM": 41,
+  "at": "2026-09-21"
  },
  "51.5912,-0.0636": {
   "postcode": "N17 9AT",

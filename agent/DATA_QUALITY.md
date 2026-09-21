@@ -1,27 +1,27 @@
 # Data quality
 
-Generated 2026-09-14T10:08:42.245Z by `scripts/audit-data.mjs`.
-Dataset generated 2026-09-14T10:08:42.171Z.
+Generated 2026-09-21T11:11:12.786Z by `scripts/audit-data.mjs`.
+Dataset generated 2026-09-21T11:06:04.552Z.
 
 ## Pitches
 
 | Metric | Count | Share |
 | --- | --- | --- |
-| Venues | 258 | |
-| astro | 226 | 87.6% |
-| commercial | 32 | 12.4% |
-| Collapsed venues (more than one pitch) | 87 | 33.7% |
-| Name from curated | 15 | 5.8% |
-| Name from operator | 13 | 5.0% |
-| Name from park | 121 | 46.9% |
-| Name from road | 29 | 11.2% |
-| Name from osm | 14 | 5.4% |
-| Name from playfinder | 65 | 25.2% |
+| Venues | 274 | |
+| astro | 242 | 88.3% |
+| commercial | 32 | 11.7% |
+| Collapsed venues (more than one pitch) | 86 | 31.4% |
+| Name from curated | 15 | 5.5% |
+| Name from operator | 13 | 4.7% |
+| Name from park | 135 | 49.3% |
+| Name from road | 33 | 12.0% |
+| Name from osm | 16 | 5.8% |
+| Name from playfinder | 61 | 22.3% |
 | Name from area | 1 | 0.4% |
 | No name at all | 0 | 0.0% |
-| Surface not known | 6 | 2.3% |
-| Floodlights not known | 62 | 24.0% |
-| No postcode | 15 | 5.8% |
+| Surface not known | 5 | 1.8% |
+| Floodlights not known | 68 | 24.8% |
+| No postcode | 16 | 5.8% |
 | Same name within 200 m | 0 | |
 
 ## Where prices and hours come from
@@ -30,13 +30,13 @@ Dataset generated 2026-09-14T10:08:42.171Z.
 | --- | --- | --- |
 | operator-site | 10 | 13 |
 | pitchbooking | 12 | 0 |
-| none | 221 | 160 |
+| none | 237 | 176 |
 | playfinder | 15 | 84 |
 | osm | 0 | 1 |
 
 ## Curated venues
 
-26 venues. Unverified facts: **143** (postcode, address, verified date, price source, price dated within 60 days, booking URL returns 200, coordinate within 150 m of the postcode).
+26 venues. Unverified facts: **152** (postcode, address, verified date, price source, price dated within 60 days, booking URL returns 200, coordinate within 150 m of the postcode).
 
 | Venue | Missing or failing | Booking URL | Coordinate |
 | --- | --- | --- | --- |
@@ -47,23 +47,23 @@ Dataset generated 2026-09-14T10:08:42.171Z.
 | Powerleague Barnet | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Powerleague Croydon | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Powerleague Canary Wharf | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
-| Goals Beckenham | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Bexleyheath | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Dagenham | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Ruislip | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Hayes | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Gillette Corner | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Chingford | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Goals Sutton | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Beckenham | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Bexleyheath | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Dagenham | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Ruislip | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Hayes | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Gillette Corner | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Chingford | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Sutton | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
 | Westway Sports Centre | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Mile End Stadium pitches | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Battersea Park Millennium Arena | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 202 | no postcode |
+| Battersea Park Millennium Arena | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://enablelc.org/battersea-park-millennium-arena-athletics-camp/) | no postcode |
 | Paddington Recreation Ground | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Talacre Community Sports Centre | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Crystal Palace National Sports Centre | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 0 (working: https://www.better.org.uk/) | no postcode |
 | Black Prince Trust Hub | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Coram's Fields pitches | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 0 (working: https://coramsfields.org/) | no postcode |
-| Hackney Marshes | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Hackney Marshes | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Regent's Park Hub | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Market Road Football Cages | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.islington.gov.uk/) | no postcode |
 
@@ -74,3 +74,4 @@ Dataset generated 2026-09-14T10:08:42.171Z.
 | 2026-09-11 | 1586 | 0 | 744 | 1051 | 125 | 0 | 152 | 26 | 22 | 0 |
 | 2026-09-12 | 274 | 0 | 5 | 68 | 16 | 0 | 143 | 26 | 13 | 0 |
 | 2026-09-14 | 258 | 0 | 6 | 62 | 15 | 0 | 143 | 26 | 13 | 0 |
+| 2026-09-21 | 274 | 0 | 5 | 68 | 16 | 0 | 152 | 26 | 22 | 0 |

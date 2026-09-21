@@ -1922,5 +1922,36 @@
     "lng": -0.100249,
     "region": "London",
     "district": "Enfield"
+  },
+  "E1W 3EQ": {
+    "lat": 51.508962,
+    "lng": -0.049801,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E14 0BX": {
+    "lat": 51.509159,
+    "lng": -0.018103,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E14 8DR": null,
+  "E14 3LP": {
+    "lat": 51.496878,
+    "lng": -0.01136,
+    "region": "London",
+    "district": "Tower Hamlets"
+  },
+  "E9 5DY": {
+    "lat": 51.542475,
+    "lng": -0.03722,
+    "region": "London",
+    "district": "Hackney"
+  },
+  "E1W 2QE": {
+    "lat": 51.504527,
+    "lng": -0.059458,
+    "region": "London",
+    "district": "Tower Hamlets"
   }
 }
