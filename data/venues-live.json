@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-09-21T09:58:51.478Z",
+ "fetchedAt": "2026-09-28T10:56:35.047Z",
  "offline": false,
  "operators": [
   {
@@ -106,7 +106,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:56:05.170Z"
+     "fetchedAt": "2026-09-28T10:53:43.674Z"
     },
     {
      "id": "go-bexleyheath",
@@ -207,7 +207,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:56:15.333Z"
+     "fetchedAt": "2026-09-28T10:53:53.300Z"
     },
     {
      "id": "go-chingford",
@@ -303,12 +303,12 @@
      "parking": true,
      "changingRooms": null,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:56:29.950Z"
+     "fetchedAt": "2026-09-28T10:54:07.928Z"
     },
     {
      "id": "go-dagenham",
@@ -402,14 +402,14 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": true,
+     "changingRooms": null,
      "showers": null,
-     "bar": null,
+     "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:56:43.785Z"
+     "fetchedAt": "2026-09-28T10:54:21.620Z"
     },
     {
      "id": "go-eltham",
@@ -497,12 +497,12 @@
      "parking": true,
      "changingRooms": null,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:56:58.051Z"
+     "fetchedAt": "2026-09-28T10:54:35.367Z"
     },
     {
      "id": "go-gillettecorner",
@@ -588,7 +588,7 @@
       }
      ],
      "priceFrom": null,
-     "surface": null,
+     "surface": "astro",
      "formats": [
       5,
       7,
@@ -599,11 +599,11 @@
      "changingRooms": null,
      "showers": null,
      "bar": true,
-     "cafe": true,
+     "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:57:08.610Z"
+     "fetchedAt": "2026-09-28T10:54:44.393Z"
     },
     {
      "id": "go-hayes",
@@ -704,7 +704,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:57:23.009Z"
+     "fetchedAt": "2026-09-28T10:55:10.556Z"
     },
     {
      "id": "go-heathrow",
@@ -797,14 +797,14 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:57:31.364Z"
+     "fetchedAt": "2026-09-28T10:55:18.096Z"
     },
     {
      "id": "go-ruislip",
@@ -905,7 +905,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:57:59.327Z"
+     "fetchedAt": "2026-09-28T10:55:46.026Z"
     },
     {
      "id": "go-sutton",
@@ -1006,7 +1006,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:58:13.941Z"
+     "fetchedAt": "2026-09-28T10:55:59.565Z"
     },
     {
      "id": "go-tolworth",
@@ -1092,7 +1092,7 @@
       }
      ],
      "priceFrom": null,
-     "surface": "astro",
+     "surface": null,
      "formats": [
       5,
       7,
@@ -1107,7 +1107,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:58:23.440Z"
+     "fetchedAt": "2026-09-28T10:56:08.626Z"
     },
     {
      "id": "go-wembley",
@@ -1203,12 +1203,12 @@
      "parking": true,
      "changingRooms": null,
      "showers": null,
-     "bar": null,
+     "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:58:33.791Z"
+     "fetchedAt": "2026-09-28T10:56:18.111Z"
     },
     {
      "id": "go-wimbledon",
@@ -1308,7 +1308,7 @@
      "covered": true,
      "lit": true,
      "phone": null,
-     "fetchedAt": "2026-09-21T09:58:43.236Z"
+     "fetchedAt": "2026-09-28T10:56:26.783Z"
     }
    ]
   },

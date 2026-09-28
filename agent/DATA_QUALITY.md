@@ -1,7 +1,7 @@
 # Data quality
 
-Generated 2026-09-21T11:11:12.786Z by `scripts/audit-data.mjs`.
-Dataset generated 2026-09-21T11:06:04.552Z.
+Generated 2026-09-28T12:16:17.380Z by `scripts/audit-data.mjs`.
+Dataset generated 2026-09-28T12:13:01.456Z.
 
 ## Pitches
 
@@ -10,16 +10,16 @@ Dataset generated 2026-09-21T11:06:04.552Z.
 | Venues | 274 | |
 | astro | 242 | 88.3% |
 | commercial | 32 | 11.7% |
-| Collapsed venues (more than one pitch) | 86 | 31.4% |
+| Collapsed venues (more than one pitch) | 87 | 31.8% |
 | Name from curated | 15 | 5.5% |
 | Name from operator | 13 | 4.7% |
-| Name from park | 135 | 49.3% |
-| Name from road | 33 | 12.0% |
-| Name from osm | 16 | 5.8% |
+| Name from park | 137 | 50.0% |
+| Name from road | 32 | 11.7% |
+| Name from osm | 15 | 5.5% |
 | Name from playfinder | 61 | 22.3% |
 | Name from area | 1 | 0.4% |
 | No name at all | 0 | 0.0% |
-| Surface not known | 5 | 1.8% |
+| Surface not known | 6 | 2.2% |
 | Floodlights not known | 68 | 24.8% |
 | No postcode | 16 | 5.8% |
 | Same name within 200 m | 0 | |
@@ -36,7 +36,7 @@ Dataset generated 2026-09-21T11:06:04.552Z.
 
 ## Curated venues
 
-26 venues. Unverified facts: **152** (postcode, address, verified date, price source, price dated within 60 days, booking URL returns 200, coordinate within 150 m of the postcode).
+26 venues. Unverified facts: **151** (postcode, address, verified date, price source, price dated within 60 days, booking URL returns 200, coordinate within 150 m of the postcode).
 
 | Venue | Missing or failing | Booking URL | Coordinate |
 | --- | --- | --- | --- |
@@ -63,7 +63,7 @@ Dataset generated 2026-09-21T11:06:04.552Z.
 | Crystal Palace National Sports Centre | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 0 (working: https://www.better.org.uk/) | no postcode |
 | Black Prince Trust Hub | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Coram's Fields pitches | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 0 (working: https://coramsfields.org/) | no postcode |
-| Hackney Marshes | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
+| Hackney Marshes | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Regent's Park Hub | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Market Road Football Cages | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.islington.gov.uk/) | no postcode |
 
@@ -75,3 +75,4 @@ Dataset generated 2026-09-21T11:06:04.552Z.
 | 2026-09-12 | 274 | 0 | 5 | 68 | 16 | 0 | 143 | 26 | 13 | 0 |
 | 2026-09-14 | 258 | 0 | 6 | 62 | 15 | 0 | 143 | 26 | 13 | 0 |
 | 2026-09-21 | 274 | 0 | 5 | 68 | 16 | 0 | 152 | 26 | 22 | 0 |
+| 2026-09-28 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |
