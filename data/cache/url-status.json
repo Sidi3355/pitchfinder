@@ -7,207 +7,207 @@
  "https://enablelc.org/battersea-park-millennium-arena": {
   "status": 200,
   "finalUrl": "https://enablelc.org/battersea-park-millennium-arena-athletics-camp/",
-  "checkedAt": "2026-09-28T12:15:43.303Z"
+  "checkedAt": "2026-10-05T12:48:54.322Z"
  },
  "https://enablelc.org/millennium-arena": {
   "status": 404,
   "finalUrl": "https://enablelc.org/millennium-arena",
-  "checkedAt": "2026-09-28T12:13:40.995Z"
+  "checkedAt": "2026-10-05T12:45:22.521Z"
  },
  "https://enablelc.org/millennium-arena/": {
   "status": 404,
   "finalUrl": "https://enablelc.org/millennium-arena/",
-  "checkedAt": "2026-09-28T12:15:33.717Z"
+  "checkedAt": "2026-10-05T12:48:43.632Z"
  },
  "https://enablelc.org/sport/millennium-arena": {
   "status": 404,
   "finalUrl": "https://enablelc.org/sport/millennium-arena",
-  "checkedAt": "2026-09-28T12:15:39.893Z"
+  "checkedAt": "2026-10-05T12:48:50.467Z"
  },
  "https://hackney.gov.uk/hackney-marshes": {
   "status": 200,
   "finalUrl": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/hackney-marshes",
-  "checkedAt": "2026-09-28T12:14:10.345Z"
+  "checkedAt": "2026-10-05T12:45:52.286Z"
  },
  "https://www.better.org.uk/": {
   "status": 200,
   "finalUrl": "https://www.better.org.uk/",
-  "checkedAt": "2026-09-28T12:15:46.305Z"
+  "checkedAt": "2026-10-05T12:48:57.463Z"
  },
  "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre": {
   "status": 0,
   "error": "fetch failed",
-  "checkedAt": "2026-09-28T12:13:50.360Z"
+  "checkedAt": "2026-10-05T12:45:32.277Z"
  },
  "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre": {
   "status": 200,
   "finalUrl": "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre",
-  "checkedAt": "2026-09-28T12:13:45.587Z"
+  "checkedAt": "2026-10-05T12:45:27.062Z"
  },
  "https://www.better.org.uk/leisure-centre/london/tower-hamlets/mile-end-park-leisure-centre": {
   "status": 200,
   "finalUrl": "https://be-well.org.uk/centres/mile-end-leisure-centre-and-stadium/",
-  "checkedAt": "2026-09-28T12:13:37.791Z"
+  "checkedAt": "2026-10-05T12:45:19.232Z"
  },
  "https://www.blackprincetrust.org.uk/": {
   "status": 200,
   "finalUrl": "https://blackprincetrust.org.uk/",
-  "checkedAt": "2026-09-28T12:13:54.752Z"
+  "checkedAt": "2026-10-05T12:45:36.562Z"
  },
  "https://www.coramsfields.org.uk/": {
   "status": 0,
   "error": "fetch failed",
-  "checkedAt": "2026-09-28T12:15:58.798Z"
+  "checkedAt": "2026-10-05T12:49:09.955Z"
  },
  "https://www.coramsfields.org.uk/sports-programme/": {
   "status": 0,
   "error": "fetch failed",
-  "checkedAt": "2026-09-28T12:14:07.248Z"
+  "checkedAt": "2026-10-05T12:45:49.053Z"
  },
  "https://www.coramsfields.org/": {
   "status": 200,
   "finalUrl": "https://coramsfields.org/",
-  "checkedAt": "2026-09-28T12:16:03.877Z"
+  "checkedAt": "2026-10-05T12:49:14.537Z"
  },
  "https://www.enablelc.org/millennium-arena": {
   "status": 404,
   "finalUrl": "https://enablelc.org/millennium-arena",
-  "checkedAt": "2026-09-28T12:15:37.320Z"
+  "checkedAt": "2026-10-05T12:48:47.547Z"
  },
  "https://www.everyoneactive.com/": {
   "status": 403,
   "finalUrl": "https://www.everyoneactive.com/",
-  "checkedAt": "2026-09-28T12:15:30.106Z"
+  "checkedAt": "2026-10-05T12:48:40.443Z"
  },
  "https://www.everyoneactive.com/centre/paddington-recreation-ground/": {
   "status": 403,
   "finalUrl": "https://www.everyoneactive.com/centre/paddington-recreation-ground/",
-  "checkedAt": "2026-09-28T12:13:43.025Z"
+  "checkedAt": "2026-10-05T12:45:24.573Z"
  },
  "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/": {
   "status": 403,
   "finalUrl": "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/",
-  "checkedAt": "2026-09-28T12:13:32.821Z"
+  "checkedAt": "2026-10-05T12:45:14.223Z"
  },
  "https://www.goalsfootball.co.uk/": {
   "status": 200,
   "finalUrl": "https://www.goalsfootball.co.uk/",
-  "checkedAt": "2026-09-28T12:14:27.837Z"
+  "checkedAt": "2026-10-05T12:46:21.225Z"
  },
  "https://www.goalsfootball.co.uk/beckenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/beckenham",
-  "checkedAt": "2026-09-28T12:14:19.279Z"
+  "checkedAt": "2026-10-05T12:46:04.402Z"
  },
  "https://www.goalsfootball.co.uk/bexleyheath": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/bexleyheath",
-  "checkedAt": "2026-09-28T12:14:29.977Z"
+  "checkedAt": "2026-10-05T12:46:26.045Z"
  },
  "https://www.goalsfootball.co.uk/centres/beckenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/beckenham",
-  "checkedAt": "2026-09-28T12:14:21.424Z"
+  "checkedAt": "2026-10-05T12:46:09.329Z"
  },
  "https://www.goalsfootball.co.uk/centres/bexleyheath": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/bexleyheath",
-  "checkedAt": "2026-09-28T12:14:32.149Z"
+  "checkedAt": "2026-10-05T12:46:30.876Z"
  },
  "https://www.goalsfootball.co.uk/centres/chingford": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/chingford",
-  "checkedAt": "2026-09-28T12:15:15.213Z"
+  "checkedAt": "2026-10-05T12:48:09.041Z"
  },
  "https://www.goalsfootball.co.uk/centres/dagenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/dagenham",
-  "checkedAt": "2026-09-28T12:14:40.803Z"
+  "checkedAt": "2026-10-05T12:46:50.554Z"
  },
  "https://www.goalsfootball.co.uk/centres/gillette-corner": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/gillette-corner",
-  "checkedAt": "2026-09-28T12:15:06.660Z"
+  "checkedAt": "2026-10-05T12:47:49.280Z"
  },
  "https://www.goalsfootball.co.uk/centres/hayes": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/hayes",
-  "checkedAt": "2026-09-28T12:14:58.131Z"
+  "checkedAt": "2026-10-05T12:47:29.786Z"
  },
  "https://www.goalsfootball.co.uk/centres/ruislip": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/ruislip",
-  "checkedAt": "2026-09-28T12:14:49.513Z"
+  "checkedAt": "2026-10-05T12:47:10.243Z"
  },
  "https://www.goalsfootball.co.uk/centres/sutton": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/centres/sutton",
-  "checkedAt": "2026-09-28T12:15:23.785Z"
+  "checkedAt": "2026-10-05T12:48:28.544Z"
  },
  "https://www.goalsfootball.co.uk/chingford": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/chingford",
-  "checkedAt": "2026-09-28T12:15:13.080Z"
+  "checkedAt": "2026-10-05T12:48:04.043Z"
  },
  "https://www.goalsfootball.co.uk/dagenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/dagenham",
-  "checkedAt": "2026-09-28T12:14:38.602Z"
+  "checkedAt": "2026-10-05T12:46:45.648Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/beckenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/beckenham",
-  "checkedAt": "2026-09-28T12:13:16.110Z"
+  "checkedAt": "2026-10-05T12:44:57.861Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/bexleyheath": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/bexleyheath",
-  "checkedAt": "2026-09-28T12:13:18.208Z"
+  "checkedAt": "2026-10-05T12:44:59.894Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/chingford": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/chingford",
-  "checkedAt": "2026-09-28T12:13:28.661Z"
+  "checkedAt": "2026-10-05T12:45:10.115Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/dagenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/dagenham",
-  "checkedAt": "2026-09-28T12:13:20.274Z"
+  "checkedAt": "2026-10-05T12:45:01.928Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/gillette-corner": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/gillette-corner",
-  "checkedAt": "2026-09-28T12:13:26.582Z"
+  "checkedAt": "2026-10-05T12:45:08.075Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/hayes": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/hayes",
-  "checkedAt": "2026-09-28T12:13:24.472Z"
+  "checkedAt": "2026-10-05T12:45:06.035Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/ruislip": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/ruislip",
-  "checkedAt": "2026-09-28T12:13:22.413Z"
+  "checkedAt": "2026-10-05T12:45:04.001Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/sutton": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/football-centres/sutton",
-  "checkedAt": "2026-09-28T12:13:30.775Z"
+  "checkedAt": "2026-10-05T12:45:12.150Z"
  },
  "https://www.goalsfootball.co.uk/gillette-corner": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/gillette-corner",
-  "checkedAt": "2026-09-28T12:15:04.528Z"
+  "checkedAt": "2026-10-05T12:47:44.482Z"
  },
  "https://www.goalsfootball.co.uk/goals-beckenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-beckenham",
-  "checkedAt": "2026-09-28T12:14:23.584Z"
+  "checkedAt": "2026-10-05T12:46:14.245Z"
  },
  "https://www.goalsfootball.co.uk/goals-bexleyheath": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-bexleyheath",
-  "checkedAt": "2026-09-28T12:14:34.326Z"
+  "checkedAt": "2026-10-05T12:46:35.822Z"
  },
  "https://www.goalsfootball.co.uk/goals-centres/beckenham": {
   "status": 404,
@@ -252,117 +252,117 @@
  "https://www.goalsfootball.co.uk/goals-chingford": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-chingford",
-  "checkedAt": "2026-09-28T12:15:17.363Z"
+  "checkedAt": "2026-10-05T12:48:13.929Z"
  },
  "https://www.goalsfootball.co.uk/goals-dagenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-dagenham",
-  "checkedAt": "2026-09-28T12:14:42.977Z"
+  "checkedAt": "2026-10-05T12:46:55.311Z"
  },
  "https://www.goalsfootball.co.uk/goals-gillette-corner": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-gillette-corner",
-  "checkedAt": "2026-09-28T12:15:08.795Z"
+  "checkedAt": "2026-10-05T12:47:54.075Z"
  },
  "https://www.goalsfootball.co.uk/goals-hayes": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-hayes",
-  "checkedAt": "2026-09-28T12:15:00.245Z"
+  "checkedAt": "2026-10-05T12:47:34.668Z"
  },
  "https://www.goalsfootball.co.uk/goals-ruislip": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-ruislip",
-  "checkedAt": "2026-09-28T12:14:51.646Z"
+  "checkedAt": "2026-10-05T12:47:15.144Z"
  },
  "https://www.goalsfootball.co.uk/goals-sutton": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/goals-sutton",
-  "checkedAt": "2026-09-28T12:15:25.910Z"
+  "checkedAt": "2026-10-05T12:48:33.363Z"
  },
  "https://www.goalsfootball.co.uk/hayes": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/hayes",
-  "checkedAt": "2026-09-28T12:14:55.967Z"
+  "checkedAt": "2026-10-05T12:47:24.887Z"
  },
  "https://www.goalsfootball.co.uk/ruislip": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/ruislip",
-  "checkedAt": "2026-09-28T12:14:47.313Z"
+  "checkedAt": "2026-10-05T12:47:05.397Z"
  },
  "https://www.goalsfootball.co.uk/sutton": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/sutton",
-  "checkedAt": "2026-09-28T12:15:21.637Z"
+  "checkedAt": "2026-10-05T12:48:23.572Z"
  },
  "https://www.goalsfootball.co.uk/venues/beckenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/beckenham",
-  "checkedAt": "2026-09-28T12:14:25.716Z"
+  "checkedAt": "2026-10-05T12:46:19.195Z"
  },
  "https://www.goalsfootball.co.uk/venues/bexleyheath": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/bexleyheath",
-  "checkedAt": "2026-09-28T12:14:36.446Z"
+  "checkedAt": "2026-10-05T12:46:40.766Z"
  },
  "https://www.goalsfootball.co.uk/venues/chingford": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/chingford",
-  "checkedAt": "2026-09-28T12:15:19.510Z"
+  "checkedAt": "2026-10-05T12:48:18.721Z"
  },
  "https://www.goalsfootball.co.uk/venues/dagenham": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/dagenham",
-  "checkedAt": "2026-09-28T12:14:45.120Z"
+  "checkedAt": "2026-10-05T12:47:00.129Z"
  },
  "https://www.goalsfootball.co.uk/venues/gillette-corner": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/gillette-corner",
-  "checkedAt": "2026-09-28T12:15:10.974Z"
+  "checkedAt": "2026-10-05T12:47:59.110Z"
  },
  "https://www.goalsfootball.co.uk/venues/hayes": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/hayes",
-  "checkedAt": "2026-09-28T12:15:02.368Z"
+  "checkedAt": "2026-10-05T12:47:39.553Z"
  },
  "https://www.goalsfootball.co.uk/venues/ruislip": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/ruislip",
-  "checkedAt": "2026-09-28T12:14:53.765Z"
+  "checkedAt": "2026-10-05T12:47:20.037Z"
  },
  "https://www.goalsfootball.co.uk/venues/sutton": {
   "status": 404,
   "finalUrl": "https://www.goalsfootball.co.uk/venues/sutton",
-  "checkedAt": "2026-09-28T12:15:28.087Z"
+  "checkedAt": "2026-10-05T12:48:38.256Z"
  },
  "https://www.islington.gov.uk/": {
   "status": 200,
   "finalUrl": "https://www.islington.gov.uk/",
-  "checkedAt": "2026-09-28T12:16:15.379Z"
+  "checkedAt": "2026-10-05T12:49:26.114Z"
  },
  "https://www.islington.gov.uk/leisure-and-sport": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/leisure-and-sport",
-  "checkedAt": "2026-09-28T12:16:08.603Z"
+  "checkedAt": "2026-10-05T12:49:19.327Z"
  },
  "https://www.islington.gov.uk/sport-and-leisure": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sport-and-leisure",
-  "checkedAt": "2026-09-28T12:16:06.372Z"
+  "checkedAt": "2026-10-05T12:49:17.084Z"
  },
  "https://www.islington.gov.uk/sports-parks-and-trees": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees",
-  "checkedAt": "2026-09-28T12:16:10.837Z"
+  "checkedAt": "2026-10-05T12:49:21.572Z"
  },
  "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity",
-  "checkedAt": "2026-09-28T12:14:15.035Z"
+  "checkedAt": "2026-10-05T12:45:57.136Z"
  },
  "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches",
-  "checkedAt": "2026-09-28T12:16:13.086Z"
+  "checkedAt": "2026-10-05T12:49:23.831Z"
  },
  "https://www.powerleague.co.uk/": {
   "status": 403,
@@ -407,47 +407,47 @@
  "https://www.powerleague.com/": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/",
-  "checkedAt": "2026-09-28T12:14:17.101Z"
+  "checkedAt": "2026-10-05T12:45:59.251Z"
  },
  "https://www.powerleague.com/location/barnet": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/barnet",
-  "checkedAt": "2026-09-28T12:13:09.799Z"
+  "checkedAt": "2026-10-05T12:44:51.591Z"
  },
  "https://www.powerleague.com/location/canary-wharf": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/canary-wharf",
-  "checkedAt": "2026-09-28T12:13:13.812Z"
+  "checkedAt": "2026-10-05T12:44:55.615Z"
  },
  "https://www.powerleague.com/location/croydon": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/croydon",
-  "checkedAt": "2026-09-28T12:13:11.805Z"
+  "checkedAt": "2026-10-05T12:44:53.603Z"
  },
  "https://www.powerleague.com/location/mill-hill": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/mill-hill",
-  "checkedAt": "2026-09-28T12:13:07.791Z"
+  "checkedAt": "2026-10-05T12:44:49.579Z"
  },
  "https://www.powerleague.com/location/shoreditch": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/shoreditch",
-  "checkedAt": "2026-09-28T12:13:01.766Z"
+  "checkedAt": "2026-10-05T12:44:43.539Z"
  },
  "https://www.powerleague.com/location/vauxhall": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/vauxhall",
-  "checkedAt": "2026-09-28T12:13:03.776Z"
+  "checkedAt": "2026-10-05T12:44:45.554Z"
  },
  "https://www.powerleague.com/location/wembley": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/wembley",
-  "checkedAt": "2026-09-28T12:13:05.784Z"
+  "checkedAt": "2026-10-05T12:44:47.566Z"
  },
  "https://www.royalparks.org.uk/": {
   "status": 200,
   "finalUrl": "https://www.royalparks.org.uk/",
-  "checkedAt": "2026-09-28T12:14:12.539Z"
+  "checkedAt": "2026-10-05T12:45:54.579Z"
  },
  "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/sports-and-leisure/the-hub": {
   "status": 404,

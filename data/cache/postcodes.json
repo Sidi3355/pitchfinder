@@ -2190,6 +2190,13 @@
   "distanceM": 188,
   "at": "2026-09-11"
  },
+ "51.3952,-0.3351": {
+  "postcode": "KT7 0QT",
+  "district": "Elmbridge",
+  "ward": "Thames Ditton",
+  "distanceM": 70,
+  "at": "2026-10-05"
+ },
  "51.3952,-0.3606": {
   "postcode": "KT8 0JT",
   "district": "Elmbridge",
@@ -5206,6 +5213,13 @@
   "ward": "Rye Lane",
   "distanceM": 67,
   "at": "2026-09-11"
+ },
+ "51.4715,0.0298": {
+  "postcode": "SE3 8DS",
+  "district": "Greenwich",
+  "ward": "Kidbrooke Park",
+  "distanceM": 68,
+  "at": "2026-10-05"
  },
  "51.4717,0.0532": {
   "postcode": "SE18 4LN",
