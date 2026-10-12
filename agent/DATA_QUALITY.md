@@ -1,7 +1,7 @@
 # Data quality
 
-Generated 2026-10-05T12:49:28.116Z by `scripts/audit-data.mjs`.
-Dataset generated 2026-10-05T12:44:43.258Z.
+Generated 2026-10-12T13:17:46.056Z by `scripts/audit-data.mjs`.
+Dataset generated 2026-10-12T13:12:51.043Z.
 
 ## Pitches
 
@@ -13,8 +13,8 @@ Dataset generated 2026-10-05T12:44:43.258Z.
 | Collapsed venues (more than one pitch) | 87 | 31.8% |
 | Name from curated | 15 | 5.5% |
 | Name from operator | 13 | 4.7% |
-| Name from park | 137 | 50.0% |
-| Name from road | 32 | 11.7% |
+| Name from park | 136 | 49.6% |
+| Name from road | 33 | 12.0% |
 | Name from osm | 15 | 5.5% |
 | Name from playfinder | 61 | 22.3% |
 | Name from area | 1 | 0.4% |
@@ -77,3 +77,4 @@ Dataset generated 2026-10-05T12:44:43.258Z.
 | 2026-09-21 | 274 | 0 | 5 | 68 | 16 | 0 | 152 | 26 | 22 | 0 |
 | 2026-09-28 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |
 | 2026-10-05 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |
+| 2026-10-12 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |

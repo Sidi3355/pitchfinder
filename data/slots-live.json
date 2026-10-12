@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-05T12:40:42.131Z",
+ "fetchedAt": "2026-10-12T13:10:07.213Z",
  "offline": false,
  "pitchbooking": {
   "site": "https://pitchbooking.com",
@@ -28,15 +28,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 256,
+    "slotsSeen": 259,
     "bands": [
      {
       "format": 5,
@@ -59,7 +59,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 66
+      "slotsSeen": 67
      },
      {
       "format": 5,
@@ -76,7 +76,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 48
+      "slotsSeen": 51
      },
      {
       "format": 5,
@@ -92,7 +92,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 22
+      "slotsSeen": 23
      },
      {
       "format": 5,
@@ -111,7 +111,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 16
+      "slotsSeen": 12
      },
      {
       "format": 5,
@@ -161,14 +161,14 @@
       "windows": [
        [
         "09:00",
-        "18:30"
+        "19:30"
        ],
        [
         "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 31
+      "slotsSeen": 32
      },
      {
       "format": 8,
@@ -176,22 +176,23 @@
       "amount": 155,
       "minutes": 60,
       "days": [
-       "mon"
+       "mon",
+       "wed"
       ],
       "windows": [
        [
         "18:00",
-        "18:00"
+        "18:30"
        ],
        [
         "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 2
+      "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-05T11:30:45.065Z"
+    "fetchedAt": "2026-10-12T12:02:03.923Z"
    },
    {
     "id": "go-bexleyheath",
@@ -222,15 +223,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 98,
+    "slotsSeen": 121,
     "bands": [
      {
       "format": 5,
@@ -249,6 +250,25 @@
        ]
       ],
       "slotsSeen": 28
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 97,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "10:30",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 11
      },
      {
       "format": 5,
@@ -289,25 +309,6 @@
       "slotsSeen": 4
      },
      {
-      "format": 5,
-      "surface": "3g",
-      "amount": 97,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "17:30",
-        "17:30"
-       ]
-      ],
-      "slotsSeen": 4
-     },
-     {
       "format": 7,
       "surface": "3g",
       "amount": 102,
@@ -323,7 +324,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 26
      },
      {
       "format": 7,
@@ -332,16 +333,15 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue",
-       "thu"
+       "tue"
       ],
       "windows": [
        [
-        "17:30",
+        "10:30",
         "17:30"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 9
      },
      {
       "format": 7,
@@ -350,16 +350,21 @@
       "minutes": 60,
       "days": [
        "mon",
+       "tue",
        "wed",
        "thu"
       ],
       "windows": [
        [
+        "18:30",
+        "18:30"
+       ],
+       [
         "20:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 5
      },
      {
       "format": 8,
@@ -372,11 +377,11 @@
       ],
       "windows": [
        [
-        "09:30",
+        "10:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 19
      },
      {
       "format": 8,
@@ -388,14 +393,30 @@
       ],
       "windows": [
        [
-        "17:30",
+        "10:30",
         "17:30"
+       ]
+      ],
+      "slotsSeen": 8
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 168,
+      "minutes": 60,
+      "days": [
+       "tue"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "18:30"
        ]
       ],
       "slotsSeen": 1
      }
     ],
-    "fetchedAt": "2026-10-05T11:32:23.831Z"
+    "fetchedAt": "2026-10-12T12:04:10.252Z"
    },
    {
     "id": "go-chingford",
@@ -421,15 +442,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 204,
+    "slotsSeen": 238,
     "bands": [
      {
       "format": 5,
@@ -447,7 +468,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 79
+      "slotsSeen": 78
      },
      {
       "format": 5,
@@ -466,7 +487,7 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 59
+      "slotsSeen": 64
      },
      {
       "format": 5,
@@ -485,7 +506,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 21
      },
      {
       "format": 5,
@@ -504,7 +525,7 @@
         "19:00"
        ]
       ],
-      "slotsSeen": 8
+      "slotsSeen": 10
      },
      {
       "format": 8,
@@ -513,20 +534,17 @@
       "minutes": 60,
       "days": [
        "mon",
-       "sat",
-       "sun"
+       "tue",
+       "wed",
+       "thu"
       ],
       "windows": [
        [
-        "09:00",
+        "10:00",
         "17:00"
-       ],
-       [
-        "20:00",
-        "22:00"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 30
      },
      {
       "format": 8,
@@ -534,15 +552,17 @@
       "amount": 124,
       "minutes": 60,
       "days": [
-       "fri"
+       "fri",
+       "sat",
+       "sun"
       ],
       "windows": [
        [
-        "10:00",
-        "19:00"
+        "09:00",
+        "22:00"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 29
      },
      {
       "format": 8,
@@ -550,18 +570,25 @@
       "amount": 142,
       "minutes": 60,
       "days": [
-       "mon"
+       "mon",
+       "tue",
+       "wed",
+       "thu"
       ],
       "windows": [
        [
         "18:00",
         "18:00"
+       ],
+       [
+        "21:00",
+        "22:00"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 6
      }
     ],
-    "fetchedAt": "2026-10-05T11:34:44.154Z"
+    "fetchedAt": "2026-10-12T12:06:46.992Z"
    },
    {
     "id": "go-dagenham",
@@ -592,15 +619,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 385,
+    "slotsSeen": 379,
     "bands": [
      {
       "format": 5,
@@ -657,7 +684,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 36
+      "slotsSeen": 34
      },
      {
       "format": 7,
@@ -676,7 +703,7 @@
         "19:00"
        ]
       ],
-      "slotsSeen": 70
+      "slotsSeen": 69
      },
      {
       "format": 7,
@@ -728,7 +755,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 13
      },
      {
       "format": 7,
@@ -742,9 +769,13 @@
        [
         "18:00",
         "18:00"
+       ],
+       [
+        "22:00",
+        "22:00"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 2
      },
      {
       "format": 8,
@@ -755,7 +786,8 @@
        "mon",
        "tue",
        "wed",
-       "thu"
+       "thu",
+       "fri"
       ],
       "windows": [
        [
@@ -763,7 +795,7 @@
         "18:30"
        ]
       ],
-      "slotsSeen": 35
+      "slotsSeen": 42
      },
      {
       "format": 8,
@@ -780,23 +812,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 22
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 125,
-      "minutes": 60,
-      "days": [
-       "fri"
-      ],
-      "windows": [
-       [
-        "10:30",
-        "17:30"
-       ]
-      ],
-      "slotsSeen": 8
+      "slotsSeen": 23
      },
      {
       "format": 8,
@@ -804,36 +820,18 @@
       "amount": 145,
       "minutes": 60,
       "days": [
-       "tue",
-       "wed",
        "thu"
       ],
       "windows": [
        [
         "19:30",
-        "21:30"
+        "20:30"
        ]
       ],
-      "slotsSeen": 4
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 129.5,
-      "minutes": 60,
-      "days": [
-       "fri"
-      ],
-      "windows": [
-       [
-        "18:30",
-        "18:30"
-       ]
-      ],
-      "slotsSeen": 1
+      "slotsSeen": 2
      }
     ],
-    "fetchedAt": "2026-10-05T11:36:17.524Z"
+    "fetchedAt": "2026-10-12T12:08:28.387Z"
    },
    {
     "id": "go-eltham",
@@ -859,15 +857,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 240,
+    "slotsSeen": 233,
     "bands": [
      {
       "format": 5,
@@ -988,7 +986,8 @@
        "mon",
        "tue",
        "wed",
-       "thu"
+       "thu",
+       "sun"
       ],
       "windows": [
        [
@@ -996,7 +995,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 34
+      "slotsSeen": 39
      },
      {
       "format": 8,
@@ -1005,8 +1004,7 @@
       "minutes": 60,
       "days": [
        "fri",
-       "sat",
-       "sun"
+       "sat"
       ],
       "windows": [
        [
@@ -1014,7 +1012,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 30
+      "slotsSeen": 18
      },
      {
       "format": 8,
@@ -1022,8 +1020,8 @@
       "amount": 155,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
-       "wed",
        "thu"
       ],
       "windows": [
@@ -1032,14 +1030,14 @@
         "19:00"
        ],
        [
-        "21:00",
+        "22:00",
         "22:00"
        ]
       ],
       "slotsSeen": 4
      }
     ],
-    "fetchedAt": "2026-10-05T11:38:40.089Z"
+    "fetchedAt": "2026-10-12T12:11:24.097Z"
    },
    {
     "id": "go-gillettecorner",
@@ -1065,15 +1063,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 261,
+    "slotsSeen": 269,
     "bands": [
      {
       "format": 5,
@@ -1090,10 +1088,10 @@
       "windows": [
        [
         "08:30",
-        "17:00"
+        "17:30"
        ]
       ],
-      "slotsSeen": 76
+      "slotsSeen": 78
      },
      {
       "format": 5,
@@ -1109,7 +1107,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 26
      },
      {
       "format": 5,
@@ -1167,7 +1165,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 5
      },
      {
       "format": 5,
@@ -1206,7 +1204,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 72
+      "slotsSeen": 73
      },
      {
       "format": 8,
@@ -1223,7 +1221,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 36
+      "slotsSeen": 37
      },
      {
       "format": 8,
@@ -1236,10 +1234,10 @@
       "windows": [
        [
         "18:30",
-        "20:00"
+        "21:00"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 4
      },
      {
       "format": 8,
@@ -1258,9 +1256,26 @@
        ]
       ],
       "slotsSeen": 3
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 143,
+      "minutes": 60,
+      "days": [
+       "tue",
+       "wed"
+      ],
+      "windows": [
+       [
+        "20:00",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-05T11:40:36.494Z"
+    "fetchedAt": "2026-10-12T12:13:35.896Z"
    },
    {
     "id": "go-hayes",
@@ -1291,15 +1306,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 462,
+    "slotsSeen": 460,
     "bands": [
      {
       "format": 5,
@@ -1318,7 +1333,7 @@
         "18:30"
        ]
       ],
-      "slotsSeen": 68
+      "slotsSeen": 69
      },
      {
       "format": 5,
@@ -1335,7 +1350,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 51
+      "slotsSeen": 53
      },
      {
       "format": 5,
@@ -1427,7 +1442,7 @@
         "18:30"
        ]
       ],
-      "slotsSeen": 71
+      "slotsSeen": 70
      },
      {
       "format": 7,
@@ -1445,7 +1460,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 7
      },
      {
       "format": 7,
@@ -1482,7 +1497,7 @@
         "18:30"
        ]
       ],
-      "slotsSeen": 59
+      "slotsSeen": 60
      },
      {
       "format": 8,
@@ -1499,7 +1514,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 47
+      "slotsSeen": 46
      },
      {
       "format": 8,
@@ -1519,7 +1534,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 21
+      "slotsSeen": 20
      },
      {
       "format": 8,
@@ -1557,7 +1572,7 @@
       "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-05T11:42:05.869Z"
+    "fetchedAt": "2026-10-12T12:15:10.214Z"
    },
    {
     "id": "go-heathrow",
@@ -1583,15 +1598,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 219,
+    "slotsSeen": 207,
     "bands": [
      {
       "format": 5,
@@ -1627,7 +1642,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 28
+      "slotsSeen": 27
      },
      {
       "format": 5,
@@ -1646,7 +1661,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 26
      },
      {
       "format": 5,
@@ -1699,7 +1714,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 49
+      "slotsSeen": 39
      },
      {
       "format": 8,
@@ -1719,26 +1734,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 23
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 130,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "17:30",
-        "18:00"
-       ]
-      ],
-      "slotsSeen": 6
+      "slotsSeen": 24
      },
      {
       "format": 8,
@@ -1764,16 +1760,33 @@
       "days": [
        "mon",
        "tue",
-       "wed",
        "thu"
       ],
       "windows": [
        [
         "18:30",
-        "21:30"
+        "21:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 6
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 130,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 4
      },
      {
       "format": 8,
@@ -1782,8 +1795,6 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue",
-       "wed",
        "fri"
       ],
       "windows": [
@@ -1792,10 +1803,10 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 2
      }
     ],
-    "fetchedAt": "2026-10-05T11:44:45.522Z"
+    "fetchedAt": "2026-10-12T12:17:37.358Z"
    },
    {
     "id": "go-ruislip",
@@ -1826,15 +1837,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 176,
+    "slotsSeen": 161,
     "bands": [
      {
       "format": 5,
@@ -1866,26 +1877,7 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 16
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 100.5,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "16:30",
-        "18:00"
-       ]
-      ],
-      "slotsSeen": 12
+      "slotsSeen": 15
      },
      {
       "format": 5,
@@ -1922,6 +1914,24 @@
      {
       "format": 5,
       "surface": "3g",
+      "amount": 100.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "thu"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 9
+     },
+     {
+      "format": 5,
+      "surface": "3g",
       "amount": 111,
       "minutes": 60,
       "days": [
@@ -1932,7 +1942,7 @@
       ],
       "windows": [
        [
-        "19:00",
+        "18:30",
         "21:30"
        ]
       ],
@@ -1974,11 +1984,11 @@
         "08:30"
        ],
        [
-        "10:30",
+        "11:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 26
      },
      {
       "format": 7,
@@ -1994,6 +2004,10 @@
       "windows": [
        [
         "16:30",
+        "17:30"
+       ],
+       [
+        "19:30",
         "19:30"
        ],
        [
@@ -2001,7 +2015,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 9
      },
      {
       "format": 8,
@@ -2016,10 +2030,14 @@
       "windows": [
        [
         "08:00",
+        "08:00"
+       ],
+       [
+        "11:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 34
+      "slotsSeen": 29
      },
      {
       "format": 8,
@@ -2038,14 +2056,14 @@
         "19:00"
        ],
        [
-        "21:00",
+        "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 15
+      "slotsSeen": 12
      }
     ],
-    "fetchedAt": "2026-10-05T11:46:30.266Z"
+    "fetchedAt": "2026-10-12T12:19:12.112Z"
    },
    {
     "id": "go-sutton",
@@ -2071,15 +2089,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 160,
+    "slotsSeen": 158,
     "bands": [
      {
       "format": 5,
@@ -2135,7 +2153,7 @@
         "21:15"
        ]
       ],
-      "slotsSeen": 15
+      "slotsSeen": 12
      },
      {
       "format": 8,
@@ -2143,10 +2161,6 @@
       "amount": 124,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
        "fri",
        "sat",
        "sun"
@@ -2157,10 +2171,51 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 53
+      "slotsSeen": 25
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 124,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "10:30",
+        "16:30"
+       ]
+      ],
+      "slotsSeen": 24
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 154,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "18:30"
+       ],
+       [
+        "21:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 5
      }
     ],
-    "fetchedAt": "2026-10-05T11:48:43.582Z"
+    "fetchedAt": "2026-10-12T12:21:33.413Z"
    },
    {
     "id": "go-wembley",
@@ -2191,15 +2246,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 361,
+    "slotsSeen": 339,
     "bands": [
      {
       "format": 5,
@@ -2218,7 +2273,7 @@
         "19:00"
        ]
       ],
-      "slotsSeen": 66
+      "slotsSeen": 75
      },
      {
       "format": 5,
@@ -2237,7 +2292,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 21
+      "slotsSeen": 23
      },
      {
       "format": 5,
@@ -2277,46 +2332,6 @@
       "amount": 70,
       "minutes": 60,
       "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "13:00",
-        "18:30"
-       ],
-       [
-        "21:30",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 14
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 95,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "12:30"
-       ],
-       [
-        "19:00",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 13
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 70,
-      "minutes": 60,
-      "days": [
        "sat"
       ],
       "windows": [
@@ -2326,6 +2341,26 @@
        ]
       ],
       "slotsSeen": 9
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "16:00",
+        "18:30"
+       ],
+       [
+        "21:30",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 8
      },
      {
       "format": 5,
@@ -2341,7 +2376,23 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 8
+      "slotsSeen": 7
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "19:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 5
      },
      {
       "format": 7,
@@ -2369,16 +2420,20 @@
       "amount": 144,
       "minutes": 60,
       "days": [
-       "sat",
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
        "sun"
       ],
       "windows": [
        [
-        "08:30",
+        "16:30",
         "20:30"
        ]
       ],
-      "slotsSeen": 23
+      "slotsSeen": 19
      },
      {
       "format": 7,
@@ -2386,19 +2441,11 @@
       "amount": 144,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri"
+       "sat"
       ],
       "windows": [
        [
-        "16:30",
-        "18:30"
-       ],
-       [
-        "20:30",
+        "08:30",
         "20:30"
        ]
       ],
@@ -2442,27 +2489,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 28
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 142,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "13:00",
-        "18:30"
-       ],
-       [
-        "22:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 13
+      "slotsSeen": 25
      },
      {
       "format": 8,
@@ -2483,26 +2510,6 @@
      {
       "format": 8,
       "surface": "3g",
-      "amount": 151,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "12:30"
-       ],
-       [
-        "19:00",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 11
-     },
-     {
-      "format": 8,
-      "surface": "3g",
       "amount": 142,
       "minutes": 60,
       "days": [
@@ -2515,9 +2522,49 @@
        ]
       ],
       "slotsSeen": 8
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 142,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "16:00",
+        "18:30"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 7
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 151,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:30",
+        "09:30"
+       ],
+       [
+        "19:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 6
      }
     ],
-    "fetchedAt": "2026-10-05T11:50:13.328Z"
+    "fetchedAt": "2026-10-12T12:23:07.711Z"
    },
    {
     "id": "go-wimbledon",
@@ -2543,15 +2590,15 @@
      }
     ],
     "dates": [
-     "2026-10-06",
-     "2026-10-07",
-     "2026-10-08",
-     "2026-10-09",
-     "2026-10-10",
-     "2026-10-11",
-     "2026-10-12"
+     "2026-10-13",
+     "2026-10-14",
+     "2026-10-15",
+     "2026-10-16",
+     "2026-10-17",
+     "2026-10-18",
+     "2026-10-19"
     ],
-    "slotsSeen": 208,
+    "slotsSeen": 207,
     "bands": [
      {
       "format": 5,
@@ -2569,7 +2616,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 71
+      "slotsSeen": 70
      },
      {
       "format": 5,
@@ -2588,7 +2635,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 58
+      "slotsSeen": 54
      },
      {
       "format": 5,
@@ -2607,7 +2654,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 18
+      "slotsSeen": 16
      },
      {
       "format": 5,
@@ -2637,17 +2684,15 @@
        "mon",
        "tue",
        "wed",
-       "thu",
-       "sat",
-       "sun"
+       "thu"
       ],
       "windows": [
        [
         "10:00",
-        "21:00"
+        "17:00"
        ]
       ],
-      "slotsSeen": 48
+      "slotsSeen": 31
      },
      {
       "format": 7,
@@ -2655,23 +2700,17 @@
       "amount": 124,
       "minutes": 60,
       "days": [
-       "fri"
+       "fri",
+       "sat",
+       "sun"
       ],
       "windows": [
        [
         "10:00",
-        "12:00"
-       ],
-       [
-        "15:00",
-        "17:00"
-       ],
-       [
-        "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 26
      },
      {
       "format": 7,
@@ -2680,18 +2719,23 @@
       "minutes": 60,
       "days": [
        "mon",
+       "tue",
        "wed"
       ],
       "windows": [
        [
-        "22:00",
+        "18:00",
+        "18:00"
+       ],
+       [
+        "21:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 2
+      "slotsSeen": 6
      }
     ],
-    "fetchedAt": "2026-10-05T11:52:30.230Z"
+    "fetchedAt": "2026-10-12T12:25:35.504Z"
    }
   ]
  },
@@ -2885,7 +2929,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:55.788Z"
+    "fetchedAt": "2026-10-12T12:53:01.088Z"
    },
    {
     "slug": "addiscombe-recreation-ground",
@@ -2931,7 +2975,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:06:00.270Z"
+    "fetchedAt": "2026-10-12T12:59:23.416Z"
    },
    {
     "slug": "ainslie-wood-sports-ground",
@@ -3143,7 +3187,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:32.783Z"
+    "fetchedAt": "2026-10-12T12:58:01.588Z"
    },
    {
     "slug": "aldenham-school-sports-centre",
@@ -3333,7 +3377,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:43.628Z"
+    "fetchedAt": "2026-10-12T12:53:47.175Z"
    },
    {
     "slug": "altwood-church-of-england-school",
@@ -3421,7 +3465,7 @@
     "bands": [],
     "priceSummary": "Mon-Sat £10/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:25.483Z"
+    "fetchedAt": "2026-10-12T13:05:44.550Z"
    },
    {
     "slug": "angell-townmuga",
@@ -3517,7 +3561,7 @@
     "bands": [],
     "priceSummary": "See calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-09-28T11:57:33.554Z"
+    "fetchedAt": "2026-10-12T12:51:47.598Z"
    },
    {
     "slug": "archbishops-park",
@@ -3600,7 +3644,7 @@
     "bands": [],
     "priceSummary": "Around £10.70/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:18.496Z"
+    "fetchedAt": "2026-10-12T13:01:01.978Z"
    },
    {
     "slug": "ashburnham-community-primary-school",
@@ -3696,7 +3740,7 @@
     "bands": [],
     "priceSummary": "£45/hr",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:10:35.486Z"
+    "fetchedAt": "2026-10-12T12:44:28.967Z"
    },
    {
     "slug": "ashburton-park",
@@ -3728,7 +3772,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:23.319Z"
+    "fetchedAt": "2026-10-12T13:01:07.757Z"
    },
    {
     "slug": "ashmole-academy",
@@ -3771,7 +3815,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:46.820Z"
+    "fetchedAt": "2026-10-12T12:56:16.861Z"
    },
    {
     "slug": "ashmole-primary-school",
@@ -3803,7 +3847,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:16.466Z"
+    "fetchedAt": "2026-10-12T12:50:32.735Z"
    },
    {
     "slug": "aske-gardens",
@@ -3886,7 +3930,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:00:49.665Z"
+    "fetchedAt": "2026-10-12T12:34:21.389Z"
    },
    {
     "slug": "atam-academy",
@@ -3980,7 +4024,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:55:26.930Z"
+    "fetchedAt": "2026-10-12T12:50:59.267Z"
    },
    {
     "slug": "barking-and-dagenham-college",
@@ -4067,7 +4111,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:25:23.496Z"
+    "fetchedAt": "2026-10-12T13:10:05.041Z"
    },
    {
     "slug": "barking-sporthouse",
@@ -4174,7 +4218,7 @@
     "bands": [],
     "priceSummary": "Off-Peak £60.00/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:45.501Z"
+    "fetchedAt": "2026-10-12T13:03:53.232Z"
    },
    {
     "slug": "barnet-sfl",
@@ -4346,7 +4390,7 @@
     "bands": [],
     "priceSummary": "From £8.50-£53.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:02:26.389Z"
+    "fetchedAt": "2026-10-12T12:35:51.008Z"
    },
    {
     "slug": "beavers-lodge",
@@ -4411,7 +4455,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-09-28T12:03:44.296Z"
+    "fetchedAt": "2026-10-12T12:57:13.537Z"
    },
    {
     "slug": "berkeley-fields",
@@ -4443,7 +4487,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:28.148Z"
+    "fetchedAt": "2026-10-12T13:01:12.928Z"
    },
    {
     "slug": "bethnal-green-gardens",
@@ -4475,7 +4519,7 @@
     "bands": [],
     "priceSummary": "£6.00 (Adult)",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:06:06.753Z"
+    "fetchedAt": "2026-10-12T12:59:28.572Z"
    },
    {
     "slug": "bethwin-adventure",
@@ -4572,7 +4616,7 @@
     "bands": [],
     "priceSummary": "From £55.00-£60.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:05:37.860Z"
+    "fetchedAt": "2026-10-12T12:39:08.144Z"
    },
    {
     "slug": "beverley-park",
@@ -4655,7 +4699,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:51.350Z"
+    "fetchedAt": "2026-10-12T12:53:55.864Z"
    },
    {
     "slug": "biggin-wood-park",
@@ -4687,7 +4731,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:32.978Z"
+    "fetchedAt": "2026-10-12T13:01:18.611Z"
    },
    {
     "slug": "billingbear-park-golf-course",
@@ -4719,7 +4763,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:30.394Z"
+    "fetchedAt": "2026-10-12T13:05:50.064Z"
    },
    {
     "slug": "bird-hills-golf-centre",
@@ -4802,7 +4846,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:35.304Z"
+    "fetchedAt": "2026-10-12T13:05:55.013Z"
    },
    {
     "slug": "bisham-abbey-national-sports-centre",
@@ -4896,7 +4940,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:40.221Z"
+    "fetchedAt": "2026-10-12T13:06:00.582Z"
    },
    {
     "slug": "bluehut-youth-centre",
@@ -5110,7 +5154,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:45.141Z"
+    "fetchedAt": "2026-10-12T13:06:07.232Z"
    },
    {
     "slug": "braywick-leisure-centre",
@@ -5204,7 +5248,7 @@
     "bands": [],
     "priceSummary": "Around £45.00/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:33.882Z"
+    "fetchedAt": "2026-10-12T13:04:47.646Z"
    },
    {
     "slug": "brentside-high-school",
@@ -5320,7 +5364,7 @@
     "bands": [],
     "priceSummary": "From £48.00-£55.20/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:02:52.606Z"
+    "fetchedAt": "2026-10-12T12:36:19.022Z"
    },
    {
     "slug": "brentwood-hard-court-tennis-club",
@@ -5397,7 +5441,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:13.277Z"
+    "fetchedAt": "2026-10-12T13:03:18.420Z"
    },
    {
     "slug": "bridgestone-arena",
@@ -5537,7 +5581,7 @@
     "bands": [],
     "priceSummary": "Around £95.52/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:08:31.925Z"
+    "fetchedAt": "2026-10-12T12:42:17.109Z"
    },
    {
     "slug": "britannia-playing-fields",
@@ -5569,7 +5613,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:14:47.307Z"
+    "fetchedAt": "2026-10-12T12:48:54.291Z"
    },
    {
     "slug": "brittons-playing-field",
@@ -5614,7 +5658,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:04:51.868Z"
+    "fetchedAt": "2026-10-12T12:38:19.961Z"
    },
    {
     "slug": "brixton-netbusters",
@@ -5762,7 +5806,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:38.426Z"
+    "fetchedAt": "2026-10-12T12:58:06.780Z"
    },
    {
     "slug": "bromley-high-school",
@@ -5794,7 +5838,7 @@
     "bands": [],
     "priceSummary": "(not specified)",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:14:04.372Z"
+    "fetchedAt": "2026-10-12T12:48:09.569Z"
    },
    {
     "slug": "brunswick-park",
@@ -5840,7 +5884,7 @@
     "bands": [],
     "priceSummary": "£96.50 / 90 mins",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:50.298Z"
+    "fetchedAt": "2026-10-12T13:03:58.250Z"
    },
    {
     "slug": "bull-lane-playing-field-",
@@ -6022,7 +6066,7 @@
     "bands": [],
     "priceSummary": "Football 11-a-side £178.20 / hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:57:09.440Z"
+    "fetchedAt": "2026-10-12T12:30:27.912Z"
    },
    {
     "slug": "burnt-oak-leisure-centre",
@@ -6128,7 +6172,7 @@
     "bands": [],
     "priceSummary": "From £31.00-£31.95/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:05:01.146Z"
+    "fetchedAt": "2026-10-12T12:38:30.981Z"
    },
    {
     "slug": "byron-recreation-ground-",
@@ -6160,7 +6204,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:10.831Z"
+    "fetchedAt": "2026-10-12T12:52:18.793Z"
    },
    {
     "slug": "calthorpe-project-sports-facilities",
@@ -6257,7 +6301,7 @@
     "bands": [],
     "priceSummary": "Between 09:00 - 17:30 - £40/hr whilst between 17.30 - 21.30 - £65/hr",
     "skipped": null,
-    "fetchedAt": "2026-09-28T12:06:12.638Z"
+    "fetchedAt": "2026-10-12T12:59:34.384Z"
    },
    {
     "slug": "camden-rhino-turf",
@@ -6363,7 +6407,7 @@
     "bands": [],
     "priceSummary": "From £75.00-£84.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:01:45.056Z"
+    "fetchedAt": "2026-10-12T12:35:19.132Z"
    },
    {
     "slug": "canons-leisure-centre",
@@ -6452,7 +6496,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:24:45.758Z"
+    "fetchedAt": "2026-10-12T13:09:25.434Z"
    },
    {
     "slug": "castle-hill-community-centre",
@@ -6771,7 +6815,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:11:41.623Z"
+    "fetchedAt": "2026-10-12T12:45:39.839Z"
    },
    {
     "slug": "chandos-rec-ground",
@@ -6803,7 +6847,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:16.413Z"
+    "fetchedAt": "2026-10-12T12:52:23.893Z"
    },
    {
     "slug": "charnwood-golf-and-leisure-complex",
@@ -6909,7 +6953,7 @@
     "bands": [],
     "priceSummary": "Peak £35",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:23:48.422Z"
+    "fetchedAt": "2026-10-12T13:08:23.894Z"
    },
    {
     "slug": "childs-hill-park",
@@ -6954,7 +6998,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:44.133Z"
+    "fetchedAt": "2026-10-12T12:58:11.901Z"
    },
    {
     "slug": "churchfield-recreationground",
@@ -7037,7 +7081,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:13.235Z"
+    "fetchedAt": "2026-10-12T12:53:18.159Z"
    },
    {
     "slug": "churchfields-recreation-ground",
@@ -7102,7 +7146,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:00:00.009Z"
+    "fetchedAt": "2026-10-12T12:54:06.555Z"
    },
    {
     "slug": "churchfields-recreation-ground-ealing",
@@ -7147,7 +7191,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:06:24.125Z"
+    "fetchedAt": "2026-10-12T12:59:44.616Z"
    },
    {
     "slug": "city-of-london-academy",
@@ -7202,7 +7246,7 @@
     "bands": [],
     "priceSummary": "From £150.00-£168.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:02:37.133Z"
+    "fetchedAt": "2026-10-12T12:36:02.437Z"
    },
    {
     "slug": "city-of-london-academy-southwark",
@@ -7318,7 +7362,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:12:34.525Z"
+    "fetchedAt": "2026-10-12T12:46:31.186Z"
    },
    {
     "slug": "clapham-common",
@@ -7414,7 +7458,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:49.919Z"
+    "fetchedAt": "2026-10-12T12:58:17.050Z"
    },
    {
     "slug": "club-langley",
@@ -7582,7 +7626,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:14:27.287Z"
+    "fetchedAt": "2026-10-12T12:48:34.073Z"
    },
    {
     "slug": "coombe-wood-school",
@@ -7708,7 +7752,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:25:18.557Z"
+    "fetchedAt": "2026-10-12T13:09:59.543Z"
    },
    {
     "slug": "coram-s-fields",
@@ -7805,7 +7849,7 @@
     "bands": [],
     "priceSummary": "£145.00/hour for evening and weekend bookings. £125.00/hour for lunchtime bookings",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:59:45.407Z"
+    "fetchedAt": "2026-10-12T12:33:13.337Z"
    },
    {
     "slug": "coram-s-fields-indoor-spaces",
@@ -7888,7 +7932,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:13:14.347Z"
+    "fetchedAt": "2026-10-12T12:47:18.146Z"
    },
    {
     "slug": "cornwallis-adventure-playground",
@@ -7984,7 +8028,7 @@
     "bands": [],
     "priceSummary": "Peak £60",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:08:06.209Z"
+    "fetchedAt": "2026-10-12T12:41:48.831Z"
    },
    {
     "slug": "cox-green",
@@ -8102,7 +8146,7 @@
     "bands": [],
     "priceSummary": "1/3 pitch £46 per hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:20:50.751Z"
+    "fetchedAt": "2026-10-12T13:05:06.683Z"
    },
    {
     "slug": "crook-log-leisure-centre",
@@ -8196,7 +8240,7 @@
     "bands": [],
     "priceSummary": "Member £3.35",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:14.644Z"
+    "fetchedAt": "2026-10-12T13:04:25.635Z"
    },
    {
     "slug": "crystal-palace-national-sports-centre",
@@ -8332,7 +8376,7 @@
     "bands": [],
     "priceSummary": "Around £38.90/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:57:24.342Z"
+    "fetchedAt": "2026-10-12T12:30:44.363Z"
    },
    {
     "slug": "dagenham-goals",
@@ -8699,7 +8743,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:15:04.912Z"
+    "fetchedAt": "2026-10-12T12:49:11.966Z"
    },
    {
     "slug": "david-lloyd-chigwell",
@@ -8731,7 +8775,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:14:59.744Z"
+    "fetchedAt": "2026-10-12T12:49:06.862Z"
    },
    {
     "slug": "david-lloyd-maidenhead",
@@ -8814,7 +8858,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:14:09.304Z"
+    "fetchedAt": "2026-10-12T12:48:14.669Z"
    },
    {
     "slug": "deptford-lounge",
@@ -8897,7 +8941,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:17.836Z"
+    "fetchedAt": "2026-10-12T12:55:52.893Z"
    },
    {
     "slug": "derby-road-playing-fields",
@@ -8980,7 +9024,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:24:20.630Z"
+    "fetchedAt": "2026-10-12T13:08:57.829Z"
    },
    {
     "slug": "desborough-college",
@@ -9023,7 +9067,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:04.981Z"
+    "fetchedAt": "2026-10-12T13:06:27.981Z"
    },
    {
     "slug": "desborough-park",
@@ -9078,7 +9122,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:09.901Z"
+    "fetchedAt": "2026-10-12T13:06:32.989Z"
    },
    {
     "slug": "do-not-useshine-sports-ground",
@@ -9217,7 +9261,7 @@
     "bands": [],
     "priceSummary": "From £15.00-£30.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:07:20.394Z"
+    "fetchedAt": "2026-10-12T12:41:00.368Z"
    },
    {
     "slug": "dormers-wells-lc-pitches",
@@ -9355,7 +9399,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for prices and availability",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:12:50.257Z"
+    "fetchedAt": "2026-10-12T12:46:45.658Z"
    },
    {
     "slug": "downhills-park",
@@ -9408,7 +9452,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:06:31.952Z"
+    "fetchedAt": "2026-10-12T12:59:52.968Z"
    },
    {
     "slug": "draper-s-field",
@@ -9514,7 +9558,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:05:19.553Z"
+    "fetchedAt": "2026-10-12T12:38:49.566Z"
    },
    {
     "slug": "elthorne-sports-centre",
@@ -9610,7 +9654,7 @@
     "bands": [],
     "priceSummary": "£27.90 (with floodlights), £27 (without floodlights) - per pitch per hour 4g pitch £46.50 per pitch per hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:00.371Z"
+    "fetchedAt": "2026-10-12T13:03:02.334Z"
    },
    {
     "slug": "elthorne-waterside-pitches",
@@ -9724,34 +9768,47 @@
    {
     "slug": "fairfield-recreation-ground",
     "url": "https://www.playfinder.com/london/venue/fairfield-recreation-ground",
-    "name": "502 Bad Gateway",
-    "area": null,
-    "address": null,
-    "postcode": null,
-    "lat": null,
-    "lng": null,
-    "region": null,
-    "district": null,
-    "inLondon": false,
+    "name": "Fairfield Recreation Ground",
+    "area": "Kingston upon Thames",
+    "address": "Fairfield Recreation Ground, Greater London, Kingston upon Thames, KT1 2PY",
+    "postcode": "KT1 2PY",
+    "lat": 51.409262,
+    "lng": -0.297549,
+    "region": "London",
+    "district": "Kingston upon Thames",
+    "inLondon": true,
     "hours": null,
     "hoursQuotes": [],
     "facilities": {
      "parking": null,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": null,
      "lit": null,
      "surface": null,
-     "formats": [],
+     "formats": [
+      11
+     ],
      "pitchCount": null
     },
-    "pitches": [],
+    "pitches": [
+     {
+      "url": "https://www.playfinder.com/london/venue/fairfield-recreation-ground/football-11-a-side-pitch-93315",
+      "label": "11 a side pitch | Grass",
+      "format": 11,
+      "surface": "grass",
+      "weekStart": null,
+      "dayAssignment": null,
+      "slotsSeen": 0,
+      "pricedSlots": 0
+     }
+    ],
     "bands": [],
-    "priceSummary": null,
-    "skipped": "page answered 502",
-    "fetchedAt": "2026-09-28T12:00:03.459Z"
+    "priceSummary": "Please see calendar above for availability and prices",
+    "skipped": "no artificial football pitch",
+    "fetchedAt": "2026-10-12T12:54:14.463Z"
    },
    {
     "slug": "featherstone-sports-centre",
@@ -10036,7 +10093,7 @@
     "bands": [],
     "priceSummary": "From £28.38-£79.72/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:03:54.278Z"
+    "fetchedAt": "2026-10-12T12:37:18.152Z"
    },
    {
     "slug": "fidelis-college",
@@ -10130,7 +10187,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:01:57.088Z"
+    "fetchedAt": "2026-10-12T12:55:38.358Z"
    },
    {
     "slug": "finsbury-leisure-centre",
@@ -10227,7 +10284,7 @@
     "bands": [],
     "priceSummary": "From £31.00-£74.45/45 mins",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:59:55.541Z"
+    "fetchedAt": "2026-10-12T12:33:23.862Z"
    },
    {
     "slug": "finsbury-park-sports-partnership",
@@ -10396,7 +10453,7 @@
     "bands": [],
     "priceSummary": "Please enquire for price",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:10:25.832Z"
+    "fetchedAt": "2026-10-12T12:44:18.482Z"
    },
    {
     "slug": "fredricks-hotel-restaurant-spa",
@@ -10428,7 +10485,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:14.805Z"
+    "fetchedAt": "2026-10-12T13:06:37.969Z"
    },
    {
     "slug": "furze-platt-senior-school",
@@ -10460,7 +10517,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:19.733Z"
+    "fetchedAt": "2026-10-12T13:06:43.528Z"
    },
    {
     "slug": "furzeplatt-school",
@@ -10577,7 +10634,7 @@
     "bands": [],
     "priceSummary": "From £35.70-£64.60/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:21:10.691Z"
+    "fetchedAt": "2026-10-12T13:05:29.037Z"
    },
    {
     "slug": "gays-lane-field",
@@ -10622,7 +10679,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:24.687Z"
+    "fetchedAt": "2026-10-12T13:06:49.598Z"
    },
    {
     "slug": "gosling-sports-park",
@@ -10665,7 +10722,7 @@
     "bands": [],
     "priceSummary": "(not specified)",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:59.950Z"
+    "fetchedAt": "2026-10-12T13:06:22.970Z"
    },
    {
     "slug": "grovelands-park",
@@ -10697,7 +10754,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:37.806Z"
+    "fetchedAt": "2026-10-12T13:01:23.719Z"
    },
    {
     "slug": "gunnersbury-park",
@@ -10740,7 +10797,7 @@
     "bands": [],
     "priceSummary": "One off pitch booking- £95 Season long booking - £78/booking",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:00:13.620Z"
+    "fetchedAt": "2026-10-12T12:33:43.259Z"
    },
    {
     "slug": "haberdasher-s-crayford-academy",
@@ -11244,7 +11301,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:55.842Z"
+    "fetchedAt": "2026-10-12T12:58:22.196Z"
    },
    {
     "slug": "haggerston-park",
@@ -11360,7 +11417,7 @@
     "bands": [],
     "priceSummary": "*Please note this venue is currently fully booked*",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:57:49.139Z"
+    "fetchedAt": "2026-10-12T12:31:10.846Z"
    },
    {
     "slug": "hampstead-heath-swimming-ponds",
@@ -11633,7 +11690,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:24.072Z"
+    "fetchedAt": "2026-10-12T12:53:27.843Z"
    },
    {
     "slug": "harris-girls-academy-bromley",
@@ -11727,7 +11784,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:35.179Z"
+    "fetchedAt": "2026-10-12T12:53:38.832Z"
    },
    {
     "slug": "harris-institute-of-teaching-and-leadership",
@@ -11810,7 +11867,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:11.115Z"
+    "fetchedAt": "2026-10-12T12:55:47.133Z"
    },
    {
     "slug": "harris-primary-academy-crystal-palace",
@@ -11906,7 +11963,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:36.161Z"
+    "fetchedAt": "2026-10-12T12:56:06.824Z"
    },
    {
     "slug": "harrow-leisure-centre",
@@ -11949,7 +12006,7 @@
     "bands": [],
     "priceSummary": "From £6.00-£15.91/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:04.835Z"
+    "fetchedAt": "2026-10-12T13:04:14.452Z"
    },
    {
     "slug": "harrow-lodge-park-south",
@@ -12013,7 +12070,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:57:53.310Z"
+    "fetchedAt": "2026-10-12T12:52:07.407Z"
    },
    {
     "slug": "harrow-weald-rec-ground",
@@ -12045,7 +12102,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:05.309Z"
+    "fetchedAt": "2026-10-12T12:52:13.014Z"
    },
    {
     "slug": "hathern-park",
@@ -12100,7 +12157,7 @@
     "bands": [],
     "priceSummary": "Unspecified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:24:12.937Z"
+    "fetchedAt": "2026-10-12T13:08:49.403Z"
    },
    {
     "slug": "haverstock-school",
@@ -12186,7 +12243,7 @@
     "bands": [],
     "priceSummary": "From £70.00-£91.80/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:03:24.830Z"
+    "fetchedAt": "2026-10-12T12:36:47.553Z"
    },
    {
     "slug": "haynes-park",
@@ -12250,7 +12307,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:33.221Z"
+    "fetchedAt": "2026-10-12T12:52:40.030Z"
    },
    {
     "slug": "henry-fawcett-primary-school",
@@ -12346,7 +12403,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:11:31.569Z"
+    "fetchedAt": "2026-10-12T12:45:29.002Z"
    },
    {
     "slug": "highbury-fields",
@@ -12442,7 +12499,7 @@
     "bands": [],
     "priceSummary": "From £72.90-£75.70/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:12:55.242Z"
+    "fetchedAt": "2026-10-12T12:46:50.687Z"
    },
    {
     "slug": "hillside-gardens",
@@ -12538,7 +12595,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:06:37.707Z"
+    "fetchedAt": "2026-10-12T12:59:58.762Z"
    },
    {
     "slug": "holyport-cricket-club",
@@ -12570,7 +12627,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:29.598Z"
+    "fetchedAt": "2026-10-12T13:06:55.101Z"
    },
    {
     "slug": "hurley-cricket-club",
@@ -12602,7 +12659,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:34.521Z"
+    "fetchedAt": "2026-10-12T13:07:00.094Z"
    },
    {
     "slug": "hurley-recreation-ground",
@@ -12647,7 +12704,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:39.444Z"
+    "fetchedAt": "2026-10-12T13:07:05.107Z"
    },
    {
     "slug": "hylands-park",
@@ -12679,7 +12736,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:01:19.458Z"
+    "fetchedAt": "2026-10-12T12:34:54.313Z"
    },
    {
     "slug": "indian-gymkhana-club",
@@ -12912,7 +12969,7 @@
     "bands": [],
     "priceSummary": "Per Hour: £60.40",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:58:08.280Z"
+    "fetchedAt": "2026-10-12T12:31:32.588Z"
    },
    {
     "slug": "john-scurr-primary-school",
@@ -12990,7 +13047,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:10:15.630Z"
+    "fetchedAt": "2026-10-12T12:44:07.094Z"
    },
    {
     "slug": "jubilee-sports-ground",
@@ -13152,52 +13209,39 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:58:23.496Z"
+    "fetchedAt": "2026-10-12T12:31:48.079Z"
    },
    {
     "slug": "kilburn-grange",
     "url": "https://www.playfinder.com/london/venue/kilburn-grange",
-    "name": "Kilburn Grange",
-    "area": "Camden",
-    "address": "Kilburn Grange Road, Kilburn, Camden, NW6 4LB",
-    "postcode": "NW6 4LB",
-    "lat": 51.543471,
-    "lng": -0.196741,
-    "region": "London",
-    "district": "Camden",
-    "inLondon": true,
+    "name": "502 Bad Gateway",
+    "area": null,
+    "address": null,
+    "postcode": null,
+    "lat": null,
+    "lng": null,
+    "region": null,
+    "district": null,
+    "inLondon": false,
     "hours": null,
     "hoursQuotes": [],
     "facilities": {
-     "parking": true,
+     "parking": null,
      "changingRooms": null,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": null,
-     "lit": true,
+     "lit": null,
      "surface": null,
-     "formats": [
-      5
-     ],
+     "formats": [],
      "pitchCount": null
     },
-    "pitches": [
-     {
-      "url": "https://www.playfinder.com/london/venue/kilburn-grange/football-5-a-side-32247",
-      "label": "5 a side | Hard (macadam)",
-      "format": 5,
-      "surface": null,
-      "weekStart": null,
-      "dayAssignment": null,
-      "slotsSeen": 0,
-      "pricedSlots": 0
-     }
-    ],
+    "pitches": [],
     "bands": [],
-    "priceSummary": "From £42.00-£42.60/hour",
-    "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:26.378Z"
+    "priceSummary": null,
+    "skipped": "page answered 502",
+    "fetchedAt": "2026-10-12T13:00:02.228Z"
    },
    {
     "slug": "king-edward-memorial-park",
@@ -13229,7 +13273,7 @@
     "bands": [],
     "priceSummary": null,
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:02.268Z"
+    "fetchedAt": "2026-10-12T12:57:30.355Z"
    },
    {
     "slug": "king-edwards-recreation-ground",
@@ -13325,7 +13369,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:00:15.685Z"
+    "fetchedAt": "2026-10-12T12:54:23.322Z"
    },
    {
     "slug": "king-george-s-park",
@@ -13357,7 +13401,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:00:08.695Z"
+    "fetchedAt": "2026-10-12T12:33:38.241Z"
    },
    {
     "slug": "king-georges-playing-field",
@@ -13483,7 +13527,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:00:29.192Z"
+    "fetchedAt": "2026-10-12T12:54:32.106Z"
    },
    {
     "slug": "king-s-house-school-sports-ground",
@@ -13619,7 +13663,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:12:05.420Z"
+    "fetchedAt": "2026-10-12T12:46:04.596Z"
    },
    {
     "slug": "knowl-hill-village-hall",
@@ -13651,7 +13695,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:44.363Z"
+    "fetchedAt": "2026-10-12T13:07:10.773Z"
    },
    {
     "slug": "la-sainte-union-school",
@@ -13758,7 +13802,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:49.300Z"
+    "fetchedAt": "2026-10-12T13:07:16.247Z"
    },
    {
     "slug": "larkhall-park",
@@ -13841,7 +13885,7 @@
     "bands": [],
     "priceSummary": "Tennis Court £5.25/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:59.923Z"
+    "fetchedAt": "2026-10-12T13:04:09.403Z"
    },
    {
     "slug": "latchmere-leisure-centre",
@@ -13935,7 +13979,7 @@
     "bands": [],
     "priceSummary": "Anytime - £5.15",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:01.620Z"
+    "fetchedAt": "2026-10-12T13:00:41.677Z"
    },
    {
     "slug": "latchmere-recreation-ground",
@@ -14041,7 +14085,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:00:38.681Z"
+    "fetchedAt": "2026-10-12T12:54:41.649Z"
    },
    {
     "slug": "leader-s-gardens",
@@ -14073,7 +14117,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:42.869Z"
+    "fetchedAt": "2026-10-12T13:01:28.826Z"
    },
    {
     "slug": "leathermarket-gardens",
@@ -14161,7 +14205,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:01:27.387Z"
+    "fetchedAt": "2026-10-12T12:35:02.991Z"
    },
    {
     "slug": "lensbury-club",
@@ -14248,7 +14292,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:01:14.617Z"
+    "fetchedAt": "2026-10-12T12:34:49.273Z"
    },
    {
     "slug": "leyton-sports-ground",
@@ -14425,7 +14469,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:03:02.339Z"
+    "fetchedAt": "2026-10-12T12:56:30.904Z"
    },
    {
     "slug": "lifestyle-fitness-roehampton",
@@ -14508,7 +14552,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:53.248Z"
+    "fetchedAt": "2026-10-12T12:56:22.674Z"
    },
    {
     "slug": "lincoln-s-inn-fields",
@@ -14540,7 +14584,7 @@
     "bands": [],
     "priceSummary": "From £11.70-£11.90/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:47.794Z"
+    "fetchedAt": "2026-10-12T13:01:34.269Z"
    },
    {
     "slug": "littlewick-green-cricket-club",
@@ -14572,7 +14616,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:54.212Z"
+    "fetchedAt": "2026-10-12T13:07:21.910Z"
    },
    {
     "slug": "london-fields",
@@ -14604,7 +14648,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:52.624Z"
+    "fetchedAt": "2026-10-12T13:01:40.160Z"
    },
    {
     "slug": "london-tigers-sports-centre",
@@ -14740,7 +14784,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:19:21.151Z"
+    "fetchedAt": "2026-10-12T13:03:26.216Z"
    },
    {
     "slug": "loughborough-rfc",
@@ -14785,7 +14829,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:24:30.525Z"
+    "fetchedAt": "2026-10-12T13:09:09.429Z"
    },
    {
     "slug": "low-hall-sports-ground",
@@ -14901,7 +14945,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:58:40.992Z"
+    "fetchedAt": "2026-10-12T12:32:09.069Z"
    },
    {
     "slug": "lyttelton-playing-fields",
@@ -14933,7 +14977,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:13:38.472Z"
+    "fetchedAt": "2026-10-12T12:47:43.849Z"
    },
    {
     "slug": "magnet-leisure-centre",
@@ -15027,7 +15071,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:29.071Z"
+    "fetchedAt": "2026-10-12T13:04:42.140Z"
    },
    {
     "slug": "maidenhead-bray-cricket-hockey-club",
@@ -15070,7 +15114,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:22:59.187Z"
+    "fetchedAt": "2026-10-12T13:07:27.839Z"
    },
    {
     "slug": "maidenhead-golf-centre",
@@ -15153,7 +15197,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:04.137Z"
+    "fetchedAt": "2026-10-12T13:07:33.496Z"
    },
    {
     "slug": "maidenhead-golf-club",
@@ -15185,7 +15229,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:09.065Z"
+    "fetchedAt": "2026-10-12T13:07:39.072Z"
    },
    {
     "slug": "mallinson-sports-centre",
@@ -15279,7 +15323,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:08.816Z"
+    "fetchedAt": "2026-10-12T13:00:50.869Z"
    },
    {
     "slug": "manor-park",
@@ -15395,7 +15439,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:00:51.648Z"
+    "fetchedAt": "2026-10-12T12:54:49.688Z"
    },
    {
     "slug": "marcus-lipton-youth-enterprise",
@@ -15473,7 +15517,7 @@
     "bands": [],
     "priceSummary": "£35/hr",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:08.429Z"
+    "fetchedAt": "2026-10-12T13:03:12.666Z"
    },
    {
     "slug": "market-road-atp-s",
@@ -15579,7 +15623,7 @@
     "bands": [],
     "priceSummary": "From £54.14-£94.75/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:13:48.329Z"
+    "fetchedAt": "2026-10-12T12:47:54.103Z"
    },
    {
     "slug": "markfield-park-",
@@ -15855,7 +15899,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:09:55.126Z"
+    "fetchedAt": "2026-10-12T12:43:45.085Z"
    },
    {
     "slug": "merstham-recreation-ground",
@@ -15887,7 +15931,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:53:25.000Z"
+    "fetchedAt": "2026-10-12T12:50:54.140Z"
    },
    {
     "slug": "middlesex-stadium",
@@ -15962,7 +16006,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:09:04.733Z"
+    "fetchedAt": "2026-10-12T12:42:51.565Z"
    },
    {
     "slug": "mile-end-park",
@@ -16079,7 +16123,7 @@
     "bands": [],
     "priceSummary": "From £53.35-£64.53/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:59:17.497Z"
+    "fetchedAt": "2026-10-12T12:32:45.479Z"
    },
    {
     "slug": "millfields-park",
@@ -16111,7 +16155,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:01.391Z"
+    "fetchedAt": "2026-10-12T12:58:27.327Z"
    },
    {
     "slug": "mintstreet-gardens",
@@ -16199,7 +16243,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-09-28T11:56:43.852Z"
+    "fetchedAt": "2026-10-12T12:51:06.995Z"
    },
    {
     "slug": "monks-hill-sports-centre",
@@ -16305,7 +16349,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:09:23.504Z"
+    "fetchedAt": "2026-10-12T12:43:11.921Z"
    },
    {
     "slug": "montesole-playing-fields-",
@@ -16337,7 +16381,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:15:18.486Z"
+    "fetchedAt": "2026-10-12T12:49:26.383Z"
    },
    {
     "slug": "montrose-park",
@@ -16382,7 +16426,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:07.216Z"
+    "fetchedAt": "2026-10-12T12:58:32.447Z"
    },
    {
     "slug": "muswell-hill-playing-field",
@@ -16488,7 +16532,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:41.091Z"
+    "fetchedAt": "2026-10-12T13:04:55.434Z"
    },
    {
     "slug": "nanpantan-sports-ground",
@@ -16571,7 +16615,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:24:07.981Z"
+    "fetchedAt": "2026-10-12T13:08:43.321Z"
    },
    {
     "slug": "new-river-sport-fitness",
@@ -16689,7 +16733,7 @@
     "bands": [],
     "priceSummary": "From £18.29-£35.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:13:19.308Z"
+    "fetchedAt": "2026-10-12T12:47:23.369Z"
    },
    {
     "slug": "new-southgate-recreation-ground",
@@ -16734,7 +16778,7 @@
     "bands": [],
     "priceSummary": "£96.50",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:57.450Z"
+    "fetchedAt": "2026-10-12T13:01:46.823Z"
    },
    {
     "slug": "newlands-girl-s-school",
@@ -16777,7 +16821,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:13.971Z"
+    "fetchedAt": "2026-10-12T13:07:44.193Z"
    },
    {
     "slug": "noak-hill-sports-complex",
@@ -16893,7 +16937,7 @@
     "bands": [],
     "priceSummary": "From £45.00-£80.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:00:55.071Z"
+    "fetchedAt": "2026-10-12T12:34:27.371Z"
    },
    {
     "slug": "north-acton-playing-fields",
@@ -16968,7 +17012,7 @@
     "bands": [],
     "priceSummary": "Please enquire for availability and price",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:02:20.408Z"
+    "fetchedAt": "2026-10-12T12:47:08.903Z"
    },
    {
     "slug": "north-greenwich-astroturf",
@@ -17055,7 +17099,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:09:39.256Z"
+    "fetchedAt": "2026-10-12T12:43:28.773Z"
    },
    {
     "slug": "north-london-padel-club",
@@ -17087,7 +17131,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-21T11:02:23.620Z"
+    "fetchedAt": "2026-10-12T12:50:42.964Z"
    },
    {
     "slug": "oaken-grove",
@@ -17132,7 +17176,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:18.892Z"
+    "fetchedAt": "2026-10-12T13:07:50.286Z"
    },
    {
     "slug": "oakwood-park",
@@ -17164,7 +17208,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:02.283Z"
+    "fetchedAt": "2026-10-12T13:01:53.079Z"
    },
    {
     "slug": "oasis-academy-arena",
@@ -17353,7 +17397,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:43.502Z"
+    "fetchedAt": "2026-10-12T13:08:17.824Z"
    },
    {
     "slug": "one-ymca-st-albans",
@@ -17479,7 +17523,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:21.408Z"
+    "fetchedAt": "2026-10-12T12:50:37.868Z"
    },
    {
     "slug": "palewell-common-pitch-and-putt",
@@ -17562,7 +17606,7 @@
     "bands": [],
     "priceSummary": "£5",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:40.957Z"
+    "fetchedAt": "2026-10-12T13:02:38.158Z"
    },
    {
     "slug": "paradise-park",
@@ -17658,7 +17702,7 @@
     "bands": [],
     "priceSummary": "From £41.30-£42.75/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:00:18.470Z"
+    "fetchedAt": "2026-10-12T12:33:48.270Z"
    },
    {
     "slug": "park-hill-recreation-ground",
@@ -17690,12 +17734,12 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:13:43.399Z"
+    "fetchedAt": "2026-10-12T12:47:48.972Z"
    },
    {
     "slug": "park-sports-lammas-park",
     "url": "https://www.playfinder.com/london/venue/park-sports-lammas-park",
-    "name": "502 Bad Gateway",
+    "name": "404 PAGE NOT FOUND",
     "area": null,
     "address": null,
     "postcode": null,
@@ -17721,8 +17765,8 @@
     "pitches": [],
     "bands": [],
     "priceSummary": null,
-    "skipped": "page answered 502",
-    "fetchedAt": "2026-10-05T12:00:03.849Z"
+    "skipped": "page answered 404",
+    "fetchedAt": "2026-10-12T12:33:33.196Z"
    },
    {
     "slug": "parmiters-sports-ground",
@@ -17982,7 +18026,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:14.749Z"
+    "fetchedAt": "2026-10-12T12:58:39.879Z"
    },
    {
     "slug": "pinkneys-green-cricket-club",
@@ -18014,7 +18058,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:23.810Z"
+    "fetchedAt": "2026-10-12T13:07:55.405Z"
    },
    {
     "slug": "pinner-village-gardens-",
@@ -18046,7 +18090,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:27.618Z"
+    "fetchedAt": "2026-10-12T12:52:34.548Z"
    },
    {
     "slug": "playfootball-mottingham-coldharbour",
@@ -18270,7 +18314,7 @@
     "bands": [],
     "priceSummary": "Peak £65.40/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:14:14.464Z"
+    "fetchedAt": "2026-10-12T12:48:19.835Z"
    },
    {
     "slug": "poplar-recreationground",
@@ -18302,7 +18346,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:19.140Z"
+    "fetchedAt": "2026-10-12T12:57:46.917Z"
    },
    {
     "slug": "powerleague-barnet",
@@ -18389,20 +18433,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 184,
-      "pricedSlots": 153
+      "slotsSeen": 183,
+      "pricedSlots": 160
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-barnet/football-7-a-side-36072",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 85,
-      "pricedSlots": 50
+      "pricedSlots": 48
      }
     ],
     "bands": [
@@ -18422,7 +18466,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 69
+      "slotsSeen": 80
      },
      {
       "format": 5,
@@ -18445,7 +18489,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 65
+      "slotsSeen": 61
      },
      {
       "format": 5,
@@ -18502,14 +18546,14 @@
       "windows": [
        [
         "09:30",
-        "19:30"
+        "13:30"
        ],
        [
-        "21:30",
-        "21:30"
+        "15:30",
+        "18:30"
        ]
       ],
-      "slotsSeen": 12
+      "slotsSeen": 9
      },
      {
       "format": 7,
@@ -18526,11 +18570,27 @@
        ]
       ],
       "slotsSeen": 1
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 140,
+      "minutes": 60,
+      "days": [
+       "tue"
+      ],
+      "windows": [
+       [
+        "20:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 1
      }
     ],
     "priceSummary": "From £64.50-£79.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:54:21.683Z"
+    "fetchedAt": "2026-10-12T12:27:35.420Z"
    },
    {
     "slug": "powerleague-battersea",
@@ -18611,9 +18671,9 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 163,
+      "slotsSeen": 159,
       "pricedSlots": 109
      },
      {
@@ -18621,10 +18681,10 @@
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 75,
-      "pricedSlots": 41
+      "slotsSeen": 77,
+      "pricedSlots": 36
      }
     ],
     "bands": [
@@ -18667,7 +18727,7 @@
         "20:00"
        ]
       ],
-      "slotsSeen": 21
+      "slotsSeen": 23
      },
      {
       "format": 5,
@@ -18684,7 +18744,7 @@
         "20:30"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 5
      },
      {
       "format": 7,
@@ -18697,35 +18757,16 @@
        "wed",
        "thu",
        "fri",
-       "sat"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "16:00"
-       ]
-      ],
-      "slotsSeen": 30
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 107.5,
-      "minutes": 60,
-      "days": [
+       "sat",
        "sun"
       ],
       "windows": [
        [
         "09:00",
-        "09:00"
-       ],
-       [
-        "13:00",
-        "20:00"
+        "17:00"
        ]
       ],
-      "slotsSeen": 9
+      "slotsSeen": 35
      },
      {
       "format": 7,
@@ -18737,20 +18778,16 @@
       ],
       "windows": [
        [
-        "19:00",
-        "19:00"
-       ],
-       [
         "21:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 2
+      "slotsSeen": 1
      }
     ],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:56:39.236Z"
+    "fetchedAt": "2026-10-12T12:29:54.592Z"
    },
    {
     "slug": "powerleague-croydon",
@@ -18837,20 +18874,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 103,
-      "pricedSlots": 75
+      "slotsSeen": 105,
+      "pricedSlots": 72
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-croydon/football-7-a-side-36073",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 55,
-      "pricedSlots": 23
+      "pricedSlots": 24
      }
     ],
     "bands": [
@@ -18877,37 +18914,17 @@
       "amount": 105,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
-       "wed",
        "thu"
       ],
       "windows": [
        [
-        "19:00",
+        "20:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 11
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 95,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri"
-      ],
-      "windows": [
-       [
-        "17:00",
-        "17:30"
-       ]
-      ],
-      "slotsSeen": 5
+      "slotsSeen": 10
      },
      {
       "format": 5,
@@ -18923,7 +18940,25 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 6
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "17:00",
+        "17:00"
+       ]
+      ],
+      "slotsSeen": 3
      },
      {
       "format": 5,
@@ -18932,7 +18967,6 @@
       "minutes": 90,
       "days": [
        "mon",
-       "tue",
        "wed",
        "thu"
       ],
@@ -18942,7 +18976,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 3
      },
      {
       "format": 5,
@@ -18966,7 +19000,7 @@
       "amount": 105,
       "minutes": 60,
       "days": [
-       "mon"
+       "wed"
       ],
       "windows": [
        [
@@ -18982,9 +19016,9 @@
       "amount": 100,
       "minutes": 60,
       "days": [
-       "tue",
+       "mon",
        "thu",
-       "fri",
+       "sat",
        "sun"
       ],
       "windows": [
@@ -18994,34 +19028,10 @@
        ],
        [
         "11:00",
-        "17:00"
-       ],
-       [
-        "20:00",
-        "20:00"
-       ]
-      ],
-      "slotsSeen": 11
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 100,
-      "minutes": 60,
-      "days": [
-       "sat"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "09:00"
-       ],
-       [
-        "12:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 20
      },
      {
       "format": 7,
@@ -19029,20 +19039,27 @@
       "amount": 125,
       "minutes": 60,
       "days": [
+       "tue",
+       "wed",
+       "thu",
        "fri"
       ],
       "windows": [
        [
         "19:00",
         "19:00"
+       ],
+       [
+        "22:00",
+        "22:00"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 4
      }
     ],
     "priceSummary": "From £44.50-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:54:31.553Z"
+    "fetchedAt": "2026-10-12T12:27:45.732Z"
    },
    {
     "slug": "powerleague-enfield",
@@ -19129,20 +19146,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 49,
-      "pricedSlots": 39
+      "pricedSlots": 38
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-enfield/football-7-a-side-36028",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 50,
-      "pricedSlots": 18
+      "slotsSeen": 47,
+      "pricedSlots": 24
      }
     ],
     "bands": [
@@ -19195,7 +19212,6 @@
       "days": [
        "mon",
        "tue",
-       "wed",
        "fri"
       ],
       "windows": [
@@ -19204,7 +19220,7 @@
         "20:00"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 5
      },
      {
       "format": 7,
@@ -19212,6 +19228,7 @@
       "amount": 95,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
        "wed",
        "thu",
@@ -19220,7 +19237,7 @@
       ],
       "windows": [
        [
-        "13:30",
+        "11:30",
         "17:30"
        ],
        [
@@ -19228,7 +19245,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 13
      },
      {
       "format": 7,
@@ -19241,14 +19258,10 @@
       "windows": [
        [
         "15:30",
-        "17:30"
-       ],
-       [
-        "20:30",
         "20:30"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 6
      },
      {
       "format": 7,
@@ -19256,8 +19269,11 @@
       "amount": 120,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
-       "thu"
+       "wed",
+       "thu",
+       "fri"
       ],
       "windows": [
        [
@@ -19269,12 +19285,12 @@
         "20:30"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 5
      }
     ],
     "priceSummary": "Around £64.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:56:08.790Z"
+    "fetchedAt": "2026-10-12T12:29:23.744Z"
    },
    {
     "slug": "powerleague-fairlop",
@@ -19361,9 +19377,9 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 184,
+      "slotsSeen": 186,
       "pricedSlots": 177
      },
      {
@@ -19371,19 +19387,19 @@
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 96,
-      "pricedSlots": 80
+      "slotsSeen": 95,
+      "pricedSlots": 76
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-fairlop/football-6-a-side-42972",
       "label": "6 a side | 3G Astroturf",
       "format": 6,
       "surface": "3g",
-      "weekStart": "2026-10-07",
+      "weekStart": "2026-10-14",
       "dayAssignment": "sequence",
-      "slotsSeen": 94,
+      "slotsSeen": 92,
       "pricedSlots": 78
      }
     ],
@@ -19406,7 +19422,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 86
+      "slotsSeen": 84
      },
      {
       "format": 5,
@@ -19446,6 +19462,22 @@
       "slotsSeen": 37
      },
      {
+      "format": 5,
+      "surface": "3g",
+      "amount": 75,
+      "minutes": 50,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "18:50",
+        "19:40"
+       ]
+      ],
+      "slotsSeen": 2
+     },
+     {
       "format": 7,
       "surface": "3g",
       "amount": 100,
@@ -19463,7 +19495,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 45
+      "slotsSeen": 44
      },
      {
       "format": 7,
@@ -19480,7 +19512,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 28
+      "slotsSeen": 27
      },
      {
       "format": 7,
@@ -19496,15 +19528,11 @@
       ],
       "windows": [
        [
-        "19:00",
-        "19:00"
-       ],
-       [
         "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 5
      },
      {
       "format": 6,
@@ -19541,7 +19569,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 25
      },
      {
       "format": 6,
@@ -19561,12 +19589,12 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 13
      }
     ],
     "priceSummary": "From £44.55-£59.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:54:42.135Z"
+    "fetchedAt": "2026-10-12T12:27:56.072Z"
    },
    {
     "slug": "powerleague-finchley",
@@ -19653,7 +19681,7 @@
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 45,
       "pricedSlots": 20
@@ -19692,19 +19720,11 @@
       ],
       "windows": [
        [
-        "09:00",
-        "09:00"
-       ],
-       [
         "13:00",
-        "13:00"
-       ],
-       [
-        "16:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 13
+      "slotsSeen": 14
      },
      {
       "format": 7,
@@ -19727,7 +19747,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 5
      },
      {
       "format": 7,
@@ -19748,7 +19768,7 @@
     ],
     "priceSummary": "From £69.50-£89.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:54:06.922Z"
+    "fetchedAt": "2026-10-12T12:27:18.332Z"
    },
    {
     "slug": "powerleague-harrow",
@@ -19835,10 +19855,10 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 59,
-      "pricedSlots": 30
+      "pricedSlots": 33
      }
     ],
     "bands": [
@@ -19857,7 +19877,7 @@
         "19:30"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 24
      },
      {
       "format": 5,
@@ -19867,16 +19887,19 @@
       "days": [
        "mon",
        "tue",
-       "wed",
-       "thu"
+       "wed"
       ],
       "windows": [
        [
         "17:30",
+        "17:30"
+       ],
+       [
+        "19:30",
         "20:30"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 5
      },
      {
       "format": 5,
@@ -19897,11 +19920,27 @@
        ]
       ],
       "slotsSeen": 3
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 72,
+      "minutes": 45,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "19:50",
+        "19:50"
+       ]
+      ],
+      "slotsSeen": 1
      }
     ],
     "priceSummary": "Please check calendar",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:56:48.899Z"
+    "fetchedAt": "2026-10-12T12:30:07.343Z"
    },
    {
     "slug": "powerleague-mill-hill",
@@ -19988,30 +20027,30 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 100,
-      "pricedSlots": 85
-     },
-     {
-      "url": "https://www.playfinder.com/london/venue/powerleague-mill-hill/football-9-a-side-42974",
-      "label": "9 a side | 3G Astroturf",
-      "format": 9,
-      "surface": "3g",
-      "weekStart": "2026-10-07",
-      "dayAssignment": "sequence",
-      "slotsSeen": 97,
-      "pricedSlots": 63
+      "pricedSlots": 84
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-mill-hill/football-7-a-side-36075",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
+      "dayAssignment": "sequence",
+      "slotsSeen": 97,
+      "pricedSlots": 49
+     },
+     {
+      "url": "https://www.playfinder.com/london/venue/powerleague-mill-hill/football-9-a-side-42974",
+      "label": "9 a side | 3G Astroturf",
+      "format": 9,
+      "surface": "3g",
+      "weekStart": "2026-10-14",
       "dayAssignment": "sequence",
       "slotsSeen": 95,
-      "pricedSlots": 49
+      "pricedSlots": 63
      }
     ],
     "bands": [
@@ -20069,66 +20108,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 13
-     },
-     {
-      "format": 9,
-      "surface": "3g",
-      "amount": 140,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "07:30",
-        "17:30"
-       ]
-      ],
-      "slotsSeen": 30
-     },
-     {
-      "format": 9,
-      "surface": "3g",
-      "amount": 140,
-      "minutes": 60,
-      "days": [
-       "fri",
-       "sat",
-       "sun"
-      ],
-      "windows": [
-       [
-        "07:30",
-        "19:30"
-       ],
-       [
-        "21:30",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 28
-     },
-     {
-      "format": 9,
-      "surface": "3g",
-      "amount": 150,
-      "minutes": 60,
-      "days": [
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "19:30",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 5
+      "slotsSeen": 12
      },
      {
       "format": 7,
@@ -20146,10 +20126,10 @@
       "windows": [
        [
         "08:30",
-        "17:30"
+        "16:30"
        ]
       ],
-      "slotsSeen": 36
+      "slotsSeen": 35
      },
      {
       "format": 7,
@@ -20165,6 +20145,10 @@
         "08:30"
        ],
        [
+        "13:30",
+        "14:30"
+       ],
+       [
         "16:30",
         "19:30"
        ],
@@ -20173,7 +20157,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 8
      },
      {
       "format": 7,
@@ -20212,25 +20196,67 @@
       "slotsSeen": 2
      },
      {
-      "format": 7,
+      "format": 9,
       "surface": "3g",
       "amount": 140,
       "minutes": 60,
       "days": [
+       "mon",
+       "tue",
+       "wed",
        "thu"
       ],
       "windows": [
        [
-        "18:30",
-        "18:30"
+        "07:30",
+        "17:30"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 32
+     },
+     {
+      "format": 9,
+      "surface": "3g",
+      "amount": 140,
+      "minutes": 60,
+      "days": [
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "07:30",
+        "19:30"
+       ],
+       [
+        "21:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 27
+     },
+     {
+      "format": 9,
+      "surface": "3g",
+      "amount": 150,
+      "minutes": 60,
+      "days": [
+       "tue",
+       "thu"
+      ],
+      "windows": [
+       [
+        "19:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 4
      }
     ],
     "priceSummary": "From £64.95-£129.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:54:57.721Z"
+    "fetchedAt": "2026-10-12T12:28:11.872Z"
    },
    {
     "slug": "powerleague-newham",
@@ -20317,20 +20343,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 188,
-      "pricedSlots": 178
+      "slotsSeen": 187,
+      "pricedSlots": 177
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-newham/football-7-a-side-36043",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 109,
-      "pricedSlots": 81
+      "slotsSeen": 107,
+      "pricedSlots": 76
      }
     ],
     "bands": [
@@ -20352,7 +20378,7 @@
         "18:15"
        ]
       ],
-      "slotsSeen": 85
+      "slotsSeen": 84
      },
      {
       "format": 5,
@@ -20409,7 +20435,7 @@
         "18:15"
        ]
       ],
-      "slotsSeen": 53
+      "slotsSeen": 51
      },
      {
       "format": 7,
@@ -20426,11 +20452,11 @@
         "19:15"
        ],
        [
-        "22:15",
+        "21:15",
         "23:15"
        ]
       ],
-      "slotsSeen": 23
+      "slotsSeen": 22
      },
      {
       "format": 7,
@@ -20438,7 +20464,6 @@
       "amount": 120,
       "minutes": 60,
       "days": [
-       "mon",
        "wed",
        "fri"
       ],
@@ -20448,16 +20473,16 @@
         "19:15"
        ],
        [
-        "21:15",
+        "22:15",
         "23:15"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 3
      }
     ],
     "priceSummary": "From £54.50-£64.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:55:13.277Z"
+    "fetchedAt": "2026-10-12T12:28:26.772Z"
    },
    {
     "slug": "powerleague-romford",
@@ -20544,17 +20569,17 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-07",
+      "weekStart": "2026-10-14",
       "dayAssignment": "sequence",
-      "slotsSeen": 96,
-      "pricedSlots": 85
+      "slotsSeen": 95,
+      "pricedSlots": 82
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-romford/football-7-a-side-42969",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-07",
+      "weekStart": "2026-10-14",
       "dayAssignment": "sequence",
       "slotsSeen": 95,
       "pricedSlots": 69
@@ -20579,7 +20604,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 42
+      "slotsSeen": 41
      },
      {
       "format": 5,
@@ -20596,7 +20621,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 25
      },
      {
       "format": 5,
@@ -20616,7 +20641,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 17
+      "slotsSeen": 16
      },
      {
       "format": 7,
@@ -20633,7 +20658,7 @@
       "windows": [
        [
         "09:00",
-        "16:00"
+        "17:00"
        ]
       ],
       "slotsSeen": 37
@@ -20678,7 +20703,7 @@
     ],
     "priceSummary": "Please check calendar above",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:56:53.736Z"
+    "fetchedAt": "2026-10-12T12:30:12.504Z"
    },
    {
     "slug": "powerleague-shepherd-s-bush",
@@ -20765,10 +20790,10 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-07",
+      "weekStart": "2026-10-14",
       "dayAssignment": "sequence",
-      "slotsSeen": 97,
-      "pricedSlots": 73
+      "slotsSeen": 94,
+      "pricedSlots": 84
      }
     ],
     "bands": [
@@ -20790,7 +20815,26 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 51
+      "slotsSeen": 48
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 99.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "20:00"
+       ]
+      ],
+      "slotsSeen": 13
      },
      {
       "format": 5,
@@ -20811,26 +20855,39 @@
      {
       "format": 5,
       "surface": "3g",
-      "amount": 99.5,
+      "amount": 75,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
+       "fri"
       ],
       "windows": [
        [
-        "18:00",
+        "09:00",
+        "16:00"
+       ]
+      ],
+      "slotsSeen": 8
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 80,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "17:00",
         "20:00"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 4
      }
     ],
     "priceSummary": "Please check calendar above",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:57:04.600Z"
+    "fetchedAt": "2026-10-12T12:30:22.795Z"
    },
    {
     "slug": "powerleague-shoreditch",
@@ -20918,20 +20975,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 114,
-      "pricedSlots": 101
+      "slotsSeen": 112,
+      "pricedSlots": 98
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-shoreditch/football-7-a-side-36030",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 119,
-      "pricedSlots": 83
+      "slotsSeen": 117,
+      "pricedSlots": 79
      }
     ],
     "bands": [
@@ -20957,7 +21014,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 64
+      "slotsSeen": 62
      },
      {
       "format": 5,
@@ -20994,7 +21051,7 @@
         "20:20"
        ]
       ],
-      "slotsSeen": 15
+      "slotsSeen": 14
      },
      {
       "format": 7,
@@ -21015,7 +21072,7 @@
        ],
        [
         "21:00",
-        "21:00"
+        "21:15"
        ]
       ],
       "slotsSeen": 57
@@ -21031,11 +21088,11 @@
       ],
       "windows": [
        [
-        "12:00",
+        "13:00",
         "20:00"
        ]
       ],
-      "slotsSeen": 17
+      "slotsSeen": 16
      },
      {
       "format": 7,
@@ -21043,9 +21100,7 @@
       "amount": 145,
       "minutes": 40,
       "days": [
-       "mon",
-       "wed",
-       "thu",
+       "tue",
        "fri"
       ],
       "windows": [
@@ -21054,12 +21109,12 @@
         "20:20"
        ]
       ],
-      "slotsSeen": 9
+      "slotsSeen": 6
      }
     ],
     "priceSummary": "From £35.97-£99.50/40 mins",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:56:19.231Z"
+    "fetchedAt": "2026-10-12T12:29:34.063Z"
    },
    {
     "slug": "powerleague-slough",
@@ -21146,9 +21201,9 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 100,
+      "slotsSeen": 99,
       "pricedSlots": 88
      },
      {
@@ -21156,10 +21211,10 @@
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 53,
-      "pricedSlots": 34
+      "pricedSlots": 29
      }
     ],
     "bands": [
@@ -21186,7 +21241,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 30
+      "slotsSeen": 31
      },
      {
       "format": 5,
@@ -21225,7 +21280,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 13
      },
      {
       "format": 5,
@@ -21244,7 +21299,7 @@
         "20:30"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 10
      },
      {
       "format": 5,
@@ -21256,11 +21311,11 @@
       ],
       "windows": [
        [
-        "18:30",
+        "18:00",
         "21:30"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 7
      },
      {
       "format": 7,
@@ -21285,7 +21340,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 15
+      "slotsSeen": 14
      },
      {
       "format": 7,
@@ -21298,10 +21353,14 @@
       "windows": [
        [
         "09:00",
+        "09:00"
+       ],
+       [
+        "11:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 13
      },
      {
       "format": 7,
@@ -21310,21 +21369,20 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue",
        "fri"
       ],
       "windows": [
        [
         "18:00",
-        "20:00"
+        "19:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 2
      }
     ],
     "priceSummary": "Around £64.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:56:29.009Z"
+    "fetchedAt": "2026-10-12T12:29:44.482Z"
    },
    {
     "slug": "powerleague-sunbury-on-thames",
@@ -21411,30 +21469,30 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 96,
-      "pricedSlots": 74
+      "slotsSeen": 93,
+      "pricedSlots": 73
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-sunbury-on-thames/football-7-a-side-36032",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 90,
-      "pricedSlots": 61
+      "slotsSeen": 88,
+      "pricedSlots": 60
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-sunbury-on-thames/football-6-a-side-42978",
       "label": "6 a side | 3G Astroturf",
       "format": 6,
       "surface": "3g",
-      "weekStart": "2026-10-07",
+      "weekStart": "2026-10-14",
       "dayAssignment": "sequence",
-      "slotsSeen": 82,
-      "pricedSlots": 66
+      "slotsSeen": 79,
+      "pricedSlots": 65
      }
     ],
     "bands": [
@@ -21457,7 +21515,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 47
+      "slotsSeen": 46
      },
      {
       "format": 5,
@@ -21481,6 +21539,7 @@
       "amount": 99,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
        "wed",
        "thu",
@@ -21529,7 +21588,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 47
+      "slotsSeen": 46
      },
      {
       "format": 7,
@@ -21628,7 +21687,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 9
      },
      {
       "format": 6,
@@ -21650,7 +21709,7 @@
     ],
     "priceSummary": "From £49.05-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:55:54.037Z"
+    "fetchedAt": "2026-10-12T12:29:09.082Z"
    },
    {
     "slug": "powerleague-tottenham",
@@ -21737,19 +21796,19 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 58,
-      "pricedSlots": 56
+      "slotsSeen": 57,
+      "pricedSlots": 54
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-tottenham/football-7-a-side-36029",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 58,
+      "slotsSeen": 57,
       "pricedSlots": 40
      }
     ],
@@ -21775,7 +21834,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 22
+      "slotsSeen": 21
      },
      {
       "format": 5,
@@ -21812,7 +21871,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 15
+      "slotsSeen": 14
      },
      {
       "format": 7,
@@ -21831,7 +21890,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 18
+      "slotsSeen": 17
      },
      {
       "format": 7,
@@ -21864,7 +21923,7 @@
       "windows": [
        [
         "18:00",
-        "19:00"
+        "20:00"
        ],
        [
         "22:00",
@@ -21884,19 +21943,19 @@
       "windows": [
        [
         "16:00",
-        "17:00"
+        "18:00"
        ],
        [
         "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 4
      }
     ],
     "priceSummary": "From £54.50-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:55:23.897Z"
+    "fetchedAt": "2026-10-12T12:28:37.901Z"
    },
    {
     "slug": "powerleague-vauxhall",
@@ -21983,20 +22042,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 73,
-      "pricedSlots": 57
+      "slotsSeen": 72,
+      "pricedSlots": 54
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-vauxhall/football-7-a-side-36087",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
-      "slotsSeen": 74,
-      "pricedSlots": 22
+      "slotsSeen": 70,
+      "pricedSlots": 20
      }
     ],
     "bands": [
@@ -22032,18 +22091,17 @@
       "amount": 82.5,
       "minutes": 60,
       "days": [
-       "mon",
        "tue",
        "wed",
-       "thu"
+       "fri"
       ],
       "windows": [
        [
         "17:00",
-        "17:00"
+        "20:00"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 5
      },
      {
       "format": 5,
@@ -22052,28 +22110,7 @@
       "minutes": 60,
       "days": [
        "mon",
-       "wed",
        "thu"
-      ],
-      "windows": [
-       [
-        "18:00",
-        "18:00"
-       ],
-       [
-        "20:00",
-        "20:00"
-       ]
-      ],
-      "slotsSeen": 4
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 82.5,
-      "minutes": 60,
-      "days": [
-       "fri"
       ],
       "windows": [
        [
@@ -22089,11 +22126,11 @@
       "amount": 107,
       "minutes": 60,
       "days": [
-       "mon",
        "tue",
        "wed",
        "thu",
        "fri",
+       "sat",
        "sun"
       ],
       "windows": [
@@ -22102,28 +22139,12 @@
         "16:00"
        ]
       ],
-      "slotsSeen": 21
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 112,
-      "minutes": 60,
-      "days": [
-       "thu"
-      ],
-      "windows": [
-       [
-        "17:00",
-        "17:00"
-       ]
-      ],
-      "slotsSeen": 1
+      "slotsSeen": 20
      }
     ],
     "priceSummary": "From £59.50-£79.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:55:44.181Z"
+    "fetchedAt": "2026-10-12T12:28:57.860Z"
    },
    {
     "slug": "powerleague-watford",
@@ -22210,20 +22231,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 98,
-      "pricedSlots": 75
+      "pricedSlots": 77
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-watford/football-7-a-side-36035",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-05",
+      "weekStart": "2026-10-12",
       "dayAssignment": "sequence",
       "slotsSeen": 72,
-      "pricedSlots": 42
+      "pricedSlots": 39
      }
     ],
     "bands": [
@@ -22242,7 +22263,7 @@
         "20:00"
        ]
       ],
-      "slotsSeen": 42
+      "slotsSeen": 43
      },
      {
       "format": 5,
@@ -22280,7 +22301,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 12
      },
      {
       "format": 5,
@@ -22311,10 +22332,10 @@
       "windows": [
        [
         "10:30",
-        "20:00"
+        "19:30"
        ]
       ],
-      "slotsSeen": 28
+      "slotsSeen": 25
      },
      {
       "format": 7,
@@ -22348,16 +22369,32 @@
       ],
       "windows": [
        [
-        "20:30",
+        "21:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 4
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 110,
+      "minutes": 30,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 1
      }
     ],
     "priceSummary": "From £49.50-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T11:55:34.466Z"
+    "fetchedAt": "2026-10-12T12:28:48.234Z"
    },
    {
     "slug": "princes-park-youth-football-club",
@@ -22453,7 +22490,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:03:12.202Z"
+    "fetchedAt": "2026-10-12T12:36:36.189Z"
    },
    {
     "slug": "priory-park",
@@ -22517,7 +22554,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:07.137Z"
+    "fetchedAt": "2026-10-12T13:01:59.308Z"
    },
    {
     "slug": "qh-memorial-sports-ground-river-pitches",
@@ -22623,7 +22660,7 @@
     "bands": [],
     "priceSummary": "Please check calendar above for availability and price.",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:10:57.704Z"
+    "fetchedAt": "2026-10-12T12:44:53.500Z"
    },
    {
     "slug": "queen-elizabeth-stadium-enfield",
@@ -22668,7 +22705,7 @@
     "bands": [],
     "priceSummary": "This facility is open for free usage on Saturday and Sunday mornings between 9am -12pm. The facility is available to be booked for a fee at other times. Please contact the venue for more information.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:45.935Z"
+    "fetchedAt": "2026-10-12T13:05:01.332Z"
    },
    {
     "slug": "queensbury-rec-ground",
@@ -22700,7 +22737,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:38.905Z"
+    "fetchedAt": "2026-10-12T12:52:45.492Z"
    },
    {
     "slug": "ravenor-park",
@@ -22732,7 +22769,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:11.987Z"
+    "fetchedAt": "2026-10-12T13:02:05.885Z"
    },
    {
     "slug": "rayners-mead",
@@ -22764,7 +22801,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:21.983Z"
+    "fetchedAt": "2026-10-12T12:52:28.927Z"
    },
    {
     "slug": "reach-academy-feltham",
@@ -22860,7 +22897,7 @@
     "bands": [],
     "priceSummary": "From £30.00-£40.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:07:52.624Z"
+    "fetchedAt": "2026-10-12T12:41:35.271Z"
    },
    {
     "slug": "rectory-park",
@@ -23052,7 +23089,7 @@
     "bands": [],
     "priceSummary": "From £40.00-£53.33/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:50.062Z"
+    "fetchedAt": "2026-10-12T13:06:12.936Z"
    },
    {
     "slug": "redhill-memorial-park",
@@ -23129,7 +23166,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:20.416Z"
+    "fetchedAt": "2026-10-12T12:58:45.584Z"
    },
    {
     "slug": "riddlesdown-collegiate",
@@ -23223,7 +23260,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:15:29.877Z"
+    "fetchedAt": "2026-10-12T12:49:44.608Z"
    },
    {
     "slug": "rocks-lane-chiswick",
@@ -23329,7 +23366,7 @@
     "bands": [],
     "priceSummary": "From £26.67-£118.40/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:16:31.228Z"
+    "fetchedAt": "2026-10-12T13:00:07.519Z"
    },
    {
     "slug": "rokeby-school",
@@ -23384,7 +23421,7 @@
     "bands": [],
     "priceSummary": "Around £79.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:08:17.408Z"
+    "fetchedAt": "2026-10-12T12:42:00.439Z"
    },
    {
     "slug": "rolls-sports-ground",
@@ -23481,7 +23518,7 @@
     "bands": [],
     "priceSummary": null,
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:13.572Z"
+    "fetchedAt": "2026-10-12T12:57:41.164Z"
    },
    {
     "slug": "rosemary-gardens",
@@ -23589,7 +23626,7 @@
     "bands": [],
     "priceSummary": "From £41.30-£42.75/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:04:04.921Z"
+    "fetchedAt": "2026-10-12T12:37:29.090Z"
    },
    {
     "slug": "rosslyn-park-rugby-club",
@@ -23717,7 +23754,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:44.491Z"
+    "fetchedAt": "2026-10-12T12:52:51.030Z"
    },
    {
     "slug": "ruskin-park",
@@ -23813,7 +23850,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:26.055Z"
+    "fetchedAt": "2026-10-12T12:58:50.700Z"
    },
    {
     "slug": "sacred-heart",
@@ -23988,7 +24025,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:07:32.639Z"
+    "fetchedAt": "2026-10-12T12:41:14.745Z"
    },
    {
     "slug": "samurai-park",
@@ -24085,7 +24122,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:41.785Z"
+    "fetchedAt": "2026-10-12T12:56:11.808Z"
    },
    {
     "slug": "selhurst-sports-arena",
@@ -24203,7 +24240,7 @@
     "bands": [],
     "priceSummary": "From £25.25-£30.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-09-28T12:03:19.512Z"
+    "fetchedAt": "2026-10-12T12:56:49.368Z"
    },
    {
     "slug": "sheen-way-playing-field",
@@ -24309,7 +24346,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:02:28.124Z"
+    "fetchedAt": "2026-10-12T12:56:01.459Z"
    },
    {
     "slug": "shirley-high-school",
@@ -24405,7 +24442,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:15:13.548Z"
+    "fetchedAt": "2026-10-12T12:49:20.687Z"
    },
    {
     "slug": "sidcup-leisure-centre",
@@ -24499,7 +24536,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:19.459Z"
+    "fetchedAt": "2026-10-12T13:04:30.614Z"
    },
    {
     "slug": "sloane-square-sports-pitch-marlborough",
@@ -24577,7 +24614,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:10:05.332Z"
+    "fetchedAt": "2026-10-12T12:43:56.474Z"
    },
    {
     "slug": "sobell-leisure-centre",
@@ -24683,7 +24720,7 @@
     "bands": [],
     "priceSummary": "From £72.15-£74.90/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:00:29.182Z"
+    "fetchedAt": "2026-10-12T12:33:59.744Z"
    },
    {
     "slug": "somers-town-community-sports-centre",
@@ -24841,7 +24878,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:31.818Z"
+    "fetchedAt": "2026-10-12T12:58:56.450Z"
    },
    {
     "slug": "south-norwood-recreation-ground",
@@ -24886,7 +24923,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:47.084Z"
+    "fetchedAt": "2026-10-12T13:00:23.695Z"
    },
    {
     "slug": "southallpark",
@@ -24969,7 +25006,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:07.525Z"
+    "fetchedAt": "2026-10-12T12:53:12.544Z"
    },
    {
     "slug": "southbury-leisure-centre",
@@ -25097,7 +25134,7 @@
     "bands": [],
     "priceSummary": "Around £52.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:06:02.330Z"
+    "fetchedAt": "2026-10-12T12:39:33.890Z"
    },
    {
     "slug": "southfield-rec",
@@ -25180,7 +25217,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:59:01.684Z"
+    "fetchedAt": "2026-10-12T12:53:06.942Z"
    },
    {
     "slug": "southfields-park",
@@ -25225,7 +25262,7 @@
     "bands": [],
     "priceSummary": "Unspecified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:24:25.572Z"
+    "fetchedAt": "2026-10-12T13:09:03.233Z"
    },
    {
     "slug": "southfields-recreation-park",
@@ -25301,7 +25338,7 @@
     "bands": [],
     "priceSummary": "Please enquire for price",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:14:54.801Z"
+    "fetchedAt": "2026-10-12T12:49:01.750Z"
    },
    {
     "slug": "southgate-hockey-centre",
@@ -25407,7 +25444,7 @@
     "bands": [],
     "priceSummary": "Off Peak £69.84",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:04:35.957Z"
+    "fetchedAt": "2026-10-12T12:38:04.231Z"
    },
    {
     "slug": "southwark-park",
@@ -25452,7 +25489,7 @@
     "bands": [],
     "priceSummary": "£70 / match",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:13:05.838Z"
+    "fetchedAt": "2026-10-12T12:47:01.260Z"
    },
    {
     "slug": "spikes-bridge-park-and-sports-ground",
@@ -25484,7 +25521,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T11:59:38.167Z"
+    "fetchedAt": "2026-10-12T12:33:06.299Z"
    },
    {
     "slug": "spirit-health-club-maidenhead",
@@ -25567,7 +25604,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:28.719Z"
+    "fetchedAt": "2026-10-12T13:08:01.108Z"
    },
    {
     "slug": "sports-able",
@@ -25599,7 +25636,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:33.653Z"
+    "fetchedAt": "2026-10-12T13:08:06.902Z"
    },
    {
     "slug": "springfield-park",
@@ -25631,7 +25668,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:16.822Z"
+    "fetchedAt": "2026-10-12T13:02:11.057Z"
    },
    {
     "slug": "st-aloysius-college",
@@ -25828,7 +25865,7 @@
     "bands": [],
     "priceSummary": "Price on request",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:10:45.130Z"
+    "fetchedAt": "2026-10-12T12:44:40.253Z"
    },
    {
     "slug": "st-helen-s-school",
@@ -25944,7 +25981,7 @@
     "bands": [],
     "priceSummary": "Around £110.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:12:15.800Z"
+    "fetchedAt": "2026-10-12T12:46:13.999Z"
    },
    {
     "slug": "st-john-s-primary-school",
@@ -26040,7 +26077,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:11:18.753Z"
+    "fetchedAt": "2026-10-12T12:45:15.229Z"
    },
    {
     "slug": "st-johns-park",
@@ -26072,7 +26109,7 @@
     "bands": [],
     "priceSummary": null,
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:03:56.457Z"
+    "fetchedAt": "2026-10-12T12:57:25.238Z"
    },
    {
     "slug": "st-joseph-s-parish-centre",
@@ -26104,7 +26141,7 @@
     "bands": [],
     "priceSummary": "Not Specified",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:23:38.576Z"
+    "fetchedAt": "2026-10-12T13:08:12.572Z"
    },
    {
     "slug": "st-ursulas-e-act-academy",
@@ -26224,7 +26261,7 @@
     "bands": [],
     "priceSummary": "Please check calendar",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:11.531Z"
+    "fetchedAt": "2026-10-12T12:50:26.807Z"
    },
    {
     "slug": "stoke-park",
@@ -26256,7 +26293,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-21T11:02:38.213Z"
+    "fetchedAt": "2026-10-12T12:50:48.502Z"
    },
    {
     "slug": "stratford-padel-club",
@@ -26320,7 +26357,7 @@
     "bands": [],
     "priceSummary": "Free for members, other POA",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:45.787Z"
+    "fetchedAt": "2026-10-12T13:02:43.465Z"
    },
    {
     "slug": "sutton-life-centre",
@@ -26418,7 +26455,7 @@
     "bands": [],
     "priceSummary": "Whole pitch £40 / hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:19:55.120Z"
+    "fetchedAt": "2026-10-12T13:04:03.708Z"
    },
    {
     "slug": "sydenham-dulwich-girls-gdst-sports-ground",
@@ -26534,7 +26571,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:03:13.521Z"
+    "fetchedAt": "2026-10-12T12:56:44.358Z"
    },
    {
     "slug": "sylvestrian-leisure-centre",
@@ -26650,7 +26687,7 @@
     "bands": [],
     "priceSummary": "Around £40.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:04:19.969Z"
+    "fetchedAt": "2026-10-12T12:37:46.699Z"
    },
    {
     "slug": "tadworth-leisure-centre",
@@ -26829,7 +26866,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:01:40.106Z"
+    "fetchedAt": "2026-10-12T12:35:14.066Z"
    },
    {
     "slug": "the-downside-settlement",
@@ -27082,7 +27119,7 @@
     "bands": [],
     "priceSummary": "Please contact The Hive London for prices",
     "skipped": null,
-    "fetchedAt": "2026-09-28T11:57:04.392Z"
+    "fetchedAt": "2026-10-12T12:51:18.020Z"
    },
    {
     "slug": "the-hub-rise-community",
@@ -27165,7 +27202,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:01:43.866Z"
+    "fetchedAt": "2026-10-12T12:55:28.976Z"
    },
    {
     "slug": "the-matthew-arnold-sports-centre",
@@ -27292,7 +27329,7 @@
     "bands": [],
     "priceSummary": "Please check calendar above",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:24:53.311Z"
+    "fetchedAt": "2026-10-12T13:09:33.986Z"
    },
    {
     "slug": "the-radmoor-centre",
@@ -27368,7 +27405,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:24:35.444Z"
+    "fetchedAt": "2026-10-12T13:09:14.543Z"
    },
    {
     "slug": "the-rookery",
@@ -27547,7 +27584,7 @@
     "bands": [],
     "priceSummary": "From £30.00-£60.42/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:06:31.038Z"
+    "fetchedAt": "2026-10-12T12:40:06.272Z"
    },
    {
     "slug": "tooting-and-mitcham-community-sports-club-ltd",
@@ -27612,7 +27649,7 @@
     "bands": [],
     "priceSummary": "Price on request",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:11:46.567Z"
+    "fetchedAt": "2026-10-12T12:45:44.875Z"
    },
    {
     "slug": "tooting-bec-common",
@@ -27644,7 +27681,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:21.651Z"
+    "fetchedAt": "2026-10-12T13:02:16.958Z"
    },
    {
     "slug": "tooting-leisure-centre",
@@ -27710,7 +27747,7 @@
     "bands": [],
     "priceSummary": "£49.90 per hour (+ £1.10 for each nonmember)",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:51.912Z"
+    "fetchedAt": "2026-10-12T13:00:30.193Z"
    },
    {
     "slug": "trailfinders-sports-club",
@@ -27817,7 +27854,7 @@
     "bands": [],
     "priceSummary": "Around £40.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:06:41.042Z"
+    "fetchedAt": "2026-10-12T12:40:17.748Z"
    },
    {
     "slug": "trumble-gardens",
@@ -27849,7 +27886,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:26.466Z"
+    "fetchedAt": "2026-10-12T13:02:22.114Z"
    },
    {
     "slug": "tudor-sports-ground",
@@ -27881,7 +27918,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:31.290Z"
+    "fetchedAt": "2026-10-12T13:02:27.828Z"
    },
    {
     "slug": "tufnell-park",
@@ -27977,7 +28014,7 @@
     "bands": [],
     "priceSummary": "£82.50 / game",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:37.489Z"
+    "fetchedAt": "2026-10-12T12:59:01.608Z"
    },
    {
     "slug": "upminster-park",
@@ -28022,7 +28059,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:43.144Z"
+    "fetchedAt": "2026-10-12T12:59:07.466Z"
    },
    {
     "slug": "upper-norwood-recreation-ground",
@@ -28077,7 +28114,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:48.786Z"
+    "fetchedAt": "2026-10-12T12:59:12.580Z"
    },
    {
     "slug": "vauxhall-rhino-turf",
@@ -28155,7 +28192,7 @@
     "bands": [],
     "priceSummary": "From £65.00-£70.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:01:59.344Z"
+    "fetchedAt": "2026-10-12T12:35:34.691Z"
    },
    {
     "slug": "verulam-school",
@@ -28200,7 +28237,7 @@
     "bands": [],
     "priceSummary": "(not specified)",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:21:54.998Z"
+    "fetchedAt": "2026-10-12T13:06:17.951Z"
    },
    {
     "slug": "victoria-park-bow",
@@ -28232,7 +28269,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:24.704Z"
+    "fetchedAt": "2026-10-12T12:57:52.616Z"
    },
    {
     "slug": "victoria-recreation-ground",
@@ -28326,7 +28363,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:01:02.467Z"
+    "fetchedAt": "2026-10-12T12:54:58.389Z"
    },
    {
     "slug": "wallington-county-grammar-school",
@@ -28569,7 +28606,7 @@
     "bands": [],
     "priceSummary": "From £46.85-£52.00/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:09.823Z"
+    "fetchedAt": "2026-10-12T13:04:20.641Z"
    },
    {
     "slug": "walthamstow-school-for-girls",
@@ -28708,7 +28745,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:05:54.367Z"
+    "fetchedAt": "2026-10-12T12:59:18.284Z"
    },
    {
     "slug": "wanstead-flats-playing-fields-aldersbrook-road",
@@ -28763,7 +28800,7 @@
     "bands": [],
     "priceSummary": "Weekday: £50 / match; Sat: £66; Sun: £73",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:50.626Z"
+    "fetchedAt": "2026-10-12T13:02:50.160Z"
    },
    {
     "slug": "wanstead-flats-playing-fields-harrow-road",
@@ -28818,7 +28855,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:55.481Z"
+    "fetchedAt": "2026-10-12T13:02:55.846Z"
    },
    {
     "slug": "wapping-gardens",
@@ -28850,7 +28887,7 @@
     "bands": [],
     "priceSummary": null,
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:04:07.875Z"
+    "fetchedAt": "2026-10-12T12:57:35.466Z"
    },
    {
     "slug": "warren-sports-pitch",
@@ -28947,7 +28984,7 @@
     "bands": [],
     "priceSummary": "From £45.00-£85.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:00:39.210Z"
+    "fetchedAt": "2026-10-12T12:34:10.844Z"
    },
    {
     "slug": "wasps-fc",
@@ -29104,7 +29141,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:17:13.653Z"
+    "fetchedAt": "2026-10-12T13:00:56.798Z"
    },
    {
     "slug": "waterloo-wolf-turf",
@@ -29200,7 +29237,7 @@
     "bands": [],
     "priceSummary": "From £75.00-£99.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:07:10.479Z"
+    "fetchedAt": "2026-10-12T12:40:49.588Z"
    },
    {
     "slug": "waterlow-park",
@@ -29232,7 +29269,7 @@
     "bands": [],
     "priceSummary": "From £8.70-£8.80/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:18:36.122Z"
+    "fetchedAt": "2026-10-12T13:02:33.166Z"
    },
    {
     "slug": "weavers-adventure-playground",
@@ -29322,7 +29359,7 @@
     "bands": [],
     "priceSummary": "Around £82.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:15:52.748Z"
+    "fetchedAt": "2026-10-12T12:50:07.445Z"
    },
    {
     "slug": "westbourne-park-astroturf",
@@ -29413,7 +29450,7 @@
     "bands": [],
     "priceSummary": "Around £60.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:06:56.021Z"
+    "fetchedAt": "2026-10-12T12:40:34.279Z"
    },
    {
     "slug": "weybridge-padel-club",
@@ -29563,7 +29600,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:05:47.947Z"
+    "fetchedAt": "2026-10-12T12:39:18.961Z"
    },
    {
     "slug": "whitechapel-indoor-pitch",
@@ -29639,7 +29676,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:03.969Z"
+    "fetchedAt": "2026-10-12T12:50:18.955Z"
    },
    {
     "slug": "whitechapel-sports-centre",
@@ -29735,7 +29772,7 @@
     "bands": [],
     "priceSummary": "Peak £80.25/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:08:54.930Z"
+    "fetchedAt": "2026-10-12T12:42:40.739Z"
    },
    {
     "slug": "whitefield-school",
@@ -29861,7 +29898,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-09-28T12:01:13.148Z"
+    "fetchedAt": "2026-10-12T12:55:07.787Z"
    },
    {
     "slug": "whittington-park",
@@ -29967,7 +30004,7 @@
     "bands": [],
     "priceSummary": "From £91.30-£94.75/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:03:40.136Z"
+    "fetchedAt": "2026-10-12T12:37:02.978Z"
    },
    {
     "slug": "will-to-win-pitshanger-park",
@@ -30063,7 +30100,7 @@
     "bands": [],
     "priceSummary": "Around £40/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-05T12:15:42.258Z"
+    "fetchedAt": "2026-10-12T12:49:57.206Z"
    },
    {
     "slug": "willesden-sports-centre",
@@ -30159,7 +30196,7 @@
     "bands": [],
     "priceSummary": "£68.45/hour",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:16:56.807Z"
+    "fetchedAt": "2026-10-12T13:00:35.756Z"
    },
    {
     "slug": "wimbledon-park-",
@@ -30242,7 +30279,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:57:47.719Z"
+    "fetchedAt": "2026-10-12T12:52:01.611Z"
    },
    {
     "slug": "windsor-leisure-centre",
@@ -30336,7 +30373,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:20:24.260Z"
+    "fetchedAt": "2026-10-12T13:04:36.316Z"
    },
    {
     "slug": "wolf-fields-park",
@@ -30419,7 +30456,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T11:58:50.132Z"
+    "fetchedAt": "2026-10-12T12:52:56.096Z"
    },
    {
     "slug": "woodcote-high-school",
@@ -30513,7 +30550,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:15:37.305Z"
+    "fetchedAt": "2026-10-12T12:49:52.067Z"
    },
    {
     "slug": "wren-academy-enfield",
@@ -30607,12 +30644,12 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-09-28T12:03:08.355Z"
+    "fetchedAt": "2026-10-12T12:56:39.305Z"
    }
   ]
  },
  "run": {
-  "pagesRead": 644,
-  "stoppedBy": "deadline"
+  "pagesRead": 650,
+  "stoppedBy": "budget"
  }
 }

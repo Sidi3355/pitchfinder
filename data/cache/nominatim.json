@@ -1174,6 +1174,11 @@
   "suburb": "Bethnal Green",
   "at": "2026-09-11"
  },
+ "51.5305,-0.0461": {
+  "road": "Mace Street",
+  "suburb": "Bethnal Green",
+  "at": "2026-10-12"
+ },
  "51.5308,0.0672": {
   "road": "Langdon Crescent",
   "suburb": "Beckton",
@@ -1964,6 +1969,11 @@
   "suburb": null,
   "at": "2026-09-11"
  },
+ "51.6881,-0.2049": {
+  "road": "Sawyers Lane",
+  "suburb": null,
+  "at": "2026-10-12"
+ },
  "51.6883,0.0141": {
   "road": "Stonyshotts",
   "suburb": "Waltham Abbey",
@@ -1973,6 +1983,11 @@
   "road": "Sawyers Lane",
   "suburb": null,
   "at": "2026-09-11"
+ },
+ "51.6890,-0.2075": {
+  "road": "Sawyers Lane",
+  "suburb": null,
+  "at": "2026-10-12"
  },
  "51.6899,0.1057": {
   "road": "Ivy Chimneys Road",
