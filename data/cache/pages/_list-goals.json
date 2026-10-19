@@ -1,759 +1,851 @@
 {
- "url": "https://www.goalsfootball.co.uk/",
- "status": 200,
- "fetchedAt": "2026-10-12T11:57:47.781Z",
+ "url": "https://www.goalsfootball.co.uk/clubs",
+ "status": 404,
+ "fetchedAt": "2026-10-19T09:52:27.713Z",
  "hrefs": [
   {
-   "href": "https://www.goalsfootball.co.uk/summer2026/app",
-   "text": "Download our app"
-  },
-  {
-   "href": "https://apps.apple.com/gb/app/goals/id6475598124",
+   "href": "https://www.goalsfootball.co.uk/clubs#",
    "text": ""
   },
   {
-   "href": "https://play.google.com/store/apps/details?id=com.parachute.goals2023",
-   "text": ""
+   "href": "https://www.goalsfootball.co.uk/clubs#",
+   "text": "Directions"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/promotions",
-   "text": "Promotions"
+   "href": "https://www.goalsfootball.co.uk/clubs#",
+   "text": "Club details"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Contact Us"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/pay-for-your-game",
-   "text": "Pay Your Share"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/goals-plus",
-   "text": "Goals[+]"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/account",
-   "text": "Join Us"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/account",
-   "text": "Login"
+   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us/",
+   "text": "Enquire"
   },
   {
    "href": "https://www.goalsfootball.co.uk/",
    "text": ""
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football",
+   "href": "https://www.goalsfootball.co.uk/football/",
    "text": "Football"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/block-booking",
+   "href": "https://www.goalsfootball.co.uk/football/",
+   "text": "Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/football/one/",
+   "text": "Book football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/enquiry/",
+   "text": "Enquire about football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/block-booking/",
    "text": "Block Booking"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/womens-football",
-   "text": "Women's Football"
+   "href": "https://www.goalsfootball.co.uk/football/womens-football/goals-girls-hour/",
+   "text": "Girls Hour"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/womens-football/goals-girls-hour",
-   "text": "Goals Girls Hour"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals",
-   "text": "PITCH HIRE"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/juniors",
+   "href": "https://www.goalsfootball.co.uk/football/juniors/",
    "text": "Juniors"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/summer2026/bubble-parties",
-   "text": "Bubble Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Leagues"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/students",
-   "text": "Students"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/club-tournaments",
-   "text": "Tournaments"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/winter-training",
-   "text": "Winter Training"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/pay-your-share",
-   "text": "Pay Your Share"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book Now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids",
-   "text": "Kids"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Football Parties"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-coaching",
-   "text": "Kids Coaching"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-holiday-camps",
-   "text": "Kids Holiday Camps"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kickabout",
+   "href": "https://www.goalsfootball.co.uk/kids/kickabout/",
    "text": "Kickabout"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-meal-deals",
-   "text": "Kids Meal Deals"
+   "href": "https://www.goalsfootball.co.uk/football/3v3/",
+   "text": "3v3"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/haf",
-   "text": "HAF"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/summer2026/bubble-parties",
-   "text": "Bubble Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/kids-parties",
-   "text": "Book a Party"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/haf",
-   "text": "HAF"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Parties"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Leagues"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/fixtures-results-tables",
-   "text": "Fixtures, Results & Tables"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/league-rules",
-   "text": "League Rules"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/loyalty-scheme",
-   "text": "Loyalty Scheme"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/challenge-league",
-   "text": "Challenge League"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/become-a-referee",
-   "text": "Become a Referee"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Join a League"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/trial-game",
-   "text": "Book a trial"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/fair-play",
-   "text": "Fair Play"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/find-a-player",
-   "text": "Find a Player"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book Now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events",
-   "text": "Events"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/corporate-events",
-   "text": "Corporate Events"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/functions",
-   "text": "Function Room Hire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/bubble-football",
-   "text": "Bubble Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/function-hire",
-   "text": "Book now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us",
-   "text": "About"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/facilities",
-   "text": "Facilities"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/mission-statement",
-   "text": "Mission Statement"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/our-partners",
-   "text": "Our Partners"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/careers",
-   "text": "Careers"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/fa-county-affiliations",
-   "text": "FA County Affiliations"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book Now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/our-clubs",
-   "text": "Clubs"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/#",
-   "text": "More"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/latest-news",
-   "text": "Latest News"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/commercial",
-   "text": "Commercial"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/goals-pros",
-   "text": "Goals Pros"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/promotions",
-   "text": "Promotions"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/goals-plus",
-   "text": "Goals[+]"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/new-goals-app",
-   "text": "The Goals App"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/soccerworld",
-   "text": "Soccerworld"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents",
-   "text": "Policies and Documents"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football",
-   "text": "Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/block-booking",
-   "text": "Block Booking"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/womens-football",
-   "text": "Women's Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/womens-football/goals-girls-hour",
-   "text": "Goals Girls Hour"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals",
-   "text": "PITCH HIRE"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/juniors",
-   "text": "Juniors"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/summer2026/bubble-parties",
-   "text": "Bubble Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Leagues"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/students",
-   "text": "Students"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/club-tournaments",
-   "text": "Tournaments"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/winter-training",
-   "text": "Winter Training"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/pay-your-share",
+   "href": "https://www.goalsfootball.co.uk/football/pay-your-share/",
    "text": "Pay Your Share"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book Now"
+   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals/",
+   "text": "Pitch Hire"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids",
-   "text": "Kids"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Football Parties"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-coaching",
-   "text": "Kids Coaching"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-holiday-camps",
-   "text": "Kids Holiday Camps"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kickabout",
-   "text": "Kickabout"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-meal-deals",
-   "text": "Kids Meal Deals"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/haf",
-   "text": "HAF"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/summer2026/bubble-parties",
-   "text": "Bubble Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/kids-parties",
-   "text": "Book a Party"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/haf",
-   "text": "HAF"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Parties"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Leagues"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/fixtures-results-tables",
-   "text": "Fixtures, Results & Tables"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/league-rules",
-   "text": "League Rules"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/loyalty-scheme",
-   "text": "Loyalty Scheme"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/challenge-league",
-   "text": "Challenge League"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/become-a-referee",
-   "text": "Become a Referee"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Join a League"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/trial-game",
-   "text": "Book a trial"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/fair-play",
-   "text": "Fair Play"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/find-a-player",
-   "text": "Find a Player"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book Now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events",
-   "text": "Events"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/corporate-events",
-   "text": "Corporate Events"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/functions",
-   "text": "Function Room Hire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/bubble-football",
-   "text": "Bubble Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/function-hire",
-   "text": "Book now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us",
-   "text": "About"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/facilities",
-   "text": "Facilities"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/mission-statement",
-   "text": "Mission Statement"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/our-partners",
-   "text": "Our Partners"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/careers",
-   "text": "Careers"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/fa-county-affiliations",
-   "text": "FA County Affiliations"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book Now"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Enquire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/our-clubs",
-   "text": "Clubs"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/#",
-   "text": "More"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/latest-news",
-   "text": "Latest News"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/commercial",
-   "text": "Commercial"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/goals-pros",
-   "text": "Goals Pros"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/promotions",
-   "text": "Promotions"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/goals-plus",
-   "text": "Goals[+]"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/new-goals-app",
-   "text": "The Goals App"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/soccerworld",
-   "text": "Soccerworld"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents",
-   "text": "Policies and Documents"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/play/book-a-game",
-   "text": "Book A Pitch"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/search",
-   "text": "Search"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Find out more"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals",
-   "text": "5-a-side Pitch Hire"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Leagues"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Parties"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/club-tournaments",
-   "text": "Tournaments"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals",
-   "text": "PITCH HIRE AT GOALS"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Find out more"
-  },
-  {
-   "href": "https://www.pepsi.co.uk/",
-   "text": ""
-  },
-  {
-   "href": "https://www.joma-sport.com/en/home",
-   "text": ""
-  },
-  {
-   "href": "https://www.lucozade.com/",
-   "text": ""
-  },
-  {
-   "href": "https://budweiser.co.uk/",
-   "text": ""
-  },
-  {
-   "href": "https://www.panini.co.uk/",
-   "text": ""
-  },
-  {
-   "href": "https://www.justgiving.com/campaigns/charity/britishheartfoundation/goals",
-   "text": ""
-  },
-  {
-   "href": "https://www.kickitout.org/",
-   "text": ""
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/",
-   "text": ""
-  },
-  {
-   "href": "https://www.facebook.com/GoalsFootballUK",
-   "text": "Facebook"
-  },
-  {
-   "href": "https://twitter.com/goalsfootballuk",
-   "text": "Twitter"
-  },
-  {
-   "href": "https://www.tiktok.com/@goalsfootballofficial",
-   "text": "TikTok"
-  },
-  {
-   "href": "https://www.instagram.com/goalsfootballofficial/",
-   "text": "Instagram"
-  },
-  {
-   "href": "https://www.linkedin.com/company/goals-soccer-centres/",
-   "text": "LinkedIn"
-  },
-  {
-   "href": "https://www.youtube.com/channel/UCBACY8Ct1mp5vXexAQ9ZdUw",
-   "text": "YouTube"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Customer Service"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/latest-news",
-   "text": "News"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us",
-   "text": "Customer Feedback"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/about-us/careers",
-   "text": "Careers"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents",
-   "text": "Policies & Documents"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/#",
-   "text": "Leagues"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/fixtures-results-tables",
-   "text": "Fixtures/Results/Tables"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/loyalty-scheme",
-   "text": "Loyalty Scheme"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/challenge-league",
-   "text": "Challenge League"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/become-a-referee",
-   "text": "Become a Referee"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues",
-   "text": "Join a League"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/leagues/trial-game",
-   "text": "Book a Trial Game"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football",
-   "text": "Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/tournaments",
-   "text": "Tournaments"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/womens-football",
-   "text": "Women's Football"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/football/students",
+   "href": "https://www.goalsfootball.co.uk/football/students/",
    "text": "Students"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/juniors",
+   "href": "https://www.goalsfootball.co.uk/football/tournaments/",
+   "text": "Tournaments"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/winter-training/",
+   "text": "Winter Training"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/womens-football/",
+   "text": "Women’s Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/",
+   "text": "Kids"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/",
+   "text": "Kids"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/kids-party/one/",
+   "text": "Book kids"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/enquiry/",
+   "text": "Enquire about kids"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-coaching/",
+   "text": "Kids Coaching"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties/",
+   "text": "Kids Football Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/bubble-football-parties/",
+   "text": "Bubble Football Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/junior-xmas-parties/",
+   "text": "Christmas Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-meal-deals/",
+   "text": "Kids Meal Deals"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-holiday-camps/",
+   "text": "Kids Holiday Camps"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kickabout/",
+   "text": "Kickabout"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/haf/",
+   "text": "HAF"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/juniors/",
    "text": "Juniors"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/winter-training",
-   "text": "Winter Football"
+   "href": "https://www.goalsfootball.co.uk/leagues/",
+   "text": "Leagues"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/football/block-booking",
-   "text": "Block Booking"
+   "href": "https://www.goalsfootball.co.uk/leagues/",
+   "text": "Leagues"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/events",
+   "href": "https://www.goalsfootball.co.uk/play/trial-game/one/",
+   "text": "Book a trial game"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/enquiry/",
+   "text": "Enquire about leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/stats/",
+   "text": "Tables, Fixtures & Results"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/league-rules/",
+   "text": "League Rules"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/wp-content/uploads/2026/10/goals-league-handbook-2026.pdf",
+   "text": "League Handbook"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/challenge-league/",
+   "text": "Challenge League"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/fair-play/",
+   "text": "Fair Play"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/trial-game/",
+   "text": "Trial Game"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/junior-leagues/",
+   "text": "Junior Leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/loyalty-scheme/",
+   "text": "Loyalty Scheme"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/find-a-player/",
+   "text": "Transfer Centre"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/become-a-referee/",
+   "text": "Get into Refereeing"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/",
    "text": "Events"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/events/functions",
+   "href": "https://www.goalsfootball.co.uk/events/",
+   "text": "Events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/corporate-tournaments/branch/",
+   "text": "Book events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/enquiry/",
+   "text": "Enquire about events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/functions/",
    "text": "Functions"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Parties"
-  },
-  {
-   "href": "https://www.goalsfootball.co.uk/events/bubble-football",
+   "href": "https://www.goalsfootball.co.uk/events/bubble-football/",
    "text": "Bubble Football"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/events/corporate-events",
+   "href": "https://www.goalsfootball.co.uk/events/corporate-events/",
    "text": "Corporate Events"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/#",
-   "text": "Kids"
+   "href": "https://www.goalsfootball.co.uk/events/functions/work-nights-out/",
+   "text": "Christmas Parties"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties",
-   "text": "Kids Parties"
+   "href": "https://www.goalsfootball.co.uk/our-clubs/",
+   "text": "Our Clubs"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-coaching",
-   "text": "Coaching"
+   "href": "https://www.goalsfootball.co.uk/goals-plus/",
+   "text": "GOALS Membership"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/kids/kickabout",
+   "href": "https://www.goalsfootball.co.uk/clubs#",
+   "text": "More"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/football/one/",
+   "text": "Book"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/enquiry/",
+   "text": "Enquire"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/",
+   "text": "Our Story"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": "Our Partners"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/facilities/",
+   "text": "Facilities"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/mission-statement/",
+   "text": "Mission Statement"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/careers/",
+   "text": "Careers"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/commercial/",
+   "text": "Commercial"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/goals-pros/",
+   "text": "GOALS Pros"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/promotions/",
+   "text": "Promotions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/new-goals-app/",
+   "text": "The GOALS App"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/soccerworld/",
+   "text": "Soccer World"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/",
+   "text": "Policies and Documents"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/login/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/football/one/",
+   "text": "Football Book a 5, 7 or 8-a-side pitch"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/kids-party/one/",
+   "text": "Kids Party An unforgettable football party"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/coaching/one/",
+   "text": "Coaching Sessions for all ages and abilities"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/trial-game/one/",
+   "text": "Trial Game New to GOALS? Get playing"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/function-hire/one/",
+   "text": "Function Hire A venue for your event or celebration"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/corporate-tournaments/branch/",
+   "text": "Corporate Tournament Book a tournament for your company or group"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/tournaments/one/",
+   "text": "Enter a Tournament Sign your team up to a scheduled tournament"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/pay-your-share/one/",
+   "text": "Pay Your Share Chip in for a game you are already playing"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/football/",
+   "text": "Book a pitch"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties/",
+   "text": "Kids parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/",
+   "text": "Leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/our-clubs/",
+   "text": "Find your club"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/",
+   "text": "Home"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": "Our partners"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": ""
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/",
+   "text": "Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/block-booking/",
+   "text": "Block Booking"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/womens-football/goals-girls-hour/",
+   "text": "Girls Hour"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/juniors/",
+   "text": "Juniors"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kickabout/",
    "text": "Kickabout"
   },
   {
-   "href": "https://www.goalsfootball.co.uk/kids/kids-holiday-camps",
-   "text": "Holiday Camps"
+   "href": "https://www.goalsfootball.co.uk/football/3v3/",
+   "text": "3v3"
   },
   {
-   "href": "https://www.parachute.net/",
-   "text": "Web Design Glasgow"
+   "href": "https://www.goalsfootball.co.uk/football/pay-your-share/",
+   "text": "Pay Your Share"
   },
   {
-   "href": "https://www.parachute.net/",
-   "text": "By Parachute"
+   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals/",
+   "text": "Pitch Hire"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/students/",
+   "text": "Students"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/tournaments/",
+   "text": "Tournaments"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/winter-training/",
+   "text": "Winter Training"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/womens-football/",
+   "text": "Women’s Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/",
+   "text": "Kids"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-coaching/",
+   "text": "Kids Coaching"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties/",
+   "text": "Kids Football Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/bubble-football-parties/",
+   "text": "Bubble Football Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/junior-xmas-parties/",
+   "text": "Christmas Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-meal-deals/",
+   "text": "Kids Meal Deals"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-holiday-camps/",
+   "text": "Kids Holiday Camps"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kickabout/",
+   "text": "Kickabout"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/haf/",
+   "text": "HAF"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/juniors/",
+   "text": "Juniors"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/",
+   "text": "Leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/stats/",
+   "text": "Tables, Fixtures & Results"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/league-rules/",
+   "text": "League Rules"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/wp-content/uploads/2026/10/goals-league-handbook-2026.pdf",
+   "text": "League Handbook"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/challenge-league/",
+   "text": "Challenge League"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/fair-play/",
+   "text": "Fair Play"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/trial-game/",
+   "text": "Trial Game"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/junior-leagues/",
+   "text": "Junior Leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/loyalty-scheme/",
+   "text": "Loyalty Scheme"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/find-a-player/",
+   "text": "Transfer Centre"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/become-a-referee/",
+   "text": "Get into Refereeing"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/",
+   "text": "Events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/functions/",
+   "text": "Functions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/bubble-football/",
+   "text": "Bubble Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/corporate-events/",
+   "text": "Corporate Events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/functions/work-nights-out/",
+   "text": "Christmas Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/goals-plus/",
+   "text": "GOALS Membership"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/clubs#",
+   "text": "More"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/",
+   "text": "Our Story"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": "Our Partners"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/facilities/",
+   "text": "Facilities"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/mission-statement/",
+   "text": "Mission Statement"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/careers/",
+   "text": "Careers"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/commercial/",
+   "text": "Commercial"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/goals-pros/",
+   "text": "GOALS Pros"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/promotions/",
+   "text": "Promotions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/new-goals-app/",
+   "text": "The GOALS App"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/soccerworld/",
+   "text": "Soccer World"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/",
+   "text": "Policies and Documents"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/our-clubs/",
+   "text": "Our Clubs"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us/",
+   "text": "Contact Us"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us/",
+   "text": "Customer Service"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/careers/",
+   "text": "Careers"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/terms-and-conditions/",
+   "text": "Terms and Conditions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/privacy-policy/",
+   "text": "Privacy Policy"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/cookie-policy/",
+   "text": "Cookie Policy"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/modern-slavery-and-human-rights-statement/",
+   "text": "Modern Slavery and Human Rights Statement"
+  },
+  {
+   "href": "https://parachute.net/",
+   "text": "Parachute"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/",
+   "text": "All Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/block-booking/",
+   "text": "Block Booking"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/womens-football/goals-girls-hour/",
+   "text": "Girls Hour"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/juniors/",
+   "text": "Juniors"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kickabout/",
+   "text": "Kickabout"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/3v3/",
+   "text": "3v3"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/pay-your-share/",
+   "text": "Pay Your Share"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/pitch-hire-at-goals/",
+   "text": "Pitch Hire"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/students/",
+   "text": "Students"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/tournaments/",
+   "text": "Tournaments"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/winter-training/",
+   "text": "Winter Training"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/womens-football/",
+   "text": "Women’s Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/",
+   "text": "All Kids"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-coaching/",
+   "text": "Kids Coaching"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-football-parties/",
+   "text": "Kids Football Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/bubble-football-parties/",
+   "text": "Bubble Football Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/junior-xmas-parties/",
+   "text": "Christmas Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-meal-deals/",
+   "text": "Kids Meal Deals"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kids-holiday-camps/",
+   "text": "Kids Holiday Camps"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/kickabout/",
+   "text": "Kickabout"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/kids/haf/",
+   "text": "HAF"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/juniors/",
+   "text": "Juniors"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/",
+   "text": "All Leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/stats/",
+   "text": "Tables, Fixtures & Results"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/league-rules/",
+   "text": "League Rules"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/wp-content/uploads/2026/10/goals-league-handbook-2026.pdf",
+   "text": "League Handbook"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/challenge-league/",
+   "text": "Challenge League"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/fair-play/",
+   "text": "Fair Play"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/trial-game/",
+   "text": "Trial Game"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/junior-leagues/",
+   "text": "Junior Leagues"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/loyalty-scheme/",
+   "text": "Loyalty Scheme"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/find-a-player/",
+   "text": "Transfer Centre"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/leagues/become-a-referee/",
+   "text": "Get into Refereeing"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/",
+   "text": "All Events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/functions/",
+   "text": "Functions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/bubble-football/",
+   "text": "Bubble Football"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/corporate-events/",
+   "text": "Corporate Events"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/events/functions/work-nights-out/",
+   "text": "Christmas Parties"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/our-clubs/",
+   "text": "Our Clubs"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/goals-plus/",
+   "text": "GOALS Membership"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/",
+   "text": "Our Story"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/our-partners/",
+   "text": "Our Partners"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/facilities/",
+   "text": "Facilities"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/mission-statement/",
+   "text": "Mission Statement"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/careers/",
+   "text": "Careers"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/commercial/",
+   "text": "Commercial"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/goals-pros/",
+   "text": "GOALS Pros"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/promotions/",
+   "text": "Promotions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/new-goals-app/",
+   "text": "The GOALS App"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/about-us/soccerworld/",
+   "text": "Soccer World"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/policies-and-documents/",
+   "text": "Policies and Documents"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/promotions/",
+   "text": "Promotions"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/customer-service/contact-us/",
+   "text": "Customer Service"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/football/pay-your-share/",
+   "text": "Pay Your Share"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/login/",
+   "text": "Login / Register"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/our-clubs/",
+   "text": "Find a Club"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/play/football/one/",
+   "text": "Book a Pitch"
+  },
+  {
+   "href": "https://www.goalsfootball.co.uk/clubs",
+   "text": "Visit page"
   }
  ]
 }

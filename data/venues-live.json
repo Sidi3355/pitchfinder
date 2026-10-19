@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-12T12:01:38.329Z",
+ "fetchedAt": "2026-10-19T09:55:55.585Z",
  "offline": false,
  "operators": [
   {
@@ -8,18 +8,111 @@
    "site": "https://www.goalsfootball.co.uk/",
    "venues": [
     {
+     "id": "go-aberdeen",
+     "slug": "aberdeen",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/scotland/aberdeen",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Inverdee Playing Fields, Aberdeen, AB12 5XA",
+     "postcode": "AB12 5XA",
+     "district": "Aberdeen City",
+     "region": null,
+     "lat": 57.12357,
+     "lng": -2.116105,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "21:30"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": null,
+     "changingRooms": true,
+     "showers": null,
+     "bar": true,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01224 894 893",
+     "fetchedAt": "2026-10-19T09:52:40.915Z"
+    },
+    {
      "id": "go-beckenham",
      "slug": "beckenham",
-     "name": "Goals Beckenham",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/beckenham",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
-     "address": "Elmers End Road, Beckenham, Kent, BR3 4EJ",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/beckenham",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Elmers End Road, Beckenham, BR3 4EJ",
      "postcode": "BR3 4EJ",
      "district": "Bromley",
      "region": "London",
-     "lat": 51.39876,
-     "lng": -0.049991,
+     "lat": 51.399948,
+     "lng": -0.050704,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -66,16 +159,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 22:00",
-      "Sunday 09:00 - 23:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
@@ -99,28 +184,28 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:58:17.325Z"
+     "phone": "0208 663 1600",
+     "fetchedAt": "2026-10-19T09:52:44.670Z"
     },
     {
      "id": "go-bexleyheath",
      "slug": "bexleyheath",
-     "name": "Goals Bexleyheath",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/bexleyheath",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/bexleyheath",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "Graham Road, Bexleyheath, DA6 7EG",
      "postcode": "DA6 7EG",
      "district": "Bexley",
      "region": "London",
-     "lat": 51.4595,
-     "lng": 0.1429,
+     "lat": 51.458273,
+     "lng": 0.143638,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -167,16 +252,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 17:30 - 23:00",
-      "Tuesday 17:30 - 23:00",
-      "Wednesday 17:30 - 23:00",
-      "Thursday 17:30 - 23:00",
-      "Friday 17:30 - 22:00",
-      "Saturday 09:30 - 21:30",
-      "Sunday 09:30 - 22:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 5,
@@ -200,28 +277,685 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:58:27.720Z"
+     "phone": "0208 301 2000",
+     "fetchedAt": "2026-10-19T09:52:49.176Z"
+    },
+    {
+     "id": "go-birminghamperrybarr",
+     "slug": "birmingham-perry-barr",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/birmingham-perry-barr",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Tameside Park, Birmingham, B42 2UB",
+     "postcode": "B42 2UB",
+     "district": "Birmingham",
+     "region": "West Midlands",
+     "lat": 52.525958,
+     "lng": -1.89365,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:30",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0121 356 3333",
+     "fetchedAt": "2026-10-19T09:52:53.085Z"
+    },
+    {
+     "id": "go-birminghamstarcity",
+     "slug": "birmingham-star-city",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/birmingham-star-city",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Unit 31, Birmingham, B7 5SA",
+     "postcode": "B7 5SA",
+     "district": "Birmingham",
+     "region": "West Midlands",
+     "lat": 52.505493,
+     "lng": -1.8565,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:30",
+        "17:30"
+       ]
+      ],
+      "sun": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0121 326 6644",
+     "fetchedAt": "2026-10-19T09:52:57.774Z"
+    },
+    {
+     "id": "go-blackcountrybilston",
+     "slug": "black-country-bilston",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/black-country-bilston",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Darlaston Lane, Bilston, WV14 7BL",
+     "postcode": "WV14 7BL",
+     "district": "Wolverhampton",
+     "region": "West Midlands",
+     "lat": 52.57345,
+     "lng": -2.056966,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "16:30",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "16:30",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "16:30",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "16:30",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "16:30",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "per player",
+       "context": "r Kickabout sessions are a flexible way to level up at only £7 per player; Stay fit with your friends Play when it suits y"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      6,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": true,
+     "covered": true,
+     "lit": true,
+     "phone": "01902 637 700",
+     "fetchedAt": "2026-10-19T09:53:02.746Z"
+    },
+    {
+     "id": "go-bradford",
+     "slug": "bradford",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/yorkshire/bradford",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "282 Kings Road, Bradford, BD2 1NR",
+     "postcode": "BD2 1NR",
+     "district": "Bradford",
+     "region": "Yorkshire and The Humber",
+     "lat": 53.8191,
+     "lng": -1.7436,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "21:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8,
+      11
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": true,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01274 610 061",
+     "fetchedAt": "2026-10-19T09:53:06.589Z"
+    },
+    {
+     "id": "go-bristolnorth",
+     "slug": "bristol-north",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-west/bristol-north",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Wise Campus, Bristol, BS34 8LP",
+     "postcode": "BS34 8LP",
+     "district": "South Gloucestershire",
+     "region": "South West",
+     "lat": 51.512639,
+     "lng": -2.555481,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "21:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0117 908 8811",
+     "fetchedAt": "2026-10-19T09:53:10.903Z"
+    },
+    {
+     "id": "go-bristolsouth",
+     "slug": "bristol-south",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-west/bristol-south",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Broomhill Road, Bristol, BS4 5RG",
+     "postcode": "BS4 5RG",
+     "district": "Bristol, City of",
+     "region": "South West",
+     "lat": 51.43198,
+     "lng": -2.535038,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "21:00"
+       ]
+      ],
+      "sat": [
+       [
+        "10:00",
+        "18:00"
+       ]
+      ],
+      "sun": [
+       [
+        "10:00",
+        "21:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 25,
+       "unit": "hour",
+       "label": "per hour",
+       "context": "re available to book in advance or just turn up and play at £25 per hour for up to 8 players. Ready to get booked in or req"
+      },
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": 25,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": null,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0117 977 4455",
+     "fetchedAt": "2026-10-19T09:53:15.764Z"
+    },
+    {
+     "id": "go-chester",
+     "slug": "chester",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-west/chester",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Sealand Industrial Estate, Chester, CH1 4LT",
+     "postcode": "CH1 4LT",
+     "district": "Cheshire West and Chester",
+     "region": "North West",
+     "lat": 53.1912,
+     "lng": -2.9212,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Adult"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Adult kickabouts are £6 per player"
+      },
+      {
+       "amount": 6,
+       "unit": "person",
+       "label": "5-a-side, per player",
+       "context": "5-a-side or £7 per player on 7-a-side. Adult kickabouts are £6 per player for 5-a-side. Stay fit with your friends Play wh"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01244 260 350",
+     "fetchedAt": "2026-10-19T09:53:19.617Z"
     },
     {
      "id": "go-chingford",
      "slug": "chingford",
-     "name": "Goals Chingford",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/chingford",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/chingford",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "3 Morrison Avenue, London, E4 8SN",
      "postcode": "E4 8SN",
      "district": "Waltham Forest",
      "region": "London",
-     "lat": 51.606833,
-     "lng": -0.019938,
+     "lat": 51.607068,
+     "lng": -0.020601,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -268,16 +1002,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 23:00",
-      "Sunday 09:00 - 23:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
@@ -301,28 +1027,114 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:58:47.591Z"
+     "phone": "0208 503 2220",
+     "fetchedAt": "2026-10-19T09:53:23.399Z"
+    },
+    {
+     "id": "go-coventry",
+     "slug": "coventry",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/coventry",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Centre AT7, Coventry, CV6 7GP",
+     "postcode": "CV6 7GP",
+     "district": "Coventry",
+     "region": "West Midlands",
+     "lat": 52.430642,
+     "lng": -1.48412,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 6,
+       "unit": "person",
+       "label": "per player",
+       "context": "ons on fully enclosed 5-a-side and 8-a-side arenas for only £6 per person. Stay fit with your friends Play when it suits y"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "02476 666 405",
+     "fetchedAt": "2026-10-19T09:53:27.186Z"
     },
     {
      "id": "go-dagenham",
      "slug": "dagenham",
-     "name": "Goals Dagenham",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/dagenham",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/dagenham",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "Dagenham Leisure Park, Dagenham, RM9 6XW",
      "postcode": "RM9 6XW",
      "district": "Barking and Dagenham",
      "region": "London",
-     "lat": 51.533169,
-     "lng": 0.132414,
+     "lat": 51.532856,
+     "lng": 0.132563,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -369,16 +1181,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 22:00",
-      "Sunday 09:00 - 23:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 5,
@@ -402,28 +1206,300 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:59:02.312Z"
+     "phone": "0208 595 7000",
+     "fetchedAt": "2026-10-19T09:53:31.055Z"
+    },
+    {
+     "id": "go-dartford",
+     "slug": "dartford",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/dartford",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Green Street Green Road, Dartford, DA1 1QE",
+     "postcode": "DA1 1QE",
+     "district": "Dartford",
+     "region": "South East",
+     "lat": 51.436213,
+     "lng": 0.235627,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 6,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "ugh to late night sessions on fully enclosed arenas at only £6 per player on 5-a-side or £8 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 8,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "fully enclosed arenas at only £6 per player on 5-a-side or £8 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01322 311 411",
+     "fetchedAt": "2026-10-19T09:53:35.020Z"
+    },
+    {
+     "id": "go-doncaster",
+     "slug": "doncaster",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/yorkshire/doncaster",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Worcester Avenue, Doncaster, DN2 4NB",
+     "postcode": "DN2 4NB",
+     "district": "Doncaster",
+     "region": "Yorkshire and The Humber",
+     "lat": 53.539827,
+     "lng": -1.108602,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01302 965 220",
+     "fetchedAt": "2026-10-19T09:53:38.874Z"
+    },
+    {
+     "id": "go-dudleyrowleyregis",
+     "slug": "dudley-rowley-regis",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/dudley-rowley-regis",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Cakemore Road, Dudley, B65 0QX",
+     "postcode": "B65 0QX",
+     "district": "Dudley",
+     "region": "West Midlands",
+     "lat": 52.479373,
+     "lng": -2.023862,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "09:30",
+        "22:30"
+       ]
+      ],
+      "tue": [
+       [
+        "09:30",
+        "22:30"
+       ]
+      ],
+      "wed": [
+       [
+        "09:30",
+        "22:30"
+       ]
+      ],
+      "thu": [
+       [
+        "09:30",
+        "22:30"
+       ]
+      ],
+      "fri": [
+       [
+        "09:30",
+        "22:30"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 6,
+       "unit": "person",
+       "label": "evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £6 per player. Stay fit with your friends Play when it suits y"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0121 561 3000",
+     "fetchedAt": "2026-10-19T09:53:43.000Z"
     },
     {
      "id": "go-eltham",
      "slug": "eltham",
-     "name": "Goals Eltham",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/eltham",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/eltham",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "Baldon Sports Ground, London, SE9 5LU",
      "postcode": "SE9 5LU",
      "district": "Greenwich",
      "region": "London",
-     "lat": 51.449168,
-     "lng": 0.030655,
+     "lat": 51.449834,
+     "lng": 0.032304,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -470,16 +1546,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 09:00 - 23:00",
-      "Tuesday 09:00 - 23:00",
-      "Wednesday 09:00 - 23:00",
-      "Thursday 09:00 - 23:00",
-      "Friday 09:00 - 21:00",
-      "Saturday 09:00 - 21:00",
-      "Sunday 09:00 - 21:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
@@ -495,28 +1563,28 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:59:17.048Z"
+     "phone": "0208 912 0600",
+     "fetchedAt": "2026-10-19T09:53:47.070Z"
     },
     {
      "id": "go-gillettecorner",
      "slug": "gillette-corner",
-     "name": "Goals Gillette Corner",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/gillette-corner",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/gillette-corner",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "MacFarlane Lane, London, TW7 5DB",
      "postcode": "TW7 5DB",
      "district": "Hounslow",
      "region": "London",
-     "lat": 51.487305,
-     "lng": -0.332343,
+     "lat": 51.48856,
+     "lng": -0.330262,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -563,16 +1631,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 22:30",
-      "Tuesday 10:00 - 22:30",
-      "Wednesday 10:00 - 22:30",
-      "Thursday 10:00 - 22:30",
-      "Friday 10:00 - 22:00",
-      "Saturday 08:30 - 18:00",
-      "Sunday 08:30 - 22:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
@@ -596,28 +1656,198 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0208 912 0890",
+     "fetchedAt": "2026-10-19T09:53:51.156Z"
+    },
+    {
+     "id": "go-glasgowsouth",
+     "slug": "glasgow-south",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/scotland/glasgow-south",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "941 Pollokshaws Road, Glasgow, G41 2DX",
+     "postcode": "G41 2DX",
+     "district": "Glasgow City",
+     "region": null,
+     "lat": 55.832233,
+     "lng": -4.275037,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5
+     ],
+     "pitchCount": null,
+     "parking": null,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": true,
+     "covered": true,
+     "lit": true,
+     "phone": "0141 636 5334",
+     "fetchedAt": "2026-10-19T09:53:55.355Z"
+    },
+    {
+     "id": "go-glasgowwest",
+     "slug": "glasgow-west",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/scotland/glasgow-west",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "2650 Great Western Road, Clydebank, G81 2XT",
+     "postcode": "G81 2XT",
+     "district": "West Dunbartonshire",
+     "region": null,
+     "lat": 55.911194,
+     "lng": -4.38949,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "10:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
      "showers": null,
      "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:59:27.464Z"
+     "phone": "0141 944 2020",
+     "fetchedAt": "2026-10-19T09:53:59.596Z"
     },
     {
      "id": "go-hayes",
      "slug": "hayes",
-     "name": "Goals Hayes",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/hayes",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
-     "address": "Springfield Road, Middlesex, UB4 0LP",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/hayes",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Springfield Road, Hayes, UB4 0LP",
      "postcode": "UB4 0LP",
      "district": "Hillingdon",
      "region": "London",
-     "lat": 51.509773,
-     "lng": -0.399384,
+     "lat": 51.509831,
+     "lng": -0.399492,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -664,28 +1894,32 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 23:00",
-      "Sunday 09:00 - 23:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
        "unit": "person",
        "label": "5-a-side, evening, per player",
-       "context": "h to late night sessions on fully enclosed arenas from only £6 per player on 5-a-side or £8 per player on 7-a-side and 8-a"
+       "context": "h to late night sessions on fully enclosed arenas from only £6 per player on a 5-a-side or £8 per player on a 7-a-side and"
       },
       {
        "amount": 8,
        "unit": "person",
        "label": "per player",
-       "context": "ully enclosed arenas from only £6 per player on 5-a-side or £8 per player on 7-a-side and 8-a-side. Stay fit with your fri"
+       "context": "ly enclosed arenas from only £6 per player on a 5-a-side or £8 per player on a 7-a-side and 8-a-side. Adult (16+) Kickabou"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "5-a-side, per player",
+       "context": "and 8-a-side. Adult (16+) Kickabout sessions available from £7 per player on a 5-a-side or £9 per player on a 7-a-side and"
+      },
+      {
+       "amount": 9,
+       "unit": "person",
+       "label": "per player",
+       "context": "bout sessions available from £7 per player on a 5-a-side or £9 per player on a 7-a-side and 8-a-side. Stay fit with your f"
       }
      ],
      "priceFrom": null,
@@ -697,28 +1931,28 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
-     "bar": null,
+     "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:59:42.897Z"
+     "phone": "0208 606 0999",
+     "fetchedAt": "2026-10-19T09:54:03.593Z"
     },
     {
      "id": "go-heathrow",
      "slug": "heathrow",
-     "name": "Goals Heathrow",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/heathrow",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
-     "address": "Shepiston Lane, Middlesex, UB3 1LL",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/heathrow",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Shepiston Lane, Hayes, UB3 1LL",
      "postcode": "UB3 1LL",
      "district": "Hillingdon",
      "region": "London",
-     "lat": 51.495148,
-     "lng": -0.438079,
+     "lat": 51.495068,
+     "lng": -0.430967,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -765,16 +1999,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 23:00",
-      "Sunday 09:00 - 23:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
@@ -797,84 +2023,76 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T11:59:52.497Z"
+     "phone": "0208 569 1199",
+     "fetchedAt": "2026-10-19T09:54:07.871Z"
     },
     {
-     "id": "go-ruislip",
-     "slug": "ruislip",
-     "name": "Goals Ruislip",
+     "id": "go-ipswich",
+     "slug": "ipswich",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/ruislip",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
-     "address": "Victoria Road, London, HA4 0JE",
-     "postcode": "HA4 0JE",
-     "district": "Hillingdon",
-     "region": "London",
-     "lat": 51.5569,
-     "lng": -0.3909,
+     "url": "https://www.goalsfootball.co.uk/our-clubs/east-england/ipswich",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Suffolk New College Sports Centre, Ipswich, IP4 1LT",
+     "postcode": "IP4 1LT",
+     "district": "Ipswich",
+     "region": "East of England",
+     "lat": 52.054886,
+     "lng": 1.165955,
      "geoSource": "page",
-     "inLondon": true,
+     "inLondon": false,
      "openingHours": {
       "mon": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "22:00"
        ]
       ],
       "tue": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "22:00"
        ]
       ],
       "wed": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "22:00"
        ]
       ],
       "thu": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "22:00"
        ]
       ],
       "fri": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "22:00"
        ]
       ],
       "sat": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "18:00"
        ]
       ],
       "sun": [
        [
-        "09:00",
-        "23:00"
+        "10:00",
+        "22:00"
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 09:00 - 23:00",
-      "Tuesday 09:00 - 23:00",
-      "Wednesday 09:00 - 23:00",
-      "Thursday 09:00 - 23:00",
-      "Friday 09:00 - 23:00",
-      "Saturday 09:00 - 23:00",
-      "Sunday 09:00 - 23:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 5,
@@ -898,28 +2116,1382 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01473 300 060",
+     "fetchedAt": "2026-10-19T09:54:13.650Z"
+    },
+    {
+     "id": "go-leeds",
+     "slug": "leeds",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/yorkshire/leeds",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Redcote Lane, Leeds, LS4 2AW",
+     "postcode": "LS4 2AW",
+     "district": "Leeds",
+     "region": "Yorkshire and The Humber",
+     "lat": 53.80531,
+     "lng": -1.590153,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "08:30",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "08:30",
+        "22:00"
+       ]
+      ],
+      "sat": [
+       [
+        "08:30",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "08:30",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8,
+      9
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0113 263 3030",
+     "fetchedAt": "2026-10-19T09:54:17.532Z"
+    },
+    {
+     "id": "go-leicester",
+     "slug": "leicester",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/leicester",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Wakerley Road, Leicester, LE5 4WJ",
+     "postcode": "LE5 4WJ",
+     "district": "Leicester",
+     "region": "East Midlands",
+     "lat": 52.629177,
+     "lng": -1.088346,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "16:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "16:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "16:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "16:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "16:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 47.5,
+       "unit": "hour",
+       "label": "weekend, per hour",
+       "context": "s available on Saturdays and Sundays from 5pm-10 pm at just £47.50 per hour! Play football, get fit, feel good. Take your game"
+      },
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": 47.5,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0116 249 0555",
+     "fetchedAt": "2026-10-19T09:54:22.536Z"
+    },
+    {
+     "id": "go-liverpoolnorth",
+     "slug": "liverpool-north",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-west/liverpool-north",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "151 Park Lane, Liverpool, L30 1QQ",
+     "postcode": "L30 1QQ",
+     "district": "Sefton",
+     "region": "North West",
+     "lat": 53.479464,
+     "lng": -2.966033,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player or £7 for parent and child. Stay fit with your f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "per player",
+       "context": "essions on fully enclosed arenas from only £5 per player or £7 for parent and child. Stay fit with your friends Play when"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      11
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0151 214 0711",
+     "fetchedAt": "2026-10-19T09:54:26.355Z"
+    },
+    {
+     "id": "go-liverpoolsouth",
+     "slug": "liverpool-south",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-west/liverpool-south",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "110 Evans Road, Liverpool, L24 9PQ",
+     "postcode": "L24 9PQ",
+     "district": "Liverpool",
+     "region": "North West",
+     "lat": 53.349744,
+     "lng": -2.860478,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "22:30"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "22:30"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "22:30"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "22:30"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "21:30"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0151 214 1090",
+     "fetchedAt": "2026-10-19T09:54:30.151Z"
+    },
+    {
+     "id": "go-manchester",
+     "slug": "manchester",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-west/manchester",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "4 Irish Town Way, Manchester, M8 0RY",
+     "postcode": "M8 0RY",
+     "district": "Manchester",
+     "region": "North West",
+     "lat": 53.499879,
+     "lng": -2.22815,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
      "showers": null,
      "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T12:00:43.287Z"
+     "phone": "0161 441 4560",
+     "fetchedAt": "2026-10-19T09:54:35.008Z"
+    },
+    {
+     "id": "go-newcastle",
+     "slug": "newcastle",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-east/newcastle",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "High Gosforth Park, Newcastle Upon Tyne, NE3 5HP",
+     "postcode": "NE3 5HP",
+     "district": "Newcastle upon Tyne",
+     "region": "North East",
+     "lat": 55.035185,
+     "lng": -1.612058,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "sat": [
+       [
+        "08:00",
+        "16:00"
+       ]
+      ],
+      "sun": [
+       [
+        "08:00",
+        "22:30"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player. Stay fit with your friends Play when it suits y"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      11
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0191 217 3040",
+     "fetchedAt": "2026-10-19T09:54:40.127Z"
+    },
+    {
+     "id": "go-northampton",
+     "slug": "northampton",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/midlands/northampton",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Abbeyfield School, Northampton, NN4 8BT",
+     "postcode": "NN4 8BT",
+     "district": "West Northamptonshire",
+     "region": "East Midlands",
+     "lat": 52.216395,
+     "lng": -0.905737,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side and £7 per player on 8-a-side. Stay"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "8-a-side, per player",
+       "context": "lly enclosed arenas from only £5 per player on 5-a-side and £7 per player on 8-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01604 876 777",
+     "fetchedAt": "2026-10-19T09:54:44.839Z"
+    },
+    {
+     "id": "go-norwich",
+     "slug": "norwich",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/east-england/norwich",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Hall Road, Norwich, NR1 2GB",
+     "postcode": "NR1 2GB",
+     "district": "Norwich",
+     "region": "East of England",
+     "lat": 52.611843,
+     "lng": 1.290675,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01603 790 060",
+     "fetchedAt": "2026-10-19T09:54:48.932Z"
+    },
+    {
+     "id": "go-portsmouth",
+     "slug": "portsmouth",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south/portsmouth",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Tangier Road, Portsmouth, PO3 6QA",
+     "postcode": "PO3 6QA",
+     "district": "Portsmouth",
+     "region": "South East",
+     "lat": 50.808965,
+     "lng": -1.046539,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "21:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 6,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £6 per player on 5-a-side or £8 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 8,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £6 per player on 5-a-side or £8 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "02392 191 101",
+     "fetchedAt": "2026-10-19T09:54:52.687Z"
+    },
+    {
+     "id": "go-reading",
+     "slug": "reading",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/reading",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Woodlands Avenue, Reading, RG5 3EU",
+     "postcode": "RG5 3EU",
+     "district": "Wokingham",
+     "region": "South East",
+     "lat": 51.452951,
+     "lng": -0.917977,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "17:00",
+        "22:00"
+       ]
+      ],
+      "tue": [
+       [
+        "17:00",
+        "22:00"
+       ]
+      ],
+      "wed": [
+       [
+        "17:00",
+        "22:00"
+       ]
+      ],
+      "thu": [
+       [
+        "17:00",
+        "22:00"
+       ]
+      ],
+      "fri": [
+       [
+        "17:00",
+        "22:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "21:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "19:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": true,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01183 721 077",
+     "fetchedAt": "2026-10-19T09:54:57.663Z"
+    },
+    {
+     "id": "go-ruislip",
+     "slug": "ruislip",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/ruislip",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Victoria Road, London, HA4 0JE",
+     "postcode": "HA4 0JE",
+     "district": "Hillingdon",
+     "region": "London",
+     "lat": 51.557384,
+     "lng": -0.39501,
+     "geoSource": "page",
+     "inLondon": true,
+     "openingHours": {
+      "mon": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": true,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0208 842 1010",
+     "fetchedAt": "2026-10-19T09:55:01.407Z"
+    },
+    {
+     "id": "go-sheffield",
+     "slug": "sheffield",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/yorkshire/sheffield",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "95 Norfolk Park Road, Sheffield, S2 2RU",
+     "postcode": "S2 2RU",
+     "district": "Sheffield",
+     "region": "Yorkshire and The Humber",
+     "lat": 53.373191,
+     "lng": -1.455665,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "17:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0114 272 6700",
+     "fetchedAt": "2026-10-19T09:55:05.159Z"
+    },
+    {
+     "id": "go-southampton",
+     "slug": "southampton",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south/southampton",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Third Avenue, Southampton, SO15 0JW",
+     "postcode": "SO15 0JW",
+     "district": "Southampton",
+     "region": "South East",
+     "lat": 50.911434,
+     "lng": -1.445513,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "12:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": true,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "02380 510 666",
+     "fetchedAt": "2026-10-19T09:55:11.735Z"
+    },
+    {
+     "id": "go-southend",
+     "slug": "southend",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/southend",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Chase High School, 224 Prittlewell Chase, Southend, SS0 0RT",
+     "postcode": "SS0 0RT",
+     "district": "Southend-on-Sea",
+     "region": "East of England",
+     "lat": 51.552656,
+     "lng": 0.688966,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "22:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "21:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "20:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      6,
+      7,
+      8,
+      11
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": true,
+     "cafe": null,
+     "covered": null,
+     "lit": true,
+     "phone": "01702 414 077",
+     "fetchedAt": "2026-10-19T09:55:19.505Z"
+    },
+    {
+     "id": "go-sunderland",
+     "slug": "sunderland",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-east/sunderland",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "Sunderland College, Sunderland, SR3 4AG",
+     "postcode": "SR3 4AG",
+     "district": "Sunderland",
+     "region": "North East",
+     "lat": 54.892639,
+     "lng": -1.405759,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "10:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:00"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "0191 337 0360",
+     "fetchedAt": "2026-10-19T09:55:25.048Z"
     },
     {
      "id": "go-sutton",
      "slug": "sutton",
-     "name": "Goals Sutton",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/sutton",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
-     "address": "Goals Sutton, North Cheam, SM3 9BY",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/sutton",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "North Cheam, SM3 9BY",
      "postcode": "SM3 9BY",
      "district": "Sutton",
      "region": "London",
-     "lat": 51.3737,
-     "lng": -0.2233,
+     "lat": 51.37617,
+     "lng": -0.221945,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -966,16 +3538,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 22:30",
-      "Tuesday 10:00 - 22:30",
-      "Wednesday 10:00 - 22:30",
-      "Thursday 10:00 - 22:30",
-      "Friday 10:00 - 22:30",
-      "Saturday 09:00 - 18:00",
-      "Sunday 08:30 - 21:30"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 6,
@@ -999,28 +3563,121 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T12:00:58.947Z"
+     "phone": "0208 644 1333",
+     "fetchedAt": "2026-10-19T09:55:29.346Z"
+    },
+    {
+     "id": "go-teesside",
+     "slug": "teesside",
+     "name": "GOALS",
+     "operator": "Goals",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/north-east/teesside",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
+     "address": "66-68 Stockton Road, Middlesbrough, TS5 4AF",
+     "postcode": "TS5 4AF",
+     "district": "Middlesbrough",
+     "region": "North East",
+     "lat": 54.565459,
+     "lng": -1.265532,
+     "geoSource": "page",
+     "inLondon": false,
+     "openingHours": {
+      "mon": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "tue": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "wed": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "thu": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "fri": [
+       [
+        "09:00",
+        "23:00"
+       ]
+      ],
+      "sat": [
+       [
+        "09:00",
+        "17:00"
+       ]
+      ],
+      "sun": [
+       [
+        "09:00",
+        "22:30"
+       ]
+      ]
+     },
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [
+      {
+       "amount": 5,
+       "unit": "person",
+       "label": "5-a-side, evening, per player",
+       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+      },
+      {
+       "amount": 7,
+       "unit": "person",
+       "label": "7-a-side, per player",
+       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+      }
+     ],
+     "priceFrom": null,
+     "surface": null,
+     "formats": [
+      5,
+      7,
+      8
+     ],
+     "pitchCount": null,
+     "parking": true,
+     "changingRooms": true,
+     "showers": null,
+     "bar": null,
+     "cafe": null,
+     "covered": true,
+     "lit": true,
+     "phone": "01642 228 200",
+     "fetchedAt": "2026-10-19T09:55:34.114Z"
     },
     {
      "id": "go-tolworth",
      "slug": "tolworth",
-     "name": "Goals Tolworth",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/tolworth",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/tolworth",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "Decker Sports Ground, Tolworth, KT5 9NT",
      "postcode": "KT5 9NT",
      "district": "Kingston upon Thames",
      "region": "London",
-     "lat": 51.377126,
-     "lng": -0.277404,
+     "lat": 51.377229,
+     "lng": -0.277226,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -1067,16 +3724,8 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 22:00",
-      "Sunday 09:00 - 22:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
        "amount": 5,
@@ -1096,32 +3745,33 @@
      "formats": [
       5,
       7,
-      8
+      8,
+      11
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T12:01:08.851Z"
+     "phone": "0208 337 2425",
+     "fetchedAt": "2026-10-19T09:55:38.386Z"
     },
     {
      "id": "go-wembley",
      "slug": "wembley",
-     "name": "Goals Wembley",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/wembley",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/wembley",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "Alperton Playing Fields, Wembley, HA0 1JH",
      "postcode": "HA0 1JH",
      "district": "Brent",
      "region": "London",
-     "lat": 51.534571,
-     "lng": -0.304903,
+     "lat": 51.534725,
+     "lng": -0.304377,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -1168,30 +3818,9 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 - 23:00",
-      "Sunday 09:00 - 23:00"
-     ],
-     "prices": [
-      {
-       "amount": 5,
-       "unit": "person",
-       "label": "5-a-side, evening, per player",
-       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
-      },
-      {
-       "amount": 7,
-       "unit": "person",
-       "label": "7-a-side, per player",
-       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
-      }
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
+     "prices": [],
      "priceFrom": null,
      "surface": null,
      "formats": [
@@ -1201,28 +3830,28 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T12:01:18.805Z"
+     "phone": "0208 997 4040",
+     "fetchedAt": "2026-10-19T09:55:42.238Z"
     },
     {
      "id": "go-wimbledon",
      "slug": "wimbledon",
-     "name": "Goals Wimbledon",
+     "name": "GOALS",
      "operator": "Goals",
-     "url": "https://www.goalsfootball.co.uk/clubs/south-east/wimbledon",
-     "bookingUrl": "https://www.goalsfootball.co.uk/play/book-a-game",
+     "url": "https://www.goalsfootball.co.uk/our-clubs/south-east/wimbledon",
+     "bookingUrl": "https://www.goalsfootball.co.uk/play/football/one/",
      "address": "Beverley Way, New Malden, London, KT3 4PH",
      "postcode": "KT3 4PH",
      "district": "Merton",
      "region": "London",
-     "lat": 51.4063,
-     "lng": -0.2427,
+     "lat": 51.401071,
+     "lng": -0.242833,
      "geoSource": "page",
      "inLondon": true,
      "openingHours": {
@@ -1269,28 +3898,20 @@
        ]
       ]
      },
-     "hoursSource": "text",
-     "hoursQuotes": [
-      "Monday 10:00 - 23:00",
-      "Tuesday 10:00 - 23:00",
-      "Wednesday 10:00 - 23:00",
-      "Thursday 10:00 - 23:00",
-      "Friday 10:00 - 23:00",
-      "Saturday 09:00 -18:00",
-      "Sunday 09:00 - 22:00"
-     ],
+     "hoursSource": "schema",
+     "hoursQuotes": [],
      "prices": [
       {
-       "amount": 5,
+       "amount": 6,
        "unit": "person",
        "label": "5-a-side, evening, per player",
-       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
+       "context": "h to late night sessions on fully enclosed arenas from only £6 per player on 5-a-side or £8 per player on 7-a-side. Stay f"
       },
       {
-       "amount": 7,
+       "amount": 8,
        "unit": "person",
        "label": "7-a-side, per player",
-       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+       "context": "ully enclosed arenas from only £6 per player on 5-a-side or £8 per player on 7-a-side. Stay fit with your friends Play whe"
       }
      ],
      "priceFrom": null,
@@ -1301,14 +3922,14 @@
      ],
      "pitchCount": null,
      "parking": true,
-     "changingRooms": null,
+     "changingRooms": true,
      "showers": null,
      "bar": true,
      "cafe": null,
      "covered": true,
      "lit": true,
-     "phone": null,
-     "fetchedAt": "2026-10-12T12:01:30.054Z"
+     "phone": "0208 949 1122",
+     "fetchedAt": "2026-10-19T09:55:47.070Z"
     }
    ]
   },

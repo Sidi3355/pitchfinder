@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-12T13:10:07.213Z",
+ "fetchedAt": "2026-10-19T11:06:01.078Z",
  "offline": false,
  "pitchbooking": {
   "site": "https://pitchbooking.com",
@@ -28,15 +28,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 259,
+    "slotsSeen": 261,
     "bands": [
      {
       "format": 5,
@@ -76,7 +76,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 51
+      "slotsSeen": 48
      },
      {
       "format": 5,
@@ -111,7 +111,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 12
+      "slotsSeen": 13
      },
      {
       "format": 5,
@@ -119,6 +119,7 @@
       "amount": 99,
       "minutes": 60,
       "days": [
+       "mon",
        "wed"
       ],
       "windows": [
@@ -127,7 +128,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 2
      },
      {
       "format": 8,
@@ -138,8 +139,7 @@
        "mon",
        "tue",
        "wed",
-       "thu",
-       "fri"
+       "thu"
       ],
       "windows": [
        [
@@ -147,7 +147,7 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 70
+      "slotsSeen": 57
      },
      {
       "format": 8,
@@ -155,20 +155,17 @@
       "amount": 124,
       "minutes": 60,
       "days": [
+       "fri",
        "sat",
        "sun"
       ],
       "windows": [
        [
         "09:00",
-        "19:30"
-       ],
-       [
-        "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 32
+      "slotsSeen": 48
      },
      {
       "format": 8,
@@ -192,7 +189,7 @@
       "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-12T12:02:03.923Z"
+    "fetchedAt": "2026-10-19T09:56:02.711Z"
    },
    {
     "id": "go-bexleyheath",
@@ -223,34 +220,16 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 121,
+    "slotsSeen": 205,
     "bands": [
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 61,
-      "minutes": 60,
-      "days": [
-       "fri",
-       "sat",
-       "sun"
-      ],
-      "windows": [
-       [
-        "09:30",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 28
-     },
      {
       "format": 5,
       "surface": "3g",
@@ -268,7 +247,24 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 11
+      "slotsSeen": 32
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 61,
+      "minutes": 60,
+      "days": [
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 24
      },
      {
       "format": 5,
@@ -292,6 +288,38 @@
      {
       "format": 5,
       "surface": "3g",
+      "amount": 97,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:30",
+        "16:30"
+       ]
+      ],
+      "slotsSeen": 7
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 61,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 5,
+      "surface": "3g",
       "amount": 72,
       "minutes": 60,
       "days": [
@@ -311,10 +339,28 @@
      {
       "format": 7,
       "surface": "3g",
+      "amount": 134,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "10:30",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 31
+     },
+     {
+      "format": 7,
+      "surface": "3g",
       "amount": 102,
       "minutes": 60,
       "days": [
-       "fri",
        "sat",
        "sun"
       ],
@@ -324,7 +370,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 24
      },
      {
       "format": 7,
@@ -332,16 +378,15 @@
       "amount": 134,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue"
+       "fri"
       ],
       "windows": [
        [
         "10:30",
-        "17:30"
+        "16:30"
        ]
       ],
-      "slotsSeen": 9
+      "slotsSeen": 7
      },
      {
       "format": 7,
@@ -350,7 +395,6 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue",
        "wed",
        "thu"
       ],
@@ -367,6 +411,46 @@
       "slotsSeen": 5
      },
      {
+      "format": 7,
+      "surface": "3g",
+      "amount": 102,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "17:30",
+        "17:30"
+       ],
+       [
+        "20:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 2
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 142,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "10:30",
+        "17:30"
+       ]
+      ],
+      "slotsSeen": 34
+     },
+     {
       "format": 8,
       "surface": "3g",
       "amount": 108.5,
@@ -381,23 +465,23 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 19
+      "slotsSeen": 18
      },
      {
       "format": 8,
       "surface": "3g",
-      "amount": 142,
+      "amount": 108.5,
       "minutes": 60,
       "days": [
-       "mon"
+       "fri"
       ],
       "windows": [
        [
-        "10:30",
-        "17:30"
+        "18:30",
+        "19:30"
        ]
       ],
-      "slotsSeen": 8
+      "slotsSeen": 2
      },
      {
       "format": 8,
@@ -416,7 +500,7 @@
       "slotsSeen": 1
      }
     ],
-    "fetchedAt": "2026-10-12T12:04:10.252Z"
+    "fetchedAt": "2026-10-19T09:57:39.766Z"
    },
    {
     "id": "go-chingford",
@@ -442,15 +526,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 238,
+    "slotsSeen": 233,
     "bands": [
      {
       "format": 5,
@@ -487,7 +571,7 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 64
+      "slotsSeen": 63
      },
      {
       "format": 5,
@@ -506,7 +590,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 21
+      "slotsSeen": 19
      },
      {
       "format": 5,
@@ -525,7 +609,7 @@
         "19:00"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 9
      },
      {
       "format": 8,
@@ -544,7 +628,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 30
+      "slotsSeen": 31
      },
      {
       "format": 8,
@@ -562,7 +646,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 29
+      "slotsSeen": 28
      },
      {
       "format": 8,
@@ -581,14 +665,14 @@
         "18:00"
        ],
        [
-        "21:00",
+        "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 5
      }
     ],
-    "fetchedAt": "2026-10-12T12:06:46.992Z"
+    "fetchedAt": "2026-10-19T10:00:03.943Z"
    },
    {
     "id": "go-dagenham",
@@ -619,15 +703,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 379,
+    "slotsSeen": 381,
     "bands": [
      {
       "format": 5,
@@ -647,7 +731,7 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 77
+      "slotsSeen": 78
      },
      {
       "format": 5,
@@ -664,7 +748,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 49
+      "slotsSeen": 50
      },
      {
       "format": 5,
@@ -684,7 +768,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 34
+      "slotsSeen": 36
      },
      {
       "format": 7,
@@ -703,7 +787,7 @@
         "19:00"
        ]
       ],
-      "slotsSeen": 69
+      "slotsSeen": 66
      },
      {
       "format": 7,
@@ -755,7 +839,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 13
+      "slotsSeen": 15
      },
      {
       "format": 7,
@@ -769,13 +853,9 @@
        [
         "18:00",
         "18:00"
-       ],
-       [
-        "22:00",
-        "22:00"
        ]
       ],
-      "slotsSeen": 2
+      "slotsSeen": 1
      },
      {
       "format": 8,
@@ -820,18 +900,19 @@
       "amount": 145,
       "minutes": 60,
       "days": [
+       "tue",
        "thu"
       ],
       "windows": [
        [
-        "19:30",
-        "20:30"
+        "20:30",
+        "21:30"
        ]
       ],
       "slotsSeen": 2
      }
     ],
-    "fetchedAt": "2026-10-12T12:08:28.387Z"
+    "fetchedAt": "2026-10-19T10:01:48.033Z"
    },
    {
     "id": "go-eltham",
@@ -857,15 +938,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 233,
+    "slotsSeen": 237,
     "bands": [
      {
       "format": 5,
@@ -924,7 +1005,7 @@
         "20:30"
        ]
       ],
-      "slotsSeen": 15
+      "slotsSeen": 16
      },
      {
       "format": 5,
@@ -983,28 +1064,9 @@
       "amount": 124,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "sun"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "18:00"
-       ]
-      ],
-      "slotsSeen": 39
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 124,
-      "minutes": 60,
-      "days": [
        "fri",
-       "sat"
+       "sat",
+       "sun"
       ],
       "windows": [
        [
@@ -1012,7 +1074,26 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 18
+      "slotsSeen": 32
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 124,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 29
      },
      {
       "format": 8,
@@ -1021,8 +1102,7 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue",
-       "thu"
+       "tue"
       ],
       "windows": [
        [
@@ -1034,10 +1114,10 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-12T12:11:24.097Z"
+    "fetchedAt": "2026-10-19T10:04:11.357Z"
    },
    {
     "id": "go-gillettecorner",
@@ -1063,15 +1143,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 269,
+    "slotsSeen": 266,
     "bands": [
      {
       "format": 5,
@@ -1088,10 +1168,10 @@
       "windows": [
        [
         "08:30",
-        "17:30"
+        "18:00"
        ]
       ],
-      "slotsSeen": 78
+      "slotsSeen": 80
      },
      {
       "format": 5,
@@ -1152,8 +1232,7 @@
       "days": [
        "mon",
        "tue",
-       "wed",
-       "thu"
+       "wed"
       ],
       "windows": [
        [
@@ -1165,7 +1244,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 4
      },
      {
       "format": 5,
@@ -1175,8 +1254,7 @@
       "days": [
        "mon",
        "tue",
-       "wed",
-       "thu"
+       "wed"
       ],
       "windows": [
        [
@@ -1184,7 +1262,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 3
      },
      {
       "format": 8,
@@ -1201,10 +1279,10 @@
       "windows": [
        [
         "10:00",
-        "18:00"
+        "17:30"
        ]
       ],
-      "slotsSeen": 73
+      "slotsSeen": 70
      },
      {
       "format": 8,
@@ -1221,7 +1299,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 37
+      "slotsSeen": 38
      },
      {
       "format": 8,
@@ -1263,19 +1341,18 @@
       "amount": 143,
       "minutes": 60,
       "days": [
-       "tue",
        "wed"
       ],
       "windows": [
        [
-        "20:00",
+        "19:30",
         "20:30"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 2
      }
     ],
-    "fetchedAt": "2026-10-12T12:13:35.896Z"
+    "fetchedAt": "2026-10-19T10:05:57.469Z"
    },
    {
     "id": "go-hayes",
@@ -1306,15 +1383,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 460,
+    "slotsSeen": 445,
     "bands": [
      {
       "format": 5,
@@ -1333,7 +1410,7 @@
         "18:30"
        ]
       ],
-      "slotsSeen": 69
+      "slotsSeen": 70
      },
      {
       "format": 5,
@@ -1350,7 +1427,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 53
+      "slotsSeen": 47
      },
      {
       "format": 5,
@@ -1413,14 +1490,15 @@
       "amount": 120,
       "minutes": 60,
       "days": [
-       "fri",
-       "sat",
-       "sun"
+       "mon",
+       "tue",
+       "wed",
+       "thu"
       ],
       "windows": [
        [
-        "09:00",
-        "22:00"
+        "10:00",
+        "18:30"
        ]
       ],
       "slotsSeen": 71
@@ -1431,36 +1509,17 @@
       "amount": 120,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
+       "fri",
+       "sat",
+       "sun"
       ],
       "windows": [
        [
-        "10:00",
-        "18:30"
+        "09:00",
+        "22:00"
        ]
       ],
-      "slotsSeen": 70
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 143,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed"
-      ],
-      "windows": [
-       [
-        "19:00",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 7
+      "slotsSeen": 64
      },
      {
       "format": 7,
@@ -1470,6 +1529,7 @@
       "days": [
        "mon",
        "tue",
+       "wed",
        "thu"
       ],
       "windows": [
@@ -1478,7 +1538,24 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 4
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 143,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue"
+      ],
+      "windows": [
+       [
+        "19:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 4
      },
      {
       "format": 8,
@@ -1497,7 +1574,7 @@
         "18:30"
        ]
       ],
-      "slotsSeen": 60
+      "slotsSeen": 61
      },
      {
       "format": 8,
@@ -1514,7 +1591,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 46
+      "slotsSeen": 39
      },
      {
       "format": 8,
@@ -1534,7 +1611,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 21
      },
      {
       "format": 8,
@@ -1543,7 +1620,8 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue"
+       "tue",
+       "thu"
       ],
       "windows": [
        [
@@ -1551,7 +1629,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 10
      },
      {
       "format": 8,
@@ -1572,7 +1650,7 @@
       "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-12T12:15:10.214Z"
+    "fetchedAt": "2026-10-19T10:07:27.387Z"
    },
    {
     "id": "go-heathrow",
@@ -1598,15 +1676,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 207,
+    "slotsSeen": 233,
     "bands": [
      {
       "format": 5,
@@ -1638,11 +1716,11 @@
       ],
       "windows": [
        [
-        "15:00",
+        "10:00",
         "18:00"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 37
      },
      {
       "format": 5,
@@ -1661,7 +1739,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 25
      },
      {
       "format": 5,
@@ -1714,7 +1792,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 39
+      "slotsSeen": 48
      },
      {
       "format": 8,
@@ -1730,11 +1808,11 @@
       ],
       "windows": [
        [
-        "15:00",
+        "10:00",
         "17:00"
        ]
       ],
-      "slotsSeen": 24
+      "slotsSeen": 34
      },
      {
       "format": 8,
@@ -1747,24 +1825,6 @@
       "windows": [
        [
         "17:30",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 6
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 156,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "thu"
-      ],
-      "windows": [
-       [
-        "18:30",
         "21:00"
        ]
       ],
@@ -1795,6 +1855,7 @@
       "minutes": 60,
       "days": [
        "mon",
+       "wed",
        "fri"
       ],
       "windows": [
@@ -1803,10 +1864,31 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 2
+      "slotsSeen": 3
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 156,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "wed"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "19:00"
+       ],
+       [
+        "21:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 3
      }
     ],
-    "fetchedAt": "2026-10-12T12:17:37.358Z"
+    "fetchedAt": "2026-10-19T10:10:00.084Z"
    },
    {
     "id": "go-ruislip",
@@ -1837,15 +1919,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 161,
+    "slotsSeen": 188,
     "bands": [
      {
       "format": 5,
@@ -1877,6 +1959,22 @@
         "17:30"
        ]
       ],
+      "slotsSeen": 16
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 92,
+      "minutes": 60,
+      "days": [
+       "mon"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "16:00"
+       ]
+      ],
       "slotsSeen": 15
      },
      {
@@ -1898,40 +1996,6 @@
      {
       "format": 5,
       "surface": "3g",
-      "amount": 66,
-      "minutes": 60,
-      "days": [
-       "sat"
-      ],
-      "windows": [
-       [
-        "18:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 9
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 100.5,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "thu"
-      ],
-      "windows": [
-       [
-        "16:30",
-        "18:00"
-       ]
-      ],
-      "slotsSeen": 9
-     },
-     {
-      "format": 5,
-      "surface": "3g",
       "amount": 111,
       "minutes": 60,
       "days": [
@@ -1946,7 +2010,42 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 8
+      "slotsSeen": 11
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 100.5,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 10
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 66,
+      "minutes": 60,
+      "days": [
+       "sat"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 9
      },
      {
       "format": 5,
@@ -1984,11 +2083,11 @@
         "08:30"
        ],
        [
-        "11:30",
+        "10:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 28
      },
      {
       "format": 7,
@@ -2015,7 +2114,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 9
+      "slotsSeen": 10
      },
      {
       "format": 8,
@@ -2030,14 +2129,10 @@
       "windows": [
        [
         "08:00",
-        "08:00"
-       ],
-       [
-        "11:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 29
+      "slotsSeen": 31
      },
      {
       "format": 8,
@@ -2056,14 +2151,14 @@
         "19:00"
        ],
        [
-        "22:00",
+        "21:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 12
+      "slotsSeen": 14
      }
     ],
-    "fetchedAt": "2026-10-12T12:19:12.112Z"
+    "fetchedAt": "2026-10-19T10:11:32.894Z"
    },
    {
     "id": "go-sutton",
@@ -2089,15 +2184,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 158,
+    "slotsSeen": 168,
     "bands": [
      {
       "format": 5,
@@ -2116,7 +2211,7 @@
         "16:15"
        ]
       ],
-      "slotsSeen": 56
+      "slotsSeen": 55
      },
      {
       "format": 5,
@@ -2153,7 +2248,7 @@
         "21:15"
        ]
       ],
-      "slotsSeen": 12
+      "slotsSeen": 26
      },
      {
       "format": 8,
@@ -2171,7 +2266,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 27
      },
      {
       "format": 8,
@@ -2186,11 +2281,11 @@
       ],
       "windows": [
        [
-        "10:30",
+        "11:30",
         "16:30"
        ]
       ],
-      "slotsSeen": 24
+      "slotsSeen": 20
      },
      {
       "format": 8,
@@ -2198,9 +2293,8 @@
       "amount": 154,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed"
+       "wed",
+       "thu"
       ],
       "windows": [
        [
@@ -2212,10 +2306,10 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 4
      }
     ],
-    "fetchedAt": "2026-10-12T12:21:33.413Z"
+    "fetchedAt": "2026-10-19T10:13:44.555Z"
    },
    {
     "id": "go-wembley",
@@ -2246,15 +2340,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 339,
+    "slotsSeen": 365,
     "bands": [
      {
       "format": 5,
@@ -2273,7 +2367,7 @@
         "19:00"
        ]
       ],
-      "slotsSeen": 75
+      "slotsSeen": 74
      },
      {
       "format": 5,
@@ -2292,7 +2386,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 23
+      "slotsSeen": 22
      },
      {
       "format": 5,
@@ -2332,6 +2426,46 @@
       "amount": 70,
       "minutes": 60,
       "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "13:00",
+        "18:30"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "12:30"
+       ],
+       [
+        "19:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
        "sat"
       ],
       "windows": [
@@ -2341,26 +2475,6 @@
        ]
       ],
       "slotsSeen": 9
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 70,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "16:00",
-        "18:30"
-       ],
-       [
-        "21:30",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 8
      },
      {
       "format": 5,
@@ -2377,22 +2491,6 @@
        ]
       ],
       "slotsSeen": 7
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 95,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "19:00",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 5
      },
      {
       "format": 7,
@@ -2420,28 +2518,8 @@
       "amount": 144,
       "minutes": 60,
       "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri",
+       "sat",
        "sun"
-      ],
-      "windows": [
-       [
-        "16:30",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 19
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 144,
-      "minutes": 60,
-      "days": [
-       "sat"
       ],
       "windows": [
        [
@@ -2449,7 +2527,27 @@
         "20:30"
        ]
       ],
-      "slotsSeen": 13
+      "slotsSeen": 24
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 144,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 14
      },
      {
       "format": 8,
@@ -2469,7 +2567,7 @@
         "15:30"
        ]
       ],
-      "slotsSeen": 60
+      "slotsSeen": 54
      },
      {
       "format": 8,
@@ -2489,7 +2587,27 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 29
+     },
+     {
+      "format": 8,
+      "surface": "3g",
+      "amount": 142,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "13:00",
+        "18:30"
+       ],
+       [
+        "22:00",
+        "22:00"
+       ]
+      ],
+      "slotsSeen": 13
      },
      {
       "format": 8,
@@ -2510,6 +2628,26 @@
      {
       "format": 8,
       "surface": "3g",
+      "amount": 151,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "12:30"
+       ],
+       [
+        "19:00",
+        "21:00"
+       ]
+      ],
+      "slotsSeen": 11
+     },
+     {
+      "format": 8,
+      "surface": "3g",
       "amount": 142,
       "minutes": 60,
       "days": [
@@ -2522,49 +2660,9 @@
        ]
       ],
       "slotsSeen": 8
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 142,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "16:00",
-        "18:30"
-       ],
-       [
-        "22:00",
-        "22:00"
-       ]
-      ],
-      "slotsSeen": 7
-     },
-     {
-      "format": 8,
-      "surface": "3g",
-      "amount": 151,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "09:30",
-        "09:30"
-       ],
-       [
-        "19:00",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 6
      }
     ],
-    "fetchedAt": "2026-10-12T12:23:07.711Z"
+    "fetchedAt": "2026-10-19T10:15:37.231Z"
    },
    {
     "id": "go-wimbledon",
@@ -2590,15 +2688,15 @@
      }
     ],
     "dates": [
-     "2026-10-13",
-     "2026-10-14",
-     "2026-10-15",
-     "2026-10-16",
-     "2026-10-17",
-     "2026-10-18",
-     "2026-10-19"
+     "2026-10-20",
+     "2026-10-21",
+     "2026-10-22",
+     "2026-10-23",
+     "2026-10-24",
+     "2026-10-25",
+     "2026-10-26"
     ],
-    "slotsSeen": 207,
+    "slotsSeen": 230,
     "bands": [
      {
       "format": 5,
@@ -2616,7 +2714,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 70
+      "slotsSeen": 72
      },
      {
       "format": 5,
@@ -2635,7 +2733,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 54
+      "slotsSeen": 59
      },
      {
       "format": 5,
@@ -2654,7 +2752,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 16
+      "slotsSeen": 26
      },
      {
       "format": 5,
@@ -2692,7 +2790,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 31
+      "slotsSeen": 32
      },
      {
       "format": 7,
@@ -2710,7 +2808,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 30
      },
      {
       "format": 7,
@@ -2720,7 +2818,8 @@
       "days": [
        "mon",
        "tue",
-       "wed"
+       "wed",
+       "thu"
       ],
       "windows": [
        [
@@ -2732,10 +2831,10 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 7
      }
     ],
-    "fetchedAt": "2026-10-12T12:25:35.504Z"
+    "fetchedAt": "2026-10-19T10:17:50.634Z"
    }
   ]
  },
@@ -6066,7 +6165,7 @@
     "bands": [],
     "priceSummary": "Football 11-a-side £178.20 / hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:30:27.912Z"
+    "fetchedAt": "2026-10-19T10:22:47.128Z"
    },
    {
     "slug": "burnt-oak-leisure-centre",
@@ -7228,7 +7327,7 @@
       "format": 11,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      },
@@ -7238,7 +7337,7 @@
       "format": 7,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -7246,7 +7345,7 @@
     "bands": [],
     "priceSummary": "From £150.00-£168.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:36:02.437Z"
+    "fetchedAt": "2026-10-19T10:42:56.239Z"
    },
    {
     "slug": "city-of-london-academy-southwark",
@@ -7841,7 +7940,7 @@
       "format": 8,
       "surface": "3g",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -7849,7 +7948,7 @@
     "bands": [],
     "priceSummary": "£145.00/hour for evening and weekend bookings. £125.00/hour for lunchtime bookings",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:33:13.337Z"
+    "fetchedAt": "2026-10-19T10:30:08.275Z"
    },
    {
     "slug": "coram-s-fields-indoor-spaces",
@@ -8020,7 +8119,7 @@
       "format": 5,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -8028,7 +8127,7 @@
     "bands": [],
     "priceSummary": "Peak £60",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:41:48.831Z"
+    "fetchedAt": "2026-10-19T11:01:12.657Z"
    },
    {
     "slug": "cox-green",
@@ -8376,7 +8475,7 @@
     "bands": [],
     "priceSummary": "Around £38.90/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:30:44.363Z"
+    "fetchedAt": "2026-10-19T10:23:03.940Z"
    },
    {
     "slug": "dagenham-goals",
@@ -9253,7 +9352,7 @@
       "format": 5,
       "surface": "3g",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -9261,7 +9360,7 @@
     "bands": [],
     "priceSummary": "From £15.00-£30.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:41:00.368Z"
+    "fetchedAt": "2026-10-19T10:58:41.849Z"
    },
    {
     "slug": "dormers-wells-lc-pitches",
@@ -9558,7 +9657,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:38:49.566Z"
+    "fetchedAt": "2026-10-19T10:52:36.925Z"
    },
    {
     "slug": "elthorne-sports-centre",
@@ -10284,7 +10383,7 @@
     "bands": [],
     "priceSummary": "From £31.00-£74.45/45 mins",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:33:23.862Z"
+    "fetchedAt": "2026-10-19T10:31:00.515Z"
    },
    {
     "slug": "finsbury-park-sports-partnership",
@@ -10453,7 +10552,7 @@
     "bands": [],
     "priceSummary": "Please enquire for price",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:44:18.482Z"
+    "fetchedAt": "2026-10-19T11:05:53.624Z"
    },
    {
     "slug": "fredricks-hotel-restaurant-spa",
@@ -11417,7 +11516,7 @@
     "bands": [],
     "priceSummary": "*Please note this venue is currently fully booked*",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:31:10.846Z"
+    "fetchedAt": "2026-10-19T10:23:31.587Z"
    },
    {
     "slug": "hampstead-heath-swimming-ponds",
@@ -12969,7 +13068,7 @@
     "bands": [],
     "priceSummary": "Per Hour: £60.40",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:31:32.588Z"
+    "fetchedAt": "2026-10-19T10:23:54.000Z"
    },
    {
     "slug": "john-scurr-primary-school",
@@ -13047,7 +13146,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:44:07.094Z"
+    "fetchedAt": "2026-10-19T11:05:42.519Z"
    },
    {
     "slug": "jubilee-sports-ground",
@@ -13191,7 +13290,7 @@
       "format": 11,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      },
@@ -13201,7 +13300,7 @@
       "format": 5,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -13209,7 +13308,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:31:48.079Z"
+    "fetchedAt": "2026-10-19T10:24:11.589Z"
    },
    {
     "slug": "kilburn-grange",
@@ -14927,7 +15026,7 @@
       "format": 9,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      },
@@ -14937,7 +15036,7 @@
       "format": 7,
       "surface": "3g",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -14945,7 +15044,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:32:09.069Z"
+    "fetchedAt": "2026-10-19T10:25:54.341Z"
    },
    {
     "slug": "lyttelton-playing-fields",
@@ -15899,7 +15998,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:43:45.085Z"
+    "fetchedAt": "2026-10-19T11:05:21.245Z"
    },
    {
     "slug": "merstham-recreation-ground",
@@ -16095,7 +16194,7 @@
       "format": 5,
       "surface": "3g",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      },
@@ -16105,7 +16204,7 @@
       "format": 7,
       "surface": "3g",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      },
@@ -16115,7 +16214,7 @@
       "format": 11,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -16123,7 +16222,7 @@
     "bands": [],
     "priceSummary": "From £53.35-£64.53/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:32:45.479Z"
+    "fetchedAt": "2026-10-19T10:27:33.785Z"
    },
    {
     "slug": "millfields-park",
@@ -16248,108 +16347,34 @@
    {
     "slug": "monks-hill-sports-centre",
     "url": "https://www.playfinder.com/london/venue/monks-hill-sports-centre",
-    "name": "Monks Hill Sports Centre",
-    "area": "Croydon",
-    "address": "Farnborough Ave, South Croydon, Croydon, CR2 8HD",
-    "postcode": "CR2 8HD",
-    "lat": 51.350981,
-    "lng": -0.046881,
-    "region": "London",
-    "district": "Croydon",
-    "inLondon": true,
-    "hours": {
-     "mon": [
-      [
-       "18:00",
-       "22:00"
-      ]
-     ],
-     "tue": [
-      [
-       "18:00",
-       "22:00"
-      ]
-     ],
-     "wed": [
-      [
-       "18:00",
-       "22:00"
-      ]
-     ],
-     "thu": [
-      [
-       "18:00",
-       "22:00"
-      ]
-     ],
-     "fri": [
-      [
-       "18:00",
-       "22:00"
-      ]
-     ],
-     "sat": [
-      [
-       "09:00",
-       "17:00"
-      ]
-     ],
-     "sun": [
-      [
-       "09:00",
-       "17:00"
-      ]
-     ]
-    },
-    "hoursQuotes": [
-     "Monday 18:00 - 22:00",
-     "Tuesday 18:00 - 22:00",
-     "Wednesday 18:00 - 22:00",
-     "Thursday 18:00 - 22:00",
-     "Friday 18:00 - 22:00",
-     "Saturday 09:00 - 17:00",
-     "Sunday 09:00 - 17:00"
-    ],
+    "name": "502 Bad Gateway",
+    "area": null,
+    "address": null,
+    "postcode": null,
+    "lat": null,
+    "lng": null,
+    "region": null,
+    "district": null,
+    "inLondon": false,
+    "hours": null,
+    "hoursQuotes": [],
     "facilities": {
-     "parking": true,
-     "changingRooms": true,
+     "parking": null,
+     "changingRooms": null,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": null,
-     "lit": true,
-     "surface": "3g",
-     "formats": [
-      11
-     ],
+     "lit": null,
+     "surface": null,
+     "formats": [],
      "pitchCount": null
     },
-    "pitches": [
-     {
-      "url": "https://www.playfinder.com/london/venue/monks-hill-sports-centre/football-11-a-side-39960",
-      "label": "11 a side | 3G Astroturf",
-      "format": 11,
-      "surface": "3g",
-      "weekStart": null,
-      "dayAssignment": "sequence",
-      "slotsSeen": 0,
-      "pricedSlots": 0
-     },
-     {
-      "url": "https://www.playfinder.com/london/venue/monks-hill-sports-centre/football-5-a-side-40009",
-      "label": "5 a side | 3G Astroturf",
-      "format": 5,
-      "surface": "3g",
-      "weekStart": null,
-      "dayAssignment": "sequence",
-      "slotsSeen": 0,
-      "pricedSlots": 0
-     }
-    ],
+    "pitches": [],
     "bands": [],
-    "priceSummary": "Public Transport",
-    "skipped": null,
-    "fetchedAt": "2026-10-12T12:43:11.921Z"
+    "priceSummary": null,
+    "skipped": "page answered 502",
+    "fetchedAt": "2026-10-19T11:05:11.202Z"
    },
    {
     "slug": "montesole-playing-fields-",
@@ -17017,89 +17042,34 @@
    {
     "slug": "north-greenwich-astroturf",
     "url": "https://www.playfinder.com/london/venue/north-greenwich-astroturf",
-    "name": "North Greenwich Astroturf",
-    "area": "Greenwich",
-    "address": "Millennium Primary School, 50 John Harrison Way, London, SE10 0BG",
-    "postcode": "SE10 0BG",
-    "lat": 51.493246,
-    "lng": 0.011243,
-    "region": "London",
-    "district": "Greenwich",
-    "inLondon": true,
-    "hours": {
-     "mon": [
-      [
-       "18:00",
-       "21:00"
-      ]
-     ],
-     "tue": [
-      [
-       "18:00",
-       "21:00"
-      ]
-     ],
-     "wed": [
-      [
-       "18:00",
-       "21:00"
-      ]
-     ],
-     "thu": [
-      [
-       "18:00",
-       "21:00"
-      ]
-     ],
-     "fri": [],
-     "sat": [],
-     "sun": []
-    },
-    "hoursQuotes": [
-     "Monday 18:00-21:00",
-     "Tuesday - Wednesday 18:00-21:00",
-     "Thursday 18:00-21:00"
-    ],
+    "name": "502 Bad Gateway",
+    "area": null,
+    "address": null,
+    "postcode": null,
+    "lat": null,
+    "lng": null,
+    "region": null,
+    "district": null,
+    "inLondon": false,
+    "hours": null,
+    "hoursQuotes": [],
     "facilities": {
-     "parking": true,
-     "changingRooms": true,
+     "parking": null,
+     "changingRooms": null,
      "showers": null,
      "bar": null,
      "cafe": null,
      "covered": null,
-     "lit": true,
-     "surface": "astro",
-     "formats": [
-      5
-     ],
+     "lit": null,
+     "surface": null,
+     "formats": [],
      "pitchCount": null
     },
-    "pitches": [
-     {
-      "url": "https://www.playfinder.com/london/venue/north-greenwich-astroturf/football-5-a-side-40075",
-      "label": "5 a side | Astroturf",
-      "format": 5,
-      "surface": "astro",
-      "weekStart": null,
-      "dayAssignment": "sequence",
-      "slotsSeen": 0,
-      "pricedSlots": 0
-     },
-     {
-      "url": "https://www.playfinder.com/london/venue/north-greenwich-astroturf/football-7-a-side-40076",
-      "label": "7 a side | Astroturf",
-      "format": 7,
-      "surface": "astro",
-      "weekStart": null,
-      "dayAssignment": "sequence",
-      "slotsSeen": 0,
-      "pricedSlots": 0
-     }
-    ],
+    "pitches": [],
     "bands": [],
-    "priceSummary": "Public Transport",
-    "skipped": null,
-    "fetchedAt": "2026-10-12T12:43:28.773Z"
+    "priceSummary": null,
+    "skipped": "page answered 502",
+    "fetchedAt": "2026-10-19T11:05:14.628Z"
    },
    {
     "slug": "north-london-padel-club",
@@ -18433,20 +18403,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 183,
-      "pricedSlots": 160
+      "slotsSeen": 186,
+      "pricedSlots": 172
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-barnet/football-7-a-side-36072",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 85,
-      "pricedSlots": 48
+      "slotsSeen": 89,
+      "pricedSlots": 54
      }
     ],
     "bands": [
@@ -18462,7 +18432,7 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "22:00"
        ]
       ],
@@ -18489,7 +18459,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 61
+      "slotsSeen": 71
      },
      {
       "format": 5,
@@ -18508,7 +18478,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 19
+      "slotsSeen": 21
      },
      {
       "format": 7,
@@ -18526,14 +18496,14 @@
       "windows": [
        [
         "09:30",
-        "17:30"
+        "16:30"
        ],
        [
-        "21:30",
+        "20:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 37
+      "slotsSeen": 42
      },
      {
       "format": 7,
@@ -18546,14 +18516,14 @@
       "windows": [
        [
         "09:30",
-        "13:30"
+        "18:30"
        ],
        [
-        "15:30",
-        "18:30"
+        "21:30",
+        "21:30"
        ]
       ],
-      "slotsSeen": 9
+      "slotsSeen": 11
      },
      {
       "format": 7,
@@ -18570,27 +18540,11 @@
        ]
       ],
       "slotsSeen": 1
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 140,
-      "minutes": 60,
-      "days": [
-       "tue"
-      ],
-      "windows": [
-       [
-        "20:30",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 1
      }
     ],
     "priceSummary": "From £64.50-£79.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:27:35.420Z"
+    "fetchedAt": "2026-10-19T10:19:48.310Z"
    },
    {
     "slug": "powerleague-battersea",
@@ -18671,20 +18625,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 159,
-      "pricedSlots": 109
+      "slotsSeen": 166,
+      "pricedSlots": 128
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-battersea/football-7-a-side-38440",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 77,
-      "pricedSlots": 36
+      "slotsSeen": 81,
+      "pricedSlots": 34
      }
     ],
     "bands": [
@@ -18704,14 +18658,14 @@
       "windows": [
        [
         "09:00",
-        "17:00"
+        "17:30"
        ],
        [
         "21:00",
         "21:30"
        ]
       ],
-      "slotsSeen": 81
+      "slotsSeen": 100
      },
      {
       "format": 5,
@@ -18723,11 +18677,15 @@
       ],
       "windows": [
        [
-        "09:00",
-        "20:00"
+        "08:00",
+        "08:30"
+       ],
+       [
+        "10:30",
+        "19:00"
        ]
       ],
-      "slotsSeen": 23
+      "slotsSeen": 20
      },
      {
       "format": 5,
@@ -18736,6 +18694,8 @@
       "minutes": 60,
       "days": [
        "tue",
+       "wed",
+       "thu",
        "fri"
       ],
       "windows": [
@@ -18744,7 +18704,7 @@
         "20:30"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 8
      },
      {
       "format": 7,
@@ -18762,11 +18722,11 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "17:00"
        ]
       ],
-      "slotsSeen": 35
+      "slotsSeen": 32
      },
      {
       "format": 7,
@@ -18778,16 +18738,16 @@
       ],
       "windows": [
        [
-        "21:00",
+        "20:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 2
      }
     ],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:29:54.592Z"
+    "fetchedAt": "2026-10-19T10:22:13.894Z"
    },
    {
     "slug": "powerleague-croydon",
@@ -18874,23 +18834,43 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 105,
-      "pricedSlots": 72
+      "slotsSeen": 180,
+      "pricedSlots": 158
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-croydon/football-7-a-side-36073",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 55,
-      "pricedSlots": 24
+      "slotsSeen": 93,
+      "pricedSlots": 65
      }
     ],
     "bands": [
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 83
+     },
      {
       "format": 5,
       "surface": "3g",
@@ -18902,7 +18882,7 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "21:00"
        ]
       ],
@@ -18916,15 +18896,16 @@
       "days": [
        "mon",
        "tue",
+       "wed",
        "thu"
       ],
       "windows": [
        [
-        "20:00",
+        "18:30",
         "22:00"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 15
      },
      {
       "format": 5,
@@ -18936,29 +18917,11 @@
       ],
       "windows": [
        [
-        "19:00",
+        "18:30",
         "22:00"
        ]
       ],
-      "slotsSeen": 6
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 95,
-      "minutes": 60,
-      "days": [
-       "wed",
-       "thu",
-       "fri"
-      ],
-      "windows": [
-       [
-        "17:00",
-        "17:00"
-       ]
-      ],
-      "slotsSeen": 3
+      "slotsSeen": 7
      },
      {
       "format": 5,
@@ -18967,6 +18930,7 @@
       "minutes": 90,
       "days": [
        "mon",
+       "tue",
        "wed",
        "thu"
       ],
@@ -18976,7 +18940,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 4
      },
      {
       "format": 5,
@@ -18990,22 +18954,6 @@
        [
         "21:30",
         "21:30"
-       ]
-      ],
-      "slotsSeen": 1
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 105,
-      "minutes": 60,
-      "days": [
-       "wed"
-      ],
-      "windows": [
-       [
-        "22:00",
-        "22:00"
        ]
       ],
       "slotsSeen": 1
@@ -19017,21 +18965,39 @@
       "minutes": 60,
       "days": [
        "mon",
+       "tue",
+       "wed",
        "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "09:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 43
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 100,
+      "minutes": 60,
+      "days": [
        "sat",
        "sun"
       ],
       "windows": [
        [
-        "09:00",
-        "09:00"
+        "08:00",
+        "08:00"
        ],
        [
-        "11:00",
+        "10:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 18
      },
      {
       "format": 7,
@@ -19039,9 +19005,7 @@
       "amount": 125,
       "minutes": 60,
       "days": [
-       "tue",
        "wed",
-       "thu",
        "fri"
       ],
       "windows": [
@@ -19050,7 +19014,7 @@
         "19:00"
        ],
        [
-        "22:00",
+        "21:00",
         "22:00"
        ]
       ],
@@ -19059,7 +19023,7 @@
     ],
     "priceSummary": "From £44.50-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:27:45.732Z"
+    "fetchedAt": "2026-10-19T10:19:59.153Z"
    },
    {
     "slug": "powerleague-enfield",
@@ -19136,33 +19100,86 @@
      "lit": true,
      "surface": "3g",
      "formats": [
-      5
+      7
      ],
      "pitchCount": null
     },
     "pitches": [
      {
-      "url": "https://www.playfinder.com/london/venue/powerleague-enfield/football-5-a-side-34552",
-      "label": "5 a side | 3G Astroturf",
-      "format": 5,
-      "surface": "3g",
-      "weekStart": "2026-10-12",
-      "dayAssignment": "sequence",
-      "slotsSeen": 49,
-      "pricedSlots": 38
-     },
-     {
       "url": "https://www.playfinder.com/london/venue/powerleague-enfield/football-7-a-side-36028",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 47,
-      "pricedSlots": 24
+      "slotsSeen": 48,
+      "pricedSlots": 17
+     },
+     {
+      "url": "https://www.playfinder.com/london/venue/powerleague-enfield/football-5-a-side-34552",
+      "label": "5 a side | 3G Astroturf",
+      "format": 5,
+      "surface": "3g",
+      "weekStart": "2026-10-19",
+      "dayAssignment": "sequence",
+      "slotsSeen": 51,
+      "pricedSlots": 37
      }
     ],
     "bands": [
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 95,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "windows": [
+       [
+        "14:30",
+        "17:30"
+       ],
+       [
+        "19:30",
+        "19:30"
+       ],
+       [
+        "21:30",
+        "21:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 120,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "thu",
+       "fri"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "18:30"
+       ],
+       [
+        "20:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 4
+     },
      {
       "format": 5,
       "surface": "3g",
@@ -19186,7 +19203,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 19
      },
      {
       "format": 5,
@@ -19198,8 +19215,8 @@
       ],
       "windows": [
        [
-        "09:00",
-        "21:00"
+        "08:00",
+        "20:00"
        ]
       ],
       "slotsSeen": 13
@@ -19210,8 +19227,9 @@
       "amount": 95,
       "minutes": 60,
       "days": [
-       "mon",
        "tue",
+       "wed",
+       "thu",
        "fri"
       ],
       "windows": [
@@ -19221,76 +19239,11 @@
        ]
       ],
       "slotsSeen": 5
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 95,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri",
-       "sat"
-      ],
-      "windows": [
-       [
-        "11:30",
-        "17:30"
-       ],
-       [
-        "21:30",
-        "21:30"
-       ]
-      ],
-      "slotsSeen": 13
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 95,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "15:30",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 6
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 120,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu",
-       "fri"
-      ],
-      "windows": [
-       [
-        "18:30",
-        "18:30"
-       ],
-       [
-        "20:30",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 5
      }
     ],
     "priceSummary": "Around £64.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:29:23.744Z"
+    "fetchedAt": "2026-10-19T10:21:41.554Z"
    },
    {
     "slug": "powerleague-fairlop",
@@ -19377,29 +19330,29 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 186,
-      "pricedSlots": 177
+      "slotsSeen": 188,
+      "pricedSlots": 180
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-fairlop/football-7-a-side-36074",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 95,
-      "pricedSlots": 76
+      "slotsSeen": 97,
+      "pricedSlots": 85
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-fairlop/football-6-a-side-42972",
       "label": "6 a side | 3G Astroturf",
       "format": 6,
       "surface": "3g",
-      "weekStart": "2026-10-14",
+      "weekStart": "2026-10-21",
       "dayAssignment": "sequence",
-      "slotsSeen": 92,
+      "slotsSeen": 93,
       "pricedSlots": 78
      }
     ],
@@ -19422,7 +19375,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 84
+      "slotsSeen": 87
      },
      {
       "format": 5,
@@ -19435,7 +19388,7 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "22:00"
        ]
       ],
@@ -19471,8 +19424,8 @@
       ],
       "windows": [
        [
-        "18:50",
-        "19:40"
+        "17:50",
+        "18:40"
        ]
       ],
       "slotsSeen": 2
@@ -19495,7 +19448,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 44
+      "slotsSeen": 46
      },
      {
       "format": 7,
@@ -19508,11 +19461,11 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 28
      },
      {
       "format": 7,
@@ -19528,11 +19481,11 @@
       ],
       "windows": [
        [
-        "22:00",
+        "19:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 11
      },
      {
       "format": 6,
@@ -19552,7 +19505,7 @@
         "18:00"
        ]
       ],
-      "slotsSeen": 40
+      "slotsSeen": 41
      },
      {
       "format": 6,
@@ -19565,11 +19518,11 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 28
      },
      {
       "format": 6,
@@ -19586,15 +19539,19 @@
       "windows": [
        [
         "19:00",
+        "19:00"
+       ],
+       [
+        "21:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 13
+      "slotsSeen": 9
      }
     ],
     "priceSummary": "From £44.55-£59.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:27:56.072Z"
+    "fetchedAt": "2026-10-19T10:20:09.984Z"
    },
    {
     "slug": "powerleague-finchley",
@@ -19681,10 +19638,10 @@
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
       "slotsSeen": 45,
-      "pricedSlots": 20
+      "pricedSlots": 22
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-finchley/football-11-a-side-32099",
@@ -19715,8 +19672,7 @@
       "minutes": 60,
       "days": [
        "fri",
-       "sat",
-       "sun"
+       "sat"
       ],
       "windows": [
        [
@@ -19724,7 +19680,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 11
      },
      {
       "format": 7,
@@ -19740,14 +19696,10 @@
       "windows": [
        [
         "18:00",
-        "19:00"
-       ],
-       [
-        "21:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 6
      },
      {
       "format": 7,
@@ -19755,20 +19707,25 @@
       "amount": 97,
       "minutes": 60,
       "days": [
-       "mon"
+       "mon",
+       "sun"
       ],
       "windows": [
        [
-        "17:00",
+        "08:00",
+        "08:00"
+       ],
+       [
+        "15:00",
         "17:00"
        ]
       ],
-      "slotsSeen": 1
+      "slotsSeen": 5
      }
     ],
     "priceSummary": "From £69.50-£89.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:27:18.332Z"
+    "fetchedAt": "2026-10-19T10:19:31.763Z"
    },
    {
     "slug": "powerleague-harrow",
@@ -19855,10 +19812,10 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 59,
-      "pricedSlots": 33
+      "slotsSeen": 61,
+      "pricedSlots": 37
      }
     ],
     "bands": [
@@ -19873,8 +19830,8 @@
       ],
       "windows": [
        [
-        "09:30",
-        "19:30"
+        "08:30",
+        "18:30"
        ]
       ],
       "slotsSeen": 24
@@ -19887,19 +19844,16 @@
       "days": [
        "mon",
        "tue",
-       "wed"
+       "wed",
+       "thu"
       ],
       "windows": [
        [
         "17:30",
-        "17:30"
-       ],
-       [
-        "19:30",
         "20:30"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 9
      },
      {
       "format": 5,
@@ -19912,35 +19866,15 @@
       "windows": [
        [
         "17:30",
-        "18:30"
-       ],
-       [
-        "20:30",
         "20:30"
        ]
       ],
-      "slotsSeen": 3
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 72,
-      "minutes": 45,
-      "days": [
-       "fri"
-      ],
-      "windows": [
-       [
-        "19:50",
-        "19:50"
-       ]
-      ],
-      "slotsSeen": 1
+      "slotsSeen": 4
      }
     ],
     "priceSummary": "Please check calendar",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:30:07.343Z"
+    "fetchedAt": "2026-10-19T10:22:25.094Z"
    },
    {
     "slug": "powerleague-mill-hill",
@@ -20027,30 +19961,30 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 100,
-      "pricedSlots": 84
+      "slotsSeen": 101,
+      "pricedSlots": 88
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-mill-hill/football-7-a-side-36075",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 97,
-      "pricedSlots": 49
+      "slotsSeen": 99,
+      "pricedSlots": 58
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-mill-hill/football-9-a-side-42974",
       "label": "9 a side | 3G Astroturf",
       "format": 9,
       "surface": "3g",
-      "weekStart": "2026-10-14",
+      "weekStart": "2026-10-21",
       "dayAssignment": "sequence",
-      "slotsSeen": 95,
-      "pricedSlots": 63
+      "slotsSeen": 97,
+      "pricedSlots": 52
      }
     ],
     "bands": [
@@ -20070,7 +20004,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 41
+      "slotsSeen": 39
      },
      {
       "format": 5,
@@ -20086,10 +20020,10 @@
       "windows": [
        [
         "07:30",
-        "16:30"
+        "17:30"
        ]
       ],
-      "slotsSeen": 31
+      "slotsSeen": 35
      },
      {
       "format": 5,
@@ -20108,7 +20042,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 12
+      "slotsSeen": 14
      },
      {
       "format": 7,
@@ -20120,8 +20054,7 @@
        "tue",
        "wed",
        "thu",
-       "fri",
-       "sun"
+       "fri"
       ],
       "windows": [
        [
@@ -20129,7 +20062,7 @@
         "16:30"
        ]
       ],
-      "slotsSeen": 35
+      "slotsSeen": 39
      },
      {
       "format": 7,
@@ -20146,18 +20079,34 @@
        ],
        [
         "13:30",
-        "14:30"
+        "16:30"
        ],
        [
-        "16:30",
-        "19:30"
-       ],
-       [
-        "21:30",
+        "20:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 8
+      "slotsSeen": 7
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 120,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "07:30",
+        "07:30"
+       ],
+       [
+        "13:30",
+        "16:30"
+       ]
+      ],
+      "slotsSeen": 5
      },
      {
       "format": 7,
@@ -20189,11 +20138,27 @@
       ],
       "windows": [
        [
-        "21:30",
+        "20:30",
         "21:30"
        ]
       ],
       "slotsSeen": 2
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 140,
+      "minutes": 60,
+      "days": [
+       "thu"
+      ],
+      "windows": [
+       [
+        "18:30",
+        "18:30"
+       ]
+      ],
+      "slotsSeen": 1
      },
      {
       "format": 9,
@@ -20204,15 +20169,16 @@
        "mon",
        "tue",
        "wed",
-       "thu"
+       "thu",
+       "sun"
       ],
       "windows": [
        [
         "07:30",
-        "17:30"
+        "18:30"
        ]
       ],
-      "slotsSeen": 32
+      "slotsSeen": 31
      },
      {
       "format": 9,
@@ -20221,12 +20187,15 @@
       "minutes": 60,
       "days": [
        "fri",
-       "sat",
-       "sun"
+       "sat"
       ],
       "windows": [
        [
         "07:30",
+        "08:30"
+       ],
+       [
+        "12:30",
         "19:30"
        ],
        [
@@ -20234,7 +20203,7 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 15
      },
      {
       "format": 9,
@@ -20242,7 +20211,9 @@
       "amount": 150,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
+       "wed",
        "thu"
       ],
       "windows": [
@@ -20251,12 +20222,12 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 6
      }
     ],
     "priceSummary": "From £64.95-£129.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:28:11.872Z"
+    "fetchedAt": "2026-10-19T10:20:26.345Z"
    },
    {
     "slug": "powerleague-newham",
@@ -20343,20 +20314,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 187,
-      "pricedSlots": 177
+      "slotsSeen": 191,
+      "pricedSlots": 179
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-newham/football-7-a-side-36043",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 107,
-      "pricedSlots": 76
+      "slotsSeen": 112,
+      "pricedSlots": 70
      }
     ],
     "bands": [
@@ -20378,7 +20349,7 @@
         "18:15"
        ]
       ],
-      "slotsSeen": 84
+      "slotsSeen": 88
      },
      {
       "format": 5,
@@ -20391,11 +20362,11 @@
       ],
       "windows": [
        [
-        "09:15",
+        "08:15",
         "23:15"
        ]
       ],
-      "slotsSeen": 56
+      "slotsSeen": 54
      },
      {
       "format": 5,
@@ -20427,15 +20398,20 @@
        "tue",
        "wed",
        "thu",
-       "fri"
+       "fri",
+       "sun"
       ],
       "windows": [
        [
         "09:15",
         "18:15"
+       ],
+       [
+        "20:15",
+        "21:15"
        ]
       ],
-      "slotsSeen": 51
+      "slotsSeen": 57
      },
      {
       "format": 7,
@@ -20443,20 +20419,19 @@
       "amount": 100,
       "minutes": 60,
       "days": [
-       "sat",
-       "sun"
+       "sat"
       ],
       "windows": [
        [
-        "09:15",
+        "10:15",
         "19:15"
        ],
        [
-        "21:15",
+        "23:15",
         "23:15"
        ]
       ],
-      "slotsSeen": 22
+      "slotsSeen": 11
      },
      {
       "format": 7,
@@ -20469,20 +20444,16 @@
       ],
       "windows": [
        [
-        "19:15",
-        "19:15"
-       ],
-       [
         "22:15",
         "23:15"
        ]
       ],
-      "slotsSeen": 3
+      "slotsSeen": 2
      }
     ],
     "priceSummary": "From £54.50-£64.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:28:26.772Z"
+    "fetchedAt": "2026-10-19T10:20:42.431Z"
    },
    {
     "slug": "powerleague-romford",
@@ -20569,17 +20540,17 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-14",
+      "weekStart": "2026-10-21",
       "dayAssignment": "sequence",
-      "slotsSeen": 95,
-      "pricedSlots": 82
+      "slotsSeen": 96,
+      "pricedSlots": 87
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-romford/football-7-a-side-42969",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-14",
+      "weekStart": "2026-10-21",
       "dayAssignment": "sequence",
       "slotsSeen": 95,
       "pricedSlots": 69
@@ -20604,7 +20575,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 41
+      "slotsSeen": 43
      },
      {
       "format": 5,
@@ -20617,11 +20588,11 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 26
      },
      {
       "format": 5,
@@ -20641,7 +20612,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 16
+      "slotsSeen": 18
      },
      {
       "format": 7,
@@ -20661,7 +20632,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 37
+      "slotsSeen": 36
      },
      {
       "format": 7,
@@ -20674,11 +20645,11 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "21:00"
        ]
       ],
-      "slotsSeen": 26
+      "slotsSeen": 25
      },
      {
       "format": 7,
@@ -20694,16 +20665,20 @@
       ],
       "windows": [
        [
+        "18:00",
+        "18:00"
+       ],
+       [
         "21:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 8
      }
     ],
     "priceSummary": "Please check calendar above",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:30:12.504Z"
+    "fetchedAt": "2026-10-19T10:22:30.697Z"
    },
    {
     "slug": "powerleague-shepherd-s-bush",
@@ -20790,10 +20765,10 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-14",
+      "weekStart": "2026-10-21",
       "dayAssignment": "sequence",
       "slotsSeen": 94,
-      "pricedSlots": 84
+      "pricedSlots": 88
      }
     ],
     "bands": [
@@ -20815,7 +20790,7 @@
         "17:30"
        ]
       ],
-      "slotsSeen": 48
+      "slotsSeen": 52
      },
      {
       "format": 5,
@@ -20846,8 +20821,8 @@
       ],
       "windows": [
        [
-        "09:00",
-        "19:00"
+        "08:00",
+        "18:00"
        ]
       ],
       "slotsSeen": 11
@@ -20879,15 +20854,35 @@
       "windows": [
        [
         "17:00",
+        "17:00"
+       ],
+       [
+        "19:00",
         "20:00"
        ]
       ],
-      "slotsSeen": 4
+      "slotsSeen": 3
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 99.5,
+      "minutes": 45,
+      "days": [
+       "mon"
+      ],
+      "windows": [
+       [
+        "18:45",
+        "18:45"
+       ]
+      ],
+      "slotsSeen": 1
      }
     ],
     "priceSummary": "Please check calendar above",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:30:22.795Z"
+    "fetchedAt": "2026-10-19T10:22:41.284Z"
    },
    {
     "slug": "powerleague-shoreditch",
@@ -20975,20 +20970,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 112,
-      "pricedSlots": 98
+      "slotsSeen": 114,
+      "pricedSlots": 100
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-shoreditch/football-7-a-side-36030",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 117,
-      "pricedSlots": 79
+      "slotsSeen": 120,
+      "pricedSlots": 91
      }
     ],
     "bands": [
@@ -21014,7 +21009,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 62
+      "slotsSeen": 65
      },
      {
       "format": 5,
@@ -21027,7 +21022,7 @@
       ],
       "windows": [
        [
-        "10:00",
+        "09:00",
         "20:00"
        ]
       ],
@@ -21051,7 +21046,7 @@
         "20:20"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 13
      },
      {
       "format": 7,
@@ -21072,10 +21067,10 @@
        ],
        [
         "21:00",
-        "21:15"
+        "21:00"
        ]
       ],
-      "slotsSeen": 57
+      "slotsSeen": 64
      },
      {
       "format": 7,
@@ -21088,11 +21083,11 @@
       ],
       "windows": [
        [
-        "13:00",
+        "09:00",
         "20:00"
        ]
       ],
-      "slotsSeen": 16
+      "slotsSeen": 19
      },
      {
       "format": 7,
@@ -21101,6 +21096,7 @@
       "minutes": 40,
       "days": [
        "tue",
+       "thu",
        "fri"
       ],
       "windows": [
@@ -21109,12 +21105,12 @@
         "20:20"
        ]
       ],
-      "slotsSeen": 6
+      "slotsSeen": 8
      }
     ],
     "priceSummary": "From £35.97-£99.50/40 mins",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:29:34.063Z"
+    "fetchedAt": "2026-10-19T10:21:52.991Z"
    },
    {
     "slug": "powerleague-slough",
@@ -21201,20 +21197,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
       "slotsSeen": 99,
-      "pricedSlots": 88
+      "pricedSlots": 81
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-slough/football-7-a-side-36031",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
       "slotsSeen": 53,
-      "pricedSlots": 29
+      "pricedSlots": 33
      }
     ],
     "bands": [
@@ -21253,11 +21249,11 @@
       ],
       "windows": [
        [
-        "09:00",
-        "22:00"
+        "08:00",
+        "21:00"
        ]
       ],
-      "slotsSeen": 27
+      "slotsSeen": 25
      },
      {
       "format": 5,
@@ -21285,25 +21281,6 @@
      {
       "format": 5,
       "surface": "3g",
-      "amount": 90,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "19:00",
-        "20:30"
-       ]
-      ],
-      "slotsSeen": 10
-     },
-     {
-      "format": 5,
-      "surface": "3g",
       "amount": 86,
       "minutes": 60,
       "days": [
@@ -21311,11 +21288,29 @@
       ],
       "windows": [
        [
-        "18:00",
+        "18:30",
         "21:30"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 6
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 90,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed"
+      ],
+      "windows": [
+       [
+        "19:30",
+        "20:30"
+       ]
+      ],
+      "slotsSeen": 6
      },
      {
       "format": 7,
@@ -21340,7 +21335,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 15
      },
      {
       "format": 7,
@@ -21352,15 +21347,11 @@
       ],
       "windows": [
        [
-        "09:00",
-        "09:00"
-       ],
-       [
-        "11:00",
-        "22:00"
+        "08:00",
+        "21:00"
        ]
       ],
-      "slotsSeen": 13
+      "slotsSeen": 14
      },
      {
       "format": 7,
@@ -21378,11 +21369,28 @@
        ]
       ],
       "slotsSeen": 2
+     },
+     {
+      "format": 7,
+      "surface": "3g",
+      "amount": 112,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue"
+      ],
+      "windows": [
+       [
+        "20:00",
+        "20:00"
+       ]
+      ],
+      "slotsSeen": 2
      }
     ],
     "priceSummary": "Around £64.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:29:44.482Z"
+    "fetchedAt": "2026-10-19T10:22:04.162Z"
    },
    {
     "slug": "powerleague-sunbury-on-thames",
@@ -21469,30 +21477,30 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 93,
-      "pricedSlots": 73
+      "slotsSeen": 95,
+      "pricedSlots": 76
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-sunbury-on-thames/football-7-a-side-36032",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 88,
-      "pricedSlots": 60
+      "slotsSeen": 90,
+      "pricedSlots": 65
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-sunbury-on-thames/football-6-a-side-42978",
       "label": "6 a side | 3G Astroturf",
       "format": 6,
       "surface": "3g",
-      "weekStart": "2026-10-14",
+      "weekStart": "2026-10-21",
       "dayAssignment": "sequence",
-      "slotsSeen": 79,
-      "pricedSlots": 65
+      "slotsSeen": 80,
+      "pricedSlots": 67
      }
     ],
     "bands": [
@@ -21515,23 +21523,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 46
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 74,
-      "minutes": 60,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "09:00",
-        "21:00"
-       ]
-      ],
-      "slotsSeen": 13
+      "slotsSeen": 48
      },
      {
       "format": 5,
@@ -21549,6 +21541,22 @@
        [
         "18:00",
         "21:00"
+       ]
+      ],
+      "slotsSeen": 14
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 74,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "08:00",
+        "20:00"
        ]
       ],
       "slotsSeen": 13
@@ -21588,7 +21596,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 46
+      "slotsSeen": 49
      },
      {
       "format": 7,
@@ -21600,15 +21608,11 @@
       ],
       "windows": [
        [
-        "09:00",
-        "09:00"
-       ],
-       [
-        "12:00",
-        "20:00"
+        "08:00",
+        "19:00"
        ]
       ],
-      "slotsSeen": 10
+      "slotsSeen": 12
      },
      {
       "format": 7,
@@ -21616,13 +21620,14 @@
       "amount": 114,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
        "fri"
       ],
       "windows": [
        [
         "18:00",
-        "19:00"
+        "18:00"
        ],
        [
         "21:00",
@@ -21658,8 +21663,7 @@
        "wed",
        "thu",
        "fri",
-       "sat",
-       "sun"
+       "sat"
       ],
       "windows": [
        [
@@ -21667,7 +21671,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 51
+      "slotsSeen": 45
      },
      {
       "format": 6,
@@ -21692,24 +21696,59 @@
      {
       "format": 6,
       "surface": "3g",
-      "amount": 70,
+      "amount": 85,
       "minutes": 60,
       "days": [
-       "sat",
        "sun"
       ],
       "windows": [
        [
-        "18:00",
-        "21:00"
+        "08:00",
+        "09:00"
+       ],
+       [
+        "11:00",
+        "16:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 8
+     },
+     {
+      "format": 6,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
+       "sun"
+      ],
+      "windows": [
+       [
+        "17:00",
+        "20:00"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 6,
+      "surface": "3g",
+      "amount": 70,
+      "minutes": 60,
+      "days": [
+       "sat"
+      ],
+      "windows": [
+       [
+        "18:00",
+        "18:00"
+       ]
+      ],
+      "slotsSeen": 1
      }
     ],
     "priceSummary": "From £49.05-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:29:09.082Z"
+    "fetchedAt": "2026-10-19T10:21:26.380Z"
    },
    {
     "slug": "powerleague-tottenham",
@@ -21796,20 +21835,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 57,
-      "pricedSlots": 54
+      "slotsSeen": 59,
+      "pricedSlots": 57
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-tottenham/football-7-a-side-36029",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 57,
-      "pricedSlots": 40
+      "slotsSeen": 59,
+      "pricedSlots": 41
      }
     ],
     "bands": [
@@ -21834,7 +21873,7 @@
         "22:00"
        ]
       ],
-      "slotsSeen": 21
+      "slotsSeen": 23
      },
      {
       "format": 5,
@@ -21848,7 +21887,7 @@
       ],
       "windows": [
        [
-        "16:00",
+        "15:00",
         "22:00"
        ]
       ],
@@ -21871,7 +21910,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 14
+      "slotsSeen": 15
      },
      {
       "format": 7,
@@ -21890,7 +21929,7 @@
         "17:00"
        ]
       ],
-      "slotsSeen": 17
+      "slotsSeen": 19
      },
      {
       "format": 7,
@@ -21903,7 +21942,7 @@
       ],
       "windows": [
        [
-        "16:00",
+        "15:00",
         "22:00"
        ]
       ],
@@ -21916,21 +21955,20 @@
       "minutes": 60,
       "days": [
        "mon",
-       "tue",
        "wed",
        "thu"
       ],
       "windows": [
        [
         "18:00",
-        "20:00"
+        "19:00"
        ],
        [
         "22:00",
         "22:00"
        ]
       ],
-      "slotsSeen": 7
+      "slotsSeen": 6
      },
      {
       "format": 7,
@@ -21955,7 +21993,7 @@
     ],
     "priceSummary": "From £54.50-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:28:37.901Z"
+    "fetchedAt": "2026-10-19T10:20:53.813Z"
    },
    {
     "slug": "powerleague-vauxhall",
@@ -22042,20 +22080,20 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 72,
-      "pricedSlots": 54
+      "slotsSeen": 71,
+      "pricedSlots": 60
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-vauxhall/football-7-a-side-36087",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
       "slotsSeen": 70,
-      "pricedSlots": 20
+      "pricedSlots": 25
      }
     ],
     "bands": [
@@ -22075,7 +22113,7 @@
       ],
       "windows": [
        [
-        "10:00",
+        "09:00",
         "16:00"
        ],
        [
@@ -22083,7 +22121,7 @@
         "21:00"
        ]
       ],
-      "slotsSeen": 46
+      "slotsSeen": 50
      },
      {
       "format": 5,
@@ -22091,17 +22129,34 @@
       "amount": 82.5,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
        "wed",
-       "fri"
+       "thu"
       ],
       "windows": [
        [
         "17:00",
+        "17:00"
+       ]
+      ],
+      "slotsSeen": 4
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 82.5,
+      "minutes": 60,
+      "days": [
+       "fri"
+      ],
+      "windows": [
+       [
+        "18:00",
         "20:00"
        ]
       ],
-      "slotsSeen": 5
+      "slotsSeen": 3
      },
      {
       "format": 5,
@@ -22126,12 +22181,11 @@
       "amount": 107,
       "minutes": 60,
       "days": [
+       "mon",
        "tue",
        "wed",
        "thu",
-       "fri",
-       "sat",
-       "sun"
+       "fri"
       ],
       "windows": [
        [
@@ -22139,12 +22193,12 @@
         "16:00"
        ]
       ],
-      "slotsSeen": 20
+      "slotsSeen": 25
      }
     ],
     "priceSummary": "From £59.50-£79.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:28:57.860Z"
+    "fetchedAt": "2026-10-19T10:21:14.989Z"
    },
    {
     "slug": "powerleague-watford",
@@ -22231,17 +22285,17 @@
       "label": "5 a side | 3G Astroturf",
       "format": 5,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
-      "slotsSeen": 98,
-      "pricedSlots": 77
+      "slotsSeen": 99,
+      "pricedSlots": 79
      },
      {
       "url": "https://www.playfinder.com/london/venue/powerleague-watford/football-7-a-side-36035",
       "label": "7 a side | 3G Astroturf",
       "format": 7,
       "surface": "3g",
-      "weekStart": "2026-10-12",
+      "weekStart": "2026-10-19",
       "dayAssignment": "sequence",
       "slotsSeen": 72,
       "pricedSlots": 39
@@ -22259,30 +22313,11 @@
       ],
       "windows": [
        [
-        "09:00",
+        "08:00",
         "20:00"
        ]
       ],
-      "slotsSeen": 43
-     },
-     {
-      "format": 5,
-      "surface": "3g",
-      "amount": 85,
-      "minutes": 60,
-      "days": [
-       "mon",
-       "tue",
-       "wed",
-       "thu"
-      ],
-      "windows": [
-       [
-        "16:30",
-        "18:30"
-       ]
-      ],
-      "slotsSeen": 13
+      "slotsSeen": 45
      },
      {
       "format": 5,
@@ -22299,6 +22334,25 @@
        [
         "19:00",
         "21:30"
+       ]
+      ],
+      "slotsSeen": 13
+     },
+     {
+      "format": 5,
+      "surface": "3g",
+      "amount": 85,
+      "minutes": 60,
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "windows": [
+       [
+        "16:30",
+        "18:30"
        ]
       ],
       "slotsSeen": 12
@@ -22331,11 +22385,11 @@
       ],
       "windows": [
        [
-        "10:30",
+        "09:30",
         "19:30"
        ]
       ],
-      "slotsSeen": 25
+      "slotsSeen": 27
      },
      {
       "format": 7,
@@ -22362,7 +22416,6 @@
       "amount": 120,
       "minutes": 60,
       "days": [
-       "mon",
        "tue",
        "wed",
        "thu"
@@ -22373,28 +22426,12 @@
         "21:30"
        ]
       ],
-      "slotsSeen": 4
-     },
-     {
-      "format": 7,
-      "surface": "3g",
-      "amount": 110,
-      "minutes": 30,
-      "days": [
-       "sun"
-      ],
-      "windows": [
-       [
-        "18:00",
-        "18:00"
-       ]
-      ],
-      "slotsSeen": 1
+      "slotsSeen": 3
      }
     ],
     "priceSummary": "From £49.50-£69.50/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:28:48.234Z"
+    "fetchedAt": "2026-10-19T10:21:05.765Z"
    },
    {
     "slug": "princes-park-youth-football-club",
@@ -22482,7 +22519,7 @@
       "format": 7,
       "surface": "3g",
       "weekStart": null,
-      "dayAssignment": "sequence",
+      "dayAssignment": null,
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -22490,7 +22527,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:36:36.189Z"
+    "fetchedAt": "2026-10-19T10:45:24.987Z"
    },
    {
     "slug": "priory-park",
@@ -24614,7 +24651,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:43:56.474Z"
+    "fetchedAt": "2026-10-19T11:05:32.131Z"
    },
    {
     "slug": "sobell-leisure-centre",
@@ -25521,7 +25558,7 @@
     "bands": [],
     "priceSummary": "Free",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:33:06.299Z"
+    "fetchedAt": "2026-10-19T10:30:00.572Z"
    },
    {
     "slug": "spirit-health-club-maidenhead",
@@ -28984,7 +29021,7 @@
     "bands": [],
     "priceSummary": "From £45.00-£85.00/hour",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:34:10.844Z"
+    "fetchedAt": "2026-10-19T10:35:24.114Z"
    },
    {
     "slug": "wasps-fc",
@@ -30649,7 +30686,7 @@
   ]
  },
  "run": {
-  "pagesRead": 650,
-  "stoppedBy": "budget"
+  "pagesRead": 341,
+  "stoppedBy": "deadline"
  }
 }

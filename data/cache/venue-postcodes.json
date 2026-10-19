@@ -1953,5 +1953,185 @@
     "lng": -0.059458,
     "region": "London",
     "district": "Tower Hamlets"
+  },
+  "AB12 5XA": {
+    "lat": 57.123523,
+    "lng": -2.116724,
+    "region": null,
+    "district": "Aberdeen City"
+  },
+  "B42 2UB": {
+    "lat": 52.525958,
+    "lng": -1.89365,
+    "region": "West Midlands",
+    "district": "Birmingham"
+  },
+  "B7 5SA": {
+    "lat": 52.505493,
+    "lng": -1.8565,
+    "region": "West Midlands",
+    "district": "Birmingham"
+  },
+  "WV14 7BL": {
+    "lat": 52.57345,
+    "lng": -2.056966,
+    "region": "West Midlands",
+    "district": "Wolverhampton"
+  },
+  "BD2 1NR": {
+    "lat": 53.820164,
+    "lng": -1.744839,
+    "region": "Yorkshire and The Humber",
+    "district": "Bradford"
+  },
+  "BS34 8LP": {
+    "lat": 51.512639,
+    "lng": -2.555481,
+    "region": "South West",
+    "district": "South Gloucestershire"
+  },
+  "BS4 5RG": {
+    "lat": 51.43198,
+    "lng": -2.535038,
+    "region": "South West",
+    "district": "Bristol, City of"
+  },
+  "CH1 4LT": {
+    "lat": 53.192611,
+    "lng": -2.916451,
+    "region": "North West",
+    "district": "Cheshire West and Chester"
+  },
+  "CV6 7GP": {
+    "lat": 52.430642,
+    "lng": -1.48412,
+    "region": "West Midlands",
+    "district": "Coventry"
+  },
+  "DA1 1QE": {
+    "lat": 51.436213,
+    "lng": 0.235627,
+    "region": "South East",
+    "district": "Dartford"
+  },
+  "DN2 4NB": {
+    "lat": 53.539827,
+    "lng": -1.108602,
+    "region": "Yorkshire and The Humber",
+    "district": "Doncaster"
+  },
+  "B65 0QX": {
+    "lat": 52.479373,
+    "lng": -2.023862,
+    "region": "West Midlands",
+    "district": "Dudley"
+  },
+  "G41 2DX": {
+    "lat": 55.832233,
+    "lng": -4.275037,
+    "region": null,
+    "district": "Glasgow City"
+  },
+  "G81 2XT": {
+    "lat": 55.912242,
+    "lng": -4.390584,
+    "region": null,
+    "district": "West Dunbartonshire"
+  },
+  "IP4 1LT": {
+    "lat": 52.054886,
+    "lng": 1.165955,
+    "region": "East of England",
+    "district": "Ipswich"
+  },
+  "LS4 2AW": {
+    "lat": 53.80531,
+    "lng": -1.590153,
+    "region": "Yorkshire and The Humber",
+    "district": "Leeds"
+  },
+  "LE5 4WJ": {
+    "lat": 52.629177,
+    "lng": -1.088346,
+    "region": "East Midlands",
+    "district": "Leicester"
+  },
+  "L30 1QQ": {
+    "lat": 53.479464,
+    "lng": -2.966033,
+    "region": "North West",
+    "district": "Sefton"
+  },
+  "L24 9PQ": {
+    "lat": 53.349744,
+    "lng": -2.860478,
+    "region": "North West",
+    "district": "Liverpool"
+  },
+  "M8 0RY": {
+    "lat": 53.499879,
+    "lng": -2.22815,
+    "region": "North West",
+    "district": "Manchester"
+  },
+  "NE3 5HP": {
+    "lat": 55.035185,
+    "lng": -1.612058,
+    "region": "North East",
+    "district": "Newcastle upon Tyne"
+  },
+  "NN4 8BT": {
+    "lat": 52.216395,
+    "lng": -0.905737,
+    "region": "East Midlands",
+    "district": "West Northamptonshire"
+  },
+  "NR1 2GB": {
+    "lat": 52.611843,
+    "lng": 1.290675,
+    "region": "East of England",
+    "district": "Norwich"
+  },
+  "PO3 6QA": {
+    "lat": 50.808965,
+    "lng": -1.046539,
+    "region": "South East",
+    "district": "Portsmouth"
+  },
+  "RG5 3EU": {
+    "lat": 51.452951,
+    "lng": -0.917977,
+    "region": "South East",
+    "district": "Wokingham"
+  },
+  "S2 2RU": {
+    "lat": 53.373191,
+    "lng": -1.455665,
+    "region": "Yorkshire and The Humber",
+    "district": "Sheffield"
+  },
+  "SO15 0JW": {
+    "lat": 50.911434,
+    "lng": -1.445513,
+    "region": "South East",
+    "district": "Southampton"
+  },
+  "SS0 0RT": {
+    "lat": 51.552656,
+    "lng": 0.688966,
+    "region": "East of England",
+    "district": "Southend-on-Sea"
+  },
+  "SR3 4AG": {
+    "lat": 54.892639,
+    "lng": -1.405759,
+    "region": "North East",
+    "district": "Sunderland"
+  },
+  "TS5 4AF": {
+    "lat": 54.565459,
+    "lng": -1.265532,
+    "region": "North East",
+    "district": "Middlesbrough"
   }
 }

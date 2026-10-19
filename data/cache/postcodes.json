@@ -3618,6 +3618,13 @@
   "distanceM": 112,
   "at": "2026-09-11"
  },
+ "51.4327,0.1695": {
+  "postcode": "DA2 7GA",
+  "district": "Dartford",
+  "ward": "Maypole & Leyton Cross",
+  "distanceM": 119,
+  "at": "2026-10-19"
+ },
  "51.4329,-0.0852": {
   "postcode": "SE21 8SQ",
   "district": "Southwark",
@@ -3652,6 +3659,13 @@
   "ward": "Hanworth Park",
   "distanceM": 90,
   "at": "2026-09-11"
+ },
+ "51.4335,-0.1353": {
+  "postcode": "SW16 1JZ",
+  "district": "Lambeth",
+  "ward": "Streatham St Leonard's",
+  "distanceM": 57,
+  "at": "2026-10-19"
  },
  "51.4336,0.0310": {
   "postcode": "SE12 9PP",
@@ -5291,6 +5305,13 @@
   "distanceM": 280,
   "at": "2026-09-11"
  },
+ "51.4721,0.0294": {
+  "postcode": "SE3 8BT",
+  "district": "Greenwich",
+  "ward": "Kidbrooke Park",
+  "distanceM": 107,
+  "at": "2026-10-19"
+ },
  "51.4726,-0.1189": {
   "postcode": "SW9 0DU",
   "district": "Lambeth",
@@ -5934,6 +5955,13 @@
   "ward": "Faraday",
   "distanceM": 40,
   "at": "2026-09-11"
+ },
+ "51.4843,-0.1122": {
+  "postcode": "SE11 5BX",
+  "district": "Lambeth",
+  "ward": "Kennington",
+  "distanceM": 48,
+  "at": "2026-10-19"
  },
  "51.4843,-0.2150": {
   "postcode": "W6 8PF",
