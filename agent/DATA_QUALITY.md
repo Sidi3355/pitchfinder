@@ -1,26 +1,26 @@
 # Data quality
 
-Generated 2026-10-19T11:07:54.918Z by `scripts/audit-data.mjs`.
-Dataset generated 2026-10-19T11:07:54.860Z.
+Generated 2026-10-26T10:49:39.611Z by `scripts/audit-data.mjs`.
+Dataset generated 2026-10-26T10:47:31.310Z.
 
 ## Pitches
 
 | Metric | Count | Share |
 | --- | --- | --- |
-| Venues | 268 | |
-| astro | 241 | 89.9% |
-| commercial | 27 | 10.1% |
-| Collapsed venues (more than one pitch) | 86 | 32.1% |
+| Venues | 269 | |
+| astro | 242 | 90.0% |
+| commercial | 27 | 10.0% |
+| Collapsed venues (more than one pitch) | 86 | 32.0% |
 | Name from curated | 15 | 5.6% |
-| Name from operator | 9 | 3.4% |
-| Name from park | 137 | 51.1% |
+| Name from operator | 9 | 3.3% |
+| Name from park | 138 | 51.3% |
 | Name from road | 33 | 12.3% |
 | Name from osm | 14 | 5.2% |
-| Name from playfinder | 59 | 22.0% |
+| Name from playfinder | 59 | 21.9% |
 | Name from area | 1 | 0.4% |
 | No name at all | 0 | 0.0% |
 | Surface not known | 1 | 0.4% |
-| Floodlights not known | 67 | 25.0% |
+| Floodlights not known | 67 | 24.9% |
 | No postcode | 17 | 6.3% |
 | Same name within 200 m | 0 | |
 
@@ -30,13 +30,13 @@ Dataset generated 2026-10-19T11:07:54.860Z.
 | --- | --- | --- |
 | operator-site | 10 | 9 |
 | pitchbooking | 8 | 0 |
-| none | 235 | 176 |
+| none | 236 | 177 |
 | playfinder | 15 | 82 |
 | osm | 0 | 1 |
 
 ## Curated venues
 
-26 venues. Unverified facts: **151** (postcode, address, verified date, price source, price dated within 60 days, booking URL returns 200, coordinate within 150 m of the postcode).
+26 venues. Unverified facts: **143** (postcode, address, verified date, price source, price dated within 60 days, booking URL returns 200, coordinate within 150 m of the postcode).
 
 | Venue | Missing or failing | Booking URL | Coordinate |
 | --- | --- | --- | --- |
@@ -47,17 +47,17 @@ Dataset generated 2026-10-19T11:07:54.860Z.
 | Powerleague Barnet | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Powerleague Croydon | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Powerleague Canary Wharf | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
-| Goals Beckenham | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Bexleyheath | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Dagenham | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Ruislip | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Hayes | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Gillette Corner | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Chingford | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
-| Goals Sutton | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://www.goalsfootball.co.uk/) | no postcode |
+| Goals Beckenham | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Bexleyheath | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Dagenham | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Ruislip | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Hayes | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Gillette Corner | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Chingford | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
+| Goals Sutton | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Westway Sports Centre | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Mile End Stadium pitches | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
-| Battersea Park Millennium Arena | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 404 (working: https://enablelc.org/battersea-park-millennium-arena-athletics-camp/) | no postcode |
+| Battersea Park Millennium Arena | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 202 | no postcode |
 | Paddington Recreation Ground | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 403 | no postcode |
 | Talacre Community Sports Centre | postcode, address, verifiedAt, priceDated, coordinateOk | 200 | no postcode |
 | Crystal Palace National Sports Centre | postcode, address, verifiedAt, priceDated, bookingOk, coordinateOk | 0 (working: https://www.better.org.uk/) | no postcode |
@@ -79,3 +79,4 @@ Dataset generated 2026-10-19T11:07:54.860Z.
 | 2026-10-05 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |
 | 2026-10-12 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |
 | 2026-10-19 | 268 | 0 | 1 | 67 | 17 | 0 | 151 | 26 | 21 | 0 |
+| 2026-10-26 | 269 | 0 | 1 | 67 | 17 | 0 | 143 | 26 | 13 | 0 |

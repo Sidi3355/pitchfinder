@@ -2,92 +2,92 @@
  "https://enablelc.org/": {
   "status": 202,
   "finalUrl": "https://enablelc.org/",
-  "checkedAt": "2026-09-11T22:17:40.683Z"
+  "checkedAt": "2026-10-26T10:49:05.787Z"
  },
  "https://enablelc.org/battersea-park-millennium-arena": {
-  "status": 200,
-  "finalUrl": "https://enablelc.org/battersea-park-millennium-arena-athletics-camp/",
-  "checkedAt": "2026-10-12T13:17:11.858Z"
+  "status": 202,
+  "finalUrl": "https://enablelc.org/battersea-park-millennium-arena",
+  "checkedAt": "2026-10-26T10:49:03.651Z"
  },
  "https://enablelc.org/millennium-arena": {
-  "status": 404,
+  "status": 202,
   "finalUrl": "https://enablelc.org/millennium-arena",
-  "checkedAt": "2026-10-12T13:13:30.986Z"
+  "checkedAt": "2026-10-26T10:48:13.484Z"
  },
  "https://enablelc.org/millennium-arena/": {
-  "status": 404,
+  "status": 202,
   "finalUrl": "https://enablelc.org/millennium-arena/",
-  "checkedAt": "2026-10-12T13:17:01.172Z"
+  "checkedAt": "2026-10-26T10:48:55.960Z"
  },
  "https://enablelc.org/sport/millennium-arena": {
-  "status": 404,
+  "status": 202,
   "finalUrl": "https://enablelc.org/sport/millennium-arena",
-  "checkedAt": "2026-10-12T13:17:07.816Z"
+  "checkedAt": "2026-10-26T10:49:01.513Z"
  },
  "https://hackney.gov.uk/hackney-marshes": {
   "status": 200,
   "finalUrl": "https://www.hackney.gov.uk/libraries-parks-and-leisure/parks-and-green-spaces/parks-list/hackney-marshes",
-  "checkedAt": "2026-10-12T13:14:04.153Z"
+  "checkedAt": "2026-10-26T10:48:44.333Z"
  },
  "https://www.better.org.uk/": {
   "status": 200,
   "finalUrl": "https://www.better.org.uk/",
-  "checkedAt": "2026-10-12T13:17:15.175Z"
+  "checkedAt": "2026-10-26T10:49:08.661Z"
  },
  "https://www.better.org.uk/leisure-centre/london/bromley/crystal-palace-national-sports-centre": {
   "status": 0,
   "error": "fetch failed",
-  "checkedAt": "2026-10-12T13:13:41.333Z"
+  "checkedAt": "2026-10-26T10:48:23.856Z"
  },
  "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre": {
   "status": 200,
   "finalUrl": "https://www.better.org.uk/leisure-centre/london/camden/talacre-community-sports-centre",
-  "checkedAt": "2026-10-12T13:13:35.890Z"
+  "checkedAt": "2026-10-26T10:48:18.111Z"
  },
  "https://www.better.org.uk/leisure-centre/london/tower-hamlets/mile-end-park-leisure-centre": {
   "status": 200,
   "finalUrl": "https://be-well.org.uk/centres/mile-end-leisure-centre-and-stadium/",
-  "checkedAt": "2026-10-12T13:13:27.477Z"
+  "checkedAt": "2026-10-26T10:48:10.660Z"
  },
  "https://www.blackprincetrust.org.uk/": {
   "status": 200,
   "finalUrl": "https://blackprincetrust.org.uk/",
-  "checkedAt": "2026-10-12T13:13:48.545Z"
+  "checkedAt": "2026-10-26T10:48:28.489Z"
  },
  "https://www.coramsfields.org.uk/": {
   "status": 0,
   "error": "fetch failed",
-  "checkedAt": "2026-10-12T13:17:27.670Z"
+  "checkedAt": "2026-10-26T10:49:21.156Z"
  },
  "https://www.coramsfields.org.uk/sports-programme/": {
   "status": 0,
   "error": "fetch failed",
-  "checkedAt": "2026-10-12T13:14:01.038Z"
+  "checkedAt": "2026-10-26T10:48:40.985Z"
  },
  "https://www.coramsfields.org/": {
   "status": 200,
   "finalUrl": "https://coramsfields.org/",
-  "checkedAt": "2026-10-12T13:17:32.141Z"
+  "checkedAt": "2026-10-26T10:49:25.636Z"
  },
  "https://www.enablelc.org/millennium-arena": {
-  "status": 404,
-  "finalUrl": "https://enablelc.org/millennium-arena",
-  "checkedAt": "2026-10-12T13:17:05.191Z"
+  "status": 202,
+  "finalUrl": "https://www.enablelc.org/millennium-arena",
+  "checkedAt": "2026-10-26T10:48:58.813Z"
  },
  "https://www.everyoneactive.com/": {
   "status": 403,
   "finalUrl": "https://www.everyoneactive.com/",
-  "checkedAt": "2026-10-12T13:16:57.563Z"
+  "checkedAt": "2026-10-26T10:48:53.278Z"
  },
  "https://www.everyoneactive.com/centre/paddington-recreation-ground/": {
   "status": 403,
   "finalUrl": "https://www.everyoneactive.com/centre/paddington-recreation-ground/",
-  "checkedAt": "2026-10-12T13:13:33.122Z"
+  "checkedAt": "2026-10-26T10:48:15.523Z"
  },
  "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/": {
   "status": 403,
   "finalUrl": "https://www.everyoneactive.com/centre/westway-sports-fitness-centre/",
-  "checkedAt": "2026-10-12T13:13:21.770Z"
+  "checkedAt": "2026-10-26T10:48:05.666Z"
  },
  "https://www.goalsfootball.co.uk/": {
   "status": 200,
@@ -155,44 +155,44 @@
   "checkedAt": "2026-10-12T13:14:57.249Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/beckenham": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/beckenham",
-  "checkedAt": "2026-10-12T13:13:05.361Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/beckenham/",
+  "checkedAt": "2026-10-26T10:47:46.752Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/bexleyheath": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/bexleyheath",
-  "checkedAt": "2026-10-12T13:13:07.410Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/bexleyheath/",
+  "checkedAt": "2026-10-26T10:47:49.163Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/chingford": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/chingford",
-  "checkedAt": "2026-10-12T13:13:17.572Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/chingford/",
+  "checkedAt": "2026-10-26T10:48:01.208Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/dagenham": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/dagenham",
-  "checkedAt": "2026-10-12T13:13:09.445Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/dagenham/",
+  "checkedAt": "2026-10-26T10:47:51.572Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/gillette-corner": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/gillette-corner",
-  "checkedAt": "2026-10-12T13:13:15.540Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/gillette-corner/",
+  "checkedAt": "2026-10-26T10:47:58.799Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/hayes": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/hayes",
-  "checkedAt": "2026-10-12T13:13:13.506Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/hayes/",
+  "checkedAt": "2026-10-26T10:47:56.390Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/ruislip": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/ruislip",
-  "checkedAt": "2026-10-12T13:13:11.475Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/ruislip/",
+  "checkedAt": "2026-10-26T10:47:53.980Z"
  },
  "https://www.goalsfootball.co.uk/football-centres/sutton": {
-  "status": 404,
-  "finalUrl": "https://www.goalsfootball.co.uk/football-centres/sutton",
-  "checkedAt": "2026-10-12T13:13:19.620Z"
+  "status": 200,
+  "finalUrl": "https://www.goalsfootball.co.uk/our-clubs/south-east/sutton/",
+  "checkedAt": "2026-10-26T10:48:03.616Z"
  },
  "https://www.goalsfootball.co.uk/gillette-corner": {
   "status": 404,
@@ -337,32 +337,32 @@
  "https://www.islington.gov.uk/": {
   "status": 200,
   "finalUrl": "https://www.islington.gov.uk/",
-  "checkedAt": "2026-10-12T13:17:44.056Z"
+  "checkedAt": "2026-10-26T10:49:37.609Z"
  },
  "https://www.islington.gov.uk/leisure-and-sport": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/leisure-and-sport",
-  "checkedAt": "2026-10-12T13:17:37.103Z"
+  "checkedAt": "2026-10-26T10:49:30.643Z"
  },
  "https://www.islington.gov.uk/sport-and-leisure": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sport-and-leisure",
-  "checkedAt": "2026-10-12T13:17:34.801Z"
+  "checkedAt": "2026-10-26T10:49:28.326Z"
  },
  "https://www.islington.gov.uk/sports-parks-and-trees": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees",
-  "checkedAt": "2026-10-12T13:17:39.403Z"
+  "checkedAt": "2026-10-26T10:49:32.952Z"
  },
  "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity",
-  "checkedAt": "2026-10-12T13:14:09.347Z"
+  "checkedAt": "2026-10-26T10:48:49.220Z"
  },
  "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches": {
   "status": 404,
   "finalUrl": "https://www.islington.gov.uk/sports-parks-and-trees/sports-and-physical-activity/market-road-pitches",
-  "checkedAt": "2026-10-12T13:17:41.720Z"
+  "checkedAt": "2026-10-26T10:49:35.272Z"
  },
  "https://www.powerleague.co.uk/": {
   "status": 403,
@@ -407,47 +407,47 @@
  "https://www.powerleague.com/": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/",
-  "checkedAt": "2026-10-12T13:14:11.435Z"
+  "checkedAt": "2026-10-26T10:48:51.250Z"
  },
  "https://www.powerleague.com/location/barnet": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/barnet",
-  "checkedAt": "2026-10-12T13:12:59.259Z"
+  "checkedAt": "2026-10-26T10:47:39.491Z"
  },
  "https://www.powerleague.com/location/canary-wharf": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/canary-wharf",
-  "checkedAt": "2026-10-12T13:13:03.271Z"
+  "checkedAt": "2026-10-26T10:47:43.505Z"
  },
  "https://www.powerleague.com/location/croydon": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/croydon",
-  "checkedAt": "2026-10-12T13:13:01.265Z"
+  "checkedAt": "2026-10-26T10:47:41.498Z"
  },
  "https://www.powerleague.com/location/mill-hill": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/mill-hill",
-  "checkedAt": "2026-10-12T13:12:57.253Z"
+  "checkedAt": "2026-10-26T10:47:37.486Z"
  },
  "https://www.powerleague.com/location/shoreditch": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/shoreditch",
-  "checkedAt": "2026-10-12T13:12:51.233Z"
+  "checkedAt": "2026-10-26T10:47:31.464Z"
  },
  "https://www.powerleague.com/location/vauxhall": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/vauxhall",
-  "checkedAt": "2026-10-12T13:12:53.242Z"
+  "checkedAt": "2026-10-26T10:47:33.474Z"
  },
  "https://www.powerleague.com/location/wembley": {
   "status": 403,
   "finalUrl": "https://www.powerleague.com/location/wembley",
-  "checkedAt": "2026-10-12T13:12:55.247Z"
+  "checkedAt": "2026-10-26T10:47:35.480Z"
  },
  "https://www.royalparks.org.uk/": {
   "status": 200,
   "finalUrl": "https://www.royalparks.org.uk/",
-  "checkedAt": "2026-10-12T13:14:06.366Z"
+  "checkedAt": "2026-10-26T10:48:46.517Z"
  },
  "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/sports-and-leisure/the-hub": {
   "status": 404,
