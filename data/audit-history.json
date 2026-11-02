@@ -142,5 +142,21 @@
     "deadBookingUrls": 13,
     "coordinateMismatches": 0,
     "offline": false
+  },
+  {
+    "date": "2026-11-02",
+    "datasetGeneratedAt": "2026-11-02T13:16:11.508Z",
+    "pitches": 256,
+    "unnamed": 0,
+    "noSurface": 1,
+    "noLit": 64,
+    "noPostcode": 15,
+    "duplicates": 0,
+    "curated": 26,
+    "unverifiedCuratedFacts": 143,
+    "stalePrices": 26,
+    "deadBookingUrls": 13,
+    "coordinateMismatches": 0,
+    "offline": false
   }
 ]

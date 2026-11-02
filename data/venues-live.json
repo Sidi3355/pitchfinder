@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-10-26T10:09:31.482Z",
+ "fetchedAt": "2026-11-02T12:26:04.543Z",
  "offline": false,
  "operators": [
   {
@@ -98,7 +98,7 @@
      "covered": true,
      "lit": true,
      "phone": "01224 894 893",
-     "fetchedAt": "2026-10-26T10:05:58.150Z"
+     "fetchedAt": "2026-11-02T12:22:28.237Z"
     },
     {
      "id": "go-beckenham",
@@ -191,7 +191,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 663 1600",
-     "fetchedAt": "2026-10-26T10:06:04.094Z"
+     "fetchedAt": "2026-11-02T12:22:33.146Z"
     },
     {
      "id": "go-bexleyheath",
@@ -284,7 +284,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 301 2000",
-     "fetchedAt": "2026-10-26T10:06:08.906Z"
+     "fetchedAt": "2026-11-02T12:22:37.442Z"
     },
     {
      "id": "go-birminghamperrybarr",
@@ -377,7 +377,7 @@
      "covered": true,
      "lit": true,
      "phone": "0121 356 3333",
-     "fetchedAt": "2026-10-26T10:06:13.313Z"
+     "fetchedAt": "2026-11-02T12:22:41.907Z"
     },
     {
      "id": "go-birminghamstarcity",
@@ -470,7 +470,7 @@
      "covered": true,
      "lit": true,
      "phone": "0121 326 6644",
-     "fetchedAt": "2026-10-26T10:06:18.722Z"
+     "fetchedAt": "2026-11-02T12:22:46.857Z"
     },
     {
      "id": "go-blackcountrybilston",
@@ -557,7 +557,7 @@
      "covered": true,
      "lit": true,
      "phone": "01902 637 700",
-     "fetchedAt": "2026-10-26T10:06:24.112Z"
+     "fetchedAt": "2026-11-02T12:22:52.142Z"
     },
     {
      "id": "go-bradford",
@@ -651,7 +651,7 @@
      "covered": true,
      "lit": true,
      "phone": "01274 610 061",
-     "fetchedAt": "2026-10-26T10:06:28.336Z"
+     "fetchedAt": "2026-11-02T12:22:56.217Z"
     },
     {
      "id": "go-bristolnorth",
@@ -744,7 +744,7 @@
      "covered": true,
      "lit": true,
      "phone": "0117 908 8811",
-     "fetchedAt": "2026-10-26T10:06:34.932Z"
+     "fetchedAt": "2026-11-02T12:23:01.696Z"
     },
     {
      "id": "go-bristolsouth",
@@ -843,7 +843,7 @@
      "covered": true,
      "lit": true,
      "phone": "0117 977 4455",
-     "fetchedAt": "2026-10-26T10:06:41.311Z"
+     "fetchedAt": "2026-11-02T12:23:07.243Z"
     },
     {
      "id": "go-chester",
@@ -941,7 +941,7 @@
      "covered": true,
      "lit": true,
      "phone": "01244 260 350",
-     "fetchedAt": "2026-10-26T10:06:46.747Z"
+     "fetchedAt": "2026-11-02T12:23:12.307Z"
     },
     {
      "id": "go-chingford",
@@ -1034,7 +1034,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 503 2220",
-     "fetchedAt": "2026-10-26T10:06:50.836Z"
+     "fetchedAt": "2026-11-02T12:23:16.551Z"
     },
     {
      "id": "go-coventry",
@@ -1120,7 +1120,7 @@
      "covered": true,
      "lit": true,
      "phone": "02476 666 405",
-     "fetchedAt": "2026-10-26T10:06:54.918Z"
+     "fetchedAt": "2026-11-02T12:23:20.466Z"
     },
     {
      "id": "go-dagenham",
@@ -1213,7 +1213,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 595 7000",
-     "fetchedAt": "2026-10-26T10:06:59.643Z"
+     "fetchedAt": "2026-11-02T12:23:25.131Z"
     },
     {
      "id": "go-dartford",
@@ -1306,7 +1306,7 @@
      "covered": true,
      "lit": true,
      "phone": "01322 311 411",
-     "fetchedAt": "2026-10-26T10:07:04.189Z"
+     "fetchedAt": "2026-11-02T12:23:29.263Z"
     },
     {
      "id": "go-doncaster",
@@ -1399,7 +1399,7 @@
      "covered": true,
      "lit": true,
      "phone": "01302 965 220",
-     "fetchedAt": "2026-10-26T10:07:09.029Z"
+     "fetchedAt": "2026-11-02T12:23:34.094Z"
     },
     {
      "id": "go-dudleyrowleyregis",
@@ -1474,6 +1474,7 @@
      "surface": null,
      "formats": [
       5,
+      7,
       8
      ],
      "pitchCount": null,
@@ -1485,7 +1486,7 @@
      "covered": true,
      "lit": true,
      "phone": "0121 561 3000",
-     "fetchedAt": "2026-10-26T10:07:14.098Z"
+     "fetchedAt": "2026-11-02T12:23:39.212Z"
     },
     {
      "id": "go-eltham",
@@ -1570,7 +1571,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 912 0600",
-     "fetchedAt": "2026-10-26T10:07:18.191Z"
+     "fetchedAt": "2026-11-02T12:23:43.737Z"
     },
     {
      "id": "go-gillettecorner",
@@ -1663,7 +1664,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 912 0890",
-     "fetchedAt": "2026-10-26T10:07:22.654Z"
+     "fetchedAt": "2026-11-02T12:23:48.616Z"
     },
     {
      "id": "go-glasgowsouth",
@@ -1741,7 +1742,7 @@
      "covered": true,
      "lit": true,
      "phone": "0141 636 5334",
-     "fetchedAt": "2026-10-26T10:07:26.992Z"
+     "fetchedAt": "2026-11-02T12:23:53.376Z"
     },
     {
      "id": "go-glasgowwest",
@@ -1833,7 +1834,7 @@
      "covered": true,
      "lit": true,
      "phone": "0141 944 2020",
-     "fetchedAt": "2026-10-26T10:07:31.495Z"
+     "fetchedAt": "2026-11-02T12:23:57.908Z"
     },
     {
      "id": "go-hayes",
@@ -1938,7 +1939,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 606 0999",
-     "fetchedAt": "2026-10-26T10:07:36.010Z"
+     "fetchedAt": "2026-11-02T12:24:02.859Z"
     },
     {
      "id": "go-heathrow",
@@ -2030,7 +2031,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 569 1199",
-     "fetchedAt": "2026-10-26T10:07:40.780Z"
+     "fetchedAt": "2026-11-02T12:24:06.749Z"
     },
     {
      "id": "go-ipswich",
@@ -2123,7 +2124,7 @@
      "covered": true,
      "lit": true,
      "phone": "01473 300 060",
-     "fetchedAt": "2026-10-26T10:07:44.868Z"
+     "fetchedAt": "2026-11-02T12:24:10.690Z"
     },
     {
      "id": "go-leeds",
@@ -2217,7 +2218,7 @@
      "covered": true,
      "lit": true,
      "phone": "0113 263 3030",
-     "fetchedAt": "2026-10-26T10:07:48.946Z"
+     "fetchedAt": "2026-11-02T12:24:14.612Z"
     },
     {
      "id": "go-leicester",
@@ -2316,7 +2317,7 @@
      "covered": true,
      "lit": true,
      "phone": "0116 249 0555",
-     "fetchedAt": "2026-10-26T10:07:54.173Z"
+     "fetchedAt": "2026-11-02T12:24:18.751Z"
     },
     {
      "id": "go-liverpoolnorth",
@@ -2409,7 +2410,7 @@
      "covered": true,
      "lit": true,
      "phone": "0151 214 0711",
-     "fetchedAt": "2026-10-26T10:07:58.244Z"
+     "fetchedAt": "2026-11-02T12:24:25.060Z"
     },
     {
      "id": "go-liverpoolsouth",
@@ -2501,7 +2502,7 @@
      "covered": true,
      "lit": true,
      "phone": "0151 214 1090",
-     "fetchedAt": "2026-10-26T10:08:04.090Z"
+     "fetchedAt": "2026-11-02T12:24:30.989Z"
     },
     {
      "id": "go-manchester",
@@ -2593,7 +2594,7 @@
      "covered": true,
      "lit": true,
      "phone": "0161 441 4560",
-     "fetchedAt": "2026-10-26T10:08:08.502Z"
+     "fetchedAt": "2026-11-02T12:24:34.937Z"
     },
     {
      "id": "go-newcastle",
@@ -2680,7 +2681,7 @@
      "covered": true,
      "lit": true,
      "phone": "0191 217 3040",
-     "fetchedAt": "2026-10-26T10:08:14.523Z"
+     "fetchedAt": "2026-11-02T12:24:39.082Z"
     },
     {
      "id": "go-northampton",
@@ -2772,7 +2773,7 @@
      "covered": true,
      "lit": true,
      "phone": "01604 876 777",
-     "fetchedAt": "2026-10-26T10:08:18.836Z"
+     "fetchedAt": "2026-11-02T12:24:44.257Z"
     },
     {
      "id": "go-norwich",
@@ -2864,7 +2865,7 @@
      "covered": true,
      "lit": true,
      "phone": "01603 790 060",
-     "fetchedAt": "2026-10-26T10:08:24.734Z"
+     "fetchedAt": "2026-11-02T12:24:50.031Z"
     },
     {
      "id": "go-portsmouth",
@@ -2956,7 +2957,7 @@
      "covered": true,
      "lit": true,
      "phone": "02392 191 101",
-     "fetchedAt": "2026-10-26T10:08:28.793Z"
+     "fetchedAt": "2026-11-02T12:24:54.942Z"
     },
     {
      "id": "go-reading",
@@ -3048,7 +3049,7 @@
      "covered": true,
      "lit": true,
      "phone": "01183 721 077",
-     "fetchedAt": "2026-10-26T10:08:33.547Z"
+     "fetchedAt": "2026-11-02T12:24:59.297Z"
     },
     {
      "id": "go-ruislip",
@@ -3128,7 +3129,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 842 1010",
-     "fetchedAt": "2026-10-26T10:08:39.069Z"
+     "fetchedAt": "2026-11-02T12:25:04.187Z"
     },
     {
      "id": "go-sheffield",
@@ -3221,7 +3222,7 @@
      "covered": true,
      "lit": true,
      "phone": "0114 272 6700",
-     "fetchedAt": "2026-10-26T10:08:43.170Z"
+     "fetchedAt": "2026-11-02T12:25:10.221Z"
     },
     {
      "id": "go-southampton",
@@ -3302,7 +3303,7 @@
      "covered": true,
      "lit": true,
      "phone": "02380 510 666",
-     "fetchedAt": "2026-10-26T10:08:47.298Z"
+     "fetchedAt": "2026-11-02T12:25:17.219Z"
     },
     {
      "id": "go-southend",
@@ -3397,7 +3398,7 @@
      "covered": null,
      "lit": true,
      "phone": "01702 414 077",
-     "fetchedAt": "2026-10-26T10:08:54.738Z"
+     "fetchedAt": "2026-11-02T12:25:26.869Z"
     },
     {
      "id": "go-sunderland",
@@ -3477,7 +3478,7 @@
      "covered": true,
      "lit": true,
      "phone": "0191 337 0360",
-     "fetchedAt": "2026-10-26T10:08:59.865Z"
+     "fetchedAt": "2026-11-02T12:25:32.593Z"
     },
     {
      "id": "go-sutton",
@@ -3570,7 +3571,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 644 1333",
-     "fetchedAt": "2026-10-26T10:09:05.133Z"
+     "fetchedAt": "2026-11-02T12:25:37.831Z"
     },
     {
      "id": "go-teesside",
@@ -3663,7 +3664,7 @@
      "covered": true,
      "lit": true,
      "phone": "01642 228 200",
-     "fetchedAt": "2026-10-26T10:09:10.404Z"
+     "fetchedAt": "2026-11-02T12:25:43.214Z"
     },
     {
      "id": "go-tolworth",
@@ -3757,7 +3758,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 337 2425",
-     "fetchedAt": "2026-10-26T10:09:14.761Z"
+     "fetchedAt": "2026-11-02T12:25:47.746Z"
     },
     {
      "id": "go-wembley",
@@ -3837,7 +3838,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 997 4040",
-     "fetchedAt": "2026-10-26T10:09:18.955Z"
+     "fetchedAt": "2026-11-02T12:25:51.641Z"
     },
     {
      "id": "go-wimbledon",
@@ -3929,7 +3930,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 949 1122",
-     "fetchedAt": "2026-10-26T10:09:23.212Z"
+     "fetchedAt": "2026-11-02T12:25:56.210Z"
     }
    ]
   },

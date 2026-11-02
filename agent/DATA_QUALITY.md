@@ -1,37 +1,36 @@
 # Data quality
 
-Generated 2026-10-26T10:49:39.611Z by `scripts/audit-data.mjs`.
-Dataset generated 2026-10-26T10:47:31.310Z.
+Generated 2026-11-02T13:18:18.306Z by `scripts/audit-data.mjs`.
+Dataset generated 2026-11-02T13:16:11.508Z.
 
 ## Pitches
 
 | Metric | Count | Share |
 | --- | --- | --- |
-| Venues | 269 | |
-| astro | 242 | 90.0% |
-| commercial | 27 | 10.0% |
-| Collapsed venues (more than one pitch) | 86 | 32.0% |
-| Name from curated | 15 | 5.6% |
-| Name from operator | 9 | 3.3% |
-| Name from park | 138 | 51.3% |
-| Name from road | 33 | 12.3% |
-| Name from osm | 14 | 5.2% |
-| Name from playfinder | 59 | 21.9% |
+| Venues | 256 | |
+| astro | 229 | 89.5% |
+| commercial | 27 | 10.5% |
+| Collapsed venues (more than one pitch) | 83 | 32.4% |
+| Name from curated | 15 | 5.9% |
+| Name from operator | 9 | 3.5% |
+| Name from park | 128 | 50.0% |
+| Name from road | 29 | 11.3% |
+| Name from osm | 13 | 5.1% |
+| Name from playfinder | 61 | 23.8% |
 | Name from area | 1 | 0.4% |
 | No name at all | 0 | 0.0% |
 | Surface not known | 1 | 0.4% |
-| Floodlights not known | 67 | 24.9% |
-| No postcode | 17 | 6.3% |
+| Floodlights not known | 64 | 25.0% |
+| No postcode | 15 | 5.9% |
 | Same name within 200 m | 0 | |
 
 ## Where prices and hours come from
 
 | Source | Prices | Opening hours |
 | --- | --- | --- |
-| operator-site | 10 | 9 |
-| pitchbooking | 8 | 0 |
-| none | 236 | 177 |
-| playfinder | 15 | 82 |
+| operator-site | 17 | 9 |
+| playfinder | 16 | 82 |
+| none | 223 | 164 |
 | osm | 0 | 1 |
 
 ## Curated venues
@@ -80,3 +79,4 @@ Dataset generated 2026-10-26T10:47:31.310Z.
 | 2026-10-12 | 274 | 0 | 6 | 68 | 16 | 0 | 151 | 26 | 21 | 0 |
 | 2026-10-19 | 268 | 0 | 1 | 67 | 17 | 0 | 151 | 26 | 21 | 0 |
 | 2026-10-26 | 269 | 0 | 1 | 67 | 17 | 0 | 143 | 26 | 13 | 0 |
+| 2026-11-02 | 256 | 0 | 1 | 64 | 15 | 0 | 143 | 26 | 13 | 0 |
