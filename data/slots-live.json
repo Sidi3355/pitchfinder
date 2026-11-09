@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-02T12:59:46.716Z",
+ "fetchedAt": "2026-11-09T13:26:10.147Z",
  "offline": false,
  "pitchbooking": {
   "site": "https://pitchbooking.com",
@@ -28,17 +28,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:26:13.032Z"
+    "fetchedAt": "2026-11-09T12:55:08.578Z"
    },
    {
     "id": "go-bexleyheath",
@@ -69,17 +69,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:27:55.890Z"
+    "fetchedAt": "2026-11-09T12:56:48.294Z"
    },
    {
     "id": "go-chingford",
@@ -105,17 +105,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:30:45.344Z"
+    "fetchedAt": "2026-11-09T12:59:11.986Z"
    },
    {
     "id": "go-dagenham",
@@ -146,17 +146,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:32:27.680Z"
+    "fetchedAt": "2026-11-09T13:00:52.003Z"
    },
    {
     "id": "go-eltham",
@@ -182,17 +182,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:34:53.730Z"
+    "fetchedAt": "2026-11-09T13:03:14.963Z"
    },
    {
     "id": "go-gillettecorner",
@@ -218,17 +218,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:37:54.267Z"
+    "fetchedAt": "2026-11-09T13:06:29.256Z"
    },
    {
     "id": "go-hayes",
@@ -259,17 +259,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:39:31.694Z"
+    "fetchedAt": "2026-11-09T13:08:00.582Z"
    },
    {
     "id": "go-heathrow",
@@ -295,17 +295,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:42:29.649Z"
+    "fetchedAt": "2026-11-09T13:10:33.048Z"
    },
    {
     "id": "go-ruislip",
@@ -336,17 +336,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:44:05.426Z"
+    "fetchedAt": "2026-11-09T13:12:03.625Z"
    },
    {
     "id": "go-sutton",
@@ -372,17 +372,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:46:27.777Z"
+    "fetchedAt": "2026-11-09T13:14:17.173Z"
    },
    {
     "id": "go-wembley",
@@ -413,17 +413,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:47:59.968Z"
+    "fetchedAt": "2026-11-09T13:16:21.523Z"
    },
    {
     "id": "go-wimbledon",
@@ -449,17 +449,17 @@
      }
     ],
     "dates": [
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
     ],
     "slotsSeen": 0,
     "bands": [],
-    "fetchedAt": "2026-11-02T12:50:22.831Z"
+    "fetchedAt": "2026-11-09T13:19:52.023Z"
    }
   ]
  },
@@ -911,7 +911,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-11-02T12:59:44.572Z"
+    "fetchedAt": "2026-11-09T13:24:59.588Z"
    },
    {
     "slug": "aldenham-school-sports-centre",
@@ -1101,7 +1101,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:53:47.175Z"
+    "fetchedAt": "2026-11-09T13:25:13.817Z"
    },
    {
     "slug": "altwood-church-of-england-school",
@@ -2156,9 +2156,9 @@
       "pricedSlots": 0
      },
      {
-      "url": "https://www.playfinder.com/london/venue/beavers-lodge/football-9-a-side-42120",
-      "label": "9 a side | Grass",
-      "format": 9,
+      "url": "https://www.playfinder.com/london/venue/beavers-lodge/football-7-a-side-42118",
+      "label": "7 a side | Grass",
+      "format": 7,
       "surface": "grass",
       "weekStart": null,
       "dayAssignment": null,
@@ -2166,9 +2166,9 @@
       "pricedSlots": 0
      },
      {
-      "url": "https://www.playfinder.com/london/venue/beavers-lodge/football-7-a-side-42118",
-      "label": "7 a side | Grass",
-      "format": 7,
+      "url": "https://www.playfinder.com/london/venue/beavers-lodge/football-9-a-side-42120",
+      "label": "9 a side | Grass",
+      "format": 9,
       "surface": "grass",
       "weekStart": null,
       "dayAssignment": null,
@@ -2179,7 +2179,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": null,
-    "fetchedAt": "2026-10-12T12:57:13.537Z"
+    "fetchedAt": "2026-11-09T13:24:01.920Z"
    },
    {
     "slug": "berkeley-fields",
@@ -3684,7 +3684,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:36:38.946Z"
+    "fetchedAt": "2026-11-09T13:24:33.736Z"
    },
    {
     "slug": "burgess-park",
@@ -4340,7 +4340,7 @@
       "format": 9,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": null,
+      "dayAssignment": "sequence",
       "slotsSeen": 0,
       "pricedSlots": 0
      },
@@ -4350,7 +4350,7 @@
       "format": 5,
       "surface": "astro",
       "weekStart": null,
-      "dayAssignment": null,
+      "dayAssignment": "sequence",
       "slotsSeen": 0,
       "pricedSlots": 0
      }
@@ -4358,7 +4358,7 @@
     "bands": [],
     "priceSummary": "Please check calendar for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-11-02T12:55:28.821Z"
+    "fetchedAt": "2026-11-09T13:22:41.576Z"
    },
    {
     "slug": "caterham-school-sports-centre",
@@ -4870,7 +4870,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:54:06.555Z"
+    "fetchedAt": "2026-11-09T13:25:49.224Z"
    },
    {
     "slug": "churchfields-recreation-ground-ealing",
@@ -7327,7 +7327,7 @@
     "bands": [],
     "priceSummary": "Please enquire for availability and price.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-05T12:33:06.012Z"
+    "fetchedAt": "2026-11-09T13:24:26.593Z"
    },
    {
     "slug": "epsom-and-ewell-high-school",
@@ -7370,7 +7370,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-11-02T12:58:14.830Z"
+    "fetchedAt": "2026-11-09T13:24:18.044Z"
    },
    {
     "slug": "fairfield-recreation-ground",
@@ -7415,7 +7415,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:54:14.463Z"
+    "fetchedAt": "2026-11-09T13:25:30.992Z"
    },
    {
     "slug": "featherstone-sports-centre",
@@ -7603,7 +7603,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-11-02T12:57:11.888Z"
+    "fetchedAt": "2026-11-09T13:23:05.289Z"
    },
    {
     "slug": "ferndale-community-sports-centre",
@@ -8498,7 +8498,7 @@
     "bands": [],
     "priceSummary": "Please check calendar above",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-11-02T12:58:07.837Z"
+    "fetchedAt": "2026-11-09T13:24:53.127Z"
    },
    {
     "slug": "haberdasher-s-crayford-primary-school",
@@ -10976,7 +10976,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:54:23.322Z"
+    "fetchedAt": "2026-11-09T13:25:40.153Z"
    },
    {
     "slug": "king-george-s-park",
@@ -11134,7 +11134,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:54:32.106Z"
+    "fetchedAt": "2026-11-09T13:25:22.916Z"
    },
    {
     "slug": "king-s-house-school-sports-ground",
@@ -11692,7 +11692,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:54:41.649Z"
+    "fetchedAt": "2026-11-09T13:25:57.941Z"
    },
    {
     "slug": "leader-s-gardens",
@@ -12552,7 +12552,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": null,
-    "fetchedAt": "2026-11-02T12:59:08.539Z"
+    "fetchedAt": "2026-11-09T13:23:14.163Z"
    },
    {
     "slug": "lyttelton-playing-fields",
@@ -13046,7 +13046,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:54:49.688Z"
+    "fetchedAt": "2026-11-09T13:24:43.468Z"
    },
    {
     "slug": "marcus-lipton-youth-enterprise",
@@ -13316,7 +13316,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-11-02T12:54:49.703Z"
+    "fetchedAt": "2026-11-09T13:22:27.202Z"
    },
    {
     "slug": "marlborough-sports-garden",
@@ -14065,7 +14065,7 @@
     "bands": [],
     "priceSummary": "Please see calendar above for availability and prices.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-11-02T12:55:12.978Z"
+    "fetchedAt": "2026-11-09T13:22:33.595Z"
    },
    {
     "slug": "nanpantan-sports-ground",
@@ -14545,7 +14545,7 @@
     "bands": [],
     "priceSummary": "Please enquire for availability and price",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:47:08.903Z"
+    "fetchedAt": "2026-11-09T13:22:11.289Z"
    },
    {
     "slug": "north-greenwich-astroturf",
@@ -15504,7 +15504,7 @@
     "bands": [],
     "priceSummary": "Please see calendar for availability and prices.",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:58:39.879Z"
+    "fetchedAt": "2026-11-09T13:23:53.325Z"
    },
    {
     "slug": "pinkneys-green-cricket-club",
@@ -21891,7 +21891,7 @@
     "bands": [],
     "priceSummary": "Public Transport",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:56:01.459Z"
+    "fetchedAt": "2026-11-09T13:26:07.998Z"
    },
    {
     "slug": "shirley-high-school",
@@ -22883,7 +22883,7 @@
     "bands": [],
     "priceSummary": "Please enquire for price",
     "skipped": "no artificial football pitch",
-    "fetchedAt": "2026-10-12T12:49:01.750Z"
+    "fetchedAt": "2026-11-09T13:22:20.078Z"
    },
    {
     "slug": "southgate-hockey-centre",
@@ -28194,7 +28194,7 @@
   ]
  },
  "run": {
-  "pagesRead": 232,
+  "pagesRead": 243,
   "stoppedBy": null
  }
 }

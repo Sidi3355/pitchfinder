@@ -1616,6 +1616,13 @@
   "distanceM": 126,
   "at": "2026-09-11"
  },
+ "51.3817,0.1770": {
+  "postcode": "BR8 8EH",
+  "district": "Sevenoaks",
+  "ward": "Crockenhill and Well Hill",
+  "distanceM": 118,
+  "at": "2026-11-09"
+ },
  "51.3817,0.1771": {
   "postcode": "BR8 8EH",
   "district": "Sevenoaks",
@@ -2939,6 +2946,13 @@
   "distanceM": 21,
   "at": "2026-09-11"
  },
+ "51.4206,-0.3444": {
+  "postcode": "TW11 0EP",
+  "district": "Richmond upon Thames",
+  "ward": "Teddington",
+  "distanceM": 129,
+  "at": "2026-11-09"
+ },
  "51.4207,-0.3444": {
   "postcode": "TW11 0EP",
   "district": "Richmond upon Thames",
@@ -3071,6 +3085,13 @@
   "ward": "Teddington",
   "distanceM": 131,
   "at": "2026-09-11"
+ },
+ "51.4217,-0.0497": {
+  "postcode": "SE26 5NH",
+  "district": "Bromley",
+  "ward": "Penge & Cator",
+  "distanceM": 97,
+  "at": "2026-11-09"
  },
  "51.4217,-0.0664": {
   "postcode": "SE26 6UR",
@@ -3429,6 +3450,13 @@
   "distanceM": 86,
   "at": "2026-09-11"
  },
+ "51.4289,0.0824": {
+  "postcode": "BR7 6HL",
+  "district": "Bromley",
+  "ward": "Chislehurst",
+  "distanceM": 103,
+  "at": "2026-11-09"
+ },
  "51.4289,0.1186": {
   "postcode": "DA14 4JN",
   "district": "Bexley",
@@ -3470,6 +3498,13 @@
   "ward": "Mottingham",
   "distanceM": 74,
   "at": "2026-09-11"
+ },
+ "51.4297,0.0801": {
+  "postcode": "BR7 6HL",
+  "district": "Bromley",
+  "ward": "Chislehurst",
+  "distanceM": 88,
+  "at": "2026-11-09"
  },
  "51.4298,-0.1470": {
   "postcode": "SW16 1RS",
@@ -3925,6 +3960,13 @@
   "ward": "St Martin's",
   "distanceM": 59,
   "at": "2026-09-11"
+ },
+ "51.4412,-0.3217": {
+  "postcode": "TW10 7SN",
+  "district": "Richmond upon Thames",
+  "ward": "Ham, Petersham & Richmond Riverside",
+  "distanceM": 132,
+  "at": "2026-11-09"
  },
  "51.4413,0.0128": {
   "postcode": "SE12 0NS",
@@ -9574,6 +9616,13 @@
   "ward": "St Andrew's",
   "distanceM": 85,
   "at": "2026-09-11"
+ },
+ "51.5643,-0.1426": {
+  "postcode": "N19 5DA",
+  "district": "Camden",
+  "ward": "Highgate",
+  "distanceM": 36,
+  "at": "2026-11-09"
  },
  "51.5643,0.1529": {
   "postcode": "RM8 1JU",

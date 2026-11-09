@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-02T12:26:04.543Z",
+ "fetchedAt": "2026-11-09T12:55:00.280Z",
  "offline": false,
  "operators": [
   {
@@ -98,7 +98,7 @@
      "covered": true,
      "lit": true,
      "phone": "01224 894 893",
-     "fetchedAt": "2026-11-02T12:22:28.237Z"
+     "fetchedAt": "2026-11-09T12:51:13.385Z"
     },
     {
      "id": "go-beckenham",
@@ -186,12 +186,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 663 1600",
-     "fetchedAt": "2026-11-02T12:22:33.146Z"
+     "fetchedAt": "2026-11-09T12:51:19.591Z"
     },
     {
      "id": "go-bexleyheath",
@@ -279,12 +279,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 301 2000",
-     "fetchedAt": "2026-11-02T12:22:37.442Z"
+     "fetchedAt": "2026-11-09T12:51:24.948Z"
     },
     {
      "id": "go-birminghamperrybarr",
@@ -372,12 +372,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0121 356 3333",
-     "fetchedAt": "2026-11-02T12:22:41.907Z"
+     "fetchedAt": "2026-11-09T12:51:28.897Z"
     },
     {
      "id": "go-birminghamstarcity",
@@ -465,12 +465,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0121 326 6644",
-     "fetchedAt": "2026-11-02T12:22:46.857Z"
+     "fetchedAt": "2026-11-09T12:51:32.758Z"
     },
     {
      "id": "go-blackcountrybilston",
@@ -552,12 +552,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": true,
      "covered": true,
      "lit": true,
      "phone": "01902 637 700",
-     "fetchedAt": "2026-11-02T12:22:52.142Z"
+     "fetchedAt": "2026-11-09T12:51:37.410Z"
     },
     {
      "id": "go-bradford",
@@ -651,7 +651,7 @@
      "covered": true,
      "lit": true,
      "phone": "01274 610 061",
-     "fetchedAt": "2026-11-02T12:22:56.217Z"
+     "fetchedAt": "2026-11-09T12:51:41.574Z"
     },
     {
      "id": "go-bristolnorth",
@@ -739,12 +739,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0117 908 8811",
-     "fetchedAt": "2026-11-02T12:23:01.696Z"
+     "fetchedAt": "2026-11-09T12:51:50.893Z"
     },
     {
      "id": "go-bristolsouth",
@@ -838,12 +838,12 @@
      "parking": null,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0117 977 4455",
-     "fetchedAt": "2026-11-02T12:23:07.243Z"
+     "fetchedAt": "2026-11-09T12:51:54.790Z"
     },
     {
      "id": "go-chester",
@@ -936,12 +936,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01244 260 350",
-     "fetchedAt": "2026-11-02T12:23:12.307Z"
+     "fetchedAt": "2026-11-09T12:52:01.148Z"
     },
     {
      "id": "go-chingford",
@@ -1029,12 +1029,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 503 2220",
-     "fetchedAt": "2026-11-02T12:23:16.551Z"
+     "fetchedAt": "2026-11-09T12:52:05.671Z"
     },
     {
      "id": "go-coventry",
@@ -1115,12 +1115,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "02476 666 405",
-     "fetchedAt": "2026-11-02T12:23:20.466Z"
+     "fetchedAt": "2026-11-09T12:52:10.629Z"
     },
     {
      "id": "go-dagenham",
@@ -1208,12 +1208,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 595 7000",
-     "fetchedAt": "2026-11-02T12:23:25.131Z"
+     "fetchedAt": "2026-11-09T12:52:15.416Z"
     },
     {
      "id": "go-dartford",
@@ -1301,12 +1301,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01322 311 411",
-     "fetchedAt": "2026-11-02T12:23:29.263Z"
+     "fetchedAt": "2026-11-09T12:52:19.463Z"
     },
     {
      "id": "go-doncaster",
@@ -1394,12 +1394,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01302 965 220",
-     "fetchedAt": "2026-11-02T12:23:34.094Z"
+     "fetchedAt": "2026-11-09T12:52:23.355Z"
     },
     {
      "id": "go-dudleyrowleyregis",
@@ -1481,12 +1481,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0121 561 3000",
-     "fetchedAt": "2026-11-02T12:23:39.212Z"
+     "fetchedAt": "2026-11-09T12:52:28.502Z"
     },
     {
      "id": "go-eltham",
@@ -1566,12 +1566,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 912 0600",
-     "fetchedAt": "2026-11-02T12:23:43.737Z"
+     "fetchedAt": "2026-11-09T12:52:33.108Z"
     },
     {
      "id": "go-gillettecorner",
@@ -1659,12 +1659,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 912 0890",
-     "fetchedAt": "2026-11-02T12:23:48.616Z"
+     "fetchedAt": "2026-11-09T12:52:37.223Z"
     },
     {
      "id": "go-glasgowsouth",
@@ -1737,12 +1737,12 @@
      "parking": null,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": true,
      "covered": true,
      "lit": true,
      "phone": "0141 636 5334",
-     "fetchedAt": "2026-11-02T12:23:53.376Z"
+     "fetchedAt": "2026-11-09T12:52:42.198Z"
     },
     {
      "id": "go-glasgowwest",
@@ -1834,7 +1834,7 @@
      "covered": true,
      "lit": true,
      "phone": "0141 944 2020",
-     "fetchedAt": "2026-11-02T12:23:57.908Z"
+     "fetchedAt": "2026-11-09T12:52:46.537Z"
     },
     {
      "id": "go-hayes",
@@ -1939,7 +1939,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 606 0999",
-     "fetchedAt": "2026-11-02T12:24:02.859Z"
+     "fetchedAt": "2026-11-09T12:52:50.696Z"
     },
     {
      "id": "go-heathrow",
@@ -2026,12 +2026,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 569 1199",
-     "fetchedAt": "2026-11-02T12:24:06.749Z"
+     "fetchedAt": "2026-11-09T12:52:55.502Z"
     },
     {
      "id": "go-ipswich",
@@ -2119,12 +2119,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01473 300 060",
-     "fetchedAt": "2026-11-02T12:24:10.690Z"
+     "fetchedAt": "2026-11-09T12:53:00.781Z"
     },
     {
      "id": "go-leeds",
@@ -2213,12 +2213,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0113 263 3030",
-     "fetchedAt": "2026-11-02T12:24:14.612Z"
+     "fetchedAt": "2026-11-09T12:53:04.647Z"
     },
     {
      "id": "go-leicester",
@@ -2312,12 +2312,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0116 249 0555",
-     "fetchedAt": "2026-11-02T12:24:18.751Z"
+     "fetchedAt": "2026-11-09T12:53:10.672Z"
     },
     {
      "id": "go-liverpoolnorth",
@@ -2405,12 +2405,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0151 214 0711",
-     "fetchedAt": "2026-11-02T12:24:25.060Z"
+     "fetchedAt": "2026-11-09T12:53:14.885Z"
     },
     {
      "id": "go-liverpoolsouth",
@@ -2497,12 +2497,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0151 214 1090",
-     "fetchedAt": "2026-11-02T12:24:30.989Z"
+     "fetchedAt": "2026-11-09T12:53:26.144Z"
     },
     {
      "id": "go-manchester",
@@ -2594,7 +2594,7 @@
      "covered": true,
      "lit": true,
      "phone": "0161 441 4560",
-     "fetchedAt": "2026-11-02T12:24:34.937Z"
+     "fetchedAt": "2026-11-09T12:53:30.123Z"
     },
     {
      "id": "go-newcastle",
@@ -2676,12 +2676,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0191 217 3040",
-     "fetchedAt": "2026-11-02T12:24:39.082Z"
+     "fetchedAt": "2026-11-09T12:53:34.206Z"
     },
     {
      "id": "go-northampton",
@@ -2768,12 +2768,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01604 876 777",
-     "fetchedAt": "2026-11-02T12:24:44.257Z"
+     "fetchedAt": "2026-11-09T12:53:45.719Z"
     },
     {
      "id": "go-norwich",
@@ -2840,32 +2840,27 @@
       {
        "amount": 5,
        "unit": "person",
-       "label": "5-a-side, evening, per player",
-       "context": "h to late night sessions on fully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay f"
-      },
-      {
-       "amount": 7,
-       "unit": "person",
-       "label": "7-a-side, per player",
-       "context": "ully enclosed arenas from only £5 per player on 5-a-side or £7 per player on 7-a-side. Stay fit with your friends Play whe"
+       "label": "evening, per player",
+       "context": "gh to late night sessions on fully enclosed arenas for only £5 per player. Stay fit with your friends Play when it suits y"
       }
      ],
      "priceFrom": null,
      "surface": null,
      "formats": [
       5,
+      6,
       7
      ],
      "pitchCount": null,
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01603 790 060",
-     "fetchedAt": "2026-11-02T12:24:50.031Z"
+     "fetchedAt": "2026-11-09T12:53:50.924Z"
     },
     {
      "id": "go-portsmouth",
@@ -2952,12 +2947,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "02392 191 101",
-     "fetchedAt": "2026-11-02T12:24:54.942Z"
+     "fetchedAt": "2026-11-09T12:53:54.783Z"
     },
     {
      "id": "go-reading",
@@ -3044,12 +3039,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": true,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01183 721 077",
-     "fetchedAt": "2026-11-02T12:24:59.297Z"
+     "fetchedAt": "2026-11-09T12:54:00.070Z"
     },
     {
      "id": "go-ruislip",
@@ -3129,7 +3124,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 842 1010",
-     "fetchedAt": "2026-11-02T12:25:04.187Z"
+     "fetchedAt": "2026-11-09T12:54:06.169Z"
     },
     {
      "id": "go-sheffield",
@@ -3217,12 +3212,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0114 272 6700",
-     "fetchedAt": "2026-11-02T12:25:10.221Z"
+     "fetchedAt": "2026-11-09T12:54:10.120Z"
     },
     {
      "id": "go-southampton",
@@ -3303,7 +3298,7 @@
      "covered": true,
      "lit": true,
      "phone": "02380 510 666",
-     "fetchedAt": "2026-11-02T12:25:17.219Z"
+     "fetchedAt": "2026-11-09T12:54:15.669Z"
     },
     {
      "id": "go-southend",
@@ -3398,7 +3393,7 @@
      "covered": null,
      "lit": true,
      "phone": "01702 414 077",
-     "fetchedAt": "2026-11-02T12:25:26.869Z"
+     "fetchedAt": "2026-11-09T12:54:22.956Z"
     },
     {
      "id": "go-sunderland",
@@ -3473,12 +3468,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0191 337 0360",
-     "fetchedAt": "2026-11-02T12:25:32.593Z"
+     "fetchedAt": "2026-11-09T12:54:28.402Z"
     },
     {
      "id": "go-sutton",
@@ -3566,12 +3561,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 644 1333",
-     "fetchedAt": "2026-11-02T12:25:37.831Z"
+     "fetchedAt": "2026-11-09T12:54:33.624Z"
     },
     {
      "id": "go-teesside",
@@ -3659,12 +3654,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "01642 228 200",
-     "fetchedAt": "2026-11-02T12:25:43.214Z"
+     "fetchedAt": "2026-11-09T12:54:38.599Z"
     },
     {
      "id": "go-tolworth",
@@ -3758,7 +3753,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 337 2425",
-     "fetchedAt": "2026-11-02T12:25:47.746Z"
+     "fetchedAt": "2026-11-09T12:54:43.729Z"
     },
     {
      "id": "go-wembley",
@@ -3833,12 +3828,12 @@
      "parking": true,
      "changingRooms": true,
      "showers": null,
-     "bar": true,
+     "bar": null,
      "cafe": null,
      "covered": true,
      "lit": true,
      "phone": "0208 997 4040",
-     "fetchedAt": "2026-11-02T12:25:51.641Z"
+     "fetchedAt": "2026-11-09T12:54:47.798Z"
     },
     {
      "id": "go-wimbledon",
@@ -3930,7 +3925,7 @@
      "covered": true,
      "lit": true,
      "phone": "0208 949 1122",
-     "fetchedAt": "2026-11-02T12:25:56.210Z"
+     "fetchedAt": "2026-11-09T12:54:52.006Z"
     }
    ]
   },
